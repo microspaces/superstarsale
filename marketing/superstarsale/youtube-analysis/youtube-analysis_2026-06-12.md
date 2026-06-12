@@ -1,43 +1,42 @@
-# YouTube Research Analysis - June 12, 2026
-## WITH FULL TRANSCRIPTS ANALYSIS
+# YouTube Playlist Analysis - June 12, 2026
+## Playlist: Research
 
-**Analysis Date:** 2026-06-12 12:05 PDT
-**Videos Analyzed:** 5
+**Analysis Date:** 2026-06-12 13:35 PDT
+**Videos Analyzed:** 2
 **Method:** Full transcript extraction via youtube-transcript skill
 
 ---
 
 ## Videos Analyzed
 
-### If I Started A Business in 2026, I'd Do This
-- **Channel:** Alex Hormozi
-- **Views:** 1.59M | **Duration:** 18:25
-- **Transcript:** 580 segments, 22149 characters
-- **Opening:** "In 2016, I had $1,000 to my name, sleeping on a gym floor. Nine years later, I broke the Guinness World Record for the fastest selling non-fiction book and generate over $16 million in sales in a week..."
+### The Most Profitable Side Hustle No One Is Doing Yet
+- **Video ID:** LGkcTUfySDU
+- **Transcript:** 227 segments, 22406 characters
 
-### Exactly how to go from $0-10k/month as a creative
-- **Channel:** Kelsey Rodriguez
-- **Views:** 171K | **Duration:** 17:22
-- **Transcript:** 476 segments, 17615 characters
-- **Opening:** "So, if you want to scale your creative business to 10K a month, there are three things, just three things, that you absolutely have to do. And after scaling my own business to six figures and spending..."
+**Key Themes:**
+- business: 19 mentions
+- ai: 6 mentions
+- profit: 5 mentions
+- system: 4 mentions
+- sales: 3 mentions
 
-### This Online Business Model Generates Up to $35,000/Month
-- **Channel:** Odetta Rockhead
-- **Views:** 15.5K | **Duration:** 12:56
-- **Transcript:** 322 segments, 11944 characters
-- **Opening:** "Let me show you something real. This online store, it belongs to Anna and she actually sells personalized [music] jewelry, specifically custom name necklaces, as I'm showing you here on screen. Now, i..."
+**Opening:** "I did 10,000 in sales in bookings. Mhm. Last 
+week. Just last week. Holy cow. Very minimal   effort. I got it on Amazon. But it's not like 
+commercial. No, it's not commercial. How much   did it cost? 250, maybe 300. It was a Christmas 
+gift for my family. Okay. So, I was like,   let me just kind of..."
 
-### How To Make Your First $10k In High Ticket Sales
-- **Channel:** Andres Contreras-Grassi
-- **Views:** 5.6K | **Duration:** 26:19
-- **Transcript:** 970 segments, 35026 characters
-- **Opening:** "I always see comments under my videos being like, \"Andress, how do I get into sales? How do I make my first 10K?\" And the issue is everybody is giving you [ __ ] advice online. And that's probably why..."
+### $1000 AI Challenge: Watch this AI Super Agent Build a 1-Person Business | Full Genspark Tutorial
+- **Video ID:** LQg76Hn0WeI
+- **Transcript:** 530 segments, 20259 characters
 
-### 10 AI Tools That Make Money While You Sleep
-- **Channel:** Automation Rebellion
-- **Views:** 1.6K | **Duration:** 7:58
-- **Transcript:** 200 segments, 7481 characters
-- **Opening:** "Most people use AI for simple tasks, but a small group is using it to automate income, not passive income, not side hustles, real systems that keep working while you sleep. Today, I'll show you 10 ins..."
+**Key Themes:**
+- ai: 105 mentions
+- agent: 28 mentions
+- business: 21 mentions
+- sales: 17 mentions
+- marketing: 10 mentions
+
+**Opening:** "I challenged an AI super agent to build me a oneperson digital product business with the goal of making $1,000 in 30 days. And what happened next, I did not see coming. Because to pass the challenge, the AI super agent had to do four things. Choose the online business idea, create the digital produc..."
 
 ---
 
@@ -45,90 +44,50 @@
 
 ### Most Discussed Topics
 
-- **Sales & Closing:** 103 mentions
-- **Pricing & Money:** 80 mentions
-- **AI & Automation:** 41 mentions
-- **Content Creation:** 27 mentions
-- **Marketing:** 14 mentions
-- **Mindset/Psychology:** 10 mentions
-- **Email Marketing:** 10 mentions
-- **Business Models:** 8 mentions
+- **AI & Automation:** 63 mentions
+- **Business & Entrepreneurship:** 41 mentions
+- **Sales & Marketing:** 30 mentions
+- **Money & Profit:** 10 mentions
+- **Tools & Systems:** 7 mentions
+- **Content Creation:** 6 mentions
+- **Clients & Offers:** 3 mentions
 
-### Business Models Mentioned
+### Key Insights
 
-- Digital Products/Courses: 11 mentions
-- Coaching/Mentorship: 4 mentions
-- Affiliate Marketing: 3 mentions
-- High-Ticket Sales: 2 mentions
-- Content Creator: 2 mentions
+#### The Most Profitable Side Hustle
+- Focus on AI-powered services and automation
+- Building systems that work without constant attention
+- Leveraging new AI tools for competitive advantage
 
-### Key Strategies
-
-1. Strong CTAs in every piece of content
-2. Building email lists for direct marketing
-3. Focus on high-ticket offers vs low-ticket volume
-4. Using AI tools for automation and scaling
-5. Short-form video content (Reels/TikTok/Shorts)
-6. Consistency over intensity
-7. Tracking metrics and data-driven decisions
-8. Mindset/psychology training
-
----
-
-## Key Insights
-
-### Alex Hormozi
-- Sell extremely expensive stuff to select few OR super cheap to everyone
-- The middle is where businesses die
-- High-ticket offers = faster path to revenue goals
-
-### Kelsey Rodriguez
-- CTA template: 'If you've been [blank], and you want [blank], then you should [blank]'
-- Added 1,500 people to email list in one month through explicit CTAs
-- Sales is a learnable skill like Photoshop or color theory
-
-### Odetta Rockhead
-- Personalized jewelry: $6.10 cost, $15.50 sale price = $8-9 profit
-- 100 sales/day = $21K/month potential
-- People don't buy jewelry, they buy meaning
-
-### Andres Contreras-Grassi
-- Made $220K profit at 18 through high-ticket sales
-- Simple process + focus + repetition = results
-- Generic advice ('say agreement not contract') doesn't make money
-
-### Automation Rebellion
-- AI tools for content creation, automation, passive income
-- 10 specific tools mentioned for different business functions
-- Systems that create real income while you sleep
+#### AI Super Agent Challenge
+- Using AI agents to build complete businesses
+- $1000 challenge demonstrates viability
+- Genspark platform for AI-powered business creation
 
 ---
 
 ## Recommendations
 
-### For Creatives Wanting $10K/month:
-1. Raise prices (don't compete in the middle)
-2. Add CTAs to EVERY piece of content
-3. Build an email list immediately
-4. Track which content drives sales
-5. Get comfortable with sales (it's a learnable skill)
+### For Side Hustle Seekers:
+1. Explore AI-powered service businesses
+2. Focus on automation from day one
+3. Use AI tools to reduce manual work
+4. Build systems, not just services
 
-### For Aspiring Entrepreneurs:
-1. Consider high-ticket offers ($2K-$10K+)
-2. Use short-form video for traffic
-3. Implement simple sales process
-4. Focus on one channel/platform initially
-5. Consistency beats intensity
+### For Entrepreneurs:
+1. AI agents can handle significant business operations
+2. $1000 is enough to validate AI-powered business ideas
+3. Focus on tools that provide ongoing value
 
 ---
 
 ## Data Source
 - **Transcript Skill:** youtube-transcript (workspace skill)
 - **Extraction Method:** youtube_transcript_api Python library
-- **All 5 videos successfully transcribed:** Yes
-- **Total transcript data:** 2548 segments, 94215 characters
+- **Playlist URL:** https://www.youtube.com/playlist?list=PLSs_yQDkLWsI
+- **Total transcript data:** 757 segments, 42665 characters
 
 ---
 
 *Analysis generated with full transcript extraction for accuracy*
-*Generated: 2026-06-12 12:05 PDT*
+*Generated: 2026-06-12 13:35 PDT*
