@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30 09:37:09",
+  "generated": "2026-08-30 11:25:55",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -87,14 +87,169 @@
       "title": "Daily YouTube Strategy Research — 2026-07-25"
     },
     {
+      "file": "daily-research_2026-07-28.html",
+      "date": "2026-07-28",
+      "title": "Daily YouTube Strategy Research — July 28, 2026"
+    },
+    {
+      "file": "daily-research_2026-07-29.html",
+      "date": "2026-07-29",
+      "title": "Daily YouTube Strategy Research — 2026-07-29"
+    },
+    {
+      "file": "daily-research_2026-07-30.html",
+      "date": "2026-07-30",
+      "title": "Daily YouTube Strategy Research — 2026-07-30"
+    },
+    {
+      "file": "daily-research_2026-07-31.html",
+      "date": "2026-07-31",
+      "title": "Daily YouTube Strategy Research — 2026-07-31"
+    },
+    {
+      "file": "daily-research_2026-08-01.html",
+      "date": "2026-08-01",
+      "title": "Daily YouTube Strategy Research — 2026-08-01"
+    },
+    {
+      "file": "daily-research_2026-08-02.html",
+      "date": "2026-08-02",
+      "title": "Daily YouTube Strategy Research — 2026-08-02"
+    },
+    {
+      "file": "daily-research_2026-08-03.html",
+      "date": "2026-08-03",
+      "title": "Daily YouTube Strategy Research — 2026-08-03"
+    },
+    {
+      "file": "daily-research_2026-08-04.html",
+      "date": "2026-08-04",
+      "title": "Daily YouTube Strategy Research — 2026-08-04"
+    },
+    {
       "file": "daily-research_2026-08-05.html",
       "date": "2026-08-05",
       "title": "Daily YouTube Strategy Research — 2026-08-05"
     },
     {
+      "file": "daily-research_2026-08-07.html",
+      "date": "2026-08-07",
+      "title": "Daily YouTube Strategy Research — 2026-08-07"
+    },
+    {
+      "file": "daily-research_2026-08-08.html",
+      "date": "2026-08-08",
+      "title": "Daily YouTube Strategy Research — 2026-08-08"
+    },
+    {
+      "file": "daily-research_2026-08-09.html",
+      "date": "2026-08-09",
+      "title": "Daily YouTube Strategy Research — 2026-08-09"
+    },
+    {
+      "file": "daily-research_2026-08-10.html",
+      "date": "2026-08-10",
+      "title": "Daily YouTube Strategy Research ΓÇö 2026-08-10"
+    },
+    {
+      "file": "daily-research_2026-08-11.html",
+      "date": "2026-08-11",
+      "title": "Daily YouTube Strategy Research — August 11, 2026"
+    },
+    {
+      "file": "daily-research_2026-08-12.html",
+      "date": "2026-08-12",
+      "title": "Daily YouTube Strategy Research — 2026-08-12"
+    },
+    {
+      "file": "daily-research_2026-08-13.html",
+      "date": "2026-08-13",
+      "title": "Daily YouTube Strategy Research — 2026-08-13"
+    },
+    {
+      "file": "daily-research_2026-08-14.html",
+      "date": "2026-08-14",
+      "title": "Daily YouTube Strategy Research — 2026-08-14"
+    },
+    {
+      "file": "daily-research_2026-08-15.html",
+      "date": "2026-08-15",
+      "title": "Daily YouTube Strategy Research — August 15, 2026"
+    },
+    {
+      "file": "daily-research_2026-08-16.html",
+      "date": "2026-08-16",
+      "title": "Daily YouTube Strategy Research - August 16, 2026"
+    },
+    {
+      "file": "daily-research_2026-08-17.html",
+      "date": "2026-08-17",
+      "title": "Daily YouTube Strategy Research - August 17, 2026"
+    },
+    {
+      "file": "daily-research_2026-08-18.html",
+      "date": "2026-08-18",
+      "title": "Daily YouTube Strategy Research — 2026-08-18"
+    },
+    {
+      "file": "daily-research_2026-08-19.html",
+      "date": "2026-08-19",
+      "title": "Daily YouTube Strategy Research - 2026-08-19"
+    },
+    {
+      "file": "daily-research_2026-08-20.html",
+      "date": "2026-08-20",
+      "title": "Daily YouTube Strategy Research — 2026-08-20"
+    },
+    {
+      "file": "daily-research_2026-08-21.html",
+      "date": "2026-08-21",
+      "title": "Daily YouTube Strategy Research — 2026-08-21"
+    },
+    {
+      "file": "daily-research_2026-08-22.html",
+      "date": "2026-08-22",
+      "title": "Daily YouTube Strategy Research — 2026-08-22"
+    },
+    {
+      "file": "daily-research_2026-08-23.html",
+      "date": "2026-08-23",
+      "title": "Daily YouTube Strategy Research — 2026-08-23"
+    },
+    {
+      "file": "daily-research_2026-08-24.html",
+      "date": "2026-08-24",
+      "title": "Daily YouTube Strategy Research - 2026-08-24"
+    },
+    {
+      "file": "daily-research_2026-08-25.html",
+      "date": "2026-08-25",
+      "title": "Daily YouTube Strategy Research — 2026-08-25"
+    },
+    {
+      "file": "daily-research_2026-08-26.html",
+      "date": "2026-08-26",
+      "title": "Daily YouTube Strategy Research — 2026-08-26"
+    },
+    {
+      "file": "daily-research_2026-08-27.html",
+      "date": "2026-08-27",
+      "title": "Daily YouTube Strategy Research — 2026-08-27"
+    },
+    {
+      "file": "daily-research_2026-08-28.html",
+      "date": "2026-08-28",
+      "title": "Daily YouTube Strategy Research ΓÇö 2026-08-28"
+    },
+    {
       "file": "playlist-research_2026-08-28.html",
       "date": "2026-08-28",
       "title": "Playlist Research ΓÇö 2026-08-28"
+    },
+    {
+      "file": "daily-research_2026-08-29.html",
+      "date": "2026-08-29",
+      "title": "Daily YouTube Strategy Research — 2026-08-29"
     },
     {
       "file": "daily-research_2026-08-30.html",

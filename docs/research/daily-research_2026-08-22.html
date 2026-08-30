@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-08-22</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-08-22</h1>
+
+<p><strong>Focus:</strong> Businesses that can be AUTOMATED · <strong>Source:</strong> 5 fresh YouTube videos on making $2,000+/month online</p>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td></tr>
+<tr><td>1</td><td>How This &quot;BORING&quot; Website Makes $35,000/Month!</td><td>Niche Pursuits</td><td>395,049</td><td>8:28</td></tr>
+<tr><td>2</td><td>Best Online Business to Make $10k+/month In 2026 (Beginner Friendly)</td><td>Iman Gadzhi</td><td>374,674</td><td>44:56</td></tr>
+<tr><td>3</td><td>7 Businesses That Make Money While You Sleep</td><td>Harry&#x27;s Stealth Wealth</td><td>160,668</td><td>14:33</td></tr>
+<tr><td>4</td><td>This Online Business Model Generates Up to $35,000/Month (Here&#x27;s How It Works)</td><td>Odetta Rockhead</td><td>15,768</td><td>12:56</td></tr>
+<tr><td>5</td><td>How I Use AI to Earn $10k+ Per Month (Passive Income 2026)</td><td>Noelle Randall</td><td>5,076</td><td>7:53</td></tr>
+</tbody></table>
+<p>*Note: Videos 1, 2, and 5 are recurring from yesterday&#x27;s pull (search results are sticky); analysis refreshed, with emphasis on the new angles. Videos 3 and 4 are new today.*</p>
+
+<h2> Strategy Analysis</h2>
+
+<h3>1. &quot;Boring&quot; Utility Websites — Programmatic SEO + Ads/Freemium (Niche Pursuits)</h3>
+
+<p><strong>Business model:</strong> Build free utility/tool websites that solve one mundane task (unit conversions, typing tests, PDF tools, spreadsheet templates), pull massive Google organic traffic, and monetize passively. Case studies: unitconverter.net (~4.5M visits/mo → ~$35K/mo display ads), chartsheets.com (templates $10–$170, up to $40K/mo), typingtest.com (~3.6M visits/mo at 8.05 pages/visit → ~$44K/mo ads), smallpdf.com (57M visits/mo → $12.5M–$17.5M/yr on $12/mo freemium subs).</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- Display ads at ~$5 RPM on high page-view volume — pure passive once ranked</p>
+<p>- One-time digital product sales (spreadsheet/template bundles)</p>
+<p>- Freemium subscription ($12/mo) — the highest-ceiling layer (smallpdf path)</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Pick a boring, high-search-volume utility niche (converters, calculators, testers, generators).</p>
+<p>2. Build the free tool as a lightweight site; generate dozens–hundreds of programmatic landing pages targeting &quot;X to Y&quot; head terms.</p>
+<p>3. Win SEO with utility intent — these queries have weak content competition and no backlink arms race.</p>
+<p>4. Monetize with display ads first (Ezoic → Mediavine at scale), then layer templates or a paid tier.</p>
+<p>5. Hold and compound — rankings are durable; the asset appreciates.</p>
+
+<p><strong>Automation potential: 8/10</strong> — The tool IS the business and serves users 24/7 with zero marginal labor. Pages are programmatically generated; AI can mass-produce the variants. Only human bottlenecks: initial build and the 6–12 month SEO maturation window.</p>
+
+<p><strong>Quality score: 8/10</strong> — SimilarWeb traffic data on screen, conservative $5 RPM math, real named verifiable sites. Best-evidenced video in the batch (again).</p>
+
+<p><strong>Verdict: <span class="verdict-good">✅</span> Worth Trying</strong> — Cheapest, most durable, most automatable model in today&#x27;s batch. Second consecutive day it tops the ranking.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Keyword-research 3 boring-utility niches with 100K+ monthly US searches and weak SERPs.</p>
+<p>- Ship a tool + 200–500 programmatic long-tail pages via AI; host on cheap static infrastructure.</p>
+<p>- Layer ad network at traffic thresholds; add template upsell or paid tier once demand proves out.</p>
+
+<hr>
+
+<h3>2. Growth Marketing — AI-Built Digital Products for Micro-Creators (Iman Gadzhi)</h3>
+
+<p><strong>Business model:</strong> Partner with micro-creators (10K–100K followers) who have audience trust but no product. Use AI to audit their content, build a digital product (course/ebook/coaching offer), and launch via a 14-day Instagram story sequence. You keep a revenue split. Framed around the &quot;creator gold rush&quot;: 50M creators, ~$250B creator economy heading to $500B by 2027; 99% of micro-creators don&#x27;t monetize.</p>
+
+<p><strong>Revenue model:</strong> 30% revenue share per launch (creator keeps 70% to make it a no-brainer yes). Typical 50–100K-follower launch: 100–250 sales × $100–$200 = $10K–$50K revenue → $3K–$15K your cut. Optional setup fees ($3K–$6K reported). Monthly relaunches + stacking 1–2 new creators/month compounds toward $50K/mo claims.</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Build a list of 10–20 educational micro-creators (fitness, finance, parenting, hobbies) with engaged niche audiences.</p>
+<p>2. Generate a free &quot;monetization game plan&quot; per creator: content audit, pain-point analysis, 3 product suggestions with pricing, projected revenue, and a 14-day launch plan.</p>
+<p>3. Send the plan instead of a pitch — value-first outreach; the demo shows the AI generating this from just an Instagram handle.</p>
+<p>4. On a yes: one call to pick the product and lock a 70/30 split in the creator&#x27;s favor.</p>
+<p>5. AI-build the product (outline, modules, worksheets, offer copy) — the over-the-shoulder demo builds a full 5-week coaching program with 15 worksheets in minutes.</p>
+<p>6. Hand the creator an AI-generated 14-day story launch sequence (warm-up days 1–3 → value days 4–9 → open cart days 10–14).</p>
+<p>7. Track sales on a Whop-style marketplace that handles checkout and automatic split payouts; relaunch monthly.</p>
+
+<p><strong>Automation potential: 7/10</strong> — Product creation, game plans, and all launch copy are ~90% AI-automated (proven in the demo). Remaining human work: outreach, relationship management, deal negotiation. Systemizable with a CRM + outreach sequences.</p>
+
+<p><strong>Quality score: 5/10</strong> — The model is genuinely clever (borrowed audience, performance pricing, AI fulfillment), and the tooling demo is real. BUT the entire 45 minutes funnels into consulting.com&#x27;s UpLevel program; testimonials are cherry-picked; &quot;just click buttons&quot; oversells ease. The underlying arbitrage (most creators never productize) is nonetheless real.</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong> — Steal the playbook (value-first game-plan outreach + AI product build + rev-share launch via Whop); skip the $25K program. Replicable with generic Claude/GPT prompt chains at ~$0 cost.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Build the game-plan generator: transcribe a creator&#x27;s top 20 posts (AI), extract recurring pain points, propose 3 products with price/revenue math and a launch calendar.</p>
+<p>- Batch 10 value-first DMs/week; open at 70/30 in the creator&#x27;s favor.</p>
+<p>- Use Whop for checkout + automatic split payouts; keep tooling costs near zero with general-purpose LLMs.</p>
+
+<hr>
+
+<h3>3. &quot;Sleep Income&quot; Systems Portfolio — ATMs to Self-Storage (Harry&#x27;s Stealth Wealth)</h3>
+
+<p><strong>Business model:</strong> A narrative tour of 7 semi-passive businesses built on the E-Myth &quot;systems principle&quot; (business runs without the owner present): (1) ATMs — $3K/machine, $2.50–$3.50/withdrawal, ~300 txns/mo → $300–$1,500/mo each, 30 min/wk; (2) Vending — $1.5K–$6K/machine, $300–$600/mo each, 1–2 hr/wk (CNBC case: $300K/yr on 4 hr/wk); (3) Print on demand — $0–500 startup, designs only, 3–5 hr/wk; (4) Digital products/courses — $0–5K startup, $1K–$7K/mo, 2–5 hr/wk after build; (5) Laundromats — $200K–$600K capex, $5K–$30K/mo revenue, 4–15 hr/wk with card systems + remote monitoring; (6) Self-storage — $1.5M+ capex, &lt;2 hr/wk, online rental + auto-payments + e-gates, 14-month average tenancy; (7) Airbnb rental arbitrage — no ownership, rent-with-permission + furnish ($5K–$15K), $1K–$3K/unit/mo, run on auto-booking, auto-messaging, rotating cleaners, dynamic pricing software.</p>
+
+<p><strong>Revenue model:</strong> Per-asset semi-passive cash flow: transaction fees (ATM), product margins (vending/POD), infinite-resale digital margins, rent spreads (laundromat/storage/STR arbitrage). Stack assets and reinvest: ATM → vending → digital product → … → self-storage.</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Pick ONE based on capital available today — the video&#x27;s core lesson: &quot;the best business is the one you can actually start this week.&quot;</p>
+<p>2. Low-capital entry: digital product (build once, sell forever) or POD (zero inventory).</p>
+<p>3. Mid-capital: ATM/vending route — negotiate placement deals at gas stations, gyms, offices.</p>
+<p>4. Software-automated STR arbitrage: landlord&#x27;s written permission → furnish → dynamic pricing + automated guest messaging + cleaning rotation.</p>
+<p>5. Reinvest cash flow up the capital ladder toward storage/laundromat-class assets.</p>
+
+<p><strong>Automation potential: 6/10</strong> — The portfolio&#x27;s soul is automation, but it&#x27;s uneven: digital products 8/10 and STR arbitrage ~7/10 (the full software stack is proven), self-storage 8/10 but $1.5M+ entry, while ATMs/vending (4–5/10) still require physical routes and location deals. Ranked as a whole it lands mid-pack.</p>
+
+<p><strong>Quality score: 6/10</strong> — Real unit economics with honest ranges (Harry&#x27;s first ATM nets $317/mo — refreshingly un-hyped), good conceptual framing. But several stats are soft (the &quot;98% success rate for automated businesses&quot; claim, POD margins stated at 70–90% which is wildly optimistic vs. reality), and it&#x27;s a story-driven retention video with no verification of the CNBC case.</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong> — As a menu, worth mining: take digital products + the STR-arbitrage software stack; skip the physical-route businesses unless you want a local operator job. The &quot;start with the possible, not the perfect&quot; lesson is the keeper.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Digital product: package an existing skill into a template/ebook this month (build once, zero fulfillment).</p>
+<p>- STR arbitrage: if pursuing, assemble the full automation stack from day one (dynamic pricing, auto-messaging, cleaner rotation) — the model only works systemized.</p>
+<p>- If physical: model placement foot-traffic economics before buying any machine.</p>
+
+<hr>
+
+<h3>4. Personalized Jewelry Dropshipping — Emotional Gifts Niche (Odetta Rockhead)</h3>
+
+<p><strong>Business model:</strong> Classic dropshipping of personalized name necklaces: source on Alibaba (~$2.99 base, ~$6.10 with engraving + shipping), sell at ~$14–15.50 on an AI-built Wix store with a .store domain, auto-forward orders to the supplier who ships direct. Case study &quot;Anna&quot;: 303K units over 3 years (~8,400 sales/mo), ~$118K/mo revenue, ~$35K/mo profit at a conservative 30% margin.</p>
+
+<p><strong>Revenue model:</strong> ~$7–$8 gross profit per sale. Ladder: 10 sales/day ≈ $2K+/mo, 50/day ≈ $10.5K/mo, 100/day ≈ $21K/mo. Customer pays shipping separately. Marketing engine: emotional buying angles (Mother&#x27;s Day, memorials, birthdays) via short-form video, influencer seeding, seasonal campaigns — &quot;people don&#x27;t buy jewelry, they buy meaning.&quot;</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Source verified personalized-jewelry suppliers on Alibaba (check order volume history and reviews).</p>
+<p>2. Register a .store domain; build the store with Wix AI (auto-generates layout + product descriptions, no code).</p>
+<p>3. List variations (names, couples, family); price at $14–$20 with shipping charged separately.</p>
+<p>4. Set order auto-forwarding to the supplier for direct fulfillment — no inventory, pay only after the customer pays.</p>
+<p>5. Run emotional-angle short-form ads and seasonal campaigns; scale winners.</p>
+
+<p><strong>Automation potential: 5/10</strong> — Fulfillment is fully automated (supplier ships direct) and the store build is AI-done. But the money engine — paid ads/creative testing — is a continuous treadmill requiring spend and iteration, plus customer service and supplier coordination. Semi-passive at best; margins depend on ad efficiency.</p>
+
+<p><strong>Quality score: 5/10</strong> — Transparent unit economics and a real (screen-shown) case store, with honest &quot;not guaranteed&quot; framing. Deductions: it&#x27;s a .store/Wix sponsorship (promo code throughout), the niche is a notoriously saturated dropship target (name necklaces have been hammered since 2019), the &quot;$118K/mo&quot; store&#x27;s ad spend is never disclosed — profit math ignores customer acquisition cost entirely, and one math slip (10 sales/day quoted as &quot;$200/mo&quot;).</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong> — The mechanics work and the startup cost is genuinely near-zero, but the model&#x27;s profitability lives or dies on paid-ads skill in a red-ocean niche. Only pursue with a clear creative-testing edge and CAC discipline.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Before anything: model CAC vs. $7–$8 unit profit — at typical $10–$20 jewelry CACs the math often fails.</p>
+<p>- If proceeding: 3 emotional-angle creatives (memorial, Mother&#x27;s Day, new mom) tested at $10–$20/day before scaling.</p>
+<p>- Auto-forward orders from day one; keep supplier redundancy (2 verified sources).</p>
+
+<hr>
+
+<h3>5. AI-Automated Real Estate Stack + Digital Products (Noelle Randall)</h3>
+
+<p><strong>Business model:</strong> Real estate investing with AI doing &quot;80% of the work&quot;: AI chatbots qualify site visitors and book them into coaches&#x27; calendars, a year of social content batch-written in 30 minutes, predictive-analytics tools (DealMachine) surface distressed/off-market sellers from liens/missed payments/life-event data, and AI drafts ebooks/courses from existing expertise.</p>
+
+<p><strong>Revenue model:</strong> Real estate deal spreads (wholesale/subject-to/owner-finance), coaching, bootcamp tickets (early-bird funnels), plus the video&#x27;s own monetization (DealMachine affiliate, bootcamp sales).</p>
+
+<p><strong>Steps to replicate (the automatable parts):</strong></p>
+<p>1. Deploy a site chatbot that qualifies (selling? buying?) and auto-books calendar slots.</p>
+<p>2. Batch-generate an annual social content calendar in one sitting.</p>
+<p>3. Use predictive lists to target motivated sellers before competitors find them.</p>
+<p>4. Save her prompt patterns — e.g., &quot;Act as a real estate investment analyst… analyze this property data for subject-to/owner-finance potential, list top 3 seller objections, write an empathetic 3-sentence script.&quot;</p>
+
+<p><strong>Automation potential: 6/10</strong> — The lead-gen/content/deal-sourcing stack is genuinely automatable. But the core business — negotiating and closing real estate deals — demands capital, calls, and human judgment. AI-assisted, not AI-run.</p>
+
+<p><strong>Quality score: 4/10</strong> — Real operator with a sizeable business, and the prompts are transferable. But the video is primarily a funnel for her bootcamp and a DealMachine affiliate; &quot;multi-million dollar empire&quot; claims unaudited.</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Skip</strong> (unless already in real estate — then steal the chatbot + predictive-list workflow wholesale).</p>
+
+<p><strong>Key action items:</strong> Site chatbot with calendar booking; annual AI content batch; the seller-objection script prompt is worth keeping.</p>
+
+<h2> Final Ranking (by automation potential)</h2>
+
+<table class="data-table"><thead><tr><th>Rank</th><th>Strategy</th><th>Automation</th><th>Quality</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>------</td><td>----------</td><td>------------</td><td>---------</td><td>---------</td></tr>
+<tr><td>🥇 1</td><td>Boring utility websites (programmatic SEO + ads/freemium)</td><td>8/10</td><td>8/10</td><td>✅ Worth Trying</td></tr>
+<tr><td>🥈 2</td><td>Growth marketing — AI-built products for micro-creators (rev share)</td><td>7/10</td><td>5/10</td><td>⚠️ Mixed</td></tr>
+<tr><td>🥉 3</td><td>Sleep-income portfolio (digital products 8/10 &amp; STR-arb stack 7/10 inside)</td><td>6/10</td><td>6/10</td><td>⚠️ Mixed</td></tr>
+<tr><td>4</td><td>AI real estate lead-gen stack (chatbots, predictive deal-finding)</td><td>6/10</td><td>4/10</td><td>⚠️ Skip</td></tr>
+<tr><td>5</td><td>Personalized jewelry dropshipping (emotional gifts niche)</td><td>5/10</td><td>5/10</td><td>⚠️ Mixed</td></tr>
+</tbody></table>
+<h2> Key Takeaways</h2>
+
+<p>1. <strong>Boring utilities win again (day 2).</strong> The programmatic tool-site model is the only strategy in the batch with a one-time build, near-zero marginal labor, AND durable traffic. Smallpdf&#x27;s arc (free tool → 57M visits → $12+/mo freemium) is the endgame template: start with ads, graduate to subscriptions.</p>
+<p>2. <strong>The most copyable system today is the sleep-income ladder&#x27;s digital rungs.</strong> From video 3: digital products (8/10 automation, build-once) and the STR-arbitrage software stack (pricing, messaging, cleaning — all automatable) are the accessible high-automation plays; the physical rungs (ATM/vending) are jobs with extra steps unless you build a routed portfolio.</p>
+<p>3. <strong>Rev-share beats ownership for zero-capital automation.</strong> The growth-marketing model&#x27;s genius is pricing: you only earn when the creator earns, which makes the yes easy and the risk zero. Everything except negotiation is AI-automatable with commodity LLMs — no $25K program required.</p>
+<p>4. <strong>Dropshipping&#x27;s automation is real but the moat isn&#x27;t.</strong> Jewelry video shows fully automated fulfillment + AI store build, yet the profit engine (paid ads) is a treadmill, the niche is saturated, and the case study&#x27;s ad spend is invisible. Automation score ≠ business quality: check whether the *hard part* is what&#x27;s automated.</p>
+<p>5. <strong>Recurring-result alert:</strong> 3 of 5 videos repeated from yesterday — the search corpus is sticky, so treat multi-day repeats as signal (these are the entrenched plays being marketed hardest, which often means the truly unboring opportunities are quieter).</p>
+<p>6. <strong>Concrete next steps:</strong> (a) pick the winning utility niche and ship the 200-page programmatic site this week; (b) batch 5 AI game-plans for micro-creators as experiment #2; (c) if physical/STR appeals, spec the full automation stack before signing anything.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-08-22</p>
+    </div>
+</body>
+</html>

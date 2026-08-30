@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-08-14</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-08-14</h1>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Duration</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>----------</td></tr>
+<tr><td>1</td><td>7 Passive Income Ideas - How I Make $2,000+ Per Day!</td><td>Greg Gottfried</td><td>1,045,123</td><td>15m41s</td></tr>
+<tr><td>2</td><td>How This &quot;BORING&quot; Website Makes $35,000/Month!</td><td>Niche Pursuits</td><td>392,206</td><td>8m28s</td></tr>
+<tr><td>3</td><td>Best Online Business to Make $10k+/month In 2026 (Beginner Friendly)</td><td>Iman Gadzhi</td><td>368,549</td><td>44m56s</td></tr>
+<tr><td>4</td><td>7 Businesses That Make Money While You Sleep</td><td>Harry&#x27;s Stealth Wealth</td><td>160,102</td><td>14m33s</td></tr>
+<tr><td>5</td><td>How I Make $10,000 a Month - 2026 EASY Income Method</td><td>Nataleh Nicole</td><td>2,537</td><td>10m37s</td></tr>
+</tbody></table>
+<hr>
+
+<h2> Strategy Analysis</h2>
+
+<h3>Video 1: &quot;7 Passive Income Ideas - How I Make $2,000+ Per Day!&quot; — Greg Gottfried</h3>
+
+<p><strong>Business Model:</strong> Multi-stream passive income portfolio — combines low-barrier digital businesses (Amazon KDP, Amazon Merch on Demand), content monetization (YouTube AdSense, affiliate marketing), and digital products (downloads, online courses).</p>
+
+<p><strong>Revenue Model:</strong></p>
+<p>- Amazon KDP — sell low/no-content books (lined journals, word search puzzles); Amazon prints on demand, you collect royalties</p>
+<p>- Amazon Merch on Demand — upload t-shirt designs; Amazon prints/ships, you earn per sale</p>
+<p>- Affiliate marketing — promote products via blog or YouTube; earn commissions on referrals</p>
+<p>- YouTube AdSense — educational content earns higher CPM; videos generate ad revenue for years</p>
+<p>- Digital downloads — sell templates, spreadsheets, planners on Etsy; instant automated delivery</p>
+<p>- Online courses — sell on Udemy/Skillshare; earn per enrollment</p>
+<p>- High-yield savings — 3.8-4% APY on cash reserves</p>
+
+<p><strong>Steps to Replicate:</strong></p>
+<p>1. Start with Amazon KDP: create word search puzzle books or low-content journals using free tools</p>
+<p>2. Upload 10-20 designs to Amazon Merch on Demand targeting underserved niches</p>
+<p>3. Launch a YouTube channel focused on educational content in a specific niche</p>
+<p>4. Embed affiliate links in video descriptions and blog posts</p>
+<p>5. Create 1-2 digital downloads (templates, spreadsheets) and list on Etsy</p>
+<p>6. Once audience is built, package knowledge into an online course</p>
+
+<p><strong>Automation Potential: 7/10</strong></p>
+<p>- KDP and Merch are highly automated once uploaded (Amazon handles everything)</p>
+<p>- YouTube and affiliate marketing require ongoing content creation</p>
+<p>- Digital downloads are fully automated after creation</p>
+<p>- Courses on marketplaces (Udemy) are passive but low margin</p>
+<p>- Overall: a portfolio approach mixes high-automation and medium-automation streams</p>
+
+<p><strong>Quality Score: 7/10</strong></p>
+<p>- Creator shares real income figures ($800K passive income last year)</p>
+<p>- Multiple proven business models with years of track record</p>
+<p>- Some models (KDP, Merch) have increased competition since 2018</p>
+<p>- Advice is practical and includes specific niche recommendations (word search books)</p>
+
+<p><strong>Verdict: <span class="verdict-good">✅</span> Worth Trying</strong></p>
+<p>- Excellent entry point for beginners; KDP and Merch require $0 startup</p>
+<p>- Portfolio approach diversifies risk</p>
+<p>- Best suited for someone willing to build multiple small automated assets over time</p>
+
+<p><strong>Key Action Items:</strong></p>
+<p>- Use free tools (Canva, Book Bolt) to create 5-10 KDP word search books</p>
+<p>- Research underserved Merch niches with low competition using Merch Informer</p>
+<p>- Set up Etsy shop with 2-3 digital download templates in a niche you understand</p>
+
+<hr>
+
+<h3>Video 2: &quot;How This BORING Website Makes $35,000/Month!&quot; — Niche Pursuits</h3>
+
+<p><strong>Business Model:</strong> Niche utility/tool websites — build free online tools for mundane tasks (unit converters, typing tests, PDF converters) and monetize via display ads or freemium subscriptions.</p>
+
+<p><strong>Revenue Model:</strong></p>
+<p>- Display ads (Google AdSense / Mediavine) — RPM ~$5 per 1,000 pageviews</p>
+<p>- Freemium subscriptions for advanced features (e.g., Smallpdf at $12/mo)</p>
+<p>- Examples cited: unitconverter.net (~$35K/mo, 4.5M visitors), chartsheets.com (~$40K/mo selling spreadsheet templates), typingtest.com (~$44K/mo, 3.6M visitors), smallpdf.com (~$17.5M/yr, 57M visitors)</p>
+
+<p><strong>Steps to Replicate:</strong></p>
+<p>1. Identify a mundane, high-search-volume utility need (conversions, calculators, testers)</p>
+<p>2. Build a clean, fast website with free tools (can use no-code or AI-generated tools)</p>
+<p>3. SEO-optimize for hundreds of long-tail keywords in the niche</p>
+<p>4. Monetize with display ads once traffic reaches threshold</p>
+<p>5. Optionally add premium subscription tier for power users</p>
+
+<p><strong>Automation Potential: 9/10</strong></p>
+<p>- Once built, these sites run 24/7 with zero manual intervention</p>
+<p>- Traffic is organic/SEO — no ongoing ad spend required</p>
+<p>- Tools can be generated programmatically (especially calculators/converters)</p>
+<p>- Only maintenance is occasional content/SEO updates and server costs</p>
+
+<p><strong>Quality Score: 8/10</strong></p>
+<p>- Real websites with verified SimilarWeb traffic data</p>
+<p>- Conservative RPM estimates used</p>
+<p>- Multiple examples at different revenue levels</p>
+<p>- Highly credible — the model is proven and well-documented</p>
+
+<p><strong>Verdict: <span class="verdict-good">✅</span> Worth Trying</strong></p>
+<p>- Low startup cost, high automation, proven revenue. The best candidate for full systemization.</p>
+
+<p><strong>Key Action Items:</strong></p>
+<p>- Research high-volume utility keywords (medical calculators, financial calculators, specialized converters)</p>
+<p>- Build MVP tool site with 10-20 tools using AI-generated code</p>
+<p>- SEO-optimize for long-tail terms</p>
+<p>- Apply for AdSense / Mediavine once traffic threshold met</p>
+
+<hr>
+
+<h3>Video 3: &quot;Best Online Business to Make $10k+/month In 2026&quot; — Iman Gadzhi</h3>
+
+<p><strong>Business Model:</strong> Growth Marketing — partner with micro-creators (10K-100K followers) who have audiences but no digital products. Use AI tools to build digital products for them, then take a revenue split (typically 30%).</p>
+
+<p><strong>Revenue Model:</strong></p>
+<p>- Revenue share: 20-30% of digital product sales (courses, templates, coaching programs)</p>
+<p>- Upfront setup fees: $3,000-$6,000 per creator partnership</p>
+<p>- Example math: creator with 50K followers sells 100-250 units at $100-200 = $10K-50K revenue; your 30% cut = $3K-15K per launch</p>
+<p>- Ongoing monthly relaunches create recurring income from same product</p>
+
+<p><strong>Steps to Replicate:</strong></p>
+<p>1. Identify micro-creators (10K-100K followers) in niche topics without digital products</p>
+<p>2. Use AI tool (Ghostwriter) to analyze their content and generate a &quot;monetization game plan&quot;</p>
+<p>3. Send personalized plan showing exactly how they can make $10K-50K with a tailored product</p>
+<p>4. Negotiate 70/30 or 60/40 revenue split (creator keeps majority)</p>
+<p>5. Use AI tool (Synthesize) to build the digital product (course, ebook, coaching offer)</p>
+<p>6. Use AI tool (Ghostwriter) to generate 14-day Instagram story launch sequence</p>
+<p>7. Creator promotes to their audience; you track sales and collect revenue share</p>
+
+<p><strong>Automation Potential: 6/10</strong></p>
+<p>- AI tools automate product creation and marketing asset generation</p>
+<p>- However, each partnership requires manual outreach, negotiation, and relationship management</p>
+<p>- Launch sequences are AI-generated but require coordination with creator</p>
+<p>- Scaling requires building a team or system for creator acquisition</p>
+<p>- The &quot;fulfillment&quot; is automated, but the &quot;sales&quot; (getting creators to say yes) is not</p>
+
+<p><strong>Quality Score: 6/10</strong></p>
+<p>- Creator has credible track record (co-owner of Whop, consulting.com)</p>
+<p>- Multiple student success stories shown (though unverified independently)</p>
+<p>- Heavy upsell to $25K+ consulting program undermines impartiality</p>
+<p>- The model itself is valid (agency/product partnerships), but the video is primarily a sales pitch</p>
+<p>- Realistic income potential is likely lower than portrayed for most beginners</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong></p>
+<p>- The underlying business model (creator partnerships + AI product creation) is solid</p>
+<p>- However, success depends heavily on sales skills and access to the AI tools promoted</p>
+<p>- High competition as more people enter this space</p>
+<p>- Best for someone with existing sales/consulting experience</p>
+
+<p><strong>Key Action Items:</strong></p>
+<p>- If pursuing: build a systematic outreach process using AI-generated monetization plans</p>
+<p>- Target underserved niches (sober living, specialized fitness, language teaching)</p>
+<p>- Consider building your own AI-assisted product creation workflow without expensive tools</p>
+<p>- Focus on creators with engaged audiences (high comment rates) over raw follower counts</p>
+
+<hr>
+
+<h3>Video 4: &quot;7 Businesses That Make Money While You Sleep&quot; — Harry&#x27;s Stealth Wealth</h3>
+
+<p><strong>Business Model:</strong> Physical and digital &quot;sleep income&quot; businesses — systems that generate revenue without owner presence. Covers a spectrum from low-capital entry points to high-capital scalable assets.</p>
+
+<p><strong>Revenue Model:</strong></p>
+<p>- ATM machines: $2.50-$3.50 per transaction, ~300 transactions/month = $300-$1,500/mo per machine</p>
+<p>- Vending machines: $300-$600/mo per machine; specialty items (protein bars, phone chargers) command premium</p>
+<p>- Print-on-demand: 70-90% margins; designs uploaded once, sold indefinitely</p>
+<p>- Digital products/courses: $1,000-$7,000/mo; create once, sell infinitely</p>
+<p>- Laundromats: $5,000-$30,000/mo; high capital ($200K-$600K) but highly systemized</p>
+<p>- Self-storage: highest revenue ceiling; $1.5M+ startup but &lt;2 hours/week with automation</p>
+<p>- Airbnb rental arbitrage: $1,000-$3,000/mo per unit; no property ownership required</p>
+
+<p><strong>Steps to Replicate:</strong></p>
+<p>1. Start with lowest capital option: print-on-demand ($0-$500) or digital products ($0-$5,000)</p>
+<p>2. Reinvest profits into next tier: ATM ($3,000) or vending machine ($1,500-$6,000)</p>
+<p>3. Build systems for each: automated booking, payment processing, remote monitoring</p>
+<p>4. Stack multiple units/machines to compound income</p>
+<p>5. Long-term goal: self-storage facility or laundromat (highest automation, highest capital)</p>
+
+<p><strong>Automation Potential: 8/10</strong></p>
+<p>- All seven businesses are explicitly designed to run without owner presence</p>
+<p>- Physical businesses (ATM, vending, laundromat, storage) use automated payment and monitoring</p>
+<p>- Digital businesses (POD, courses) are fully automated after creation</p>
+<p>- Airbnb arbitrage uses dynamic pricing software and automated messaging</p>
+<p>- The &quot;stacking&quot; approach builds systems upon systems</p>
+
+<p><strong>Quality Score: 7/10</strong></p>
+<p>- Narrative framing (Harry&#x27;s story) is illustrative, not a real case study</p>
+<p>- Statistics cited (98% success rate for automated businesses) lack sources</p>
+<p>- Revenue ranges are realistic based on industry data</p>
+<p>- Good conceptual framework (Gerber&#x27;s E-Myth systems principle)</p>
+<p>- Some options (self-storage at $1.5M) are not actionable for most beginners</p>
+
+<p><strong>Verdict: <span class="verdict-good">✅</span> Worth Trying</strong></p>
+<p>- Excellent framework for thinking about systemized income</p>
+<p>- Print-on-demand and digital products are immediately actionable</p>
+<p>- Physical options (ATM, vending) are proven but require local execution</p>
+<p>- Best treated as a roadmap: start small, reinvest, scale to bigger systems</p>
+
+<p><strong>Key Action Items:</strong></p>
+<p>- Launch 10-20 print-on-demand designs on Etsy/Amazon targeting specific niches</p>
+<p>- Create one digital product (template, spreadsheet, mini-course) this month</p>
+<p>- Research local ATM/vending placement opportunities if capital allows</p>
+<p>- Set up automated systems from day one (payment processing, email sequences)</p>
+
+<hr>
+
+<h3>Video 5: &quot;How I Make $10,000 a Month - 2026 EASY Income Method&quot; — Nataleh Nicole</h3>
+
+<p><strong>Business Model:</strong> Content-driven funnel business — use visibility (content) + conversion (funnel) + connection (trust) to sell products/services online.</p>
+
+<p><strong>Revenue Model:</strong></p>
+<p>- E-commerce (Shopify dropshipping/print-on-demand): $6,000-$9,000/mo when primary focus</p>
+<p>- Coaching programs and memberships: recurring revenue from established audience</p>
+<p>- Affiliate commissions: promoting tools like Build Your Store, Shopify</p>
+<p>- Digital products: templates, guides, courses sold through content funnel</p>
+
+<p><strong>Steps to Replicate:</strong></p>
+<p>1. Choose ONE platform and commit to weekly content (YouTube, TikTok, Instagram)</p>
+<p>2. Build a funnel: free guide/email list → automated email sequence → paid product</p>
+<p>3. Set up e-commerce store (Shopify + Build Your Store for automated product loading)</p>
+<p>4. Show up consistently on Instagram stories or email newsletter to build trust</p>
+<p>5. Answer audience questions in real time to drive sales</p>
+
+<p><strong>Automation Potential: 5/10</strong></p>
+<p>- Email sequences and e-commerce stores run automatically once set up</p>
+<p>- However, the model requires ongoing content creation and personal presence</p>
+<p>- &quot;Connection&quot; step explicitly requires showing up consistently</p>
+<p>- Trust-building is inherently manual and time-intensive</p>
+<p>- Low view count (2,537) suggests limited reach/validation of the model</p>
+
+<p><strong>Quality Score: 5/10</strong></p>
+<p>- Creator shares personal experience but lacks verifiable income proof</p>
+<p>- Heavy sponsorship/integration (Build Your Store, Shopify affiliate links)</p>
+<p>- Advice is generic (&quot;be visible, build trust, sell something&quot;)</p>
+<p>- Low production value and small audience raise credibility questions</p>
+<p>- The &quot;three systems&quot; framework is sound but execution details are sparse</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong></p>
+<p>- The funnel concept (content → email → product) is valid and proven</p>
+<p>- However, this is not a &quot;sleep income&quot; business — it requires ongoing hustle</p>
+<p>- Sponsored content dominates the recommendations</p>
+<p>- Better suited as a supplement to an automated business, not a standalone strategy</p>
+
+<p><strong>Key Action Items:</strong></p>
+<p>- If building a personal brand: set up automated email sequences and evergreen funnels</p>
+<p>- Use AI tools to batch-create content and reduce manual creation time</p>
+<p>- Focus on ONE platform and ONE product rather than spreading thin</p>
+<p>- Consider this as a traffic strategy FOR an automated business (e.g., drive traffic to a tool site)</p>
+
+<hr>
+
+<h2> Final Ranking</h2>
+
+<table class="data-table"><thead><tr><th>Rank</th><th>Strategy</th><th>Automation Score</th><th>Quality Score</th><th>Verdict</th><th>Startup Capital</th></tr></thead><tbody>
+<tr><td>------</td><td>----------</td><td>-----------------</td><td>---------------</td><td>---------</td><td>-----------------</td></tr>
+<tr><td>1</td><td>Boring Utility Websites (Video 2)</td><td>9/10</td><td>8/10</td><td>✅ Worth Trying</td><td>$0-$500</td></tr>
+<tr><td>2</td><td>Sleep Income Systems Stack (Video 4)</td><td>8/10</td><td>7/10</td><td>✅ Worth Trying</td><td>$0-$3,000</td></tr>
+<tr><td>3</td><td>Multi-Stream Passive Portfolio (Video 1)</td><td>7/10</td><td>7/10</td><td>✅ Worth Trying</td><td>$0-$500</td></tr>
+<tr><td>4</td><td>AI Growth Marketing (Video 3)</td><td>6/10</td><td>6/10</td><td>⚠️ Mixed</td><td>$0-$500</td></tr>
+<tr><td>5</td><td>Content Funnel Business (Video 5)</td><td>5/10</td><td>5/10</td><td>⚠️ Mixed</td><td>$0-$100</td></tr>
+</tbody></table>
+<hr>
+
+<h2> Key Takeaways</h2>
+
+<h3>🏆 Top Automatable Opportunity: Boring Utility Websites</h3>
+<p>The highest-automation, highest-quality strategy this week is building niche utility websites. A single calculator or converter site can generate $35K+/month with near-zero ongoing work. The key insight: &quot;boring&quot; problems (unit conversions, PDF tools, typing tests) have massive search volume and low competition. Build it once, rank it on Google, monetize with ads or freemium subscriptions.</p>
+
+<h3>🔄 The Systems Stack Approach</h3>
+<p>The most robust long-term strategy is stacking automated businesses: start with zero-capital digital products (POD, KDP, downloads), reinvest into physical systems (ATM, vending), and eventually scale to high-ticket automated assets (self-storage, laundromats). Each layer funds the next.</p>
+
+<h3>🤖 AI as an Automation Multiplier</h3>
+<p>Two videos (Gadzhi, Gottfried) highlighted AI tools for product creation and marketing. The real opportunity isn&#x27;t buying expensive courses — it&#x27;s building your own AI-assisted workflows for: generating KDP interiors, creating Merch designs, writing SEO content for tool sites, and automating email sequences.</p>
+
+<h3>⚡ Action Plan for Maximum Automation</h3>
+<p>1. <strong>This Week:</strong> Build a 10-tool utility website in an underserved niche using AI-generated code</p>
+<p>2. <strong>This Month:</strong> Upload 20 KDP word search books + 20 Merch designs to Amazon</p>
+<p>3. <strong>This Quarter:</strong> Launch one digital product (template/spreadsheet) on Etsy with automated delivery</p>
+<p>4. <strong>Ongoing:</strong> SEO-optimize all assets; reinvest profits into the next automated layer</p>
+
+<hr>
+
+<p>*Report generated: 2026-08-14 | Videos analyzed: 5 | Focus: Automated online businesses*</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-08-14</p>
+    </div>
+</body>
+</html>

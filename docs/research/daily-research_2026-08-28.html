@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research ΓÇö 2026-08-28</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">ΓåÉ All Reports</a>
+        <h1>Daily YouTube Strategy Research ΓÇö 2026-08-28</h1>
+
+<p><strong>Focus:</strong> Businesses that can be AUTOMATED ΓÇö <strong>Source:</strong> 5 fresh YouTube videos on making $2,000+/month online</p>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td></tr>
+<tr><td>1</td><td>7 Passive Income Ideas - How I Make $2,000+ Per Day!</td><td>Greg Gottfried</td><td>1,062,892</td><td>15:41</td></tr>
+<tr><td>2</td><td>Exactly how to go from $0-10k/month as a creative</td><td>Kelsey Rodriguez</td><td>221,858</td><td>17:22</td></tr>
+<tr><td>3</td><td>This Online Business Model Generates Up to $35,000/Month (Here&#x27;s How It Works)</td><td>Odetta Rockhead</td><td>15,779</td><td>12:56</td></tr>
+<tr><td>4</td><td>How I Use AI to Earn $10k+ Per Month (Passive Income 2026)</td><td>Noelle Randall</td><td>5,080</td><td>7:53</td></tr>
+<tr><td>5</td><td>How I Make $10,000 a Month - 2026 EASY Income Method</td><td>Nataleh Nicole</td><td>2,572</td><td>10:37</td></tr>
+</tbody></table>
+<p>*Note: YouTube blocked all transcript API fetches today (IP block / cloud-provider ban). Analysis uses video metadata plus independent summaries of each video&#x27;s content. Videos 1, 4, and 5 are recurring (search results remain sticky). Video 2 (Kelsey Rodriguez) is the rotation swap vs. yesterday ΓÇö it replaces Iman Gadzhi&#x27;s AI growth-marketing video and brings a personal-brand / high-ticket creative business model. Video 3 (Odetta Rockhead) returns from 08-26, replacing Serial Sales&#x27; high-ticket closing video.*</p>
+
+<h2> Strategy Analysis</h2>
+
+<h3>1. POD Publishing &amp; Merch ΓÇö Amazon KDP + Merch on Demand (Greg Gottfried)</h3>
+
+<p><strong>Business model:</strong> Create low-content physical products ΓÇö word search puzzle books via Amazon KDP and niche t-shirt designs via Amazon Merch on Demand. Upload print-ready files once; Amazon prints, ships, and handles customer service on every order forever. Creator claims $800K/year passive income across 7 streams; KDP account ran untouched for 1+ year while still earning (started 2018). Remaining streams (HYSA ~3.8ΓÇô4%, affiliate marketing via YouTube, AdSense on educational content, Etsy digital downloads, Udemy/Skillshare courses) are lower-leverage or capital-dependent.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- KDP: roughly $2ΓÇô$5 royalty per low-content book sale ΓÇö pure margin after one-time file creation</p>
+<p>- Merch on Demand: higher price point per shirt ΓåÆ bigger margins, but more competition; win via micro-niche research</p>
+<p>- Catalog compounds: each listing is a perpetual micro-annuity with zero marginal labor</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Programmatically generate word search puzzles (Python + niche word banks).</p>
+<p>2. Generate interiors + covers as print-ready PDF/PNG files.</p>
+<p>3. Upload to KDP; Amazon creates the listing and handles all fulfillment/support.</p>
+<p>4. For Merch: mine long-tail niches others haven&#x27;t found; upload simple designs.</p>
+<p>5. Compound catalog volume ΓÇö track BSR, double down on movers.</p>
+
+<p><strong>Automation potential: 8/10</strong> ΓÇö Puzzle generation, cover design, and niche research are fully scriptable; Amazon is the fulfillment robot. Only human tasks: niche validation and uploads.</p>
+
+<p><strong>Quality score: 7/10</strong> ΓÇö Long track record (since 2018), real on-screen examples, honest that HYSA requires existing capital, free tutorials instead of a paid course. The word-search tip is specific and contrarian (most sellers don&#x27;t know how to make the puzzles ΓåÆ thinner competition). Transcript unavailable today due to YouTube IP block, so scoring leans on multi-day prior analysis plus independent summaries that still match the same 7-stream list.</p>
+
+<p><strong>Verdict: Worth Trying</strong> ΓÇö Highest automation ├ù credibility ratio in today&#x27;s batch for the fifth consecutive day.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Script a word-search generator (Python + niche word banks); batch-produce 10ΓÇô20 books in week one.</p>
+<p>- Run Merch niche research on long-tail hobbies/professions/inside-jokes with weak competition.</p>
+<p>- Track BSR per title; double down on movers.</p>
+
+<hr>
+
+<h3>2. High-Ticket Creative Studio ΓÇö Raise Prices + Sell on Every Post (Kelsey Rodriguez) ΓÇö NEW TODAY</h3>
+
+<p><strong>Business model:</strong> Scale a personal creative practice (photography, design, content, freelance craft) from $0 to $10K/month by doing three things: (1) launch a higher-priced offer or raise prices so fewer sales hit the same revenue target; (2) get comfortable with sales ΓÇö put a clear CTA on every piece of content; (3) build supporting habits around audience growth, consistent offer promotion, and ongoing marketing learning. Draws from her own six-figure creative business and coaching other creatives. This is a personal-brand / service-studio model, not a product catalog.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- High-ticket creative services or luxury-positioned packages (fewer clients, higher AOV)</p>
+<p>- Mix of low-ticket volume + high-ticket closes</p>
+<p>- Content-driven inbound: every post is a sales asset with a CTA</p>
+<p>- Optional digital products / memberships as later add-ons (implied by her broader channel, not the core of this video)</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Audit current offers; raise prices or package a high-ticket offer so $10K/month is 4ΓÇô10 sales, not 100.</p>
+<p>2. Add a specific CTA to every piece of content going forward (book a call, buy the offer, join the waitlist).</p>
+<p>3. Pick one audience channel and post consistently; treat content as a sales pipeline, not a portfolio dump.</p>
+<p>4. Build daily/weekly habits: outreach, offer promotion, skill compounding.</p>
+<p>5. Do not wait for a productized system ΓÇö this model monetizes the person.</p>
+
+<p><strong>Automation potential: 3/10</strong> ΓÇö Pricing and packaging can be templatized; CTAs and content calendars can be scheduled. The revenue event is a human creative selling their own work. No compounding catalog, no marketplace fulfillment robot, no bot that closes the client. AI can draft posts and proposals, but the money still requires the operator.</p>
+
+<p><strong>Quality score: 6/10</strong> ΓÇö Concrete, non-hype advice (raise prices, sell on every post, build habits) from a creator with a real audience (~293K subs, 220K+ views on this video). No bank statements, no system that survives the operator&#x27;s absence, and it fails the automation mandate. Useful as a control group: this is what &quot;make more as a creative&quot; looks like when it is *not* productized.</p>
+
+<p><strong>Verdict: Skip</strong> ΓÇö Legitimate path for a human creative operator, but it fails the automation filter. Steal only the CTA-on-every-asset habit and apply it to productized funnels (Nicole #5, digital products). Do not build a service studio.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- None for direct replication.</p>
+<p>- Adjacent play: take her &quot;CTA on every asset&quot; rule and wire it into an evergreen digital-product funnel so the sales motion is automated instead of operator-dependent.</p>
+
+<hr>
+
+<h3>3. Personalized Jewelry Dropshipping ΓÇö Custom Name Necklaces via Wix + Alibaba (Odetta Rockhead)</h3>
+
+<p><strong>Business model:</strong> No-inventory dropshipping of personalized products (custom name / music-theme jewelry). Storefront on Wix with a .store domain; suppliers on Alibaba manufacture and ship the engraved item directly to the buyer. Case study: &quot;Anna&#x27;s&quot; store allegedly sold 303,000+ units over 3 years (~8,400/month) at ~$14.10 AOV Γëê $118K/month revenue; 30% margin used to justify the $35K/month profit headline. Video is also a funnel for .store domains.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- Markup on personalized jewelry (~$14ΓÇô$20 retail vs. cheap Alibaba blanks)</p>
+<p>- Volume at low AOV: thousands of orders/month required to hit the headline number</p>
+<p>- No inventory carrying cost; supplier ships direct</p>
+<p>- Margin compressed by ads, payment fees, returns, and shipping delays on custom goods</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Stand up a Wix (or Shopify) store with a professional .store domain.</p>
+<p>2. Source customizable jewelry suppliers on Alibaba; confirm engraving/personalization SLAs.</p>
+<p>3. List products with personalization fields (name, date, song).</p>
+<p>4. Forward each order + custom text to the supplier (manual at first; automate via Zapier/Make or native integration).</p>
+<p>5. Buy traffic (ads/SEO/social); scale only after supplier reliability is proven.</p>
+
+<p><strong>Automation potential: 6/10</strong> ΓÇö Order forwarding, store ops, and creative production are automatable. Personalized SKUs add a custom-text hop that generic POD does not have. Ads, supplier QA, and refunds remain human. Unlike KDP, there is no marketplace demand engine ΓÇö you must buy or earn every visitor.</p>
+
+<p><strong>Quality score: 4/10</strong> ΓÇö The math is an illustrative case study (one store, averaged over 3 years, 30% margin assumed, no P&amp;L). Channel is a side-hustle / mindset funnel with a domain affiliate. Personalized dropshipping is a real model, but 2026 ad costs, Alibaba quality variance, and custom-goods return rates make $35K/month an outlier, not a template.</p>
+
+<p><strong>Verdict: Mixed</strong> ΓÇö Operationally systemizable, but the revenue event depends on paid traffic and a fragile supplier. Prefer Amazon POD (Gottfried #1) where demand + fulfillment are native. If testing dropship, start with 1 SKU, 50 orders, and measured CAC before scaling.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- If testing: one personalized SKU, Alibaba sample order, 50 paid-traffic orders, kill if CAC &gt; 30% of AOV.</p>
+<p>- Automate order-forward (custom text ΓåÆ supplier) via Zapier/Make before adding SKUs.</p>
+<p>- Do not chase the $35K case study; treat it as a ceiling illustration, not a forecast.</p>
+
+<hr>
+
+<h3>4. AI Leverage Stack ΓÇö Lead Bots + Deal Scoring + Digital Products (Noelle Randall)</h3>
+
+<p><strong>Business model:</strong> Use AI as leverage across three layers of a real-estate + coaching empire: (1) lead generation ΓÇö AI writes a year of social content in ~30 minutes and AI chatbots qualify website visitors (property to sell vs. coaching) then book them onto coaches&#x27; calendars; (2) off-market deal finding ΓÇö predictive analytics (missed payments, tax liens, neighborhood trends, life events) plus virtual &quot;drive for dollars&quot; via Deal Machine; (3) digital products ΓÇö AI outlines, drafts, and designs ebooks/courses from existing expertise in a weekend. Short promotional video ending in a Grow Your Wealth Bootcamp ticket pitch.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- Real-estate deal spreads (subject-to / owner-financing flips and wholesales)</p>
+<p>- Coaching/bootcamp ticket sales (high-ticket education)</p>
+<p>- Digital products (ebooks, courses) as passive add-ons</p>
+
+<p><strong>Steps to replicate (automation-relevant subset):</strong></p>
+<p>1. Stand up an AI website assistant that qualifies inbound leads and books calendar slots ΓÇö no human until a qualified appointment.</p>
+<p>2. Prompt-engineer deal/product analysis: paste listing data ΓåÆ LLM outputs fit assessment, top 3 objections, and an empathetic 3-sentence script.</p>
+<p>3. Convert one existing skill into an AI-drafted ebook/course in a weekend.</p>
+<p>4. Batch a year of social content with a &quot;world-class marketer&quot; system prompt + specific hooks.</p>
+<p>5. Skip the capital-heavy real-estate layer unless already in the business.</p>
+
+<p><strong>Automation potential: 7/10</strong> ΓÇö Lead qualification bots, content batching, deal scoring, and product drafting are all automatable. The real-estate money event still needs a human closer and capital; the digital-product and lead-bot layers do not.</p>
+
+<p><strong>Quality score: 4/10</strong> ΓÇö Useful, specific prompts (off-market deal analyzer; D&amp;B funding vendor checklist) but the video is a 7-minute bootcamp funnel. No bank statements, no deal P&amp;Ls, Deal Machine is an affiliate, and &quot;passive $10K&quot; is marketing language for a very active business. Transcript blocked today; scoring consistent with prior days&#x27; full-transcript reads of the same video.</p>
+
+<p><strong>Verdict: Mixed</strong> ΓÇö Steal the lead-bot + content-batch + digital-product layers. Skip the bootcamp, the capital requirement, and the &quot;passive income&quot; framing.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Deploy an AI qualifier on any existing site that books only scored leads into a calendar.</p>
+<p>- Save the two high-specificity prompts as reusable templates.</p>
+<p>- Convert one existing skill into an AI-drafted digital product this weekend ΓÇö same motion as yesterday&#x27;s Gadzhi pipeline, without the creator-partnership layer.</p>
+
+<hr>
+
+<h3>5. Three-System Funnel ΓÇö Visibility ΓåÆ Conversion ΓåÆ Connection (Nataleh Nicole)</h3>
+
+<p><strong>Business model:</strong> A solo-income framework: (1) Visibility ΓÇö consistent weekly content on ONE platform; (2) Conversion ΓÇö an evergreen funnel (content ΓåÆ lead magnet ΓåÆ automated email sequence ΓåÆ paid product); (3) Connection ΓÇö daily low-touch presence (IG stories, newsletter) to build trust. Claims income multiplied 6├ù after committing to consistency; $6ΓÇô$9K/month during her e-commerce era. E-commerce leg runs through a sponsored AI store builder (Build Your Store + AutoDS preloads 10 products, $1/mo Shopify promo). Broader channel also sells ebooks/digital products and YouTube-growth products.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- E-commerce product sales (semi-automated dropshipping store)</p>
+<p>- Automated email funnel selling digital products/memberships/coaching</p>
+<p>- Compounding trust asset that converts on repeat</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Pick ONE platform; commit to weekly content.</p>
+<p>2. Build the funnel once: lead magnet ΓåÆ email list ΓåÆ automated welcome/nurture sequence ΓåÆ offer.</p>
+<p>3. Optional e-commerce: AI-preloaded Shopify store (niche ΓåÆ banners ΓåÆ AutoDS products).</p>
+<p>4. Show up daily in one connection channel; trust = sales.</p>
+
+<p><strong>Automation potential: 6/10</strong> ΓÇö The conversion layer (email automation, funnel, AI store build) is genuinely automated and AI can batch content. The engine is personal visibility and trust ΓÇö inherently human time.</p>
+
+<p><strong>Quality score: 5/10</strong> ΓÇö Honest, non-hypey framing (consistency over hacks, &quot;trust equals sales&quot;), but earnings are anecdotal, view count is tiny (~2.6K), and the actionable middle is a sponsorship. Transcript blocked today; scoring consistent with prior-day reads.</p>
+
+<p><strong>Verdict: Mixed</strong> ΓÇö Personality-dependent as a standalone, but the automated funnel layer is a component every other model in this report benefits from. Pair it with KDP/digital products, not with a face-based creative studio.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Stand up the evergreen stack once: lead magnet + 5ΓÇô7 email automation + product link.</p>
+<p>- Batch a month of AI content in one sitting; schedule auto-publish.</p>
+<p>- Reserve one human hour/day for the connection channel ΓÇö or skip connection entirely if distributing via Amazon/KDP instead of a personal brand.</p>
+
+<h2> Final Ranking (by automation potential)</h2>
+
+<table class="data-table"><thead><tr><th>Rank</th><th>Strategy</th><th>Automation</th><th>Quality</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>------</td><td>----------</td><td>------------</td><td>---------</td><td>---------</td></tr>
+<tr><td>1</td><td>Amazon KDP word search books + Merch on Demand (Gottfried)</td><td>8/10</td><td>7/10</td><td>Worth Trying</td></tr>
+<tr><td>2</td><td>AI lead bots + deal scoring + digital products (Randall)</td><td>7/10</td><td>4/10</td><td>Mixed</td></tr>
+<tr><td>3</td><td>Personalized jewelry dropshipping (Rockhead)</td><td>6/10</td><td>4/10</td><td>Mixed</td></tr>
+<tr><td>4</td><td>Automated funnel stack: content ΓåÆ email ΓåÆ product/store (Nicole)</td><td>6/10</td><td>5/10</td><td>Mixed</td></tr>
+<tr><td>5</td><td>High-ticket creative studio / raise prices + sell on every post (Rodriguez) ΓÇö NEW</td><td>3/10</td><td>6/10</td><td>Skip</td></tr>
+</tbody></table>
+<p>*Tie-break at 6/10 automation: Rockhead outranks Nicole on systemizability of fulfillment (supplier robot vs. personal-brand engine), even though Nicole scores higher on quality/honesty. Rank still prefers models whose sales survive operator absence.*</p>
+
+<h2> Key Takeaways</h2>
+
+<p>1. <strong>KDP/Merch holds #1 for the fifth straight day.</strong> The moat is a scriptable skill (puzzle generation), Amazon is the fulfillment robot, and listings compound forever. Highest automation ├ù credibility ratio in the batch; a Python generator + niche keyword research remains a weekend build.</p>
+<p>2. <strong>Today&#x27;s new video is another control group for what NOT to build.</strong> Kelsey Rodriguez&#x27;s $0ΓÇô$10K creative path is sensible advice for a human operator (raise prices, CTA on every post, habits) ΓÇö and it is the opposite of an automatable business. Income is the person. Keep only the CTA-on-every-asset rule; apply it to productized funnels.</p>
+<p>3. <strong>Odetta&#x27;s dropship model is back and still loses to Amazon POD.</strong> Personalized jewelry *can* be systemized (Wix + Alibaba + order-forward automation), but you buy every visitor and eat custom-goods refunds. KDP inherits Amazon demand. If dropship is tested at all, cap it at a 50-order CAC experiment.</p>
+<p>4. <strong>The AI productization pattern is intact even with Gadzhi rotated out.</strong> Randall (lead bots + digital products) and Nicole (evergreen funnel) still converge on: existing skill/audience + AI-built product + automated distribution. Rodriguez is the exception that proves the rule ΓÇö no product, no bot, no catalog.</p>
+<p>5. <strong>Winner template for filtering every future video:</strong> upfront scripted production ΓåÆ marketplace/evergreen/bot distribution ΓåÆ zero marginal labor per sale. Five consecutive days of data say the KDP catalog + an AI productization funnel is the highest-EV combination to actually build. Service studios and high-ticket closing keep appearing as rotation fillers; keep skipping them.</p>
+
+<hr>
+
+<p>*Report generated automatically by the daily research pipeline ┬╖ Data: yt-dlp search; transcripts blocked by YouTube IP ban today, analysis supplemented with independent video summaries ┬╖ Raw JSON archived in workspace <code>research/research_20260828_090732.json</code>*</p>
+
+        <p class="footer">Generated by OpenClaw ┬╖ 2026-08-28</p>
+    </div>
+</body>
+</html>

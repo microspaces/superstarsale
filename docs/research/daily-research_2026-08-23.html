@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-08-23</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-08-23</h1>
+
+<p><strong>Focus:</strong> Businesses that can be AUTOMATED · <strong>Source:</strong> 5 fresh YouTube videos on making $2,000+/month online</p>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td></tr>
+<tr><td>1</td><td>7 Passive Income Ideas - How I Make $2,000+ Per Day!</td><td>Greg Gottfried</td><td>1,056,483</td><td>15:41</td></tr>
+<tr><td>2</td><td>Best Online Business to Make $10k+/month In 2026 (Beginner Friendly)</td><td>Iman Gadzhi</td><td>375,448</td><td>~33 min</td></tr>
+<tr><td>3</td><td>How I Use AI to Earn $10k+ Per Month (Passive Income 2026)</td><td>Noelle Randall</td><td>5,077</td><td>7:53</td></tr>
+<tr><td>4</td><td>How I Make $10,000 a Month - 2026 EASY Income Method</td><td>Nataleh Nicole</td><td>2,558</td><td>~14 min</td></tr>
+<tr><td>5</td><td>$0 to $10,000/Month as a High Ticket Closer (Step-By-Step Guide)</td><td>Serial Sales</td><td>1,009</td><td>~23 min</td></tr>
+</tbody></table>
+<p>*Note: Videos 2 and 3 are recurring from earlier this week (search results are sticky); analysis refreshed with today&#x27;s angles. Videos 1, 4, and 5 are new.*</p>
+
+<h2> Strategy Analysis</h2>
+
+<h3>1. Print-on-Demand Publishing &amp; Merch — Amazon KDP + Merch on Demand (Greg Gottfried)</h3>
+
+<p><strong>Business model:</strong> Create low-content physical products — word search puzzle books via Amazon KDP (Kindle Direct Publishing) and niche t-shirt designs via Amazon Merch on Demand. Amazon prints, ships, and handles customer service on every order; the listing lives forever. Creator claims $800K/year passive income across streams and has run KDP since 2018 (including a 1+ year stretch without touching the account).</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- KDP: royalty per book sale (typically $2–$5 on low-content books) — pure margin after upfront file creation</p>
+<p>- Merch on Demand: higher price point per shirt → bigger margins than KDP, but more competition</p>
+<p>- Key differentiator: word search books sell unusually well because few sellers know how to generate the puzzles</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Learn to programmatically generate word search puzzles (easily scripted in Python or with AI tools).</p>
+<p>2. Generate interiors + covers as print-ready PDF/PNG files.</p>
+<p>3. Upload to Amazon KDP; Amazon creates the listing and handles print/fulfillment/support.</p>
+<p>4. For Merch: do niche research to find underserved micro-niches (avoid saturated big niches), upload simple designs.</p>
+<p>5. Compound catalog volume — each uploaded asset is a perpetual micro-annuity.</p>
+
+<p><strong>Automation potential: 8/10</strong> — Puzzle generation, cover design, and niche research are all fully scriptable. Amazon is the automated fulfillment layer. Catalogs can be batch-produced. Only human tasks: niche validation and initial uploads. Saturated-competition risk is the main drag.</p>
+
+<p><strong>Quality score: 7/10</strong> — Long track record (2018), real on-screen examples, honest that the easiest stream (HYSA at ~4%) requires existing capital. No paid course pitch — free tutorials linked. Word search tip is specific and actionable.</p>
+
+<p><strong>Verdict: <span class="verdict-good">✅</span> Worth Trying</strong> — The most automatable, lowest-capital model in today&#x27;s batch. The video also covers HYSA, affiliate marketing via YouTube, AdSense, digital downloads, and courses — but KDP/Merch is the automation standout.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Script a word-search generator (Python + word banks per niche) and batch-produce 10–20 books in week one.</p>
+<p>- Run Merch niche research on long-tail interests (hobbies, professions, inside jokes) with weak competition.</p>
+<p>- Track BSR (Best Seller Rank) per title; double down on niches that move.</p>
+
+<hr>
+
+<h3>2. Growth Marketing — AI-Built Digital Products for Micro-Creators (Iman Gadzhi)</h3>
+
+<p><strong>Business model:</strong> Partner with micro-creators (10K–100K followers) who have audience trust but no product. Use specialized AI tools to audit the creator&#x27;s content, auto-generate a &quot;monetization game plan,&quot; build the digital product (coaching offer/ebook/course), and run a 14-day Instagram story launch. You keep a revenue split (start at 30%). Pitch rests on the creator-economy expansion ($250B → $500B by 2027) and 41M under-monetized micro-creators (Linktree data).</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- 30% revenue share on product launches (claimed $3K–$15K per launch for 50K–100K-follower creators)</p>
+<p>- Optional upfront setup fees (student example: $6,000)</p>
+<p>- Recurring monthly re-launches with the same creator → compounding MRR</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. FIND: AI-audit a micro-creator&#x27;s content; send a free customized monetization game plan (product ideas, pricing, projected revenue, 14-day launch strategy) instead of a cold pitch.</p>
+<p>2. BUILD: use AI to generate the product — transformation map, modules, worksheets, program charter (hours of work compressed to minutes).</p>
+<p>3. LAUNCH: creator posts the AI-generated 14-day story sequence (warm-up → value → open cart); you track sales and take your split via Whop.</p>
+<p>4. Sign 1–2 new creators/month; re-launch offers monthly.</p>
+
+<p><strong>Automation potential: 7/10</strong> — The AI demonstrably automates audit, product build, and launch copy (the full over-the-shoulder demo is the video&#x27;s strongest evidence). Remaining human work: outreach, partnership calls, and creator hand-holding — real but systemizable.</p>
+
+<p><strong>Quality score: 5/10</strong> — Entertaining and detailed demo, but it&#x27;s fundamentally a funnel: Gadzhi co-owns Whop and consulting.com, and the video resolves into an UpLevel Consulting pitch ($25K+ enterprise tiers). Student results are cherry-picked and unverifiable. The underlying model (done-for-you productization for creators) is real and proven elsewhere.</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong> — The strategy architecture is legitimate and highly AI-leverageable; the specific tools/program being sold are not required. Build it with your own AI stack.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Assemble a DIY pipeline: transcript-scrape creator content → LLM-generated monetization audit PDF → personalized outreach.</p>
+<p>- Productize with standard AI (course outline, worksheets, launch sequences) instead of the pitched tooling.</p>
+<p>- Start with 70/30 splits favoring creators to maximize close rate; formalize via Whop or direct contract.</p>
+
+<hr>
+
+<h3>3. AI-Stack Funnel Business — Visibility → Conversion → Connection (Nataleh Nicole)</h3>
+
+<p><strong>Business model:</strong> A three-system framework for solo online income: (1) Visibility — consistent weekly content on ONE platform; (2) Conversion — an evergreen funnel (content → free lead magnet → automated email sequence → paid product); (3) Connection — daily low-touch presence (stories, email) to build trust. Cites going from dry seasons to $100–$1,500/day and $6–$9K/month during her e-commerce era. The e-commerce leg is executed via a sponsored AI store builder (Build Your Store + AutoDS preloads 10 products).</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- E-commerce product sales (semi-automated dropshipping store, $1/mo Shopify promo)</p>
+<p>- Automated email funnel selling digital products/memberships/coaching</p>
+<p>- Long-term: trust-compounding content asset that converts on repeat</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Pick ONE platform and commit to weekly content.</p>
+<p>2. Build the funnel: lead magnet → email list → automated welcome/nurture sequence → offer.</p>
+<p>3. For the e-commerce route: spin up an AI-preloaded Shopify store (choose niche → banners → AutoDS products).</p>
+<p>4. Show up daily in one connection channel (stories/newsletter) to convert trust into sales.</p>
+
+<p><strong>Automation potential: 6/10</strong> — The conversion layer (email automation, funnel, AI store build) is genuinely automated; AI can batch-generate content. But the model&#x27;s engine is consistent personal visibility and trust-building — inherently human time.</p>
+
+<p><strong>Quality score: 5/10</strong> — Honest, non-hypey framing (trust = sales, consistency over hacks), but earnings claims are anecdotal and the actionable middle is a sponsorship. Framework is sound; execution details are thin.</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed</strong> — As a sole strategy it&#x27;s slow and personality-dependent, but the automated funnel layer is a component every other model in this report benefits from.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Stand up the evergreen stack once: lead magnet + 5–7 email automation + product link.</p>
+<p>- Batch a month of content with AI in one sitting; schedule auto-publish.</p>
+<p>- Treat &quot;connection&quot; as the only non-negotifiable human hour per day.</p>
+
+<hr>
+
+<h3>4. AI-Leveraged Real Estate Operations (Noelle Randall)</h3>
+
+<p><strong>Business model:</strong> Run a real estate investing + coaching empire with AI doing &quot;80% of the work&quot;: AI writes a year of social content in 30 minutes, AI chatbots qualify site visitors and book coaching calls into calendars, and predictive-analytics tools (Deal Machine) surface off-market distressed-seller leads (tax liens, missed payments, life events) before competitors see them.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- Real estate deal spreads (subject-to / owner-financing)</p>
+<p>- Coaching program upsells (Grow Your Wealth Bootcamp — $200-off early birds)</p>
+<p>- Affiliate commissions on tools (Deal Machine free trial link)</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Automate lead gen: AI content engine + website chatbot that qualifies and calendar-books.</p>
+<p>2. Use AI prompt templates as an analyst (&quot;Act as a real estate investment analyst… analyze this property data… top 3 seller objections + empathetic scripts&quot;).</p>
+<p>3. Use predictive data tools to build off-market lead lists; run AI-drafted outreach.</p>
+<p>4. Close deals (human) and/or monetize attention via coaching.</p>
+
+<p><strong>Automation potential: 5/10</strong> — Content, lead qualification, and list-building automate beautifully. But revenue conversion = live real estate negotiations and coaching calls — irreducibly human. Also heavily promotional.</p>
+
+<p><strong>Quality score: 4/10</strong> — Useful concrete prompts, but the video is primarily a funnel to a paid bootcamp; income claims (&quot;multi-million dollar empire&quot;) unverifiable.</p>
+
+<p><strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed → Skip for automation purposes</strong> — Mine it for the AI-operations patterns (chatbot qualification, prompt-as-analyst, batch content) and apply those to more automatable businesses.</p>
+
+<p><strong>Key action items:</strong></p>
+<p>- Steal the pattern: AI-qualifier bot on any landing page that books calls automatically.</p>
+<p>- Use &quot;act as a world-class [role]&quot; + specific-data prompts as a standard operating template.</p>
+
+<hr>
+
+<h3>5. High-Ticket Remote Closing (Serial Sales / Dylan)</h3>
+
+<p><strong>Business model:</strong> Become a commissioned remote sales rep (&quot;closer&quot;) for online coaching/consulting/agency offers priced $2.5K–$15K+. Businesses run ads/content → setters qualify → you take the sales call and close. Contract-based, heavily/fully commission-based, uncapped. Case study: &quot;Jon&quot; goes from pharma consultant to $110K month within 90 days of joining the community; top 10% of 140 reps at an 8-figure education company.</p>
+
+<p><strong>Revenue model:</strong></p>
+<p>- 8–15% typical commission on closed deals (implied $10K/month = roughly 3–6 closes)</p>
+<p>- 100% performance-based; no equity, no asset ownership</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. Train sales skills (their free &quot;One Call Close&quot; framework video is genuinely available).</p>
+<p>2. Polish resume, LinkedIn, and video pitch; build network with recruiters/agency owners (referrals are how roles actually get filled).</p>
+<p>3. Apply to closer roles via communities/networks; land an offer with proven traffic volume.</p>
+<p>4. Grind calls; top performers earn outsized commissions.</p>
+
+<p><strong>Automation potential: 2/10</strong> — Structurally anti-passive: every dollar requires a live human on a live call. The presenter explicitly disclaims passive income. Some leverage possible later (sales agency, hiring reps), but that&#x27;s a different business.</p>
+
+<p><strong>Quality score: 6/10</strong> — Ironically the most honest video of the batch: clear &quot;who this is NOT for&quot; disclaimers, admits results take 1–2 years of skill-building, shows real (blurred) testimonials. Still a community-membership funnel, and the $110K/month headline is a survivorship outlier.</p>
+
+<p><strong>Verdict: ❌ Skip</strong> — Real skill, real income potential, but zero automation leverage and pure time-for-money. Directly conflicts with this research&#x27;s mandate.</p>
+
+<p><strong>Key action items (if pursued despite verdict):</strong></p>
+<p>- Watch the free One Call Close framework video; practice with recorded role-plays.</p>
+<p>- Build recruiter/agency-owner network on X before applying anywhere.</p>
+
+<h2> Final Ranking (by automation potential)</h2>
+
+<table class="data-table"><thead><tr><th>Rank</th><th>Strategy</th><th>Automation</th><th>Quality</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>------</td><td>----------</td><td>------------</td><td>---------</td><td>---------</td></tr>
+<tr><td>1</td><td>Amazon KDP word search books + Merch on Demand (Gottfried)</td><td>8/10</td><td>7/10</td><td>✅ Worth Trying</td></tr>
+<tr><td>2</td><td>AI growth marketing for micro-creators (Gadzhi)</td><td>7/10</td><td>5/10</td><td>⚠️ Mixed</td></tr>
+<tr><td>3</td><td>Automated funnel stack: content → email → product/store (Nicole)</td><td>6/10</td><td>5/10</td><td>⚠️ Mixed</td></tr>
+<tr><td>4</td><td>AI-leveraged real estate ops (Randall)</td><td>5/10</td><td>4/10</td><td>⚠️ Mixed/Skip</td></tr>
+<tr><td>5</td><td>High-ticket closing (Serial Sales)</td><td>2/10</td><td>6/10</td><td>❌ Skip</td></tr>
+</tbody></table>
+<h2> Key Takeaways</h2>
+
+<p>1. <strong>Print-on-demand publishing is the sleeper automation play.</strong> Word search books on KDP won today because the moat is a *scriptable skill* (puzzle generation), Amazon is the fulfillment robot, and listings compound forever. A Python generator + niche keyword research is a weekend build.</p>
+<p>2. <strong>&quot;AI builds the product, you own the split&quot; is the emerging meta.</strong> Gadzhi&#x27;s growth-marketing model — AI audits a creator&#x27;s audience, generates the product and launch copy — survives even if you strip out his paid tooling. The defensible part is the outreach system, not the software.</p>
+<p>3. <strong>The automated funnel layer is table stakes.</strong> Nicole&#x27;s content → lead magnet → email sequence → offer stack is the connective tissue every model here (KDP newsletters, creator launches, real estate lead-gen) plugs into. Build it once, reuse everywhere.</p>
+<p>4. <strong>Beware human-in-the-loop businesses wearing AI costumes.</strong> Randall&#x27;s and Serial Sales&#x27; models use AI for marketing but convert revenue through live calls — the least automatable step. Score the revenue event, not the marketing stack.</p>
+<p>5. <strong>Recurring theme this week:</strong> the highest-automation models (programmatic SEO tools, KDP catalogs, AI product builds) share one shape — *upfront scripted production, marketplace-distributed fulfillment, zero marginal labor per sale*. Filter every future video against that template.</p>
+
+<hr>
+
+<p>*Report generated automatically by the daily research pipeline · Data: yt-dlp search + transcript fetch · Full transcripts archived in workspace <code>research/</code> folder*</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-08-23</p>
+    </div>
+</body>
+</html>
