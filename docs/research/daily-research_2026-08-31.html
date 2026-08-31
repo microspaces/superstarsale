@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research ΓÇö 2026-08-31</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">ΓåÉ All Reports</a>
+        <h1>Daily YouTube Strategy Research ΓÇö 2026-08-31</h1>
+
+<p><strong>Theme rotation today:</strong> discovery wildcard (&quot;passive income&quot; long-tail) surfaced a reselling/eBay cluster ΓÇö 3 of 5 videos landed on flipping, plus one mega-interview and one passive-income portfolio video. All 5 transcripts retrieved (one required an automatic retry after a YouTube transcript API 502).</p>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Duration</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>----------</td></tr>
+<tr><td>1</td><td>Passive Income Expert: How To Make $10k Per Month In 90 Days!</td><td>The Diary Of A CEO (Chris Koerner)</td><td>5,643,228</td><td>~2h 12m</td></tr>
+<tr><td>2</td><td>7 Passive Income Ideas - How I Make $2,000+ Per Day!</td><td>Greg Gottfried</td><td>1,069,983</td><td>~16 min</td></tr>
+<tr><td>3</td><td>I wish I knew this before I started selling on eBay</td><td>The Aussie Flipper</td><td>306,874</td><td>~20 min</td></tr>
+<tr><td>4</td><td>Reselling 101: Thrift Store Flipping for Beginners</td><td>FlippyMcFlipperson</td><td>232,772</td><td>~9 min</td></tr>
+<tr><td>5</td><td>I Started A Resale Business From Scratch!</td><td>Flippity Flip</td><td>187,011</td><td>~24 min</td></tr>
+</tbody></table>
+<h2> Strategy Analysis</h2>
+
+<h3>1. Chris Koerner on DOAC ΓÇö Side-Hustle Portfolio Playbook</h3>
+
+<p><strong>Business model:</strong> Not one model ΓÇö a portfolio framework from an operator with 80+ launches (low hundreds of millions cumulative revenue). Today&#x27;s actionable set: <strong>AI implementation for SMBs</strong>, <strong>drop-servicing home services</strong>, <strong>niche directory websites</strong>, <strong>vending</strong>, <strong>wedding rentals</strong>, <strong>local email newsletters</strong>, and <strong>small RV park acquisition</strong>. The meta-doctrine: copy proven models exactly (Web Archive + SimilarWeb reverse-engineering), avoid &quot;mirage opportunities,&quot; and only start where you have an unfair advantage.</p>
+
+<p><strong>How money is made (per sub-model):</strong></p>
+<p>- <strong>AI implementation for SMBs:</strong> $500ΓÇô$5,000 upfront build + ~20%/month maintenance. Example: after-hours AI voice agent for a gutter-cleaning company ΓÇö $3,000 build + $500ΓÇô600/mo. Key: build once per vertical, then copy-paste the same app to every competitor in the market.</p>
+<p>- <strong>Directory websites:</strong> scrape a niche dataset (e.g., every dog park in Seattle), build with Replit/Lovable, monetize with Google display ads or $300/yr &quot;priority placement&quot; once you can prove you&#x27;re sending a business traffic. Numbers game: some make $0, some make thousands/month. &lt;$100 to start, zero employees.</p>
+<p>- <strong>Local email newsletters:</strong> acquire subs at ~$1 each via geo-targeted Facebook ads, monetize at ~$0.50/subscriber/month via local sponsorships ($500/send at 1,000 subs) ΓåÆ <strong>2-month payback</strong>, then copy-paste the template to the next city.</p>
+<p>- <strong>Drop-servicing:</strong> clean website + ads for a home service (garage repair, oil changes), subcontract fulfillment to a local operator, keep the margin on better UX/checkout (charge $80 for the $40 oil change).</p>
+<p>- <strong>Wedding rentals:</strong> $300 built wedding arch rents for ~$1,000/wedding; distribute via wedding planners scraped from The Knot/Zola/WeddingWire.</p>
+<p>- <strong>RV parks:</strong> buy 3ΓÇô10 pad parks at a 10% cap rate with seller financing (~$5k + due diligence), force occupancy via free FB Marketplace listings + a vibe-coded website, revalue at 8% cap. His numbers: $3ΓÇô4M/yr revenue, $400ΓÇô600k net across ~35 parks.</p>
+<p>- <strong>Vending:</strong> $500 machine + stock; location is the whole game (apartment lobbies win; his friend does 7 figures).</p>
+
+<p><strong>Automation score: 7/10 (blended)</strong> ΓÇö Directories 9, local newsletters 7, AI implementation 6 (sales-manual, delivery copy-paste), drop-servicing 6, vending 4, wedding rentals 3, RV parks 3.</p>
+
+<p><strong>Quality score: 8/10</strong> ΓÇö Highest-credibility guest in the set: verifiable exits (phone-screen reman business $2MΓåÆ$9M/yr, the Buc-ee&#x27;s merch store), specific unit economics throughout, no course pitch. Some stats are anecdotal (77% of SMB owners say AI is transformational, 5% use it meaningfully ΓÇö directionally right, sourced loosely).</p>
+
+<p><strong>Steps to replicate (directory portfolio ΓÇö the most automatable):</strong></p>
+<p>1. Pick 10 niche/local categories too fragmented for Google Maps (ice suppliers, dog parks, shooting ranges, ADA contractors)</p>
+<p>2. Scrape/compile the dataset (scripted), build the site architecture once with Replit/Lovable</p>
+<p>3. Copy-paste across categories/cities; add Google AdSense from day 1</p>
+<p>4. Watch analytics for traffic winners ΓåÆ only then outreach: &quot;I&#x27;ve been sending you customers ΓÇö want priority placement for $300/yr?&quot;</p>
+<p>5. Kill zero-traffic sites at 6 months, redeploy the template</p>
+
+<p><strong>Verdict: Worth Trying</strong> (directories + newsletters + vertical-replicated AI agents) / Mixed (drop-servicing, vending, RV parks) ΓÇö the RV park math is the biggest absolute money in today&#x27;s set but is an operator business, not an automated one.</p>
+
+<p><strong>Key action items:</strong> Stand up the first 3 directory sites this week (template + scraped data + AdSense); run a $100 Replit/Lovable sprint to build one vertical AI voice-agent demo; note the &quot;copy exactly, innovate later&quot; and mirage-opportunity filters for every future deal review.</p>
+
+<hr>
+
+<h3>2. Greg Gottfried ΓÇö 7 Passive Income Streams</h3>
+
+<p><strong>Business model:</strong> A personal portfolio of passive digital-product streams: Amazon KDP (specifically <strong>word-search puzzle books</strong>), Amazon Merch on Demand (niche t-shirt designs), affiliate marketing via YouTube (video &gt; blog articles), YouTube AdSense on <strong>educational</strong> content (higher CPM than entertainment), Etsy digital downloads (templates/spreadsheets), online courses (Udemy/Skillshare), plus HYSA interest.</p>
+
+<p><strong>How money is made:</strong></p>
+<p>- KDP: upload cover + interior PDF; Amazon prints, ships, and handles service forever. Claims income since 2018 including a 1+ year stretch without logging in. Word-search category called out as the best sub-niche because few sellers know how to generate the puzzles (lower competition)</p>
+<p>- Merch on Demand: same print-on-demand mechanics, higher margin per unit than KDP; win via niche research into un-saturated design categories</p>
+<p>- Affiliate: referral links inside product-review videos; his key data point ΓÇö ~70% of internet traffic now prefers video over articles, so video reviews outperform blog reviews</p>
+<p>- Digital downloads: one-time file creation (wedding invite templates, budgeting spreadsheets), marketplace handles delivery</p>
+<p>- Courses: hardest to start (requires real expertise) but most passive per unit of knowledge</p>
+
+<p>Claims $800k+ passive income last year across the portfolio (not shown on screen).</p>
+
+<p><strong>Automation score: 8/10</strong> ΓÇö every stream is create-once/sell-forever with marketplace-fulfilled delivery. The creation phase itself is now highly automatable with AI (puzzle generation, design batching, template production), which the video doesn&#x27;t even mention ΓÇö that&#x27;s upside.</p>
+
+<p><strong>Quality score: 6/10</strong> ΓÇö real mechanics shown on screen, operator since 2018 (KDP/Merch), but heavy cross-promotion funnel to his own free tutorials, and no verifiable income proof. The word-search and &quot;video beats blog&quot; advice is genuinely useful.</p>
+
+<p><strong>Steps to replicate:</strong></p>
+<p>1. KDP: learn word-search puzzle generation (or script it), batch 5 themed books, upload with keyword-researched titles</p>
+<p>2. Merch: niche research for low-competition design categories ΓåÆ batch simple text/graphic designs</p>
+<p>3. Digital downloads: pick one template type you can make well (spreadsheets, invites), list on Etsy</p>
+<p>4. Affiliate layer: film product-review videos with referral links rather than writing blog posts</p>
+<p>5. Reinvest into whichever stream shows organic traction; courses only after real expertise exists</p>
+
+<p><strong>Verdict: Mixed</strong> ΓÇö the model is proven and maximally passive, but KDP/Merch/POD are well-trodden (covered repeatedly in past reports) and AI has lowered the word-search moat he cites. Best treated as a low-cost portfolio slice, not a primary business.</p>
+
+<p><strong>Key action items:</strong> If entering, compete on <strong>volume of niches</strong> (automated production pipeline), not on any single listing; prioritize digital downloads + educational YouTube as the higher-leverage pair.</p>
+
+<hr>
+
+<h3>3. The Aussie Flipper ΓÇö 23 eBay Lessons From 5 Years</h3>
+
+<p><strong>Business model:</strong> Full-time eBay flipping (thrift/flea sourcing ΓåÆ listed resale) plus <strong>consignment</strong> (sell others&#x27; expensive items for a 50/50 profit split, 70/30 for one-offs ΓÇö zero-cost inventory).</p>
+
+<p><strong>How money is made:</strong> Buy at 1/3 of sale price (the &quot;triple your money&quot; rule ΓåÆ ~2x after fees/postage), quality-over-quantity sourcing, 0.98% return rate maintained with returns ON (buyer confidence &gt; return cost), 70% of eBay sales come from free-postage listings (price shipping into the item), keep a 2-week draft bank so listings go live daily without daily work.</p>
+
+<p><strong>Automation score: 3/10</strong> ΓÇö sourcing, photographing, listing, and shipping are inherently manual. Systemizable pieces: the 48-hour list-it-or-stop-sourcing rule, the 2-week draft bank (batched listing), locked search filters for comp research, and consignment (removes capital requirement but adds relationship management).</p>
+
+<p><strong>Quality score: 7/10</strong> ΓÇö 5-year full-time operator, platform-sourced data points (eBay&#x27;s own 70%-free-postage and title-team stats), real mentoring-client examples, transparent about his own software/tool promos.</p>
+
+<p><strong>Steps to replicate:</strong> Enable Seller Hub; lock comp-research filters (sold + condition + country); adopt 48-hour rule + draft bank; offer free postage priced-in and returns on; take consignment for high-ticket items you can&#x27;t afford to buy; ask vendors for their price first (his $50 offer on a $10-tagged $200 Batman figure).</p>
+
+<p><strong>Verdict: Skip</strong> for an automation-focused portfolio ΓÇö lowest automation ceiling of today&#x27;s set ΓÇö but the consignment mechanism and draft-bank batching are worth stealing if you ever run a flipping sideline.</p>
+
+<p><strong>Key action items:</strong> Steal consignment (zero-COGS sourcing) and the 2-week draft bank (batched listing labor) as transferable tactics.</p>
+
+<hr>
+
+<h3>4. FlippyMcFlipperson ΓÇö Thrift Flipping 101</h3>
+
+<p><strong>Business model:</strong> Beginner thrift-store flipping on eBay: research brands before sourcing (YouTube/Instagram resellers, start with your own hobby knowledge), comp everything with the eBay app&#x27;s sold filter, buy only on sell-through rate + margin.</p>
+
+<p><strong>How money is made:</strong> Spread-based arbitrage (example: $5 Honeywell thermostat ΓåÆ sold $58). Core formula taught: if 18 listed / 27 sold in 90 days, sell-through is healthy ΓÇö buy; if 100 listed / 2 sold ΓÇö leave it. Price at the average of the last 5ΓÇô6 sold comps. SKU-binned inventory management.</p>
+
+<p><strong>Automation score: 2/10</strong> ΓÇö physical sourcing and per-item listing/shipping dominate. The comp-check workflow (barcode scan ΓåÆ sold filter ΓåÆ STR math) is the only semi-scriptable step.</p>
+
+<p><strong>Quality score: 6/10</strong> ΓÇö honest, competent beginner guide with a worked real example, but zero novel tactics beyond standard reseller canon.</p>
+
+<p><strong>Steps to replicate:</strong> Map a thrift route (Google Maps + MapQuest optimizer), scan-with-eBay-app everything, apply STR + margin thresholds, list with blank-background photos and full item specifics.</p>
+
+<p><strong>Verdict: Skip</strong> ΓÇö well-executed but fully manual and thoroughly covered territory.</p>
+
+<p><strong>Key action items:</strong> None beyond the sell-through-rate heuristic, which generalizes to any marketplace sourcing decision.</p>
+
+<hr>
+
+<h3>5. Flippity Flip ΓÇö Resale Business From Scratch</h3>
+
+<p><strong>Business model:</strong> Start-to-first-sale eBay store build: seed inventory from your own house, then source flea markets + Goodwill weekly; everything bought on-channel gets listed in a public store (radical transparency ΓÇö sold prices visible).</p>
+
+<p><strong>How money is made:</strong> Low-cost flips with full P&amp;L shown (first sale: $1 military catalog ΓåÆ $18, ~$8 net after $5 ship + $3 fees). Embedded heuristics with real values: sealed hardcover box sets are always $15+, Survivor DVD seasons are rare and valuable in lots, list &quot;want-to-keep&quot; items high, batch same-series items into lots for multiplier pricing.</p>
+
+<p><strong>Automation score: 2/10</strong> ΓÇö same physical-model constraints as #3/#4; slightly lower systemization (no draft bank, no consignment layer).</p>
+
+<p><strong>Quality score: 6/10</strong> ΓÇö genuinely transparent (public store, real numbers, honest misses like the Q-tips and liquid nails), but beginner-diary format with limited strategic depth.</p>
+
+<p><strong>Steps to replicate:</strong> Declutter-seed a store (250 free listings), source flea/Goodwill with the app, list via &quot;sell one like this&quot; against sold comps, free shipping on lightweight items, ship with reused mailers + thermal printer.</p>
+
+<p><strong>Verdict: Skip</strong> for this portfolio ΓÇö manual model, no new system.</p>
+
+<p><strong>Key action items:</strong> The &quot;lot multiplier&quot; idea (assemble incomplete series across trips, sell as sets) is the one transferable tactic.</p>
+
+<h2> Final Ranking</h2>
+
+<p>Ranked by automation potential, adjusted for novelty vs. recent reports:</p>
+
+<table class="data-table"><thead><tr><th>Rank</th><th>Strategy</th><th>Automation</th><th>Quality</th><th>Verdict</th><th>Why</th></tr></thead><tbody>
+<tr><td>------</td><td>----------</td><td>------------</td><td>---------</td><td>---------</td><td>-----</td></tr>
+<tr><td>1</td><td>Niche directory-website portfolio (Koerner)</td><td>9</td><td>8</td><td>Worth Trying</td><td>Build-once SEO assets, automated ad revenue, template replication across niches, &lt;$100/start, zero employees ΓÇö the purest passive-automated model in today&#x27;s set and under-covered in our reports</td></tr>
+<tr><td>2</td><td>KDP word-search books + Etsy digital downloads (Gottfried)</td><td>8</td><td>6</td><td>Mixed</td><td>Maximally passive marketplace fulfillment and now AI-producible; docked for being a well-trodden theme with an eroding moat ΓÇö viable as one portfolio slice</td></tr>
+<tr><td>3</td><td>Local email newsletter machine (Koerner)</td><td>7</td><td>8</td><td>Worth Trying</td><td>Known theme, but the unit economics are concrete and fully automatable: $1/sub paid acquisition ΓåÆ $0.50/sub/mo sponsorship revenue ΓåÆ 2-month payback ΓåÆ copy-paste cities</td></tr>
+<tr><td>4</td><td>Vertical-replicated AI implementation for SMBs (Koerner)</td><td>6</td><td>8</td><td>Worth Trying</td><td>Sales is manual, but &quot;build one voice agent per vertical, sell it to every competitor&quot; converts a service into a semi-product; $3k + $600/mo per client compounds</td></tr>
+<tr><td>5</td><td>Drop-servicing home services (Koerner)</td><td>6</td><td>7</td><td>Mixed</td><td>Ads + checkout automate the front end; fulfillment depends on subcontractor quality; local services well-covered previously</td></tr>
+<tr><td>6</td><td>Wedding rental items via planner network (Koerner)</td><td>3</td><td>7</td><td>Skip</td><td>3x-on-cost rental math is real but physical logistics dominate</td></tr>
+<tr><td>7</td><td>eBay flipping trio (#3/#4/#5)</td><td>2ΓÇô3</td><td>6ΓÇô7</td><td>Skip</td><td>Proven but almost entirely manual labor; consignment + draft-bank tactics are the only automatable fragments</td></tr>
+<tr><td>ΓÇö</td><td>RV parks / vending (Koerner)</td><td>3ΓÇô4</td><td>8</td><td>Mixed</td><td>Biggest absolute returns in the set ($3ΓÇô4M/yr revenue, 7-figure vending friend) ΓÇö operator businesses, not automation plays</td></tr>
+</tbody></table>
+<h2> Key Takeaways</h2>
+
+<p>1. <strong>Directories are today&#x27;s winner: passive income that&#x27;s actually passive.</strong> Scrape a fragmented niche dataset, vibe-code the site once, template it across categories/cities, run display ads, and only sell $300/yr priority placements to businesses you can *prove* you&#x27;re sending traffic (&quot;permissionless marketing&quot;). 80/20 outcomes are expected ΓÇö the portfolio, not any single site, is the asset.</p>
+<p>2. <strong>&quot;Build once, sell many&quot; turns AI services into products.</strong> Koerner&#x27;s gutter-company voice agent ($3,000 + $600/mo) gets cloned to every gutter company in the market. Pick verticals with many small identical businesses; the demo is the same app.</p>
+<p>3. <strong>Newsletter economics are now fully specified:</strong> $1/sub acquisition via geo-radius Meta ads, $0.50/sub/mo from local sponsors, 2-month payback, template-to-next-city scaling. The only deliberately manual piece is the writing (it must feel local) ΓÇö curation/assembly can still be systematized.</p>
+<p>4. <strong>Copy-don&#x27;t-innovate is an automatable research workflow.</strong> Web Archive + SimilarWeb competitor timelines (pricing/copy/traffic overlays) can be scripted for any market you&#x27;re evaluating ΓÇö and the &quot;mirage opportunity&quot; filter (obvious idea, zero successes = stay away) kills bad bets fast.</p>
+<p>5. <strong>From the eBay cluster, keep only the mechanisms:</strong> consignment as zero-capital sourcing (50/50 splits), the 2-week draft bank as batched listing labor, free-postage-priced-in (70% of sales), and lot-multiplier assembly. The flipping model itself fails our automation bar.</p>
+<p>6. <strong>No new discovery themes graduated today.</strong> The wildcard query surfaced the passive-income/reselling cluster, all of which map to known categories (AI tools, local services, lead gen, newsletters, flipping, marketplaces, real estate). The theme pool is unchanged.</p>
+
+        <p class="footer">Generated by OpenClaw ┬╖ 2026-08-31</p>
+    </div>
+</body>
+</html>
