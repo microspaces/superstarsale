@@ -1,8 +1,8 @@
 # Playlist Research - Michael Buchanan's "Research" Playlist (2026-08-31)
 
 **Source playlist:** ["Research" by Michael Buchanan](https://youtube.com/playlist?list=PLamiZQJOzMbY) (`PLamiZQJOzMbY`)
-**Special run:** playlist-targeted analysis (not the search-based daily job). Covers the 12 videos in the playlist as of 2026-08-31; all are new coverage since the 08-29 run (which analyzed 4 earlier entries).
-**Coverage:** 12 videos in playlist. 12 full English transcripts fetched. 0 blocked.
+**Special run:** playlist-targeted analysis (not the search-based daily job). Covers the 12 videos in the playlist as of 2026-08-31; all are new coverage since the 08-29 run (which analyzed 4 earlier entries). **Addendum 2026-09-01:** the playlist grew to 13; the one new video (Video 13, Shane Hummus / "Nurse Jen") was analyzed and appended - the other 12 were already covered below and are skipped.
+**Coverage:** 13 videos in playlist (as of 2026-09-01). 13 full English transcripts fetched (12 on 08-31, 1 on 09-01). 0 blocked.
 
 ## Videos Analyzed
 
@@ -20,6 +20,7 @@
 | 10 | This Talking AI Website Sells Itself (FREE Voice Agent) | GHL Wizard | ~1.4k | 17:10 | Yes |
 | 11 | The Most Overlooked Online Side Hustle Of 2026 | Chris Koerner | ~28k | 50:54 | Yes |
 | 12 | Give Hermes One Idea - It Does the Rest | Julian Goldie SEO | ~5.3k | 7:51 | Yes |
+| 13 | I Helped a 60-Year-Old Beginner Build A One Person Business With Claude AI in 30 Days | Shane Hummus | ~538 | 33:43 | Yes |
 
 ---
 
@@ -232,6 +233,33 @@
 
 ---
 
+## Video 13 (added 2026-09-01): Shane Hummus - "I Helped a 60-Year-Old Beginner Build A One Person Business With Claude AI in 30 Days"
+
+**Story:** Case study of "Nurse Jen" - 60 years old, 33 years in nursing (last 12 in telehealth), burned out after pandemic years of 100+ calls per shift queue, no retirement savings. Quit nursing, built a one-person YouTube channel with Claude as co-writer: patient advocacy + aging-well content for a 60+ audience, recorded on a MacBook Air webcam in her camper van. Claimed trajectory: ~$6K month 1 → ~$8K month 2 → ~$10K month 3 (AdSense alone), replacing her nursing income within months; first video passed 400K views.
+
+**The machine - YouTube as "toll bridge":** paid for the attention itself (AdSense) while delivering viewers to whatever you sell. "Every other business on Earth has to buy its foot traffic. The bridge owner gets paid to receive it."
+
+**The five-door money stack (the part he'd "steal first"):**
+1. **AdSense** - $6K/$8K/$10K monthly progression, months 1-3
+2. **Sponsors (inbound)** - Snug Safety's CEO emailed HER after she organically mentioned the product and viewers bought it; $800/video, 3-video deal, no pitch from her
+3. **Affiliate** - Amazon links in descriptions, plus affiliate commission stacked on top of the sponsor fee
+4. **1:1 consulting** - 2 half-hour Zoom calls/month + follow-up plan, $1,000/mo - viable because "600,000 people just watched her explain their health better than their last three doctor visits"
+5. **Course** - "30-day, 15-minute-a-day program" protecting everyday abilities (moving, bouncing back, staying sharp), built with Claude, derived from her 1:1 work
+
+**The 30-day system (5 steps):** (1) pick the niche from your own wisdom with data, not vibes - hers came from 33 years of patients not knowing how to ask for what they needed; (2) steal proof, not guesses - find proven-demand videos and make the better human version; her niche's competition is AI slop, which she treats as free market research ("if a faceless AI channel is pulling millions of views with garbage, demand is real and supply is weak"); (3) embarrassingly simple videos - webcam, captions, <30 min editing; her B-roll/graphics videos did WORSE; (4) volume beats polish - a video every other day, "shut down your internet picker"; (5) monetize only after attention arrives, then stack the doors.
+
+**The Claude usage:** a Claude Project loaded with niche + winning titles + voice as co-writer ("my friend Claude"); the shared prompt: "Based on the winners on my channel, give me 10 video ideas with high probability of success, rate each 1-10 with decimals, give a confidence interval 0-100%, and tell me why." Niche-finder AI tool gated behind his free live training.
+
+**The age-advantage thesis:** most creators are under 35, a massive growing chunk of viewers aren't; ~11,000 Americans turn 65 daily; "every gray hair is a trust signal a 24-year-old cannot fake." Wisdom is "the one input a machine can't fake" - AI made generic advice worthless and real experience the scarcest asset on the internet. Dorothy Vaughan/NASA analogy: don't race the machine, operate it.
+
+**Honest fine print (rare for this genre):** the "30 days" in the title is the month AFTER her channel caught - she actually posted consistently ~6 weeks before it broke. He says this explicitly.
+
+**Automation angle:** ideation, scripting, platform comparison, course-building = Claude-automatable; the moat is on-camera lived expertise and peer-age trust. "The only step the machine can't do is the one where you press record."
+
+**Red flags:** it's a mentorship funnel (18% acceptance, 3-5 spots, tool gated behind live training); all numbers self-reported on-screen, unaudited; $10K/mo AdSense by month 3 on a brand-new channel is exceptional, not typical; the wall of community wins (Nicole $80K month, Josh $185K month, Shawn $500K/mo) is curated by the seller; inbound $800 sponsor deals are real but rare.
+
+---
+
 # Cross-Playlist Synthesis
 
 ## What this playlist actually is
@@ -246,6 +274,7 @@ An accidental but coherent curriculum: **four local-AI-service agency models** (
 4. **One human gate** - McCoy's editors-before-publish, Goldie's approve/reject step, Brown's PR-screenshot review, Ai Untapped's paper-trading constraint. Even the most automation-forward operators keep exactly one human checkpoint - and say so explicitly.
 5. **Voice/story capture as the moat** - Fieldy wearable, Voice DNA interview, Fastlane's 2,000 calls, Zach's 30-years-of-trades interview. The data nobody else has is the founder's own words; agents do the packaging.
 6. **Owned audience over rented platforms** - Yu's ManyChat DM capture, Hummus's "mother platform," McCoy's email lists, Stewart's podcast RSS. Same line everywhere: you're renting.
+7. **Stack monetization after attention arrives** (added with Video 13) - Jen's five doors: AdSense → inbound sponsors → affiliate → 1:1 → course, each door opening onto the same attention asset. Monetize in layers, never all at once, and never before the traffic exists.
 
 ## Automation-potential ranking (my analysis, not theirs)
 
