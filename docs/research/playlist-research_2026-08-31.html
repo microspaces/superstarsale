@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-08-31</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1>Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-08-31)</h1>
+
+<p><strong>Source playlist:</strong> <a href="https://youtube.com/playlist?list=PLamiZQJOzMbY" target="_blank">&quot;Research&quot; by Michael Buchanan</a> (<code>PLamiZQJOzMbY</code>)</p>
+<p><strong>Special run:</strong> playlist-targeted analysis (not the search-based daily job). Covers the 12 videos in the playlist as of 2026-08-31; all are new coverage since the 08-29 run (which analyzed 4 earlier entries).</p>
+<p><strong>Coverage:</strong> 12 videos in playlist. 12 full English transcripts fetched. 0 blocked.</p>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th><th>Transcript</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td><td>------------</td></tr>
+<tr><td>1</td><td>I Tested the NEW Ways to Make Money With AI</td><td>Nick Ponte</td><td>~4k</td><td>37:08</td><td>Yes</td></tr>
+<tr><td>2</td><td>I Asked Claude AI To Make Me As Much Money As Possible</td><td>Shane Hummus</td><td>~75k</td><td>24:48</td><td>Yes</td></tr>
+<tr><td>3</td><td>Watch Claude Run My Entire Business, Live</td><td>Julia McCoy</td><td>~35k</td><td>1:38:31</td><td>Yes</td></tr>
+<tr><td>4</td><td>Top 5 Simple Claude AI Service Businesses No One Talks About</td><td>Shane Hummus</td><td>~10k</td><td>16:57</td><td>Yes</td></tr>
+<tr><td>5</td><td>11 Insane Things Cursor&#x27;s NEW GrokBot Can Do</td><td>Riley Brown</td><td>~64k</td><td>37:24</td><td>Yes</td></tr>
+<tr><td>6</td><td>Grok Bot Runs A Trading Desk 24/7</td><td>Ai Untapped</td><td>~14k</td><td>9:22</td><td>Yes</td></tr>
+<tr><td>7</td><td>I Stole Duolingo&#x27;s Content Strategy ($32M Digital Products)</td><td>Richard Yu</td><td>~23k</td><td>12:40</td><td>Yes</td></tr>
+<tr><td>8</td><td>How to Build an $18M/Year Apple Watch App</td><td>Superwall</td><td>~17k</td><td>51:42</td><td>Yes</td></tr>
+<tr><td>9</td><td>How This SaaS Hit $69K/Month In Just 2 Months</td><td>Starter Story</td><td>~73k</td><td>17:12</td><td>Yes</td></tr>
+<tr><td>10</td><td>This Talking AI Website Sells Itself (FREE Voice Agent)</td><td>GHL Wizard</td><td>~1.4k</td><td>17:10</td><td>Yes</td></tr>
+<tr><td>11</td><td>The Most Overlooked Online Side Hustle Of 2026</td><td>Chris Koerner</td><td>~28k</td><td>50:54</td><td>Yes</td></tr>
+<tr><td>12</td><td>Give Hermes One Idea - It Does the Rest</td><td>Julian Goldie SEO</td><td>~5.3k</td><td>7:51</td><td>Yes</td></tr>
+</tbody></table>
+<hr>
+
+<h2> Video 1: Nick Ponte - &quot;I Tested the NEW Ways to Make Money With AI&quot;</h2>
+
+<p><strong>Story:</strong> Maui agency owner argues the 2026 opportunity isn&#x27;t selling &quot;AI&quot; - it&#x27;s selling simple <strong>outcomes</strong> to small businesses. Flagship: &quot;social posting as a service&quot; - reviving dormant small-business social profiles with AI-generated posts, sold as $500-$3,000/mo subscriptions after a free 2-week sample. Full client-acquisition funnel demoed inside GoHighLevel.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Pricing tiers: $500/mo = 1 platform, $1,000/mo = 2 platforms; community reports up to $2,000/mo for daily posting to 3 platforms; one member does $150/mo for 2 short videos/week</p>
+<p>- Lead gen: Gemini prompt builds list of 20 local businesses with 500-1,000 followers who haven&#x27;t posted in 6+ months (&quot;do not hallucinate businesses&quot;), manually verified on Facebook</p>
+<p>- Fulfillment: GoHighLevel Social Planner - AI post text + AI images; ~10 min to create 2 weeks of content; ~1 hour/month to schedule; VA in Philippines runs it (AI writes English, native fluency no longer required)</p>
+<p>- Key scope reframe: selling *posting* (activity), NOT marketing (results) - &quot;The posts do not have to have thousands of likes... they just have to make the profile look active&quot;</p>
+<p>- His claimed revenue: ~$123K last month from small-business services (QuickBooks screenshot, unaudited); 60K free community, 500+ paid</p>
+<p>- Upsell ladder: free 2 weeks → posting subscription → website rebuilds, CRM work</p>
+
+<p><strong>Automation angle:</strong> Highly automatable end-to-end (lead lists, dormant-profile detection, generation, scheduling, outreach cadences). Human: verification, sales calls, QC, relationship upsells.</p>
+
+<p><strong>Red flags:</strong> Self-reported revenue; video is itself a GoHighLevel-affiliate funnel; &quot;97% know / 3% implemented&quot; stat unsourced; churn risk when clients ask &quot;where are the customers?&quot; is never addressed.</p>
+
+<hr>
+
+<h2> Video 2: Shane Hummus - &quot;I Asked Claude AI To Make Me As Much Money As Possible&quot;</h2>
+
+<p><strong>Story:</strong> Runs the experiment on his brother Zach - 50-year-old HVAC company owner, zero online presence, capped at 4 hrs/week. Generic &quot;make me money&quot; prompts fail (&quot;Claude wasn&#x27;t wrong, Claude was unaimed&quot;); instead Claude interviews Zach about existing expertise (&quot;mile 23&quot; thesis) and lands on teaching career-switchers how to land trade jobs, monetized via Course Careers affiliate links on YouTube. Claimed: $214/day by day 29, 800K+ views on first video, $18K+ month a year later.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Monetization ladder logic: course = &quot;raw land&quot; (months before $1), software worse, service = sell-then-do (viable), <strong>affiliate = &quot;move-in-ready house&quot;</strong> - no product to build</p>
+<p>- YouTube as &quot;mother platform&quot; - one long-form video syndicated by AI to shorts/clips/podcast/email/posts; three &quot;doors&quot; to buyers: paid ads (expensive), cold outreach (~200 DMs, spam flags), content &quot;lighthouse&quot; (build once, pulls buyers in)</p>
+<p>- Course Careers affiliate program; their stats: most grads employed within 3 months, $42K → $58.7K average salary</p>
+<p>- Documented failure mode: Zach enabled YouTube&#x27;s &quot;player for education&quot; on guru advice - views &quot;fell off a cliff,&quot; weeks of momentum lost; fix was reverting to the boring consistent rhythm</p>
+<p>- Time: 4 hrs/week; scripts with Claude in ~15 min</p>
+
+<p><strong>Automation angle:</strong> Niche interviews, scripts, repurposing fully agent-automatable. The moat is human: lived expertise and on-camera credibility - &quot;The money was never in the machine... it&#x27;s in what you already have, and Claude just packages it.&quot;</p>
+
+<p><strong>Red flags:</strong> Wall of student income claims ($185K/mo, $500K/mo) all self-reported, unaudited, from someone selling the mentorship that produced them; Zach is family coached intensively by an expert - not a clean experiment.</p>
+
+<hr>
+
+<h2> Video 3: Julia McCoy - &quot;Watch Claude Run My Entire Business, Live&quot;</h2>
+
+<p><strong>Story:</strong> The maximal-automation blueprint. McCoy (built 100-person content agency, sold 2021, 90K+ projects) now runs First Movers - $3M/yr claimed, under 2 years old - with a 15-person AI-empowered team: &quot;double the revenue I did with a team of 100.&quot; Demos an AI-clone YouTube channel (700 videos from two 4-minute source clips, ~300K subs, ~12M views/yr), a Fieldy wearable notetaker streaming ideas 24/7 into Claude via MCP, custom Claude skills (Voice DNA, content engine), and Claude Code operations.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Cost structure: $100/mo Claude Max covers emails, scripts, workflows; stack = HeyGen (avatar), ElevenLabs (voice), Kling/Higgsfield (video), Fieldy (wearable capture), WhisperFlow (voice prompting), Obsidian brain (2 years of meeting data auto-organized by 24h Claude loops)</p>
+<p>- Voice DNA productization: interview captures contrarian belief, story bank (worst moment/cost/lesson, unforgettable client), phrases used/never used, winning-content examples → saved as a skill referenced first by every copywriting skill so all output sounds like the founder</p>
+<p>- Mo&#x27;s stack: 300 skills, 55 MCP servers, 100+ GitHub repos; 3-step prompt pattern: sort any goal into fully-automatable / partially / human-only, then chronological plan</p>
+<p>- <strong>Deliberate human-in-the-loop boundary:</strong> she does NOT auto-publish - editors carry Claude output into production: &quot;be very careful of those promises [of full automation]... you really want a human in the freaking loop&quot;</p>
+<p>- Funnel being sold: Labs community → Clone Mastermind (2-day intensive, 15 seats, sold out 4x) → consulting</p>
+<p>- Embedded case: ministry couple with 25-year career - Fieldy captured their conversation, Claude wrote their story &quot;in three seconds,&quot; they said it beat 25 years of hired copywriters</p>
+
+<p><strong>Automation angle:</strong> Wearable → MCP → skills → routines → editors is an agent pipeline already. Reserved for humans: founder beliefs/stories (the data moat), final QC, sales, trust.</p>
+
+<p><strong>Red flags:</strong> All numbers self-reported on a live sales webinar (9,900% organic lift, 700 leads/week, 30M views); scarcity framing throughout; solo beginners cannot replicate 15-person leverage; tool names garbled in transcript (treat spellings as approximate).</p>
+
+<hr>
+
+<h2> Video 4: Shane Hummus - &quot;Top 5 Simple Claude AI Service Businesses&quot;</h2>
+
+<p><strong>Story:</strong> Five service businesses built on Claude, with price anchors: (1) &quot;brain in a box&quot; custom Claude assistant builds, (2) SOP documentation, (3) newsletter ghostwriting, (4) content repurposing, (5) YouTube personal brand as the lead engine.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- <strong>Brain in a box:</strong> $500-$5,000 setup + $200-$1,000/mo maintenance (stated market rates). Build = a Claude Project loaded with the business&#x27;s knowledge; usually no code needed. Pricing rule: value-based, not hourly - if it saves 10 hrs/week, $1,000/mo is &quot;a steal&quot;</p>
+<p>- <strong>SOP docs:</strong> owner&#x27;s own time to write first batch = $500-$750 in lost hours (stated); freelancer market $30-$200+/document; tool named: Tango. Cites MIT/McKinsey finding that highest-ROI AI projects are back-office repetitive work - &quot;sexy&quot; replacements fail</p>
+<p>- <strong>Newsletter ghostwriting:</strong> 20-min monthly interview or voice memo → Claude → 4 polished newsletters/mo in client&#x27;s voice; $500-$1,500/edition freelance, ~$3,000/mo agencies; cites the $38-per-$1 email-ROI industry claim</p>
+<p>- <strong>Repurposing (&quot;echo engine&quot;):</strong> one podcast/YouTube transcript → show notes, clip ideas, newsletter, blog, captions - 10-100 pieces per episode; recurring by nature; tool: Opus Clips</p>
+<p>- Sales motion for all: build a free demo first (&quot;the demo is the whole sales pitch&quot;), walk in, show it answering *their own* customer questions</p>
+
+<p><strong>Automation angle:</strong> All four service lines are agent-automatable today (ingestion → generation → QC). Human: intake, trust, demos, final voice QC, accountability to a real email list. Note the meta-risk: &quot;AI setup&quot; services commoditize fast.</p>
+
+<p><strong>Red flags:</strong> Entire video is a coaching funnel (18% acceptance, 3-5 spots scarcity); all credentials self-reported; no failure cases.</p>
+
+<hr>
+
+<h2> Video 5: Riley Brown - &quot;11 Insane Things Cursor&#x27;s NEW GrokBot Can Do&quot;</h2>
+
+<p><strong>Story:</strong> Hands-on walkthrough of GrokBot (Cursor&#x27;s agent platform, post-SpaceX-acquisition): a situation-monitor bot, a developer bot delegating to Cursor, inter-agent messaging/group chats, per-project bots, X/Twitter bot with bookmarks, time- and trigger-based routines, plugins (Gmail/Calendar/Notion/Linear), and a &quot;Grill Me&quot; journal bot - desktop + iOS.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Each agent = own cloud computer + own chat; skills/plugins shared across all agents; routines run 24/7 (time-based and trigger-based: Slack, GitHub, Teams, Linear, Sentry, PagerDuty, webhooks)</p>
+<p>- Developer-bot loop: GrokBot rewrites prompt → Cursor spins a git branch → runs app on a cloud computer → screenshots/screen recording → opens PR to GitHub → sends screenshots back for phone review</p>
+<p>- Example routines: &quot;monitor the situations&quot; bot checks email/Slack/calendar every 5 min on weekdays; calendar bot 6am-10pm; bookmark digest every Wed/Sun; 8am short-form script prompt</p>
+<p>- Multi-Gmail subscription audit across 5 inboxes - &quot;saved me a ton of money&quot; (unquantified)</p>
+<p>- Philosophy: &quot;You don&#x27;t want to create these really complex workflows. You want to create simple, yet really useful agents&quot;; security trade-off acknowledged per plugin</p>
+
+<p><strong>Automation angle:</strong> This IS the orchestration playbook - maps nearly 1:1 onto agent-framework patterns (cron + triggers + shared skills + delegated coding with PR verification). Human: deciding what matters, judgment on recaps, reviewing PR screenshots before merge.</p>
+
+<p><strong>Red flags:</strong> Reads as launch marketing (undisclosed sponsorship likelihood; demos use host&#x27;s own blurred outputs); &quot;only platform with trigger-based routines&quot; is factually suspect; agent-browser feature admitted near-useless (cloud IPs blocked).</p>
+
+<hr>
+
+<h2> Video 6: Ai Untapped - &quot;Grok Bot Runs A Trading Desk 24/7&quot;</h2>
+
+<p><strong>Story:</strong> Builds a full paper-trading &quot;desk&quot; inside GrokBot from plain-English prompts: chief-of-staff bot hires other bots - research (macro/fundamentals/tape), strategy, risk, money management, manager, paper-trading desk (quant + reviewer) - producing an 8am weekday desk brief, with outputs to email/Notion/Drive.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- No revenue, pricing, or performance numbers stated anywhere - the desk is explicitly paper-trading only in its own routine instructions (&quot;No live order recommendations. Paper trading mindset.&quot;)</p>
+<p>- Self-assembly pattern: &quot;I want a chief of staff. Hire whoever you need&quot; → approve its expansion plan → agents create their own routines and cross-message</p>
+<p>- Thesis: &quot;next billion-dollar companies are going to be one-man armies&quot; - every automation talks back like an employee</p>
+<p>- Honest caveat from host himself: expect to &quot;fidget around with this for a little while&quot; (vs the &quot;2 minutes to set up&quot; claim)</p>
+
+<p><strong>Automation angle:</strong> Orchestrator + specialist subagents + cron routines is reproducible today. Must stay human: capital allocation, validating that macro/tape analysis is real rather than hallucinated, judging whether bot-hired-bot structure is sensible. The self-hiring loop is the part that cannot be safely automated end-to-end.</p>
+
+<p><strong>Red flags:</strong> Financial-content hype with zero backtest or accuracy check; &quot;most powerful AI trading agent on the market&quot;; launch-week video funneling to the host&#x27;s paid school; quietly undercuts its own title (paper trading).</p>
+
+<hr>
+
+<h2> Video 7: Richard Yu - &quot;I Stole Duolingo&#x27;s Content Strategy ($32M Digital Products)&quot;</h2>
+
+<p><strong>Story:</strong> Reverse-engineers Duolingo&#x27;s freemium psychology into a four-part &quot;give-to-sell engine&quot; for digital products: free hook → habit loop → own the audience → the offer, plus a post-sale flywheel. Claims $32M+ lifetime digital-product sales from applying it (from an initial $500 course making 0-1 sales/week to $500K in 8 months at ~90% margins).</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Freemium math from Duolingo: 100M+ users, only ~9% pay - that 9% built a billion-dollar company; ~80% of growth claimed from word of mouth</p>
+<p>- Key mechanic: comment-keyword (&quot;comment the word guide&quot;) → <strong>ManyChat</strong> automated DM delivering the lead magnet - a free win + an algorithm-independent channel (DMs) + self-qualification of buyers, all in one step</p>
+<p>- &quot;You&#x27;re renting. You don&#x27;t own a thing&quot; - every content piece gives one reason to raise a hand and move off rented platforms into DMs/email</p>
+<p>- Digital-product economics: make once, deliver instantly, near-zero marginal cost; post-sale: repeat sales to existing buyers are far cheaper than acquisition; Duolingo even gave away previously-paid features to strengthen the flywheel</p>
+<p>- Selling happens in real DM conversation - ask what they&#x27;re working on, check fit, then offer</p>
+
+<p><strong>Automation angle:</strong> Keyword-to-DM triage, personalized follow-up qualification, format-repetition content pipelines - all agent-replaceable. Human: on-camera teaching trust, product quality.</p>
+
+<p><strong>Red flags:</strong> $32M and 90% margins self-reported; the video is itself the free-hook funnel for his gated masterclass (the &quot;what&quot; is given, the &quot;how&quot; is gated); borrowed billion-dollar credibility (Duolingo) for a much smaller business; no churn/refund data.</p>
+
+<hr>
+
+<h2> Video 8: Superwall - &quot;How to Build an $18M/Year Apple Watch App&quot;</h2>
+
+<p><strong>Story:</strong> The most operationally rigorous video in the playlist. Welltory CPO Assia Grazhdanovskaya (10-year-old app, ~$18M ARR claimed, 17-18M downloads) breaks down Facebook ad psychology, a six-ingredient onboarding framework, paywall strategy, and free-vs-paid splits with real conversion numbers. (Transcript renderings of her surname vary; CPO role stated in-interview.)</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Pricing: $99.99/year (framed as $8.33/mo), annual only, &quot;hardish&quot; paywall (no trial, closable)</p>
+<p>- Conversion facts: &gt;90% sync health data on the FIRST onboarding screen (data-sync CTA before any value screen - preludes tested worse); &gt;60% of conversions happen over the FOLLOWING months, not day one; benefits-led paywalls (&quot;more energy&quot;) tested WORSE than fear/FOMO-led (&quot;stress is building right now&quot;)</p>
+<p>- Six-ingredient onboarding: human problem (specific+emotional) → bold promise → key (unique insight: &quot;sedentary stress,&quot; 192 minutes already in your day, from the user&#x27;s own data) → mechanism (real-time detection on own timeline) → proof (user&#x27;s own data beats social proof) → FOMO (what happens TODAY if you don&#x27;t)</p>
+<p>- Ad strategy: Meta needs shock to break through (&quot;catches high cortisol&quot;) - ads convey the overall promise, not features; notably the app does NOT literally measure cortisol (&quot;if anyone tells you they can measure cortisol, that&#x27;s not true&quot;) - deliberate simplification of a real arterial metric (sitting + elevated HR = sedentary stress)</p>
+<p>- Free = potentially life-saving basics; paid = deep analysis, timelines, trends, recommendations</p>
+<p>- Tools: Superwall paywall A/B (AI trained on 422 profitable experiments, 1B+ interactions), Meta ads; competitors named: Rise, Bevel</p>
+<p>- Marketing/product integration after years of silos &quot;paid off big&quot;</p>
+
+<p><strong>Automation angle:</strong> Personalized onboarding stories from user data, ad testing, paywall A/B, segmentation analysis - all agent-automatable (Superwall already does parts). Human: months of emotional user-problem research (&quot;that is not something AI can do for you&quot;), scientific validation, judgment calls like &quot;don&#x27;t sell cortisol literally.&quot;</p>
+
+<p><strong>Red flags:</strong> Operator-reported numbers, unaudited; the cortisol framing is borderline-misleading advertising acknowledged in-interview; framework is one successful app&#x27;s survivor story (they &quot;failed miserably at our onboarding over and over&quot; first); the video is a Superwall marketing vehicle with sponsor reads woven throughout.</p>
+
+<hr>
+
+<h2> Video 9: Starter Story - &quot;How This SaaS Hit $69K/Month In Just 2 Months&quot;</h2>
+
+<p><strong>Story:</strong> Pat Walls interviews Gaurav, co-founder of Fastlane - AI short-form marketing for solo builders: paste your URL, AI generates thousands of tailored short-form videos, swipe-right-to-schedule to TikTok/IG/YouTube with AI captions. ~$69K MRR claimed within ~2 months of public launch. The stated secret: <strong>2,000 customer calls</strong> (20/week since August) run through a three-phase Mom Test framework, plus a Claude Code-built &quot;customer intelligence&quot; dashboard.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Stack (fully named): Convex (backend+DB), Vercel, Railway (microservices), Clerk (auth), Resend (email), Axiom (logs), OpenAI + Claude (copy), Fal.ai (image/video gen), <strong>Claude Code on the $200 Max plan</strong> (&quot;absolute must for the speed we ship at&quot;)</p>
+<p>- Call system: in-app button with rainbow border - &quot;Book a call, get 7 days extra access&quot; + Calendly; AI note-taker on every call; notes → Notion → &quot;customer coordinates&quot; database</p>
+<p>- Three phases: discovery (Mom Test questions only: how do you solve this today, walk me through the last time, what did it cost, what happens if you do nothing - never &quot;would you use this?&quot;) → usability (screen-share, silent watching, no hints - produced the Tinder-swipe UI) → customer success (power-user hunting: users getting 1M TikTok views)</p>
+<p>- <strong>Customer love score:</strong> composite algorithm over the dashboard drives roadmap; &quot;curiosity&quot; signups retain worse than &quot;I need marketing now&quot; signups</p>
+<p>- Started horizontal (SEO + LLMO + Reddit + short-form) - calls revealed short-form was the only real pain → went all-in</p>
+<p>- Non-technical co-founder built the entire dashboard in natural language via Claude Code + MCPs</p>
+
+<p><strong>Automation angle:</strong> AI-native already; an agent stack could transcribe calls, extract Mom-Test signals, maintain the love-score dashboard, draft roadmap briefs. The thesis: the human conversation IS the moat - &quot;Make something people want and the best way to know this is to actually talk to them.&quot;</p>
+
+<p><strong>Red flags:</strong> Viral-launch spike ≠ steady state (churn/LTV undisclosed); 2,000-calls math doesn&#x27;t reconcile with 20/week since August (~1,000 unless both founders summed); Stripe shown but unaudited; mutual-promotion loop with Starter Story (Fastlane was inspired by a Starter Story video).</p>
+
+<hr>
+
+<h2> Video 10: GHL Wizard - &quot;This Talking AI Website Sells Itself Automatically&quot;</h2>
+
+<p><strong>Story:</strong> Resell a free GoHighLevel AI voice-agent widget that makes any local-business website &quot;talk,&quot; answers questions, and books appointments 24/7. Full pipeline: customize a free demo site to the prospect&#x27;s business → AI-filtered prospecting (businesses with NO voice widget) → ringless voicemail drop → one-line embed fulfillment.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Pricing: ~$297/mo baseline; testimonials cite $997/mo, $2,500/mo, $990/mo HVAC, $1,000 site + $250/mo maintenance, up to one claim of $30K/mo agency (all unverified)</p>
+<p>- Lead gen: Google Maps niche+location results → paste into GHL &quot;Ask AI&quot; with the prompt &quot;only give me businesses that have no AI voice widget on them&quot; → auto-filed into CRM with tag → voicemail-drop automation (&quot;I built an AI that answers questions on your website... mind if I show you a live demo?&quot;)</p>
+<p>- Cost: $97/mo GHL plan (30-day trial via his link); demo customizable in ~2-3 minutes; fulfillment = paste one embed line into WordPress/Wix/Squarespace</p>
+<p>- Recurring-revenue logic: &quot;If you solve a problem one time, you get paid one time... anything that solves a problem again and again, you have to pay for again and again&quot;</p>
+
+<p><strong>Automation angle:</strong> End-to-end automatable (Maps→Ask AI→CRM→voicemail pipeline, per-prospect demo generation, embed deployment). Human: closing, relationships, compliance sign-off. The model itself IS the automation product being resold.</p>
+
+<p><strong>Red flags:</strong> Entire funnel is a GHL affiliate play; testimonials curated/unaudited; LLM &quot;widget detection&quot; is error-prone; voicemail-drop TCPA-type legal exposure only hand-waved; &quot;sells itself&quot; is hype.</p>
+
+<hr>
+
+<h2> Video 11: Chris Koerner / Mike Stewart - &quot;The Most Overlooked Online Side Hustle Of 2026&quot;</h2>
+
+<p><strong>Story:</strong> Koerner interviews Mike Stewart (&quot;godfather of internet marketing,&quot; ex-recording-studio owner) on his 15-year local &quot;internet presence&quot; package: Google Business Profile fixes, weekly blog + podcast, ads to conversion landing pages, VSL one-page sites, and his signature <strong>SER-term jingle</strong> - a 15-second earworm embedding the client&#x27;s unique search phrase, front-loaded into geo-targeted skippable YouTube pre-roll so even skipped ads burn the phrase into local memory. Now fully AI-powered (Suno, ElevenLabs, Gemini/ChatGPT).</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Model A - retainer: $500/mo per local service client (pest, plumbing, roofing), capped at 15 clients ($7,500/mo), ~1 hour/client/month - &quot;in four hours, I could make two grand&quot;</p>
+<p>- Model B - jingle licensing: same pest-control jingle sold <strong>100+ times at $2,000 each</strong>, exclusive per ~50-mile market; one client&#x27;s ads drove ~8M skips + ~3M full views (&quot;40,000 listens for a couple hundred bucks&quot;); business &quot;tripled/quadrupled&quot;</p>
+<p>- Model C - lead-gen site flips: exact-match domains (nashvillepartyboatrental.com) + one-page site + $250/mo geo ads → pontoon captain &quot;zero to probably 80 grand this summer&quot; (estimate); wife&#x27;s honey store had &quot;biggest honey months ever&quot;</p>
+<p>- Jingle mechanics: 15 seconds optimal, SER term + positioning in first 5 seconds (before skip); ~20 listens = lifetime subconscious retention (his claim); geo-target 20-mile radius + feeder cities</p>
+<p>- Content system: owner answers &quot;name 50 problems your company solves&quot; → transcribed → weekly podcast + blog, now AI-drafted in ~15 min and read by the owner&#x27;s ElevenLabs voice clone (13 languages)</p>
+<p>- Scale math: &quot;300 customers is a million-dollar business&quot;; Philippines fulfillment team; &quot;this year, for the first time in my life, everything that took my skill set can be done by AI... it&#x27;s never been scalable before&quot;</p>
+<p>- Acquisition channel: local networking meetings - the one step he says can&#x27;t be automated</p>
+
+<p><strong>Automation angle:</strong> Nearly fully automatable (content, voice cloning kills the owner-recording bottleneck, Suno jingles with city-name swaps, site generation, geo ad management, GBP monitoring). Human: the networking one-to-ones that close local owners.</p>
+
+<p><strong>Red flags:</strong> Guest identity is a walking credential stack, all numbers anecdotal/estimated; earworm psychology claim is pop-science; both host and guest funnel to their own communities; &quot;$500/mo for 1 hour&quot; excludes ad-spend management risk and content-approval friction he admits was &quot;pulling teeth.&quot;</p>
+
+<hr>
+
+<h2> Video 12: Julian Goldie SEO - &quot;Give Hermes One Idea - It Does the Rest&quot;</h2>
+
+<p><strong>Story:</strong> An AI avatar of Goldie demos the &quot;Idea Foundry&quot; inside his Agent OS on Hermes: drop one rough idea (typed or spoken via wake word) → agent classifies and routes it → planner agent writes the full build plan → <strong>you approve or reject (the single human step)</strong> → PM agent spins up builder sub-agents that ship a working deliverable into your dashboard. Everything persists as markdown in an Obsidian &quot;memory galaxy&quot; so past builds become context for new ones.</p>
+
+<p><strong>Mechanics:</strong></p>
+<p>- Pipeline: capture (zero friction, no folders/tags) → classify (project/quick task/park/reference) → plan (what/approach/milestones/agents) → the one gate → build (sub-agents, previewable, &quot;have another go&quot; regeneration)</p>
+<p>- Parallelism: &quot;line up five ideas, walk off, come back to five built things&quot;; &quot;two moves from you and the rest happens on its own&quot;</p>
+<p>- Cost claim: runs on free or local models - no paid API spend required</p>
+<p>- Business model: paid community (AI Profit Boardroom, &quot;4,000+ members,&quot; price unstated) gets the full Agent OS zip + 30-day roadmap + 4 live calls/week; free &quot;AI brand visibility session&quot; as lead-gen</p>
+<p>- Core tip: &quot;Capture everything and judge nothing at the start - get the idea into the vault first, filter at the gate&quot;</p>
+
+<p><strong>Automation angle:</strong> The replicable pattern for any agent operator: zero-friction capture → classifier → planner → single human gate → PM + builder sub-agents → markdown persistence feeding future context. Builds shown are trivial (calculator, timer, to-do app) - the pattern is the value, not the demos.</p>
+
+<p><strong>Red flags:</strong> AI avatar presenter, no pricing, no non-trivial build, no failure rates or rebuild burden; &quot;can control the computer&quot; wake-word agent glosses over security; two stacked funnels with urgency framing.</p>
+
+<hr>
+
+<h1>Cross-Playlist Synthesis</h1>
+
+<h2> What this playlist actually is</h2>
+
+<p>An accidental but coherent curriculum: <strong>four local-AI-service agency models</strong> (Ponte, Hummus #4, GHL Wizard, Koerner/Stewart), <strong>four agent-platform operator demos</strong> (McCoy, Brown, Ai Untapped, Goldie), <strong>two product-business teardowns</strong> (Welltory, Fastlane), and <strong>two creator-funnel playbooks</strong> (Hummus #2, Yu). Same shape repeats: person uses AI to collapse a service&#x27;s delivery cost, sells the outcome on recurring, and the video itself is the top of their own funnel.</p>
+
+<h2> Repeatable patterns (appear in 3+ videos)</h2>
+
+<p>1. <strong>Demo-first selling</strong> - build the free sample before the pitch (Ponte&#x27;s 2 weeks of content, Hummus&#x27;s brain-in-a-box demo, GHL&#x27;s customized demo site, Fastlane&#x27;s incentivized calls). The demo IS the sales call.</p>
+<p>2. <strong>Recurring &gt; one-time</strong> - every agency model converges on monthly retainers ($150-$3,000/mo band; Koerner&#x27;s law: &quot;if you solve a problem one time, you get paid one time&quot;).</p>
+<p>3. <strong>Value-based pricing, never hourly</strong> - Hummus states it outright; Ponte&#x27;s tiers and Welltory&#x27;s $99.99/yr are priced on outcome, not effort.</p>
+<p>4. <strong>One human gate</strong> - McCoy&#x27;s editors-before-publish, Goldie&#x27;s approve/reject step, Brown&#x27;s PR-screenshot review, Ai Untapped&#x27;s paper-trading constraint. Even the most automation-forward operators keep exactly one human checkpoint - and say so explicitly.</p>
+<p>5. <strong>Voice/story capture as the moat</strong> - Fieldy wearable, Voice DNA interview, Fastlane&#x27;s 2,000 calls, Zach&#x27;s 30-years-of-trades interview. The data nobody else has is the founder&#x27;s own words; agents do the packaging.</p>
+<p>6. <strong>Owned audience over rented platforms</strong> - Yu&#x27;s ManyChat DM capture, Hummus&#x27;s &quot;mother platform,&quot; McCoy&#x27;s email lists, Stewart&#x27;s podcast RSS. Same line everywhere: you&#x27;re renting.</p>
+
+<h2> Automation-potential ranking (my analysis, not theirs)</h2>
+
+<table class="data-table"><thead><tr><th>Model</th><th>Automatable today</th><th>Human bottleneck</th><th>Verdict</th></tr></thead><tbody>
+<tr><td>---</td><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>Social-posting service (Ponte)</td><td>Lead list, detection, generation, scheduling, outreach</td><td>Sales calls, QC</td><td>**High** - closest to turnkey</td></tr>
+<tr><td>Voice-widget resell (GHL)</td><td>Prospecting, demo customization, embedding</td><td>Closing, compliance</td><td>**High** - but commoditizing instantly</td></tr>
+<tr><td>SOP/newsletter/repurposing services (Hummus #4)</td><td>Ingestion → generation → delivery</td><td>Intake interview, voice QC</td><td>**High** - $30-$1,500/document price anchors eroding fast</td></tr>
+<tr><td>Local presence + jingle (Stewart)</td><td>Content, jingles (Suno), sites, ads</td><td>Networking/one-to-ones</td><td>**Medium-high** - 15-year head start now AI-replicable</td></tr>
+<tr><td>Idea-to-build foundry (Goldie)</td><td>Entire pipeline minus gate</td><td>The one approval</td><td>**Medium** - pattern proven, outputs still trivial</td></tr>
+<tr><td>Agent org / clone channel (McCoy, Brown, Ai Untapped)</td><td>Orchestration, routines, delegation</td><td>Beliefs/stories, final QC, trust</td><td>**Medium** - leverage real; even McCoy keeps editors</td></tr>
+<tr><td>Give-to-sell digital products (Yu)</td><td>DM triage, qualification, syndication</td><td>On-camera trust, product quality</td><td>**Medium**</td></tr>
+<tr><td>Expertise-arbitrage content (Hummus #2)</td><td>Scripts, repurposing</td><td>Lived expertise + camera</td><td>**Low-medium** - moat is human</td></tr>
+<tr><td>Health-data subscription (Welltory)</td><td>Data storytelling, A/B, ads</td><td>User research, science, judgment</td><td>**Low** - 10-year moat, deliberate</td></tr>
+<tr><td>Fastlane-style SaaS</td><td>Product itself + call synthesis</td><td>20 calls/week with humans</td><td>**Low** - the calls ARE the moat</td></tr>
+</tbody></table>
+<h2> Meta red flags (whole playlist)</h2>
+
+<p>- <strong>Every video is a funnel.</strong> Free guide → community → masterclass → coaching, in all 12. The advice is the marketing; apply the Mom Test to the advisors themselves.</p>
+<p>- <strong>All revenue numbers are self-reported.</strong> $123K/mo, $32M lifetime, $18M ARR, $69K MRR, $3M/yr - zero audited. Treat every figure as an upper bound.</p>
+<p>- <strong>Survivorship everywhere.</strong> No failure cases in any video; the honest operators (Welltory, Fastlane) are the ones admitting years of failed onboarding and 1,000+ calls of grind.</p>
+<p>- <strong>The genuinely load-bearing advice is boring and repeated:</strong> talk to customers, sell outcomes on recurring, keep one human gate, own your audience, stay consistent. The AI wrapper changes the cost curve, not the laws.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-08-31</p>
+    </div>
+</body>
+</html>
