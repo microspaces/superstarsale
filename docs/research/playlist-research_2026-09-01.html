@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-09-01</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1>Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-01 Evening Run)</h1>
+
+<p><strong>Source playlist:</strong> <a href="https://youtube.com/playlist?list=PLamiZQJOzMbY" target="_blank">&quot;Research&quot; by Michael Buchanan</a> (<code>PLamiZQJOzMbY</code>)</p>
+<p><strong>Special run:</strong> playlist-targeted analysis. The playlist was pruned to 4 videos since the last check; 3 are new coverage. The 4th (Riley Brown&#x27;s GrokBot walkthrough) was already covered as Video 5 of the 2026-08-31 playlist report and is skipped. Note: the <code>PLamiZQJOzMbYz0</code> link in the request returns an invalid-argument error from YouTube - treated as a truncated paste of this same playlist.</p>
+<p><strong>Coverage note (new standing rule):</strong> not every playlist video is an automated-business idea - some are here for general summary/analysis. Videos get the lens they deserve: business models get the automation ranking; pure strategy/education content gets summarized on its own merits.</p>
+
+<h2> Videos Analyzed</h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th><th>Transcript</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td><td>------------</td></tr>
+<tr><td>1</td><td>11 Lazy Ways To Make Money With AI (No Experience)</td><td>Jordan Welch</td><td>~105k</td><td>27:10</td><td>Yes</td></tr>
+<tr><td>2</td><td>The NEW Way I Copied A $1k+/Day YouTube Channel w/ AI</td><td>Wholesale Ted</td><td>~46k</td><td>23:33</td><td>Yes</td></tr>
+<tr><td>3</td><td>Don&#x27;t Become A Content Creator, Build A Content Business.</td><td>Codie Sanchez</td><td>~364k</td><td>25:44</td><td>Yes</td></tr>
+<tr><td>—</td><td>11 Insane Things Cursor&#x27;s NEW GrokBot Can Do</td><td>Riley Brown</td><td>~69k</td><td>37:24</td><td>Skipped - covered 08-31 (Video 5)</td></tr>
+</tbody></table>
+<hr>
+
+<h2> Video 1: Jordan Welch - &quot;11 Lazy Ways To Make Money With AI&quot;</h2>
+
+<p><strong>Story:</strong> A tier-list ranking (S to F) of 11 AI business models, each scored on difficulty, scalability, and profitability. Welch is a veteran e-commerce YouTuber (~$10M+ career from digital products, he claims) doing exactly what the best-performing video format on this topic does: ranking things.</p>
+
+<p><strong>The tier list with its stated numbers:</strong></p>
+
+<table class="data-table"><thead><tr><th>Model</th><th>Tier</th><th>Key economics stated</th></tr></thead><tbody>
+<tr><td>---</td><td>---</td><td>---</td></tr>
+<tr><td>AI websites for local biz</td><td>B</td><td>$500-$1,000/site; 15-min builds (Claude, Base44); sales is the whole difficulty; ceiling low, commoditizing</td></tr>
+<tr><td>AI phone agents</td><td>C</td><td>Easiest to start; &quot;most saturated AI opportunity of them all&quot;; couple thousand/mo possible, never millions</td></tr>
+<tr><td>TikTok Shop affiliate w/ AI content</td><td>A</td><td>Higgs Field video gen; $50-100k/mo possible if viral; you never own anything</td></tr>
+<tr><td>AI commerce (his business)</td><td>S</td><td>Dropshipping w/ AI ads; his claims: hundreds of thousands in recent months, 17-year-old student $0→$100k sales in 3 months, $10M/yr portfolio</td></tr>
+<tr><td>AI YouTube automation</td><td>D</td><td>His RPM math: business niche pays ~$35/1k views vs ~$1 gaming; $50k/mo from AI shorts would need ~500M views/mo - &quot;I&#x27;ll believe it when I see it&quot;</td></tr>
+<tr><td>AI consulting</td><td>A</td><td>&quot;You can basically larp your way through this one&quot;; $1-3k engagements; his own &quot;AI employee Victor&quot; anecdote</td></tr>
+<tr><td>AI digital products (Etsy PDFs)</td><td>S</td><td>$5 PDFs doing $10-20k/mo; 15 min to make, 60 sec to upload; test hundreds of niches</td></tr>
+<tr><td>AI software</td><td>C for beginners</td><td>Hardest model; his own software company: 6 years, $30k debt before exit; Base44 makes building easy, distribution brutal</td></tr>
+<tr><td>AI Airbnb management</td><td>B</td><td>Unvalidated but interesting: automate guest comms, payments, reservation changes; 15-20 clients = decent income</td></tr>
+<tr><td>AI clipping (repurposing)</td><td>B</td><td>Friend claims $70k/mo; realistic $1-2k/client/mo; Crayo tool; entry move = clip a creator&#x27;s content, post it, show them the views</td></tr>
+<tr><td>YouTube channel about AI</td><td>S (meta)</td><td>This video alone: $10k+ AdSense + funnel</td></tr>
+</tbody></table>
+<p><strong>The honest parts:</strong> He D-tiers the most-hyped model (AI YouTube automation) with actual RPM arithmetic, admits AI commerce is &quot;medium-to-high&quot; difficulty despite the &quot;lazy&quot; title, and flags phone agents as oversaturated.</p>
+
+<p><strong>Automation angle:</strong> The video is a ranking of automation businesses; highest-signal for us: Etsy digital products (S) matches our own daily-research consensus (KDP/POD/digital consistently 8-9/10), and AI clipping is the same &quot;echo engine&quot; Hummus covered (Video 4, 08-31) - Welch adds the proof-first client acquisition move (post clips publicly, show views, then pitch).</p>
+
+<p><strong>Red flags:</strong> The free &quot;$5,000 course&quot; requires your phone number and a team member calls you - a phone-upgrade funnel, not a gift. His S-tier is his own business model. All student numbers unaudited. &quot;Lazy&quot; is the bait; he repeatedly admits each model is not lazy.</p>
+
+<hr>
+
+<h2> Video 2: Wholesale Ted (Sarah) - &quot;The NEW Way I Copied A $1k+/Day YouTube Channel w/ AI&quot;</h2>
+
+<p><strong>Story:</strong> A full production tutorial for building a hyperrealistic AI YouTuber/influencer channel. The premise: channels where a person reads Reddit stories aloud earn ~$31k/mo (VidIQ estimate shown); ByteDance&#x27;s Seedance 2.5 now makes talking-head video replicable at ~$5/video in bulk.</p>
+
+<p><strong>The pipeline (fully specified, reproducible):</strong></p>
+<p>1. <strong>Host image:</strong> Nano Banana Pro (via Higgsfield) - 16:9 hyperrealistic host photo; iterate with reference-image edits. An LLM brainstorms host/backdrop prompts.</p>
+<p>2. <strong>Script:</strong> Claude researches a publicly published story, then <strong>interviews you for your reactions</strong> - the deliberate human step - and writes a &quot;chatty on-camera style script&quot; where the AI host acts as your proxy.</p>
+<p>3. <strong>Talking clips:</strong> Seedance 2.5 with the host photo as first frame; fixed camera, direct address; rate math: ~170-200 characters of script per 10 seconds of footage; generate at 720p, upscale later. Higgsfield&#x27;s 1/3/7-day unlimited video passes enable batch production → <strong>$4-5 per finished video</strong> (prep 15-30 scripts in advance, buy a 1-day pass, &quot;slam it&quot;).</p>
+<p>4. <strong>Voice:</strong> ElevenLabs voice changer (preserves lip-sync) on the talking clips, $6 starter plan; text-to-speech for image sections; v2 models save 50% credits.</p>
+<p>5. <strong>Edit:</strong> CapCut (free pro trial, built-in AI upscaler); mix host-on-camera segments with AI-generated stills to cut credit burn; drag-and-drop transitions; 20-30 min per video.</p>
+
+<p><strong>Monetization mechanics:</strong> YouTube&#x27;s own FAQ states AI videos can be monetized if policy-compliant; the requirement that matters is *unique identity* - a consistent recognizable host satisfies it (her proof: a 100% AI history channel with paid memberships, which requires Partner Program admission). Same content works on TikTok where eligible.</p>
+
+<p><strong>Automation angle:</strong> Nearly the whole pipeline is automatable end-to-end today (script→image→video→voice→edit). The one deliberately human step is the reaction interview - and that&#x27;s the moat: &quot;have the host be you through proxy&quot; is what separates monetizable identity from policy-targeted slop.</p>
+
+<p><strong>Red flags:</strong> The entire video is a Higgsfield sponsorship with affiliate links for every tool in the stack. No revenue proof for HER channel - the $31k/mo is a VidIQ estimate of someone else&#x27;s (human) channel. Reading Reddit stories wholesale is a copyright gray zone. YouTube&#x27;s &quot;inauthentic content&quot; enforcement is still evolving and is the single biggest kill-risk to this model. Hyperrealistic-human content is explicitly flagged as controversial by the creator herself.</p>
+
+<hr>
+
+<h2> Video 3: Codie Sanchez - &quot;Don&#x27;t Become A Content Creator, Build A Content Business&quot; *(strategy analysis - not an automation pitch)*</h2>
+
+<p><strong>Story:</strong> A genuinely dense strategy breakdown of the six C&#x27;s framework - the actual economics of running content as a business rather than chasing creator status. This is the video in the set that isn&#x27;t selling an automation model; it&#x27;s an operator sharing her playbook (Forbes top-10 creator claim; the video itself funnels to her newsletter, book, academy, and private-client business).</p>
+
+<p><strong>Platform economics by her own numbers (at ~100k followers), ranked by what she earns:</strong></p>
+<p>- <strong>Newsletter (the sleeper):</strong> $1.5-5k per send; priced on engagement not list size; <strong>you own the audience</strong> - it sold 30% of her event tickets, more than any single social platform</p>
+<p>- <strong>YouTube:</strong> best sponsorships ($5-15k/video), longest content life, 27% of tickets via videos + 11% via community posts; RPM by niche: finance $5-17, education/career $4-10, entertainment $4-6 (&quot;even Mr. Beast money lives down here&quot;)</p>
+<p>- <strong>Instagram:</strong> $2.5-7.5k/post; share-rate is the algorithm&#x27;s love language; carousels surging; organic reach down ~28% YoY but audience far more valuable - sold ~100x the tickets TikTok did</p>
+<p>- <strong>LinkedIn:</strong> $1.5-8k/post; 80% of users drive business decisions; &quot;quote image + tactical caption&quot; is the current meta</p>
+<p>- <strong>TikTok:</strong> $2-7k/post but reach is cold-audience (38% follower reach vs Instagram&#x27;s 68%); 2M followers sold *fewer than a dozen* event tickets - &quot;great for awareness, terrible for sales&quot; unless the product is visual/CPG/BookTok</p>
+<p>- <strong>X:</strong> lowest ($100s-$1k/post); horizontal clips work; contrarian one-liners; content dies in a day</p>
+
+<p><strong>The six C&#x27;s (compressed):</strong></p>
+<p>1. <strong>Concentration</strong> - one platform, win, then expand. &quot;You win by being undeniable in one place.&quot;</p>
+<p>2. <strong>Credibility</strong> - platform-native beats produced (her kitchen video did ~100x the polished studio video); history (the dinner test: could you talk 30 min with zero prep?); in-action footage.</p>
+<p>3. <strong>Category</strong> - own a word (&quot;boring business&quot; = hers); repeatable formats/pillars; visual repetition (Mr. Beast&#x27;s formats, O&#x27;Leary&#x27;s suit).</p>
+<p>4. <strong>Curation</strong> - swipe file: top 100 posts &gt;1M views in your niche (screenshot thumbnail, transcribe first 30 sec, log top comments, note sponsors = future revenue list); steal hooks, not content; mine comments for unanswered questions; problem bank in the audience&#x27;s exact words.</p>
+<p>5. <strong>Calibration</strong> - per-platform metrics (YouTube CTR 4-7% + watch time; IG share rate 4% = excellent; X reply rate 1-3%; LinkedIn engagement 4-6%; newsletter open 30-40%); read retention graphs (hook → flat line = winner); after each post write 3 notes: why they started, where they left, what got a reaction - across 50 posts that&#x27;s the pattern library.</p>
+<p>6. <strong>Collect</strong> - the product ladder: free content → $0-50 (guide/book) → $50-500 (course/event) → $500-5k (cohort/membership) → $5k+ (private client/investments). Her campaign data: 62% of tickets sold from organic vs 38% paid - &quot;paid ads are renting your audience.&quot; Build one rung at a time; ship at 85%.</p>
+
+<p><strong>Why this matters for us (analysis):</strong> This is the demand-side counterpart to the supply-side collapse the other two videos describe. When production cost approaches $5/video (Wholesale Ted) and idea selection is agent-assisted, the differentiator moves entirely to Codie&#x27;s territory: platform-native distribution, category ownership, and a product ladder that converts attention at increasing price points. The 4-step curation system (swipe file, comment mining, problem bank) and the 3-notes-per-post calibration loop are both directly agent-automatable - that&#x27;s the piece worth wiring into any content operation we build.</p>
+
+<p><strong>Red flags:</strong> Forbes/Top-10 framing is credential marketing; every number is from her own campaign (real but anecdotal); the video itself is the top of her product ladder, doing exactly what it teaches. The framework is sound; the implied ease is not - she has a team and years of accumulated audience.</p>
+
+<hr>
+
+<h1>Cross-Video Synthesis</h1>
+
+<p><strong>The three videos are one stack:</strong></p>
+<p>- <strong>Welch</strong> ranks the business models (supply side: what to sell)</p>
+<p>- <strong>Wholesale Ted</strong> shows production cost collapsing to ~$5/video (production side: how cheaply it can be made)</p>
+<p>- <strong>Codie</strong> shows where the money actually accumulates (demand side: platform economics + owned audience + product ladder)</p>
+
+<p><strong>Convergences with prior runs:</strong></p>
+<p>- Welch&#x27;s S-tier for Etsy digital products independently matches our daily-research consensus (KDP/POD/digital at 8-9/10 automation for months running)</p>
+<p>- The production-polish inversion now appears in four separate videos across two runs: Nurse Jen&#x27;s captions-only beats B-roll (08-31), Codie&#x27;s kitchen video 100x&#x27;s her studio video, Welch D-tiers overproduced AI channels, Ted&#x27;s workflow keeps clips deliberately simple</p>
+<p>- The &quot;one human step&quot; pattern persists: Ted&#x27;s reaction interview, Codie&#x27;s voice/credibility, Jen&#x27;s on-camera presence - the human input is small, deliberate, and load-bearing</p>
+
+<p><strong>The tension worth watching:</strong> Welch D-tiers AI YouTube automation on RPM math while Wholesale Ted builds exactly that - the difference is identity (unique host) and niche RPM. If Ted&#x27;s model works, it&#x27;s because it satisfies the two things Welch&#x27;s math says slop channels lack: recognizability and a high-RPM niche. YouTube&#x27;s inauthentic-content enforcement is the unresolved variable that decides who&#x27;s right.</p>
+
+<p><strong>Automation takeaways for our own stack:</strong> (1) Ted&#x27;s pipeline is buildable today with tools we can drive; (2) Codie&#x27;s swipe file + comment mining + 3-notes calibration are the most agent-automatable growth loop described anywhere in the playlist so far; (3) Welch&#x27;s proof-first clipping move (make the deliverable, publish it, show the views, then pitch) generalizes to any service sale.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-01</p>
+    </div>
+</body>
+</html>
