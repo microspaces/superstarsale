@@ -96,53 +96,13 @@
 </head>
 <body>
     <div class="container">
-        <!--NAV-START-->
-<div class="report-nav">
-  <a class="nav-back" href="index.html">&larr; All Reports</a>
-  <div class="nav-buttons">
-    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
-    <span id="nav-current" class="nav-current"></span>
-    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
-  </div>
-</div>
-<style>
-.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
-.nav-buttons{display:flex;align-items:center;gap:10px}
-.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
-.nav-btn:hover{background:rgba(102,126,234,.25)}
-.nav-current{color:#888;font-size:.85em}
-</style>
-<script>
-(function(){
-  var req=new XMLHttpRequest();
-  req.open('GET','manifest.json',true);
-  req.onload=function(){
-    if(req.status!==200)return;
-    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
-    var here=location.pathname.split('/').pop();
-    var list=m.reports||[];
-    for(var i=0;i<list.length;i++){
-      if(list[i].file===here){
-        var cur=document.getElementById('nav-current');
-        if(cur)cur.textContent=(i+1)+' / '+list.length;
-        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
-        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
-        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
-        break;
-      }
-    }
-  };
-  req.send();
-})();
-</script>
-<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1>Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-05 Run)</h1>
 
 <p><strong>Source playlist:</strong> <a href="https://youtube.com/playlist?list=PLamiZQJOzMbY" target="_blank">&quot;Research&quot; by Michael Buchanan</a> (<code>PLamiZQJOzMbY</code>)</p>
 <p><strong>Special run:</strong> playlist-targeted analysis. Playlist held 12 videos at check time - 11 are new coverage. One repeat (Think Media&#x27;s &quot;He Started YouTube After 40&quot;, <code>pTWcmJrwRtU</code>) was covered in the 2026-09-03 report and skipped.</p>
 <p><strong>Coverage note (standing rule):</strong> not every video is an automated-business pitch. Types are labeled per video: 4 business-model pitches/demos, 7 education/tool-review/general-analysis videos, and each gets the treatment it deserves.</p>
-<p><strong>Transcript note:</strong> YouTube hard-blocked transcript access from this IP for 10 of 11 videos; transcripts were recovered via an alternate route (kome.ai). Video 12 (GHL Wizard) stayed blocked on every route tried (direct API, yt-dlp with 3 player clients + impersonation, 3 transcript services) - it is analyzed from its verified metadata, chapters, and description, and is labeled as such.</p>
+<p><strong>Transcript note:</strong> YouTube hard-blocked transcript access from this IP for 10 of 11 videos at first pass; transcripts were recovered via an alternate route (kome.ai). Video 11 (GHL Wizard) initially resisted every route (direct API, yt-dlp with 3 player clients + impersonation, 3 transcript services) but yielded on a delayed kome.ai retry - full transcript analyzed below.</p>
 
 <h2> Videos Analyzed</h2>
 
@@ -158,7 +118,7 @@
 <tr><td>8</td><td>10 Simple AI Digital Products Making People RICH</td><td>Wholesale Ted</td><td>Business pitch</td></tr>
 <tr><td>9</td><td>Live Streaming Just Became VITAL for YouTube Channels (here&#x27;s why)</td><td>Nate Black</td><td>Education</td></tr>
 <tr><td>10</td><td>DHH&#x27;s new setup for programming with AI - terminal, 16 agents, Herdr, Tailscale \</td><td>Lex Fridman</td><td>Lex Clips</td><td>General analysis (interview)</td></tr>
-<tr><td>11</td><td>The FASTEST Way To Sell AI Services (FREE Demo Website)</td><td>GHL Wizard</td><td>Business pitch (affiliate; no transcript - metadata analysis)</td></tr>
+<tr><td>11</td><td>The FASTEST Way To Sell AI Services (FREE Demo Website)</td><td>GHL Wizard</td><td>Business pitch (affiliate)</td></tr>
 </tbody></table>
 <h2> Run Theme</h2>
 
@@ -357,18 +317,24 @@
 
 <hr>
 
-<h2> Video 11: GHL Wizard - &quot;The FASTEST Way To Sell AI Services (FREE Demo Website)&quot; *(business pitch - affiliate; analyzed from metadata - transcript blocked on all routes)*</h2>
+<h2> Video 11: GHL Wizard - &quot;The FASTEST Way To Sell AI Services (FREE Demo Website)&quot; *(business pitch - affiliate)*</h2>
 
-<p><strong>Story (from verified metadata, chapters, and description):</strong> A GoHighLevel affiliate playbook for selling AI services to local businesses: build a free AI voice-agent demo website, let prospects experience their own business being handled by AI, then convert. Chapter flow: &quot;Sell AI Services With a Free Demo&quot; → &quot;How the AI Demo Website Works&quot; → &quot;Set Up the AI Voice Agent Demo&quot; → &quot;How to Price the AI Service&quot; → &quot;Find Local Businesses With Ask AI&quot; → &quot;Add Leads to Your GoHighLevel CRM&quot; → &quot;Instagram DM Outreach Strategy&quot; → &quot;Send the AI Demo to Prospects.&quot; Uploaded 2026-09-05; ~19 minutes; 130 views at capture.</p>
+<p><strong>Story:</strong> A GoHighLevel affiliate playbook for selling AI voice-agent services to local businesses at $297/month. The core motion is <strong>demo-first selling</strong>: a two-stage AI demo where a voice agent (&quot;Marco&quot;) takes the business owner through a real call (lawn-mowing quote scenario), then a second closer agent (&quot;Maria&quot;) references that experience and sells/bookings. The pitch to viewers: the demo does the selling so you don&#x27;t have to - &quot;if you suck at sales... that&#x27;s what this is for.&quot; Funnel: free demo + 30-day GHL trial + free community with daily coaching calls and (earned, not guaranteed) free leads.</p>
 
-<p><strong>Mechanics (as far as verifiable from metadata):</strong></p>
-<p>- Core motion: demo-first selling - a working AI voice demo tailored to the prospect&#x27;s business does the selling, not a pitch deck</p>
-<p>- Tooling is GoHighLevel end-to-end: voice agent, CRM pipeline, outreach; monetization is GHL&#x27;s affiliate program (30-day trial + &quot;$15,577 in bonuses&quot; via his link, disclosed in description)</p>
-<p>- Prospecting: &quot;Ask AI&quot; for local business leads; Instagram DM outreach; demo link as the touchpoint</p>
+<p><strong>Mechanics:</strong></p>
+<p>- Two-stage demo architecture: stage 1 voice agent <strong>shows value</strong> (answers questions, books an appointment like a receptionist); stage 2 agent <strong>closes</strong> - asks what stood out, qualifies the business (&quot;landscaping is a great fit... lots of customer questions, appointment requests, quotes&quot;), sells on the spot or books a follow-up; stage 2 announces call recording + note-taking</p>
+<p>- Setup: fill a business profile (type, name, website, location) → pre-populates across the voice agent + demo site; widget code is portable to any site (WordPress/Wix/Squarespace/Webflow) via copy-paste embed</p>
+<p>- Pricing psychology: <strong>$297/month anchored against a $1,500 setup fee that&#x27;s &quot;waived if you sign today&quot;</strong> - manufactured urgency as explicit tactic (&quot;if you don&#x27;t have urgency and scarcity, your offers are going to struggle&quot;)</p>
+<p>- Retention argument: solves an <strong>ongoing problem</strong> (answering calls/booking every month) = recurring revenue, framed against one-time agency services (&quot;ongoing problems equals ongoing money&quot;)</p>
+<p>- Lead-gen: Google search <code>&quot;landscapers in Kansas City&quot; Instagram</code> (quoted operator) to surface IG accounts → paste into the built-in AI assistant → &quot;organize these by contact info&quot; → &quot;which ones don&#x27;t have a chat widget?&quot; → &quot;plug them into a sales pipeline&quot; → auto-populates GHL opportunities pipeline with social cards</p>
+<p>- DM script (3-touch): (1) &quot;Hey, your work looks great. Question: what happens when someone checks your page and wants a quote? I built an AI that answers and books jobs automatically. Wanna see it live in thirty seconds?&quot; + link; (2) day-2 follow-up; (3) day-4: &quot;The demo runs twenty-four/seven. You prospect when you want. The demo closes while you do nothing else&quot;</p>
+<p>- Next level teased: AI Instagram chatbot agents running the DM conversations themselves</p>
 
-<p><strong>Automation angle:</strong> Same family as the 09-04 Miko video (agentic service selling), but the differentiator is the <strong>demo-as-outreach</strong> pattern: ship a working vertical-specific demo before any sales conversation. That pattern transfers to any AI service business.</p>
+<p><strong>Quotes:</strong> &quot;This AI voice widget is showing them the value, not selling them. That is what the next AI agent is for.&quot; / &quot;When you solve ongoing problems, you get ongoing money.&quot; / &quot;If you suck at sales... that&#x27;s what this is for.&quot;</p>
 
-<p><strong>Red flags:</strong> Full transcript unobtainable on every route tried (IP blocks), so this entry is shallower than the rest - flagged as such. Multi-layer affiliate monetization (trial link, upgrade links, bonus stack, community upsell). &quot;Fastest way&quot; claim is untested marketing. GHL service-seller saturation is the unstated risk: the video teaches thousands of viewers to pitch the same AI voice service to the same local businesses.</p>
+<p><strong>Automation angle:</strong> The most complete micro-agency blueprint of the run: AI-qualified leads → auto-populated CRM pipeline → self-selling two-stage demo → scripted multi-touch outreach. The genuinely reusable idea is the <strong>demo-as-outreach pattern</strong> - ship a working vertical-specific demo before any sales conversation, and let the prospect&#x27;s own experience carry the close. Same pattern transfers to any AI service business (and to our own internal demo-first pitches).</p>
+
+<p><strong>Red flags:</strong> Multi-layer monetization: GHL affiliate links (30-day trial + &quot;$15,577 in bonuses&quot;), community &quot;free forever if you use it under me&quot; (i.e., under his affiliate link), and the &quot;free paying clients&quot; promise explicitly conditioned on proving worthiness - a loyalty funnel, not a gift. The $1,500-waived anchor is manufactured scarcity by his own admission. No results shown: zero calls booked, zero revenue, zero conversion data for the $297/mo offer - the demo&#x27;s effectiveness is asserted, never demonstrated end-to-end. Instagram cold-DM automation at volume risks platform ToS action (he gestures at &quot;compliance&quot; but the script is the same message blasted to scraped leads). Market saturation is the unstated risk: the video teaches thousands of viewers to pitch the identical AI voice service to the same local businesses.</p>
 
 <hr>
 
@@ -378,7 +344,7 @@
 <p>- <strong>Three independent videos converge on the same human-bottleneck thesis.</strong> DHH: throughput capped by threads one person can shepherd. Isenberg (prior run): judgment about what to point agents at is the moat. Boreing: the operator-builder interpretation layer is what AI actually deletes. The durable role in every version: the human who decides, not the human who types.</p>
 <p>- <strong>Two new agent primitives debuted this week and both matter for our own stack:</strong> (1) <strong>event-driven triggers</strong> (GrokBot webhook routines - most agent platforms still only do cron schedules) and (2) <strong>self-verification as default behavior</strong> (Astra opening a browser to test its own work; refusal-to-guess). Both are directly portable to our research/automation pipelines.</p>
 <p>- <strong>The event-safety pattern is now explicit:</strong> GrokBot&#x27;s per-transaction approval gate (single-use virtual card for the exact computed amount, Face ID to approve) is the correct template for any agent with spending power - and the creator&#x27;s own &quot;approvals will probably disappear&quot; aside is exactly the erosion to resist.</p>
-<p>- <strong>Credibility gradient again:</strong> The AI Advantage discloses its guesses (&quot;my guesstimate&quot;) and its funnel; Wholesale Ted shows real sales counts but skips survivorship; Boreing withholds all mechanics; GHL Wizard is an affiliate stack with no transcript to audit. Consistent with prior runs - weight claims by whether the source shows its base rates.</p>
+<p>- <strong>Credibility gradient again:</strong> The AI Advantage discloses its guesses (&quot;my guesstimate&quot;) and its funnel; Wholesale Ted shows real sales counts but skips survivorship; Boreing withholds all mechanics; GHL Wizard manufactures urgency by his own admission (&quot;if you don&#x27;t have urgency and scarcity, your offers are going to struggle&quot;) and shows zero results for the $297/mo offer. Consistent with prior runs - weight claims by whether the source shows its base rates.</p>
 <p>- <strong>Best replicable artifacts of the run:</strong> (1) webhook-triggered agent routines + approval-gated virtual cards; (2) self-verification instructions for agents (test in a browser, cite exact provisions, pause instead of guessing); (3) guidelines-injection plugins to fix stale model knowledge; (4) end-of-session agent self-review loops (Hindsight pattern); (5) demo-as-outreach for selling AI services.</p>
 
         <p class="footer">Generated by OpenClaw · 2026-09-05</p>
