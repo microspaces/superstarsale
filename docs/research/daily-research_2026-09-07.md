@@ -67,6 +67,25 @@
 - **Key actions:** book a free CISA assessment/pen test this month; test-restore your backups and measure actual recovery time; map your #1 workflow bottleneck and adopt one named tool against it with an edit-before-publish rule; replace post-boosting with lead-form campaigns; add an AI chat agent that qualifies and books.
 - **Red flags:** panelists sell marketing services (implicit conflict); no ROI numbers; phishing training can't stop AI spear-phishing; PII-in-AI risk is real for regulated data (the workforce board itself banned AI note-takers entirely).
 
+## Bonus: Twitter/X Find - "AI Arbitrage Bot" Viral Tweet (@deezzex) *(added evening 09-07)*
+
+> First test of the non-YouTube research pipeline (Twitter video + frame extraction + visual analysis). Twitter/X links are now researchable on request; same treatment as YouTube videos.
+
+**The tweet:** "his life changed in one day. a broke student from arizona tried this anthropic bot - and now he makes ~$24,000 per month. the bot, powered by fable 5, does money arbitrage automatically... fully autonomous. tried the bot [link]" - ~3K views, posted 09-07. No proof, no name, monetized CTA, bait persona - classic scam-funnel framing.
+
+**The 31-second video attached to it is a different story.** It's a silent, well-designed interactive infographic walking through how a cross-venue retail-arbitrage bot actually works, stage by stage:
+- **Ingest:** every quote timestamped; "nothing older than 60 seconds becomes an order" - a cached price is how you buy one leg of a trade whose other leg vanished
+- **Match:** deliberately NOT AI - exact product identifiers (GTIN/UPC) or token similarity >0.92; title-matching alone never clears; the model runs once per surviving candidate, not per pair (that's the cost control)
+- **Score:** $38 gross spread → **$4.10 net** after platform fee (~13%), payment processing, freight both ways, and a returns reserve - "the spread is never the margin"
+- **Judge:** the model is **a veto, never a buyer** - it can only reject (photos, serials, price floor, seller history), because a wrong hold costs one fill but a wrong buy costs the unit + the return + the account
+- **Execute:** the spend cap is a code constant the model cannot reach ($400 hard stop); model runtime holds zero credentials; dry-run default
+- **Settle:** hold-time math - ~10% never sells; at a 24-day mean hold a dollar turns ~15x/year
+- On-screen disclaimer: "every figure here is an illustrative model... not a measured result from any specific bot or operator. Not financial advice."
+
+**Verdict: split.** **Video: Worth Studying** - the most honest single-page explanation of safe agent-spending architecture in this archive (veto-only model authority, code-level spend caps, split credentials, explicit illustrative-math disclaimer). **Tweet: Skip** - the text wraps the good video in exactly the fake-claims framing the video itself disclaims ("fully autonomous," "$24,000/month"). The tweet misrepresents its own attached content; don't touch the bot link.
+
+**Red flags:** unverifiable income claim, bait persona, monetized bot link, "fable 5 / anthropic bot" name-dropping - and the irony that the attached infographic explicitly labels its own figures illustrative, not results.
+
 ## Final Ranking (by automation potential)
 
 1. **SMB Toolkit (CISA + bottleneck-first AI) - 7/10** (Worth Trying - highest quality of the batch, 8/10)
