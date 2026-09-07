@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05 12:40:20",
+  "generated": "2026-09-07 09:46:09",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -292,6 +292,11 @@
       "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-03 Run)"
     },
     {
+      "file": "daily-research_2026-09-04.html",
+      "date": "2026-09-04",
+      "title": "Daily YouTube Strategy Research - 2026-09-04 (Backfill)"
+    },
+    {
       "file": "playlist-research_2026-09-04.html",
       "date": "2026-09-04",
       "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-04 Run)"
@@ -305,6 +310,16 @@
       "file": "playlist-research_2026-09-05.html",
       "date": "2026-09-05",
       "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-05 Run)"
+    },
+    {
+      "file": "daily-research_2026-09-06.html",
+      "date": "2026-09-06",
+      "title": "Daily YouTube Strategy Research - 2026-09-06 (Backfill)"
+    },
+    {
+      "file": "daily-research_2026-09-07.html",
+      "date": "2026-09-07",
+      "title": "Daily YouTube Strategy Research - 2026-09-07"
     }
   ]
 }
