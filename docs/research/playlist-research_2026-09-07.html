@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-09-07</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { scroll-margin-top: 20px; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1 id="playlist-research-michael-buchanans-research-playlist-2026-09-07-evening-run">Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-07 Evening Run)</h1>
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#run-theme">Run Theme</a></li><li class="toc-h2"><a href="#video-1-casey-builds-stuff-reviewing-crappy-rip-offs-of-my-successful-app-analysis-business">Video 1: Casey Builds Stuff — &quot;Reviewing crappy rip offs of my successful app&quot; *(analysis — business)*</a></li><li class="toc-h2"><a href="#video-2-miko-gpt-6-astra-seedance-25-has-changed-ai-ugc-forever-full-tutorial-tutorial-sponsored">Video 2: Miko — &quot;GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial)&quot; *(tutorial — sponsored)*</a></li><li class="toc-h2"><a href="#video-3-desert-degens-can-this-ai-cheat-code-beat-dragon-link-casino-content-standing-rule">Video 3: Desert Degens — &quot;Can This AI Cheat Code Beat Dragon Link?&quot; *(casino content — standing rule)*</a></li><li class="toc-h2"><a href="#video-4-joshua-mayo-10-ways-to-make-money-with-ai-that-feel-like-cheating-tutorial-listicle">Video 4: Joshua Mayo — &quot;10 Ways to Make Money With AI That Feel Like Cheating (Tutorial)&quot; *(listicle)*</a></li><li class="toc-h2"><a href="#video-5-wholesale-ted-the-best-ai-side-hustles-to-start-if-youre-broke-listicle">Video 5: Wholesale Ted — &quot;The Best AI Side Hustles To Start If You&#x27;re BROKE&quot; *(listicle)*</a></li><li class="toc-h2"><a href="#video-6-shortfundly-how-much-can-you-earn-from-vertical-micro-drama-ott-distribution-revenue-guide-2026-vendor-pitch">Video 6: Shortfundly — &quot;How Much Can You Earn from Vertical Micro Drama OTT Distribution? | Revenue Guide 2026&quot; *(vendor pitch)*</a></li><li class="toc-h2"><a href="#video-7-the-guerrilla-publisher-bill-gates-said-ai-would-end-amazon-heres-what-he-meant-analysis">Video 7: The Guerrilla Publisher — &quot;Bill Gates Said AI Would End Amazon. Here&#x27;s What He Meant.&quot; *(analysis)*</a></li><li class="toc-h2"><a href="#video-8-alex-finn-7-tips-that-turn-chatgpt-6-astra-into-agi-hype-watch">Video 8: Alex Finn — &quot;7 tips that turn ChatGPT 6 Astra into AGI&quot; *(hype-watch)*</a></li><li class="toc-h2"><a href="#video-9-davhy-davis-how-to-make-fortnite-maps-as-a-beginner-full-guide-tutorial-standing-rule">Video 9: Davhy Davis — &quot;How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!)&quot; *(tutorial — standing rule)*</a></li><li class="toc-h2"><a href="#video-10-tommys-toolbox-podcast-he-failed-out-of-college-now-he-owns-tampas-most-iconic-newspaper-ray-roa-interview">Video 10: Tommy&#x27;s Toolbox Podcast — &quot;He Failed Out of College — Now He Owns Tampa&#x27;s Most Iconic Newspaper | Ray Roa&quot; *(interview)*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking (by automation potential)</a></li><li class="toc-h2"><a href="#cross-video-synthesis">Cross-Video Synthesis</a></li></ul></nav>
+
+<p>&gt; <strong>Run note:</strong> the playlist turned over 100% between the noon check (~12:45) and this run (~17:50) — all 10 videos are new, none survive from the morning snapshot. Full transcripts for all 10 (including a 425K-char, ~5-hour Fortnite compilation) via kome.ai/yt-dlp fallbacks.</p>
+
+<p><strong>Videos found:</strong> 10 · <strong>Transcripts:</strong> 10/10</p>
+
+<h2 id="videos-analyzed"> Videos Analyzed<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td></tr>
+<tr><td>1</td><td>Reviewing crappy rip offs of my successful app</td><td>Casey Builds Stuff</td><td>~7.8K</td><td>34 min</td></tr>
+<tr><td>2</td><td>GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial)</td><td>Miko</td><td>~19K</td><td>11 min</td></tr>
+<tr><td>3</td><td>Can This AI Cheat Code Beat Dragon Link?</td><td>Desert Degens</td><td>~23K</td><td>57 min</td></tr>
+<tr><td>4</td><td>10 Ways to Make Money With AI That Feel Like Cheating (Tutorial)</td><td>Joshua Mayo</td><td>~18K</td><td>30 min</td></tr>
+<tr><td>5</td><td>The Best AI Side Hustles To Start If You&#x27;re BROKE</td><td>Wholesale Ted</td><td>~134K</td><td>22 min</td></tr>
+<tr><td>6</td><td>💰 How Much Can You Earn from Vertical Micro Drama OTT Distribution?</td><td>Shortfundly</td><td>~305</td><td>6.6 min</td></tr>
+<tr><td>7</td><td>Bill Gates Said AI Would End Amazon. Here&#x27;s What He Meant.</td><td>The Guerrilla Publisher</td><td>~59K</td><td>21 min</td></tr>
+<tr><td>8</td><td>7 tips that turn ChatGPT 6 Astra into AGI</td><td>Alex Finn</td><td>~9K</td><td>16 min</td></tr>
+<tr><td>9</td><td>How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!)</td><td>Davhy Davis</td><td>~1K</td><td>298 min</td></tr>
+<tr><td>10</td><td>He Failed Out of College — Now He Owns Tampa&#x27;s Most Iconic Newspaper</td><td>Tommy&#x27;s Toolbox Podcast</td><td>~1.4K</td><td>34 min</td></tr>
+</tbody></table>
+<h2 id="run-theme"> Run Theme<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>The Astra hype wave meets the receipts check.</strong> &quot;GPT 6 Astra&quot; appears in three of ten titles, and the pattern across all of them is identical: workflow demonstrations are real, effectiveness claims are asserted, measured proof appears nowhere — and the only verified AI-product profits in the batch belong to the creators selling the tutorials. Around that core: two genuine-receipt videos (an app founder reviewing his own clones, a local-newspaper owner interview), two listicles re-skinning known themes, one vendor brochure, and two non-business entries handled under the standing rule.</p>
+
+<h2 id="video-1-casey-builds-stuff-reviewing-crappy-rip-offs-of-my-successful-app-analysis-business"> Video 1: Casey Builds Stuff — &quot;Reviewing crappy rip offs of my successful app&quot; *(analysis — business)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> Founder of Dispersed (~$30/yr freemium wild-camping map app) reviews 6 vibe-coded clones head-to-head. His moat stack: proprietary data layer (phoned dozens of ranger districts to map where camping is actually legal — camping is legal on &lt;10% of the roads in federal MVUM data), a UGC flywheel (10K active users submit hundreds of campsite locations monthly), community distribution (expo booths, workshops, build-in-public YouTube as top-of-funnel).</p>
+<p>- <strong>Revenue model:</strong> <strong>$24K ARR</strong>; $7K/mo subscriptions at July peak, $5.5K August; ~60% of 125 active trials convert within 7 days. Competitor economics: Wildroute.ai charges $200/yr with an estimated $50K sunk; Grover.ai&#x27;s AI-chat search costs ~$1.50 in tokens per query — unit-economics suicide for a map search; &quot;Campsite&quot; is free with no visible monetization (business-model mystery, possible data play).</p>
+<p>- <strong>Replication steps:</strong> (1) pick a niche with fragmented public data + passionate users; (2) AI-build the app shell fast — the shell is not the product; (3) build the proprietary data layer competitors can&#x27;t copy (his phone calls); (4) undercut the clone-tier price ($30 vs $120-200/yr); (5) seed UGC so the product improves itself; (6) distribute where the niche physically gathers; (7) watch trials as the leading indicator.</p>
+<p>- <strong>Automation potential:</strong> 5/10 — vibe coding automates the shell; the moat (data acquisition calls, UGC moderation, community presence) is deliberately manual.</p>
+<p>- <strong>Quality:</strong> 9/10 — strongest receipts in the batch: live RevenueCat dashboard figures, named competitors tested on camera. Self-reported but internally consistent.</p>
+<p>- <strong>Verdict: Worth Trying</strong></p>
+<p>- <strong>Key actions:</strong> treat &quot;AI built my app&quot; as table stakes — moats are data + UGC + distribution; price below the clone tier; don&#x27;t use AI-chat as spatial search UX (token COGS); monitor free competitors for hidden data plays.</p>
+<p>- <strong>Red flags:</strong> heavy seasonality (self-acknowledged); all numbers self-reported; his own products get generous framing; free rival could compress pricing.</p>
+
+<h2 id="video-2-miko-gpt-6-astra-seedance-25-has-changed-ai-ugc-forever-full-tutorial-tutorial-sponsored"> Video 2: Miko — &quot;GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial)&quot; *(tutorial — sponsored)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> Taught: an AI UGC ad studio — GPT-6 Astra (Codex desktop) + a &quot;video ad stack&quot; skill + Higgsfield MCP running Seedance 2.5 → brand research via site crawl + Facebook Ad Library → reference TikTok UGC deconstruction (FFmpeg frame inspection) → full end-to-end ad video generation (unboxing + street-interview formats demoed). Monetized: Higgsfield sponsorship, &quot;Hixio&quot; affiliate link, free community distributing the skill zip.</p>
+<p>- <strong>Revenue model:</strong> none given — no CTR, no CPA, no client spend. Only &quot;insane&quot; qualitative praise.</p>
+<p>- <strong>Replication steps:</strong> (1) Codex desktop → GPT-6 Astra, medium effort; (2) install Higgsfield plugin; (3) drop in the skill zip; (4) paste product URL → automated brand research brief; (5) feed 1-3 reference UGC videos; (6) prompt for adapted scripts/shot plans; (7) generate end-to-end videos; (8) iterate in-chat.</p>
+<p>- <strong>Automation potential:</strong> 8/10 — the entire pipeline is agentic in one chat; taste and selling stay human.</p>
+<p>- <strong>Quality:</strong> 4/10 — workflow genuinely demonstrated step-by-step on screen; effectiveness purely asserted. The street-interview demo shows fully synthetic people giving fake opinions on a real product — presented as great, never disclosed as synthetic.</p>
+<p>- <strong>Verdict: Mixed</strong></p>
+<p>- <strong>Key actions:</strong> the workflow is cheap to test on your own product — judge the renders yourself; if selling, collect your own CPA data first; avoid/disclose synthetic-testimonial formats (FTC + platform risk); treat the free community as a lead magnet.</p>
+<p>- <strong>Red flags:</strong> sponsored by the tool being taught; affiliate link; zero performance metrics; fake-social-proof demo; Higgsfield credit costs never mentioned.</p>
+
+<h2 id="video-3-desert-degens-can-this-ai-cheat-code-beat-dragon-link-casino-content-standing-rule"> Video 3: Desert Degens — &quot;Can This AI Cheat Code Beat Dragon Link?&quot; *(casino content — standing rule)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> Not gambling — the channel. A functioning casino-comp economy: Ellis Island gifted $500 cash + $545 free play for delivering a group-pull crowd, plus promo events driving foot traffic; channel memberships, merch, and a $10-100 store-credit &quot;Kino Corner&quot; comment lottery feeding the algorithm. The &quot;Dragon Code&quot; (an AI-generated 17-spin bet sequence) is the content hook — the hosts themselves admit on camera it&#x27;s nonsense: &quot;It&#x27;s all random... it&#x27;s still fun.&quot;</p>
+<p>- <strong>Revenue model:</strong> no numbers beyond the day: $500 in → $583 out (+$83, only with free play burned). Monthly-recap framing suggests roughly break-even-to-negative gambling; the channel is the profit center.</p>
+<p>- <strong>Replication steps:</strong> plainly — for the slot &quot;system,&quot; the only replication is gamble; slots are per-spin RNG with a fixed house edge and no bet sequence changes expected value. Replicable is the format: daily play + transparent bankroll + casino partnership (casinos fund creators who deliver visitors) + memberships + giveaways. One real fact: paytable RTP improves with denomination (2¢→5¢ raised the mini 2.5x for ~25% more bet) — known paytable math, not an edge.</p>
+<p>- <strong>Automation potential:</strong> 2/10 — live personality content doesn&#x27;t automate.</p>
+<p>- <strong>Quality:</strong> 6/10 — honest and self-aware (discloses the casino gift, debunks its own hook), but the clickbait framing will still mislead some viewers.</p>
+<p>- <strong>Verdict: Skip</strong> — nothing actionable unless you want to be a Vegas casino creator; the real model is casino-comp-for-creator-traffic.</p>
+<p>- <strong>Red flags:</strong> gambling content; &quot;system&quot; bait; casino-funded bankroll = conflict of interest; survivorship celebration of hits.</p>
+
+<h2 id="video-4-joshua-mayo-10-ways-to-make-money-with-ai-that-feel-like-cheating-tutorial-listicle"> Video 4: Joshua Mayo — &quot;10 Ways to Make Money With AI That Feel Like Cheating (Tutorial)&quot; *(listicle)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> ten AI-arbitrage methods: image services, KDP coloring books, kids animation channels, personalized storybooks, AI wall art, Amazon on-listing shoppable video reviews, digital asset packs, Claude Code + Shopify CLI store builds, faceless channels, vibe-coded micro-tools.</p>
+<p>- <strong>Revenue model:</strong> uneven receipts: a real coloring-book sale notification and a real clipart bundle (~$3,400/9 months) shown; the $12K/$18K &quot;per listing&quot; storybook numbers are Etsy sales-*estimator* outputs; &quot;$50/day&quot; is explicitly hypothetical; his own faceless channel gets zero numbers.</p>
+<p>- <strong>Replication steps:</strong> best of the ten per receipts: #7 hyper-specific digital asset packs (specificity = less competition, higher conversion) and #4 personalized kids storybooks ($30-40, 30-45 min/book). #6 (Amazon on-listing video commissions) is the freshest mechanic — buy only products you&#x27;d review honestly.</p>
+<p>- <strong>Automation potential:</strong> 8/10 — everything deliberately near-fully AI-generated; that same automation is why each niche is commoditizing fast.</p>
+<p>- <strong>Quality:</strong> 5/10 — some real screenshots, but headline numbers are estimator math, and &quot;not many people are using ChatGPT this way&quot; is false — every one of these niches is already crowded with AI sellers.</p>
+<p>- <strong>Verdict: Mixed</strong></p>
+<p>- <strong>Key actions:</strong> test #7 and #4 first (real data, near-zero COGS); skip $5 image gigs (race to zero); use the specificity heuristic across all Etsy plays.</p>
+<p>- <strong>Red flags:</strong> estimator screenshots as proof; advising sellers to fake delivery delays; engagement-bait funnels on every method; sponsor read; known-theme overlap ~9 of 10.</p>
+
+<h2 id="video-5-wholesale-ted-the-best-ai-side-hustles-to-start-if-youre-broke-listicle"> Video 5: Wholesale Ted — &quot;The Best AI Side Hustles To Start If You&#x27;re BROKE&quot; *(listicle)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> seven &quot;$0-start&quot; AI hustles on free tiers: English-practice YouTube channels, AI POD (Printify Pop-Up as the truly no-card option), AI research agency on Fiverr, KDP puzzle books (splitting generation across free ChatGPT/Claude/Gemini/Grok quotas), custom presentations ($222 avg gig), teaching AI skills ($50/hr), virtual AI fashion-model Instagram accounts + Amazon Associates.</p>
+<p>- <strong>Revenue model:</strong> all estimates: SocialBlade 2.4M views/30 days × $3-7 RPM ⇒ ~$7-17K/mo for the English channel (her estimate, &lt;4 months old); $101 avg research gig; estimator 86-124 copies/day on a puzzle listing; &quot;Derek&#x27;s&quot; $50/hr from a press anecdote. Her own POD numbers undisclosed.</p>
+<p>- <strong>Replication steps:</strong> genuinely-$0 starts: Printify Pop-Up POD and the Fiverr research gig. Her monetization-verification trick is the real asset: check a channel for memberships/Super Thanks — platform-verified proof of monetization, no screenshots needed. Spread generation across multiple free AI quotas for zero-cost output.</p>
+<p>- <strong>Automation potential:</strong> 7/10 — generation/VO/subtitles/research automated; Etsy ops, Fiverr delivery, teaching, posting cadence manual.</p>
+<p>- <strong>Quality:</strong> 6/10 — best credibility method in the batch (platform-verified signals), honest that &quot;free&quot; has exceptions ($15 Etsy fee, POD float, Canva trial, 50 Flow credits/day) — but every income figure is still estimator math or someone else&#x27;s anecdote.</p>
+<p>- <strong>Verdict: Mixed</strong></p>
+<p>- <strong>Key actions:</strong> adopt her YPP-verification trick when auditing any &quot;this channel earns X&quot; claim; batch-generate to respect free credit limits; if testing English-practice or fashion-model channels, mind saturation — her own examples are &lt;4 months old.</p>
+<p>- <strong>Red flags:</strong> the video funnels to her ebook + $1-trial course + Canva affiliate; undisclosed-AI fashion models misleading viewers; single-anecdote teaching income.</p>
+
+<h2 id="video-6-shortfundly-how-much-can-you-earn-from-vertical-micro-drama-ott-distribution-revenue-guide-2026-vendor-pitch"> Video 6: Shortfundly — &quot;How Much Can You Earn from Vertical Micro Drama OTT Distribution? | Revenue Guide 2026&quot; *(vendor pitch)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> platform-side supply acquisition — Shortfundly (an OTT distribution platform) pitching creators to license vertical micro-dramas through it. AI-narrated brochure, 305 views.</p>
+<p>- <strong>Revenue model:</strong> all vendor-stated, unaudited: license fee $200-5K/series; 10-40% subscription rev share; ad share ~$50-1,500/series/mo; exclusivity &quot;over $20K/series&quot;; non-exclusive international &quot;north of $15K&quot;; bonuses to $10K+; headline &quot;top creators earn $5,000-50,000+ per series.&quot; No costs, no payout proof, no named creators, contract terms absent.</p>
+<p>- <strong>Replication steps:</strong> if serious about micro-drama, ignore these numbers: study the format (60-90s episodes, cliffhanger structure), cost out a pilot season (the video&#x27;s cost omission is the tell), benchmark against established vertical-drama apps&#x27; official creator programs, and demand written payout terms before licensing anything. The &quot;6 streams&quot; framing survives as a licensing-deal negotiation checklist.</p>
+<p>- <strong>Automation potential:</strong> 4/10 — scripting/VO/editing AI-assistable; production and marketing burn real money.</p>
+<p>- <strong>Quality:</strong> 3/10 — single-source vendor data with unfalsifiably wide ranges; the platform&#x27;s own video has 305 views — no visible evidence the advertised economy exists.</p>
+<p>- <strong>Verdict: Skip</strong> — as presented. The vertical-drama market is real (multi-billion category); this brochure isn&#x27;t evidence of it.</p>
+<p>- <strong>Red flags:</strong> vendor as sole source for its own payouts; zero cost-side math; AI-narrated content-farm pattern; &quot;$50K+&quot; headline with zero named examples.</p>
+
+<h2 id="video-7-the-guerrilla-publisher-bill-gates-said-ai-would-end-amazon-heres-what-he-meant-analysis"> Video 7: The Guerrilla Publisher — &quot;Bill Gates Said AI Would End Amazon. Here&#x27;s What He Meant.&quot; *(analysis)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> beneath the clickbait, a real &quot;unbundle the middleman&quot; thesis for indie authors: interest media (YouTube/newsletters/podcasts) earns trust → owned home base (site + email) → modular fulfillment stack (KDP for Amazon buyers + IngramSpark for trade/library + Lulu Direct or Ingram Share &amp; Sell for direct sales with customer data) → Shopify/Stripe checkout → Amazon keeps only the sales its own discovery earns. Creator monetizes via the Independent Authors Guild community (~600 members).</p>
+<p>- <strong>Revenue model:</strong> none for her own business. Industry stats: Amazon&#x27;s share of indie-author sales declining three straight years (91% → 87% → 83%, survey unnamed); a 14K-book study where titles recording sales grew ~19x but quarterly revenue grew &lt;9x — supply growing ~2x faster than money in the market.</p>
+<p>- <strong>Replication steps:</strong> audit which functions your dominant marketplace actually performs vs. what you do; add a direct channel with customer-data access alongside it; start the email list before you need it; watch marketplace-share trend as the trigger to build the off-ramp.</p>
+<p>- <strong>Automation potential:</strong> 5/10 — repurposing/email/storefront automate; the thesis rests on manually earned trust.</p>
+<p>- <strong>Quality:</strong> 6/10 — infrastructure claims are checkable and real (Lulu Direct, Share &amp; Sell, D2D&#x27;s own advice against stacking print channels); the two key stats are unnamed surveys; 2023 speculation treated as present fact; she sells the alternative she&#x27;s advocating.</p>
+<p>- <strong>Verdict: Worth Trying</strong> — for anyone selling through a dominant marketplace, not just authors; the generalizable play (own the customer record) is validated elsewhere.</p>
+<p>- <strong>Red flags:</strong> unnamed surveys as data; membership funnel benefits from Amazon anxiety; no revenue proof from anyone actually direct-first.</p>
+
+<h2 id="video-8-alex-finn-7-tips-that-turn-chatgpt-6-astra-into-agi-hype-watch"> Video 8: Alex Finn — &quot;7 tips that turn ChatGPT 6 Astra into AGI&quot; *(hype-watch)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> newsletter-funnel AI channel; the &quot;AGI&quot; packaging earns the click. <strong>The claim itself: pure engagement bait</strong> — a single paraphrased &quot;Jensen Hong&quot; (mangled Jensen Huang) tweet, zero benchmarks, no failure cases in any demo.</p>
+<p>- <strong>Revenue model:</strong> none given (free newsletter, sponsor/affiliate downstream).</p>
+<p>- <strong>Replication steps:</strong> the 7 tips judged on substance — <strong>keepers: #2</strong> plan-high/execute-low reasoning-tier cost discipline; <strong>#5</strong> the second-brain ticket loop (high-tier dumps ideas/tickets into Notion/Linear, low-tier loops through them — a real token-economy pattern); <strong>#6</strong> a dedicated always-on remote build/test box. <strong>Overstated: #3</strong> delete your AGENTS.md/skills (context bloat is real; wholesale deletion is untested — A/B first). <strong>Weakest: #7</strong> &quot;ask instead of prompt&quot; — abdicating direction dressed as technique.</p>
+<p>- <strong>Automation potential:</strong> 6/10 — the tips are literally about delegating computer work; the channel itself is a manual talking head.</p>
+<p>- <strong>Quality:</strong> 4/10 — zero receipts on the central claim; cherry-picked demos; partial credit for three genuinely usable workflow tips.</p>
+<p>- <strong>Verdict: Mixed</strong> — skip the AGI narrative, steal tips 2/5/6.</p>
+<p>- <strong>Key actions:</strong> adopt tiered planning and the ticket loop on the next build; discount any AGI claim citing a tweet instead of a benchmark — expect this wave to repeat across channels all week.</p>
+<p>- <strong>Red flags:</strong> celebrity-tweet sourcing; superlative stacking; monetized hype; advice contradicting reproducibility practice with no evidence.</p>
+
+<h2 id="video-9-davhy-davis-how-to-make-fortnite-maps-as-a-beginner-full-guide-tutorial-standing-rule"> Video 9: Davhy Davis — &quot;How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!)&quot; *(tutorial — standing rule)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> two layers. Taught: UEFN/Fortnite Creative engagement payouts — Epic pays creators from a pool (~40% of Fortnite revenue, ~$250M/yr) proportional to engaged minutes (~$1,000 per 1M engaged minutes per the video); tooling is free (UEFN, Photopea, Gemini free tier). The channel: guru funnel — free map template via Discord → paid &quot;Fort Mafia Inner Circle&quot; mentorship.</p>
+<p>- <strong>Revenue model:</strong> headlined outliers: one 1v1 map $6M over 2 years; $200K from a 4-hour trending run; $900K in 3 months at 50K players. Counter-evidence in his own reaction segment: fan maps earning $12, $124, $200. The realistic median is near zero.</p>
+<p>- <strong>Replication steps:</strong> UEFN → template/clone-style gameplay (1v1, box PvP, tycoon) → design for 25-40+ min average sessions (discovery ranks on retention) → AI thumbnail pipeline (Gemini &quot;Fortnite style, arms crossed, white background&quot; → Photopea brighten/sharpen/vignette — brightness wins on tiny tiles) → publish timed to season/update days → track on Fortnite.gg → iterate. The cheap experiment: one template map + AI thumbnail + season-day launch, measure engaged minutes, never buy the mentorship.</p>
+<p>- <strong>Automation potential:</strong> 6/10 — the thumbnail pipeline is ~90% automatable and the recipe is given verbatim (transferable to any game-facing content); retention-winning design is genuine creative labor, and AI shovelware demonstrably fails to hold engagement (his own footage proves it).</p>
+<p>- <strong>Quality:</strong> 5/10 — real current workflow information buried in rambling, self-aggrandizing delivery with outlier revenue and near-zero success-rate math; ~1K views on a 5-hour &quot;FULL GUIDE&quot; suggests the audience is mostly other hopefuls.</p>
+<p>- <strong>Verdict: Mixed</strong> — the rail (engagement payouts, $0 tooling) is real; this course funnel isn&#x27;t the reason to care.</p>
+<p>- <strong>Key actions:</strong> bookmark Fortnite.gg discovery data + Epic&#x27;s payout docs as the checkable mechanics; the Gemini+Photopea thumbnail recipe is a free transferable asset factory.</p>
+<p>- <strong>Red flags:</strong> guru funnel; outliers as typical; celebrates reskinning/cloning; scarcity CTAs.</p>
+
+<h2 id="video-10-tommys-toolbox-podcast-he-failed-out-of-college-now-he-owns-tampas-most-iconic-newspaper-ray-roa-interview"> Video 10: Tommy&#x27;s Toolbox Podcast — &quot;He Failed Out of College — Now He Owns Tampa&#x27;s Most Iconic Newspaper | Ray Roa&quot; *(interview)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> Creative Loafing Tampa Bay (alt-weekly) as an owner-operator co-op: four employee-owners plus two partners — crucially including the two ad-sales leads, who own the advertiser relationships (in a local paper, the ad book IS the asset). Differentiation is explicitly anti-AI-slop: human curation, trusted local event listings, accountability reporting. Previously held by out-of-town chains extracting profit from the market; the buyout stopped the outflow (&quot;a certain amount of money is not getting shipped out of our area anymore&quot;).</p>
+<p>- <strong>Revenue model:</strong> no numbers at all. Qualitative: ad side is the engine with in-house custom ad design; print + payroll are the cost centers (&quot;the paper and the people are the most expensive things&quot;); brand collabs (brewery naming rights); lean ~5-7 headcount including owners.</p>
+<p>- <strong>Replication steps:</strong> the pattern, not this paper: (1) get inside first — the demonstrated path is becoming indispensable to the outlet (10+ years freelancing → editor) so you&#x27;re positioned when an absentee owner wants out; (2) assemble a small owner group deliberately mixing content and revenue; (3) target alt-weeklies/weeklies in growing markets held by chains or retiring founders — small-check deals with brand equity intact; (4) strip to owner-operator headcount; (5) monetize beyond banners: custom ads, events/listings, brand collabs; (6) sell the human-local moat to both readers and advertisers; (7) diligence what the interview skips: circulation/reader age, advertiser churn, print contracts, 3 years of P&amp;L before valuing &quot;iconic.&quot;</p>
+<p>- <strong>Automation potential:</strong> 2/10 — the moat is deliberately human; only back-office automates.</p>
+<p>- <strong>Quality:</strong> 6/10 — first-party credibility (he actually owns it, names names) but zero quantitative content. High trust, low data — the exact inverse of the Shortfundly brochure, and more valuable for it.</p>
+<p>- <strong>Verdict: Mixed</strong></p>
+<p>- <strong>Key actions:</strong> scan for distressed legacy-media patterns in growing markets; lead with the revenue-side partner; &quot;curated-human-local&quot; is a sellable pitch in an AI-slop market; pull prior-owner filings for the economics this interview omits.</p>
+<p>- <strong>Red flags:</strong> no financials from an owner interview; &quot;got lucky&quot; survivorship framing; promo-flavored podcast, hard questions never asked; print-cost and audience-age exposure unaddressed.</p>
+
+<h2 id="final-ranking-by-automation-potential"> Final Ranking (by automation potential)<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>1. <strong>AI UGC ad studio pipeline (Miko) — 8/10</strong> (Mixed — the pipeline is real, the economics unproven)</p>
+<p>2. <strong>10 AI money methods (Mayo) — 8/10</strong> (Mixed — best items: asset packs, storybooks)</p>
+<p>3. <strong>$0-start AI hustles (Wholesale Ted) — 7/10</strong> (Mixed — best verification method in the batch)</p>
+<p>4. <strong>Astra workflow tips (Alex Finn) — 6/10</strong> (Mixed — keepers: tiered reasoning, ticket loop, test box)</p>
+<p>5. <strong>UEFN Fortnite creator path (Davhy Davis) — 6/10</strong> (Mixed — real rail, guru funnel)</p>
+<p>6. <strong>Niche app with data moat (Casey) — 5/10</strong> (Worth Trying — best receipts, quality 9/10)</p>
+<p>7. <strong>Direct-sales book stack (Guerrilla Publisher) — 5/10</strong> (Worth Trying for marketplace sellers)</p>
+<p>8. <strong>Micro-drama OTT licensing (Shortfundly) — 4/10</strong> (Skip — vendor brochure)</p>
+<p>9. <strong>Casino creator economy (Desert Degens) — 2/10</strong> (Skip — entertainment; casino-comp model noted)</p>
+<p>10. <strong>Local media buyout (Tommy&#x27;s Toolbox) — 2/10</strong> (Mixed — new acquisitions variant, worth a dedicated dig)</p>
+
+<h2 id="cross-video-synthesis"> Cross-Video Synthesis<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>Three threads across ten videos.</strong> (1) <strong>Production cost has collapsed; moats haven&#x27;t.</strong> Batch A&#x27;s throughline: vibe-coded clones ship fast and still lose to proprietary data (Casey&#x27;s ranger-district phone calls), distribution, and verified proof. The GPT-6 Astra wave (3 titles) is the same story at the tool layer — every demonstration is procedural, every effectiveness claim is asserted, and the only verified AI-product profits in the batch belong to the creators selling the tutorials. (2) <strong>Own the relationship, not the platform.</strong> The Guerrilla Publisher (authors vs Amazon), the Creative Loafing buyout (locals vs extractive chains), and even Shortfundly&#x27;s pitch all argue the same structure from different directions: whoever creates demand should own the customer record and the transaction. The employee-group buyout of distressed legacy media is a genuine <strong>new variant of the acquisitions theme</strong> worth a dedicated dig — small checks, brand equity, ad-book transferability. (3) <strong>Verification techniques are becoming the content.</strong> Wholesale Ted&#x27;s YPP-membership check and Casey&#x27;s live dashboard walkthrough are themselves reusable audit methods — use them on every future batch. Against the known-theme list: ~7 of 10 are re-skins (Etsy/POD/KDP, faceless channels, micro-SaaS, creator funnels, courses). New or sharpened: <strong>AI UGC ad studios as a service</strong>, <strong>Amazon on-listing video commissions</strong>, <strong>synthetic fashion-model affiliate accounts</strong>, <strong>UEFN engagement-payout mechanics</strong> (engaged-minute rates + season-timing), the <strong>zero-cost AI thumbnail pipeline</strong>, the <strong>casino-comp-for-creator-traffic sponsorship model</strong>, and the <strong>local-media employee buyout</strong>. Numbers-to-credibility inversion held all night: the vendor with the most dollar figures was least verifiable; the actual owner gave none.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-07</p>
+    </div>
+</body>
+</html>
