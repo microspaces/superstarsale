@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-09-09</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { scroll-margin-top: 20px; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1 id="playlist-research-michael-buchanans-research-playlist-2026-09-09-run">Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-09 Run)</h1>
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#run-theme">Run Theme</a></li><li class="toc-h2"><a href="#video-1-greg-isenberg-5-github-repos-tooling-roundup">Video 1: Greg Isenberg — &quot;5 GitHub Repos&quot; *(tooling roundup)*</a></li><li class="toc-h2"><a href="#video-2-a16z-ai-agents-could-finally-reinvent-the-credit-card-vc-thesis">Video 2: a16z — &quot;AI Agents Could Finally Reinvent the Credit Card&quot; *(VC thesis)*</a></li><li class="toc-h2"><a href="#video-3-wes-mcdowell-hormozis-new-youtube-strategy-content-strategy">Video 3: Wes McDowell — &quot;Hormozi&#x27;s New YouTube Strategy&quot; *(content strategy)*</a></li><li class="toc-h2"><a href="#video-4-mira-ai-ai-filmmaking-team-with-claude-sponsored-tutorial">Video 4: Mira AI — &quot;AI Filmmaking Team With Claude&quot; *(sponsored tutorial)*</a></li><li class="toc-h2"><a href="#video-5-casino-steve-bubble-craps-standing-rule">Video 5: Casino Steve — Bubble Craps *(standing rule)*</a></li><li class="toc-h2"><a href="#video-6-jake-bauman-grok-bot-to-get-my-brand-cited-by-ai-geoaeo">Video 6: Jake Bauman — &quot;Grok Bot to Get My Brand Cited by AI&quot; *(GEO/AEO)*</a></li><li class="toc-h2"><a href="#video-7-paul-j-lipsky-chatgpt-images-25-tool-review">Video 7: Paul J Lipsky — ChatGPT Images 2.5 *(tool review)*</a></li><li class="toc-h2"><a href="#video-8-mywifequitherjob-forget-amazon-shopify-ecommerce">Video 8: MyWifeQuitHerJob — &quot;Forget Amazon, Shopify&quot; *(ecommerce)*</a></li><li class="toc-h2"><a href="#video-9-jonathan-nilsen-tiktok-six-figure-publishers-kdp">Video 9: Jonathan Nilsen — TikTok Six-Figure Publishers *(KDP)*</a></li><li class="toc-h2"><a href="#video-10-nick-ponte-new-way-to-make-with-chatgpt-local-ai-services">Video 10: Nick Ponte — &quot;NEW Way to make $ with chatgpt&quot; *(local AI services)*</a></li><li class="toc-h2"><a href="#video-11-the-next-new-thing-slowbooks-open-source-agent-accounting">Video 11: The Next New Thing — Slowbooks *(open-source agent accounting)*</a></li><li class="toc-h2"><a href="#video-12-koerner-if-we-had-to-make-1m-fast-idea-roundup">Video 12: Koerner — &quot;If We Had to Make $1M Fast&quot; *(idea roundup)*</a></li><li class="toc-h2"><a href="#video-13-sunny-lenarduzzi-1m-in-12-months-from-0-subs-youtube-lead-gen">Video 13: Sunny Lenarduzzi — &quot;$1M in 12 Months from 0 subs&quot; *(YouTube lead-gen)*</a></li><li class="toc-h2"><a href="#video-14-koerner-contactless-trailer-rentals-operator-interview">Video 14: Koerner — Contactless Trailer Rentals *(operator interview)*</a></li><li class="toc-h2"><a href="#video-15-glo-atanmo-8-ways-i-get-paid-on-youtube-creator-monetization">Video 15: Glo Atanmo — &quot;8 Ways I Get Paid on YouTube&quot; *(creator monetization)*</a></li><li class="toc-h2"><a href="#video-16-openclaw-clawcast-ep-9-platform-podcast">Video 16: OpenClaw — ClawCast Ep 9 *(platform podcast)*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking (by automation potential)</a></li><li class="toc-h2"><a href="#cross-video-synthesis">Cross-Video Synthesis</a></li></ul></nav>
+
+<p>&gt; <strong>Run note:</strong> 17 videos in the playlist — biggest batch yet. 16 new (Shane Hummus &quot;night jobs&quot; already covered 09-05, skipped). Full transcripts 16/16. Morning daily cron (<code>c57014f1</code>) died silently with no 09-09 daily report — playlist published first, daily recovery next.</p>
+
+<p><strong>Videos found:</strong> 17 · <strong>Analyzed:</strong> 16 · <strong>Skipped:</strong> 1 (already covered)</p>
+
+<h2 id="videos-analyzed"> Videos Analyzed<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>--------</td></tr>
+<tr><td>1</td><td>5 GitHub Repos: Kill AI Slop, Go Viral, Make Money</td><td>Greg Isenberg</td><td>~191K</td><td>25 min</td></tr>
+<tr><td>2</td><td>Why AI Agents Could Finally Reinvent the Credit Card</td><td>a16z</td><td>~35K</td><td>59 min</td></tr>
+<tr><td>3</td><td>Hormozi&#x27;s New YouTube Strategy Is Genius (but Dangerous)</td><td>Wes McDowell</td><td>~8.7K</td><td>18 min</td></tr>
+<tr><td>4</td><td>I Built An Entire AI Filmmaking Team With Claude</td><td>Mira AI</td><td>~20K</td><td>10 min</td></tr>
+<tr><td>5</td><td>Why Doesn&#x27;t Everyone Play Bubble Craps Like This?</td><td>Casino Steve</td><td>~7K</td><td>12 min</td></tr>
+<tr><td>6</td><td>If I Had to Get My Brand Cited by AI, I&#x27;d Build This Grok Bot</td><td>Jake Bauman</td><td>~2.2K</td><td>21 min</td></tr>
+<tr><td>7</td><td>ChatGPT Images 2.5 Is Here (And It&#x27;s A LOT Of Fun)</td><td>Paul J Lipsky</td><td>~193K</td><td>9 min</td></tr>
+<tr><td>8</td><td>Forget Amazon! Shopify Just Became The Better Bet For Sellers</td><td>MyWifeQuitHerJob</td><td>~18K</td><td>13 min</td></tr>
+<tr><td>9</td><td>TikTok Is Quietly Creating Six-Figure Publishers</td><td>Jonathan Nilsen</td><td>~35K</td><td>16 min</td></tr>
+<tr><td>10</td><td>The NEW Way to make $ with chatgpt in 2026</td><td>Nick Ponte</td><td>~11K</td><td>41 min</td></tr>
+<tr><td>11</td><td>New: Your agent handles finances now</td><td>The Next New Thing</td><td>~13K</td><td>13 min</td></tr>
+<tr><td>12</td><td>If We Had to Make $1M Fast, We&#x27;d Start These Businesses</td><td>Koerner Office</td><td>~188K</td><td>61 min</td></tr>
+<tr><td>13</td><td>If I Had 0 Subscribers, Here&#x27;s How I&#x27;d Make $1M in 12 Months</td><td>Sunny Lenarduzzi</td><td>~89K</td><td>28 min</td></tr>
+<tr><td>14</td><td>The Simple One-Man Side Hustle That Runs Itself</td><td>Koerner Office</td><td>~72K</td><td>43 min</td></tr>
+<tr><td>15</td><td>8 Ways I Get Paid on YouTube (Without Millions of Views)</td><td>Glo Atanmo</td><td>~5.8K</td><td>48 min</td></tr>
+<tr><td>16</td><td>Inside OpenClaw 2.0: Multiplayer, Dashboards, and Worker Nodes</td><td>OpenClaw</td><td>~8.8K</td><td>51 min</td></tr>
+</tbody></table>
+<h2 id="run-theme"> Run Theme<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>Agent-legibility is the 2026 acquisition channel.</strong> Across GEO/AEO bots, Shopify FAQ schema, TikTok-manufactured KDP demand, and Hormozi&#x27;s &quot;watch me work&quot; videos, the winners aren&#x27;t ranking in search — they&#x27;re making themselves machine-citable and buyer-specific. Parallel thread: agent-native infrastructure (Slowbooks, OpenClaw 2.0, Higgsfield crews, agentic payments) replacing click-tools with named agents that have jobs, audit trails, and persistent rules. Best receipts of the batch are analog: Nathan&#x27;s contactless trailer rentals (~$4K/mo net on 2–4 hrs/week). Worst: vendor/guru funnels with dollar figures and no dashboards.</p>
+
+<h2 id="video-1-greg-isenberg-5-github-repos-tooling-roundup"> Video 1: Greg Isenberg — &quot;5 GitHub Repos&quot; *(tooling roundup)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Business model:</strong> Mine GitHub trending, install repos as agent skills, productize one working workflow (video-editing-as-a-service, mobile QA).</p>
+<p>- <strong>Revenue model:</strong> none given — &quot;$100–$500/mo QA&quot; is hypothetical.</p>
+<p>- <strong>Replication steps:</strong> (1) trending repos last 30 days; (2) <code>npx skills add</code>; (3) scan with Nvidia Skill Specter before install; (4) one small workflow per repo; (5) productize only after it works.</p>
+<p>- <strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 5/10 · <strong>Verdict: Mixed</strong></p>
+<p>- <strong>Keep:</strong> Skill Specter as install hygiene. Named: No-AI-Slop, trycompai CRM, browser-use Video Use, Skill Specter, Phone Harness.</p>
+<p>- <strong>Red flags:</strong> intro says six repos, delivers five; zero results; heavy deps.</p>
+
+<h2 id="video-2-a16z-ai-agents-could-finally-reinvent-the-credit-card-vc-thesis"> Video 2: a16z — &quot;AI Agents Could Finally Reinvent the Credit Card&quot; *(VC thesis)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Thesis:</strong> Agentic *payments* (execute a known SKU at best terms) ≠ agentic *shopping* (robots picking your outfits). Visa/MC 2.5-second window froze card innovation; agents timeshift underwriting/fraud like Apple Pay did. Instacart already trained substitution tolerance.</p>
+<p>- <strong>Revenue model:</strong> none (VC). Affirm receipts: 30–35% conversion lifts when financing is upfunnel; negative-CAC via merchant-funded MDR.</p>
+<p>- <strong>Small-operator plays:</strong> CamelCamelCamel-style price-track-and-execute in underserved SKUs; substitution-tolerant repeat buys (office/MRO); make a retailer *agent-legible* (structured data, reviews, fulfillment).</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 9/10 · <strong>Verdict: Mixed</strong> (Skip as playbook, Worth Trying as rails map)</p>
+<p>- <strong>Red flags:</strong> a16z investment narrative; no small-operator economics.</p>
+
+<h2 id="video-3-wes-mcdowell-hormozis-new-youtube-strategy-content-strategy"> Video 3: Wes McDowell — &quot;Hormozi&#x27;s New YouTube Strategy&quot; *(content strategy)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>The internet&#x27;s read is wrong.</strong> Second channel is an overflow pipe for already-filmed workshop footage (~4,000 clips/year), not the funnel. Money is in <strong>narrow &quot;watch me work&quot; videos</strong> (quoted buyer questions). Student David Jackson: 5 clients in 4 months; 35-view dentist-SEO videos converting because every viewer is the buyer.</p>
+<p>- <strong>Revenue model:</strong> &quot;small channel out-earns 4M-sub main&quot; asserted, not evidenced. Kansas case is checkable.</p>
+<p>- <strong>Replication:</strong> run wide + narrow on ONE channel until you have Hormozi-level volume; one Zoom/livestream → 4–8 clips; cap 1–2 uploads/week.</p>
+<p>- <strong>Automation:</strong> 6/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong></p>
+<p>- <strong>Red flags:</strong> ends in McDowell&#x27;s own masterclass funnel.</p>
+
+<h2 id="video-4-mira-ai-ai-filmmaking-team-with-claude-sponsored-tutorial"> Video 4: Mira AI — &quot;AI Filmmaking Team With Claude&quot; *(sponsored tutorial)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Architecture worth stealing:</strong> screenwriter + image + video + director in shared context; director writes QC fixes as <strong>persistent rules</strong>; every video prompt specifies the shot&#x27;s END state for continuity.</p>
+<p>- <strong>Revenue model:</strong> none. Higgsfield affiliate.</p>
+<p>- <strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 5/10 · <strong>Verdict: Mixed</strong> — steal the pattern, not the platform.</p>
+
+<h2 id="video-5-casino-steve-bubble-craps-standing-rule"> Video 5: Casino Steve — Bubble Craps *(standing rule)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Session: $500 → $542. Don&#x27;t Come ~1.36% house edge — still negative EV. Only replicable business is the session-video format + craps-channel shoutout economy.</p>
+<p>- <strong>Verdict: Mixed</strong> as content niche, <strong>Skip</strong> as money strategy.</p>
+
+<h2 id="video-6-jake-bauman-grok-bot-to-get-my-brand-cited-by-ai-geoaeo"> Video 6: Jake Bauman — &quot;Grok Bot to Get My Brand Cited by AI&quot; *(GEO/AEO)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Strongest new playbook of the batch.</strong> 7-bot Grok team ($20/mo) doing AI-visibility ops vs $2K–$50K/mo agencies. Diagnostic: 20–50 prompts across branded / unbranded / comparison, re-run every 2 weeks. Gate: ~4.0+ stars or AI won&#x27;t recommend you at all. llms.txt is theater (97% get zero requests).</p>
+<p>- <strong>Revenue model:</strong> none for himself. Cited: Ahrefs 75K brands, mention correlation 0.664 vs backlinks 0.218; ChatGPT recommends 1.2% of locations vs Google 35.9%.</p>
+<p>- <strong>Measured proof of HIS system: none.</strong> Third-party correlational only. Unusually honest about that.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong> (as diagnostic + ops checklist)</p>
+<p>- <strong>Do this week:</strong> 10-minute brand diagnostic on ChatGPT + Perplexity + Google AI; check GPTBot/ClaudeBot/PerplexityBot/Google-Extended on robots + WAF.</p>
+
+<h2 id="video-7-paul-j-lipsky-chatgpt-images-25-tool-review"> Video 7: Paul J Lipsky — ChatGPT Images 2.5 *(tool review)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- New: character/face consistency across iterative comment-edits. Productizable: thumbnails, photo restoration, pet portraits, interior mockups.</p>
+<p>- <strong>Automation:</strong> 5/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong> as format + as a signal the tool is good enough to productize.</p>
+
+<h2 id="video-8-mywifequitherjob-forget-amazon-shopify-ecommerce"> Video 8: MyWifeQuitHerJob — &quot;Forget Amazon, Shopify&quot; *(ecommerce)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Amazon blocked AI crawlers; Shopify stores are citable. FAQ-schema audit: 26 pages → 85% improved ranking; bridal handkerchiefs 7→4 with 5× traffic. Honest miss: napkins 30→12, zero clicks. Shop Campaigns = pay per verified new customer; 48% of Shop-app orders are first-time.</p>
+<p>- <strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong></p>
+<p>- <strong>Red flags:</strong> he doesn&#x27;t even use Shopify (built his own); course/conference funnel.</p>
+
+<h2 id="video-9-jonathan-nilsen-tiktok-six-figure-publishers-kdp"> Video 9: Jonathan Nilsen — TikTok Six-Figure Publishers *(KDP)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Demand engine: TikTok/IG attention → TikTok Shop → Amazon spillover rank. Lark and Road $2.25M TikTok Shop Jan–Jul; reusable 11-sec format. Claremont: 4 months / 200+ videos before it clicked. Amar: one IG reel, $3.5K/mo → $1–1.5K/day.</p>
+<p>- <strong>Automation:</strong> 7/10 · <strong>Quality:</strong> 6/10 · <strong>Verdict: Worth Trying</strong> (price in the quiet window)</p>
+<p>- KDP $ are BookBeam estimates; coaching funnel; survivorship.</p>
+
+<h2 id="video-10-nick-ponte-new-way-to-make-with-chatgpt-local-ai-services"> Video 10: Nick Ponte — &quot;NEW Way to make $ with chatgpt&quot; *(local AI services)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Dead Facebook profiles (500–1K followers, 6+ months silent) → 2 weeks free AI posts → $500–$3K/mo social-posting retainers. Claims $123K/mo QuickBooks (established agency, not the $150/mo newbie testimonial).</p>
+<p>- <strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 5/10 · <strong>Verdict: Mixed</strong> — tactic is testable; video is a HighLevel affiliate funnel.</p>
+
+<h2 id="video-11-the-next-new-thing-slowbooks-open-source-agent-accounting"> Video 11: The Next New Thing — Slowbooks *(open-source agent accounting)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Free anti-QuickBooks: CLI agent IS the books. Receipt OCR → file → audit-logged reversible AI changes. 344 GitHub stars. Live demo with an OCR stumble.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 6/10 · <strong>Verdict: Worth Trying</strong> as a pilot, not production books yet.</p>
+
+<h2 id="video-12-koerner-if-we-had-to-make-1m-fast-idea-roundup"> Video 12: Koerner — &quot;If We Had to Make $1M Fast&quot; *(idea roundup)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>Density of real playbooks: RV rentals ($5K/mo net/unit at 50% occ), vibe-coding agency (Billy Howell ~$60K/mo, secondhand), overseas staffing, corporate AI-audit (Ben: charity-backed guarantee, 6 figures/customer), <strong>dormant newsletter roll-up (~10¢/sub)</strong>, hero-workflow AI agency (live 57-min garage-door close on camera), liquidation, buy-a-business + AI, equity-for-services, glamping lease-option.</p>
+<p>- <strong>Quality:</strong> 7.5/10 · <strong>Verdict: Worth Trying</strong> — treat $1M/6mo as clickbait, steal individual playbooks.</p>
+<p>- <strong>New mechanics:</strong> newsletter roll-up; equity-for-services (&quot;Bro Mozi&quot;).</p>
+
+<h2 id="video-13-sunny-lenarduzzi-1m-in-12-months-from-0-subs-youtube-lead-gen"> Video 13: Sunny Lenarduzzi — &quot;$1M in 12 Months from 0 subs&quot; *(YouTube lead-gen)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Offer FIRST ($10K POP, live Zoom), then 8-video evergreen machine (3 BOFU / 2 MOFU / 2 TOFU / 1 depth). Math: 8–9 clients/mo at 30% close. Self-reported $469K from one video. Course-funnel test: framework is fully given, but every proof lives in the guru economy.</p>
+<p>- <strong>Automation:</strong> 3/10 · <strong>Quality:</strong> 4/10 · <strong>Verdict: Mixed</strong></p>
+
+<h2 id="video-14-koerner-contactless-trailer-rentals-operator-interview"> Video 14: Koerner — Contactless Trailer Rentals *(operator interview)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Best receipts of the night.</strong> Nathan, Lancaster PA: 10 used trailers $35K, $5.5–7.5K/mo gross, ~$4K/mo net, 2–4 hrs/week, ~$200–250/hr. Prior owner did $28K/yr on the same fleet. Lockbox + CRM + GPS + photo check-in. Price ~1.5% of purchase/day. Dump trailers rent most.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 9/10 · <strong>Verdict: Worth Trying</strong></p>
+<p>- <strong>This weekend test:</strong> list a trailer (or stock image) on FB Marketplace + Neighbors; scrape residents-per-trailer across sister cities.</p>
+
+<h2 id="video-15-glo-atanmo-8-ways-i-get-paid-on-youtube-creator-monetization"> Video 15: Glo Atanmo — &quot;8 Ways I Get Paid on YouTube&quot; *(creator monetization)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Memberships 3-tier ($4.99 / $49 / $499) claimed six figures/year; $45 CPM; 45-day monetization posting daily 25-min videos. New-to-archive: Player for Education licensing; YouTube nudging memberships (~30% cut); affiliate + brand-deal double-dip.</p>
+<p>- <strong>Automation:</strong> 3/10 · <strong>Quality:</strong> 8/10 · <strong>Verdict: Worth Trying</strong></p>
+<p>- Six-figure membership claim unverified in transcript.</p>
+
+<h2 id="video-16-openclaw-clawcast-ep-9-platform-podcast"> Video 16: OpenClaw — ClawCast Ep 9 *(platform podcast)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- 2.0: multiplayer gateway (n people, one agent, Tailscale/Cloudflare), agent-generated dashboards as deliverables, worker nodes (still rough), default &quot;dreaming&quot; memory, skills workshop that self-prunes.</p>
+<p>- Money is around the platform: agencies, dashboards-as-a-service, VPS. Foundation can&#x27;t be bought — that&#x27;s the enterprise pitch.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong> for anyone selling agent-run ops.</p>
+<p>- Nodes not SLA-ready; shared-gateway trust boundary is real.</p>
+
+<h2 id="final-ranking-by-automation-potential"> Final Ranking (by automation potential)<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>1. GEO/AEO Grok crew (Bauman) — 9/10 · Worth Trying</p>
+<p>2. Slowbooks agent accounting — 9/10 · Worth Trying (pilot)</p>
+<p>3. Contactless trailer rentals — 9/10 · Worth Trying · <strong>best receipts</strong></p>
+<p>4. OpenClaw 2.0 ops layer — 9/10 · Worth Trying</p>
+<p>5. Agentic payment rails (a16z) — 9/10 · Mixed (thesis)</p>
+<p>6. Dead-profile social retainers (Ponte) — 8/10 · Mixed</p>
+<p>7. Shopify AI-citability (MWQHJ) — 8/10 · Worth Trying</p>
+<p>8. GitHub skill roundup (Isenberg) — 8/10 · Mixed</p>
+<p>9. Higgsfield film crew — 8/10 · Mixed</p>
+<p>10. TikTok→KDP publishers — 7/10 · Worth Trying</p>
+<p>11. Koerner $1M roundup — 7/10 · Worth Trying</p>
+<p>12. Hormozi narrow videos — 6/10 · Worth Trying</p>
+<p>13. Images 2.5 productize — 5/10 · Worth Trying</p>
+<p>14. Lenarduzzi $10K offer-first — 3/10 · Mixed</p>
+<p>15. Glo 8 YouTube streams — 3/10 · Worth Trying</p>
+<p>16. Bubble craps — Skip as strategy</p>
+
+<h2 id="cross-video-synthesis"> Cross-Video Synthesis<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>Three threads.</strong> (1) <strong>Be citable.</strong> Bauman&#x27;s GEO diagnostic, MWQHJ&#x27;s FAQ schema (85% hit rate), Nilsen&#x27;s manufactured TikTok demand, Hormozi&#x27;s exact-question titles — same inversion: stop bidding on rank, become the answer machines and buyers already want. (2) <strong>Named agents with jobs beat click-tools.</strong> Slowbooks, OpenClaw dashboards, Mira&#x27;s persistent-rules director, Bauman&#x27;s 7-bot crew. (3) <strong>The analog businesses still have the cleanest P&amp;Ls.</strong> Nathan&#x27;s trailers beat every AI tutorial on receipts. Koerner&#x27;s roundup is the idea menu; Nathan is the worked example.</p>
+
+<p><strong>New vs known themes:</strong> GEO/AEO as a $20/mo vs $50K/mo wedge; agent-native vertical software (bookkeeping); agentic-payment vs agentic-shopping split; dormant-newsletter roll-up at ~10¢/sub; equity-for-services; Player-for-Education licensing; OpenClaw multiplayer + dashboards-as-a-service. Re-skins: local AI retainers, KDP, YouTube funnels, GitHub roundups.</p>
+
+<p><strong>Numbers-to-credibility still inverted:</strong> Shortfundly-style dollar catalogs vs Nathan naming insurance line items. Use Ted&#x27;s YPP-check + Casey&#x27;s live-dashboard standard on every future batch.</p>
+
+<p><strong>Do this week:</strong> brand/category AI-citation diagnostic; robots/WAF bot crawl check; trailer (or stock-image) demand test if you want the analog play.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-09</p>
+    </div>
+</body>
+</html>
