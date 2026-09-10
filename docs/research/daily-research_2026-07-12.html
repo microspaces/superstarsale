@@ -150,8 +150,8 @@
         var cur=document.getElementById('nav-current');
         if(cur)cur.textContent=(i+1)+' / '+list.length;
         var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
-        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
-        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
         break;
       }
     }

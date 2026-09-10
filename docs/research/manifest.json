@@ -1,355 +1,425 @@
 {
-  "generated": "2026-09-10 12:39:12",
+  "generated": "2026-09-10 13:14:22",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
       "date": "2026-06-25",
-      "title": "📊 Daily YouTube Strategy Research — June 25, 2026"
+      "title": "📊 Daily YouTube Strategy Research — June 25, 2026",
+      "label": "06-25 Daily"
     },
     {
       "file": "daily-research_2026-06-26.html",
       "date": "2026-06-26",
-      "title": "Daily YouTube Strategy Research — June 26, 2026"
+      "title": "Daily YouTube Strategy Research — June 26, 2026",
+      "label": "06-26 Daily"
     },
     {
       "file": "daily-research_2026-07-03.html",
       "date": "2026-07-03",
-      "title": "Daily YouTube Strategy Research — July 3, 2026"
+      "title": "Daily YouTube Strategy Research — July 3, 2026",
+      "label": "07-03 Daily"
     },
     {
       "file": "daily-research_2026-07-09.html",
       "date": "2026-07-09",
-      "title": "Daily YouTube Strategy Research — 2026-07-09"
+      "title": "Daily YouTube Strategy Research — 2026-07-09",
+      "label": "07-09 Daily"
     },
     {
       "file": "daily-research_2026-07-10.html",
       "date": "2026-07-10",
-      "title": "Daily YouTube Strategy Research — 2026-07-10"
+      "title": "Daily YouTube Strategy Research — 2026-07-10",
+      "label": "07-10 Daily"
     },
     {
       "file": "daily-research_2026-07-11.html",
       "date": "2026-07-11",
-      "title": "Daily YouTube Strategy Research — 2026-07-11"
+      "title": "Daily YouTube Strategy Research — 2026-07-11",
+      "label": "07-11 Daily"
     },
     {
       "file": "daily-research_2026-07-12.html",
       "date": "2026-07-12",
-      "title": "Daily YouTube Strategy Research — 2026-07-12"
+      "title": "Daily YouTube Strategy Research — 2026-07-12",
+      "label": "07-12 Daily"
     },
     {
       "file": "daily-research_2026-07-13.html",
       "date": "2026-07-13",
-      "title": "Daily YouTube Strategy Research — July 13, 2026"
+      "title": "Daily YouTube Strategy Research — July 13, 2026",
+      "label": "07-13 Daily"
     },
     {
       "file": "daily-research_2026-07-14.html",
       "date": "2026-07-14",
-      "title": "Daily YouTube Strategy Research — 2026-07-14"
+      "title": "Daily YouTube Strategy Research — 2026-07-14",
+      "label": "07-14 Daily"
     },
     {
       "file": "daily-research_2026-07-16.html",
       "date": "2026-07-16",
-      "title": "Daily YouTube Strategy Research — July 16, 2026"
+      "title": "Daily YouTube Strategy Research — July 16, 2026",
+      "label": "07-16 Daily"
     },
     {
       "file": "daily-research_2026-07-17.html",
       "date": "2026-07-17",
-      "title": "Daily YouTube Strategy Research — July 17, 2026"
+      "title": "Daily YouTube Strategy Research — July 17, 2026",
+      "label": "07-17 Daily"
     },
     {
       "file": "daily-research_2026-07-18.html",
       "date": "2026-07-18",
-      "title": "Daily YouTube Strategy Research — 2026-07-18"
+      "title": "Daily YouTube Strategy Research — 2026-07-18",
+      "label": "07-18 Daily"
     },
     {
       "file": "daily-research_2026-07-19.html",
       "date": "2026-07-19",
-      "title": "Daily YouTube Strategy Research — 2026-07-19"
+      "title": "Daily YouTube Strategy Research — 2026-07-19",
+      "label": "07-19 Daily"
     },
     {
       "file": "daily-research_2026-07-20.html",
       "date": "2026-07-20",
-      "title": "Daily YouTube Strategy Research — 2026-07-20"
+      "title": "Daily YouTube Strategy Research — 2026-07-20",
+      "label": "07-20 Daily"
     },
     {
       "file": "daily-research_2026-07-21.html",
       "date": "2026-07-21",
-      "title": "Daily YouTube Strategy Research — 2026-07-21"
+      "title": "Daily YouTube Strategy Research — 2026-07-21",
+      "label": "07-21 Daily"
     },
     {
       "file": "daily-research_2026-07-22.html",
       "date": "2026-07-22",
-      "title": "Daily YouTube Strategy Research — 2026-07-22"
+      "title": "Daily YouTube Strategy Research — 2026-07-22",
+      "label": "07-22 Daily"
     },
     {
       "file": "daily-research_2026-07-25.html",
       "date": "2026-07-25",
-      "title": "Daily YouTube Strategy Research — 2026-07-25"
+      "title": "Daily YouTube Strategy Research — 2026-07-25",
+      "label": "07-25 Daily"
     },
     {
       "file": "daily-research_2026-07-28.html",
       "date": "2026-07-28",
-      "title": "Daily YouTube Strategy Research — July 28, 2026"
+      "title": "Daily YouTube Strategy Research — July 28, 2026",
+      "label": "07-28 Daily"
     },
     {
       "file": "daily-research_2026-07-29.html",
       "date": "2026-07-29",
-      "title": "Daily YouTube Strategy Research — 2026-07-29"
+      "title": "Daily YouTube Strategy Research — 2026-07-29",
+      "label": "07-29 Daily"
     },
     {
       "file": "daily-research_2026-07-30.html",
       "date": "2026-07-30",
-      "title": "Daily YouTube Strategy Research — 2026-07-30"
+      "title": "Daily YouTube Strategy Research — 2026-07-30",
+      "label": "07-30 Daily"
     },
     {
       "file": "daily-research_2026-07-31.html",
       "date": "2026-07-31",
-      "title": "Daily YouTube Strategy Research — 2026-07-31"
+      "title": "Daily YouTube Strategy Research — 2026-07-31",
+      "label": "07-31 Daily"
     },
     {
       "file": "daily-research_2026-08-01.html",
       "date": "2026-08-01",
-      "title": "Daily YouTube Strategy Research — 2026-08-01"
+      "title": "Daily YouTube Strategy Research — 2026-08-01",
+      "label": "08-01 Daily"
     },
     {
       "file": "daily-research_2026-08-02.html",
       "date": "2026-08-02",
-      "title": "Daily YouTube Strategy Research — 2026-08-02"
+      "title": "Daily YouTube Strategy Research — 2026-08-02",
+      "label": "08-02 Daily"
     },
     {
       "file": "daily-research_2026-08-03.html",
       "date": "2026-08-03",
-      "title": "Daily YouTube Strategy Research — 2026-08-03"
+      "title": "Daily YouTube Strategy Research — 2026-08-03",
+      "label": "08-03 Daily"
     },
     {
       "file": "daily-research_2026-08-04.html",
       "date": "2026-08-04",
-      "title": "Daily YouTube Strategy Research — 2026-08-04"
+      "title": "Daily YouTube Strategy Research — 2026-08-04",
+      "label": "08-04 Daily"
     },
     {
       "file": "daily-research_2026-08-05.html",
       "date": "2026-08-05",
-      "title": "Daily YouTube Strategy Research — 2026-08-05"
+      "title": "Daily YouTube Strategy Research — 2026-08-05",
+      "label": "08-05 Daily"
     },
     {
       "file": "daily-research_2026-08-07.html",
       "date": "2026-08-07",
-      "title": "Daily YouTube Strategy Research — 2026-08-07"
+      "title": "Daily YouTube Strategy Research — 2026-08-07",
+      "label": "08-07 Daily"
     },
     {
       "file": "daily-research_2026-08-08.html",
       "date": "2026-08-08",
-      "title": "Daily YouTube Strategy Research — 2026-08-08"
+      "title": "Daily YouTube Strategy Research — 2026-08-08",
+      "label": "08-08 Daily"
     },
     {
       "file": "daily-research_2026-08-09.html",
       "date": "2026-08-09",
-      "title": "Daily YouTube Strategy Research — 2026-08-09"
+      "title": "Daily YouTube Strategy Research — 2026-08-09",
+      "label": "08-09 Daily"
     },
     {
       "file": "daily-research_2026-08-10.html",
       "date": "2026-08-10",
-      "title": "Daily YouTube Strategy Research — 2026-08-10"
+      "title": "Daily YouTube Strategy Research — 2026-08-10",
+      "label": "08-10 Daily"
     },
     {
       "file": "daily-research_2026-08-11.html",
       "date": "2026-08-11",
-      "title": "Daily YouTube Strategy Research — August 11, 2026"
+      "title": "Daily YouTube Strategy Research — August 11, 2026",
+      "label": "08-11 Daily"
     },
     {
       "file": "daily-research_2026-08-12.html",
       "date": "2026-08-12",
-      "title": "Daily YouTube Strategy Research — 2026-08-12"
+      "title": "Daily YouTube Strategy Research — 2026-08-12",
+      "label": "08-12 Daily"
     },
     {
       "file": "daily-research_2026-08-13.html",
       "date": "2026-08-13",
-      "title": "Daily YouTube Strategy Research — 2026-08-13"
+      "title": "Daily YouTube Strategy Research — 2026-08-13",
+      "label": "08-13 Daily"
     },
     {
       "file": "daily-research_2026-08-14.html",
       "date": "2026-08-14",
-      "title": "Daily YouTube Strategy Research — 2026-08-14"
+      "title": "Daily YouTube Strategy Research — 2026-08-14",
+      "label": "08-14 Daily"
     },
     {
       "file": "daily-research_2026-08-15.html",
       "date": "2026-08-15",
-      "title": "Daily YouTube Strategy Research — August 15, 2026"
+      "title": "Daily YouTube Strategy Research — August 15, 2026",
+      "label": "08-15 Daily"
     },
     {
       "file": "daily-research_2026-08-16.html",
       "date": "2026-08-16",
-      "title": "Daily YouTube Strategy Research - August 16, 2026"
+      "title": "Daily YouTube Strategy Research - August 16, 2026",
+      "label": "08-16 Daily"
     },
     {
       "file": "daily-research_2026-08-17.html",
       "date": "2026-08-17",
-      "title": "Daily YouTube Strategy Research - August 17, 2026"
+      "title": "Daily YouTube Strategy Research - August 17, 2026",
+      "label": "08-17 Daily"
     },
     {
       "file": "daily-research_2026-08-18.html",
       "date": "2026-08-18",
-      "title": "Daily YouTube Strategy Research — 2026-08-18"
+      "title": "Daily YouTube Strategy Research — 2026-08-18",
+      "label": "08-18 Daily"
     },
     {
       "file": "daily-research_2026-08-19.html",
       "date": "2026-08-19",
-      "title": "Daily YouTube Strategy Research - 2026-08-19"
+      "title": "Daily YouTube Strategy Research - 2026-08-19",
+      "label": "08-19 Daily"
     },
     {
       "file": "daily-research_2026-08-20.html",
       "date": "2026-08-20",
-      "title": "Daily YouTube Strategy Research — 2026-08-20"
+      "title": "Daily YouTube Strategy Research — 2026-08-20",
+      "label": "08-20 Daily"
     },
     {
       "file": "daily-research_2026-08-21.html",
       "date": "2026-08-21",
-      "title": "Daily YouTube Strategy Research — 2026-08-21"
+      "title": "Daily YouTube Strategy Research — 2026-08-21",
+      "label": "08-21 Daily"
     },
     {
       "file": "daily-research_2026-08-22.html",
       "date": "2026-08-22",
-      "title": "Daily YouTube Strategy Research — 2026-08-22"
+      "title": "Daily YouTube Strategy Research — 2026-08-22",
+      "label": "08-22 Daily"
     },
     {
       "file": "daily-research_2026-08-23.html",
       "date": "2026-08-23",
-      "title": "Daily YouTube Strategy Research — 2026-08-23"
+      "title": "Daily YouTube Strategy Research — 2026-08-23",
+      "label": "08-23 Daily"
     },
     {
       "file": "daily-research_2026-08-24.html",
       "date": "2026-08-24",
-      "title": "Daily YouTube Strategy Research - 2026-08-24"
+      "title": "Daily YouTube Strategy Research - 2026-08-24",
+      "label": "08-24 Daily"
     },
     {
       "file": "daily-research_2026-08-25.html",
       "date": "2026-08-25",
-      "title": "Daily YouTube Strategy Research — 2026-08-25"
+      "title": "Daily YouTube Strategy Research — 2026-08-25",
+      "label": "08-25 Daily"
     },
     {
       "file": "daily-research_2026-08-26.html",
       "date": "2026-08-26",
-      "title": "Daily YouTube Strategy Research — 2026-08-26"
+      "title": "Daily YouTube Strategy Research — 2026-08-26",
+      "label": "08-26 Daily"
     },
     {
       "file": "daily-research_2026-08-27.html",
       "date": "2026-08-27",
-      "title": "Daily YouTube Strategy Research — 2026-08-27"
+      "title": "Daily YouTube Strategy Research — 2026-08-27",
+      "label": "08-27 Daily"
     },
     {
       "file": "daily-research_2026-08-28.html",
       "date": "2026-08-28",
-      "title": "Daily YouTube Strategy Research — 2026-08-28"
+      "title": "Daily YouTube Strategy Research — 2026-08-28",
+      "label": "08-28 Daily"
     },
     {
       "file": "playlist-research_2026-08-28.html",
       "date": "2026-08-28",
-      "title": "Playlist Research — 2026-08-28"
+      "title": "Playlist Research — 2026-08-28",
+      "label": "08-28 Playlist"
     },
     {
       "file": "daily-research_2026-08-29.html",
       "date": "2026-08-29",
-      "title": "Daily YouTube Strategy Research — 2026-08-29"
+      "title": "Daily YouTube Strategy Research — 2026-08-29",
+      "label": "08-29 Daily"
     },
     {
       "file": "daily-research_2026-08-30.html",
       "date": "2026-08-30",
-      "title": "Daily YouTube Strategy Research — 2026-08-30"
+      "title": "Daily YouTube Strategy Research — 2026-08-30",
+      "label": "08-30 Daily"
     },
     {
       "file": "daily-research_2026-08-31.html",
       "date": "2026-08-31",
-      "title": "Daily YouTube Strategy Research — 2026-08-31"
+      "title": "Daily YouTube Strategy Research — 2026-08-31",
+      "label": "08-31 Daily"
     },
     {
       "file": "playlist-research_2026-08-31.html",
       "date": "2026-08-31",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-08-31)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-08-31)",
+      "label": "08-31 Playlist"
     },
     {
       "file": "daily-research_2026-09-01.html",
       "date": "2026-09-01",
-      "title": "Daily YouTube Strategy Research — 2026-09-01"
+      "title": "Daily YouTube Strategy Research — 2026-09-01",
+      "label": "09-01 Daily"
     },
     {
       "file": "playlist-research_2026-09-01.html",
       "date": "2026-09-01",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-01 Evening Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-01 Evening Run)",
+      "label": "09-01 Playlist"
     },
     {
       "file": "daily-research_2026-09-02.html",
       "date": "2026-09-02",
-      "title": "Daily YouTube Strategy Research — 2026-09-02"
+      "title": "Daily YouTube Strategy Research — 2026-09-02",
+      "label": "09-02 Daily"
     },
     {
       "file": "daily-research_2026-09-03.html",
       "date": "2026-09-03",
-      "title": "Daily YouTube Strategy Research — 2026-09-03"
+      "title": "Daily YouTube Strategy Research — 2026-09-03",
+      "label": "09-03 Daily"
     },
     {
       "file": "playlist-research_2026-09-03.html",
       "date": "2026-09-03",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-03 Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-03 Run)",
+      "label": "09-03 Playlist"
     },
     {
       "file": "daily-research_2026-09-04.html",
       "date": "2026-09-04",
-      "title": "Daily YouTube Strategy Research - 2026-09-04 (Backfill)"
+      "title": "Daily YouTube Strategy Research - 2026-09-04 (Backfill)",
+      "label": "09-04 Daily"
     },
     {
       "file": "playlist-research_2026-09-04.html",
       "date": "2026-09-04",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-04 Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-04 Run)",
+      "label": "09-04 Playlist"
     },
     {
       "file": "daily-research_2026-09-05.html",
       "date": "2026-09-05",
-      "title": "Daily YouTube Strategy Research — 2026-09-05"
+      "title": "Daily YouTube Strategy Research — 2026-09-05",
+      "label": "09-05 Daily"
     },
     {
       "file": "playlist-research_2026-09-05.html",
       "date": "2026-09-05",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-05 Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-05 Run)",
+      "label": "09-05 Playlist"
     },
     {
       "file": "daily-research_2026-09-06.html",
       "date": "2026-09-06",
-      "title": "Daily YouTube Strategy Research - 2026-09-06 (Backfill)"
+      "title": "Daily YouTube Strategy Research - 2026-09-06 (Backfill)",
+      "label": "09-06 Daily"
     },
     {
       "file": "daily-research_2026-09-07.html",
       "date": "2026-09-07",
-      "title": "Daily YouTube Strategy Research - 2026-09-07"
+      "title": "Daily YouTube Strategy Research - 2026-09-07",
+      "label": "09-07 Daily"
     },
     {
       "file": "playlist-research_2026-09-07.html",
       "date": "2026-09-07",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-07 Evening Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-07 Evening Run)",
+      "label": "09-07 Playlist"
     },
     {
       "file": "daily-research_2026-09-08.html",
       "date": "2026-09-08",
-      "title": "Daily YouTube Strategy Research — 2026-09-08"
+      "title": "Daily YouTube Strategy Research — 2026-09-08",
+      "label": "09-08 Daily"
     },
     {
       "file": "daily-research_2026-09-09.html",
       "date": "2026-09-09",
-      "title": "Daily YouTube Strategy Research — 2026-09-09 (Recovery Publication)"
+      "title": "Daily YouTube Strategy Research — 2026-09-09 (Recovery Publication)",
+      "label": "09-09 Daily"
     },
     {
       "file": "playlist-research_2026-09-09.html",
       "date": "2026-09-09",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-09 Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-09 Run)",
+      "label": "09-09 Playlist"
     },
     {
       "file": "daily-research_2026-09-10.html",
       "date": "2026-09-10",
-      "title": "Daily YouTube Strategy Research — 2026-09-10 (Recovery Publication)"
+      "title": "Daily YouTube Strategy Research — 2026-09-10 (Recovery Publication)",
+      "label": "09-10 Daily"
     },
     {
       "file": "playlist-research_2026-09-10.html",
       "date": "2026-09-10",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-10 Run)"
+      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-10 Run)",
+      "label": "09-10 Playlist"
     }
   ]
 }
