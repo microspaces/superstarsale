@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-strategy-research-2026-09-10-recovery-publication">Daily YouTube Strategy Research — 2026-09-10 (Recovery Publication)</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#strategy-analysis">Strategy Analysis</a></li><li class="toc-h3"><a href="#1-covered-call-etf-portfolio-permission-to-be-wealthy-income-investing-newly-graduated-theme">1. Covered Call ETF Portfolio (Permission To Be Wealthy) — *income investing, newly graduated theme*</a></li><li class="toc-h3"><a href="#2-indie-app-developer-5kmo-guide-aivars-meijers-indie-apps">2. Indie App Developer $5K/mo Guide (Aivars Meijers) — *indie apps*</a></li><li class="toc-h3"><a href="#3-why-android-sucks-for-solo-devs-adam-lyttle-apps-platform-strategy">3. Why Android Sucks for Solo Devs (Adam Lyttle) — *apps / platform strategy*</a></li><li class="toc-h3"><a href="#4-skincare-brand-in-2026-exploding-topics-product-brand-screen">4. Skincare Brand in 2026? (Exploding Topics) — *product brand screen*</a></li><li class="toc-h3"><a href="#5-first-6-months-of-youtube-monetization-caleb-bale-creator-monetization">5. First 6 Months of YouTube Monetization (Caleb Bale) — *creator monetization*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking (by automation potential)</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>

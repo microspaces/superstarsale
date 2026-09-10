@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-strategy-research-2026-09-09-recovery-publication">Daily YouTube Strategy Research — 2026-09-09 (Recovery Publication)</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#strategy-analysis">Strategy Analysis</a></li><li class="toc-h3"><a href="#1-print-on-demand-with-a-live-store-meg-heckman-pod-owned-brand">1. Print on Demand With a LIVE Store (Meg Heckman) — *POD / owned brand*</a></li><li class="toc-h3"><a href="#2-sba-loan-business-acquisition-michael-s-glaspie-acquisitions-financing">2. SBA Loan Business Acquisition (Michael S Glaspie) — *acquisitions / financing*</a></li><li class="toc-h3"><a href="#3-5-realistic-side-hustles-daniels-brew-side-hustle-roundup">3. 5 REALISTIC Side Hustles (Daniel&#x27;s Brew) — *side hustle roundup*</a></li><li class="toc-h3"><a href="#4-the-marketing-agency-model-that-works-in-2026-adam-erhart-agency">4. The Marketing Agency Model That Works in 2026 (Adam Erhart) — *agency*</a></li><li class="toc-h3"><a href="#5-5-easy-remote-night-jobs-blueprint-to-revenue-remote-jobs-listicle">5. 5 Easy Remote Night Jobs (Blueprint to Revenue) — *remote jobs listicle*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking (by automation potential)</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>

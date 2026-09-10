@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-09-10</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { scroll-margin-top: 20px; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].date}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].date+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1 id="playlist-research-michael-buchanans-research-playlist-2026-09-10-run">Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-10 Run)</h1>
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#run-theme">Run Theme</a></li><li class="toc-h2"><a href="#video-1-webmcp-let-ai-agents-pay-you-money-agent-infrastructure">Video 1: WebMCP — Let AI Agents Pay You Money *(agent infrastructure)*</a></li><li class="toc-h2"><a href="#video-2-claude-code-ai-hedge-fund-agent-orchestration-finance">Video 2: Claude Code AI Hedge Fund *(agent orchestration / finance)*</a></li><li class="toc-h2"><a href="#video-3-390kmonth-claude-dropshipping-ecommerce">Video 3: $390K/Month Claude Dropshipping *(ecommerce)*</a></li><li class="toc-h2"><a href="#video-4-pick-a-youtube-niche-with-claude-ai-course-funnel">Video 4: Pick a YouTube Niche With Claude AI *(course funnel)*</a></li><li class="toc-h2"><a href="#video-5-12000-subscribers-five-figure-brand-deal-creator-monetization">Video 5: 12,000 Subscribers → Five-Figure Brand Deal *(creator monetization)*</a></li><li class="toc-h2"><a href="#video-6-faceless-channel-39k-with-claude-chatgpt-faceless-ai-content">Video 6: Faceless Channel $39K With Claude + ChatGPT *(faceless AI content)*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking (by automation potential)</a></li><li class="toc-h2"><a href="#cross-video-synthesis">Cross-Video Synthesis</a></li></ul></nav>
+
+<p>&gt; <strong>Run note:</strong> Playlist swapped — 7 videos, 6 new (Nick Ponte&#x27;s ChatGPT video repeats from 09-09, skipped). Full transcripts 6/6. The 9 AM daily cron claimed success but never published (second consecutive silent publish failure) — daily reports for 09-09 and 09-10 recovered separately from surviving JSON.</p>
+
+<p><strong>Videos found:</strong> 7 · <strong>Analyzed:</strong> 6 · <strong>Skipped:</strong> 1 (repeat)</p>
+
+<h2 id="videos-analyzed"> Videos Analyzed<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Views</th><th>Length</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>-------</td><td>--------</td></tr>
+<tr><td>1</td><td>WebMCP: Let AI Agents pay you money</td><td>—</td><td>—</td></tr>
+<tr><td>2</td><td>I Turned Claude Code into an AI Hedge Fund</td><td>—</td><td>—</td></tr>
+<tr><td>3</td><td>$390K/Month With Claude AI Dropshipping</td><td>—</td><td>—</td></tr>
+<tr><td>4</td><td>How To Pick a YouTube Niche That Can Make You Rich (With Claude AI)</td><td>—</td><td>—</td></tr>
+<tr><td>5</td><td>How 12,000 Subscribers Landed a Five-Figure Brand Deal</td><td>—</td><td>—</td></tr>
+<tr><td>6</td><td>How a Faceless Channel Made $39K With Claude + ChatGPT</td><td>—</td><td>—</td></tr>
+</tbody></table>
+<h2 id="run-theme"> Run Theme<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>Selling the shovel, part 2.</strong> Five of six videos monetize attention around an AI workflow rather than showing verified P&amp;L — the one receipt that matters is infrastructure, not income. WebMCP is the standout: a live, cloneable Google/Microsoft browser protocol that lets sites expose agent-callable tools. It advances the tracked agent-infrastructure thread one layer earlier in the funnel: before agents can pay (a16z, 09-09) they must be able to *complete the journey*.</p>
+
+<h2 id="video-1-webmcp-let-ai-agents-pay-you-money-agent-infrastructure"> Video 1: WebMCP — Let AI Agents Pay You Money *(agent infrastructure)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>What it is:</strong> Browser feature (Chrome flag, Google/Microsoft, launched Feb) letting websites expose clean agent-callable tools — search/book/buy/coupon — no DOM scraping, no API keys. Live demo espresso store with 16 tools; repo public.</p>
+<p>- <strong>The two sellable plays (proposed, zero customers):</strong> (1) agent-readiness agency for boring businesses — $200–$10K setup + $500–700/mo; (2) &quot;agent mystery shopper&quot; — automated monthly eval reports of whether agents can complete a site&#x27;s key journeys.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong></p>
+<p>- <strong>Do this week:</strong> clone the demo repo, ship one WebMCP tool on our own property; pilot the mystery-shopper harness internally first.</p>
+<p>- <strong>Red flags:</strong> experimental flags, spec churn, invented price points, adoption unproven.</p>
+
+<h2 id="video-2-claude-code-ai-hedge-fund-agent-orchestration-finance"> Video 2: Claude Code AI Hedge Fund *(agent orchestration / finance)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>The pattern worth stealing:</strong> 5 investor agents with <strong>information asymmetry</strong> (Buffett sees only fundamentals, Cohen only price action) so disagreement is real; SEC insider-trade ingestion; composite-score quality gate; dashboard; <strong>blind backtest protocol</strong> (cutoff data, record picks before outcomes).</p>
+<p>- <strong>The P&amp;L is not evidence:</strong> single 3-month simulated window, &quot;beat S&amp;P by 1.01%&quot; is noise, lost to the HF index by 2.46 pts. No paper trading, no real money. Skool funnel at the end.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 5/10 · <strong>Verdict: Mixed</strong> — steal the orchestration pattern, ignore the returns talk.</p>
+
+<h2 id="video-3-390kmonth-claude-dropshipping-ecommerce"> Video 3: $390K/Month Claude Dropshipping *(ecommerce)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>Receipts test failed:</strong> headline is a spy-tool estimate of a *stranger&#x27;s* store; no dashboard, no named store, like-gated prompts, affiliate links, sponsored segment. &quot;FREE&quot; is false.</p>
+<p>- <strong>The real takeaway:</strong> Claude Co-work + Shopify connector converting HTML concepts into <strong>native editable Shopify Liquid</strong> (~25–35 min unattended) — agency-grade output, wrapper workflow, zero moat. Worth more as a productized &quot;AI storefront&quot; client service than as dropshipping.</p>
+<p>- <strong>Automation:</strong> 7/10 · <strong>Quality:</strong> 3/10 · <strong>Verdict: Mixed</strong></p>
+
+<h2 id="video-4-pick-a-youtube-niche-with-claude-ai-course-funnel"> Video 4: Pick a YouTube Niche With Claude AI *(course funnel)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Course-funnel test: fail — free framework → free Claude &quot;niche validator&quot; skill (lead magnet) → live training waitlist → expensive 1-on-1. The &quot;Claude AI&quot; is an interview prompt, not analysis. All income claims unverifiable testimonials ($700K/mo etc.).</p>
+<p>- <strong>Keep:</strong> the positioning filter (specific expensive problem × audience with money × monetize beyond ads) and the &quot;free Claude skill as lead magnet&quot; tactic.</p>
+<p>- <strong>Automation:</strong> 4/10 · <strong>Quality:</strong> 3/10 · <strong>Verdict: Mixed</strong></p>
+
+<h2 id="video-5-12000-subscribers-five-figure-brand-deal-creator-monetization"> Video 5: 12,000 Subscribers → Five-Figure Brand Deal *(creator monetization)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Daniel Batal (~580K subs): sponsorship-first monetization — 3–4 page data-backed annual ambassadorship proposals; six-figure DaVinci Resolve year; AdSense deliberately de-emphasized (shorts: ~$5–6K per 100M views).</p>
+<p>- <strong>Worth Trying for existing creators</strong> — the annual-proposal template + direct-to-brand-marketing pitch is the transferable asset. Slow grind (8 years).</p>
+<p>- <strong>Automation:</strong> 3/10 · <strong>Quality:</strong> 6/10 · <strong>Verdict: Worth Trying</strong></p>
+
+<h2 id="video-6-faceless-channel-39k-with-claude-chatgpt-faceless-ai-content"> Video 6: Faceless Channel $39K With Claude + ChatGPT *(faceless AI content)*<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- Near-end-to-end AI Shorts pipeline (Claude + vidIQ connector research → script → Rank Reel render). <strong>But every dollar figure is a VidIQ estimate of anonymous channels</strong> — zero receipts — and the format is exactly the farmed-content pattern Video 5 says YouTube is demonetizing.</p>
+<p>- <strong>Steal:</strong> the Claude+vidIQ competitor-analysis workflow for any content research. <strong>Skip:</strong> the business model as an income plan. RPM math: 33¢/1K → $10K/mo needs ~30M views/mo.</p>
+<p>- <strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 3/10 · <strong>Verdict: Mixed</strong></p>
+
+<h2 id="final-ranking-by-automation-potential"> Final Ranking (by automation potential)<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>1. WebMCP agent-readiness — 9/10 · Worth Trying · <strong>best buildable artifact</strong></p>
+<p>2. AI Hedge Fund orchestration — 9/10 · Mixed (pattern, not P&amp;L)</p>
+<p>3. Faceless AI Shorts pipeline — 9/10 · Mixed (demonetization-exposed)</p>
+<p>4. Claude→Shopify Liquid — 7/10 · Mixed (service play, not dropshipping)</p>
+<p>5. Shane Hummus niche funnel — 4/10 · Mixed</p>
+<p>6. Brand-deal proposals (Batal) — 3/10 · Worth Trying</p>
+
+<h2 id="cross-video-synthesis"> Cross-Video Synthesis<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>The agent-readiness ladder now has four rungs in the archive:</strong> GEO/AEO citations (09-09: Bauman) → journey completion (today: WebMCP) → payment rails (a16z agentic payments) → agent-native vertical software (Slowbooks). WebMCP is the first *live, cloneable protocol* in that stack — the arbitrage window is &quot;experimental flag&quot; status, same shape as early SEO.</p>
+
+<p><strong>Cross-video contradiction of the day:</strong> Batal says YouTube is demonetizing high-volume AI-shorts accounts; the faceless-shorts video teaches exactly that model as &quot;one of the biggest opportunities on the internet.&quot; Both can&#x27;t be right; the archive&#x27;s demonetization-risk flag goes to the shorts model.</p>
+
+<p><strong>Receipts ledger stays inverted:</strong> zero verified P&amp;L in six videos. The most credible number is Batal&#x27;s ~$5–6K AdSense per 100M shorts views — used to *demosuade* AdSense dependence. Steal patterns (info-asymmetric agents, blind backtests, WebMCP manifests, annual brand proposals), ignore the dollar claims.</p>
+
+<p><strong>Do this week:</strong> clone WebMCP demo repo + expose one tool on our own site; run the internal agent mystery-shopper eval; steal the Claude+vidIQ research loop for playlist pipeline research.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-10</p>
+    </div>
+</body>
+</html>
