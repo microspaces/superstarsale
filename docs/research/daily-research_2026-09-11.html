@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-strategy-research-2026-09-11-recovery-publication">Daily YouTube Strategy Research — 2026-09-11 (Recovery Publication)</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#strategy-analysis">Strategy Analysis</a></li><li class="toc-h3"><a href="#1-10-claude-ai-side-hustles-shane-hummus-ai-services-listicle">1. 10 Claude AI Side Hustles (Shane Hummus) — *AI services listicle*</a></li><li class="toc-h3"><a href="#2-one-person-ai-business-richard-yu-digital-products-value-ladder">2. One-Person AI Business (Richard Yu) — *digital products / value ladder*</a></li><li class="toc-h3"><a href="#3-pick-a-profitable-agency-niche-the-futur-positioning-strategy">3. Pick a Profitable Agency Niche (The Futur) — *positioning strategy*</a></li><li class="toc-h3"><a href="#4-build-and-sell-ai-agents-as-a-beginner-hostinger-academy-ai-agency-playbook">4. Build and Sell AI Agents as a Beginner (Hostinger Academy) — *AI agency playbook*</a></li><li class="toc-h3"><a href="#5-robinhoods-two-sided-marketplace-travis-hoium-equity-research">5. Robinhood&#x27;s Two-Sided Marketplace (Travis Hoium) — *equity research*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking (by automation potential)</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>

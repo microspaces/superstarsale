@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — 2026-09-11</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { scroll-margin-top: 20px; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">← All Reports</a>
+        <h1 id="playlist-research-michael-buchanans-research-playlist-2026-09-11-run">Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-11 Run)</h1>
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#run-theme">Run Theme</a></li><li class="toc-h2"><a href="#videos-analyzed-28">Videos Analyzed (28)</a></li><li class="toc-h2"><a href="#the-best-of-the-batch">The Best of the Batch</a></li><li class="toc-h3"><a href="#nascom-nas-dailys-ai-native-commerce-platform-best-receipts">nas.com — Nas Daily&#x27;s AI-native commerce platform *(best receipts)*</a></li><li class="toc-h3"><a href="#resolve-211-mcp-deepgram-agent-video-editing-goes-production-grade">Resolve 21.1 MCP + Deepgram — agent video editing goes production-grade</a></li><li class="toc-h3"><a href="#fable-51-one-job-experiment-qualification-then-asset-outbound">Fable 5.1 one-job experiment — qualification-then-asset outbound</a></li><li class="toc-h3"><a href="#local-ai-on-strix-halo-4k-privacy-moat-cost-arbitrage">Local AI on Strix Halo (~$4K) — privacy moat + cost arbitrage</a></li><li class="toc-h3"><a href="#live-shopping-land-grab-gary-vee-flagged-hard-but-receipts-real">Live shopping land-grab (Gary Vee) — flagged hard but receipts real</a></li><li class="toc-h2"><a href="#the-skip-pile-and-why">The Skip Pile (and why)</a></li><li class="toc-h2"><a href="#cross-video-synthesis">Cross-Video Synthesis</a></li></ul></nav>
+
+<p>&gt; <strong>Run note:</strong> Full swap again — 28 videos, zero repeats from 09-09/09-10. Biggest batch yet; transcripts 28/28 despite multiple gateway restarts mid-run (write-as-you-go digests survived, resume workers filled gaps). &quot;GPT-6 Astra&quot; and &quot;Claude Fable 5.1&quot; appear repeatedly as model names — <strong>unverified branding</strong>, treated as noise throughout.</p>
+
+<p><strong>Videos found:</strong> 28 · <strong>Analyzed:</strong> 28 · <strong>Skipped:</strong> 0</p>
+
+<h2 id="run-theme"> Run Theme<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>Agents graduate from assistants to production operators.</strong> Two threads dominate: (1) MCP-capable agents driving *skilled production software* end-to-end — DaVinci Resolve 21.1 exposes an MCP server, an agent does the rough cut, motion graphics, and export with self-QA; (2) the same funnel-entropy as always — every workflow video is also a Skool/community/workshop/affiliate funnel, and the flagship model names are marketing. Best receipts of the batch: nas.com (live dashboards), the Resolve+Deepgram editing pipeline (real cost/time breakdowns), and the Fresno-paralegal agent experiment ($3 total spend).</p>
+
+<h2 id="videos-analyzed-28"> Videos Analyzed (28)<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<table class="data-table"><thead><tr><th>#</th><th>Video</th><th>Verdict</th><th>Q</th></tr></thead><tbody>
+<tr><td>---</td><td>-------</td><td>---------</td><td>---</td></tr>
+<tr><td>1</td><td>$2M Mom on YouTube (Think Media Podcast)</td><td>Mixed</td><td>6</td></tr>
+<tr><td>2</td><td>GPT-6 Astra: How I&#x27;d Make Money</td><td>Mixed</td><td>4</td></tr>
+<tr><td>3</td><td>Steal This $500M Software Model</td><td>**Skip**</td><td>2</td></tr>
+<tr><td>4</td><td>5 Gemini AI Side Hustles</td><td>Mixed</td><td>5</td></tr>
+<tr><td>5</td><td>I Asked Claude to Make Me Money #1</td><td>Mixed</td><td>4</td></tr>
+<tr><td>6</td><td>Phone Calls with Grok Bot</td><td>**Worth Trying**</td><td>7</td></tr>
+<tr><td>7</td><td>Trybe (post-TikTok Shop affiliate?)</td><td>Mixed</td><td>5</td></tr>
+<tr><td>8</td><td>5 FREE AI Tools = $1M</td><td>Mixed</td><td>4</td></tr>
+<tr><td>9</td><td>I Asked Claude to Make Me Money #2</td><td>Mixed</td><td>3</td></tr>
+<tr><td>10</td><td>GPT-6 Astra Builds $10K Websites</td><td>Mixed</td><td>3</td></tr>
+<tr><td>11</td><td>MRR Best AI Business 2027</td><td>**Skip**</td><td>2</td></tr>
+<tr><td>12</td><td>Five GPT-6 Astra Use Cases</td><td>Mixed</td><td>5</td></tr>
+<tr><td>13</td><td>Stop Copying YouTube Channels</td><td>Worth Trying</td><td>4</td></tr>
+<tr><td>14</td><td>Nas Daily&#x27;s AI (nas.com)</td><td>**Worth Trying**</td><td>7</td></tr>
+<tr><td>15</td><td>$85M AI Startup in 5 Months (Searchable)</td><td>Worth Trying</td><td>7</td></tr>
+<tr><td>16</td><td>One-Person AI Business (Richard Yu)</td><td>Mixed</td><td>3</td></tr>
+<tr><td>17</td><td>AI Security Jobs Exploding</td><td>Worth Trying</td><td>6</td></tr>
+<tr><td>18</td><td>Fable 5.1: Get Me a Client From Scratch</td><td>**Worth Trying**</td><td>7</td></tr>
+<tr><td>19</td><td>3 Claude Side Hustles (Baddie in Biz)</td><td>**Skip**</td><td>2</td></tr>
+<tr><td>20</td><td>$1.8M/mo (Just Copy Me)</td><td>Mixed</td><td>3</td></tr>
+<tr><td>21</td><td>Fable 5.1 Motion Graphics</td><td>Mixed</td><td>5</td></tr>
+<tr><td>22</td><td>Next Social Media Boom (Gary Vee)</td><td>**Worth Trying**</td><td>7</td></tr>
+<tr><td>23</td><td>ChatGPT 6 Astra Edits YouTube</td><td>Mixed</td><td>5</td></tr>
+<tr><td>24</td><td>AI Edits My DaVinci Video</td><td>**Worth Trying**</td><td>7</td></tr>
+<tr><td>25</td><td>Local AI Breakthrough (Strix Halo)</td><td>**Worth Trying**</td><td>6</td></tr>
+<tr><td>26</td><td>Most Valuable YouTube Training (Jake Trinder)</td><td>Mixed</td><td>4</td></tr>
+<tr><td>27</td><td>GPT-6 Astra Video Editing Guide</td><td>**Worth Trying**</td><td>7</td></tr>
+<tr><td>28</td><td>GPT-6 Astra Runs My Marketing (Eric Siu?)</td><td>**Worth Trying**</td><td>6</td></tr>
+</tbody></table>
+<h2 id="the-best-of-the-batch"> The Best of the Batch<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<h3 id="nascom-nas-dailys-ai-native-commerce-platform-best-receipts">nas.com — Nas Daily&#x27;s AI-native commerce platform *(best receipts)*<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Nas Daily demoing <strong>his own product</strong>: an AI-native Shopify competitor where the platform itself allocates ad budgets (live Meta spend-shifting, human-veto-only). Live dashboards shown: Mass House Dubai funnel $130 spend → 22 tickets ≈ $220. This is <strong>AI-native commerce with autonomous ad allocation</strong> — a step past known agentic-payments themes: the agent isn&#x27;t buying *for* the human, it&#x27;s reallocating the human&#x27;s marketing budget autonomously. Worth Watching: if the AI-allocated-budget model holds at scale, &quot;storefront + autonomous media buyer&quot; collapses a $2-5K/mo agency line item.</p>
+
+<h3 id="resolve-211-mcp-deepgram-agent-video-editing-goes-production-grade">Resolve 21.1 MCP + Deepgram — agent video editing goes production-grade<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Two independent videos converged on the same pipeline: desktop app exposes an MCP server → agent does skilled production labor (rough cut, graphics, export, self-QA). The unlock that makes it clean: <strong>swap Resolve&#x27;s dropped-word built-in transcript for Deepgram word-level JSON (~$20 credits)</strong>. Real numbers: 23:58 raw → 7:14 base cut in under 20 min, $13–19/video standard ($30–40 fast mode) vs 3–4 manual hours. This is the first demonstrably production-grade agent-does-skilled-labor pipeline in the archive — and the direct blueprint for OpenMontage-adjacent work.</p>
+
+<h3 id="fable-51-one-job-experiment-qualification-then-asset-outbound">Fable 5.1 one-job experiment — qualification-then-asset outbound<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Agent read ~150 reviews × 20 Fresno paralegals, rejected 18/20 with reasoned walk-away rules, auto-built a private calculator report page per prospect, drafted outreach — <strong>under $3 total API spend</strong>, human keeps the send button. The new mechanic: the outreach hook is an *auto-built private asset* (calculator page), not a message. Asset-automation, not message-automation.</p>
+
+<h3 id="local-ai-on-strix-halo-4k-privacy-moat-cost-arbitrage">Local AI on Strix Halo (~$4K) — privacy moat + cost arbitrage<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>llama.cpp + Vulkan + GPU clock override + MoE models = 100→688 prefill TPS; $300/mo cloud spend replaced; private financial/medical/client-data workloads become feasible *because* they&#x27;re local — the privacy moat framing is the new part, not the speed.</p>
+
+<h3 id="live-shopping-land-grab-gary-vee-flagged-hard-but-receipts-real">Live shopping land-grab (Gary Vee) — flagged hard but receipts real<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Whatnot $11B GMV, China ~30% of e-commerce, his own $200K/3hr sale. Incentive-heavy pitch (he sells attention/merch), survivorship everywhere, but the *pinned-buyable-item during live streams* US window is real and cheap to test ($500-2K of household goods).</p>
+
+<h2 id="the-skip-pile-and-why"> The Skip Pile (and why)<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p>- <strong>&quot;Steal This $500M Software Model&quot;</strong> — unnamed white-label GoHighLevel clone behind an affiliate funnel. One transferable mechanic: usage rebilling (markup metered SMS/AI costs) + setup fee as retention.</p>
+<p>- <strong>&quot;MRR is the best AI business&quot;</strong> — &quot;MRR&quot; is the metric, not a product; it&#x27;s subscription dropshipping (supplements) with $280K/mo self-reported, zero dashboards.</p>
+<p>- <strong>&quot;3 Claude Side Hustles&quot;</strong> — dropshipping + AI ebook + faceless channel, all affiliate funnels, zero receipts.</p>
+<p>- <strong>The two &quot;I asked Claude to make me money&quot; videos</strong> — one sent its coached brother into HVAC-affiliate funnels ($214/day at day 29, &quot;not typical&quot;), the other built Pinterest/Amazon Associates sites with no earnings shown. Same series premise, different platforms, same funnel.</p>
+
+<h2 id="cross-video-synthesis"> Cross-Video Synthesis<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+
+<p><strong>MCP-as-production-line is the batch&#x27;s real headline.</strong> Three separate videos (21, 23, 24) demonstrate agents operating production software via MCP servers — Higgsfield for graphics, Resolve 21.1 for editing — including self-verification loops (&quot;agent re-watches, screenshots, checks sync&quot;). Combined with yesterday&#x27;s WebMCP find (sites exposing agent-callable tools), the pattern generalizes: <strong>the MCP-capable surface area of the world is becoming the agent&#x27;s hands</strong>. The archive&#x27;s agent-readiness ladder now runs: GEO/AEO citations → journey completion (WebMCP) → production software operation (this batch) → payment rails → vertical software.</p>
+
+<p><strong>Model-name theater is the new guru hook.</strong> &quot;GPT-6 Astra&quot; and &quot;Claude Fable 5.1&quot; appear in six videos as flagship capabilities; not one demonstrates the model identity independently, and auto-captions garble them differently each time (&quot;Mews Glummer,&quot; &quot;GPT-OSFS-120B&quot;). Treat every named-model claim as unverified until a repuable benchmark appears; grade the workflow, not the branding.</p>
+
+<p><strong>Skillify-and-publish as compounding marketing</strong> (Eric Siu&#x27;s Skills Dojo, HyperFrames student kit) — persisting winning agent workflows as named, publicly-published skills that double as lead magnets and onboarding artifacts. This is a genuinely new twist on agent infrastructure: the skill library is the moat AND the funnel.</p>
+
+<p><strong>Funnel-entropy remains total:</strong> of 28 videos, every single one monetizes the audience (Skool, workshops, affiliate, agencies, newsletters, communities) rather than the taught method. The archive&#x27;s receipts test stays the only reliable filter — and this batch&#x27;s pass rate (9 of 28 Worth Trying) is carried almost entirely by *demonstrated workflows*, not income claims. Zero videos showed a verified third-party P&amp;L.</p>
+
+<p><strong>Do this week:</strong> (1) test Resolve 21.1 MCP + Deepgram transcript swap on real footage; (2) clone the qualification-then-asset outbound pattern (walk-away rules + private calculator page) for one niche; (3) re-test the Higgsfield-MCP connector flow in ~15 min to verify the mechanics; (4) one Whatnot liquidation live as the cheapest live-shopping test.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-11</p>
+    </div>
+</body>
+</html>
