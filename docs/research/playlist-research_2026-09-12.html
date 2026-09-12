@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Research — Unknown</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1>Daily YouTube Strategy Research — Unknown</h1>
+
+<p># Playlist Research - Michael Buchanan's "Research" Playlist (2026-09-12 Run)</p>
+<p>> <strong>Run note:</strong> Playlist fully swapped again — 18 videos, 2 carried from 09-11 (Braxman local AI, Nathan Nazareth $1.8M/mo — both already covered), <strong>16 new, all analyzed</strong>. Transcript blocking was the story of the fetch: 6 of 16 needed delayed retries (kome.ai 403s on first attempt), all cleared on the second pass — the delayed-retry playbook from 09-05 is now mandatory. "GPT-6 Astra" / "Fable 5.1" model names appear for the <strong>third consecutive run</strong>, still unverified; normalize to the actual tooling shown on screen (Codex desktop app, Claude API, Higgsfield).</p>
+<p><strong>Videos found:</strong> 16 new · <strong>Analyzed:</strong> 16 · <strong>Skipped:</strong> 0</p>
+<h2>Run Theme</h2>
+<p><strong>The agentic production wave got confirmed.</strong> Yesterday's Resolve-MCP editing pipeline (2 creators) now has 4+ independent confirmations across 2 days — and the batch's core technical thesis emerged alongside it: <strong>editable output beats generated pixels</strong> (Fusion node graphs, Remotion code) because revisable deliverables are what turn demos into services. Meanwhile the attention-commerce thesis from 09-11 got platform-native confirmation (Roblox Moments shoppable feed + creator payouts), and AI-assisted production got its first citable platform-official stat (57% of Studio hours among top-1,000 Roblox creators). Funnel-entropy collapsed versus 09-11: several videos here are clean strategy content or verifiable documentaries — the receipts test still separates them.</p>
+<h2>Videos Analyzed (16)</h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Video</th><th>Verdict</th><th>Q</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>5 Things Local Businesses Desperately Need (Automate AI Consulting)</td>
+<td>Mixed</td>
+<td>6</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ChatGPT Astra Is the AI Employee (Authority Hacker)</td>
+<td>Mixed</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>DoorDash to $81K/M — Water Filtration (Chris Koerner)</td>
+<td><strong>Worth Trying</strong></td>
+<td>8</td>
+</tr>
+<tr>
+<td>4</td>
+<td>I Gave Claude $3,000 to Start a Business</td>
+<td>Mixed</td>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>I Cloned A $4M App (affiliatemarketingmc)</td>
+<td>Mixed</td>
+<td>6.5</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Is X Money Too Good To Be True?</td>
+<td>Mixed</td>
+<td>7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>AI Microdrama Economics (fal Podcast, Sophia Xing)</td>
+<td><strong>Worth Trying</strong></td>
+<td>8.5</td>
+</tr>
+<tr>
+<td>8</td>
+<td>GaryVee: Interest Media & Organic-First Testing</td>
+<td>Mixed</td>
+<td>6</td>
+</tr>
+<tr>
+<td>9</td>
+<td>GPT-6 Astra Unlimited Videos (Higgsfield plugin)</td>
+<td>Mixed</td>
+<td>5</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Roblox RDC 2026 Recap (KreekCraft)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Astra Changes Video Editing Forever (Danny Why, Resolve MCP)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7</td>
+</tr>
+<tr>
+<td>12</td>
+<td>3 AI Businesses in 3 Hours (JohnnyTube)</td>
+<td><strong>Worth Trying</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Cursor Projects (corbin)</td>
+<td><strong>Worth Trying</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Roblox Success on Purpose (Zyonic)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Astra Motion Design (Julian Goldie, Remotion)</td>
+<td>Mixed</td>
+<td>5</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Have Astra Do This Right Now (aggregation roundup)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7.5</td>
+</tr>
+</tbody></table>
+<h2>The Best of the Batch</h2>
+<h3>fal Podcast: AI microdrama economics — the batch's highest-signal intel *(8.5/10)*</h3>
+<p>Sophia Xing on the fal Podcast dropped concrete industry numbers: ~150K AI-generated drama titles already, production costs collapsed <strong>$8–10M → ~$1M</strong>, $20–40 paywall economics per finished drama, ~20% of US adults watching microdramas. Tool/education content, not a pitch. This is a picks-and-shovels map of a content category in cost-collapse — the value migrates to distribution and IP selection, not production.</p>
+<h3>Koerner: water-filtration skilled-trades arbitrage *(8/10, batch's best business content)*</h3>
+<p>DoorDash-to-$81K/mo story with granular, internally consistent unit economics on install/subscription water-filtration: the generalizable thesis is <strong>arbitrage on scarce licensed labor</strong> — sell the jobs, route the licensed tradespeople, keep the spread. All numbers self-reported and the guest now sells via the show, but it's the most honest business teardown of the batch.</p>
+<h3>Resolve-MCP wave: 4 creators in 2 days — agent video editing is a confirmed trend</h3>
+<p>Danny Why (ChatGPT→Resolve MCP builds entire Fusion node graphs, native editable shapes, ~10–15 min per animation, credit counter visible, flaws shown), corbin's meta-reveal (his video itself edited by his own Resolve-MCP pipeline), plus the roundup's live hands-off rough cut. Combined with 09-11's two: independent replication across 4+ creators = treat <strong>agent-driven NLE editing as a real wave</strong>, likely to spawn editing-service niches within weeks. The differentiator that makes it serviceable: output stays <strong>editable</strong> (node graphs/code, not pixels) — revision cycles collapse.</p>
+<h3>Roblox RDC: attention-commerce goes platform-native *(intelligence, 7/10)*</h3>
+<p>Roblox Moments = shoppable short-video feed with ad-rev creator payouts inside a UGC platform with a built-in young economy — the same thesis as GaryVee's 09-11 live-shopping pitch, now executed natively by a platform (shoppable avatar items from Moments videos in October). Plus the <strong>platform-official stat: 57% of Studio hours among top-1,000 creators used AI</strong> — citable confirmation that AI-assisted production is the norm at the top. Star Codes returning = platforms paying influencer distribution directly. Cheapest live testbed for young-demographic social commerce.</p>
+<h3>Zyonic's Roblox documentary — the batch's only verifiable business *(7/10)*</h3>
+<p>Publicly auditable CCU/visit counts, honest dips (failed ad cycles, 300-CCU trough), declined a $24K/70% acquisition two months before 20M visits. The instructive part: <strong>the batch's most real business is its least AI-dependent</strong> — human iteration, Discord playtesting, and community did the compounding; AI appears only as an asset-acceleration sponsor (Meshy). Hold-vs-sell equity conviction was the highest-leverage decision.</p>
+<h3>Codex-vs-Claude roundup: cost transparency as content *(7.5/10)*</h3>
+<p>Aggregation done right: same-prompt benchmarks with published cost/time numbers — meeting analysis $5 vs $46, consulting decks $12 vs $26 and 23 vs 37 min — and misses shown. Two durable mechanics: <strong>MCP-first over cursor control</strong> (when an app exposes an MCP, script-level beats simulated mouse), and <strong>meeting-notes mining</strong> (both models independently converged on the same top automation recommendation). Also names the curator tier explicitly: on top of every tool-hype wave sits an aggregator capturing attention without building anything.</p>
+<h2>The Middle (and why)</h2>
+<ul>
+<li><strong>GaryVee interest media (6/10)</strong> — organic-views-as-free-creative-validation is genuinely testable at zero cost (post raw variants, post-produce only 5–10x outliers with offer DNA), but it's pure assertion, and Spotlight-as-TikTok's-equal is self-serving. Genuinely new content vs 09-11's live-shopping video — the two compose into a coherent "attention playbook": enter underpriced surfaces early, let organic views vote, add offer DNA to winners.</li>
+<li><strong>Local-business AI listicle (6/10)</strong> — five real productized offers (missed-call text-back, instant quotes, AI review responses with human approval dashboard, etc.) with sensible pitch math and a BrightLocal stat (6%→45% of businesses using AI assistants in one year) — zero receipts, Skool funnel behind every claim.</li>
+<li><strong>Authority Hacker's Astra week-one field report (7/10)</strong> — demo-heavy and honest (Circle page rebuild, SketchUp 3D, Resolve edit), but an anecdote, not evidence.</li>
+<li><strong>"I gave Claude $3,000" (5/10)</strong> — polished sponsored spectacle; builds real, ads never launched, no bookings ever happened. Watch for workflow only.</li>
+<li><strong>X Money review (7/10)</strong> — balanced consumer-finance take on the 6% APY / 3% cash-back debit card with the right skepticism (acquisition-subsidy pricing, direct-deposit locks). Not a business opportunity; a watchlist item on neobank stickiness mechanics.</li>
+<li><strong>"Cloned a $4M app" (6.5/10)</strong> — clickbait hook, real lesson: <strong>adaptation over imitation</strong> — take a proven category (live chat), find the segment that hates the default, build the wedge for one buyer at one expensive moment (SellerPole = live chat rebuilt for sales). $35K/mo claim has no receipts; the product is the coaching funnel.</li>
+<li><strong>Higgsfield one-prompt faceless video (5/10)</strong> — vendor-affiliate demo, no costs shown, but it's the second independent entry point (ChatGPT plugin vs MCP) into the same LLM-as-video-orchestrator pattern — the abstraction layer is the durable part. Re-test remains on the do-this-week list from 09-11.</li>
+<li><strong>Julian Goldie motion design (5/10)</strong> — the mechanic is real and free (coding agent + open-source Remotion skill = editable code-based motion graphics), wrapped in the batch's heaviest paid-community funnel. Steal the mechanic; skip the membership. His honest admission cuts both ways: stock models are "not particularly good" at this — quality comes from the skills layered on top. That's the moat, and it's portable.</li>
+</ul>
+<h2>Cross-Video Synthesis</h2>
+<p><strong>1. The agentic production ladder is filling in.</strong> 09-09: GEO/AEO citations. 09-10: WebMCP journey completion. 09-11: production software operation. 09-12 adds the top rungs — <strong>agents generating the tools themselves</strong> (JohnnyTube's 20-min game builds, Goldie's 7-min motion-designer UI) and <strong>agents operating agents</strong> (corbin's orchestrator chat spawning parallel subagents in cloud worktrees — the same pattern this very run uses). The direction is consistent: each run, the agent moves one step further from doing the task to owning the pipeline around the task.</p>
+<p><strong>2. Editable output is the serviceability unlock.</strong> Fusion node graphs (Danny Why) and Remotion code (Goldie) beat generated-pixel video for the same reason template docs beat PDFs: clients revise what clients can touch. Any agent-service idea should be scored on this axis: does the deliverable stay revisable?</p>
+<p><strong>3. The one-of-one emotional wedge is the most actionable idea in the batch.</strong> Kid's-drawing games, grandma-legacy games, book-cover promos: <strong>personal artifact in, premium interactive artifact out</strong> — one-of-one products escape price comparison, and all ride the same image-upload → agent pipeline.</p>
+<p><strong>4. Funnel-entropy varies wildly by batch; the receipts test doesn't.</strong> 09-11 was 28/28 monetize-the-audience; this batch had multiple clean strategy/documentary/intelligence videos. The constant: <strong>funnel aggression inversely correlates with verifiability</strong> (D-batch receipts hierarchy: auditable CCU > visible node graphs + credit counter > real repo, self-graded > working product, no revenue evidence > demo behind heaviest funnel). And the branding grift-marker held a third run: every "GPT-6 Astra"-titled video carried a funnel; the most credible videos never used the name.</p>
+<p><strong>5. Speed-claims inflation is universal; the direction is still true.</strong> 7 minutes (tool build), 10–15 (animations), 16 (app), 20 (game), 3 hours (3 businesses) — all self-reported, none timed. The directionally honest version: agent build time is now hours-to-minutes, which collapses production cost and moves <strong>the entire bottleneck to distribution</strong> — every video that showed a real business (Zyonic, Koerner) spent its effort there.</p>
+<h2>Do This Week</h2>
+<p>1. <strong>Test the Resolve-MCP editing pipeline on real footage</strong> — now 4-creator-confirmed; OpenMontage-adjacent, editable-output deliverable. (Carried over from 09-11, upgraded.)</p>
+<p>2. <strong>Run the organic-views gauntlet on one channel</strong> — 10–20 raw variants/week, single metric = organic views, post-produce only 5–10x outliers with offer DNA. Costs nothing.</p>
+<p>3. <strong>Prototype one one-of-one emotional artifact</strong> — legacy-game or photo→interactive pipeline, 2–3 test candidates from real family/brand material.</p>
+<p>4. <strong>Meeting-notes mining</strong> — connect the note-taker to an agent, ask for top 3 pain points + highest-value automation; batch costs are now trivial ($5-scale).</p>
+<p>5. <strong>Watchlist:</strong> Roblox Moments shoppable items (October) as social-commerce testbed; microdrama coin economics as content-business template; X Money deposit-lock mechanics as neobank playbook; Higgsfield connector re-test (15 min).</p>
+<hr>
+<p>*Run mechanics: 7 subagent digest batches (A–E) with write-as-you-go protocol, 16/16 transcripts (6 recovered via delayed retries), report + Pages publish same-day.*</p>
+
+        <p class="footer">Generated by OpenClaw · Unknown</p>
+    </div>
+</body>
+</html>
