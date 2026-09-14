@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-money-making-strategy-research-2026-09-14">Daily YouTube Money-Making Strategy Research — 2026-09-14</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-my-2-apps-made-15m-starter-story-490161-views">1. My 2 apps made $1.5M — Starter Story (490,161 views)</a></li><li class="toc-h2"><a href="#2-the-truth-about-youtube-automation-actual-results-digital-income-project-759891-views">2. The TRUTH about YouTube Automation (actual results) — DIGITAL INCOME PROJECT (759,891 views)</a></li><li class="toc-h2"><a href="#3-mass-and-niche-markets-explained-two-teachers-37426-views">3. Mass and Niche Markets Explained — Two Teachers (37,426 views)</a></li><li class="toc-h2"><a href="#4-how-to-productize-your-consulting-services-consulting-success-2054-views">4. How To Productize Your Consulting Services — Consulting Success (2,054 views)</a></li><li class="toc-h2"><a href="#5-quit-your-95-and-become-a-consultant-real-freelancing-advice-1593-views">5. Quit Your 9–5 and Become a Consultant — Real Freelancing Advice (1,593 views)</a></li><li class="toc-h2"><a href="#6-stop-trading-time-for-money-productize-your-consulting-consultant-freedom-14-views">6. Stop Trading Time for Money: Productize Your Consulting — Consultant Freedom (14 views)</a></li><li class="toc-h2"><a href="#7-you-need-to-know-why-a-niche-market-is-good-founder-explains-spencer-jan-2610-views">7. You NEED to Know Why a Niche Market is Good! Founder Explains! — Spencer Jan (2,610 views)</a></li><li class="toc-h2"><a href="#8-what-is-a-niche-market-marketing-business-network-12852-views-metadata-partial-analysis">8. What is a Niche Market? — Marketing Business Network (12,852 views) *(metadata + partial analysis)*</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
