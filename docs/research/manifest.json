@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-12 13:25:03",
+  "generated": "2026-09-13 18:12:39",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -316,7 +316,7 @@
     {
       "file": "playlist-research_2026-08-31.html",
       "date": "2026-08-31",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-08-31)",
+      "title": "Playlist Research — 2026-08-31",
       "label": "08-31 Playlist"
     },
     {
@@ -328,7 +328,7 @@
     {
       "file": "playlist-research_2026-09-01.html",
       "date": "2026-09-01",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-01 Evening Run)",
+      "title": "Playlist Research — 2026-09-01",
       "label": "09-01 Playlist"
     },
     {
@@ -346,7 +346,7 @@
     {
       "file": "playlist-research_2026-09-03.html",
       "date": "2026-09-03",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-03 Run)",
+      "title": "Playlist Research — 2026-09-03",
       "label": "09-03 Playlist"
     },
     {
@@ -358,7 +358,7 @@
     {
       "file": "playlist-research_2026-09-04.html",
       "date": "2026-09-04",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-04 Run)",
+      "title": "Playlist Research — 2026-09-04",
       "label": "09-04 Playlist"
     },
     {
@@ -370,7 +370,7 @@
     {
       "file": "playlist-research_2026-09-05.html",
       "date": "2026-09-05",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-05 Run)",
+      "title": "Playlist Research — 2026-09-05",
       "label": "09-05 Playlist"
     },
     {
@@ -388,7 +388,7 @@
     {
       "file": "playlist-research_2026-09-07.html",
       "date": "2026-09-07",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-07 Evening Run)",
+      "title": "Playlist Research — 2026-09-07",
       "label": "09-07 Playlist"
     },
     {
@@ -406,7 +406,7 @@
     {
       "file": "playlist-research_2026-09-09.html",
       "date": "2026-09-09",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-09 Run)",
+      "title": "Playlist Research — 2026-09-09",
       "label": "09-09 Playlist"
     },
     {
@@ -418,7 +418,7 @@
     {
       "file": "playlist-research_2026-09-10.html",
       "date": "2026-09-10",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-10 Run)",
+      "title": "Playlist Research — 2026-09-10",
       "label": "09-10 Playlist"
     },
     {
@@ -430,7 +430,7 @@
     {
       "file": "playlist-research_2026-09-11.html",
       "date": "2026-09-11",
-      "title": "Playlist Research - Michael Buchanan&#x27;s &quot;Research&quot; Playlist (2026-09-11 Run)",
+      "title": "Playlist Research — 2026-09-11",
       "label": "09-11 Playlist"
     },
     {
@@ -442,8 +442,14 @@
     {
       "file": "playlist-research_2026-09-12.html",
       "date": "2026-09-12",
-      "title": "Daily YouTube Strategy Research — Unknown",
+      "title": "Playlist Research — 2026-09-12",
       "label": "09-12 Playlist"
+    },
+    {
+      "file": "daily-research_2026-09-13.html",
+      "date": "2026-09-13",
+      "title": "Daily YouTube Strategy Research — 2026-09-13",
+      "label": "09-13 Daily"
     }
   ]
 }

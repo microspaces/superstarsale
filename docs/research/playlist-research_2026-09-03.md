@@ -8,22 +8,24 @@
 
 | # | Title | Channel | Type | Views | Transcript |
 |---|-------|---------|------|-------|------------|
-| 1 | Watch Me Build an App With AI and Make a Sale in 85 Minutes | Chris Koerner / Koerner Office | Business demo | ~23k | Yes |
-| 2 | If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months | Sunny Lenarduzzi | Business pitch | ~38k | Yes |
-| 3 | Grok Bot Is Weirdly Revolutionary | Less Bitter | General analysis | ~73k | Yes |
-| 4 | I Studied 1,000 Digital Product Businesses, Here's What Works in 2026 | Richard Yu | Business pitch | ~21k | Yes |
-| 5 | I Found the Pattern Behind Every Viral Video | vidIQ | Education | ~48k | Yes |
-| 6 | He Started YouTube After 40 - Now It's His Full-Time Career | Think Media Podcast | Case study | ~6.7k | Yes |
-| 7 | Claude AI + Digital Products = $218,974 | The Ecom King | Business pitch | ~23k | Yes |
-| 8 | Ask Claude These 3 Questions, It Will Change Your Bank Account | Dan Martell | Education | ~172k | Yes |
-| 9 | Claude + Shopify = $12,000/Month | Jordan Welch | Business pitch | ~2k | Yes |
-| 10 | The Faceless AI YouTube Niche Making People RICH | Wholesale Ted | Business pitch | ~44k | Yes |
+| 1 | [Watch Me Build an App With AI and Make a Sale in 85 Minutes](#video-1) || Chris Koerner / Koerner Office | Business demo | ~23k | Yes |
+| 2 | [If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months](#video-2) || Sunny Lenarduzzi | Business pitch | ~38k | Yes |
+| 3 | [Grok Bot Is Weirdly Revolutionary](#video-3) || Less Bitter | General analysis | ~73k | Yes |
+| 4 | [I Studied 1,000 Digital Product Businesses, Here's What Works in 2026](#video-4) || Richard Yu | Business pitch | ~21k | Yes |
+| 5 | [I Found the Pattern Behind Every Viral Video](#video-5) || vidIQ | Education | ~48k | Yes |
+| 6 | [He Started YouTube After 40 - Now It's His Full-Time Career](#video-6) || Think Media Podcast | Case study | ~6.7k | Yes |
+| 7 | [Claude AI + Digital Products = $218,974](#video-7) || The Ecom King | Business pitch | ~23k | Yes |
+| 8 | [Ask Claude These 3 Questions, It Will Change Your Bank Account](#video-8) || Dan Martell | Education | ~172k | Yes |
+| 9 | [Claude + Shopify = $12,000/Month](#video-9) || Jordan Welch | Business pitch | ~2k | Yes |
+| 10 | [The Faceless AI YouTube Niche Making People RICH](#video-10) || Wholesale Ted | Business pitch | ~44k | Yes |
 | — | $18M/Year Apple Watch App | Superwall | Skipped - covered 08-31 | | |
 | — | $69K/Month SaaS in 2 Months | Starter Story | Skipped - covered 08-31 | | |
 
 ---
 
-## Video 1: Chris Koerner - "Watch Me Build an App With AI and Make a Sale in 85 Minutes"
+### Video 1: Chris Koerner - "Watch Me Build an App With AI and Make a Sale in 85 Minutes" {#video-1}
+
+> ▶ Watch: https://youtu.be/UItZIyRpWSw
 
 **Story:** The most operationally detailed video in the playlist series: Koerner live-builds and launches **OnlyWaivers.com** - a liability-waiver SaaS for LDS church youth leaders (his own niche) - buying the domain ($12), prompting Claude (top model) to write the build prompt, building the app in ~20 minutes with Replit Agent 4, filming a 30-second iPhone selfie ad, and having the **official Facebook Ads MCP create and run the entire Meta campaign** concurrently. One real customer ($13/year, Idaho) lands within the session - no audience leverage.
 
@@ -45,7 +47,9 @@
 
 ---
 
-## Video 2: Sunny Lenarduzzi - "If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months"
+### Video 2: Sunny Lenarduzzi - "If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months" {#video-2}
+
+> ▶ Watch: https://youtu.be/Rl3fOs63qRk
 
 **Story:** The order-of-operations system: **build a high-ticket offer FIRST, get results, and only then publish YouTube** - an 8-video funnel-architected starter batch aimed at small-but-relevant search traffic, not reach. The "creator game" (views/AdSense at $2-3/1k) vs the "business owner game" (leads, dollar-per-view, relevance over reach).
 
@@ -67,7 +71,9 @@
 
 ---
 
-## Video 3: Less Bitter - "Grok Bot Is Weirdly Revolutionary" *(general analysis)*
+### Video 3: Less Bitter - "Grok Bot Is Weirdly Revolutionary" *(general analysis)* {#video-3}
+
+> ▶ Watch: https://youtu.be/K6BYzjwkp24
 
 **Story:** mo (mo.io / Ship Academy) stress-tests xAI's Grok Bot live by connecting real accounts (Plausible analytics, Gmail/Drive/Calendar, GitHub, Substack) and building an agent fleet: analytics alerts, NYT/Verge headline watchers, competitor-pricing espionage, uptime monitoring, paid-subscriber notifications, and a blog manager that edits markdown → commits → pushes → **deploys his static site from a chat command**. Walked in expecting annoyance; concluded "this is how AI is done from now on."
 
@@ -85,7 +91,9 @@
 
 ---
 
-## Video 4: Richard Yu - "I Studied 1,000 Digital Product Businesses, Here's What Works in 2026"
+### Video 4: Richard Yu - "I Studied 1,000 Digital Product Businesses, Here's What Works in 2026" {#video-4}
+
+> ▶ Watch: https://youtu.be/YaKMTyFd2ZQ
 
 **Story:** The 5-part Instagram machine distilled from his "1,000+ business" study: 7-15-second videos (algorithm ignores follower count) → comment-keyword auto-DM → $27 impulse product + $1,500-2,000 high-ticket offer closed via non-pushy "value calls" at 1-in-3 to 1-in-4.
 
@@ -104,7 +112,9 @@
 
 ---
 
-## Video 5: vidIQ - "I Found the Pattern Behind Every Viral Video" *(education)*
+### Video 5: vidIQ - "I Found the Pattern Behind Every Viral Video" *(education)* {#video-5}
+
+> ▶ Watch: https://youtu.be/EyHJupH4Dr0
 
 **Story:** A framework breakdown of "hundreds" of outlier videos (5×-100× channel average): what they share isn't equipment, volume, or frequency - it's how the first seconds interact with viewer psychology. Four rules, each with a named effect and a real channel example.
 
@@ -122,7 +132,9 @@
 
 ---
 
-## Video 6: Think Media - "He Started YouTube After 40 - Now It's His Full-Time Career" *(case study)*
+### Video 6: Think Media - "He Started YouTube After 40 - Now It's His Full-Time Career" *(case study)* {#video-6}
+
+> ▶ Watch: https://youtu.be/pTWcmJrwRtU
 
 **Story:** Bloodline Adventures (Alberta hunting/fishing, two brothers) went ~1,000 → 100,000+ subs in ~2 years on viral Shorts (20-40M-view clips), then hit the classic wall: massive views, near-zero conversion, negative sub days. After a mastermind: reverse-engineer content for a defined viewer, diversify revenue, use proof-of-work to win affiliates. Bryce (ex-fire lieutenant/paramedic, 21 years) is now YouTube strategist for Wild TV.
 
@@ -142,7 +154,9 @@
 
 ---
 
-## Video 7: The Ecom King - "Claude AI + Digital Products = $218,974"
+### Video 7: The Ecom King - "Claude AI + Digital Products = $218,974" {#video-7}
+
+> ▶ Watch: https://youtu.be/oN9LcIA_rt8
 
 **Story:** An AI-run digital-product pipeline: Claude + ChatGPT together ("I stopped trying to choose between them") with MCP connectors - **Everbe** (Etsy revenue scraping), **Winning Hunter** (ad intel), **Higgsfield/Sedance 2.5** (ad video) - to find validated demand, build a better product, and sell it on your own .store site with AI-made Facebook ads. Proof: a Stripe flash claiming $218k gross / $180k net at ~$241 AOV.
 
@@ -160,7 +174,9 @@
 
 ---
 
-## Video 8: Dan Martell - "Ask Claude These 3 Questions, It Will Change Your Bank Account" *(education)*
+### Video 8: Dan Martell - "Ask Claude These 3 Questions, It Will Change Your Bank Account" *(education)* {#video-8}
+
+> ▶ Watch: https://youtu.be/1BApLicRt1w
 
 **Story:** The three questions Martell asks AI before starting any business: what to sell (a painkiller, not a vitamin), what your unfair advantage is, and how to get a real payment to validate - "sell before you build." Framed by his own history (two failed companies, then Spheric sold in 4 years).
 
@@ -179,7 +195,9 @@
 
 ---
 
-## Video 9: Jordan Welch - "Claude + Shopify = $12,000/Month"
+### Video 9: Jordan Welch - "Claude + Shopify = $12,000/Month" {#video-9}
+
+> ▶ Watch: https://youtu.be/9zh3Raq4FVc
 
 **Story:** A three-step Claude-driven dropshipping demo: find a trending product (Trend Track ad-spy), validate with a Claude research verdict, clone a competitor's Shopify store (Clone Store) - both tools wired into the Claude desktop app as MCP connectors. Claimed: a new store to $424 day-one sales; titled $12,000/month.
 
@@ -197,7 +215,9 @@
 
 ---
 
-## Video 10: Wholesale Ted - "The Faceless AI YouTube Niche Making People RICH"
+### Video 10: Wholesale Ted - "The Faceless AI YouTube Niche Making People RICH" {#video-10}
+
+> ▶ Watch: https://youtu.be/GxcFXsqYnIQ
 
 **Story:** AI music channels - long themed background-music videos from AI-generated songs + looped AI visuals - pitched as the best faceless AI niche for beginners: case channel started May 22, 27,000+ subs in 2 months, climbing to 90,000+ views/day, "well over $300/day" estimated. Then the full 4-step production pipeline.
 

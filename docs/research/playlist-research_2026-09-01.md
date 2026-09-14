@@ -8,14 +8,16 @@
 
 | # | Title | Channel | Views | Length | Transcript |
 |---|-------|---------|-------|--------|------------|
-| 1 | 11 Lazy Ways To Make Money With AI (No Experience) | Jordan Welch | ~105k | 27:10 | Yes |
-| 2 | The NEW Way I Copied A $1k+/Day YouTube Channel w/ AI | Wholesale Ted | ~46k | 23:33 | Yes |
-| 3 | Don't Become A Content Creator, Build A Content Business. | Codie Sanchez | ~364k | 25:44 | Yes |
+| 1 | [11 Lazy Ways To Make Money With AI (No Experience)](#video-1) || Jordan Welch | ~105k | 27:10 | Yes |
+| 2 | [The NEW Way I Copied A $1k+/Day YouTube Channel w/ AI](#video-2) || Wholesale Ted | ~46k | 23:33 | Yes |
+| 3 | [Don't Become A Content Creator, Build A Content Business.](#video-3) || Codie Sanchez | ~364k | 25:44 | Yes |
 | — | 11 Insane Things Cursor's NEW GrokBot Can Do | Riley Brown | ~69k | 37:24 | Skipped - covered 08-31 (Video 5) |
 
 ---
 
-## Video 1: Jordan Welch - "11 Lazy Ways To Make Money With AI"
+### Video 1: Jordan Welch - "11 Lazy Ways To Make Money With AI" {#video-1}
+
+> ▶ Watch: https://youtu.be/RzFHcZA6uxA
 
 **Story:** A tier-list ranking (S to F) of 11 AI business models, each scored on difficulty, scalability, and profitability. Welch is a veteran e-commerce YouTuber (~$10M+ career from digital products, he claims) doing exactly what the best-performing video format on this topic does: ranking things.
 
@@ -43,7 +45,9 @@
 
 ---
 
-## Video 2: Wholesale Ted (Sarah) - "The NEW Way I Copied A $1k+/Day YouTube Channel w/ AI"
+### Video 2: Wholesale Ted (Sarah) - "The NEW Way I Copied A $1k+/Day YouTube Channel w/ AI" {#video-2}
+
+> ▶ Watch: https://youtu.be/uPqjOBTAQSs
 
 **Story:** A full production tutorial for building a hyperrealistic AI YouTuber/influencer channel. The premise: channels where a person reads Reddit stories aloud earn ~$31k/mo (VidIQ estimate shown); ByteDance's Seedance 2.5 now makes talking-head video replicable at ~$5/video in bulk.
 
@@ -62,7 +66,9 @@
 
 ---
 
-## Video 3: Codie Sanchez - "Don't Become A Content Creator, Build A Content Business" *(strategy analysis - not an automation pitch)*
+### Video 3: Codie Sanchez - "Don't Become A Content Creator, Build A Content Business" *(strategy analysis - not an automation pitch)* {#video-3}
+
+> ▶ Watch: https://youtu.be/ZvAwqGH_79Q
 
 **Story:** A genuinely dense strategy breakdown of the six C's framework - the actual economics of running content as a business rather than chasing creator status. This is the video in the set that isn't selling an automation model; it's an operator sharing her playbook (Forbes top-10 creator claim; the video itself funnels to her newsletter, book, academy, and private-client business).
 

@@ -8,28 +8,30 @@
 
 | # | Title | Channel | Views | Length |
 |---|-------|---------|-------|--------|
-| 1 | 5 GitHub Repos: Kill AI Slop, Go Viral, Make Money | Greg Isenberg | ~191K | 25 min |
-| 2 | Why AI Agents Could Finally Reinvent the Credit Card | a16z | ~35K | 59 min |
-| 3 | Hormozi's New YouTube Strategy Is Genius (but Dangerous) | Wes McDowell | ~8.7K | 18 min |
-| 4 | I Built An Entire AI Filmmaking Team With Claude | Mira AI | ~20K | 10 min |
-| 5 | Why Doesn't Everyone Play Bubble Craps Like This? | Casino Steve | ~7K | 12 min |
-| 6 | If I Had to Get My Brand Cited by AI, I'd Build This Grok Bot | Jake Bauman | ~2.2K | 21 min |
-| 7 | ChatGPT Images 2.5 Is Here (And It's A LOT Of Fun) | Paul J Lipsky | ~193K | 9 min |
-| 8 | Forget Amazon! Shopify Just Became The Better Bet For Sellers | MyWifeQuitHerJob | ~18K | 13 min |
-| 9 | TikTok Is Quietly Creating Six-Figure Publishers | Jonathan Nilsen | ~35K | 16 min |
-| 10 | The NEW Way to make $ with chatgpt in 2026 | Nick Ponte | ~11K | 41 min |
-| 11 | New: Your agent handles finances now | The Next New Thing | ~13K | 13 min |
-| 12 | If We Had to Make $1M Fast, We'd Start These Businesses | Koerner Office | ~188K | 61 min |
-| 13 | If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months | Sunny Lenarduzzi | ~89K | 28 min |
-| 14 | The Simple One-Man Side Hustle That Runs Itself | Koerner Office | ~72K | 43 min |
-| 15 | 8 Ways I Get Paid on YouTube (Without Millions of Views) | Glo Atanmo | ~5.8K | 48 min |
-| 16 | Inside OpenClaw 2.0: Multiplayer, Dashboards, and Worker Nodes | OpenClaw | ~8.8K | 51 min |
+| 1 | [5 GitHub Repos: Kill AI Slop, Go Viral, Make Money](#video-1) || Greg Isenberg | ~191K | 25 min |
+| 2 | [Why AI Agents Could Finally Reinvent the Credit Card](#video-2) || a16z | ~35K | 59 min |
+| 3 | [Hormozi's New YouTube Strategy Is Genius (but Dangerous)](#video-3) || Wes McDowell | ~8.7K | 18 min |
+| 4 | [I Built An Entire AI Filmmaking Team With Claude](#video-4) || Mira AI | ~20K | 10 min |
+| 5 | [Why Doesn't Everyone Play Bubble Craps Like This?](#video-5) || Casino Steve | ~7K | 12 min |
+| 6 | [If I Had to Get My Brand Cited by AI, I'd Build This Grok Bot](#video-6) || Jake Bauman | ~2.2K | 21 min |
+| 7 | [ChatGPT Images 2.5 Is Here (And It's A LOT Of Fun)](#video-7) || Paul J Lipsky | ~193K | 9 min |
+| 8 | [Forget Amazon! Shopify Just Became The Better Bet For Sellers](#video-8) || MyWifeQuitHerJob | ~18K | 13 min |
+| 9 | [TikTok Is Quietly Creating Six-Figure Publishers](#video-9) || Jonathan Nilsen | ~35K | 16 min |
+| 10 | [The NEW Way to make $ with chatgpt in 2026](#video-10) || Nick Ponte | ~11K | 41 min |
+| 11 | [New: Your agent handles finances now](#video-11) || The Next New Thing | ~13K | 13 min |
+| 12 | [If We Had to Make $1M Fast, We'd Start These Businesses](#video-12) || Koerner Office | ~188K | 61 min |
+| 13 | [If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months](#video-13) || Sunny Lenarduzzi | ~89K | 28 min |
+| 14 | [The Simple One-Man Side Hustle That Runs Itself](#video-14) || Koerner Office | ~72K | 43 min |
+| 15 | [8 Ways I Get Paid on YouTube (Without Millions of Views)](#video-15) || Glo Atanmo | ~5.8K | 48 min |
+| 16 | [Inside OpenClaw 2.0: Multiplayer, Dashboards, and Worker Nodes](#video-16) || OpenClaw | ~8.8K | 51 min |
 
 ## Run Theme
 
 **Agent-legibility is the 2026 acquisition channel.** Across GEO/AEO bots, Shopify FAQ schema, TikTok-manufactured KDP demand, and Hormozi's "watch me work" videos, the winners aren't ranking in search — they're making themselves machine-citable and buyer-specific. Parallel thread: agent-native infrastructure (Slowbooks, OpenClaw 2.0, Higgsfield crews, agentic payments) replacing click-tools with named agents that have jobs, audit trails, and persistent rules. Best receipts of the batch are analog: Nathan's contactless trailer rentals (~$4K/mo net on 2–4 hrs/week). Worst: vendor/guru funnels with dollar figures and no dashboards.
 
-## Video 1: Greg Isenberg — "5 GitHub Repos" *(tooling roundup)*
+### Video 1: Greg Isenberg — "5 GitHub Repos" *(tooling roundup)* {#video-1}
+
+> ▶ Watch: https://youtu.be/9_SZFIW7tus
 
 - **Business model:** Mine GitHub trending, install repos as agent skills, productize one working workflow (video-editing-as-a-service, mobile QA).
 - **Revenue model:** none given — "$100–$500/mo QA" is hypothetical.
@@ -38,7 +40,9 @@
 - **Keep:** Skill Specter as install hygiene. Named: No-AI-Slop, trycompai CRM, browser-use Video Use, Skill Specter, Phone Harness.
 - **Red flags:** intro says six repos, delivers five; zero results; heavy deps.
 
-## Video 2: a16z — "AI Agents Could Finally Reinvent the Credit Card" *(VC thesis)*
+### Video 2: a16z — "AI Agents Could Finally Reinvent the Credit Card" *(VC thesis)* {#video-2}
+
+> ▶ Watch: https://youtu.be/J3pegsM5drk
 
 - **Thesis:** Agentic *payments* (execute a known SKU at best terms) ≠ agentic *shopping* (robots picking your outfits). Visa/MC 2.5-second window froze card innovation; agents timeshift underwriting/fraud like Apple Pay did. Instacart already trained substitution tolerance.
 - **Revenue model:** none (VC). Affirm receipts: 30–35% conversion lifts when financing is upfunnel; negative-CAC via merchant-funded MDR.
@@ -46,7 +50,9 @@
 - **Automation:** 9/10 · **Quality:** 9/10 · **Verdict: Mixed** (Skip as playbook, Worth Trying as rails map)
 - **Red flags:** a16z investment narrative; no small-operator economics.
 
-## Video 3: Wes McDowell — "Hormozi's New YouTube Strategy" *(content strategy)*
+### Video 3: Wes McDowell — "Hormozi's New YouTube Strategy" *(content strategy)* {#video-3}
+
+> ▶ Watch: https://youtu.be/i1fLRypxgjU
 
 - **The internet's read is wrong.** Second channel is an overflow pipe for already-filmed workshop footage (~4,000 clips/year), not the funnel. Money is in **narrow "watch me work" videos** (quoted buyer questions). Student David Jackson: 5 clients in 4 months; 35-view dentist-SEO videos converting because every viewer is the buyer.
 - **Revenue model:** "small channel out-earns 4M-sub main" asserted, not evidenced. Kansas case is checkable.
@@ -54,18 +60,24 @@
 - **Automation:** 6/10 · **Quality:** 7/10 · **Verdict: Worth Trying**
 - **Red flags:** ends in McDowell's own masterclass funnel.
 
-## Video 4: Mira AI — "AI Filmmaking Team With Claude" *(sponsored tutorial)*
+### Video 4: Mira AI — "AI Filmmaking Team With Claude" *(sponsored tutorial)* {#video-4}
+
+> ▶ Watch: https://youtu.be/LW3lzgyTezk
 
 - **Architecture worth stealing:** screenwriter + image + video + director in shared context; director writes QC fixes as **persistent rules**; every video prompt specifies the shot's END state for continuity.
 - **Revenue model:** none. Higgsfield affiliate.
 - **Automation:** 8/10 · **Quality:** 5/10 · **Verdict: Mixed** — steal the pattern, not the platform.
 
-## Video 5: Casino Steve — Bubble Craps *(standing rule)*
+### Video 5: Casino Steve — Bubble Craps *(standing rule)* {#video-5}
+
+> ▶ Watch: https://youtu.be/RozZUnkVcgI
 
 - Session: $500 → $542. Don't Come ~1.36% house edge — still negative EV. Only replicable business is the session-video format + craps-channel shoutout economy.
 - **Verdict: Mixed** as content niche, **Skip** as money strategy.
 
-## Video 6: Jake Bauman — "Grok Bot to Get My Brand Cited by AI" *(GEO/AEO)*
+### Video 6: Jake Bauman — "Grok Bot to Get My Brand Cited by AI" *(GEO/AEO)* {#video-6}
+
+> ▶ Watch: https://youtu.be/pFoQUzJ9WCI
 
 - **Strongest new playbook of the batch.** 7-bot Grok team ($20/mo) doing AI-visibility ops vs $2K–$50K/mo agencies. Diagnostic: 20–50 prompts across branded / unbranded / comparison, re-run every 2 weeks. Gate: ~4.0+ stars or AI won't recommend you at all. llms.txt is theater (97% get zero requests).
 - **Revenue model:** none for himself. Cited: Ahrefs 75K brands, mention correlation 0.664 vs backlinks 0.218; ChatGPT recommends 1.2% of locations vs Google 35.9%.
@@ -73,57 +85,77 @@
 - **Automation:** 9/10 · **Quality:** 7/10 · **Verdict: Worth Trying** (as diagnostic + ops checklist)
 - **Do this week:** 10-minute brand diagnostic on ChatGPT + Perplexity + Google AI; check GPTBot/ClaudeBot/PerplexityBot/Google-Extended on robots + WAF.
 
-## Video 7: Paul J Lipsky — ChatGPT Images 2.5 *(tool review)*
+### Video 7: Paul J Lipsky — ChatGPT Images 2.5 *(tool review)* {#video-7}
+
+> ▶ Watch: https://youtu.be/Q7SiipUCjro
 
 - New: character/face consistency across iterative comment-edits. Productizable: thumbnails, photo restoration, pet portraits, interior mockups.
 - **Automation:** 5/10 · **Quality:** 7/10 · **Verdict: Worth Trying** as format + as a signal the tool is good enough to productize.
 
-## Video 8: MyWifeQuitHerJob — "Forget Amazon, Shopify" *(ecommerce)*
+### Video 8: MyWifeQuitHerJob — "Forget Amazon, Shopify" *(ecommerce)* {#video-8}
+
+> ▶ Watch: https://youtu.be/Bx1zBNx4yws
 
 - Amazon blocked AI crawlers; Shopify stores are citable. FAQ-schema audit: 26 pages → 85% improved ranking; bridal handkerchiefs 7→4 with 5× traffic. Honest miss: napkins 30→12, zero clicks. Shop Campaigns = pay per verified new customer; 48% of Shop-app orders are first-time.
 - **Automation:** 8/10 · **Quality:** 7/10 · **Verdict: Worth Trying**
 - **Red flags:** he doesn't even use Shopify (built his own); course/conference funnel.
 
-## Video 9: Jonathan Nilsen — TikTok Six-Figure Publishers *(KDP)*
+### Video 9: Jonathan Nilsen — TikTok Six-Figure Publishers *(KDP)* {#video-9}
+
+> ▶ Watch: https://youtu.be/_QcuQRBrASA
 
 - Demand engine: TikTok/IG attention → TikTok Shop → Amazon spillover rank. Lark and Road $2.25M TikTok Shop Jan–Jul; reusable 11-sec format. Claremont: 4 months / 200+ videos before it clicked. Amar: one IG reel, $3.5K/mo → $1–1.5K/day.
 - **Automation:** 7/10 · **Quality:** 6/10 · **Verdict: Worth Trying** (price in the quiet window)
 - KDP $ are BookBeam estimates; coaching funnel; survivorship.
 
-## Video 10: Nick Ponte — "NEW Way to make $ with chatgpt" *(local AI services)*
+### Video 10: Nick Ponte — "NEW Way to make $ with chatgpt" *(local AI services)* {#video-10}
+
+> ▶ Watch: https://youtu.be/u8Xrxluoyis
 
 - Dead Facebook profiles (500–1K followers, 6+ months silent) → 2 weeks free AI posts → $500–$3K/mo social-posting retainers. Claims $123K/mo QuickBooks (established agency, not the $150/mo newbie testimonial).
 - **Automation:** 8/10 · **Quality:** 5/10 · **Verdict: Mixed** — tactic is testable; video is a HighLevel affiliate funnel.
 
-## Video 11: The Next New Thing — Slowbooks *(open-source agent accounting)*
+### Video 11: The Next New Thing — Slowbooks *(open-source agent accounting)* {#video-11}
+
+> ▶ Watch: https://youtu.be/_ikuVZ9L_UE
 
 - Free anti-QuickBooks: CLI agent IS the books. Receipt OCR → file → audit-logged reversible AI changes. 344 GitHub stars. Live demo with an OCR stumble.
 - **Automation:** 9/10 · **Quality:** 6/10 · **Verdict: Worth Trying** as a pilot, not production books yet.
 
-## Video 12: Koerner — "If We Had to Make $1M Fast" *(idea roundup)*
+### Video 12: Koerner — "If We Had to Make $1M Fast" *(idea roundup)* {#video-12}
+
+> ▶ Watch: https://youtu.be/2B5dCquvK4c
 
 Density of real playbooks: RV rentals ($5K/mo net/unit at 50% occ), vibe-coding agency (Billy Howell ~$60K/mo, secondhand), overseas staffing, corporate AI-audit (Ben: charity-backed guarantee, 6 figures/customer), **dormant newsletter roll-up (~10¢/sub)**, hero-workflow AI agency (live 57-min garage-door close on camera), liquidation, buy-a-business + AI, equity-for-services, glamping lease-option.
 - **Quality:** 7.5/10 · **Verdict: Worth Trying** — treat $1M/6mo as clickbait, steal individual playbooks.
 - **New mechanics:** newsletter roll-up; equity-for-services ("Bro Mozi").
 
-## Video 13: Sunny Lenarduzzi — "$1M in 12 Months from 0 subs" *(YouTube lead-gen)*
+### Video 13: Sunny Lenarduzzi — "$1M in 12 Months from 0 subs" *(YouTube lead-gen)* {#video-13}
+
+> ▶ Watch: https://youtu.be/Rl3fOs63qRk
 
 - Offer FIRST ($10K POP, live Zoom), then 8-video evergreen machine (3 BOFU / 2 MOFU / 2 TOFU / 1 depth). Math: 8–9 clients/mo at 30% close. Self-reported $469K from one video. Course-funnel test: framework is fully given, but every proof lives in the guru economy.
 - **Automation:** 3/10 · **Quality:** 4/10 · **Verdict: Mixed**
 
-## Video 14: Koerner — Contactless Trailer Rentals *(operator interview)*
+### Video 14: Koerner — Contactless Trailer Rentals *(operator interview)* {#video-14}
+
+> ▶ Watch: https://youtu.be/68x7jFWbaE8
 
 - **Best receipts of the night.** Nathan, Lancaster PA: 10 used trailers $35K, $5.5–7.5K/mo gross, ~$4K/mo net, 2–4 hrs/week, ~$200–250/hr. Prior owner did $28K/yr on the same fleet. Lockbox + CRM + GPS + photo check-in. Price ~1.5% of purchase/day. Dump trailers rent most.
 - **Automation:** 9/10 · **Quality:** 9/10 · **Verdict: Worth Trying**
 - **This weekend test:** list a trailer (or stock image) on FB Marketplace + Neighbors; scrape residents-per-trailer across sister cities.
 
-## Video 15: Glo Atanmo — "8 Ways I Get Paid on YouTube" *(creator monetization)*
+### Video 15: Glo Atanmo — "8 Ways I Get Paid on YouTube" *(creator monetization)* {#video-15}
+
+> ▶ Watch: https://youtu.be/j9_xKfAuPto
 
 - Memberships 3-tier ($4.99 / $49 / $499) claimed six figures/year; $45 CPM; 45-day monetization posting daily 25-min videos. New-to-archive: Player for Education licensing; YouTube nudging memberships (~30% cut); affiliate + brand-deal double-dip.
 - **Automation:** 3/10 · **Quality:** 8/10 · **Verdict: Worth Trying**
 - Six-figure membership claim unverified in transcript.
 
-## Video 16: OpenClaw — ClawCast Ep 9 *(platform podcast)*
+### Video 16: OpenClaw — ClawCast Ep 9 *(platform podcast)* {#video-16}
+
+> ▶ Watch: https://youtu.be/ge3_uj67KLU
 
 - 2.0: multiplayer gateway (n people, one agent, Tailscale/Cloudflare), agent-generated dashboards as deliverables, worker nodes (still rough), default "dreaming" memory, skills workshop that self-prunes.
 - Money is around the platform: agencies, dashboards-as-a-service, VPS. Foundation can't be bought — that's the enterprise pitch.

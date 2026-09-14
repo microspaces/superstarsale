@@ -8,22 +8,24 @@
 
 | # | Title | Channel | Views | Length |
 |---|-------|---------|-------|--------|
-| 1 | Reviewing crappy rip offs of my successful app | Casey Builds Stuff | ~7.8K | 34 min |
-| 2 | GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial) | Miko | ~19K | 11 min |
-| 3 | Can This AI Cheat Code Beat Dragon Link? | Desert Degens | ~23K | 57 min |
-| 4 | 10 Ways to Make Money With AI That Feel Like Cheating (Tutorial) | Joshua Mayo | ~18K | 30 min |
-| 5 | The Best AI Side Hustles To Start If You're BROKE | Wholesale Ted | ~134K | 22 min |
-| 6 | 💰 How Much Can You Earn from Vertical Micro Drama OTT Distribution? | Shortfundly | ~305 | 6.6 min |
-| 7 | Bill Gates Said AI Would End Amazon. Here's What He Meant. | The Guerrilla Publisher | ~59K | 21 min |
-| 8 | 7 tips that turn ChatGPT 6 Astra into AGI | Alex Finn | ~9K | 16 min |
-| 9 | How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!) | Davhy Davis | ~1K | 298 min |
-| 10 | He Failed Out of College — Now He Owns Tampa's Most Iconic Newspaper | Tommy's Toolbox Podcast | ~1.4K | 34 min |
+| 1 | [Reviewing crappy rip offs of my successful app](#video-1) || Casey Builds Stuff | ~7.8K | 34 min |
+| 2 | [GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial)](#video-2) || Miko | ~19K | 11 min |
+| 3 | [Can This AI Cheat Code Beat Dragon Link?](#video-3) || Desert Degens | ~23K | 57 min |
+| 4 | [10 Ways to Make Money With AI That Feel Like Cheating (Tutorial)](#video-4) || Joshua Mayo | ~18K | 30 min |
+| 5 | [The Best AI Side Hustles To Start If You're BROKE](#video-5) || Wholesale Ted | ~134K | 22 min |
+| 6 | [💰 How Much Can You Earn from Vertical Micro Drama OTT Distribution?](#video-6) || Shortfundly | ~305 | 6.6 min |
+| 7 | [Bill Gates Said AI Would End Amazon. Here's What He Meant.](#video-7) || The Guerrilla Publisher | ~59K | 21 min |
+| 8 | [7 tips that turn ChatGPT 6 Astra into AGI](#video-8) || Alex Finn | ~9K | 16 min |
+| 9 | [How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!)](#video-9) || Davhy Davis | ~1K | 298 min |
+| 10 | [He Failed Out of College — Now He Owns Tampa's Most Iconic Newspaper](#video-10) || Tommy's Toolbox Podcast | ~1.4K | 34 min |
 
 ## Run Theme
 
 **The Astra hype wave meets the receipts check.** "GPT 6 Astra" appears in three of ten titles, and the pattern across all of them is identical: workflow demonstrations are real, effectiveness claims are asserted, measured proof appears nowhere — and the only verified AI-product profits in the batch belong to the creators selling the tutorials. Around that core: two genuine-receipt videos (an app founder reviewing his own clones, a local-newspaper owner interview), two listicles re-skinning known themes, one vendor brochure, and two non-business entries handled under the standing rule.
 
-## Video 1: Casey Builds Stuff — "Reviewing crappy rip offs of my successful app" *(analysis — business)*
+### Video 1: Casey Builds Stuff — "Reviewing crappy rip offs of my successful app" *(analysis — business)* {#video-1}
+
+> ▶ Watch: https://youtu.be/MB2VhL6xxHY
 
 - **Business model:** Founder of Dispersed (~$30/yr freemium wild-camping map app) reviews 6 vibe-coded clones head-to-head. His moat stack: proprietary data layer (phoned dozens of ranger districts to map where camping is actually legal — camping is legal on <10% of the roads in federal MVUM data), a UGC flywheel (10K active users submit hundreds of campsite locations monthly), community distribution (expo booths, workshops, build-in-public YouTube as top-of-funnel).
 - **Revenue model:** **$24K ARR**; $7K/mo subscriptions at July peak, $5.5K August; ~60% of 125 active trials convert within 7 days. Competitor economics: Wildroute.ai charges $200/yr with an estimated $50K sunk; Grover.ai's AI-chat search costs ~$1.50 in tokens per query — unit-economics suicide for a map search; "Campsite" is free with no visible monetization (business-model mystery, possible data play).
@@ -34,7 +36,9 @@
 - **Key actions:** treat "AI built my app" as table stakes — moats are data + UGC + distribution; price below the clone tier; don't use AI-chat as spatial search UX (token COGS); monitor free competitors for hidden data plays.
 - **Red flags:** heavy seasonality (self-acknowledged); all numbers self-reported; his own products get generous framing; free rival could compress pricing.
 
-## Video 2: Miko — "GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial)" *(tutorial — sponsored)*
+### Video 2: Miko — "GPT 6 Astra + Seedance 2.5 Has Changed AI UGC Forever (Full Tutorial)" *(tutorial — sponsored)* {#video-2}
+
+> ▶ Watch: https://youtu.be/fBP4Gu-QH2E
 
 - **Business model:** Taught: an AI UGC ad studio — GPT-6 Astra (Codex desktop) + a "video ad stack" skill + Higgsfield MCP running Seedance 2.5 → brand research via site crawl + Facebook Ad Library → reference TikTok UGC deconstruction (FFmpeg frame inspection) → full end-to-end ad video generation (unboxing + street-interview formats demoed). Monetized: Higgsfield sponsorship, "Hixio" affiliate link, free community distributing the skill zip.
 - **Revenue model:** none given — no CTR, no CPA, no client spend. Only "insane" qualitative praise.
@@ -45,7 +49,9 @@
 - **Key actions:** the workflow is cheap to test on your own product — judge the renders yourself; if selling, collect your own CPA data first; avoid/disclose synthetic-testimonial formats (FTC + platform risk); treat the free community as a lead magnet.
 - **Red flags:** sponsored by the tool being taught; affiliate link; zero performance metrics; fake-social-proof demo; Higgsfield credit costs never mentioned.
 
-## Video 3: Desert Degens — "Can This AI Cheat Code Beat Dragon Link?" *(casino content — standing rule)*
+### Video 3: Desert Degens — "Can This AI Cheat Code Beat Dragon Link?" *(casino content — standing rule)* {#video-3}
+
+> ▶ Watch: https://youtu.be/aeO2kYgFDMQ
 
 - **Business model:** Not gambling — the channel. A functioning casino-comp economy: Ellis Island gifted $500 cash + $545 free play for delivering a group-pull crowd, plus promo events driving foot traffic; channel memberships, merch, and a $10-100 store-credit "Kino Corner" comment lottery feeding the algorithm. The "Dragon Code" (an AI-generated 17-spin bet sequence) is the content hook — the hosts themselves admit on camera it's nonsense: "It's all random... it's still fun."
 - **Revenue model:** no numbers beyond the day: $500 in → $583 out (+$83, only with free play burned). Monthly-recap framing suggests roughly break-even-to-negative gambling; the channel is the profit center.
@@ -55,7 +61,9 @@
 - **Verdict: Skip** — nothing actionable unless you want to be a Vegas casino creator; the real model is casino-comp-for-creator-traffic.
 - **Red flags:** gambling content; "system" bait; casino-funded bankroll = conflict of interest; survivorship celebration of hits.
 
-## Video 4: Joshua Mayo — "10 Ways to Make Money With AI That Feel Like Cheating (Tutorial)" *(listicle)*
+### Video 4: Joshua Mayo — "10 Ways to Make Money With AI That Feel Like Cheating (Tutorial)" *(listicle)* {#video-4}
+
+> ▶ Watch: https://youtu.be/onffbFBbetA
 
 - **Business model:** ten AI-arbitrage methods: image services, KDP coloring books, kids animation channels, personalized storybooks, AI wall art, Amazon on-listing shoppable video reviews, digital asset packs, Claude Code + Shopify CLI store builds, faceless channels, vibe-coded micro-tools.
 - **Revenue model:** uneven receipts: a real coloring-book sale notification and a real clipart bundle (~$3,400/9 months) shown; the $12K/$18K "per listing" storybook numbers are Etsy sales-*estimator* outputs; "$50/day" is explicitly hypothetical; his own faceless channel gets zero numbers.
@@ -66,7 +74,9 @@
 - **Key actions:** test #7 and #4 first (real data, near-zero COGS); skip $5 image gigs (race to zero); use the specificity heuristic across all Etsy plays.
 - **Red flags:** estimator screenshots as proof; advising sellers to fake delivery delays; engagement-bait funnels on every method; sponsor read; known-theme overlap ~9 of 10.
 
-## Video 5: Wholesale Ted — "The Best AI Side Hustles To Start If You're BROKE" *(listicle)*
+### Video 5: Wholesale Ted — "The Best AI Side Hustles To Start If You're BROKE" *(listicle)* {#video-5}
+
+> ▶ Watch: https://youtu.be/8NvhbfZNTrc
 
 - **Business model:** seven "$0-start" AI hustles on free tiers: English-practice YouTube channels, AI POD (Printify Pop-Up as the truly no-card option), AI research agency on Fiverr, KDP puzzle books (splitting generation across free ChatGPT/Claude/Gemini/Grok quotas), custom presentations ($222 avg gig), teaching AI skills ($50/hr), virtual AI fashion-model Instagram accounts + Amazon Associates.
 - **Revenue model:** all estimates: SocialBlade 2.4M views/30 days × $3-7 RPM ⇒ ~$7-17K/mo for the English channel (her estimate, <4 months old); $101 avg research gig; estimator 86-124 copies/day on a puzzle listing; "Derek's" $50/hr from a press anecdote. Her own POD numbers undisclosed.
@@ -77,7 +87,9 @@
 - **Key actions:** adopt her YPP-verification trick when auditing any "this channel earns X" claim; batch-generate to respect free credit limits; if testing English-practice or fashion-model channels, mind saturation — her own examples are <4 months old.
 - **Red flags:** the video funnels to her ebook + $1-trial course + Canva affiliate; undisclosed-AI fashion models misleading viewers; single-anecdote teaching income.
 
-## Video 6: Shortfundly — "How Much Can You Earn from Vertical Micro Drama OTT Distribution? | Revenue Guide 2026" *(vendor pitch)*
+### Video 6: Shortfundly — "How Much Can You Earn from Vertical Micro Drama OTT Distribution? | Revenue Guide 2026" *(vendor pitch)* {#video-6}
+
+> ▶ Watch: https://youtu.be/TEg6lvAXdfE
 
 - **Business model:** platform-side supply acquisition — Shortfundly (an OTT distribution platform) pitching creators to license vertical micro-dramas through it. AI-narrated brochure, 305 views.
 - **Revenue model:** all vendor-stated, unaudited: license fee $200-5K/series; 10-40% subscription rev share; ad share ~$50-1,500/series/mo; exclusivity "over $20K/series"; non-exclusive international "north of $15K"; bonuses to $10K+; headline "top creators earn $5,000-50,000+ per series." No costs, no payout proof, no named creators, contract terms absent.
@@ -87,7 +99,9 @@
 - **Verdict: Skip** — as presented. The vertical-drama market is real (multi-billion category); this brochure isn't evidence of it.
 - **Red flags:** vendor as sole source for its own payouts; zero cost-side math; AI-narrated content-farm pattern; "$50K+" headline with zero named examples.
 
-## Video 7: The Guerrilla Publisher — "Bill Gates Said AI Would End Amazon. Here's What He Meant." *(analysis)*
+### Video 7: The Guerrilla Publisher — "Bill Gates Said AI Would End Amazon. Here's What He Meant." *(analysis)* {#video-7}
+
+> ▶ Watch: https://youtu.be/Gfwt-dv4vLI
 
 - **Business model:** beneath the clickbait, a real "unbundle the middleman" thesis for indie authors: interest media (YouTube/newsletters/podcasts) earns trust → owned home base (site + email) → modular fulfillment stack (KDP for Amazon buyers + IngramSpark for trade/library + Lulu Direct or Ingram Share & Sell for direct sales with customer data) → Shopify/Stripe checkout → Amazon keeps only the sales its own discovery earns. Creator monetizes via the Independent Authors Guild community (~600 members).
 - **Revenue model:** none for her own business. Industry stats: Amazon's share of indie-author sales declining three straight years (91% → 87% → 83%, survey unnamed); a 14K-book study where titles recording sales grew ~19x but quarterly revenue grew <9x — supply growing ~2x faster than money in the market.
@@ -97,7 +111,9 @@
 - **Verdict: Worth Trying** — for anyone selling through a dominant marketplace, not just authors; the generalizable play (own the customer record) is validated elsewhere.
 - **Red flags:** unnamed surveys as data; membership funnel benefits from Amazon anxiety; no revenue proof from anyone actually direct-first.
 
-## Video 8: Alex Finn — "7 tips that turn ChatGPT 6 Astra into AGI" *(hype-watch)*
+### Video 8: Alex Finn — "7 tips that turn ChatGPT 6 Astra into AGI" *(hype-watch)* {#video-8}
+
+> ▶ Watch: https://youtu.be/ppN_erpEuZ0
 
 - **Business model:** newsletter-funnel AI channel; the "AGI" packaging earns the click. **The claim itself: pure engagement bait** — a single paraphrased "Jensen Hong" (mangled Jensen Huang) tweet, zero benchmarks, no failure cases in any demo.
 - **Revenue model:** none given (free newsletter, sponsor/affiliate downstream).
@@ -108,7 +124,9 @@
 - **Key actions:** adopt tiered planning and the ticket loop on the next build; discount any AGI claim citing a tweet instead of a benchmark — expect this wave to repeat across channels all week.
 - **Red flags:** celebrity-tweet sourcing; superlative stacking; monetized hype; advice contradicting reproducibility practice with no evidence.
 
-## Video 9: Davhy Davis — "How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!)" *(tutorial — standing rule)*
+### Video 9: Davhy Davis — "How To Make Fortnite Maps As A BEGINNER! (FULL GUIDE!)" *(tutorial — standing rule)* {#video-9}
+
+> ▶ Watch: https://youtu.be/nxow-RDdedU
 
 - **Business model:** two layers. Taught: UEFN/Fortnite Creative engagement payouts — Epic pays creators from a pool (~40% of Fortnite revenue, ~$250M/yr) proportional to engaged minutes (~$1,000 per 1M engaged minutes per the video); tooling is free (UEFN, Photopea, Gemini free tier). The channel: guru funnel — free map template via Discord → paid "Fort Mafia Inner Circle" mentorship.
 - **Revenue model:** headlined outliers: one 1v1 map $6M over 2 years; $200K from a 4-hour trending run; $900K in 3 months at 50K players. Counter-evidence in his own reaction segment: fan maps earning $12, $124, $200. The realistic median is near zero.
@@ -119,7 +137,9 @@
 - **Key actions:** bookmark Fortnite.gg discovery data + Epic's payout docs as the checkable mechanics; the Gemini+Photopea thumbnail recipe is a free transferable asset factory.
 - **Red flags:** guru funnel; outliers as typical; celebrates reskinning/cloning; scarcity CTAs.
 
-## Video 10: Tommy's Toolbox Podcast — "He Failed Out of College — Now He Owns Tampa's Most Iconic Newspaper | Ray Roa" *(interview)*
+### Video 10: Tommy's Toolbox Podcast — "He Failed Out of College — Now He Owns Tampa's Most Iconic Newspaper | Ray Roa" *(interview)* {#video-10}
+
+> ▶ Watch: https://youtu.be/268sGCnqRhY
 
 - **Business model:** Creative Loafing Tampa Bay (alt-weekly) as an owner-operator co-op: four employee-owners plus two partners — crucially including the two ad-sales leads, who own the advertiser relationships (in a local paper, the ad book IS the asset). Differentiation is explicitly anti-AI-slop: human curation, trusted local event listings, accountability reporting. Previously held by out-of-town chains extracting profit from the market; the buyout stopped the outflow ("a certain amount of money is not getting shipped out of our area anymore").
 - **Revenue model:** no numbers at all. Qualitative: ad side is the engine with in-house custom ad design; print + payroll are the cost centers ("the paper and the people are the most expensive things"); brand collabs (brewery naming rights); lean ~5-7 headcount including owners.

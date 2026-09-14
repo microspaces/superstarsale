@@ -9,17 +9,17 @@
 
 | # | Title | Channel | Type |
 |---|-------|---------|------|
-| 1 | AI Will 10x the Economy - And You Still Have A Job | Jeremy Boreing | General analysis (podcast) |
-| 2 | Top 10 Repos explained: Archify, Omarchi, OpenMAIC, and more | The Next New Thing | Education (repo roundup) |
-| 3 | GPT-6 Astra FINALLY Kills AI Website Slop | Nate Herk \| AI Automation | Tool review |
-| 4 | NEW Claude Has Changed YouTube Automation FOREVER (INSANE UPDATE) | Success With Sam | Business pitch (affiliate tutorial) |
-| 5 | GPT-6 Astra: 20 Real Examples From Useful to Almost Impossible | The AI Advantage | Education (capability showcase) |
-| 6 | 7 High-Paying Online Jobs You Can Do At Night | Shane Hummus | Education (career listicle) |
-| 7 | I Gave GrokBot Its Own Email and Credit Card (It Actually Worked) | Riley Brown | Business demo |
-| 8 | 10 Simple AI Digital Products Making People RICH | Wholesale Ted | Business pitch |
-| 9 | Live Streaming Just Became VITAL for YouTube Channels (here's why) | Nate Black | Education |
-| 10 | DHH's new setup for programming with AI - terminal, 16 agents, Herdr, Tailscale \| Lex Fridman | Lex Clips | General analysis (interview) |
-| 11 | The FASTEST Way To Sell AI Services (FREE Demo Website) | GHL Wizard | Business pitch (affiliate) |
+| 1 | [AI Will 10x the Economy - And You Still Have A Job](#video-1) || Jeremy Boreing | General analysis (podcast) |
+| 2 | [Top 10 Repos explained: Archify, Omarchi, OpenMAIC, and more](#video-2) || The Next New Thing | Education (repo roundup) |
+| 3 | [GPT-6 Astra FINALLY Kills AI Website Slop](#video-3) || Nate Herk \| AI Automation | Tool review |
+| 4 | [NEW Claude Has Changed YouTube Automation FOREVER (INSANE UPDATE)](#video-4) || Success With Sam | Business pitch (affiliate tutorial) |
+| 5 | [GPT-6 Astra: 20 Real Examples From Useful to Almost Impossible](#video-5) || The AI Advantage | Education (capability showcase) |
+| 6 | [7 High-Paying Online Jobs You Can Do At Night](#video-6) || Shane Hummus | Education (career listicle) |
+| 7 | [I Gave GrokBot Its Own Email and Credit Card (It Actually Worked)](#video-7) || Riley Brown | Business demo |
+| 8 | [10 Simple AI Digital Products Making People RICH](#video-8) || Wholesale Ted | Business pitch |
+| 9 | [Live Streaming Just Became VITAL for YouTube Channels (here's why)](#video-9) || Nate Black | Education |
+| 10 | [DHH's new setup for programming with AI - terminal, 16 agents, Herdr, Tailscale \](#video-10) || Lex Fridman | Lex Clips | General analysis (interview) |
+| 11 | [The FASTEST Way To Sell AI Services (FREE Demo Website)](#video-11) || GHL Wizard | Business pitch (affiliate) |
 
 ## Run Theme
 
@@ -27,7 +27,9 @@
 
 ---
 
-## Video 1: Jeremy Boreing - "AI Will 10x the Economy - And You Still Have A Job" *(general analysis)*
+### Video 1: Jeremy Boreing - "AI Will 10x the Economy - And You Still Have A Job" *(general analysis)* {#video-1}
+
+> ▶ Watch: https://youtu.be/l8NneXE4e0Q
 
 **Story:** Boreing (Daily Wire founder, now a new venture) sits down with his AI lead "John" to discuss how AI rebuilt his company's economics in six weeks. Thesis: AI isn't headcount replacement but capability enhancement - the old good/fast/cheap tradeoff is dead, the operator-vs-engineer friction is collapsing, and the winners are people who adopt rather than people the technology replaces.
 
@@ -46,7 +48,9 @@
 
 ---
 
-## Video 2: The Next New Thing - "Top 10 Repos explained" *(education)*
+### Video 2: The Next New Thing - "Top 10 Repos explained" *(education)* {#video-2}
+
+> ▶ Watch: https://youtu.be/AWzzmrCPe-A
 
 **Story:** Rapid-fire tour of ten trending GitHub projects, evaluated through one consistent lens: does it make humans directing AI agents more effective? Highlights: Archify (interactive architecture diagrams from descriptions), a public-feed "spy satellite console," AI-built immersive classrooms, post-training-cutoff Go guidelines for coding agents, a legally shaky Claude Code fork, 160+ lab-science agent skills, a from-scratch tiny-LLM training recipe, an open-source Semrush/Ahrefs alternative, DHH's Omarchy Linux, and Google's TimesFM forecaster - plus five viewer-submitted repos.
 
@@ -68,7 +72,9 @@
 
 ---
 
-## Video 3: Nate Herk - "GPT-6 Astra FINALLY Kills AI Website Slop" *(tool review)*
+### Video 3: Nate Herk - "GPT-6 Astra FINALLY Kills AI Website Slop" *(tool review)* {#video-3}
+
+> ▶ Watch: https://youtu.be/QhmhUgccaS0
 
 **Story:** Hands-on showcase of "Astra" (GPT-6-era model) generating polished, animated marketing sites in one-shot prompts - parallax hero sections, 3D spinning product cans, a luxury-watch scroller - plus a 1-minute sizzle reel cut from 152 GB of event footage in ~35 minutes. His actual thesis: the model alone isn't the anti-slop recipe - it's model + his "ScrollCraft" skill + curated inspiration (godly.design, 21st.dev, awwwards.com) + audience-fit filtering ("pain, person, promise") + iterative critique.
 
@@ -88,7 +94,9 @@
 
 ---
 
-## Video 4: Success With Sam - "NEW Claude Has Changed YouTube Automation FOREVER" *(business pitch - affiliate)*
+### Video 4: Success With Sam - "NEW Claude Has Changed YouTube Automation FOREVER" *(business pitch - affiliate)* {#video-4}
+
+> ▶ Watch: https://youtu.be/bFWje8tSz8g
 
 **Story:** Walkthrough of a fully automated faceless-YouTube pipeline: DigitalMaker AI connected to Claude via MCP; Claude's "co-work" mode runs a scheduled daily automation that generates a finished, edited video (script, AI voiceover, cartoon scenes, subtitles) and emails it each morning; optional Make.com scenario auto-uploads to the channel. The "INSANE UPDATE" of the title is essentially Claude's scheduled co-work mode plus an MCP connector.
 
@@ -108,7 +116,9 @@
 
 ---
 
-## Video 5: The AI Advantage - "GPT-6 Astra: 20 Real Examples" *(education)*
+### Video 5: The AI Advantage - "GPT-6 Astra: 20 Real Examples" *(education)* {#video-5}
+
+> ▶ Watch: https://youtu.be/_AyXuJKm8iw
 
 **Story:** Igor rounds up 20 community examples of OpenAI's new Astra model, split between "genuinely useful" and "hard to believe": one-shot 3D world-building (a 600-agent simulated world, a playable SimCity-like city), an 18-hour Pokémon completion (vs. ~200 hours for the previous model), OpenAI reportedly running its own launch campaign on the model, 55-agent financial-model audits, a multi-day personal wiki built from emails/calendar/writing, browser-based QA, and NDA review that cites exact policy provisions (69% → 93% on the benchmark). Thesis: two things make this generation categorically different - output that no longer "obviously stinks like AI slop," and **self-verification behavior**.
 
@@ -129,7 +139,9 @@
 
 ---
 
-## Video 6: Shane Hummus - "7 High-Paying Online Jobs You Can Do At Night" *(education - career listicle)*
+### Video 6: Shane Hummus - "7 High-Paying Online Jobs You Can Do At Night" *(education - career listicle)* {#video-6}
+
+> ▶ Watch: https://youtu.be/iQYp2YjHNQQ
 
 **Story:** Seven online jobs suited to night hours, framed by one thesis: winners chase "the hours nobody else wants" - time-zone gaps and overnight work create supply/demand leverage. The jobs: remote patient monitoring (~$39-53K entry, HS diploma), email marketing (~$80-133K; $1 spent → $40 return), expert network consulting (GLG/AlphaSights/Guidepoint/Third Bridge, ~$96-177K), bug bounty hunting (~$85-132K, with the honest base rate that ~40% of HackerOne submitters never earn a bounty), AI data annotation ($20/hr basic labeling up to $40-60/hr STEM tiers), no-code web design, and YouTube thumbnail design ($500+ per thumbnail at the top end).
 
@@ -141,7 +153,9 @@
 
 ---
 
-## Video 7: Riley Brown - "I Gave GrokBot Its Own Email and Credit Card" *(business demo)*
+### Video 7: Riley Brown - "I Gave GrokBot Its Own Email and Credit Card" *(business demo)* {#video-7}
+
+> ▶ Watch: https://youtu.be/9lsnEn0tih4
 
 **Story:** Riley builds an autonomous "executive assistant" agent (named Jimmy) on GrokBot with two capabilities most agents lack: its own email address (AgentMail plugin) and purchasing power (Stripe Link virtual cards). Payoff demo: email the bot "buy a red notebook on Amazon" → bot browses, computes the price ($27.76), spins up a single-use virtual card for that exact amount, pings Riley's phone for Face ID approval, completes the order end-to-end in minutes.
 
@@ -159,7 +173,9 @@
 
 ---
 
-## Video 8: Wholesale Ted - "10 Simple AI Digital Products Making People RICH" *(business pitch)*
+### Video 8: Wholesale Ted - "10 Simple AI Digital Products Making People RICH" *(business pitch)* {#video-8}
+
+> ▶ Watch: https://youtu.be/eLAQkZx5QkE
 
 **Story:** Sarah tours 10 digital-product categories selling on Etsy and Teachers Pay Teachers - printable activities, themed PDF planners, ebooks, clip art, wall art, Canva business templates, education resources, PowerPoint games, custom AI videos, simple apps - showing which AI tool produces each (Gemini/Nano Banana, GPT Image, Claude Code, Canva, Base44), backed by live store sales numbers. Thesis: individual sales are small but stack across a catalog, and Claude Code now automates production almost entirely.
 
@@ -178,7 +194,9 @@
 
 ---
 
-## Video 9: Nate Black - "Live Streaming Just Became VITAL for YouTube Channels" *(education)*
+### Video 9: Nate Black - "Live Streaming Just Became VITAL for YouTube Channels" *(education)* {#video-9}
+
+> ▶ Watch: https://youtu.be/WD-ygzNBPyM
 
 **Story:** Why he started live streaming and whether other creators should. Three drivers: the YouTube Partner Program watch-hour threshold doubling (4,000 → 8,000 hours, as he states it), the flood of AI content raising the premium on proven-real human connection, and live conversation as the fastest audience-research loop when videos "aren't landing." Framework: start from an audience goal, not the format; treat streams as themed events, not a weekly grind; only start once you can pull 10-20 concurrent viewers.
 
@@ -197,7 +215,9 @@
 
 ---
 
-## Video 10: Lex Clips - "DHH's new setup for programming with AI" *(general analysis - interview)*
+### Video 10: Lex Clips - "DHH's new setup for programming with AI" *(general analysis - interview)* {#video-10}
+
+> ▶ Watch: https://youtu.be/4Xg1AE6Uu1k
 
 **Story:** DHH walks through how agentic coding rewired his setup and working style: he abandoned 20 years of single-threaded hand-coding in TextMate/Neovim for **parallel agent orchestration** - ~16 agent threads across 4-5 Linux mini PCs, coordinated through tmux and a notification tool ("Herdr"), networked via Tailscale, all driven from the terminal. Core argument: agents are simultaneously too fast and too slow to wait on one, so flow state migrates from deep immersion in a single problem to **constant decision-making that keeps many threads unblocked**.
 
@@ -218,7 +238,9 @@
 
 ---
 
-## Video 11: GHL Wizard - "The FASTEST Way To Sell AI Services (FREE Demo Website)" *(business pitch - affiliate)*
+### Video 11: GHL Wizard - "The FASTEST Way To Sell AI Services (FREE Demo Website)" *(business pitch - affiliate)* {#video-11}
+
+> ▶ Watch: https://youtu.be/Y9l0iWH5RiA
 
 **Story:** A GoHighLevel affiliate playbook for selling AI voice-agent services to local businesses at $297/month. The core motion is **demo-first selling**: a two-stage AI demo where a voice agent ("Marco") takes the business owner through a real call (lawn-mowing quote scenario), then a second closer agent ("Maria") references that experience and sells/bookings. The pitch to viewers: the demo does the selling so you don't have to - "if you suck at sales... that's what this is for." Funnel: free demo + 30-day GHL trial + free community with daily coaching calls and (earned, not guaranteed) free leads.
 

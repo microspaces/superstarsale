@@ -8,23 +8,25 @@
 
 | # | Title | Channel | Views | Length | Transcript |
 |---|-------|---------|-------|--------|------------|
-| 1 | I Tested the NEW Ways to Make Money With AI | Nick Ponte | ~4k | 37:08 | Yes |
-| 2 | I Asked Claude AI To Make Me As Much Money As Possible | Shane Hummus | ~75k | 24:48 | Yes |
-| 3 | Watch Claude Run My Entire Business, Live | Julia McCoy | ~35k | 1:38:31 | Yes |
-| 4 | Top 5 Simple Claude AI Service Businesses No One Talks About | Shane Hummus | ~10k | 16:57 | Yes |
-| 5 | 11 Insane Things Cursor's NEW GrokBot Can Do | Riley Brown | ~64k | 37:24 | Yes |
-| 6 | Grok Bot Runs A Trading Desk 24/7 | Ai Untapped | ~14k | 9:22 | Yes |
-| 7 | I Stole Duolingo's Content Strategy ($32M Digital Products) | Richard Yu | ~23k | 12:40 | Yes |
-| 8 | How to Build an $18M/Year Apple Watch App | Superwall | ~17k | 51:42 | Yes |
-| 9 | How This SaaS Hit $69K/Month In Just 2 Months | Starter Story | ~73k | 17:12 | Yes |
-| 10 | This Talking AI Website Sells Itself (FREE Voice Agent) | GHL Wizard | ~1.4k | 17:10 | Yes |
-| 11 | The Most Overlooked Online Side Hustle Of 2026 | Chris Koerner | ~28k | 50:54 | Yes |
-| 12 | Give Hermes One Idea - It Does the Rest | Julian Goldie SEO | ~5.3k | 7:51 | Yes |
-| 13 | I Helped a 60-Year-Old Beginner Build A One Person Business With Claude AI in 30 Days | Shane Hummus | ~538 | 33:43 | Yes |
+| 1 | [I Tested the NEW Ways to Make Money With AI](#video-1) || Nick Ponte | ~4k | 37:08 | Yes |
+| 2 | [I Asked Claude AI To Make Me As Much Money As Possible](#video-2) || Shane Hummus | ~75k | 24:48 | Yes |
+| 3 | [Watch Claude Run My Entire Business, Live](#video-3) || Julia McCoy | ~35k | 1:38:31 | Yes |
+| 4 | [Top 5 Simple Claude AI Service Businesses No One Talks About](#video-4) || Shane Hummus | ~10k | 16:57 | Yes |
+| 5 | [11 Insane Things Cursor's NEW GrokBot Can Do](#video-5) || Riley Brown | ~64k | 37:24 | Yes |
+| 6 | [Grok Bot Runs A Trading Desk 24/7](#video-6) || Ai Untapped | ~14k | 9:22 | Yes |
+| 7 | [I Stole Duolingo's Content Strategy ($32M Digital Products)](#video-7) || Richard Yu | ~23k | 12:40 | Yes |
+| 8 | [How to Build an $18M/Year Apple Watch App](#video-8) || Superwall | ~17k | 51:42 | Yes |
+| 9 | [How This SaaS Hit $69K/Month In Just 2 Months](#video-9) || Starter Story | ~73k | 17:12 | Yes |
+| 10 | [This Talking AI Website Sells Itself (FREE Voice Agent)](#video-10) || GHL Wizard | ~1.4k | 17:10 | Yes |
+| 11 | [The Most Overlooked Online Side Hustle Of 2026](#video-11) || Chris Koerner | ~28k | 50:54 | Yes |
+| 12 | [Give Hermes One Idea - It Does the Rest](#video-12) || Julian Goldie SEO | ~5.3k | 7:51 | Yes |
+| 13 | [I Helped a 60-Year-Old Beginner Build A One Person Business With Claude AI in 30 Days](#video-13) || Shane Hummus | ~538 | 33:43 | Yes |
 
 ---
 
-## Video 1: Nick Ponte - "I Tested the NEW Ways to Make Money With AI"
+### Video 1: Nick Ponte - "I Tested the NEW Ways to Make Money With AI" {#video-1}
+
+> ▶ Watch: https://youtu.be/Yfa60B5xLoI
 
 **Story:** Maui agency owner argues the 2026 opportunity isn't selling "AI" - it's selling simple **outcomes** to small businesses. Flagship: "social posting as a service" - reviving dormant small-business social profiles with AI-generated posts, sold as $500-$3,000/mo subscriptions after a free 2-week sample. Full client-acquisition funnel demoed inside GoHighLevel.
 
@@ -42,7 +44,9 @@
 
 ---
 
-## Video 2: Shane Hummus - "I Asked Claude AI To Make Me As Much Money As Possible"
+### Video 2: Shane Hummus - "I Asked Claude AI To Make Me As Much Money As Possible" {#video-2}
+
+> ▶ Watch: https://youtu.be/joc9E-3NQ0Y
 
 **Story:** Runs the experiment on his brother Zach - 50-year-old HVAC company owner, zero online presence, capped at 4 hrs/week. Generic "make me money" prompts fail ("Claude wasn't wrong, Claude was unaimed"); instead Claude interviews Zach about existing expertise ("mile 23" thesis) and lands on teaching career-switchers how to land trade jobs, monetized via Course Careers affiliate links on YouTube. Claimed: $214/day by day 29, 800K+ views on first video, $18K+ month a year later.
 
@@ -59,7 +63,9 @@
 
 ---
 
-## Video 3: Julia McCoy - "Watch Claude Run My Entire Business, Live"
+### Video 3: Julia McCoy - "Watch Claude Run My Entire Business, Live" {#video-3}
+
+> ▶ Watch: https://youtu.be/4PLnVtijPYU
 
 **Story:** The maximal-automation blueprint. McCoy (built 100-person content agency, sold 2021, 90K+ projects) now runs First Movers - $3M/yr claimed, under 2 years old - with a 15-person AI-empowered team: "double the revenue I did with a team of 100." Demos an AI-clone YouTube channel (700 videos from two 4-minute source clips, ~300K subs, ~12M views/yr), a Fieldy wearable notetaker streaming ideas 24/7 into Claude via MCP, custom Claude skills (Voice DNA, content engine), and Claude Code operations.
 
@@ -77,7 +83,9 @@
 
 ---
 
-## Video 4: Shane Hummus - "Top 5 Simple Claude AI Service Businesses"
+### Video 4: Shane Hummus - "Top 5 Simple Claude AI Service Businesses" {#video-4}
+
+> ▶ Watch: https://youtu.be/o0Q3i-qMt4E
 
 **Story:** Five service businesses built on Claude, with price anchors: (1) "brain in a box" custom Claude assistant builds, (2) SOP documentation, (3) newsletter ghostwriting, (4) content repurposing, (5) YouTube personal brand as the lead engine.
 
@@ -94,7 +102,9 @@
 
 ---
 
-## Video 5: Riley Brown - "11 Insane Things Cursor's NEW GrokBot Can Do"
+### Video 5: Riley Brown - "11 Insane Things Cursor's NEW GrokBot Can Do" {#video-5}
+
+> ▶ Watch: https://youtu.be/XgkW4A6lrDY
 
 **Story:** Hands-on walkthrough of GrokBot (Cursor's agent platform, post-SpaceX-acquisition): a situation-monitor bot, a developer bot delegating to Cursor, inter-agent messaging/group chats, per-project bots, X/Twitter bot with bookmarks, time- and trigger-based routines, plugins (Gmail/Calendar/Notion/Linear), and a "Grill Me" journal bot - desktop + iOS.
 
@@ -111,7 +121,9 @@
 
 ---
 
-## Video 6: Ai Untapped - "Grok Bot Runs A Trading Desk 24/7"
+### Video 6: Ai Untapped - "Grok Bot Runs A Trading Desk 24/7" {#video-6}
+
+> ▶ Watch: https://youtu.be/9qWtv0TWx8M
 
 **Story:** Builds a full paper-trading "desk" inside GrokBot from plain-English prompts: chief-of-staff bot hires other bots - research (macro/fundamentals/tape), strategy, risk, money management, manager, paper-trading desk (quant + reviewer) - producing an 8am weekday desk brief, with outputs to email/Notion/Drive.
 
@@ -127,7 +139,9 @@
 
 ---
 
-## Video 7: Richard Yu - "I Stole Duolingo's Content Strategy ($32M Digital Products)"
+### Video 7: Richard Yu - "I Stole Duolingo's Content Strategy ($32M Digital Products)" {#video-7}
+
+> ▶ Watch: https://youtu.be/1hjLtnIaS18
 
 **Story:** Reverse-engineers Duolingo's freemium psychology into a four-part "give-to-sell engine" for digital products: free hook → habit loop → own the audience → the offer, plus a post-sale flywheel. Claims $32M+ lifetime digital-product sales from applying it (from an initial $500 course making 0-1 sales/week to $500K in 8 months at ~90% margins).
 
@@ -144,7 +158,9 @@
 
 ---
 
-## Video 8: Superwall - "How to Build an $18M/Year Apple Watch App"
+### Video 8: Superwall - "How to Build an $18M/Year Apple Watch App" {#video-8}
+
+> ▶ Watch: https://youtu.be/tv5hEdmbUTM
 
 **Story:** The most operationally rigorous video in the playlist. Welltory CPO Assia Grazhdanovskaya (10-year-old app, ~$18M ARR claimed, 17-18M downloads) breaks down Facebook ad psychology, a six-ingredient onboarding framework, paywall strategy, and free-vs-paid splits with real conversion numbers. (Transcript renderings of her surname vary; CPO role stated in-interview.)
 
@@ -163,7 +179,9 @@
 
 ---
 
-## Video 9: Starter Story - "How This SaaS Hit $69K/Month In Just 2 Months"
+### Video 9: Starter Story - "How This SaaS Hit $69K/Month In Just 2 Months" {#video-9}
+
+> ▶ Watch: https://youtu.be/BA_fC95p43c
 
 **Story:** Pat Walls interviews Gaurav, co-founder of Fastlane - AI short-form marketing for solo builders: paste your URL, AI generates thousands of tailored short-form videos, swipe-right-to-schedule to TikTok/IG/YouTube with AI captions. ~$69K MRR claimed within ~2 months of public launch. The stated secret: **2,000 customer calls** (20/week since August) run through a three-phase Mom Test framework, plus a Claude Code-built "customer intelligence" dashboard.
 
@@ -181,7 +199,9 @@
 
 ---
 
-## Video 10: GHL Wizard - "This Talking AI Website Sells Itself Automatically"
+### Video 10: GHL Wizard - "This Talking AI Website Sells Itself Automatically" {#video-10}
+
+> ▶ Watch: https://youtu.be/mWbemkRIeb0
 
 **Story:** Resell a free GoHighLevel AI voice-agent widget that makes any local-business website "talk," answers questions, and books appointments 24/7. Full pipeline: customize a free demo site to the prospect's business → AI-filtered prospecting (businesses with NO voice widget) → ringless voicemail drop → one-line embed fulfillment.
 
@@ -197,7 +217,9 @@
 
 ---
 
-## Video 11: Chris Koerner / Mike Stewart - "The Most Overlooked Online Side Hustle Of 2026"
+### Video 11: Chris Koerner / Mike Stewart - "The Most Overlooked Online Side Hustle Of 2026" {#video-11}
+
+> ▶ Watch: https://youtu.be/DlNWYzaL_F0
 
 **Story:** Koerner interviews Mike Stewart ("godfather of internet marketing," ex-recording-studio owner) on his 15-year local "internet presence" package: Google Business Profile fixes, weekly blog + podcast, ads to conversion landing pages, VSL one-page sites, and his signature **SER-term jingle** - a 15-second earworm embedding the client's unique search phrase, front-loaded into geo-targeted skippable YouTube pre-roll so even skipped ads burn the phrase into local memory. Now fully AI-powered (Suno, ElevenLabs, Gemini/ChatGPT).
 
@@ -216,7 +238,9 @@
 
 ---
 
-## Video 12: Julian Goldie SEO - "Give Hermes One Idea - It Does the Rest"
+### Video 12: Julian Goldie SEO - "Give Hermes One Idea - It Does the Rest" {#video-12}
+
+> ▶ Watch: https://youtu.be/8je7i3eBZbE
 
 **Story:** An AI avatar of Goldie demos the "Idea Foundry" inside his Agent OS on Hermes: drop one rough idea (typed or spoken via wake word) → agent classifies and routes it → planner agent writes the full build plan → **you approve or reject (the single human step)** → PM agent spins up builder sub-agents that ship a working deliverable into your dashboard. Everything persists as markdown in an Obsidian "memory galaxy" so past builds become context for new ones.
 
@@ -233,7 +257,9 @@
 
 ---
 
-## Video 13 (added 2026-09-01): Shane Hummus - "I Helped a 60-Year-Old Beginner Build A One Person Business With Claude AI in 30 Days"
+### Video 13: Shane Hummus - "I Helped a 60-Year-Old Beginner Build A One Person Business With Claude AI in 30 Days" {#video-13}
+
+> ▶ Watch: https://youtu.be/72QkMk1_Vmg
 
 **Story:** Case study of "Nurse Jen" - 60 years old, 33 years in nursing (last 12 in telehealth), burned out after pandemic years of 100+ calls per shift queue, no retirement savings. Quit nursing, built a one-person YouTube channel with Claude as co-writer: patient advocacy + aging-well content for a 60+ audience, recorded on a MacBook Air webcam in her camper van. Claimed trajectory: ~$6K month 1 → ~$8K month 2 → ~$10K month 3 (AdSense alone), replacing her nursing income within months; first video passed 400K views.
 

@@ -1,49 +1,96 @@
 #!/usr/bin/env python
-"""Convert daily research markdown to styled HTML matching the site template."""
+"""Convert research markdown to styled HTML matching the site template.
+
+v2 (2026-09-12): heading anchor ids ({#custom-id} override or auto-slug),
+in-heading link anchors, [text](url) markdown links, bare-URL autolinking,
+and per-family document titles (Playlist vs Daily research).
+"""
 import sys
+import os
 import re
 from html import escape
+
+
+def make_anchor_id(text, used):
+    base = re.sub(r'[^\w\s-]', '', text.lower())
+    base = re.sub(r'[\s]+', '-', base.strip())
+    base = re.sub(r'-{2,}', '-', base).strip('-') or 'section'
+    id_ = base
+    n = 2
+    while id_ in used:
+        id_ = f"{base}-{n}"
+        n += 1
+    used.add(id_)
+    return id_
+
+
+def inline_format(text):
+    """Convert inline markdown formatting to HTML."""
+    # Markdown links [text](url-or-anchor)
+    text = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)',
+                  r'<a href="\2">\1</a>', text)
+    # Bare URLs (not already inside an attribute/tag)
+    text = re.sub(r'(?<!["\'=>])(https?://[^\s<>)\]"`]+)',
+                  r'<a href="\1">\1</a>', text)
+    # Bold
+    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
+    # Italics *(...)* or *(...)*
+    text = re.sub(r'\*([^*]+?)\*', r'<em>\1</em>', text)
+    # Inline code
+    text = re.sub(r'`([^`]+)`', lambda m: f'<code>{escape(m.group(1))}</code>', text)
+    return text
+
 
 def md_to_html(md_path, output_path):
     with open(md_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # Extract date from title
-    date_match = re.search(r'# Daily YouTube Strategy Research — (\d{4}-\d{2}-\d{2})', content)
+    # Extract date from any H1
+    date_match = re.search(r'(\d{4}-\d{2}-\d{2})', content)
     date_str = date_match.group(1) if date_match else "Unknown"
 
+    base = os.path.basename(md_path)
+    if base.startswith('playlist'):
+        doc_title = f"Playlist Research — {date_str}"
+    else:
+        doc_title = f"Daily YouTube Strategy Research — {date_str}"
+
+    used_ids = set()
     lines = content.split('\n')
     html_lines = []
     in_table = False
     in_list = False
-    table_headers = []
 
     i = 0
     while i < len(lines):
         line = lines[i]
 
         # Skip the H1 title (we add it in the template)
-        if line.startswith('# Daily YouTube Strategy Research'):
+        if line.startswith('# '):
             i += 1
             continue
 
-        # Convert headers
-        if line.startswith('### '):
+        # Convert headers (with anchor ids)
+        hm = re.match(r'^(#{2,4}) (.*)$', line)
+        if hm:
+            level = len(hm.group(1))
+            text = hm.group(2).strip()
+            cm = re.match(r'^(.*?)\s*\{#([\w-]+)\}\s*$', text)
+            if cm:
+                text, anchor = cm.group(1), cm.group(2)
+                used_ids.add(anchor)
+            else:
+                anchor = make_anchor_id(text, used_ids)
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
             if in_table:
                 html_lines.append('</tbody></table>')
                 in_table = False
-            html_lines.append(f'<h3>{inline_format(line[4:])}</h3>')
-        elif line.startswith('## '):
-            if in_list:
-                html_lines.append('</ul>')
-                in_list = False
-            if in_table:
-                html_lines.append('</tbody></table>')
-                in_table = False
-            html_lines.append(f'<h2>{inline_format(line[3:])}</h2>')
+            html_lines.append(
+                f'<h{level} id="{anchor}">{inline_format(text)}'
+                f'<a class="anchor" href="#{anchor}" aria-label="Link to this section">#</a>'
+                f'</h{level}>')
         elif line.startswith('---'):
             if in_table:
                 html_lines.append('</tbody></table>')
@@ -60,12 +107,11 @@ def md_to_html(md_path, output_path):
                 continue  # skip separator row
             if not in_table:
                 # Check if next line is separator
-                if i + 1 < len(lines) and re.match(r'^\|[\s\-:|]+\|$', lines[i+1]):
+                if i + 1 < len(lines) and re.match(r'^\|[\s\-:|]+\|$', lines[i + 1]):
                     html_lines.append('<table class="data-table"><thead><tr>')
                     html_lines.append(''.join(f'<th>{escape(c)}</th>' for c in cells))
                     html_lines.append('</tr></thead><tbody>')
                     in_table = True
-                    table_headers = cells
                     i += 2
                     continue
             if in_table:
@@ -108,7 +154,7 @@ def md_to_html(md_path, output_path):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Research — {date_str}</title>
+    <title>{escape(doc_title)}</title>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
@@ -142,6 +188,16 @@ def md_to_html(md_path, output_path):
             margin-bottom: 12px;
             color: #c4b5fd;
         }}
+        h2, h3 {{ position: relative; }}
+        h2 .anchor, h3 .anchor {{
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }}
+        h2:hover .anchor, h3:hover .anchor {{ opacity: 0.75; }}
+        h2 .anchor:hover, h3 .anchor:hover {{ opacity: 1; text-decoration: underline; }}
         p {{ margin-bottom: 14px; color: #ccc; }}
         strong {{ color: #fff; }}
         a {{ color: #667eea; text-decoration: none; }}
@@ -204,7 +260,7 @@ def md_to_html(md_path, output_path):
 <body>
     <div class="container">
         <a class="back-link" href="../index.html">&larr; All Reports</a>
-        <h1>Daily YouTube Strategy Research — {date_str}</h1>
+        <h1>{escape(doc_title)}</h1>
 
 {body_content}
 
@@ -217,17 +273,6 @@ def md_to_html(md_path, output_path):
         f.write(html)
 
     print(f"HTML written to {output_path}")
-
-
-def inline_format(text):
-    """Convert inline markdown formatting to HTML."""
-    # Bold
-    text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
-    # Inline code
-    text = re.sub(r'`([^`]+)`', lambda m: f'<code>{escape(m.group(1))}</code>', text)
-    # Escape HTML entities in remaining text (but not our tags)
-    # Be careful not to double-escape
-    return text
 
 
 if __name__ == '__main__':

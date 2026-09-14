@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily YouTube Strategy Research — 2026-09-13</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-09-13</h1>
+
+<p><strong>Videos found:</strong> 5 · <strong>Analyzed:</strong> 5 · <strong>Skipped:</strong> 0 · <strong>New model candidates:</strong> none (all themes already covered)</p>
+<h2 id="videos-analyzed-5">Videos Analyzed (5)<a class="anchor" href="#videos-analyzed-5" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Video</th><th>Verdict</th><th>Q</th><th>Auto</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><a href="#video-1">Hormozi: Generate 1000s of Leads (Any Niche)</a></td>
+<td><strong>Worth Trying</strong></td>
+<td>8</td>
+<td>7</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="#video-2">7 AI Tools for Solopreneurs (Keith AI)</a></td>
+<td>Mixed</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="#video-3">Seth Godin: Stop Hiring Yourself as the Cheapest Freelancer</a></td>
+<td>Mixed</td>
+<td>8</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="#video-4">Unit Economics Benchmarks for Two-Sided Marketplaces</a></td>
+<td>Mixed</td>
+<td>6</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="#video-5">Oliver Kenyon $500K/mo via Personal Branding (ContentSmash)</a></td>
+<td>Mixed</td>
+<td>4</td>
+<td>5</td>
+</tr>
+</tbody></table>
+<h2 id="video-details">Video Details<a class="anchor" href="#video-details" aria-label="Link to this section">#</a></h2>
+<h3 id="video-1">Video 1: Alex Hormozi — "Watch This To Generate 1000s of Leads (In Any Niche)"<a class="anchor" href="#video-1" aria-label="Link to this section">#</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/Mst4hreQYl0">https://youtu.be/Mst4hreQYl0</a></p>
+<p><strong>What it is:</strong> Conversion-rate playbook, not a business: replace "book a call / submit for quote" CTAs with a mini-offer (lead magnet) solving a narrow problem, capturing contact info, funneling into the core paid offer. Hormozi sells the ecosystem via Acquisition.com.</p>
+<p><strong>Core claims:</strong> Magnet types ranked — (a) reveal-a-problem audits/tests (best: creates urgency), (b) free trial/limited sample, (c) one step of a multi-step process. Delivery vehicles: software/tool, info, done-for-you service, physical. Framework math: $25-cost magnet priced at ~$250 perceived value, 1-in-4 conversion ≈ $100 CAC; historical anecdote 213 members / $112K added to one gym via a free case-study magnet. Naming conventions (number + outcome + timeframe; "how to X without Y"), qualification gating so only ICP-quality leads get the good version, CTAs at the point of "greatest deprivation."</p>
+<p><strong>Receipts vs self-reported:</strong> Named businesses (Gym Launch, Acquisition.com) and a verifiable public track record; but the multipliers are directional, not measured — no dashboards.</p>
+<p><strong>Funnel:</strong> Acquisition.com portfolio/workshops/books.</p>
+<p><strong>Verdict: Worth Trying — Q8, automation 7/10.</strong> Assessment/scoring-style magnets are highly scriptable (website-audit pattern); free-service magnets are deliberately manual.</p>
+<p><strong>Transferable:</strong> Build one "reveal a problem" audit tool for the strongest niche in play — it doubles as lead gen and a capability demo. A/B test 3–6 headlines before building content (headline moves conversion more than contents). Gate with a qualification dropdown.</p>
+<h3 id="video-2">Video 2: Keith AI — "7 AI Tools I use as a Solopreneur to 10x my productivity"<a class="anchor" href="#video-2" aria-label="Link to this section">#</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/VKBuUvcSrDs">https://youtu.be/VKBuUvcSrDs</a></p>
+<p><strong>What it is:</strong> One-person AI content + software shop: audience via YouTube/newsletter/Threads using AI tooling, monetized with self-coded apps (Mac/iOS/web) and a paid AI-coding course/community.</p>
+<p><strong>Core claims:</strong> "$10,000+ total in ~6 months" since quitting job (no breakdown, no MRR); Threads 8,321 followers; runs on $20/mo Claude + $20/mo OpenAI. Stack demoed on screen: AI auto-editing (Descript-style), transcript → reusable Claude artifact → weekly Substack newsletter, Perplexity Comet browser agent sourcing Reddit/AI-news post ideas 3×/day to Threads, Postiz (free self-hosted) batch scheduling, Warp + Whisper voice dictation for vibe-coding apps, Google Stitch for UI prototypes.</p>
+<p><strong>Receipts vs self-reported:</strong> Workflow genuinely demoed; the revenue is a single round unaudited number, and the channel is small (913 views) — the method is unproven at scale. He sells a course on exactly the strategy he hasn't yet proven.</p>
+<p><strong>Verdict: Mixed — Q5, automation 8/10.</strong> The full content pipeline is already semi-automated with off-the-shelf AI; only filming and final review stay manual.</p>
+<p><strong>Transferable:</strong> Steal the transcript→newsletter artifact pattern and the Comet/Reddit idea-sourcing loop — free to copy regardless of his revenue. Cap AI spend at entry tiers and switch providers when quotas hit (real cost saver). Don't copy the "quit then figure it out" sequencing.</p>
+<h3 id="video-3">Video 3: Seth Godin (Istoria) — "Stop Hiring Yourself as the Cheapest Freelancer"<a class="anchor" href="#video-3" aria-label="Link to this section">#</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/_u2M86t7iYs">https://youtu.be/_u2M86t7iYs</a></p>
+<p><strong>What it is:</strong> Strategy talk (education, standing rule): freelancer vs "soloist/impressario" (produce ecosystems by hiring freelancers, keep only the work only you can do) vs entrepreneur (build a sellable asset). Underlying model: permission marketing — earn trust with the smallest viable audience, own the channel (blog/email).</p>
+<p><strong>Receipts:</strong> Named, checkable track record (Yoyodyne→AOL sale, Akimbo B Corp, 19 bestsellers, specific historical dollar figures) — but 1980s–90s anecdotes, not current benchmarks. Zero replicable business mechanics.</p>
+<p><strong>Verdict: Mixed — Q8 content, automation 2/10.</strong> Excellent strategic grounding; use as a <em>filter</em> for other models (what to own, what to delegate, what scale to pick), not as a model.</p>
+<p><strong>Transferable:</strong> Ship one owned-channel piece daily for 90 days (permission, not followers). Audit the week: any task a competent freelancer could do = hire it out, starting with $20 tools. Write a one-page "smallest viable audience" definition.</p>
+<h3 id="video-4">Video 4: From Idea to Exit — "Unit Economics Benchmarks for Two-Sided Marketplaces"<a class="anchor" href="#video-4" aria-label="Link to this section">#</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/Vo3uLzm54_Y">https://youtu.be/Vo3uLzm54_Y</a></p>
+<p><strong>What it is:</strong> Startup-finance education (standing rule): unit-economics benchmarks for marketplaces, monetized via a "Finance for Startups" cohort course with free Excel models as lead magnets.</p>
+<p><strong>Core claims (sound, specific):</strong> Blended CAC = buyer CAC + seller CAC × (buyers-per-seller ratio); take rates 20–30%; LTV:CAC benchmarks 1–1.5× year one, ~3× by year three; cohort-retention method for churn.</p>
+<p><strong>Receipts vs self-reported:</strong> Framework and math are solid, but the case study is explicitly hypothetical ("parallel realities"), not a named business; channel revenue undisclosed; 1.6K views.</p>
+<p><strong>Verdict: Mixed — Q6, automation 4/10.</strong> Worth studying for anyone evaluating a marketplace; weak as a replication play.</p>
+<p><strong>Transferable:</strong> Use the blended-CAC formula and cohort-retention method as pre-build diligence for any two-sided idea; grab the free Excel model; sanity-check take rates (20–30%) and gross margins (70–80%+ software).</p>
+<h3 id="video-5">Video 5: ContentSmash — "How Oliver Kenyon scaled to $500,000/mo through Personal Branding"<a class="anchor" href="#video-5" aria-label="Link to this section">#</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/smjo_CBDWvY">https://youtu.be/smjo_CBDWvY</a></p>
+<p><strong>What it is:</strong> Vendor testimonial marketing: ContentSmash (done-for-you personal-branding agency) interviewing its own client, Oliver Kenyon (Conversion Wise, 12-year CRO agency), crediting daily LinkedIn/X content for inbound.</p>
+<p><strong>Core claims:</strong> Title says $500K/mo; the interview itself only supports "a seven-figure agency every year" with ~10 highly-warm inbound leads/month at high close rates. Playbook: micro-niche "key person of influence" (Priestley framing), daily posting (5–10% reach per post — cadence is the moat), weekly nurture newsletter compiled from posts, route to calls, outsource content ops when founder time (2–3 hrs/day) becomes the bottleneck.</p>
+<p><strong>Receipts vs self-reported:</strong> Conversion Wise is real and checkable; the headline number appears only in the title; testimonial recorded by the service being praised; 473 views on the channel selling content results. Structured as a sales asset, not evidence.</p>
+<p><strong>Verdict: Mixed — Q4, automation 5/10.</strong> The tactic (daily niche content → warm inbound → newsletter nurture) is battle-tested and cheap; the video is an ad.</p>
+<p><strong>Transferable:</strong> 90-day daily posting sprint in one micro-niche before judging; weekly newsletter as the nurture layer; if it works, budget agency vs in-house for content ops.</p>
+<h2 id="patterns">Patterns<a class="anchor" href="#patterns" aria-label="Link to this section">#</a></h2>
+<ul>
+<li><strong>Content-as-funnel across all five:</strong> free magnets feed a portfolio (Hormozi), a transcript→newsletter pipeline feeds app sales (Keith), free spreadsheets feed a cohort course (Idea to Exit), daily posts feed warm agency leads (ContentSmash). The one non-funnel video (Godin) is the one with the highest credibility and the least to sell — consistent with the standing receipts-test finding.</li>
+<li><strong>Evidence hierarchy held:</strong> named-empire frameworks with illustrative numbers (Q8) > demoed workflow with thin revenue claims (Q5) > vendor testimonial with a title-only headline (Q4).</li>
+<li><strong>No new model candidates</strong> — lead magnets, creator monetization/courses, newsletters, agencies, marketplaces are all already in the theme pool.</li>
+</ul>
+<h2 id="whats-actionable">What's actionable<a class="anchor" href="#whats-actionable" aria-label="Link to this section">#</a></h2>
+<p>1. <strong>Audit-magnet lead gen</strong> (Hormozi + Keith's pipeline): build one "reveal a problem" audit tool for a niche, feed it with the automated content loop. Cheapest new wedge on the board.</p>
+<p>2. <strong>Blended-CAC checklist</strong> for any future two-sided idea (free Excel template exists).</p>
+<p>3. <strong>Godin filter:</strong> own the channel, delegate the rest — pairs with the 90-day daily-posting sprint if we ever test the personal-branding lane.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-13</p>
+    </div>
+</body>
+</html>

@@ -32,7 +32,9 @@
 
 ## Ranked Strategies
 
-### 🥇 1. White-label HighLevel for one local-service vertical (Chris Koerner)
+### 1. White-label HighLevel for one local-service vertical (Chris Koerner) {#rank-1}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=White-label+HighLevel+for+one+local-service+vertical *(transcript not archived; search by title)*
 
 **Business model:** Resell GoHighLevel as "your" CRM/booking/AI phone system to one boring local niche (bounce houses, med spas, pest control, dentists, roofers). HighLevel publishes a public SaaSpreneur awards page with customer-count tiers (Gold 100+, Platinum 500+, Diamond 1,000+). Combine that with the vendor's public pricing and you can reverse-engineer revenue on a napkin. Koerner walks a roofing clone live: missed-call text-back + calendar booking.
 
@@ -58,7 +60,9 @@
 
 ---
 
-### 🥈 2. Local AI implementation retainers — sell outcomes, not automations (Nick Ponte + Koerner/Ryan)
+### 2. Local AI implementation retainers — sell outcomes, not automations (Nick Ponte + Koerner/Ryan) {#rank-2}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Local+AI+implementation+retainers+%E2%80%94+sell+outcomes%2C+not+automations *(transcript not archived; search by title)*
 
 **Business model:** SMBs already believe they "need AI." They will not buy a Zapier flowchart. They will buy more leads, follow-up, content, and booked jobs. Ponte: $300–$2,000/mo retainers; claims $123k in one month from *local* SMB work (QuickBooks on-screen, separate from his coaching biz). Koerner's guest Ryan (24, introvert, Cincinnati): $15k/mo profit, $1k–$20k projects, $20 to start. Framework: DASA. Acquisition: friends/family/church/masterminds first, not cold LinkedIn slop.
 
@@ -86,7 +90,9 @@ Ponte's wedge: find local businesses with a Facebook page that used to post and 
 
 ---
 
-### 🥉 3. Agent-run local newsletter / directory (Greg Isenberg + Billy Howell / Grokbot)
+### 3. Agent-run local newsletter / directory (Greg Isenberg + Billy Howell / Grokbot) {#rank-3}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Agent-run+local+newsletter+%2F+directory *(transcript not archived; search by title)*
 
 **Business model:** One-person media company run by a tiny agent team. Billy Howell's *Arlington Bagel* newsletter: 6,000 local subs, weekly. Agents research local events/restaurants, fill Notion cards, write blurbs (Make.com once the prompt is stable), send via Beehiiv. Grokbot's constraint (limited agent slots, DM-style threads) is the feature — it forces one mission per bot instead of 40 abandoned ChatGPT threads.
 
@@ -112,7 +118,9 @@ Ponte's wedge: find local businesses with a Facebook page that used to post and 
 
 ---
 
-### 4. Multilingual cloned-voice voicemails for realtors (Chris Koerner)
+### 4. Multilingual cloned-voice voicemails for realtors (Chris Koerner) {#rank-4}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Multilingual+cloned-voice+voicemails+for+realtors *(transcript not archived; search by title)*
 
 **Business model:** 40%+ of US homebuyers speak a language other than English at home (higher in Dallas/NYC/LA/Miami). Realtors cannot leave voicemails in those languages in their own voice. Clone 10–60 seconds of the agent's voice (Fish Audio S2 Pro, 80+ languages), generate a library: price-drop, new listing, showing confirm, missed appointment, home-anniversary. Charge $200–$500/mo.
 
@@ -130,7 +138,9 @@ Ponte's wedge: find local businesses with a Facebook page that used to post and 
 
 ---
 
-### 5. Expertise YouTube → affiliate + high-ticket (Shane Hummus cluster, 6 videos)
+### 5. Expertise YouTube → affiliate + high-ticket (Shane Hummus cluster, 6 videos) {#rank-5}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Expertise+YouTube+%E2%86%92+affiliate+%2B+high-ticket *(transcript not archived; search by title)*
 
 **Business model (same in every Shane video):** Do not start a faceless slop channel, dropshipping store, or vibe-coded app. Package a skill you already have. Claude is a ghostwriter: ramble a 3-minute voice memo, paste transcript, prompt "interview me until you have enough." Long-form YouTube builds the 7 hours of trust Google says buyers need. Monetize AdSense → affiliates (Course Careers for trades) → coaching.
 
@@ -150,7 +160,9 @@ Recycled receipts: Shane $71–73k/90 days AdSense; Nurse Jen $6k → $8k → $1
 
 ---
 
-### 6. Free-stack AI side hustles (Wholesale Ted #9)
+### 6. Free-stack AI side hustles (Wholesale Ted #9) {#rank-6}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Free-stack+AI+side+hustles *(transcript not archived; search by title)*
 
 **Ideas listed:** (1) English-practice YouTube (two AI characters, on-screen text) — example channel <4 months old, ~2.4M views / 90k subs in 30 days, monetized via memberships; (2) AI research agency on Fiverr (~$101 AOV, Etsy keyword + competitor research); (3) themed puzzle books; (4) Instagram fashion affiliates with Nano Banana virtual models + Beacons link-in-bio.
 
@@ -164,7 +176,9 @@ Recycled receipts: Shane $71–73k/90 days AdSense; Nurse Jen $6k → $8k → $1
 
 ---
 
-### 7. AI talking-head clones of Reddit/true-crime channels (Wholesale Ted #4)
+### 7. AI talking-head clones of Reddit/true-crime channels (Wholesale Ted #4) {#rank-7}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=AI+talking-head+clones+of+Reddit%2Ftrue-crime+channels *(transcript not archived; search by title)*
 
 **Business model:** Copy $1k–$3k/day estimated AdSense channels that read Reddit stories / true crime / cryptids. Generate a host with Nano Banana, animate 30s clips with ByteDance Seedance 2.5 (via Higgsfield, sponsor), stitch + upscale to 1080p, ~$5/video if batched. YouTube FAQ cited: AI content can be monetized if it follows policy.
 
@@ -176,7 +190,9 @@ Recycled receipts: Shane $71–73k/90 days AdSense; Nurse Jen $6k → $8k → $1
 
 ---
 
-### 8. Franchising (Chris Koerner #6)
+### 8. Franchising (Chris Koerner #6) {#rank-8}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Franchising *(transcript not archived; search by title)*
 
 **Business model:** Guest Alex (Franzy) on FDDs: freight brokerage (~$1M+ avg franchisee revenue, UK brand entering Dallas), garage epoxy/shelving (cheap entry, >$1M avg revenue), vs fad food (Crumbl, Subway). SBA/express loans up to ~$500k. Diligence: ignore the franchisor's three golden children; call the ones who went bankrupt.
 
@@ -188,7 +204,9 @@ Recycled receipts: Shane $71–73k/90 days AdSense; Nurse Jen $6k → $8k → $1
 
 ---
 
-### 9. Fortnite UEFN maps (Davhy Davis)
+### 9. Fortnite UEFN maps (Davhy Davis) {#rank-9}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Fortnite+UEFN+maps *(transcript not archived; search by title)*
 
 **Claims:** $1.6M/month personal; one map ("TikTok Pillars") 29k players / $350k. Tutorial is Phototopia thumbnails + Bing Image Creator icons + Discord with a 24h "pre-made successful map" offer.
 
@@ -200,7 +218,9 @@ Recycled receipts: Shane $71–73k/90 days AdSense; Nurse Jen $6k → $8k → $1
 
 ---
 
-### 10. Metadata-only (no transcript)
+### 10. Metadata-only (no transcript) {#rank-10}
+
+> ▶ Find on YouTube: https://www.youtube.com/results?search_query=Metadata-only *(transcript not archived; search by title)*
 
 **Wholesale Ted — "The Faceless AI YouTube Niche Making People RICH"** (`GxcFXsqYnIQ`, 41.7k views, 15:28)
 Public description: AI lo-fi / study-music videos (Suno + Kling/Higgsfield + CapCut), VidIQ niche research, "Thanks/Join" as monetization proof. Same family as #7. **Provisional verdict: Skip** (platform + commodity music).

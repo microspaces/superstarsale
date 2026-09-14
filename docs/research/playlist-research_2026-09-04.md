@@ -8,15 +8,15 @@
 
 | # | Title | Channel | Type |
 |---|-------|---------|------|
-| 1 | This $57 Digital Product Made $313,000 in 6 Days | Brian O'Neill | Business pitch (case study) |
-| 2 | Claude Has Officially Changed Facebook Ads Forever! (Tutorial) | Professor Charley T | Education (Meta ads tutorial) |
-| 3 | MiniMax 3 Just Killed Suno - Everything You Need To Know | Produce Like a Boss - AI | Education / tool review |
-| 4 | The EASIEST Way To Make Money With AI (From Scratch) | The Diary Of A CEO Clips | Business pitch (thesis) |
-| 5 | What are Kindle Short Reads on Amazon? | Keith Wheeler Books | Education (KDP explainer) |
-| 6 | Seedance 2.5 + Grok Bot = 50 Viral AI UGC Ads a Day (Full Tutorial) | Miko | Business pitch (tool-stack tutorial) |
-| 7 | Making $$$ with Grok Bot | Greg Isenberg | Business pitch (agent-team walkthrough) |
-| 8 | Grok Bot + Gemini Omni = $17,264/Month (Here's Exactly How) | TEEJ | Business pitch (affiliate funnel) |
-| 9 | Marketing Engineer: The $1M Job with AI Agents | Greg Isenberg | General analysis / career thesis |
+| 1 | [This $57 Digital Product Made $313,000 in 6 Days](#video-1) || Brian O'Neill | Business pitch (case study) |
+| 2 | [Claude Has Officially Changed Facebook Ads Forever! (Tutorial)](#video-2) || Professor Charley T | Education (Meta ads tutorial) |
+| 3 | [MiniMax 3 Just Killed Suno - Everything You Need To Know](#video-3) || Produce Like a Boss - AI | Education / tool review |
+| 4 | [The EASIEST Way To Make Money With AI (From Scratch)](#video-4) || The Diary Of A CEO Clips | Business pitch (thesis) |
+| 5 | [What are Kindle Short Reads on Amazon?](#video-5) || Keith Wheeler Books | Education (KDP explainer) |
+| 6 | [Seedance 2.5 + Grok Bot = 50 Viral AI UGC Ads a Day (Full Tutorial)](#video-6) || Miko | Business pitch (tool-stack tutorial) |
+| 7 | [Making $$$ with Grok Bot](#video-7) || Greg Isenberg | Business pitch (agent-team walkthrough) |
+| 8 | [Grok Bot + Gemini Omni = $17,264/Month (Here's Exactly How)](#video-8) || TEEJ | Business pitch (affiliate funnel) |
+| 9 | [Marketing Engineer: The $1M Job with AI Agents](#video-9) || Greg Isenberg | General analysis / career thesis |
 
 ## Run Theme
 
@@ -24,7 +24,9 @@
 
 ---
 
-## Video 1: Brian O'Neill - "This $57 Digital Product Made $313,000 in 6 Days"
+### Video 1: Brian O'Neill - "This $57 Digital Product Made $313,000 in 6 Days" {#video-1}
+
+> ▶ Watch: https://youtu.be/1VEMpRr9GnY
 
 **Story:** Case-study breakdown of Jessica Carter, an Instagram creator who made **$313,000 in 6 days** selling a $57 mini-course about the Edits app. Path: 10 years of scattered posting to reach ~10K followers → pivot to authentic posting → went viral (9M views on one launch video, ~50 → 162K followers) → noticed followers kept asking "how did you edit that?" → built exactly what they asked for as a small, cheap, closed-window course.
 
@@ -42,7 +44,9 @@
 
 ---
 
-## Video 2: Professor Charley T - "Claude Has Officially Changed Facebook Ads Forever!"
+### Video 2: Professor Charley T - "Claude Has Officially Changed Facebook Ads Forever!" {#video-2}
+
+> ▶ Watch: https://youtu.be/4-ApfzxGhYI
 
 **Story:** Two-step free-in-Claude Meta ads workflow demoed on a ~$2M/yr Washington coffee business: (1) find your "hero product" from order data using Wilson-score-style confidence-adjusted repeat rates; (2) build a statistically grounded ad ("322" = 3 creatives × 2 primary texts × 2 headlines = 12 combinations) from customer evidence instead of vanity metrics. Core thesis: **stop selling products, start buying customers; optimize repeat-customer cash flow, not ROAS.**
 
@@ -62,7 +66,9 @@
 
 ---
 
-## Video 3: Produce Like a Boss - "MiniMax 3 Just Killed Suno" *(education/tool review - no business ranking)*
+### Video 3: Produce Like a Boss - "MiniMax 3 Just Killed Suno" *(education/tool review - no business ranking)* {#video-3}
+
+> ▶ Watch: https://youtu.be/pHcufLW46vg
 
 **Story:** Review of MiniMax Music 3.0 (launched ~Aug 13), an open-weights generative music model - full songs to 5 minutes with vocals. Contrasted with Suno, which just tightened terms and prices. Real thesis: **open weights solve the platform problem but not the ownership problem** - both platforms' fine print admit AI output may not be copyright-eligible (human-authorship problem). Closes on industry angle: Warner settled with Suno, but "you cannot make a deal with a file that's already on 10,000 hard drives," which breaks sync licensing's "no AI" policies.
 
@@ -82,7 +88,9 @@
 
 ---
 
-## Video 4: The Diary Of A CEO Clips - "The EASIEST Way To Make Money With AI (From Scratch)"
+### Video 4: The Diary Of A CEO Clips - "The EASIEST Way To Make Money With AI (From Scratch)" {#video-4}
+
+> ▶ Watch: https://youtu.be/HKWLH1Zh79A
 
 **Story:** Thesis video: AI collapsed the cost of building software, so the best new opportunity is **small niche SaaS (500-1,000 customers, community/media/training attached)** rather than venture-scale. Immediate counter: anything AI makes easy gets commoditized, so the durable moat is **"irreplaceably human" assets** - personal playbooks/IP, lived-experience content, parasocial relationships, real-world events - packaged as a product-and-service ecosystem, not one product. Predictions: document-regurgitation lawyers get disrupted; blue-collar trades flip from devalued to blue-ocean.
 
@@ -102,7 +110,9 @@
 
 ---
 
-## Video 5: Keith Wheeler Books - "What are Kindle Short Reads on Amazon?" *(education - no business ranking)*
+### Video 5: Keith Wheeler Books - "What are Kindle Short Reads on Amazon?" *(education - no business ranking)* {#video-5}
+
+> ▶ Watch: https://youtu.be/UDZsKj-ASq4
 
 **Story:** KDP publisher explains Amazon's Kindle Short Reads section: ebooks as short as one page, organized by estimated reading time (15 minutes to 2 hours), spanning nearly every genre - **short reads are a format, not a genre**. Readers buy the experience/promise, not page count; length is determined by the promise. Placement is auto-assigned by KDP based on page count (can't be requested); no children's picture book section. Ends with upsell to his "Short Read Domination" course.
 
@@ -119,7 +129,9 @@
 
 ---
 
-## Video 6: Miko - "Seedance 2.5 + Grok Bot = 50 Viral AI UGC Ads a Day"
+### Video 6: Miko - "Seedance 2.5 + Grok Bot = 50 Viral AI UGC Ads a Day" {#video-6}
+
+> ▶ Watch: https://youtu.be/mcY7ReDNrd0
 
 **Story:** End-to-end automated ad factory demo: **GrokBot downloads a competitor's ad from a link, analyzes it scene-by-scene via an SOP prompt, regenerates it with Seedance 2.5 swapping in the creator's own product, spins up A/B avatar variations - then a second "ads manager" bot launches and manages Meta campaigns via a connector**, the two bots reportedly negotiating daily. Shown outputs: brow-gel listicle, chocolate-brand video with 20%-off CTA, copper-peptide eye serum recreated 1:1 for "Miko's Copper Peptide Serum."
 
@@ -136,7 +148,9 @@
 
 ---
 
-## Video 7: Greg Isenberg - "Making $$$ with Grok Bot"
+### Video 7: Greg Isenberg - "Making $$$ with Grok Bot" {#video-7}
+
+> ▶ Watch: https://youtu.be/qQluNEfSVHk
 
 **Story:** Interview with Billy Howell (The Rundown) on replacing his human intern with a **Grokbot agent team** running "The Arlington Bagel" local newsletter (6,000 subscribers, Beehiiv, Thursdays) end to end. Core argument: Grokbot's constraints (limited agent combos, one thread per bot, DM-style chat) force mission focus. Pitch: pick ONE project, build a chief-of-staff-led team, execute for weeks before automating. Grokbot costs $200-300/month - frame is making it pay 5x-50x.
 
@@ -156,7 +170,9 @@
 
 ---
 
-## Video 8: TEEJ - "Grok Bot + Gemini Omni = $17,264/Month (Here's Exactly How)"
+### Video 8: TEEJ - "Grok Bot + Gemini Omni = $17,264/Month (Here's Exactly How)" {#video-8}
+
+> ▶ Watch: https://youtu.be/yX5Ep953GRE
 
 **Story:** Claims $17,264 in 25 days mass-producing AI UGC-style videos (Grokbot + Claude + Google "Omni"), posting to Instagram, driving traffic to **peptide supplement affiliate offers on the Glitchy network** (CPA - paid on form fill + telehealth appointment booking, not purchase). Full tutorial: 3-bot Grokbot setup, Claude scripting with a viral-hooks skill, Nano Banana avatars from Pinterest references, Omni image-to-video, CapCut assembly. Revenue entirely self-reported, zero proof shown.
 
@@ -176,7 +192,9 @@
 
 ---
 
-## Video 9: Greg Isenberg - "Marketing Engineer: The $1M Job with AI Agents" *(general analysis/career thesis)*
+### Video 9: Greg Isenberg - "Marketing Engineer: The $1M Job with AI Agents" *(general analysis/career thesis)* {#video-9}
+
+> ▶ Watch: https://youtu.be/8ZC1G1ezN5o
 
 **Story:** A new role - the **"marketing engineer"** (forward-deployed marketer / AI growth operator) - will be one of tech's most valuable jobs in 18-24 months at $250K-1M/year. Thesis: every marketing era crowned a specialist (Draper storytellers → digital marketers → growth hackers); the agentic era crowns the person who "turns market signal into pipeline using AI agents, data, code, and taste." Defines the role, lays out six systems, monetization ladder, 30-day plan.
 
