@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-money-making-strategy-research-2026-09-15">Daily YouTube Money-Making Strategy Research — 2026-09-15</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-should-you-sell-on-walmart-marketplace-in-2026-worldfirst-53514-views">1. Should You Sell on Walmart Marketplace in 2026? — WorldFirst (53,514 views)</a></li><li class="toc-h2"><a href="#2-the-laziest-way-to-make-money-with-ai-in-2026-for-beginners-andy-stauring-9543-views">2. The Laziest Way To Make Money with AI in 2026 (For Beginners) — Andy Stauring (9,543 views)</a></li><li class="toc-h2"><a href="#3-walmart-marketplace-seller-testimonial-veradek-outdoor-walmart-marketplace-5276-views">3. Walmart Marketplace Seller Testimonial: Veradek Outdoor — Walmart Marketplace (5,276 views)</a></li><li class="toc-h2"><a href="#4-amazon-fba-private-label-vs-wholesale-in-2026-adam-pearson-2223-views">4. Amazon FBA Private Label vs Wholesale in 2026 — Adam Pearson (2,223 views)</a></li><li class="toc-h2"><a href="#5-how-to-scale-a-paid-discord-community-to-higher-mrr-unityxpert-735-views">5. How to Scale a Paid Discord Community to Higher MRR — UnityXpert (735 views)</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential-novelty-weighted">Final Ranking — by Automation Potential (novelty-weighted)</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
