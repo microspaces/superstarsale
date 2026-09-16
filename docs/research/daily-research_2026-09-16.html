@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-money-making-strategy-research-2026-09-16">Daily YouTube Money-Making Strategy Research — 2026-09-16</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-the-psychology-of-premium-branding-omar-eddaoudi-1225818-views">1. The Psychology of Premium Branding — Omar Eddaoudi (1,225,818 views)</a></li><li class="toc-h2"><a href="#2-every-boring-business-that-makes-failure-almost-impossible-david-heacock-349336-views">2. Every Boring Business That Makes Failure (almost) Impossible — David Heacock (349,336 views)</a></li><li class="toc-h2"><a href="#3-how-to-pitch-to-investors-like-a-pro-joyce-daniels-171320-views">3. HOW TO PITCH TO INVESTORS LIKE A PRO! — Joyce Daniels (171,320 views)</a></li><li class="toc-h2"><a href="#4-the-top-1-of-service-businesses-use-this-marketing-playbook-mike-andes-106262-views">4. The TOP 1% of Service Businesses Use This Marketing Playbook! — Mike Andes (106,262 views)</a></li><li class="toc-h2"><a href="#5-selling-ai-receptionists-to-local-businesses-with-cold-calls-5k-per-joey-seeman-58094-views">5. Selling AI Receptionists To Local Businesses With Cold Calls ($5k Per) — Joey Seeman (58,094 views)</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
