@@ -7,579 +7,115 @@
     <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%); min-height: 100vh; padding: 40px 20px; color: #e0e0e0; }
-.container { max-width: 900px; margin: 0 auto; }
+.container { max-width: 960px; margin: 0 auto; }
 h1 { text-align: center; font-size: 2.2em; margin-bottom: 8px; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.subtitle { text-align: center; color: #888; margin-bottom: 40px; font-size: 1.1em; }
+.subtitle { text-align: center; color: #888; margin-bottom: 24px; font-size: 1.1em; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: center; margin-bottom: 14px; }
+.pill { cursor: pointer; border: 1px solid rgba(102,126,234,.4); background: rgba(102,126,234,.10); color: #a5b4fc; padding: 6px 14px; border-radius: 999px; font-size: .85em; font-weight: 600; }
+.pill.active { background: rgba(102,126,234,.45); color: #fff; }
+.toolbar select, .toolbar input { background: rgba(255,255,255,.07); color: #e0e0e0; border: 1px solid rgba(255,255,255,.18); border-radius: 8px; padding: 6px 10px; font-size: .85em; }
+.toolbar input { width: 180px; }
+.toolbar label { color: #888; font-size: .8em; }
 .report-list { list-style: none; }
-.report-item { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; transition: all 0.2s; display: flex; justify-content: space-between; align-items: center; text-decoration: none; color: inherit; }
+.report-item { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 18px 24px; margin-bottom: 14px; transition: all 0.2s; display: flex; justify-content: space-between; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
 .report-item:hover { background: rgba(255,255,255,0.1); border-color: rgba(102,126,234,0.5); transform: translateX(4px); }
 .report-date { font-size: 1.1em; font-weight: 600; color: #667eea; }
-.report-title { color: #ccc; font-size: 0.95em; margin-top: 4px; }
+.report-title { color: #ccc; font-size: 0.92em; margin-top: 4px; }
 .report-arrow { color: #555; font-size: 1.3em; }
+.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: .72em; font-weight: 600; margin-right: 5px; margin-top: 6px; }
+.kind-daily { background: rgba(34,197,94,.18); color: #4ade80; }
+.kind-playlist { background: rgba(168,85,247,.20); color: #c084fc; }
+.tag { background: rgba(102,126,234,.16); color: #a5b4fc; }
+.stat { background: rgba(255,255,255,.08); color: #cbd5e1; }
+.stat.wt { background: rgba(34,197,94,.16); color: #4ade80; }
+.stat.skip { background: rgba(239,68,68,.14); color: #f87171; }
+.nostats { color: #64748b; }
 .footer { text-align: center; color: #555; margin-top: 40px; font-size: 0.85em; }
 .badge { display: inline-block; background: rgba(102,126,234,0.2); color: #667eea; padding: 3px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 600; margin-left: 10px; }
+.empty { text-align: center; color: #888; padding: 30px; display: none; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>&#128202; Research Reports</h1>
-        <p class="subtitle">All reports, newest first <span class="badge">Auto-indexed</span></p2>
-        <ul class="report-list">
-        <a class="report-item" href="research/daily-research_2026-09-16.html">
-            <div>
-                <div class="report-date">2026-09-16</div>
-                <div class="report-title">Daily YouTube Money-Making Strategy Research — 2026-09-16</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-15.html">
-            <div>
-                <div class="report-date">2026-09-15</div>
-                <div class="report-title">Playlist Research — 2026-09-15</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-15.html">
-            <div>
-                <div class="report-date">2026-09-15</div>
-                <div class="report-title">Daily YouTube Money-Making Strategy Research — 2026-09-15</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-14.html">
-            <div>
-                <div class="report-date">2026-09-14</div>
-                <div class="report-title">Daily YouTube Money-Making Strategy Research — 2026-09-14</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-13.html">
-            <div>
-                <div class="report-date">2026-09-13</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-13</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-12.html">
-            <div>
-                <div class="report-date">2026-09-12</div>
-                <div class="report-title">Playlist Research — 2026-09-12</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-12.html">
-            <div>
-                <div class="report-date">2026-09-12</div>
-                <div class="report-title">Daily YouTube Money-Making Strategy Research — 2026-09-12</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-11.html">
-            <div>
-                <div class="report-date">2026-09-11</div>
-                <div class="report-title">Playlist Research — 2026-09-11</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-11.html">
-            <div>
-                <div class="report-date">2026-09-11</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-11 (Recovery Publication)</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-10.html">
-            <div>
-                <div class="report-date">2026-09-10</div>
-                <div class="report-title">Playlist Research — 2026-09-10</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-10.html">
-            <div>
-                <div class="report-date">2026-09-10</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-10 (Recovery Publication)</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-09.html">
-            <div>
-                <div class="report-date">2026-09-09</div>
-                <div class="report-title">Playlist Research — 2026-09-09</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-09.html">
-            <div>
-                <div class="report-date">2026-09-09</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-09 (Recovery Publication)</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-08.html">
-            <div>
-                <div class="report-date">2026-09-08</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-08</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-07.html">
-            <div>
-                <div class="report-date">2026-09-07</div>
-                <div class="report-title">Playlist Research — 2026-09-07</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-07.html">
-            <div>
-                <div class="report-date">2026-09-07</div>
-                <div class="report-title">Daily YouTube Strategy Research - 2026-09-07</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-06.html">
-            <div>
-                <div class="report-date">2026-09-06</div>
-                <div class="report-title">Daily YouTube Strategy Research - 2026-09-06 (Backfill)</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-05.html">
-            <div>
-                <div class="report-date">2026-09-05</div>
-                <div class="report-title">Playlist Research — 2026-09-05</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-05.html">
-            <div>
-                <div class="report-date">2026-09-05</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-05</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-04.html">
-            <div>
-                <div class="report-date">2026-09-04</div>
-                <div class="report-title">Playlist Research — 2026-09-04</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-04.html">
-            <div>
-                <div class="report-date">2026-09-04</div>
-                <div class="report-title">Daily YouTube Strategy Research - 2026-09-04 (Backfill)</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-03.html">
-            <div>
-                <div class="report-date">2026-09-03</div>
-                <div class="report-title">Playlist Research — 2026-09-03</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-03.html">
-            <div>
-                <div class="report-date">2026-09-03</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-03</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-02.html">
-            <div>
-                <div class="report-date">2026-09-02</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-02</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-09-01.html">
-            <div>
-                <div class="report-date">2026-09-01</div>
-                <div class="report-title">Playlist Research — 2026-09-01</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-09-01.html">
-            <div>
-                <div class="report-date">2026-09-01</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-09-01</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-08-31.html">
-            <div>
-                <div class="report-date">2026-08-31</div>
-                <div class="report-title">Playlist Research — 2026-08-31</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-31.html">
-            <div>
-                <div class="report-date">2026-08-31</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-31</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-30.html">
-            <div>
-                <div class="report-date">2026-08-30</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-30</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-29.html">
-            <div>
-                <div class="report-date">2026-08-29</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-29</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/playlist-research_2026-08-28.html">
-            <div>
-                <div class="report-date">2026-08-28</div>
-                <div class="report-title">Playlist Research — 2026-08-28</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-28.html">
-            <div>
-                <div class="report-date">2026-08-28</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-28</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-27.html">
-            <div>
-                <div class="report-date">2026-08-27</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-27</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-26.html">
-            <div>
-                <div class="report-date">2026-08-26</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-26</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-25.html">
-            <div>
-                <div class="report-date">2026-08-25</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-25</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-24.html">
-            <div>
-                <div class="report-date">2026-08-24</div>
-                <div class="report-title">Daily YouTube Strategy Research - 2026-08-24</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-23.html">
-            <div>
-                <div class="report-date">2026-08-23</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-23</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-22.html">
-            <div>
-                <div class="report-date">2026-08-22</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-22</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-21.html">
-            <div>
-                <div class="report-date">2026-08-21</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-21</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-20.html">
-            <div>
-                <div class="report-date">2026-08-20</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-20</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-19.html">
-            <div>
-                <div class="report-date">2026-08-19</div>
-                <div class="report-title">Daily YouTube Strategy Research - 2026-08-19</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-18.html">
-            <div>
-                <div class="report-date">2026-08-18</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-18</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-17.html">
-            <div>
-                <div class="report-date">2026-08-17</div>
-                <div class="report-title">Daily YouTube Strategy Research - August 17, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-16.html">
-            <div>
-                <div class="report-date">2026-08-16</div>
-                <div class="report-title">Daily YouTube Strategy Research - August 16, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-15.html">
-            <div>
-                <div class="report-date">2026-08-15</div>
-                <div class="report-title">Daily YouTube Strategy Research — August 15, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-14.html">
-            <div>
-                <div class="report-date">2026-08-14</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-14</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-13.html">
-            <div>
-                <div class="report-date">2026-08-13</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-13</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-12.html">
-            <div>
-                <div class="report-date">2026-08-12</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-12</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-11.html">
-            <div>
-                <div class="report-date">2026-08-11</div>
-                <div class="report-title">Daily YouTube Strategy Research — August 11, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-10.html">
-            <div>
-                <div class="report-date">2026-08-10</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-10</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-09.html">
-            <div>
-                <div class="report-date">2026-08-09</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-09</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-08.html">
-            <div>
-                <div class="report-date">2026-08-08</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-08</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-07.html">
-            <div>
-                <div class="report-date">2026-08-07</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-07</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-05.html">
-            <div>
-                <div class="report-date">2026-08-05</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-05</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-04.html">
-            <div>
-                <div class="report-date">2026-08-04</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-04</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-03.html">
-            <div>
-                <div class="report-date">2026-08-03</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-03</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-02.html">
-            <div>
-                <div class="report-date">2026-08-02</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-02</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-08-01.html">
-            <div>
-                <div class="report-date">2026-08-01</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-08-01</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-31.html">
-            <div>
-                <div class="report-date">2026-07-31</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-31</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-30.html">
-            <div>
-                <div class="report-date">2026-07-30</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-30</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-29.html">
-            <div>
-                <div class="report-date">2026-07-29</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-29</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-28.html">
-            <div>
-                <div class="report-date">2026-07-28</div>
-                <div class="report-title">Daily YouTube Strategy Research — July 28, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-25.html">
-            <div>
-                <div class="report-date">2026-07-25</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-25</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-22.html">
-            <div>
-                <div class="report-date">2026-07-22</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-22</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-21.html">
-            <div>
-                <div class="report-date">2026-07-21</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-21</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-20.html">
-            <div>
-                <div class="report-date">2026-07-20</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-20</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-19.html">
-            <div>
-                <div class="report-date">2026-07-19</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-19</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-18.html">
-            <div>
-                <div class="report-date">2026-07-18</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-18</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-17.html">
-            <div>
-                <div class="report-date">2026-07-17</div>
-                <div class="report-title">Daily YouTube Strategy Research — July 17, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-16.html">
-            <div>
-                <div class="report-date">2026-07-16</div>
-                <div class="report-title">Daily YouTube Strategy Research — July 16, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-14.html">
-            <div>
-                <div class="report-date">2026-07-14</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-14</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-13.html">
-            <div>
-                <div class="report-date">2026-07-13</div>
-                <div class="report-title">Daily YouTube Strategy Research — July 13, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-12.html">
-            <div>
-                <div class="report-date">2026-07-12</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-12</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-11.html">
-            <div>
-                <div class="report-date">2026-07-11</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-11</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-10.html">
-            <div>
-                <div class="report-date">2026-07-10</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-10</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-09.html">
-            <div>
-                <div class="report-date">2026-07-09</div>
-                <div class="report-title">Daily YouTube Strategy Research — 2026-07-09</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-07-03.html">
-            <div>
-                <div class="report-date">2026-07-03</div>
-                <div class="report-title">Daily YouTube Strategy Research — July 3, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-06-26.html">
-            <div>
-                <div class="report-date">2026-06-26</div>
-                <div class="report-title">Daily YouTube Strategy Research — June 26, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        <a class="report-item" href="research/daily-research_2026-06-25.html">
-            <div>
-                <div class="report-date">2026-06-25</div>
-                <div class="report-title">📊 Daily YouTube Strategy Research — June 25, 2026</div>
-            </div>
-            <span class="report-arrow">&rarr;</span>
-        </a>
-        </ul>
-        <p class="footer">Last updated: 2026-09-16 09:08:19 &middot; Powered by OpenClaw</p>
+        <p class="subtitle">79 reports &middot; 489 videos analyzed &middot; 116 worth trying <span class="badge">Auto-indexed</span></p>
+        <div class="toolbar">
+            <button class="pill kind-filter active" data-kind="all">All</button>
+            <button class="pill kind-filter" data-kind="daily">&#128197; Daily</button>
+            <button class="pill kind-filter" data-kind="playlist">&#127909; Playlist</button>
+            <select id="tag-filter"><option value="">All topics</option>
+          <option value="AI Agents">AI Agents</option>
+          <option value="Agencies &amp; Leads">Agencies &amp; Leads</option>
+          <option value="Apps &amp; SaaS">Apps &amp; SaaS</option>
+          <option value="Automation">Automation</option>
+          <option value="Courses &amp; Communities">Courses &amp; Communities</option>
+          <option value="E-com &amp; Products">E-com &amp; Products</option>
+          <option value="Marketplaces">Marketplaces</option>
+          <option value="Roblox">Roblox</option>
+          <option value="YouTube &amp; Content">YouTube &amp; Content</option>
+        </select>
+            <label for="sort">Sort</label>
+            <select id="sort">
+              <option value="new">Newest first</option>
+              <option value="old">Oldest first</option>
+              <option value="videos">Most videos</option>
+              <option value="avg">Highest avg score</option>
+              <option value="wt">Most &quot;Worth Trying&quot;</option>
+            </select>
+            <input id="search" type="search" placeholder="Search titles&hellip;">
+        </div>
+        <ul class="report-list" id="list"></ul>
+        <p class="empty" id="empty">No reports match those filters.</p>
+        <p class="footer">Last updated: 2026-09-16 10:32:01 &middot; Powered by OpenClaw</p>
     </div>
+<script>
+var REPORTS = [{"file": "research/daily-research_2026-09-16.html", "date": "2026-09-16", "kind": "daily", "title": "Daily YouTube Money-Making Strategy Research — 2026-09-16", "videos": 5, "wt": 2, "mixed": 2, "skip": 1, "avg": 5.0, "tags": ["Automation", "Agencies & Leads", "YouTube & Content"], "top": "Selling AI Receptionists To Local Businesses"}, {"file": "research/playlist-research_2026-09-15.html", "date": "2026-09-15", "kind": "playlist", "title": "Playlist Research — 2026-09-15", "videos": 21, "wt": 11, "mixed": 7, "skip": 3, "avg": 6.3, "tags": ["YouTube & Content", "Roblox", "AI Agents"], "top": "App Masters — \"$800K ARR App With Simple Strategies\" (8.5/10)"}, {"file": "research/daily-research_2026-09-15.html", "date": "2026-09-15", "kind": "daily", "title": "Daily YouTube Money-Making Strategy Research — 2026-09-15", "videos": 5, "wt": 0, "mixed": 3, "skip": 2, "avg": 4.0, "tags": ["E-com & Products", "Marketplaces", "Automation"], "top": "Paid Discord AI onboarding/salescloser (UnityXpert)"}, {"file": "research/daily-research_2026-09-14.html", "date": "2026-09-14", "kind": "daily", "title": "Daily YouTube Money-Making Strategy Research — 2026-09-14", "videos": 8, "wt": 3, "mixed": 3, "skip": 3, "avg": 4.6, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Stop Trading Time for Money: Productize Your Consulting"}, {"file": "research/daily-research_2026-09-13.html", "date": "2026-09-13", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-13", "videos": 5, "wt": 1, "mixed": 4, "skip": 0, "avg": 5.2, "tags": ["Courses & Communities", "Marketplaces", "Automation"], "top": "Keith AI — \"7 AI Tools I use as a Solopreneur to 10x my productivity\" (8/10)"}, {"file": "research/playlist-research_2026-09-12.html", "date": "2026-09-12", "kind": "playlist", "title": "Playlist Research — 2026-09-12", "videos": 16, "wt": 8, "mixed": 8, "skip": 0, "avg": 6.5, "tags": ["AI Agents", "YouTube & Content", "Courses & Communities"], "top": "fal Podcast (Sophia Xing) — \"AI Microdrama Economics\" (8.5/10)"}, {"file": "research/daily-research_2026-09-12.html", "date": "2026-09-12", "kind": "daily", "title": "Daily YouTube Money-Making Strategy Research — 2026-09-12", "videos": 5, "wt": 0, "mixed": 3, "skip": 2, "avg": null, "tags": ["Automation", "Marketplaces", "YouTube & Content"], "top": "Sell Software for $10k/Mo (Audate)"}, {"file": "research/playlist-research_2026-09-11.html", "date": "2026-09-11", "kind": "playlist", "title": "Playlist Research — 2026-09-11", "videos": 28, "wt": 4, "mixed": 10, "skip": 2, "avg": 4.2, "tags": ["AI Agents", "YouTube & Content", "Automation"], "top": "Nas Daily — \"Nas Daily's AI (nas.com)\" (7/10)"}, {"file": "research/daily-research_2026-09-11.html", "date": "2026-09-11", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-11 (Recovery Publication)", "videos": 5, "wt": 0, "mixed": 4, "skip": 1, "avg": 5.2, "tags": ["AI Agents", "Automation", "Marketplaces"], "top": "Pick a Profitable Agency Niche (The Futur) — positioning strategy (7/10)"}, {"file": "research/playlist-research_2026-09-10.html", "date": "2026-09-10", "kind": "playlist", "title": "Playlist Research — 2026-09-10", "videos": 6, "wt": 2, "mixed": 4, "skip": 0, "avg": 4.5, "tags": ["AI Agents", "YouTube & Content", "Courses & Communities"], "top": "WebMCP — Let AI Agents Pay You Money (agent infrastructure) (7/10)"}, {"file": "research/daily-research_2026-09-10.html", "date": "2026-09-10", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-10 (Recovery Publication)", "videos": 5, "wt": 2, "mixed": 3, "skip": 0, "avg": 6.8, "tags": ["YouTube & Content", "Automation", "Apps & SaaS"], "top": "First 6 Months of YouTube Monetization (Caleb Bale) — creator monetiza (8/10)"}, {"file": "research/playlist-research_2026-09-09.html", "date": "2026-09-09", "kind": "playlist", "title": "Playlist Research — 2026-09-09", "videos": 16, "wt": 10, "mixed": 6, "skip": 0, "avg": 6.6, "tags": ["Automation", "AI Agents", "YouTube & Content"], "top": "a16z — \"AI Agents Could Finally Reinvent the Credit Card\" (VC thesis) (9/10)"}, {"file": "research/daily-research_2026-09-09.html", "date": "2026-09-09", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-09 (Recovery Publication)", "videos": 5, "wt": 1, "mixed": 3, "skip": 1, "avg": 5.4, "tags": ["Agencies & Leads", "E-com & Products", "Automation"], "top": "Print on Demand With a LIVE Store (Meg Heckman) — POD / owned brand (8/10)"}, {"file": "research/daily-research_2026-09-08.html", "date": "2026-09-08", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-08", "videos": 5, "wt": 2, "mixed": 1, "skip": 2, "avg": 7.0, "tags": ["Courses & Communities", "Automation", "Apps & SaaS"], "top": "Business Model Canvas (Strategyzer) (7/10)"}, {"file": "research/playlist-research_2026-09-07.html", "date": "2026-09-07", "kind": "playlist", "title": "Playlist Research — 2026-09-07", "videos": 10, "wt": 2, "mixed": 6, "skip": 2, "avg": 5.4, "tags": ["YouTube & Content", "Automation", "AI Agents"], "top": "Casey Builds Stuff — \"Reviewing crappy rip offs of my successful app\"  (9/10)"}, {"file": "research/daily-research_2026-09-07.html", "date": "2026-09-07", "kind": "daily", "title": "Daily YouTube Strategy Research - 2026-09-07", "videos": 5, "wt": 3, "mixed": 2, "skip": 1, "avg": 6.0, "tags": ["Automation", "AI Agents", "YouTube & Content"], "top": "SMB Marketing, Cybersecurity & AI Toolkit (Panel) - Texas Economic Dev (8/10)"}, {"file": "research/daily-research_2026-09-06.html", "date": "2026-09-06", "kind": "daily", "title": "Daily YouTube Strategy Research - 2026-09-06 (Backfill)", "videos": 4, "wt": 0, "mixed": 3, "skip": 1, "avg": 3.5, "tags": ["Automation", "Courses & Communities"], "top": "Airbnb Rental Arbitrage (5-bedroom, corporate-guest niche) - BEHIND TH (5/10)"}, {"file": "research/playlist-research_2026-09-05.html", "date": "2026-09-05", "kind": "playlist", "title": "Playlist Research — 2026-09-05", "videos": 11, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["AI Agents", "Automation", "YouTube & Content"], "top": null}, {"file": "research/daily-research_2026-09-05.html", "date": "2026-09-05", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-05", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": 7.0, "tags": ["YouTube & Content", "Agencies & Leads", "Automation"], "top": "Faceless YouTube Format-Cloning Playbook — vidIQ (8/10)"}, {"file": "research/playlist-research_2026-09-04.html", "date": "2026-09-04", "kind": "playlist", "title": "Playlist Research — 2026-09-04", "videos": 9, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["AI Agents", "Automation", "Courses & Communities"], "top": null}, {"file": "research/daily-research_2026-09-04.html", "date": "2026-09-04", "kind": "daily", "title": "Daily YouTube Strategy Research - 2026-09-04 (Backfill)", "videos": 5, "wt": 3, "mixed": 1, "skip": 1, "avg": 4.6, "tags": ["E-com & Products", "Automation", "AI Agents"], "top": "Niche-Focused Etsy POD with Ads-Driven Doubling Down - Taylor Posada (7/10)"}, {"file": "research/playlist-research_2026-09-03.html", "date": "2026-09-03", "kind": "playlist", "title": "Playlist Research — 2026-09-03", "videos": 10, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["AI Agents", "YouTube & Content", "Automation"], "top": null}, {"file": "research/daily-research_2026-09-03.html", "date": "2026-09-03", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-03", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": 5.6, "tags": ["Automation", "Agencies & Leads", "E-com & Products"], "top": "AI Websites for Local Businesses — The Savvy Couple (7/10)"}, {"file": "research/daily-research_2026-09-02.html", "date": "2026-09-02", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-02", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": 3.8, "tags": ["Automation", "Courses & Communities", "E-com & Products"], "top": "Vending Machine Route with Real Costs — Profitopsy (7/10)"}, {"file": "research/playlist-research_2026-09-01.html", "date": "2026-09-01", "kind": "playlist", "title": "Playlist Research — 2026-09-01", "videos": 3, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["YouTube & Content", "Automation", "Courses & Communities"], "top": null}, {"file": "research/daily-research_2026-09-01.html", "date": "2026-09-01", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-09-01", "videos": 5, "wt": 2, "mixed": 1, "skip": 2, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Ranked by automation potential, discounting repeated coverage (SMMA/ag"}, {"file": "research/playlist-research_2026-08-31.html", "date": "2026-08-31", "kind": "playlist", "title": "Playlist Research — 2026-08-31", "videos": 13, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["AI Agents", "Automation", "Courses & Communities"], "top": null}, {"file": "research/daily-research_2026-08-31.html", "date": "2026-08-31", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-31", "videos": 5, "wt": 1, "mixed": 1, "skip": 3, "avg": null, "tags": ["Automation", "Courses & Communities", "YouTube & Content"], "top": "Ranked by automation potential, adjusted for novelty vs. recent report"}, {"file": "research/daily-research_2026-08-30.html", "date": "2026-08-30", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-30", "videos": 5, "wt": 3, "mixed": 1, "skip": 1, "avg": null, "tags": ["Automation", "Agencies & Leads", "Apps & SaaS"], "top": "Ranked by automation potential, adjusted for novelty vs. recent report"}, {"file": "research/daily-research_2026-08-29.html", "date": "2026-08-29", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-29", "videos": 5, "wt": 1, "mixed": 3, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/playlist-research_2026-08-28.html", "date": "2026-08-28", "kind": "playlist", "title": "Playlist Research — 2026-08-28", "videos": 10, "wt": 3, "mixed": 3, "skip": 4, "avg": null, "tags": ["YouTube & Content", "AI Agents", "Automation"], "top": null}, {"file": "research/daily-research_2026-08-28.html", "date": "2026-08-28", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-28", "videos": 5, "wt": 1, "mixed": 3, "skip": 1, "avg": null, "tags": ["Automation", "E-com & Products", "YouTube & Content"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/daily-research_2026-08-27.html", "date": "2026-08-27", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-27", "videos": 5, "wt": 1, "mixed": 3, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/daily-research_2026-08-26.html", "date": "2026-08-26", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-26", "videos": 5, "wt": 1, "mixed": 4, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/daily-research_2026-08-25.html", "date": "2026-08-25", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-25", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/daily-research_2026-08-24.html", "date": "2026-08-24", "kind": "daily", "title": "Daily YouTube Strategy Research - 2026-08-24", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "Courses & Communities", "YouTube & Content"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/daily-research_2026-08-23.html", "date": "2026-08-23", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-23", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"}, {"file": "research/daily-research_2026-08-22.html", "date": "2026-08-22", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-22", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Boring utility websites (programmatic SEO + ads/freemium)"}, {"file": "research/daily-research_2026-08-21.html", "date": "2026-08-21", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-21", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Boring utility websites (programmatic SEO + ads/freemium)"}, {"file": "research/daily-research_2026-08-20.html", "date": "2026-08-20", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-20", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Boring utility websites (programmatic SEO + ads/freemium)"}, {"file": "research/daily-research_2026-08-19.html", "date": "2026-08-19", "kind": "daily", "title": "Daily YouTube Strategy Research - 2026-08-19", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["YouTube & Content", "Automation", "Agencies & Leads"], "top": "Programmatic-SEO utility websites (converters/calculators/tools)"}, {"file": "research/daily-research_2026-08-18.html", "date": "2026-08-18", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-18", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP word-search books + Merch POD"}, {"file": "research/daily-research_2026-08-17.html", "date": "2026-08-17", "kind": "daily", "title": "Daily YouTube Strategy Research - August 17, 2026", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Courses & Communities"], "top": "Ranked by automation potential (our primary criterion):"}, {"file": "research/daily-research_2026-08-16.html", "date": "2026-08-16", "kind": "daily", "title": "Daily YouTube Strategy Research - August 16, 2026", "videos": 5, "wt": 0, "mixed": 1, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Boring programmatic utility websites (V1)"}, {"file": "research/daily-research_2026-08-15.html", "date": "2026-08-15", "kind": "daily", "title": "Daily YouTube Strategy Research — August 15, 2026", "videos": 5, "wt": 3, "mixed": 1, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "Courses & Communities"], "top": "Boring Niche Utility Websites"}, {"file": "research/daily-research_2026-08-14.html", "date": "2026-08-14", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-14", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Boring Utility Websites (Video 2)"}, {"file": "research/daily-research_2026-08-13.html", "date": "2026-08-13", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-13", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Niche Utility Websites (Video 1)"}, {"file": "research/daily-research_2026-08-12.html", "date": "2026-08-12", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-12", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Boring Utility Websites (Niche Pursuits)"}, {"file": "research/daily-research_2026-08-11.html", "date": "2026-08-11", "kind": "daily", "title": "Daily YouTube Strategy Research — August 11, 2026", "videos": 5, "wt": 2, "mixed": 1, "skip": 2, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "### Ranked by Automation Potential (Highest First)"}, {"file": "research/daily-research_2026-08-10.html", "date": "2026-08-10", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-10", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Ranked by automation potential (primary) and quality score (secondary)"}, {"file": "research/daily-research_2026-08-09.html", "date": "2026-08-09", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-09", "videos": 5, "wt": 2, "mixed": 2, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Boring Niche Tool Websites (Video 1)"}, {"file": "research/daily-research_2026-08-08.html", "date": "2026-08-08", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-08", "videos": 5, "wt": 3, "mixed": 1, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "### Ranked by Automation Potential (Highest First)"}, {"file": "research/daily-research_2026-08-07.html", "date": "2026-08-07", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-07", "videos": 5, "wt": 3, "mixed": 1, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP + Merch on Demand (Greg Gottfried)"}, {"file": "research/daily-research_2026-08-05.html", "date": "2026-08-05", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-05", "videos": 5, "wt": 0, "mixed": 1, "skip": 0, "avg": null, "tags": ["YouTube & Content", "Automation", "Courses & Communities"], "top": null}, {"file": "research/daily-research_2026-08-04.html", "date": "2026-08-04", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-04", "videos": 5, "wt": 2, "mixed": 2, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Niche Utility Websites (Display Ads)"}, {"file": "research/daily-research_2026-08-03.html", "date": "2026-08-03", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-03", "videos": 5, "wt": 3, "mixed": 1, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Growth Marketing (Creator Partnerships) — Iman Gadzhi"}, {"file": "research/daily-research_2026-08-02.html", "date": "2026-08-02", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-02", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Boring Utility/Tool Websites (Video 2)"}, {"file": "research/daily-research_2026-08-01.html", "date": "2026-08-01", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-08-01", "videos": 5, "wt": 0, "mixed": 2, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Boring Utility Websites (Video 2)"}, {"file": "research/daily-research_2026-07-31.html", "date": "2026-07-31", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-31", "videos": 5, "wt": 0, "mixed": 2, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "AI-Fulfilled Creator Product Partnerships (Iman Gadzhi)"}, {"file": "research/daily-research_2026-07-30.html", "date": "2026-07-30", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-30", "videos": 5, "wt": 1, "mixed": 2, "skip": 2, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Amazon KDP + Merch on Demand (Greg Gottfried)"}, {"file": "research/daily-research_2026-07-29.html", "date": "2026-07-29", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-29", "videos": 5, "wt": 3, "mixed": 2, "skip": 0, "avg": null, "tags": ["YouTube & Content", "Automation", "Agencies & Leads"], "top": "Growth Marketing / AI-Powered Creator Partnerships"}, {"file": "research/daily-research_2026-07-28.html", "date": "2026-07-28", "kind": "daily", "title": "Daily YouTube Strategy Research — July 28, 2026", "videos": 5, "wt": 2, "mixed": 3, "skip": 0, "avg": null, "tags": ["YouTube & Content", "Automation", "E-com & Products"], "top": "Boring Niche Utility Websites"}, {"file": "research/daily-research_2026-07-25.html", "date": "2026-07-25", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-25", "videos": 5, "wt": 2, "mixed": 3, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Marketplaces"], "top": "Personalized Jewelry Drop Shipping (Odetta)"}, {"file": "research/daily-research_2026-07-22.html", "date": "2026-07-22", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-22", "videos": 5, "wt": 2, "mixed": 2, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "Courses & Communities"], "top": "Growth Marketing / Creator Partnerships (Iman Gadzhi)"}, {"file": "research/daily-research_2026-07-21.html", "date": "2026-07-21", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-21", "videos": 4, "wt": 1, "mixed": 4, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "AI-Powered Growth Marketing"}, {"file": "research/daily-research_2026-07-20.html", "date": "2026-07-20", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-20", "videos": 5, "wt": 3, "mixed": 2, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Apps & SaaS"], "top": "Micro-SaaS (Bank Statement Converter)"}, {"file": "research/daily-research_2026-07-19.html", "date": "2026-07-19", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-19", "videos": 5, "wt": 1, "mixed": 3, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "Courses & Communities"], "top": "Micro-SaaS (Bank Statement Converter)"}, {"file": "research/daily-research_2026-07-18.html", "date": "2026-07-18", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-18", "videos": 5, "wt": 2, "mixed": 3, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Growth Marketing / Creator Partnerships"}, {"file": "research/daily-research_2026-07-17.html", "date": "2026-07-17", "kind": "daily", "title": "Daily YouTube Strategy Research — July 17, 2026", "videos": 5, "wt": 2, "mixed": 2, "skip": 1, "avg": null, "tags": ["Automation", "Apps & SaaS", "E-com & Products"], "top": "Micro-SaaS (Bank Statement Converter)"}, {"file": "research/daily-research_2026-07-16.html", "date": "2026-07-16", "kind": "daily", "title": "Daily YouTube Strategy Research — July 16, 2026", "videos": 5, "wt": 2, "mixed": 0, "skip": 1, "avg": null, "tags": ["Automation", "YouTube & Content", "Apps & SaaS"], "top": "Micro-SaaS (Single-Feature App)"}, {"file": "research/daily-research_2026-07-14.html", "date": "2026-07-14", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-14", "videos": 5, "wt": 2, "mixed": 2, "skip": 1, "avg": null, "tags": ["Automation", "Apps & SaaS", "E-com & Products"], "top": "Micro-SaaS (Bank Statement Converter)"}, {"file": "research/daily-research_2026-07-13.html", "date": "2026-07-13", "kind": "daily", "title": "Daily YouTube Strategy Research — July 13, 2026", "videos": 5, "wt": 2, "mixed": 3, "skip": 0, "avg": null, "tags": ["Automation", "Agencies & Leads", "E-com & Products"], "top": "AI Automation Agency"}, {"file": "research/daily-research_2026-07-12.html", "date": "2026-07-12", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-12", "videos": 5, "wt": 2, "mixed": 3, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "E-com & Products"], "top": "Creator Growth Marketing (AI Digital Products)"}, {"file": "research/daily-research_2026-07-11.html", "date": "2026-07-11", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-11", "videos": 5, "wt": 4, "mixed": 1, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Courses & Communities"], "top": "Creator Monetization Agency (Iman Gadzhi) — AI-built digital products "}, {"file": "research/daily-research_2026-07-10.html", "date": "2026-07-10", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-10", "videos": 5, "wt": 0, "mixed": 2, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "AI-Powered Digital Product Agency for Creators (Gadzhi)"}, {"file": "research/daily-research_2026-07-09.html", "date": "2026-07-09", "kind": "daily", "title": "Daily YouTube Strategy Research — 2026-07-09", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": ["Automation", "YouTube & Content", "Agencies & Leads"], "top": "Systems-Based Passive Income (digital products, royalties, affiliate)"}, {"file": "research/daily-research_2026-07-03.html", "date": "2026-07-03", "kind": "daily", "title": "Daily YouTube Strategy Research — July 3, 2026", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": [], "top": null}, {"file": "research/daily-research_2026-06-26.html", "date": "2026-06-26", "kind": "daily", "title": "Daily YouTube Strategy Research — June 26, 2026", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": [], "top": null}, {"file": "research/daily-research_2026-06-25.html", "date": "2026-06-25", "kind": "daily", "title": "📊 Daily YouTube Strategy Research — June 25, 2026", "videos": 5, "wt": 0, "mixed": 0, "skip": 0, "avg": null, "tags": [], "top": null}];
+
+var kind='all', tag='', sort='new', q='';
+function chip(txt, cls){ return '<span class="chip '+cls+'">'+txt+'</span>'; }
+function render(){
+  var items = REPORTS.filter(function(r){
+    if(kind!=='all' && r.kind!==kind) return false;
+    if(tag && r.tags.indexOf(tag)===-1) return false;
+    if(q && (r.title+' '+r.date).toLowerCase().indexOf(q)===-1) return false;
+    return true;
+  });
+  items.sort(function(a,b){
+    if(sort==='old') return a.date<b.date?-1:1;
+    if(sort==='videos') return b.videos-a.videos || (a.date<b.date?1:-1);
+    if(sort==='avg') return (b.avg||0)-(a.avg||0) || (a.date<b.date?1:-1);
+    if(sort==='wt') return b.wt-a.wt || (a.date<b.date?1:-1);
+    return a.date>b.date?-1:1;
+  });
+  var html = items.map(function(r){
+    var stats = '';
+    if(r.videos) stats += chip(r.videos+' videos','stat');
+    if(r.wt) stats += chip('&#9989; '+r.wt+' WT','stat wt');
+    if(r.mixed) stats += chip(r.mixed+' mixed','stat');
+    if(r.skip) stats += chip(r.skip+' skip','stat skip');
+    if(r.avg!==null && r.avg!==undefined) stats += chip('avg '+r.avg+'/10','stat');
+    if(r.top) stats += chip('&#127942; '+r.top,'stat');
+    if(!stats) stats = '<span class="chip nostats">summary edition</span>';
+    var tags = r.tags.map(function(t){ return chip(t,'tag'); }).join('');
+    return '<a class="report-item" href="'+r.file+'">'+
+      '<div><div class="report-date">'+r.date+' '+chip(r.kind==='daily'?'&#128197; Daily':'&#127909; Playlist','kind-'+r.kind)+'</div>'+
+      '<div class="report-title">'+r.title+'</div>'+
+      '<div>'+tags+' '+stats+'</div></div>'+
+      '<span class="report-arrow">&rarr;</span></a>';
+  }).join('');
+  document.getElementById('list').innerHTML = html;
+  document.getElementById('empty').style.display = items.length ? 'none' : 'block';
+}
+document.querySelectorAll('.kind-filter').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.querySelectorAll('.kind-filter').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active'); kind=b.dataset.kind; render();
+  });
+});
+document.getElementById('tag-filter').addEventListener('change', function(e){ tag=e.target.value; render(); });
+document.getElementById('sort').addEventListener('change', function(e){ sort=e.target.value; render(); });
+document.getElementById('search').addEventListener('input', function(e){ q=e.target.value.toLowerCase(); render(); });
+render();
+</script>
 </body>
 </html>

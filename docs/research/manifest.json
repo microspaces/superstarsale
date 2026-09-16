@@ -1,479 +1,1414 @@
 {
-  "generated": "2026-09-16 09:08:19",
+  "generated": "2026-09-16 10:32:01",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
       "date": "2026-06-25",
       "title": "📊 Daily YouTube Strategy Research — June 25, 2026",
-      "label": "06-25 Daily"
+      "label": "06-25 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [],
+      "top": null
     },
     {
       "file": "daily-research_2026-06-26.html",
       "date": "2026-06-26",
       "title": "Daily YouTube Strategy Research — June 26, 2026",
-      "label": "06-26 Daily"
+      "label": "06-26 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [],
+      "top": null
     },
     {
       "file": "daily-research_2026-07-03.html",
       "date": "2026-07-03",
       "title": "Daily YouTube Strategy Research — July 3, 2026",
-      "label": "07-03 Daily"
+      "label": "07-03 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [],
+      "top": null
     },
     {
       "file": "daily-research_2026-07-09.html",
       "date": "2026-07-09",
       "title": "Daily YouTube Strategy Research — 2026-07-09",
-      "label": "07-09 Daily"
+      "label": "07-09 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Systems-Based Passive Income (digital products, royalties, affiliate)"
     },
     {
       "file": "daily-research_2026-07-10.html",
       "date": "2026-07-10",
       "title": "Daily YouTube Strategy Research — 2026-07-10",
-      "label": "07-10 Daily"
+      "label": "07-10 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 2,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "AI-Powered Digital Product Agency for Creators (Gadzhi)"
     },
     {
       "file": "daily-research_2026-07-11.html",
       "date": "2026-07-11",
       "title": "Daily YouTube Strategy Research — 2026-07-11",
-      "label": "07-11 Daily"
+      "label": "07-11 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 4,
+      "mixed": 1,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Creator Monetization Agency (Iman Gadzhi) — AI-built digital products "
     },
     {
       "file": "daily-research_2026-07-12.html",
       "date": "2026-07-12",
       "title": "Daily YouTube Strategy Research — 2026-07-12",
-      "label": "07-12 Daily"
+      "label": "07-12 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Creator Growth Marketing (AI Digital Products)"
     },
     {
       "file": "daily-research_2026-07-13.html",
       "date": "2026-07-13",
       "title": "Daily YouTube Strategy Research — July 13, 2026",
-      "label": "07-13 Daily"
+      "label": "07-13 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Agencies & Leads",
+        "E-com & Products"
+      ],
+      "top": "AI Automation Agency"
     },
     {
       "file": "daily-research_2026-07-14.html",
       "date": "2026-07-14",
       "title": "Daily YouTube Strategy Research — 2026-07-14",
-      "label": "07-14 Daily"
+      "label": "07-14 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Apps & SaaS",
+        "E-com & Products"
+      ],
+      "top": "Micro-SaaS (Bank Statement Converter)"
     },
     {
       "file": "daily-research_2026-07-16.html",
       "date": "2026-07-16",
       "title": "Daily YouTube Strategy Research — July 16, 2026",
-      "label": "07-16 Daily"
+      "label": "07-16 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 0,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Apps & SaaS"
+      ],
+      "top": "Micro-SaaS (Single-Feature App)"
     },
     {
       "file": "daily-research_2026-07-17.html",
       "date": "2026-07-17",
       "title": "Daily YouTube Strategy Research — July 17, 2026",
-      "label": "07-17 Daily"
+      "label": "07-17 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Apps & SaaS",
+        "E-com & Products"
+      ],
+      "top": "Micro-SaaS (Bank Statement Converter)"
     },
     {
       "file": "daily-research_2026-07-18.html",
       "date": "2026-07-18",
       "title": "Daily YouTube Strategy Research — 2026-07-18",
-      "label": "07-18 Daily"
+      "label": "07-18 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Growth Marketing / Creator Partnerships"
     },
     {
       "file": "daily-research_2026-07-19.html",
       "date": "2026-07-19",
       "title": "Daily YouTube Strategy Research — 2026-07-19",
-      "label": "07-19 Daily"
+      "label": "07-19 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Micro-SaaS (Bank Statement Converter)"
     },
     {
       "file": "daily-research_2026-07-20.html",
       "date": "2026-07-20",
       "title": "Daily YouTube Strategy Research — 2026-07-20",
-      "label": "07-20 Daily"
+      "label": "07-20 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 2,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Apps & SaaS"
+      ],
+      "top": "Micro-SaaS (Bank Statement Converter)"
     },
     {
       "file": "daily-research_2026-07-21.html",
       "date": "2026-07-21",
       "title": "Daily YouTube Strategy Research — 2026-07-21",
-      "label": "07-21 Daily"
+      "label": "07-21 Daily",
+      "kind": "daily",
+      "videos": 4,
+      "wt": 1,
+      "mixed": 4,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "AI-Powered Growth Marketing"
     },
     {
       "file": "daily-research_2026-07-22.html",
       "date": "2026-07-22",
       "title": "Daily YouTube Strategy Research — 2026-07-22",
-      "label": "07-22 Daily"
+      "label": "07-22 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Growth Marketing / Creator Partnerships (Iman Gadzhi)"
     },
     {
       "file": "daily-research_2026-07-25.html",
       "date": "2026-07-25",
       "title": "Daily YouTube Strategy Research — 2026-07-25",
-      "label": "07-25 Daily"
+      "label": "07-25 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Marketplaces"
+      ],
+      "top": "Personalized Jewelry Drop Shipping (Odetta)"
     },
     {
       "file": "daily-research_2026-07-28.html",
       "date": "2026-07-28",
       "title": "Daily YouTube Strategy Research — July 28, 2026",
-      "label": "07-28 Daily"
+      "label": "07-28 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "E-com & Products"
+      ],
+      "top": "Boring Niche Utility Websites"
     },
     {
       "file": "daily-research_2026-07-29.html",
       "date": "2026-07-29",
       "title": "Daily YouTube Strategy Research — 2026-07-29",
-      "label": "07-29 Daily"
+      "label": "07-29 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 2,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Agencies & Leads"
+      ],
+      "top": "Growth Marketing / AI-Powered Creator Partnerships"
     },
     {
       "file": "daily-research_2026-07-30.html",
       "date": "2026-07-30",
       "title": "Daily YouTube Strategy Research — 2026-07-30",
-      "label": "07-30 Daily"
+      "label": "07-30 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 2,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP + Merch on Demand (Greg Gottfried)"
     },
     {
       "file": "daily-research_2026-07-31.html",
       "date": "2026-07-31",
       "title": "Daily YouTube Strategy Research — 2026-07-31",
-      "label": "07-31 Daily"
+      "label": "07-31 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 2,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "AI-Fulfilled Creator Product Partnerships (Iman Gadzhi)"
     },
     {
       "file": "daily-research_2026-08-01.html",
       "date": "2026-08-01",
       "title": "Daily YouTube Strategy Research — 2026-08-01",
-      "label": "08-01 Daily"
+      "label": "08-01 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 2,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Boring Utility Websites (Video 2)"
     },
     {
       "file": "daily-research_2026-08-02.html",
       "date": "2026-08-02",
       "title": "Daily YouTube Strategy Research — 2026-08-02",
-      "label": "08-02 Daily"
+      "label": "08-02 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Boring Utility/Tool Websites (Video 2)"
     },
     {
       "file": "daily-research_2026-08-03.html",
       "date": "2026-08-03",
       "title": "Daily YouTube Strategy Research — 2026-08-03",
-      "label": "08-03 Daily"
+      "label": "08-03 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 1,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Growth Marketing (Creator Partnerships) — Iman Gadzhi"
     },
     {
       "file": "daily-research_2026-08-04.html",
       "date": "2026-08-04",
       "title": "Daily YouTube Strategy Research — 2026-08-04",
-      "label": "08-04 Daily"
+      "label": "08-04 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Niche Utility Websites (Display Ads)"
     },
     {
       "file": "daily-research_2026-08-05.html",
       "date": "2026-08-05",
       "title": "Daily YouTube Strategy Research — 2026-08-05",
-      "label": "08-05 Daily"
+      "label": "08-05 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 1,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Courses & Communities"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-08-07.html",
       "date": "2026-08-07",
       "title": "Daily YouTube Strategy Research — 2026-08-07",
-      "label": "08-07 Daily"
+      "label": "08-07 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 1,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP + Merch on Demand (Greg Gottfried)"
     },
     {
       "file": "daily-research_2026-08-08.html",
       "date": "2026-08-08",
       "title": "Daily YouTube Strategy Research — 2026-08-08",
-      "label": "08-08 Daily"
+      "label": "08-08 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 1,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "### Ranked by Automation Potential (Highest First)"
     },
     {
       "file": "daily-research_2026-08-09.html",
       "date": "2026-08-09",
       "title": "Daily YouTube Strategy Research — 2026-08-09",
-      "label": "08-09 Daily"
+      "label": "08-09 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Boring Niche Tool Websites (Video 1)"
     },
     {
       "file": "daily-research_2026-08-10.html",
       "date": "2026-08-10",
       "title": "Daily YouTube Strategy Research — 2026-08-10",
-      "label": "08-10 Daily"
+      "label": "08-10 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Ranked by automation potential (primary) and quality score (secondary)"
     },
     {
       "file": "daily-research_2026-08-11.html",
       "date": "2026-08-11",
       "title": "Daily YouTube Strategy Research — August 11, 2026",
-      "label": "08-11 Daily"
+      "label": "08-11 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 1,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "### Ranked by Automation Potential (Highest First)"
     },
     {
       "file": "daily-research_2026-08-12.html",
       "date": "2026-08-12",
       "title": "Daily YouTube Strategy Research — 2026-08-12",
-      "label": "08-12 Daily"
+      "label": "08-12 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Boring Utility Websites (Niche Pursuits)"
     },
     {
       "file": "daily-research_2026-08-13.html",
       "date": "2026-08-13",
       "title": "Daily YouTube Strategy Research — 2026-08-13",
-      "label": "08-13 Daily"
+      "label": "08-13 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Niche Utility Websites (Video 1)"
     },
     {
       "file": "daily-research_2026-08-14.html",
       "date": "2026-08-14",
       "title": "Daily YouTube Strategy Research — 2026-08-14",
-      "label": "08-14 Daily"
+      "label": "08-14 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Boring Utility Websites (Video 2)"
     },
     {
       "file": "daily-research_2026-08-15.html",
       "date": "2026-08-15",
       "title": "Daily YouTube Strategy Research — August 15, 2026",
-      "label": "08-15 Daily"
+      "label": "08-15 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 1,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Boring Niche Utility Websites"
     },
     {
       "file": "daily-research_2026-08-16.html",
       "date": "2026-08-16",
       "title": "Daily YouTube Strategy Research - August 16, 2026",
-      "label": "08-16 Daily"
+      "label": "08-16 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 1,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Boring programmatic utility websites (V1)"
     },
     {
       "file": "daily-research_2026-08-17.html",
       "date": "2026-08-17",
       "title": "Daily YouTube Strategy Research - August 17, 2026",
-      "label": "08-17 Daily"
+      "label": "08-17 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Ranked by automation potential (our primary criterion):"
     },
     {
       "file": "daily-research_2026-08-18.html",
       "date": "2026-08-18",
       "title": "Daily YouTube Strategy Research — 2026-08-18",
-      "label": "08-18 Daily"
+      "label": "08-18 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP word-search books + Merch POD"
     },
     {
       "file": "daily-research_2026-08-19.html",
       "date": "2026-08-19",
       "title": "Daily YouTube Strategy Research - 2026-08-19",
-      "label": "08-19 Daily"
+      "label": "08-19 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Agencies & Leads"
+      ],
+      "top": "Programmatic-SEO utility websites (converters/calculators/tools)"
     },
     {
       "file": "daily-research_2026-08-20.html",
       "date": "2026-08-20",
       "title": "Daily YouTube Strategy Research — 2026-08-20",
-      "label": "08-20 Daily"
+      "label": "08-20 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Boring utility websites (programmatic SEO + ads/freemium)"
     },
     {
       "file": "daily-research_2026-08-21.html",
       "date": "2026-08-21",
       "title": "Daily YouTube Strategy Research — 2026-08-21",
-      "label": "08-21 Daily"
+      "label": "08-21 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Boring utility websites (programmatic SEO + ads/freemium)"
     },
     {
       "file": "daily-research_2026-08-22.html",
       "date": "2026-08-22",
       "title": "Daily YouTube Strategy Research — 2026-08-22",
-      "label": "08-22 Daily"
+      "label": "08-22 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Boring utility websites (programmatic SEO + ads/freemium)"
     },
     {
       "file": "daily-research_2026-08-23.html",
       "date": "2026-08-23",
       "title": "Daily YouTube Strategy Research — 2026-08-23",
-      "label": "08-23 Daily"
+      "label": "08-23 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "daily-research_2026-08-24.html",
       "date": "2026-08-24",
       "title": "Daily YouTube Strategy Research - 2026-08-24",
-      "label": "08-24 Daily"
+      "label": "08-24 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Courses & Communities",
+        "YouTube & Content"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "daily-research_2026-08-25.html",
       "date": "2026-08-25",
       "title": "Daily YouTube Strategy Research — 2026-08-25",
-      "label": "08-25 Daily"
+      "label": "08-25 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "daily-research_2026-08-26.html",
       "date": "2026-08-26",
       "title": "Daily YouTube Strategy Research — 2026-08-26",
-      "label": "08-26 Daily"
+      "label": "08-26 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 4,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "daily-research_2026-08-27.html",
       "date": "2026-08-27",
       "title": "Daily YouTube Strategy Research — 2026-08-27",
-      "label": "08-27 Daily"
+      "label": "08-27 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "daily-research_2026-08-28.html",
       "date": "2026-08-28",
       "title": "Daily YouTube Strategy Research — 2026-08-28",
-      "label": "08-28 Daily"
+      "label": "08-28 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "E-com & Products",
+        "YouTube & Content"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "playlist-research_2026-08-28.html",
       "date": "2026-08-28",
       "title": "Playlist Research — 2026-08-28",
-      "label": "08-28 Playlist"
+      "label": "08-28 Playlist",
+      "kind": "playlist",
+      "videos": 10,
+      "wt": 3,
+      "mixed": 3,
+      "skip": 4,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "AI Agents",
+        "Automation"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-08-29.html",
       "date": "2026-08-29",
       "title": "Daily YouTube Strategy Research — 2026-08-29",
-      "label": "08-29 Daily"
+      "label": "08-29 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
     },
     {
       "file": "daily-research_2026-08-30.html",
       "date": "2026-08-30",
       "title": "Daily YouTube Strategy Research — 2026-08-30",
-      "label": "08-30 Daily"
+      "label": "08-30 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 1,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Agencies & Leads",
+        "Apps & SaaS"
+      ],
+      "top": "Ranked by automation potential, adjusted for novelty vs. recent report"
     },
     {
       "file": "daily-research_2026-08-31.html",
       "date": "2026-08-31",
       "title": "Daily YouTube Strategy Research — 2026-08-31",
-      "label": "08-31 Daily"
+      "label": "08-31 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 1,
+      "skip": 3,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Courses & Communities",
+        "YouTube & Content"
+      ],
+      "top": "Ranked by automation potential, adjusted for novelty vs. recent report"
     },
     {
       "file": "playlist-research_2026-08-31.html",
       "date": "2026-08-31",
       "title": "Playlist Research — 2026-08-31",
-      "label": "08-31 Playlist"
+      "label": "08-31 Playlist",
+      "kind": "playlist",
+      "videos": 13,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "Courses & Communities"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-09-01.html",
       "date": "2026-09-01",
       "title": "Daily YouTube Strategy Research — 2026-09-01",
-      "label": "09-01 Daily"
+      "label": "09-01 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 1,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Ranked by automation potential, discounting repeated coverage (SMMA/ag"
     },
     {
       "file": "playlist-research_2026-09-01.html",
       "date": "2026-09-01",
       "title": "Playlist Research — 2026-09-01",
-      "label": "09-01 Playlist"
+      "label": "09-01 Playlist",
+      "kind": "playlist",
+      "videos": 3,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Courses & Communities"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-09-02.html",
       "date": "2026-09-02",
       "title": "Daily YouTube Strategy Research — 2026-09-02",
-      "label": "09-02 Daily"
+      "label": "09-02 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": 3.8,
+      "tags": [
+        "Automation",
+        "Courses & Communities",
+        "E-com & Products"
+      ],
+      "top": "Vending Machine Route with Real Costs — Profitopsy (7/10)"
     },
     {
       "file": "daily-research_2026-09-03.html",
       "date": "2026-09-03",
       "title": "Daily YouTube Strategy Research — 2026-09-03",
-      "label": "09-03 Daily"
+      "label": "09-03 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": 5.6,
+      "tags": [
+        "Automation",
+        "Agencies & Leads",
+        "E-com & Products"
+      ],
+      "top": "AI Websites for Local Businesses — The Savvy Couple (7/10)"
     },
     {
       "file": "playlist-research_2026-09-03.html",
       "date": "2026-09-03",
       "title": "Playlist Research — 2026-09-03",
-      "label": "09-03 Playlist"
+      "label": "09-03 Playlist",
+      "kind": "playlist",
+      "videos": 10,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Automation"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-09-04.html",
       "date": "2026-09-04",
       "title": "Daily YouTube Strategy Research - 2026-09-04 (Backfill)",
-      "label": "09-04 Daily"
+      "label": "09-04 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 1,
+      "skip": 1,
+      "avg": 4.6,
+      "tags": [
+        "E-com & Products",
+        "Automation",
+        "AI Agents"
+      ],
+      "top": "Niche-Focused Etsy POD with Ads-Driven Doubling Down - Taylor Posada (7/10)"
     },
     {
       "file": "playlist-research_2026-09-04.html",
       "date": "2026-09-04",
       "title": "Playlist Research — 2026-09-04",
-      "label": "09-04 Playlist"
+      "label": "09-04 Playlist",
+      "kind": "playlist",
+      "videos": 9,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "Courses & Communities"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-09-05.html",
       "date": "2026-09-05",
       "title": "Daily YouTube Strategy Research — 2026-09-05",
-      "label": "09-05 Daily"
+      "label": "09-05 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": 7.0,
+      "tags": [
+        "YouTube & Content",
+        "Agencies & Leads",
+        "Automation"
+      ],
+      "top": "Faceless YouTube Format-Cloning Playbook — vidIQ (8/10)"
     },
     {
       "file": "playlist-research_2026-09-05.html",
       "date": "2026-09-05",
       "title": "Playlist Research — 2026-09-05",
-      "label": "09-05 Playlist"
+      "label": "09-05 Playlist",
+      "kind": "playlist",
+      "videos": 11,
+      "wt": 0,
+      "mixed": 0,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "YouTube & Content"
+      ],
+      "top": null
     },
     {
       "file": "daily-research_2026-09-06.html",
       "date": "2026-09-06",
       "title": "Daily YouTube Strategy Research - 2026-09-06 (Backfill)",
-      "label": "09-06 Daily"
+      "label": "09-06 Daily",
+      "kind": "daily",
+      "videos": 4,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 1,
+      "avg": 3.5,
+      "tags": [
+        "Automation",
+        "Courses & Communities"
+      ],
+      "top": "Airbnb Rental Arbitrage (5-bedroom, corporate-guest niche) - BEHIND TH (5/10)"
     },
     {
       "file": "daily-research_2026-09-07.html",
       "date": "2026-09-07",
       "title": "Daily YouTube Strategy Research - 2026-09-07",
-      "label": "09-07 Daily"
+      "label": "09-07 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 3,
+      "mixed": 2,
+      "skip": 1,
+      "avg": 6.0,
+      "tags": [
+        "Automation",
+        "AI Agents",
+        "YouTube & Content"
+      ],
+      "top": "SMB Marketing, Cybersecurity & AI Toolkit (Panel) - Texas Economic Dev (8/10)"
     },
     {
       "file": "playlist-research_2026-09-07.html",
       "date": "2026-09-07",
       "title": "Playlist Research — 2026-09-07",
-      "label": "09-07 Playlist"
+      "label": "09-07 Playlist",
+      "kind": "playlist",
+      "videos": 10,
+      "wt": 2,
+      "mixed": 6,
+      "skip": 2,
+      "avg": 5.4,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "AI Agents"
+      ],
+      "top": "Casey Builds Stuff — \"Reviewing crappy rip offs of my successful app\"  (9/10)"
     },
     {
       "file": "daily-research_2026-09-08.html",
       "date": "2026-09-08",
       "title": "Daily YouTube Strategy Research — 2026-09-08",
-      "label": "09-08 Daily"
+      "label": "09-08 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 1,
+      "skip": 2,
+      "avg": 7.0,
+      "tags": [
+        "Courses & Communities",
+        "Automation",
+        "Apps & SaaS"
+      ],
+      "top": "Business Model Canvas (Strategyzer) (7/10)"
     },
     {
       "file": "daily-research_2026-09-09.html",
       "date": "2026-09-09",
       "title": "Daily YouTube Strategy Research — 2026-09-09 (Recovery Publication)",
-      "label": "09-09 Daily"
+      "label": "09-09 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
+      "avg": 5.4,
+      "tags": [
+        "Agencies & Leads",
+        "E-com & Products",
+        "Automation"
+      ],
+      "top": "Print on Demand With a LIVE Store (Meg Heckman) — POD / owned brand (8/10)"
     },
     {
       "file": "playlist-research_2026-09-09.html",
       "date": "2026-09-09",
       "title": "Playlist Research — 2026-09-09",
-      "label": "09-09 Playlist"
+      "label": "09-09 Playlist",
+      "kind": "playlist",
+      "videos": 16,
+      "wt": 10,
+      "mixed": 6,
+      "skip": 0,
+      "avg": 6.6,
+      "tags": [
+        "Automation",
+        "AI Agents",
+        "YouTube & Content"
+      ],
+      "top": "a16z — \"AI Agents Could Finally Reinvent the Credit Card\" (VC thesis) (9/10)"
     },
     {
       "file": "daily-research_2026-09-10.html",
       "date": "2026-09-10",
       "title": "Daily YouTube Strategy Research — 2026-09-10 (Recovery Publication)",
-      "label": "09-10 Daily"
+      "label": "09-10 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": 6.8,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Apps & SaaS"
+      ],
+      "top": "First 6 Months of YouTube Monetization (Caleb Bale) — creator monetiza (8/10)"
     },
     {
       "file": "playlist-research_2026-09-10.html",
       "date": "2026-09-10",
       "title": "Playlist Research — 2026-09-10",
-      "label": "09-10 Playlist"
+      "label": "09-10 Playlist",
+      "kind": "playlist",
+      "videos": 6,
+      "wt": 2,
+      "mixed": 4,
+      "skip": 0,
+      "avg": 4.5,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "WebMCP — Let AI Agents Pay You Money (agent infrastructure) (7/10)"
     },
     {
       "file": "daily-research_2026-09-11.html",
       "date": "2026-09-11",
       "title": "Daily YouTube Strategy Research — 2026-09-11 (Recovery Publication)",
-      "label": "09-11 Daily"
+      "label": "09-11 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 4,
+      "skip": 1,
+      "avg": 5.2,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "Marketplaces"
+      ],
+      "top": "Pick a Profitable Agency Niche (The Futur) — positioning strategy (7/10)"
     },
     {
       "file": "playlist-research_2026-09-11.html",
       "date": "2026-09-11",
       "title": "Playlist Research — 2026-09-11",
-      "label": "09-11 Playlist"
+      "label": "09-11 Playlist",
+      "kind": "playlist",
+      "videos": 28,
+      "wt": 4,
+      "mixed": 10,
+      "skip": 2,
+      "avg": 4.2,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Automation"
+      ],
+      "top": "Nas Daily — \"Nas Daily's AI (nas.com)\" (7/10)"
     },
     {
       "file": "daily-research_2026-09-12.html",
       "date": "2026-09-12",
       "title": "Daily YouTube Money-Making Strategy Research — 2026-09-12",
-      "label": "09-12 Daily"
+      "label": "09-12 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Marketplaces",
+        "YouTube & Content"
+      ],
+      "top": "Sell Software for $10k/Mo (Audate)"
     },
     {
       "file": "playlist-research_2026-09-12.html",
       "date": "2026-09-12",
       "title": "Playlist Research — 2026-09-12",
-      "label": "09-12 Playlist"
+      "label": "09-12 Playlist",
+      "kind": "playlist",
+      "videos": 16,
+      "wt": 8,
+      "mixed": 8,
+      "skip": 0,
+      "avg": 6.5,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "fal Podcast (Sophia Xing) — \"AI Microdrama Economics\" (8.5/10)"
     },
     {
       "file": "daily-research_2026-09-13.html",
       "date": "2026-09-13",
       "title": "Daily YouTube Strategy Research — 2026-09-13",
-      "label": "09-13 Daily"
+      "label": "09-13 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 4,
+      "skip": 0,
+      "avg": 5.2,
+      "tags": [
+        "Courses & Communities",
+        "Marketplaces",
+        "Automation"
+      ],
+      "top": "Keith AI — \"7 AI Tools I use as a Solopreneur to 10x my productivity\" (8/10)"
     },
     {
       "file": "daily-research_2026-09-14.html",
       "date": "2026-09-14",
       "title": "Daily YouTube Money-Making Strategy Research — 2026-09-14",
-      "label": "09-14 Daily"
+      "label": "09-14 Daily",
+      "kind": "daily",
+      "videos": 8,
+      "wt": 3,
+      "mixed": 3,
+      "skip": 3,
+      "avg": 4.6,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "Stop Trading Time for Money: Productize Your Consulting"
     },
     {
       "file": "daily-research_2026-09-15.html",
       "date": "2026-09-15",
       "title": "Daily YouTube Money-Making Strategy Research — 2026-09-15",
-      "label": "09-15 Daily"
+      "label": "09-15 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": 4.0,
+      "tags": [
+        "E-com & Products",
+        "Marketplaces",
+        "Automation"
+      ],
+      "top": "Paid Discord AI onboarding/salescloser (UnityXpert)"
     },
     {
       "file": "playlist-research_2026-09-15.html",
       "date": "2026-09-15",
       "title": "Playlist Research — 2026-09-15",
-      "label": "09-15 Playlist"
+      "label": "09-15 Playlist",
+      "kind": "playlist",
+      "videos": 21,
+      "wt": 11,
+      "mixed": 7,
+      "skip": 3,
+      "avg": 6.3,
+      "tags": [
+        "YouTube & Content",
+        "Roblox",
+        "AI Agents"
+      ],
+      "top": "App Masters — \"$800K ARR App With Simple Strategies\" (8.5/10)"
     },
     {
       "file": "daily-research_2026-09-16.html",
       "date": "2026-09-16",
       "title": "Daily YouTube Money-Making Strategy Research — 2026-09-16",
-      "label": "09-16 Daily"
+      "label": "09-16 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": 5.0,
+      "tags": [
+        "Automation",
+        "Agencies & Leads",
+        "YouTube & Content"
+      ],
+      "top": "Selling AI Receptionists To Local Businesses"
     }
   ]
 }
