@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-money-making-strategy-research-2026-09-17">Daily YouTube Money-Making Strategy Research — 2026-09-17</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-top-10-automated-business-ideas-that-will-dominate-2026-new-business-ideas-9754-views">1) Top 10 Automated Business Ideas That Will DOMINATE 2026 — New Business Ideas (9,754 views)</a></li><li class="toc-h2"><a href="#2-how-id-start-in-real-estate-in-2026-if-i-had-to-start-over-pace-morby-273679-views">2) How I&#x27;d Start in Real Estate in 2026 (If I Had to Start Over) — Pace Morby (273,679 views)</a></li><li class="toc-h2"><a href="#3-19-automated-business-ideas-to-make-money-in-your-sleep-2026-side-hustle-nation-2482-views">3) 19 Automated Business Ideas to Make Money in Your Sleep (2026) — Side Hustle Nation (2,482 views)</a></li><li class="toc-h2"><a href="#4-how-to-make-money-on-x-twitter-in-2026-x-monetization-explained-mr-money-1615-views">4) How to Make Money on X (Twitter) in 2026: X Monetization Explained — Mr. Money (1,615 views)</a></li><li class="toc-h2"><a href="#5-how-i-built-a-7-figure-productized-offer-and-escaped-agency-life-greg-hickman-1100-views">5) How I Built a 7-Figure Productized Offer (and Escaped Agency Life) — Greg Hickman (1,100 views)</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
