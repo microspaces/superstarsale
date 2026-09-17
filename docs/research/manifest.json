@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-16 10:32:01",
+  "generated": "2026-09-16 18:26:52",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -13,7 +13,8 @@
       "skip": 0,
       "avg": null,
       "tags": [],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-06-26.html",
@@ -27,7 +28,8 @@
       "skip": 0,
       "avg": null,
       "tags": [],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-07-03.html",
@@ -41,7 +43,8 @@
       "skip": 0,
       "avg": null,
       "tags": [],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-07-09.html",
@@ -50,8 +53,8 @@
       "label": "07-09 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
+      "wt": 2,
+      "mixed": 3,
       "skip": 0,
       "avg": null,
       "tags": [
@@ -59,7 +62,17 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Systems-Based Passive Income (digital products, royalties, affiliate)"
+      "top": "Systems-Based Passive Income (digital products, royalties, affiliate)",
+      "wt_titles": [
+        {
+          "t": "Growth Marketing — AI-Powered Digital Product Agency for Creators (Ima",
+          "s": null
+        },
+        {
+          "t": "Systems-Based Passive Income Businesses (Harry's Stealth Wealth)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-10.html",
@@ -68,7 +81,7 @@
       "label": "07-10 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
+      "wt": 3,
       "mixed": 2,
       "skip": 0,
       "avg": null,
@@ -77,7 +90,21 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "AI-Powered Digital Product Agency for Creators (Gadzhi)"
+      "top": "AI-Powered Digital Product Agency for Creators (Gadzhi)",
+      "wt_titles": [
+        {
+          "t": "Alex Hormozi — \"If I Started A Business in 2026, I'd Do This\"",
+          "s": null
+        },
+        {
+          "t": "Iman Gadzhi — \"Best Online Business to Make $10k+/month In 2026\"",
+          "s": null
+        },
+        {
+          "t": "Elyse Breanne Design — \"How I Started My Sticker Business\"",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-11.html",
@@ -95,7 +122,25 @@
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "Creator Monetization Agency (Iman Gadzhi) — AI-built digital products "
+      "top": "Creator Monetization Agency (Iman Gadzhi) — AI-built digital products ",
+      "wt_titles": [
+        {
+          "t": "Ali Abdaal — \"4 Steps to Making $10,000/Month in Your First Business\"",
+          "s": null
+        },
+        {
+          "t": "Iman Gadzhi — \"Best Online Business to Make $10k+/month In 2026 (Begin",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth — \"7 Businesses That Make Money While You Sleep",
+          "s": null
+        },
+        {
+          "t": "Odetta Rockhead — \"This Online Business Model Generates Up to $35,000/",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-12.html",
@@ -113,7 +158,17 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Creator Growth Marketing (AI Digital Products)"
+      "top": "Creator Growth Marketing (AI Digital Products)",
+      "wt_titles": [
+        {
+          "t": "Creator Growth Marketing (Iman Gadzhi)",
+          "s": null
+        },
+        {
+          "t": "7 Automated Businesses (Harry's Stealth Wealth)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-13.html",
@@ -131,7 +186,17 @@
         "Agencies & Leads",
         "E-com & Products"
       ],
-      "top": "AI Automation Agency"
+      "top": "AI Automation Agency",
+      "wt_titles": [
+        {
+          "t": "Iman Gadzhi — \"Best Online Business to Make $10k+/month In 2026\"",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth — \"7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-14.html",
@@ -149,7 +214,17 @@
         "Apps & SaaS",
         "E-com & Products"
       ],
-      "top": "Micro-SaaS (Bank Statement Converter)"
+      "top": "Micro-SaaS (Bank Statement Converter)",
+      "wt_titles": [
+        {
+          "t": "Micro-SaaS: Bank Statement Converter",
+          "s": null
+        },
+        {
+          "t": "Passive Income Systems (Sleep Businesses)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-16.html",
@@ -159,7 +234,7 @@
       "kind": "daily",
       "videos": 5,
       "wt": 2,
-      "mixed": 0,
+      "mixed": 2,
       "skip": 1,
       "avg": null,
       "tags": [
@@ -167,7 +242,17 @@
         "YouTube & Content",
         "Apps & SaaS"
       ],
-      "top": "Micro-SaaS (Single-Feature App)"
+      "top": "Micro-SaaS (Single-Feature App)",
+      "wt_titles": [
+        {
+          "t": "Micro-SaaS / Single-Feature Web App",
+          "s": null
+        },
+        {
+          "t": "Passive Income Systems (ATM, Vending, Digital Products, Self-Storage)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-17.html",
@@ -185,7 +270,17 @@
         "Apps & SaaS",
         "E-com & Products"
       ],
-      "top": "Micro-SaaS (Bank Statement Converter)"
+      "top": "Micro-SaaS (Bank Statement Converter)",
+      "wt_titles": [
+        {
+          "t": "Micro-SaaS: Bank Statement Converter",
+          "s": null
+        },
+        {
+          "t": "Passive Income Systems: ATM / Vending / Laundromat / Self-Storage",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-18.html",
@@ -203,7 +298,17 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Growth Marketing / Creator Partnerships"
+      "top": "Growth Marketing / Creator Partnerships",
+      "wt_titles": [
+        {
+          "t": "Growth Marketing / Creator Partnerships (Iman Gadzhi)",
+          "s": null
+        },
+        {
+          "t": "Passive Income Systems (Harry's Stealth Wealth)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-19.html",
@@ -221,7 +326,13 @@
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "Micro-SaaS (Bank Statement Converter)"
+      "top": "Micro-SaaS (Bank Statement Converter)",
+      "wt_titles": [
+        {
+          "t": "I make $40K/month with this one website (Starter Story)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-20.html",
@@ -239,7 +350,21 @@
         "YouTube & Content",
         "Apps & SaaS"
       ],
-      "top": "Micro-SaaS (Bank Statement Converter)"
+      "top": "Micro-SaaS (Bank Statement Converter)",
+      "wt_titles": [
+        {
+          "t": "Micro-SaaS / Bank Statement Converter",
+          "s": null
+        },
+        {
+          "t": "Outbound Sales Development (SDR) System",
+          "s": null
+        },
+        {
+          "t": "High-Ticket Sales Framework",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-21.html",
@@ -257,7 +382,13 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "AI-Powered Growth Marketing"
+      "top": "AI-Powered Growth Marketing",
+      "wt_titles": [
+        {
+          "t": "AI-Powered Growth Marketing (Creator Digital Products)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-22.html",
@@ -275,7 +406,17 @@
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "Growth Marketing / Creator Partnerships (Iman Gadzhi)"
+      "top": "Growth Marketing / Creator Partnerships (Iman Gadzhi)",
+      "wt_titles": [
+        {
+          "t": "Iman Gadzhi — Growth Marketing / Creator Partnerships",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth — 7 Sleep Income Businesses",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-25.html",
@@ -293,7 +434,17 @@
         "YouTube & Content",
         "Marketplaces"
       ],
-      "top": "Personalized Jewelry Drop Shipping (Odetta)"
+      "top": "Personalized Jewelry Drop Shipping (Odetta)",
+      "wt_titles": [
+        {
+          "t": "Odetta Rockhead — \"This Online Business Model Generates Up to $35,000/",
+          "s": null
+        },
+        {
+          "t": "Kai Davis — \"The Outbound System Behind $478K in One Quarter\"",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-28.html",
@@ -311,7 +462,17 @@
         "Automation",
         "E-com & Products"
       ],
-      "top": "Boring Niche Utility Websites"
+      "top": "Boring Niche Utility Websites",
+      "wt_titles": [
+        {
+          "t": "7 Passive Income Ideas - How I Make $2,000+ Per Day!",
+          "s": null
+        },
+        {
+          "t": "How This \"BORING\" Website Makes $35,000/Month!",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-29.html",
@@ -329,7 +490,21 @@
         "Automation",
         "Agencies & Leads"
       ],
-      "top": "Growth Marketing / AI-Powered Creator Partnerships"
+      "top": "Growth Marketing / AI-Powered Creator Partnerships",
+      "wt_titles": [
+        {
+          "t": "Growth Marketing / Creator Partnerships (AI-Powered Digital Products)",
+          "s": null
+        },
+        {
+          "t": "Personalized Jewelry Dropshipping (Emotion-Driven E-Commerce)",
+          "s": null
+        },
+        {
+          "t": "High-Ticket Outbound Sales (Setter/SDR System)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-30.html",
@@ -347,7 +522,13 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP + Merch on Demand (Greg Gottfried)"
+      "top": "Amazon KDP + Merch on Demand (Greg Gottfried)",
+      "wt_titles": [
+        {
+          "t": "Greg Gottfried — \"7 Passive Income Ideas\"",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-07-31.html",
@@ -356,7 +537,7 @@
       "label": "07-31 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
+      "wt": 2,
       "mixed": 2,
       "skip": 1,
       "avg": null,
@@ -365,7 +546,17 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "AI-Fulfilled Creator Product Partnerships (Iman Gadzhi)"
+      "top": "AI-Fulfilled Creator Product Partnerships (Iman Gadzhi)",
+      "wt_titles": [
+        {
+          "t": "Creator Gold Rush — AI-Fulfilled Digital Product Partnerships (Iman Ga",
+          "s": null
+        },
+        {
+          "t": "High-Ticket Outbound Sales System (Kai Davis)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-01.html",
@@ -374,16 +565,26 @@
       "label": "08-01 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
+      "wt": 2,
       "mixed": 2,
-      "skip": 0,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Boring Utility Websites (Video 2)"
+      "top": "Boring Utility Websites (Video 2)",
+      "wt_titles": [
+        {
+          "t": "Boring Utility Websites (Niche Pursuits)",
+          "s": null
+        },
+        {
+          "t": "7 Sleep Income Businesses (Harry's Stealth Wealth)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-02.html",
@@ -392,16 +593,26 @@
       "label": "08-02 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 1,
+      "skip": 2,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Boring Utility/Tool Websites (Video 2)"
+      "top": "Boring Utility/Tool Websites (Video 2)",
+      "wt_titles": [
+        {
+          "t": "7 Passive Income Ideas - How I Make $2,000+ Per Day!",
+          "s": null
+        },
+        {
+          "t": "How This \"BORING\" Website Makes $35,000/Month!",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-03.html",
@@ -419,7 +630,21 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Growth Marketing (Creator Partnerships) — Iman Gadzhi"
+      "top": "Growth Marketing (Creator Partnerships) — Iman Gadzhi",
+      "wt_titles": [
+        {
+          "t": "Greg Gottfried — 7 Passive Income Ideas ($2,000+/Day)",
+          "s": null
+        },
+        {
+          "t": "Iman Gadzhi — Best Online Business to Make $10k+/month (Growth Marketi",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth — 7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-04.html",
@@ -437,7 +662,17 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Niche Utility Websites (Display Ads)"
+      "top": "Niche Utility Websites (Display Ads)",
+      "wt_titles": [
+        {
+          "t": "Niche Utility Websites (Display Ads) — \"BORING\" Website Makes $35,000/",
+          "s": null
+        },
+        {
+          "t": "Systems-Based Passive Income Businesses — 7 Businesses That Make Money",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-05.html",
@@ -455,7 +690,8 @@
         "Automation",
         "Courses & Communities"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-08-07.html",
@@ -473,7 +709,21 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP + Merch on Demand (Greg Gottfried)"
+      "top": "Amazon KDP + Merch on Demand (Greg Gottfried)",
+      "wt_titles": [
+        {
+          "t": "7 Passive Income Ideas — Greg Gottfried",
+          "s": null
+        },
+        {
+          "t": "Best Online Business to Make $10k+/month — Iman Gadzhi",
+          "s": null
+        },
+        {
+          "t": "7 Businesses That Make Money While You Sleep — Harry's Stealth Wealth",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-08.html",
@@ -491,7 +741,21 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "### Ranked by Automation Potential (Highest First)"
+      "top": "### Ranked by Automation Potential (Highest First)",
+      "wt_titles": [
+        {
+          "t": "Greg Gottfried — 7 Passive Income Ideas",
+          "s": null
+        },
+        {
+          "t": "Iman Gadzhi — Best Online Business to Make $10k+/month",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth — 7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-09.html",
@@ -509,7 +773,17 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Boring Niche Tool Websites (Video 1)"
+      "top": "Boring Niche Tool Websites (Video 1)",
+      "wt_titles": [
+        {
+          "t": "Boring Niche Tool Websites (Display Ad Revenue)",
+          "s": null
+        },
+        {
+          "t": "7 Passive/Systems-Based Businesses",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-10.html",
@@ -518,16 +792,26 @@
       "label": "08-10 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Ranked by automation potential (primary) and quality score (secondary)"
+      "top": "Ranked by automation potential (primary) and quality score (secondary)",
+      "wt_titles": [
+        {
+          "t": "How This \"BORING\" Website Makes $35,000/Month!",
+          "s": null
+        },
+        {
+          "t": "7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-11.html",
@@ -545,7 +829,17 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "### Ranked by Automation Potential (Highest First)"
+      "top": "### Ranked by Automation Potential (Highest First)",
+      "wt_titles": [
+        {
+          "t": "Boring Niche Utility Websites (Unit Conversion, Typing Tests, PDF Tool",
+          "s": null
+        },
+        {
+          "t": "Automated Physical Businesses (ATM, Vending, Laundromat, Self-Storage)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-12.html",
@@ -554,16 +848,26 @@
       "label": "08-12 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Boring Utility Websites (Niche Pursuits)"
+      "top": "Boring Utility Websites (Niche Pursuits)",
+      "wt_titles": [
+        {
+          "t": "Boring Utility Websites (Niche Pursuits)",
+          "s": null
+        },
+        {
+          "t": "Passive System Businesses — 7 Models (Harry's Stealth Wealth)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-13.html",
@@ -572,16 +876,26 @@
       "label": "08-13 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 1,
+      "skip": 2,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Niche Utility Websites (Video 1)"
+      "top": "Niche Utility Websites (Video 1)",
+      "wt_titles": [
+        {
+          "t": "\"How This BORING Website Makes $35,000/Month!\" — Niche Pursuits",
+          "s": null
+        },
+        {
+          "t": "\"7 Businesses That Make Money While You Sleep\" — Harry's Stealth Wealt",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-14.html",
@@ -590,8 +904,8 @@
       "label": "08-14 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
+      "wt": 3,
+      "mixed": 2,
       "skip": 0,
       "avg": null,
       "tags": [
@@ -599,7 +913,21 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Boring Utility Websites (Video 2)"
+      "top": "Boring Utility Websites (Video 2)",
+      "wt_titles": [
+        {
+          "t": "\"7 Passive Income Ideas - How I Make $2,000+ Per Day!\" — Greg Gottfrie",
+          "s": null
+        },
+        {
+          "t": "\"How This BORING Website Makes $35,000/Month!\" — Niche Pursuits",
+          "s": null
+        },
+        {
+          "t": "\"7 Businesses That Make Money While You Sleep\" — Harry's Stealth Wealt",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-15.html",
@@ -617,7 +945,21 @@
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "Boring Niche Utility Websites"
+      "top": "Boring Niche Utility Websites",
+      "wt_titles": [
+        {
+          "t": "How This \"BORING\" Website Makes $35,000/Month!",
+          "s": null
+        },
+        {
+          "t": "Best Online Business to Make $10k+/month In 2026 (Beginner Friendly)",
+          "s": null
+        },
+        {
+          "t": "7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-16.html",
@@ -626,16 +968,26 @@
       "label": "08-16 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
+      "wt": 2,
       "mixed": 1,
-      "skip": 0,
+      "skip": 2,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Boring programmatic utility websites (V1)"
+      "top": "Boring programmatic utility websites (V1)",
+      "wt_titles": [
+        {
+          "t": "How This \"BORING\" Website Makes $35,000/Month!",
+          "s": null
+        },
+        {
+          "t": "7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-17.html",
@@ -644,16 +996,22 @@
       "label": "08-17 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 2,
+      "skip": 2,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "Ranked by automation potential (our primary criterion):"
+      "top": "Ranked by automation potential (our primary criterion):",
+      "wt_titles": [
+        {
+          "t": "How This \"BORING\" Website Makes $35,000/Month!",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-18.html",
@@ -662,16 +1020,26 @@
       "label": "08-18 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP word-search books + Merch POD"
+      "top": "Amazon KDP word-search books + Merch POD",
+      "wt_titles": [
+        {
+          "t": "Greg Gottfried — 7 Passive Income Ideas ($2,000+/Day)",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth — 7 Businesses That Make Money While You Sleep",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-19.html",
@@ -680,16 +1048,26 @@
       "label": "08-19 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
       "avg": null,
       "tags": [
         "YouTube & Content",
         "Automation",
         "Agencies & Leads"
       ],
-      "top": "Programmatic-SEO utility websites (converters/calculators/tools)"
+      "top": "Programmatic-SEO utility websites (converters/calculators/tools)",
+      "wt_titles": [
+        {
+          "t": "Niche Pursuits - Boring Utility Websites ($35K+/Month)",
+          "s": null
+        },
+        {
+          "t": "Harry's Stealth Wealth - 7 \"Sleep Income\" Businesses",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-20.html",
@@ -698,16 +1076,22 @@
       "label": "08-20 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 2,
+      "skip": 2,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Boring utility websites (programmatic SEO + ads/freemium)"
+      "top": "Boring utility websites (programmatic SEO + ads/freemium)",
+      "wt_titles": [
+        {
+          "t": "Boring Utility Websites (Niche Pursuits)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-21.html",
@@ -716,16 +1100,22 @@
       "label": "08-21 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 1,
+      "skip": 3,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Boring utility websites (programmatic SEO + ads/freemium)"
+      "top": "Boring utility websites (programmatic SEO + ads/freemium)",
+      "wt_titles": [
+        {
+          "t": "\"Boring\" Utility Websites (Niche Pursuits)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-22.html",
@@ -734,16 +1124,22 @@
       "label": "08-22 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Boring utility websites (programmatic SEO + ads/freemium)"
+      "top": "Boring utility websites (programmatic SEO + ads/freemium)",
+      "wt_titles": [
+        {
+          "t": "\"Boring\" Utility Websites — Programmatic SEO + Ads/Freemium (Niche Pur",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-23.html",
@@ -752,16 +1148,22 @@
       "label": "08-23 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "Print-on-Demand Publishing & Merch — Amazon KDP + Merch on Demand (Gre",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-24.html",
@@ -770,16 +1172,22 @@
       "label": "08-24 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "Courses & Communities",
         "YouTube & Content"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "POD Publishing & Merch — Amazon KDP + Merch on Demand (Greg Gottfried)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-25.html",
@@ -788,16 +1196,22 @@
       "label": "08-25 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
       "avg": null,
       "tags": [
         "Automation",
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "POD Publishing & Merch — Amazon KDP + Merch on Demand (Greg Gottfried)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-26.html",
@@ -815,7 +1229,13 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "POD Publishing & Merch — Amazon KDP + Merch on Demand (Greg Gottfried)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-27.html",
@@ -833,7 +1253,13 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "POD Publishing & Merch — Amazon KDP + Merch on Demand (Greg Gottfried)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-28.html",
@@ -851,7 +1277,13 @@
         "E-com & Products",
         "YouTube & Content"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "POD Publishing & Merch — Amazon KDP + Merch on Demand (Greg Gottfried)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-08-28.html",
@@ -869,7 +1301,21 @@
         "AI Agents",
         "Automation"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": [
+        {
+          "t": "White-label HighLevel for one local-service vertical (Chris Koerner)",
+          "s": null
+        },
+        {
+          "t": "Local AI implementation retainers — sell outcomes, not automations (Ni",
+          "s": null
+        },
+        {
+          "t": "Agent-run local newsletter / directory (Greg Isenberg + Billy Howell /",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-29.html",
@@ -887,7 +1333,13 @@
         "YouTube & Content",
         "E-com & Products"
       ],
-      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)"
+      "top": "Amazon KDP word search books + Merch on Demand (Gottfried)",
+      "wt_titles": [
+        {
+          "t": "POD Publishing & Merch — Amazon KDP + Merch on Demand (Greg Gottfried)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-30.html",
@@ -905,7 +1357,21 @@
         "Agencies & Leads",
         "Apps & SaaS"
       ],
-      "top": "Ranked by automation potential, adjusted for novelty vs. recent report"
+      "top": "Ranked by automation potential, adjusted for novelty vs. recent report",
+      "wt_titles": [
+        {
+          "t": "Scaling SaaS Smarter: Growth & Retention Strategies with Rob Walling",
+          "s": null
+        },
+        {
+          "t": "5 Creator Monetization Strategies (Beyond Brand Deals)",
+          "s": null
+        },
+        {
+          "t": "Stop Trading Time for Money: Productize Your Consulting",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-08-31.html",
@@ -923,7 +1389,13 @@
         "Courses & Communities",
         "YouTube & Content"
       ],
-      "top": "Ranked by automation potential, adjusted for novelty vs. recent report"
+      "top": "Ranked by automation potential, adjusted for novelty vs. recent report",
+      "wt_titles": [
+        {
+          "t": "Chris Koerner on DOAC — Side-Hustle Portfolio Playbook",
+          "s": null
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-08-31.html",
@@ -941,7 +1413,8 @@
         "Automation",
         "Courses & Communities"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-09-01.html",
@@ -959,7 +1432,17 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Ranked by automation potential, discounting repeated coverage (SMMA/ag"
+      "top": "Ranked by automation potential, discounting repeated coverage (SMMA/ag",
+      "wt_titles": [
+        {
+          "t": "Dan Martell — The Only 14 Ways to Make Money with AI in 2026",
+          "s": null
+        },
+        {
+          "t": "Wholesale Ted — The 5 Best AI Business Ideas For Beginners In 2026",
+          "s": null
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-01.html",
@@ -977,7 +1460,8 @@
         "Automation",
         "Courses & Communities"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-09-02.html",
@@ -986,16 +1470,22 @@
       "label": "09-02 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 1,
+      "skip": 3,
       "avg": 3.8,
       "tags": [
         "Automation",
         "Courses & Communities",
         "E-com & Products"
       ],
-      "top": "Vending Machine Route with Real Costs — Profitopsy (7/10)"
+      "top": "Vending Machine Route with Real Costs — Profitopsy (7/10)",
+      "wt_titles": [
+        {
+          "t": "Vending Machine Route with Real Costs — Profitopsy",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-03.html",
@@ -1004,16 +1494,26 @@
       "label": "09-03 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
       "avg": 5.6,
       "tags": [
         "Automation",
         "Agencies & Leads",
         "E-com & Products"
       ],
-      "top": "AI Websites for Local Businesses — The Savvy Couple (7/10)"
+      "top": "AI Websites for Local Businesses — The Savvy Couple (7/10)",
+      "wt_titles": [
+        {
+          "t": "AI Websites for Local Businesses — The Savvy Couple",
+          "s": 7.0
+        },
+        {
+          "t": "$500 AI Risk Snapshot Consulting — Cyber Women Society",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-03.html",
@@ -1031,7 +1531,8 @@
         "YouTube & Content",
         "Automation"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-09-04.html",
@@ -1049,7 +1550,21 @@
         "Automation",
         "AI Agents"
       ],
-      "top": "Niche-Focused Etsy POD with Ads-Driven Doubling Down - Taylor Posada (7/10)"
+      "top": "Niche-Focused Etsy POD with Ads-Driven Doubling Down - Taylor Posada (7/10)",
+      "wt_titles": [
+        {
+          "t": "Niche-Focused Etsy POD with Ads-Driven Doubling Down - Taylor Posada",
+          "s": 7.0
+        },
+        {
+          "t": "Finish-Line Messaging + CASE Funnel for Services - Adam Erhart",
+          "s": 5.0
+        },
+        {
+          "t": "B2B SVG Digital Products at Massive Catalog Scale - Alfie Nemeth",
+          "s": 5.0
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-04.html",
@@ -1067,7 +1582,8 @@
         "Automation",
         "Courses & Communities"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-09-05.html",
@@ -1076,16 +1592,22 @@
       "label": "09-05 Daily",
       "kind": "daily",
       "videos": 5,
-      "wt": 0,
-      "mixed": 0,
-      "skip": 0,
+      "wt": 1,
+      "mixed": 2,
+      "skip": 2,
       "avg": 7.0,
       "tags": [
         "YouTube & Content",
         "Agencies & Leads",
         "Automation"
       ],
-      "top": "Faceless YouTube Format-Cloning Playbook — vidIQ (8/10)"
+      "top": "Faceless YouTube Format-Cloning Playbook — vidIQ (8/10)",
+      "wt_titles": [
+        {
+          "t": "Faceless YouTube Format-Cloning Playbook — vidIQ",
+          "s": 8.0
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-05.html",
@@ -1103,7 +1625,8 @@
         "Automation",
         "YouTube & Content"
       ],
-      "top": null
+      "top": null,
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-09-06.html",
@@ -1120,7 +1643,8 @@
         "Automation",
         "Courses & Communities"
       ],
-      "top": "Airbnb Rental Arbitrage (5-bedroom, corporate-guest niche) - BEHIND TH (5/10)"
+      "top": "Airbnb Rental Arbitrage (5-bedroom, corporate-guest niche) - BEHIND TH (5/10)",
+      "wt_titles": []
     },
     {
       "file": "daily-research_2026-09-07.html",
@@ -1131,14 +1655,28 @@
       "videos": 5,
       "wt": 3,
       "mixed": 2,
-      "skip": 1,
+      "skip": 2,
       "avg": 6.0,
       "tags": [
         "Automation",
         "AI Agents",
         "YouTube & Content"
       ],
-      "top": "SMB Marketing, Cybersecurity & AI Toolkit (Panel) - Texas Economic Dev (8/10)"
+      "top": "SMB Marketing, Cybersecurity & AI Toolkit (Panel) - Texas Economic Dev (8/10)",
+      "wt_titles": [
+        {
+          "t": "Vintage Guitar Flipping Playbook - Jeremy Sheppard",
+          "s": 6.0
+        },
+        {
+          "t": "SMB Marketing, Cybersecurity & AI Toolkit (Panel) - Texas Economic Dev",
+          "s": 8.0
+        },
+        {
+          "t": "Bonus 2: Facebook Reel - Koerner Office \"Reverse Cold Calling\" (ringle",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-07.html",
@@ -1156,7 +1694,17 @@
         "Automation",
         "AI Agents"
       ],
-      "top": "Casey Builds Stuff — \"Reviewing crappy rip offs of my successful app\"  (9/10)"
+      "top": "Casey Builds Stuff — \"Reviewing crappy rip offs of my successful app\"  (9/10)",
+      "wt_titles": [
+        {
+          "t": "Casey Builds Stuff — \"Reviewing crappy rip offs of my successful app\" ",
+          "s": 9.0
+        },
+        {
+          "t": "The Guerrilla Publisher — \"Bill Gates Said AI Would End Amazon. Here's",
+          "s": 6.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-08.html",
@@ -1174,7 +1722,17 @@
         "Automation",
         "Apps & SaaS"
       ],
-      "top": "Business Model Canvas (Strategyzer) (7/10)"
+      "top": "Business Model Canvas (Strategyzer) (7/10)",
+      "wt_titles": [
+        {
+          "t": "Tangible-Asset Paid Newsletter (Nicolas Cole)",
+          "s": null
+        },
+        {
+          "t": "The 1K Challenge — Organic Newsletter Growth System (Matt McGarry)",
+          "s": null
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-09.html",
@@ -1192,7 +1750,13 @@
         "E-com & Products",
         "Automation"
       ],
-      "top": "Print on Demand With a LIVE Store (Meg Heckman) — POD / owned brand (8/10)"
+      "top": "Print on Demand With a LIVE Store (Meg Heckman) — POD / owned brand (8/10)",
+      "wt_titles": [
+        {
+          "t": "Print on Demand With a LIVE Store (Meg Heckman) — POD / owned brand",
+          "s": 8.0
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-09.html",
@@ -1210,7 +1774,49 @@
         "AI Agents",
         "YouTube & Content"
       ],
-      "top": "a16z — \"AI Agents Could Finally Reinvent the Credit Card\" (VC thesis) (9/10)"
+      "top": "a16z — \"AI Agents Could Finally Reinvent the Credit Card\" (VC thesis) (9/10)",
+      "wt_titles": [
+        {
+          "t": "Wes McDowell — \"Hormozi's New YouTube Strategy\" (content strategy)",
+          "s": 7.0
+        },
+        {
+          "t": "Jake Bauman — \"Grok Bot to Get My Brand Cited by AI\" (GEO/AEO)",
+          "s": 7.0
+        },
+        {
+          "t": "Paul J Lipsky — ChatGPT Images 2.5 (tool review)",
+          "s": 7.0
+        },
+        {
+          "t": "MyWifeQuitHerJob — \"Forget Amazon, Shopify\" (ecommerce)",
+          "s": 7.0
+        },
+        {
+          "t": "Jonathan Nilsen — TikTok Six-Figure Publishers (KDP)",
+          "s": 6.0
+        },
+        {
+          "t": "The Next New Thing — Slowbooks (open-source agent accounting)",
+          "s": 6.0
+        },
+        {
+          "t": "Koerner — \"If We Had to Make $1M Fast\" (idea roundup)",
+          "s": 7.5
+        },
+        {
+          "t": "Koerner — Contactless Trailer Rentals (operator interview)",
+          "s": 9.0
+        },
+        {
+          "t": "Glo Atanmo — \"8 Ways I Get Paid on YouTube\" (creator monetization)",
+          "s": 8.0
+        },
+        {
+          "t": "OpenClaw — ClawCast Ep 9 (platform podcast)",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-10.html",
@@ -1228,7 +1834,17 @@
         "Automation",
         "Apps & SaaS"
       ],
-      "top": "First 6 Months of YouTube Monetization (Caleb Bale) — creator monetiza (8/10)"
+      "top": "First 6 Months of YouTube Monetization (Caleb Bale) — creator monetiza (8/10)",
+      "wt_titles": [
+        {
+          "t": "Indie App Developer $5K/mo Guide (Aivars Meijers) — indie apps",
+          "s": 7.0
+        },
+        {
+          "t": "Why Android Sucks for Solo Devs (Adam Lyttle) — apps / platform strate",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-09-10.html",
@@ -1246,7 +1862,17 @@
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "WebMCP — Let AI Agents Pay You Money (agent infrastructure) (7/10)"
+      "top": "WebMCP — Let AI Agents Pay You Money (agent infrastructure) (7/10)",
+      "wt_titles": [
+        {
+          "t": "WebMCP — Let AI Agents Pay You Money (agent infrastructure)",
+          "s": 7.0
+        },
+        {
+          "t": "12,000 Subscribers → Five-Figure Brand Deal (creator monetization)",
+          "s": 6.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-11.html",
@@ -1264,7 +1890,8 @@
         "Automation",
         "Marketplaces"
       ],
-      "top": "Pick a Profitable Agency Niche (The Futur) — positioning strategy (7/10)"
+      "top": "Pick a Profitable Agency Niche (The Futur) — positioning strategy (7/10)",
+      "wt_titles": []
     },
     {
       "file": "playlist-research_2026-09-11.html",
@@ -1282,7 +1909,25 @@
         "YouTube & Content",
         "Automation"
       ],
-      "top": "Nas Daily — \"Nas Daily's AI (nas.com)\" (7/10)"
+      "top": "Nas Daily — \"Nas Daily's AI (nas.com)\" (7/10)",
+      "wt_titles": [
+        {
+          "t": "Grok Calls (unnamed) — \"Phone Calls with Grok Bot\"",
+          "s": 6.0
+        },
+        {
+          "t": "AI Entrepreneur — \"Stop Copying YouTube Channels\"",
+          "s": 4.0
+        },
+        {
+          "t": "Nas Daily — \"Nas Daily's AI (nas.com)\"",
+          "s": 7.0
+        },
+        {
+          "t": "Searchable Founder — \"$85M AI Startup in 5 Months (Searchable)\"",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-12.html",
@@ -1300,7 +1945,8 @@
         "Marketplaces",
         "YouTube & Content"
       ],
-      "top": "Sell Software for $10k/Mo (Audate)"
+      "top": "Sell Software for $10k/Mo (Audate)",
+      "wt_titles": []
     },
     {
       "file": "playlist-research_2026-09-12.html",
@@ -1318,7 +1964,41 @@
         "YouTube & Content",
         "Courses & Communities"
       ],
-      "top": "fal Podcast (Sophia Xing) — \"AI Microdrama Economics\" (8.5/10)"
+      "top": "fal Podcast (Sophia Xing) — \"AI Microdrama Economics\" (8.5/10)",
+      "wt_titles": [
+        {
+          "t": "Chris Koerner (The Koerner Office) — \"From DoorDash to $81K/M With Thi",
+          "s": 8.0
+        },
+        {
+          "t": "fal Podcast (Sophia Xing) — \"AI Microdrama Economics\"",
+          "s": 8.5
+        },
+        {
+          "t": "KreekCraft — \"Roblox RDC 2026 Recap\"",
+          "s": 7.0
+        },
+        {
+          "t": "Danny Why — \"Astra Changes Video Editing Forever\"",
+          "s": 7.0
+        },
+        {
+          "t": "JohnnyTube — \"3 AI Businesses in 3 Hours\"",
+          "s": 6.0
+        },
+        {
+          "t": "corbin — \"Cursor Projects\"",
+          "s": 6.0
+        },
+        {
+          "t": "Zyonic — \"Roblox Success on Purpose\"",
+          "s": 7.0
+        },
+        {
+          "t": "The Next New Thing — \"Have Astra Do This Right Now\"",
+          "s": 7.5
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-13.html",
@@ -1336,7 +2016,13 @@
         "Marketplaces",
         "Automation"
       ],
-      "top": "Keith AI — \"7 AI Tools I use as a Solopreneur to 10x my productivity\" (8/10)"
+      "top": "Keith AI — \"7 AI Tools I use as a Solopreneur to 10x my productivity\" (8/10)",
+      "wt_titles": [
+        {
+          "t": "Alex Hormozi — \"Watch This To Generate 1000s of Leads (In Any Niche)\"",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-14.html",
@@ -1345,7 +2031,7 @@
       "label": "09-14 Daily",
       "kind": "daily",
       "videos": 8,
-      "wt": 3,
+      "wt": 2,
       "mixed": 3,
       "skip": 3,
       "avg": 4.6,
@@ -1354,7 +2040,17 @@
         "YouTube & Content",
         "Agencies & Leads"
       ],
-      "top": "Stop Trading Time for Money: Productize Your Consulting"
+      "top": "My 2 apps made $1.5M — Starter Story (7/10)",
+      "wt_titles": [
+        {
+          "t": "My 2 apps made $1.5M — Starter Story",
+          "s": 7.0
+        },
+        {
+          "t": "Mass and Niche Markets Explained — Two Teachers",
+          "s": 7.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-15.html",
@@ -1372,7 +2068,8 @@
         "Marketplaces",
         "Automation"
       ],
-      "top": "Paid Discord AI onboarding/salescloser (UnityXpert)"
+      "top": "Amazon FBA Private Label vs Wholesale in 2026 — Adam Pearson (5/10)",
+      "wt_titles": []
     },
     {
       "file": "playlist-research_2026-09-15.html",
@@ -1390,7 +2087,53 @@
         "Roblox",
         "AI Agents"
       ],
-      "top": "App Masters — \"$800K ARR App With Simple Strategies\" (8.5/10)"
+      "top": "App Masters — \"$800K ARR App With Simple Strategies\" (8.5/10)",
+      "wt_titles": [
+        {
+          "t": "Clearmud — \"I Cloned Grokbot with ChatGPT 6 Astra\"",
+          "s": 8.0
+        },
+        {
+          "t": "rasdev — \"How This Game Accidentally Solved the Roblox Algorithm\"",
+          "s": 7.0
+        },
+        {
+          "t": "Starter Story — \"This App Replaced My 9-5 ($155K/Year)\"",
+          "s": 7.0
+        },
+        {
+          "t": "Danny Why — \"Astra Just Changed CapCut Forever\"",
+          "s": 7.0
+        },
+        {
+          "t": "Superwall — \"The NEW App Content Strategy Dominating 2026\"",
+          "s": 7.0
+        },
+        {
+          "t": "Better Stack — \"Desert Ant Labs: Powerful AI Micro-Models\"",
+          "s": 8.0
+        },
+        {
+          "t": "Yann — \"How I Advertise My Games on Roblox\"",
+          "s": 8.0
+        },
+        {
+          "t": "App Masters — \"$800K ARR App With Simple Strategies\"",
+          "s": 8.5
+        },
+        {
+          "t": "Finn Mallery — \"10 YC Founders On Getting Customers\"",
+          "s": 7.0
+        },
+        {
+          "t": "vidIQ — \"New Rules For Faceless Channels in 2026\"",
+          "s": 8.0
+        },
+        {
+          "t": "Kenny Gunderman — \"AI Killed The App Economy\"",
+          "s": 8.0
+        }
+      ]
     },
     {
       "file": "daily-research_2026-09-16.html",
@@ -1408,7 +2151,17 @@
         "Agencies & Leads",
         "YouTube & Content"
       ],
-      "top": "Selling AI Receptionists To Local Businesses"
+      "top": "The TOP 1% of Service Businesses Use This Marketing Playbook! — Mike A (8/10)",
+      "wt_titles": [
+        {
+          "t": "Every Boring Business That Makes Failure (almost) Impossible — David H",
+          "s": 7.0
+        },
+        {
+          "t": "The TOP 1% of Service Businesses Use This Marketing Playbook! — Mike A",
+          "s": 8.0
+        }
+      ]
     }
   ]
 }
