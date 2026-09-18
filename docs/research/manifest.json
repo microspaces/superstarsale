@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17 09:06:24",
+  "generated": "2026-09-18 12:34:11",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2190,6 +2190,25 @@
           "s": null
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-09-18.html",
+      "date": "2026-09-18",
+      "title": "Daily YouTube Money-Making Strategy Research — 2026-09-18",
+      "label": "09-18 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": 4.8,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Marketplaces"
+      ],
+      "top": "Website Flipping 101 — Empire Flippers (7/10)",
+      "wt_titles": []
     }
   ]
 }

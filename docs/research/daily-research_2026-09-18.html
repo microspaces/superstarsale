@@ -120,6 +120,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-money-making-strategy-research-2026-09-18">Daily YouTube Money-Making Strategy Research — 2026-09-18</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#per-video-analysis">Per-Video Analysis</a></li><li class="toc-h3"><a href="#1-the-explainer-what-is-a-business-model-harvard-business-review">1. The Explainer: What is a Business Model? — Harvard Business Review</a></li><li class="toc-h3"><a href="#2-reselling-101-thrift-store-flipping-for-beginners-flippymcflipperson">2. Reselling 101: Thrift Store Flipping for Beginners — FlippyMcFlipperson</a></li><li class="toc-h3"><a href="#3-how-these-young-sellers-made-millions-on-amazon-and-walmart-cnbc">3. How these young sellers made millions on Amazon and Walmart — CNBC</a></li><li class="toc-h3"><a href="#4-website-flipping-101-empire-flippers">4. Website Flipping 101 — Empire Flippers</a></li><li class="toc-h3"><a href="#5-how-to-make-money-flipping-websites-on-empire-flippers-step-by-step-a1-republic">5. How To Make Money Flipping Websites On Empire Flippers (Step by Step) — A1 Republic</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
