@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20 09:46:11",
+  "generated": "2026-09-20 14:49:12",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2247,6 +2247,82 @@
       ],
       "top": "How I'd Start on Substack in 2026 — Sinem Günel (6/10)",
       "wt_titles": []
+    },
+    {
+      "file": "playlist-research_2026-09-20.html",
+      "date": "2026-09-20",
+      "title": "Playlist Research — 2026-09-20",
+      "label": "09-20 Playlist",
+      "kind": "playlist",
+      "videos": 27,
+      "wt": 14,
+      "mixed": 13,
+      "skip": 0,
+      "avg": 6.7,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Chris Koerner (Spectre) — \"The Side Hustle AI Was Supposed to Kill Is  (8.5/10)",
+      "wt_titles": [
+        {
+          "t": "Futurepedia — \"I Pushed GPT-6 Astra's Computer Use to Its Limits\"",
+          "s": 8.0
+        },
+        {
+          "t": "Chris Koerner (Hyper Agent) — \"This AI Finds the Idea, Customers, and ",
+          "s": 7.0
+        },
+        {
+          "t": "Gabriel Jarrosson (Lobster Capital) — \"Why Nvidia Paid $13 Billion for",
+          "s": 7.0
+        },
+        {
+          "t": "My First Million — \"8 (stupidly simple) rules to grow on social media\"",
+          "s": 8.0
+        },
+        {
+          "t": "Jasmine Star — \"The Six-Minute Content Strategy That Changes Everythin",
+          "s": 7.0
+        },
+        {
+          "t": "Youri van Hofwegen — \"GPT 6 Astra Just Made AI Videos Come to Life\"",
+          "s": 7.0
+        },
+        {
+          "t": "The Next New Thing — \"New: AI mobile app builder, AI slides, AI recept",
+          "s": 7.0
+        },
+        {
+          "t": "Riley Brown — \"Astra Built Me an Entire Product Launch (Ads, Videos, a",
+          "s": 8.0
+        },
+        {
+          "t": "MrAlexTech — \"The BETTER way to use the new Ai MCP in DaVinci Resolve ",
+          "s": 8.0
+        },
+        {
+          "t": "Chris Koerner (Spectre) — \"The Side Hustle AI Was Supposed to Kill Is ",
+          "s": 8.5
+        },
+        {
+          "t": "Mark Kashef — \"Jev Fully Explained: 10 Practical Ways to Use It\"",
+          "s": 7.5
+        },
+        {
+          "t": "Dean Jackson — \"If You're Going to Run an Ad in the Next 6 Months, Wat",
+          "s": 7.0
+        },
+        {
+          "t": "Chris Koerner (Franzy) — \"The Most Overlooked Path to Wealth\"",
+          "s": 8.0
+        },
+        {
+          "t": "Sam Witteveen — \"Open Jevs Models Breakdown\"",
+          "s": 8.0
+        }
+      ]
     }
   ]
 }
