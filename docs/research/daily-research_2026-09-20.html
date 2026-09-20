@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily YouTube Strategy Research — 2026-09-20</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-09-20</h1>
+
+<p><em>Automated daily research · 5 videos analyzed · Generated 2026-09-20 (backfilled from on-disk digests after the announce step failed; content was complete on disk)</em></p>
+<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>How To Make Biodiesel Using A Used Cooking Oil</td>
+<td>Videojug</td>
+<td>1,216,189</td>
+<td>Skip</td>
+</tr>
+<tr>
+<td>2</td>
+<td>How To Start Used Cooking Oil Recycling Business</td>
+<td>70CentsaGallon</td>
+<td>53,160</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>How 'Boring' Businesses Build Billionaires</td>
+<td>Michal Mujgos</td>
+<td>447,515</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Understanding a P&L in 8 minutes</td>
+<td>Dr. K The Management Professor</td>
+<td>328,000</td>
+<td>Skip</td>
+</tr>
+<tr>
+<td>5</td>
+<td>How I'd Start on Substack in 2026 (With No Audience)</td>
+<td>Sinem Günel</td>
+<td>138,000</td>
+<td>Mixed</td>
+</tr>
+</tbody></table>
+<p>Run type: Discovery loop. All 5 transcripts captured. Theme clusters: waste-oil/biofuel ×2, boring-businesses essay, finance education, newsletter growth.</p>
+<h2 id="per-video-analysis">Per-Video Analysis<a class="anchor" href="#per-video-analysis" aria-label="Link to this section">#</a></h2>
+<h3 id="1-home-biodiesel-from-used-cooking-oil-videojug">1. Home Biodiesel from Used Cooking Oil — Videojug<a class="anchor" href="#1-home-biodiesel-from-used-cooking-oil-videojug" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> None — circa-2010 DIY library content: filter waste oil, home-brew biodiesel with a processor. Its own model is ad-monetized library video.</li>
+<li><strong>Revenue model:</strong> none given; no costs, yields, or economics whatsoever.</li>
+<li><strong>Automation potential: 4/10</strong> — physical chemistry; only oil-pickup logistics are agent-assistable.</li>
+<li><strong>Quality: 4/10</strong> — plausible process detail, zero receipts, hand-waved safety (lye/methanol), regulatory realities ignored.</li>
+<li><strong>Verdict: ❌ Skip</strong> — hobby tutorial. Only value: confirms free feedstock (restaurant UCO) exists and is contested.</li>
+</ul>
+<h3 id="2-used-cooking-oil-recycling-business-70centsagallon">2. Used Cooking Oil Recycling Business — 70CentsaGallon<a class="anchor" href="#2-used-cooking-oil-recycling-business-70centsagallon" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Collect UCO from restaurants (pump service), aggregate at local centers, sell to biofuel buyers. Video monetizes a 2-day training workshop (contracts, schematics, ride-alongs included).</li>
+<li><strong>Revenue model:</strong> none given for the business ("very lucrative" — no dollars); the concrete revenue is the workshop itself.</li>
+<li><strong>Replication steps:</strong> (1) secure the biofuel buyer <em>before</em> collecting (demand-first); (2) win restaurant accounts on service (pressure-washing, reliability vs. "good old boys" incumbents); (3) pump-truck morning routes, invoice on site; (4) small-town aggregation centers; (5) build route density; or skip the workshop and assemble the same contracts via a rendering-company partnership.</li>
+<li><strong>Automation potential: 5/10</strong> — routing/invoicing/CRM are software-able; the core is physical pumping and face-to-face account sales.</li>
+<li><strong>Quality: 3/10</strong> — named operator (Vero Beach FL facility) adds some credibility, but everything is qualitative and the pitch is a course funnel.</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — real waste-stream service logic; verify per-gallon offtake pricing and incumbent contracts (national renderers like Darling lock up accounts) before any entry.</li>
+<li><strong>Theme note:</strong> <strong>second sighting of the grease/waste-oil → biofuel arbitrage theme</strong> (graduated 09-16). Confirms recurrence; still no unit economics from any source.</li>
+</ul>
+<h3 id="3-how-boring-businesses-build-billionaires-michal-mujgos">3. How 'Boring' Businesses Build Billionaires — Michal Mujgos<a class="anchor" href="#3-how-boring-businesses-build-billionaires-michal-mujgos" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Essay on essential-service businesses (Sock City, U-Haul, Chem-Dry, Cintas, Berkshire assets) ending in a $0-start blueprint: pressure washing, septic, pest, portable toilets, HVAC, dumpster rental, plus semi-passive (laundromats, vending, parking, ATMs, self-storage). Creator funnels a free questionnaire lead magnet.</li>
+<li><strong>Revenue model:</strong> company-level headlines only (Cintas $87B market value, DSC $1B exit); zero starter-level unit economics.</li>
+<li><strong>Replication steps (the useful distillation):</strong> pick one repeat-problem local service → "architect phase" (learn trade cheaply) → first customers with phone + hands, rent equipment daily → <strong>leapfrog incumbents with digital hygiene (GMB + review engine, online booking, CRM nurture, transparent pricing)</strong> → reinvest 100% into assets → debt only after proven demand → crews/commercial contracts → exploit the silver tsunami (~50% of small-business owners 55+ with 1990s marketing).</li>
+<li><strong>Automation potential: 4/10</strong> — the moat it prescribes (reviews/booking/CRM/invoicing) is a software stack, but flagship trades keep a hard human core; semi-passive cousins (storage/vending/ATM) run on kiosks + remote monitoring.</li>
+<li><strong>Quality: 4/10</strong> — verifiable companies, but only headline numbers; motivational padding; garbled names; ignores licensing/insurance/seasonality.</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — credible macro thesis ("digital hygiene is the actual moat"), no replicable economics.</li>
+<li><strong>Key actions:</strong> stand up GMB + booking + CRM <em>before</em> buying equipment; build a "retiring owner" (55+ trades) prospect list for modernization/acquisition — reinforces the buy-a-business cluster (09-05) and the silver-tsunami angle.</li>
+</ul>
+<h3 id="4-understanding-a-pl-in-8-minutes-dr-k">4. Understanding a P&L in 8 Minutes — Dr. K<a class="anchor" href="#4-understanding-a-pl-in-8-minutes-dr-k" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Management-professor education channel; worked restaurant P&L example ($108K − $90K = $18K net). Content marketing for credibility, not a venture.</li>
+<li><strong>Automation potential: 6/10</strong> — scripting/slides/voiceover automatable; credibility and accuracy are human.</li>
+<li><strong>Quality: 5/10</strong> — legitimate educator, zero receipts to verify (nothing claimed).</li>
+<li><strong>Verdict: ❌ Skip as a strategy</strong> — but adopt the practice: run real P&Ls (revenue categories, expense lines, monthly forecast) on our own ventures; the personal-finance P&L template (pay-yourself-first, 1-year emergency fund) is decent internal discipline. Format note: short explainers with clear takeaways perform (328K views) — relevant to any faceless-education play.</li>
+</ul>
+<h3 id="5-how-id-start-on-substack-in-2026-sinem-günel">5. How I'd Start on Substack in 2026 — Sinem Günel<a class="anchor" href="#5-how-id-start-on-substack-in-2026-sinem-günel" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Newsletter growth playbook from a Write Build Skill co-founder: one-sentence promise ("helps [specific person] get [specific outcome]"), Substack Notes for reach + long-form for conversion, lead-magnet funnel into paid subs.</li>
+<li><strong>Revenue model:</strong> "first 500 paid subscribers in year one" (falsifiable, tied to a named publication; ~$25–60K/yr gross implied — my math, not stated).</li>
+<li><strong>Replication steps:</strong> (1) one-sentence promise, not a broad niche; (2) 7–10 Notes weekly batch, one daily (Notes can't be scheduled); (3) <strong>welcome-email "bribe" workaround</strong> — announce a freebie in bio, deliver in welcome email (Substack lacks native freebie gates); (4) 5 target creators, genuine engagement, then collaborate (guest posts, cross-promos, co-built publications); (5) one conversation-starting question per issue; study replies.</li>
+<li><strong>Automation potential: 4/10</strong> — drafting/scheduling workarounds/monitoring assistable; the engine is human relationships and daily presence (explicitly anti-automation).</li>
+<li><strong>Quality: 6/10</strong> — the publication is real and checkable; "500 paid subs" is a falsifiable claim; but no revenue screenshots and the author sells creator coaching (circularity).</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — sound organic playbook, no automated moat; only pursue if we need audience distribution for another product.</li>
+<li><strong>Key actions:</strong> steal the welcome-email freebie workaround and the Notes cadence for any newsletter ops.</li>
+</ul>
+<h2 id="final-ranking-automation-potential-novelty-weighted">Final Ranking (automation potential, novelty-weighted)<a class="anchor" href="#final-ranking-automation-potential-novelty-weighted" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>Rank</th><th>Item</th><th>Auto</th><th>Quality</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Substack organic playbook</td>
+<td>4</td>
+<td>6</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>UCO recycling business</td>
+<td>5</td>
+<td>3</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Boring-businesses digital-hygiene blueprint</td>
+<td>4</td>
+<td>4</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>P&L education (practice, not venture)</td>
+<td>6</td>
+<td>5</td>
+<td>❌ Skip</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Home biodiesel DIY</td>
+<td>4</td>
+<td>4</td>
+<td>❌ Skip</td>
+</tr>
+</tbody></table>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
+<p>1. <strong>Waste-oil → biofuel arbitrage confirmed as recurring:</strong> second sighting in four days (09-16 graduation, today's 70CentsaGallon). The demand-first structure ("buyer secured before collection") is standard commodity brokerage — the open question remains per-gallon offtake economics, which no source provides.</p>
+<p>2. <strong>"Digital hygiene is the moat" keeps beating the trade itself:</strong> today's boring-businesses essay and the 09-19 double-confirmed "pitch the finished deliverable" tactic agree — reviews, booking, CRM, and pre-built demos are where solo operators beat incumbents, not in the labor.</p>
+<p>3. <strong>Silver-tsunami acquisition angle reinforced again</strong> (third recent sighting after 09-05 cluster and 09-18's site-flipping multiples): ~50% of small-business owners are 55+. A "retiring owners in [zip]" prospect list keeps coming up as the highest-leverage asset across independent sources.</p>
+<p>4. <strong>Evidence hierarchy held:</strong> the newsletter video (checkable publication, falsifiable sub count) out-sourced everything else; the biodiesel/UCO pair had zero economics between 1.27M combined views.</p>
+<p>5. <strong>No new themes graduated.</strong> All five map to known themes (waste-stream arbitrage, local services/acquisition, finance education, newsletters).</p>
+<p><em>Automated research report — discovery pipeline. Generated by OpenClaw agent (superstarsaledev).</em></p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-20</p>
+    </div>
+</body>
+</html>

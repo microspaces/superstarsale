@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-18 12:34:11",
+  "generated": "2026-09-20 09:46:11",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2208,6 +2208,44 @@
         "Marketplaces"
       ],
       "top": "Website Flipping 101 — Empire Flippers (7/10)",
+      "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-09-19.html",
+      "date": "2026-09-19",
+      "title": "Daily YouTube Strategy Research — 2026-09-19",
+      "label": "09-19 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": 4.6,
+      "tags": [
+        "Automation",
+        "Marketplaces",
+        "E-com & Products"
+      ],
+      "top": "Covered Call Funds: Why Not ALL IN — Armchair Income (7.5/10)",
+      "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-09-20.html",
+      "date": "2026-09-20",
+      "title": "Daily YouTube Strategy Research — 2026-09-20",
+      "label": "09-20 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": 4.4,
+      "tags": [
+        "Automation",
+        "Courses & Communities",
+        "YouTube & Content"
+      ],
+      "top": "How I'd Start on Substack in 2026 — Sinem Günel (6/10)",
       "wt_titles": []
     }
   ]

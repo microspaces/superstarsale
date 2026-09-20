@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily YouTube Strategy Research — 2026-09-19</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-09-19</h1>
+
+<p><em>Automated daily research · 5 videos analyzed · Generated 2026-09-19 (backfilled 2026-09-20 from on-disk digests after publish step failed)</em></p>
+<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>15 easiest side hustles for the average person in 2026</td>
+<td>Dina Lu</td>
+<td>278,000</td>
+<td>Skip</td>
+</tr>
+<tr>
+<td>2</td>
+<td>8 Best Side Hustles To Make A LOT of Money in 2026</td>
+<td>Charlie Chang</td>
+<td>190,000</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Are Covered Call ETFs Worth It?</td>
+<td>Jeff Teeples</td>
+<td>71,600</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Covered Call Funds, Why I Don't Go ALL IN</td>
+<td>Armchair Income</td>
+<td>45,000</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>RentAHuman.AI Explained Review 2026</td>
+<td>SCAM VIEW</td>
+<td>8,000</td>
+<td>Skip</td>
+</tr>
+</tbody></table>
+<p>Run type: Discovery loop. All 5 transcripts captured. Batch split: two side-hustle listicles (1–2), two covered-call income videos (3–4), one agent-infrastructure platform review (5).</p>
+<h2 id="per-video-analysis">Per-Video Analysis<a class="anchor" href="#per-video-analysis" aria-label="Link to this section">#</a></h2>
+<h3 id="1-15-easiest-side-hustles-dina-lu">1. 15 Easiest Side Hustles — Dina Lu<a class="anchor" href="#1-15-easiest-side-hustles-dina-lu" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Beginner menu: used items, pet/house-sitting (Rover), delivery, flipping, tutoring, cards/calligraphy, freelance photo/video, language apps, content, VA, SMM, small-biz websites, Amazon Influencer, Etsy printables.</li>
+<li><strong>Revenue model:</strong> Only first-person numbers: ~$500/mo used items, $20–25/hr Uber Eats, $1–2K Etsy target (hypothetical). Everything else unstated.</li>
+<li><strong>Replication steps:</strong> (1) match hustle to existing skills; (2) start via own network + local boards; (3) freelance clients via in-person + LinkedIn (she says Upwork is bad); (4) websites: visit weak-GMB businesses as a customer, pitch the owner; (5) Amazon Influencer: 3 review videos to get approved, then volume-upload.</li>
+<li><strong>Automation potential: 3/10</strong> — almost all time-for-money; printables/Influencer slightly passive.</li>
+<li><strong>Quality: 3/10</strong> — one real data point, an unnamed friend, a hypothetical target; no dashboards or named businesses; ends in a lead-magnet funnel.</li>
+<li><strong>Verdict: ❌ Skip</strong> — fine as a beginner menu, not a strategy source.</li>
+<li><strong>Red flags:</strong> zero-receipt claims; "easy" framing contradicted by her own admission that client acquisition is the hard part.</li>
+</ul>
+<h3 id="2-8-best-side-hustles-charlie-chang">2. 8 Best Side Hustles — Charlie Chang<a class="anchor" href="#2-8-best-side-hustles-charlie-chang" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> High-value-skills listicle: AI social-video creator for businesses, LinkedIn ghostwriting/management, HighLevel websites+CRM for local biz, niche photography, platform installer (Notion/ClickUp), "AI implementer" retainer, affiliate, niche digital products.</li>
+<li><strong>Revenue model:</strong> Claimed ranges: $50–300/hr AI video, $2–5K/mo LinkedIn retainers, $500–1K/mo per site client, ~$3K/mo AI-implementer retainer, "$3M/yr" affiliate (self), $17–27 PDFs.</li>
+<li><strong>Replication steps:</strong> learn one AI video stack (VEO/Sora/HeyGen) → daily post volume for businesses; cold-outreach LinkedIn retainer offers; spin up HighLevel site and pitch the <em>finished</em> site; self-teach one platform 2–4 weeks and market setup services; retainer with fixed calls + Slack ("AI concierge"); trend-surf an exploding sport (Hyrox) with cheap PDFs.</li>
+<li><strong>Automation potential: 6/10</strong> — AI content + digital products scale; retainers still sell time.</li>
+<li><strong>Quality: 4/10</strong> — he runs real businesses and the claims are at least consistent with them, but every number is verbal and every recommendation doubles as an affiliate funnel (HighLevel, Hostinger, his course).</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — actionable plays with concrete pricing, wrapped in marketing.</li>
+<li><strong>Key actions:</strong> "build the website <em>before</em> the pitch" (corroborated independently by video 1); trend-surfing niche sports with low-ticket PDFs; platform-installer as an underrated boring-niche wedge.</li>
+<li><strong>Red flags:</strong> unverifiable rate ranges; "easily" does heavy lifting; affiliate-income example not replicable for a beginner.</li>
+</ul>
+<h3 id="3-are-covered-call-etfs-worth-it-jeff-teeples">3. Are Covered Call ETFs Worth It? — Jeff Teeples<a class="anchor" href="#3-are-covered-call-etfs-worth-it-jeff-teeples" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Finance-education YouTube (affiliate-only monetization).</li>
+<li><strong>Revenue model:</strong> none given.</li>
+<li><strong>Content worth keeping:</strong> JEPQ ≈ QQQM holdings proof (P/E 30.35 vs 30.4, identical top-10 — the "same fund renting out upside" claim demonstrated); since 5/2022 JEPQ +46% vs QQQM +65%; QQQI outperforming JEPQ by 6%+ since late April 2026.</li>
+<li><strong>Automation potential: 4/10</strong> — templated explainer; the research spreadsheet is the only manual piece.</li>
+<li><strong>Quality: 6.5/10</strong> — real fund charts and named holdings; no portfolio receipts; standard rules of thumb.</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — solid primer on a known theme; the 46-vs-65 spread + holdings proof is the reusable hook if this theme is ever covered.</li>
+</ul>
+<h3 id="4-covered-call-funds-why-not-all-in-armchair-income">4. Covered Call Funds: Why Not ALL IN — Armchair Income<a class="anchor" href="#4-covered-call-funds-why-not-all-in-armchair-income" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Income-investing channel + free portfolio funnel + paid community.</li>
+<li><strong>Revenue model:</strong> none given (affiliates + membership implied).</li>
+<li><strong>Content worth keeping (best receipts of the batch):</strong> the income/price <em>decoupling</em> framework — pair covered-call funds with income assets whose payouts don't track price: BDCs (ARCC ~10% yield, −16.7% worst cut vs QQQX's −32% GFC cut that took a decade to recover), preferreds (NLY-G 8.3%), OVL (10.5% yield, no calls, beat S&P since 2019), ADX (7.8%); KGLD gold CC fund: 15% headline yield with zero underperformance vs GLD (use 11% conservative); GPIQ only −2.1% vs Nasdaq's +33%. Presenter runs 42% covered-call allocation, live Snowball dashboard.</li>
+<li><strong>Automation potential: 3/10</strong> — allocation judgment is human.</li>
+<li><strong>Quality: 7.5/10</strong> — named funds, 30-year histories, personal allocation disclosed. Deductions: affiliate/paid-community incentives; survivorship-prone backtests.</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — best-in-theme risk framework, but allocation advice, not a buildable business.</li>
+<li><strong>Key action:</strong> the decoupling checklist (income source ≠ price source) ports to any income-product content.</li>
+</ul>
+<h3 id="5-rentahumanai-review-scam-view">5. RentAHuman.AI Review — SCAM VIEW<a class="anchor" href="#5-rentahumanai-review-scam-view" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model (as pitched):</strong> "physical layer for AI" marketplace — humans list location/skills/price; AI agents post tasks needing physical presence (pickups, photo verification); proof-of-completion via photo/video; crypto payouts.</li>
+<li><strong>Novelty: PARTIALLY NEW (concept only):</strong> AI as the <em>paying customer</em> of human labor is a genuinely new recombination (marketplace × agent infra × agentic payments) — but no evidence the platform is live or paying, and the source is an AI-voiced SEO review channel with "reportedly" hedging throughout.</li>
+<li><strong>Automation potential: 6/10</strong> platform-side (matching/verification) — the tasks themselves are definitionally manual.</li>
+<li><strong>Quality: 2/10</strong> — zero receipts.</li>
+<li><strong>Verdict: ❌ Skip as presented — watchlist the model, not the video.</strong> Independently verify the platform exists and pays before treating it as signal.</li>
+<li><strong>Red flags:</strong> hedged claims, crypto payment risk, worker PII exposure, possible SEO bait for a non-operational site.</li>
+</ul>
+<h2 id="final-ranking-automation-potential-novelty-weighted">Final Ranking (automation potential, novelty-weighted)<a class="anchor" href="#final-ranking-automation-potential-novelty-weighted" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>Rank</th><th>Item</th><th>Auto</th><th>Quality</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Charlie Chang high-value-skills menu</td>
+<td>6</td>
+<td>4</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>RentAHuman model (watchlist)</td>
+<td>6</td>
+<td>2</td>
+<td>❌ Skip (track concept)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Armchair Income decoupling framework</td>
+<td>3</td>
+<td>7.5</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Covered-call ETF primer</td>
+<td>4</td>
+<td>6.5</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Dina Lu beginner menu</td>
+<td>3</td>
+<td>3</td>
+<td>❌ Skip</td>
+</tr>
+</tbody></table>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
+<p>1. <strong>"Pitch the finished deliverable" got independent double confirmation</strong> — both listicle videos independently converge on building the website/mockup <em>before</em> the pitch (already our validated #1 mechanic from 09-03). Two more independent sightings; treat as settled best practice, not a new find.</p>
+<p>2. <strong>Semi-new tactics worth tracking:</strong> AI UGC video creation as a one-person content team replacement; platform-installer (Notion/ClickUp) as a boring-niche service wedge; trend-surfing exploding niche sports with $17–27 PDFs. None graduates a theme on its own.</p>
+<p>3. <strong>"AI hires humans" marketplaces are a watchlist recombination</strong> (marketplace × agent infra × agentic payments) — conceptually novel, zero operational evidence today.</p>
+<p>4. <strong>Income-investing content keeps producing the batch's best receipts</strong> (named funds, 30-year histories, disclosed personal allocations) while side-hustle listicles produce none — the evidence-hierarchy pattern holds across another 5 videos.</p>
+<p>5. <strong>No new themes graduated.</strong> All five map to known themes (side hustles/services, income investing, marketplaces).</p>
+<p><em>Automated research report — discovery pipeline. Generated by OpenClaw agent (superstarsaledev).</em></p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-19</p>
+    </div>
+</body>
+</html>
