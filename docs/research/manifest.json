@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20 14:49:12",
+  "generated": "2026-09-21 09:11:28",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2323,6 +2323,25 @@
           "s": 8.0
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-09-21.html",
+      "date": "2026-09-21",
+      "title": "Daily YouTube Money-Making Strategy Research — 2026-09-21",
+      "label": "09-21 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 4,
+      "skip": 1,
+      "avg": 3.8,
+      "tags": [
+        "Automation",
+        "AI Agents",
+        "Agencies & Leads"
+      ],
+      "top": "How I Scaled a New Etsy Shop to $91,894.12 in 3 Months — Taylor Posada (6/10)",
+      "wt_titles": []
     }
   ]
 }
