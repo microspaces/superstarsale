@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-21 09:11:28",
+  "generated": "2026-09-23 10:07:09",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2342,6 +2342,58 @@
       ],
       "top": "How I Scaled a New Etsy Shop to $91,894.12 in 3 Months — Taylor Posada (6/10)",
       "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-09-22.html",
+      "date": "2026-09-22",
+      "title": "Daily YouTube Strategy Research — 2026-09-22",
+      "label": "09-22 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 2,
+      "skip": 2,
+      "avg": 5.0,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "AI Agents"
+      ],
+      "top": "Coley Andrews: What it Takes to be a Search Fund Entrepreneur — Stanfo (8/10)",
+      "wt_titles": [
+        {
+          "t": "How To Have A Successful Product Launch: My 4-Step Process — Alex Catt",
+          "s": 6.0
+        }
+      ]
+    },
+    {
+      "file": "daily-research_2026-09-23.html",
+      "date": "2026-09-23",
+      "title": "Daily YouTube Strategy Research — 2026-09-23",
+      "label": "09-23 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 2,
+      "skip": 1,
+      "avg": 6.0,
+      "tags": [
+        "Agencies & Leads",
+        "Courses & Communities",
+        "Automation"
+      ],
+      "top": "The $1.8M Solopreneur Playbook (DesignJoy) — Starter Story (7/10)",
+      "wt_titles": [
+        {
+          "t": "The $1.8M Solopreneur Playbook (DesignJoy) — Starter Story",
+          "s": 7.0
+        },
+        {
+          "t": "First Digital Course Launch Numbers — Kerry Egeler",
+          "s": 6.0
+        }
+      ]
     }
   ]
 }

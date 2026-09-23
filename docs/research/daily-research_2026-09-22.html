@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily YouTube Strategy Research — 2026-09-22</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-09-22</h1>
+
+<p>Automated daily research: 5 videos analyzed for business models, revenue claims, replication steps, and automation potential. Ranking prioritizes automatable businesses.</p>
+<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Verdict</th><th>Automation</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>How To Have A Successful Product Launch: My 4-Step Process</td>
+<td>Alex Cattoni</td>
+<td>130,726</td>
+<td>Worth Trying</td>
+<td>7/10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>How to Get an SBA Loan For Your Small Business (Tips & Advice)</td>
+<td>ClearValue Tax</td>
+<td>154,435</td>
+<td>Mixed</td>
+<td>6/10</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Coley Andrews: What it Takes to be a Search Fund Entrepreneur</td>
+<td>Stanford Graduate School of Business</td>
+<td>36,405</td>
+<td>Mixed</td>
+<td>4/10</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10 Small Business Ideas to Add to Your Game! The Sims 4 Businesses & Hobbies</td>
+<td>shyyviolet</td>
+<td>31,450</td>
+<td>Skip</td>
+<td>2/10</td>
+</tr>
+<tr>
+<td>5</td>
+<td>50+ Small Business Ideas for The Sims 4 Businesses & Hobbies</td>
+<td>Rosannatxt</td>
+<td>63,655</td>
+<td>Skip</td>
+<td>1/10</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="1-how-to-have-a-successful-product-launch-my-4-step-process-alex-cattoni-131k-views">1. How To Have A Successful Product Launch: My 4-Step Process — Alex Cattoni (131k views)<a class="anchor" href="#1-how-to-have-a-successful-product-launch-my-4-step-process-alex-cattoni-131k-views" aria-label="Link to this section">#</a></h2>
+<p><strong>Business model:</strong> Digital-product launch playbook (creator info-product business) using attraction/content marketing: seed a topic for months, tease, run a 7-day omnichannel promotion (email-first), then over-serve customers to drive repeat buys. Demonstrated via her Copy Posse 5-day Brand Voice challenge launch.</p>
+<p><strong>Revenue model:</strong> Revenue split for the most recent launch: >50% from email, ~30% organic social, ~20% paid ads. No absolute dollar figures, conversion rates, or list-size-to-revenue math given.</p>
+<p><strong>Replication steps:</strong></p>
+<p>1. Pick a product; 2+ months out, start publishing educational content about the <em>problem</em> it solves without mentioning the product (seed the importance).</p>
+<p>2. Build/nurture an email list from day one — she started hers a year before having anything to sell.</p>
+<p>3. 3–7 days before launch: tease ("something is coming") via email + social; optionally start light paid ads.</p>
+<p>4. Launch week (7 days): email the list daily (vs. usual 2x/week), post 2x/day on social (UGC, videos, carousels), run retargeting ads to warm audience (ads optional — her earlier launches succeeded without them).</p>
+<p>5. Step up support: answer every comment/DM/email 2–3x daily during launch to kill objections fast; stay active in the customer community post-purchase for retention/resales.</p>
+<p>6. Repeat 3–4 launches/year.</p>
+<p><strong>Automation potential: 7/10</strong> — Email sequences, social calendars, teaser content, retargeting setup, and FAQ/support triage are all systematizable with AI agents (drafting seeds/teasers/7-day sequences, auto-answering common objections, scheduling). Human-bound: community relationship feel, offer design, and any live challenge delivery.</p>
+<p><strong>Quality: 6/10</strong> — Real first-party data points (revenue-by-channel split, launch cadence, timing specifics) are better than vague guru advice, but zero dollar figures, no dashboard/receipts shown, and the "51% revenue goal" stat in the outro is a naked hook. Process is credible but self-reported.</p>
+<p><strong>Verdict: Worth Trying</strong> — Cheap-to-run, proven playbook for anyone with (or willing to build) an audience; email-first emphasis is the highest-leverage takeaway.</p>
+<p><strong>Key actions:</strong></p>
+<ul>
+<li>Start an email list now, before you have a product; nurture with value content.</li>
+<li>Plan a 2-month seeding content calendar around the problem your product solves.</li>
+<li>Write the 7-day launch email sequence in advance (daily sends); treat email as the revenue engine.</li>
+<li>During launch, triple support response speed — objections die with fast answers.</li>
+</ul>
+<p><strong>Red flags:</strong> No absolute revenue numbers despite "pulling back the curtain"; success predates on a large existing audience (hundreds of thousands of followers) — replication for a cold start is much harder; outcome stats are self-reported; outro tees up a "51%" stat as engagement bait.</p>
+<hr>
+<h2 id="2-how-to-get-an-sba-loan-for-your-small-business-clearvalue-tax-154k-views">2. How to Get an SBA Loan For Your Small Business — ClearValue Tax (154k views)<a class="anchor" href="#2-how-to-get-an-sba-loan-for-your-small-business-clearvalue-tax-154k-views" aria-label="Link to this section">#</a></h2>
+<p><strong>Business model:</strong> Educational/explainer content about SBA loans (7A, 504, microloan) — how they work, eligibility, credit requirements. The channel itself monetizes via an owned lending company (Clear Value Lending) with an in-house approval-odds calculator as the lead magnet. The "business taught" is essentially: use debt financing (SBA-guaranteed bank loans) to fund/start/acquire a small business.</p>
+<p><strong>Revenue model:</strong> Specific numbers are about the loans, not earnings: SBA 7A up to $5M (avg ~$444K), 504 up to $5M+ (avg $1.1M), microloans up to $50K (avg $13K); terms 5–25 yrs; 10–30% down payment possible. No revenue/profit figures for running the business itself — none given.</p>
+<p><strong>Replication steps:</strong></p>
+<p>1. Register a for-profit US business in an eligible industry (no gambling, lobbying, pyramid schemes).</p>
+<p>2. Build skin-in-the-game: owner equity investment + ability-to-repay evidence (revenue, projections, credit history).</p>
+<p>3. Get credit score to 650+ (check reports for errors first — host claims a 100-point jump from fixing one).</p>
+<p>4. Exhaust other financing options; SBA expects you've been declined elsewhere or face unreasonable terms.</p>
+<p>5. Pick loan type: 7A (general/acquisition, up to $5M), 504 (real estate/heavy equipment), microloan (startup/inventory under $50K); SBA Express for ≤$500K if speed matters.</p>
+<p>6. Shop lenders (bank/credit union/online; SBA Lender Match tool); compare fees, prepayment penalties, guarantee fees.</p>
+<p>7. Prepare for 10–30% down, personal guarantee (20%+ owners), possible collateral (common >$25K); wait 2–4 weeks (7A) to 2–4 months (504).</p>
+<p><strong>Automation potential: 6/10</strong> — The application/document prep, lender comparison, eligibility screening, and pre-qualification (like the host's 4-factor odds calculator) are highly automatable with software/agents. But underwriting approval, personal guarantees, and down payments are inherently human/capital-bound; can't automate getting the loan itself.</p>
+<p><strong>Quality: 7/10</strong> — High specificity on loan types, averages, timelines, credit thresholds; presenter discloses he owns a lending company (transparent incentive). But it's educational marketing — the "100-point credit jump" anecdote is unverifiable, and no outcome receipts (approved deals, dashboards) are shown.</p>
+<p><strong>Verdict: Mixed</strong> — Solid primer if you need acquisition/startup capital; not a business model itself, and the video doubles as a funnel for the host's lending company.</p>
+<p><strong>Key actions:</strong></p>
+<ul>
+<li>Pull free credit reports and dispute errors before applying.</li>
+<li>Use SBA Lender Match + pre-qualification tools to shortlist 3+ lenders before committing weeks to one.</li>
+<li>Decide loan type by use case (7A general / 504 real estate / microloan small needs).</li>
+<li>Model the 10–30% down payment and personal-guarantee exposure before applying.</li>
+</ul>
+<p><strong>Red flags:</strong> Content is a lead-gen funnel for the host's own lending company; unverifiable personal anecdote (100-pt credit jump "in days"); approval timelines mean rejected applications waste a month+ — pre-screen first; personal assets at risk via guarantee/collateral.</p>
+<hr>
+<h2 id="3-coley-andrews-what-it-takes-to-be-a-search-fund-entrepreneur-stanford-gsb-36k-views">3. Coley Andrews: What it Takes to be a Search Fund Entrepreneur — Stanford GSB (36k views)<a class="anchor" href="#3-coley-andrews-what-it-takes-to-be-a-search-fund-entrepreneur-stanford-gsb-36k-views" aria-label="Link to this section">#</a></h2>
+<p><strong>Business model:</strong> Search funds — "entrepreneurship through acquisition." A would-CEO raises small search capital, spends ~2 years doing outreach to find a profitable small business (typically from a retiring 60–70 year old owner with no successor), buys it, and steps in as CEO. Investors back "smarts and hustle, not experience" by buying healthy, unbroken companies in good industries to de-risk an inexperienced operator.</p>
+<p><strong>Revenue model:</strong> Investor checks of $30K–$50K per searcher for 2-year search runway; acquisition-stage capital raised after a target is found. Odds cited: ~75% chance of finding/buying a company within 2 years, ~67% chance of success post-acquisition, >50% aggregate probability of a successful outcome. Growth stat: 2–3 search funds raised in 1995 → 10–12 in 2005 → 50+ by 2015. No specific return multiples/IRR figures given.</p>
+<p><strong>Replication steps:</strong></p>
+<p>1. Recruit investors to fund a search fund (~2 years of runway).</p>
+<p>2. Define acquisition criteria: healthy, profitable business in a good industry where an inexperienced CEO won't break it.</p>
+<p>3. Cold-outreach at scale — thousands of companies contacted, hundreds of conversations, tens of in-person meetings over the search.</p>
+<p>4. Acquire from a retiring boomer owner; take over as CEO.</p>
+<p>5. Year 1–2: change nothing — listen, learn, keep the business stable.</p>
+<p>6. Then gradually grow: build a sales force, attack new market segments, hire senior leaders.</p>
+<p><strong>Automation potential: 4/10</strong> — The search phase (lead lists, outreach sequencing, screening retiring-owner businesses) is highly automatable with agents; but the model's core requires a human CEO running the acquired company for years, plus relationship-driven fundraising. Only partially systematizable.</p>
+<p><strong>Quality: 8/10</strong> — Named firm (Pacific Lake Partners), named institution (Stanford GSB), real aggregate statistics from the search fund ecosystem, credible investor perspective. Minus points: it's a motivational overview, not an operating how-to, and success-rate stats aren't independently shown on screen.</p>
+<p><strong>Verdict: Mixed</strong> — Credible and mechanically clear, but the path demands capital, a 2-year unpaid search, tolerance for 90% daily rejection, and a multi-year CEO commitment. High-quality content; heavy lift for most viewers.</p>
+<p><strong>Key actions:</strong></p>
+<ul>
+<li>Study the search fund lifecycle (Stanford GSB publishes search fund studies) before committing.</li>
+<li>Write acquisition criteria first (industry health, profitability, owner demographics) — investors screen on this.</li>
+<li>If interested but lacking capital/credentials, look at self-funded/ETA variants of the same boomer-retirement thesis.</li>
+</ul>
+<p><strong>Red flags:</strong> 90% of your day is rejection for two years; requires raising other people's money; aggregate odds (75%/67%) are historical averages, not guarantees; searchers typically earn little during the search phase.</p>
+<hr>
+<h2 id="4-10-small-business-ideas-to-add-to-your-game-the-sims-4-businesses-hobbies-shyyviolet-31k-views">4. 10 Small Business Ideas to Add to Your Game! The Sims 4 Businesses & Hobbies — shyyviolet (31k views)<a class="anchor" href="#4-10-small-business-ideas-to-add-to-your-game-the-sims-4-businesses-hobbies-shyyviolet-31k-views" aria-label="Link to this section">#</a></h2>
+<p><strong>Business model:</strong> Entertainment/gaming content — a listicle of 10 fictional in-game business ideas (cooking classes, bars, internet cafés, libraries, co-working workshops, comedy club, music venue, movie theater, winery, fiber-art classes) for The Sims 4 "Businesses & Hobbies" expansion. No real-world business covered; also the creator's first-ever YouTube video.</p>
+<p><strong>Revenue model:</strong> None given.</p>
+<p><strong>Replication steps:</strong> Not applicable as a real business.</p>
+<p><strong>Automation potential: 2/10</strong> — The "business" is fictional game content with no real monetization shown. Scripted listicle gaming videos can be semi-automated (faceless format), but there's no real business system here.</p>
+<p><strong>Quality: 2/10</strong> — Zero receipts by design: no dollars, no dashboards, no real businesses. Enthusiastic and specific about game mechanics, but it's entertainment.</p>
+<p><strong>Verdict: Skip</strong> — Entertainment only; nothing actionable for real business building.</p>
+<p><strong>Key actions:</strong> None — entertainment only.</p>
+<p><strong>Red flags:</strong> First video from an unproven channel; no monetization info; everything described is in-game fiction — easy to mistake the title's "small business ideas" for real-world advice.</p>
+<hr>
+<h2 id="5-50-small-business-ideas-for-the-sims-4-businesses-hobbies-rosannatxt-64k-views">5. 50+ Small Business Ideas for The Sims 4 Businesses & Hobbies — Rosannatxt (64k views)<a class="anchor" href="#5-50-small-business-ideas-for-the-sims-4-businesses-hobbies-rosannatxt-64k-views" aria-label="Link to this section">#</a></h2>
+<p><strong>Business model:</strong> Gaming/entertainment content: a listicle of 51 in-game small business ideas for The Sims 4's Businesses & Hobbies expansion (comedy club, cooking school, gym, pottery shop, tattoo studio, study cafe, etc.). Monetization in-game is uniformly "entry fee or hourly rate," sometimes plus class fees or selling crafted goods. Real-world transferable <em>models</em> faintly exist — skill-class venues with hybrid revenue (open studio + paid classes, e.g., paint-your-own-pottery, climbing gyms, study cafes, maker spaces, hourly studio/equipment rental, consignment of customer-made goods) — but the video never discusses them as real businesses.</p>
+<p><strong>Revenue model:</strong> None given. No dollar figures, pricing, margins, or real-world revenue anywhere — only in-game mechanics (entry fee vs. hourly charge).</p>
+<p><strong>Replication steps (transferable pattern only — the hybrid skill-studio):</strong></p>
+<p>1. Pick a teachable hands-on skill with proven local demand (pottery, art, climbing, woodworking).</p>
+<p>2. Launch with paid classes as the anchor revenue; add open-studio hourly rental for graduates of classes.</p>
+<p>3. Layer add-on revenue: sell supplies/finished goods (including customer consignment), snacks/coffee.</p>
+<p>4. Validate locally before signing a lease — this pattern is well-documented IRL; the video adds nothing to it.</p>
+<p><strong>Automation potential: 1/10</strong> — Gaming content; no real-world process to automate. (IRL studio analogs are largely labor-bound.)</p>
+<p><strong>Quality: 2/10</strong> — Fails the receipts test completely: no named real businesses, no dashboards, no numbers, no claims to verify. It's internally consistent about game mechanics and honestly flags what doesn't work in-game (hotels, daycares need mods), which earns it a 2 rather than a 1 — but as a business-ideas source it's near-zero signal.</p>
+<p><strong>Verdict: Skip</strong> — Entertainment only.</p>
+<p><strong>Key actions:</strong> None — entertainment only.</p>
+<p><strong>Red flags:</strong> Zero financial specificity — every monetization mention is the generic "entry fee or hourly rate" repeated across 51 ideas; several ideas openly don't function in-game; optimistic framing with no risk, cost, or failure discussion; view-bait listicle format with channel cross-promo.</p>
+<hr>
+<h2 id="final-ranking-by-automation-potential">Final Ranking by Automation Potential<a class="anchor" href="#final-ranking-by-automation-potential" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>Rank</th><th>Video</th><th>Automation</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>Product Launch 4-Step Process (Alex Cattoni)</td>
+<td>7/10</td>
+<td>Worth Trying</td>
+</tr>
+<tr>
+<td>2</td>
+<td>SBA Loans Explained (ClearValue Tax)</td>
+<td>6/10</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Search Fund Entrepreneurship (Stanford GSB)</td>
+<td>4/10</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sims 4: 10 Business Ideas (shyyviolet)</td>
+<td>2/10</td>
+<td>Skip</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Sims 4: 50+ Business Ideas (Rosannatxt)</td>
+<td>1/10</td>
+<td>Skip</td>
+</tr>
+</tbody></table>
+<p><strong>Rationale:</strong> The product-launch playbook wins — email sequences, content calendars, teaser campaigns, and support triage are all directly automatable with AI agents today. SBA lending ranks second because pre-qualification, lender comparison, and document prep are automatable even though approval requires human capital and guarantees. Search funds have an automatable deal-sourcing layer but a fundamentally human CEO core. The two Sims 4 videos are entertainment and rank last.</p>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
+<p>1. <strong>Email-first launches remain the highest-leverage automatable play.</strong> Cattoni's split (>50% of revenue from email, ~30% organic, ~20% paid) validates agent-automatable email sequences as the core revenue engine; the seed→tease→7-day-push cadence is fully scriptable. Caveat: her results ride on a large pre-existing audience — cold-start replication needs an audience-building phase first.</p>
+<p>2. <strong>The pre-qualification layer of SMB financing is a buildable automation wedge.</strong> ClearValue Tax's real business is a lending funnel with an odds calculator as the lead magnet — a pattern worth noting: free calculators/screeners convert educational traffic into finance leads. Underwriting itself stays human.</p>
+<p>3. <strong>Boomer-retirement acquisitions keep validating.</strong> Stanford's search fund stats (75% find rate in 2 years, 67% post-acquisition success) reinforce the known ETA theme; the automatable slice is outbound deal-sourcing for retiring-owner businesses.</p>
+<p>4. <strong>Watch for title mimicry in discovery:</strong> two of five videos used "small business ideas" phrasing for pure gaming content — zero business signal. The discovery wildcard caught entertainment, not strategy.</p>
+<p>5. <strong>No new business mechanics graduated today.</strong> All five videos mapped onto already-covered themes (creator monetization/launches, debt financing/acquisitions, gaming entertainment); nothing added to candidate themes.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-22</p>
+    </div>
+</body>
+</html>

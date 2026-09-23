@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily YouTube Strategy Research — 2026-09-23</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1>Daily YouTube Strategy Research — 2026-09-23</h1>
+
+<p><em>Automated daily research · 5 videos analyzed · Generated 2026-09-23 (report written by main session from on-disk digests after delivery failure; content was complete)</em></p>
+<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>The $1.8M Solopreneur Playbook</td>
+<td>Starter Story</td>
+<td>489,443</td>
+<td>Worth Trying</td>
+</tr>
+<tr>
+<td>2</td>
+<td>How Much Should You Sell On Your First Digital Course Launch?</td>
+<td>Kerry Egeler</td>
+<td>220</td>
+<td>Worth Trying</td>
+</tr>
+<tr>
+<td>3</td>
+<td>B2B Agency Lands Multiple High-Value Clients Using Cold Outreach</td>
+<td>Hyperke Growth Partners</td>
+<td>123</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>What Is Churn? SaaS Churn Prediction EXPLAINED</td>
+<td>Dan Martell</td>
+<td>34,810</td>
+<td>Mixed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>AIRBNB FRIENDLY APARTMENTS (Rental Arbitrage 2023)</td>
+<td>Garrett Brown</td>
+<td>8,201</td>
+<td>Skip</td>
+</tr>
+</tbody></table>
+<p>Run type: Discovery loop. All 5 transcripts captured.</p>
+<h2 id="per-video-analysis">Per-Video Analysis<a class="anchor" href="#per-video-analysis" aria-label="Link to this section">#</a></h2>
+<h3 id="1-the-18m-solopreneur-playbook-designjoy-starter-story">1. The $1.8M Solopreneur Playbook (DesignJoy) — Starter Story<a class="anchor" href="#1-the-18m-solopreneur-playbook-designjoy-starter-story" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Productized subscription design service — flat monthly fee, unlimited async design requests, zero employees. Second layer: digital products (template pack "Scribbles" 25K+ copies at $4.99, course "Productize Yourself").</li>
+<li><strong>Revenue model:</strong> Price ladder $449 → $1,000 → $3,000 → $5,000/mo per client; ~16 clients at $5K ≈ $1M/yr service + ~29% from info products; headline $1.8–2M/yr. (One "$88K/mo" line contradicts the math — sloppy sourcing.)</li>
+<li><strong>Replication steps:</strong> (1) pick a high-demand low-touch service (web/branding fulfill fast); (2) launch a landing page at an intentionally low anchor price to force a fast first sale; (3) raise in steps as portfolio grows; (4) async boundaries as the moat — Trello queue, one active request per client, no calls, no mid-request scope changes; (5) filter for clients where $5K/mo is trivial vs. a $200K hire; (6) package expertise into template/course ladder after ~6 months.</li>
+<li><strong>Automation potential: 6/10</strong> — intake/queues/delivery are scriptable; core value is senior design judgment.</li>
+<li><strong>Quality: 7/10</strong> — named business, named founder, specific ladder and product numbers. Deductions: self-reported income, no dashboards, the $88K/mo inconsistency.</li>
+<li><strong>Verdict: ✅ Worth Trying</strong> — the async-boundary rules are the actual moat; the low-anchor-price landing-page validation tactic applies to any productized service.</li>
+<li><strong>Red flags:</strong> unverifiable income; "unlimited" subs churn-prone with weak boundaries; won't transfer to high-touch services.</li>
+</ul>
+<h3 id="2-first-digital-course-launch-numbers-kerry-egeler">2. First Digital Course Launch Numbers — Kerry Egeler<a class="anchor" href="#2-first-digital-course-launch-numbers-kerry-egeler" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Digital course/membership ("Digital Dads Academy") launched via free 3-day live challenge funnel + FB/IG ads.</li>
+<li><strong>Revenue model (fully disclosed):</strong> $7,876 launch sales = 4 annual @$499 + 10 monthly @$49 (projected); ad spend $2,478 for 379 leads ($6.54/lead), 3.17x ROAS, ~$20.78/lead; cash collected ≈ $2,486 — <strong>break-even day one; profit depends on renewals</strong>. Price doubles next launch.</li>
+<li><strong>Replication steps:</strong> niche + small audience → lead magnet → 3-day challenge via ads → <strong>presell founding-member offer at 50% off before the course exists</strong> → membership pricing (not one-time) → track CPL/EPL/conversion/cash in a sheet → expect 1–3% lead→sale on first launch, iterate then scale.</li>
+<li><strong>Automation potential: 4/10</strong> — ads/funnels/billing automatable; live teaching and retention human-heavy.</li>
+<li><strong>Quality: 6/10</strong> — real Google Sheet with per-launch tabs, exact dollars, zero-sale days admitted, near-break-even cash confessed. All self-reported; tiny channel (220 views); "six-figure launches elsewhere" unverifiable.</li>
+<li><strong>Verdict: ✅ Worth Trying</strong> — the presell-before-building founding-member tactic is zero-cost demand validation; the metric sheet is the discipline template.</li>
+<li><strong>Red flags:</strong> day-one cash was ~$8 profit; the annual figure is a retention projection, not collected money.</li>
+</ul>
+<h3 id="3-b2b-agency-cold-outreach-hyperke-growth-partners">3. B2B Agency Cold Outreach — Hyperke Growth Partners<a class="anchor" href="#3-b2b-agency-cold-outreach-hyperke-growth-partners" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Vendor testimonial interview: Hyperke sells done-for-you cold outreach/appointment-setting; featured client Context West (Denver B2B marketing agency) uses it to land its own clients.</li>
+<li><strong>Revenue model:</strong> none given — no dollars, deal sizes, or close rates anywhere; adjectives only.</li>
+<li><strong>Operational details worth stealing:</strong> case-study-led messaging (not pitch-first), domain warmup as high-learning-curve infrastructure, patient follow-up cadence (weeks), 1.5-page simple contract, guarantees to lower buyer risk, weekly reports + Slack + monthly reviews.</li>
+<li><strong>Automation potential: 7/10</strong> — list building, warmup, sequencing, follow-ups, reporting are all scriptable; discovery and closing stay human.</li>
+<li><strong>Quality: 4/10</strong> — one named real client passes the minimum bar, but it's structurally an ad: interviewer owns the service, zero conflicting questions, funnel efficiency undisclosed (interviewee admits meetings are "the great unknown").</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — channel model validated (B2B agencies do buy outbound); ignore the unverified outcome claims; the margin is in the automation layer.</li>
+</ul>
+<h3 id="4-saas-churn-prediction-explained-dan-martell">4. SaaS Churn Prediction EXPLAINED — Dan Martell<a class="anchor" href="#4-saas-churn-prediction-explained-dan-martell" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Educational content funneling to SaaS coaching (lead magnet: "Cancellation Capture System" wireframe).</li>
+<li><strong>Revenue model:</strong> none given.</li>
+<li><strong>Content worth keeping:</strong> logo churn benchmarks by segment (SMB 3–7%, mid-market 1–2%, enterprise 0.5–1% monthly); net revenue retention >100% target; Customer Engagement Score with traffic-light playbook (red/yellow/green/purple = referenceable); churn-prediction signals (account-owner job change ≈ 70% non-renewal risk — then resell to the new employer); mandatory cancel-reason capture feeding product roadmap.</li>
+<li><strong>Automation potential: 8/10 as a capability</strong> — cohort math, usage alerts, and cancel-flow wizards are pure software; only red-account outreach needs a person.</li>
+<li><strong>Quality: 6/10</strong> — checkable benchmarks and a real anecdote; but framework-only, gated-PDF deliverable, prescriptive 20/60/20 engineering split asserted not evidenced.</li>
+<li><strong>Verdict: ⚠️ Mixed</strong> — not a business to copy; steal the metrics as plumbing for any subscription venture.</li>
+</ul>
+<h3 id="5-airbnb-friendly-apartments-rental-arbitrage-garrett-brown">5. Airbnb Friendly Apartments Rental Arbitrage — Garrett Brown<a class="anchor" href="#5-airbnb-friendly-apartments-rental-arbitrage-garrett-brown" aria-label="Link to this section">#</a></h3>
+<ul>
+<li><strong>Business model:</strong> Lease participating apartments via Airbnb's official program, sublet on Airbnb with building pre-approval + revenue share.</li>
+<li><strong>Revenue model (his own on-screen math):</strong> $1,400/mo rent vs ~$400/wk gross = <strong>loss</strong>; $1,800 vs ~$468/wk = break-even; $1,600 vs ~$500/wk = ~$100–200/mo margin — before taxes, furnishings, utilities.</li>
+<li><strong>Replication steps:</strong> filter participating cities → compare rent vs Airbnb's weekly estimate → screen hard for positive spread after real expenses → register per rules → furnish/shoot/host well. Only pursue units where weekly gross ≥ ~2× monthly rent ÷ 4.3 after all-in costs.</li>
+<li><strong>Automation potential: 4/10</strong> — screening math scriptable; hosting/compliance human-heavy.</li>
+<li><strong>Quality: 7/10</strong> — refreshingly honest: reads real program numbers on screen and shows most units lose money; disclaims own expertise. Deduction: the estimates are Airbnb's own marketing numbers.</li>
+<li><strong>Verdict: ❌ Skip</strong> — fails its own receipts test; capped upside (no equity), real downside. Prefer owning over rent-share arbitrage.</li>
+</ul>
+<h2 id="final-ranking-automation-potential-novelty-weighted">Final Ranking (automation potential, novelty-weighted)<a class="anchor" href="#final-ranking-automation-potential-novelty-weighted" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>Rank</th><th>Item</th><th>Auto</th><th>Quality</th><th>Verdict</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td>DesignJoy productized subscription</td>
+<td>6</td>
+<td>7</td>
+<td>✅ Worth Trying</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Presell-first course launch</td>
+<td>4</td>
+<td>6</td>
+<td>✅ Worth Trying</td>
+</tr>
+<tr>
+<td>3</td>
+<td>B2B cold outreach (as service)</td>
+<td>7</td>
+<td>4</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Churn playbook (as capability)</td>
+<td>8</td>
+<td>6</td>
+<td>⚠️ Mixed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Airbnb rental arbitrage</td>
+<td>4</td>
+<td>7</td>
+<td>❌ Skip</td>
+</tr>
+</tbody></table>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
+<p>1. <strong>Productized async services remain the strongest solo playbook</strong> (DesignJoy): low-anchor landing page → fast first sale → price ladder → async boundaries as moat → template/course ladder on top. The pattern now has multiple independent confirmations across runs.</p>
+<p>2. <strong>Presell-before-build keeps winning as validation discipline</strong> — Egeler's founding-member 50% discount is the course-flavor of the "pitch the finished deliverable" mechanic; both convert demand-checking into revenue instead of risk.</p>
+<p>3. <strong>Subscription plumbing is fully automatable:</strong> churn benchmarks (3–7%/1–2%/0.5–1% by segment), engagement-score traffic lights, and cancel-reason capture are a weekend SQL+cron build worth having before scaling any recurring offer.</p>
+<p>4. <strong>Honest-math videos are still the best anti-marketing:</strong> the Airbnb video's own arithmetic kills its topic — most program units lose money after real costs. When a source disconfirms itself, trust it.</p>
+<p>5. <strong>No new themes graduated.</strong> All five map to known themes (productized services, courses, cold outreach, SaaS metrics, STR arbitrage).</p>
+<p><em>Automated research report — discovery pipeline. Generated by OpenClaw agent (superstarsaledev).</em></p>
+
+        <p class="footer">Generated by OpenClaw · 2026-09-23</p>
+    </div>
+</body>
+</html>
