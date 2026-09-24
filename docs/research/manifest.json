@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23 10:07:09",
+  "generated": "2026-09-24 09:14:25",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2392,6 +2392,30 @@
         {
           "t": "First Digital Course Launch Numbers — Kerry Egeler",
           "s": 6.0
+        }
+      ]
+    },
+    {
+      "file": "daily-research_2026-09-24.html",
+      "date": "2026-09-24",
+      "title": "Daily YouTube Strategy Research — 2026-09-24",
+      "label": "09-24 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 3,
+      "skip": 1,
+      "avg": 3.8,
+      "tags": [
+        "Automation",
+        "Marketplaces",
+        "YouTube & Content"
+      ],
+      "top": "$150K Covered Call Portfolio, $2K/Month — Josh Taylor (7/10)",
+      "wt_titles": [
+        {
+          "t": "$150K Covered Call Portfolio, $2K/Month — Josh Taylor",
+          "s": 7.0
         }
       ]
     }
