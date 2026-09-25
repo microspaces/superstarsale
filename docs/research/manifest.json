@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-24 09:14:25",
+  "generated": "2026-09-24 21:47:31",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2416,6 +2416,86 @@
         {
           "t": "$150K Covered Call Portfolio, $2K/Month — Josh Taylor",
           "s": 7.0
+        }
+      ]
+    },
+    {
+      "file": "playlist-research_2026-09-24.html",
+      "date": "2026-09-24",
+      "title": "Playlist Research — 2026-09-24",
+      "label": "09-24 Playlist",
+      "kind": "playlist",
+      "videos": 31,
+      "wt": 15,
+      "mixed": 13,
+      "skip": 3,
+      "avg": 6.2,
+      "tags": [
+        "YouTube & Content",
+        "AI Agents",
+        "Apps & SaaS"
+      ],
+      "top": "Game Oracle — \"I Analysed 62,000 Indie Developers. Here's What Actuall (8.5/10)",
+      "wt_titles": [
+        {
+          "t": "Starter Story (host: Gus) with Roman (Career Hound) — \"I make $25K/mon",
+          "s": 8.0
+        },
+        {
+          "t": "Starter Story (host: Pat Walls) with Rashid (AngelMatch) — \"I make $32",
+          "s": 8.0
+        },
+        {
+          "t": "Devin Nash — \"How to Grow a Livestream So Fast it Feels Like Cheating\"",
+          "s": 8.0
+        },
+        {
+          "t": "Daryn Strauss — \"The Evolution of YouTube: Shows are Just the Beginnin",
+          "s": 8.0
+        },
+        {
+          "t": "(channel not stated in transcript) — \"Anyone Can Make Amazing Games No",
+          "s": 8.0
+        },
+        {
+          "t": "My First Million — \"People are doing $100M+ in sales on this app (ft. ",
+          "s": 8.0
+        },
+        {
+          "t": "Game Oracle — \"I Analysed 62,000 Indie Developers. Here's What Actuall",
+          "s": 8.5
+        },
+        {
+          "t": "MyWifeQuitHerJob Ecommerce Channel — \"They Stole My Million Dollar Bus",
+          "s": 7.0
+        },
+        {
+          "t": "James Layne — \"Grok Bot Has Made My Life SO MUCH Easier… Here's How I ",
+          "s": 7.0
+        },
+        {
+          "t": "Jeff Wade — \"Starting YouTube at 56 Changed My Life in 3 Months\"",
+          "s": 7.0
+        },
+        {
+          "t": "Chris Koerner (The Koerner Office Podcast) — \"The Boring $1M/Year Busi",
+          "s": 8.0
+        },
+        {
+          "t": "Ahmed T'aide — \"I Asked Claude Opus 5.5 to Make This Video. It Wrote E",
+          "s": 8.0
+        },
+        {
+          "t": "Wholesale Ted — \"I Automated My $1k/Day AI Side Hustle With Claude (he",
+          "s": 7.0
+        },
+        {
+          "t": "Matthew Berman — \"8 Jev Use Cases That Feel Like Cheating\"",
+          "s": 8.0
+        },
+        {
+          "t": "Theo - t3.gg — \"Getting the most out of Opus 5.5\"",
+          "s": 8.0
         }
       ]
     }
