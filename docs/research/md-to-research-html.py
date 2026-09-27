@@ -81,6 +81,15 @@ def md_to_html(md_path, output_path):
                 used_ids.add(anchor)
             else:
                 anchor = make_anchor_id(text, used_ids)
+            # Stable id for the table-of-contents heading
+            if re.match(r'^Videos Analyzed', text):
+                anchor = 'videos'
+                used_ids.add(anchor)
+            # Per-video headings get a back-link to the TOC
+            toc_back = ''
+            if re.match(r'^Video \d+:', text):
+                toc_back = ('<a class="toc-back" href="#videos" '
+                            'aria-label="Back to video index">&uarr; Index</a>')
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
@@ -90,6 +99,7 @@ def md_to_html(md_path, output_path):
             html_lines.append(
                 f'<h{level} id="{anchor}">{inline_format(text)}'
                 f'<a class="anchor" href="#{anchor}" aria-label="Link to this section">#</a>'
+                f'{toc_back}'
                 f'</h{level}>')
         elif line.startswith('---'):
             if in_table:
@@ -198,6 +208,17 @@ def md_to_html(md_path, output_path):
         }}
         h2:hover .anchor, h3:hover .anchor {{ opacity: 0.75; }}
         h2 .anchor:hover, h3 .anchor:hover {{ opacity: 1; text-decoration: underline; }}
+        h2 .toc-back, h3 .toc-back {{
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }}
+        h2 .toc-back:hover, h3 .toc-back:hover {{ opacity: 1; text-decoration: underline; }}
         p {{ margin-bottom: 14px; color: #ccc; }}
         strong {{ color: #fff; }}
         a {{ color: #667eea; text-decoration: none; }}

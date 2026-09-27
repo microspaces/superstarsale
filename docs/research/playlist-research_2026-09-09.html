@@ -47,6 +47,17 @@
         }
         h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
         h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
         p { margin-bottom: 14px; color: #ccc; }
         strong { color: #fff; }
         a { color: #667eea; text-decoration: none; }
@@ -153,7 +164,7 @@
 
 <p>> <strong>Run note:</strong> 17 videos in the playlist — biggest batch yet. 16 new (Shane Hummus "night jobs" already covered 09-05, skipped). Full transcripts 16/16. Morning daily cron (<code>c57014f1</code>) died silently with no 09-09 daily report — playlist published first, daily recovery next.</p>
 <p><strong>Videos found:</strong> 17 · <strong>Analyzed:</strong> 16 · <strong>Skipped:</strong> 1 (already covered)</p>
-<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Length</th>
 </tr></thead><tbody>
@@ -288,7 +299,7 @@
 </tbody></table>
 <h2 id="run-theme">Run Theme<a class="anchor" href="#run-theme" aria-label="Link to this section">#</a></h2>
 <p><strong>Agent-legibility is the 2026 acquisition channel.</strong> Across GEO/AEO bots, Shopify FAQ schema, TikTok-manufactured KDP demand, and Hormozi's "watch me work" videos, the winners aren't ranking in search — they're making themselves machine-citable and buyer-specific. Parallel thread: agent-native infrastructure (Slowbooks, OpenClaw 2.0, Higgsfield crews, agentic payments) replacing click-tools with named agents that have jobs, audit trails, and persistent rules. Best receipts of the batch are analog: Nathan's contactless trailer rentals (~$4K/mo net on 2–4 hrs/week). Worst: vendor/guru funnels with dollar figures and no dashboards.</p>
-<h3 id="video-1">Video 1: Greg Isenberg — "5 GitHub Repos" <em>(tooling roundup)</em><a class="anchor" href="#video-1" aria-label="Link to this section">#</a></h3>
+<h3 id="video-1">Video 1: Greg Isenberg — "5 GitHub Repos" <em>(tooling roundup)</em><a class="anchor" href="#video-1" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/9_SZFIW7tus">https://youtu.be/9_SZFIW7tus</a></p>
 <ul>
 <li><strong>Business model:</strong> Mine GitHub trending, install repos as agent skills, productize one working workflow (video-editing-as-a-service, mobile QA).</li>
@@ -298,7 +309,7 @@
 <li><strong>Keep:</strong> Skill Specter as install hygiene. Named: No-AI-Slop, trycompai CRM, browser-use Video Use, Skill Specter, Phone Harness.</li>
 <li><strong>Red flags:</strong> intro says six repos, delivers five; zero results; heavy deps.</li>
 </ul>
-<h3 id="video-2">Video 2: a16z — "AI Agents Could Finally Reinvent the Credit Card" <em>(VC thesis)</em><a class="anchor" href="#video-2" aria-label="Link to this section">#</a></h3>
+<h3 id="video-2">Video 2: a16z — "AI Agents Could Finally Reinvent the Credit Card" <em>(VC thesis)</em><a class="anchor" href="#video-2" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/J3pegsM5drk">https://youtu.be/J3pegsM5drk</a></p>
 <ul>
 <li><strong>Thesis:</strong> Agentic <em>payments</em> (execute a known SKU at best terms) ≠ agentic <em>shopping</em> (robots picking your outfits). Visa/MC 2.5-second window froze card innovation; agents timeshift underwriting/fraud like Apple Pay did. Instacart already trained substitution tolerance.</li>
@@ -307,7 +318,7 @@
 <li><strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 9/10 · <strong>Verdict: Mixed</strong> (Skip as playbook, Worth Trying as rails map)</li>
 <li><strong>Red flags:</strong> a16z investment narrative; no small-operator economics.</li>
 </ul>
-<h3 id="video-3">Video 3: Wes McDowell — "Hormozi's New YouTube Strategy" <em>(content strategy)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a></h3>
+<h3 id="video-3">Video 3: Wes McDowell — "Hormozi's New YouTube Strategy" <em>(content strategy)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/i1fLRypxgjU">https://youtu.be/i1fLRypxgjU</a></p>
 <ul>
 <li><strong>The internet's read is wrong.</strong> Second channel is an overflow pipe for already-filmed workshop footage (~4,000 clips/year), not the funnel. Money is in <strong>narrow "watch me work" videos</strong> (quoted buyer questions). Student David Jackson: 5 clients in 4 months; 35-view dentist-SEO videos converting because every viewer is the buyer.</li>
@@ -316,20 +327,20 @@
 <li><strong>Automation:</strong> 6/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong></li>
 <li><strong>Red flags:</strong> ends in McDowell's own masterclass funnel.</li>
 </ul>
-<h3 id="video-4">Video 4: Mira AI — "AI Filmmaking Team With Claude" <em>(sponsored tutorial)</em><a class="anchor" href="#video-4" aria-label="Link to this section">#</a></h3>
+<h3 id="video-4">Video 4: Mira AI — "AI Filmmaking Team With Claude" <em>(sponsored tutorial)</em><a class="anchor" href="#video-4" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/LW3lzgyTezk">https://youtu.be/LW3lzgyTezk</a></p>
 <ul>
 <li><strong>Architecture worth stealing:</strong> screenwriter + image + video + director in shared context; director writes QC fixes as <strong>persistent rules</strong>; every video prompt specifies the shot's END state for continuity.</li>
 <li><strong>Revenue model:</strong> none. Higgsfield affiliate.</li>
 <li><strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 5/10 · <strong>Verdict: Mixed</strong> — steal the pattern, not the platform.</li>
 </ul>
-<h3 id="video-5">Video 5: Casino Steve — Bubble Craps <em>(standing rule)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a></h3>
+<h3 id="video-5">Video 5: Casino Steve — Bubble Craps <em>(standing rule)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/RozZUnkVcgI">https://youtu.be/RozZUnkVcgI</a></p>
 <ul>
 <li>Session: $500 → $542. Don't Come ~1.36% house edge — still negative EV. Only replicable business is the session-video format + craps-channel shoutout economy.</li>
 <li><strong>Verdict: Mixed</strong> as content niche, <strong>Skip</strong> as money strategy.</li>
 </ul>
-<h3 id="video-6">Video 6: Jake Bauman — "Grok Bot to Get My Brand Cited by AI" <em>(GEO/AEO)</em><a class="anchor" href="#video-6" aria-label="Link to this section">#</a></h3>
+<h3 id="video-6">Video 6: Jake Bauman — "Grok Bot to Get My Brand Cited by AI" <em>(GEO/AEO)</em><a class="anchor" href="#video-6" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/pFoQUzJ9WCI">https://youtu.be/pFoQUzJ9WCI</a></p>
 <ul>
 <li><strong>Strongest new playbook of the batch.</strong> 7-bot Grok team ($20/mo) doing AI-visibility ops vs $2K–$50K/mo agencies. Diagnostic: 20–50 prompts across branded / unbranded / comparison, re-run every 2 weeks. Gate: ~4.0+ stars or AI won't recommend you at all. llms.txt is theater (97% get zero requests).</li>
@@ -338,66 +349,66 @@
 <li><strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong> (as diagnostic + ops checklist)</li>
 <li><strong>Do this week:</strong> 10-minute brand diagnostic on ChatGPT + Perplexity + Google AI; check GPTBot/ClaudeBot/PerplexityBot/Google-Extended on robots + WAF.</li>
 </ul>
-<h3 id="video-7">Video 7: Paul J Lipsky — ChatGPT Images 2.5 <em>(tool review)</em><a class="anchor" href="#video-7" aria-label="Link to this section">#</a></h3>
+<h3 id="video-7">Video 7: Paul J Lipsky — ChatGPT Images 2.5 <em>(tool review)</em><a class="anchor" href="#video-7" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/Q7SiipUCjro">https://youtu.be/Q7SiipUCjro</a></p>
 <ul>
 <li>New: character/face consistency across iterative comment-edits. Productizable: thumbnails, photo restoration, pet portraits, interior mockups.</li>
 <li><strong>Automation:</strong> 5/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong> as format + as a signal the tool is good enough to productize.</li>
 </ul>
-<h3 id="video-8">Video 8: MyWifeQuitHerJob — "Forget Amazon, Shopify" <em>(ecommerce)</em><a class="anchor" href="#video-8" aria-label="Link to this section">#</a></h3>
+<h3 id="video-8">Video 8: MyWifeQuitHerJob — "Forget Amazon, Shopify" <em>(ecommerce)</em><a class="anchor" href="#video-8" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/Bx1zBNx4yws">https://youtu.be/Bx1zBNx4yws</a></p>
 <ul>
 <li>Amazon blocked AI crawlers; Shopify stores are citable. FAQ-schema audit: 26 pages → 85% improved ranking; bridal handkerchiefs 7→4 with 5× traffic. Honest miss: napkins 30→12, zero clicks. Shop Campaigns = pay per verified new customer; 48% of Shop-app orders are first-time.</li>
 <li><strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 7/10 · <strong>Verdict: Worth Trying</strong></li>
 <li><strong>Red flags:</strong> he doesn't even use Shopify (built his own); course/conference funnel.</li>
 </ul>
-<h3 id="video-9">Video 9: Jonathan Nilsen — TikTok Six-Figure Publishers <em>(KDP)</em><a class="anchor" href="#video-9" aria-label="Link to this section">#</a></h3>
+<h3 id="video-9">Video 9: Jonathan Nilsen — TikTok Six-Figure Publishers <em>(KDP)</em><a class="anchor" href="#video-9" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/_QcuQRBrASA">https://youtu.be/_QcuQRBrASA</a></p>
 <ul>
 <li>Demand engine: TikTok/IG attention → TikTok Shop → Amazon spillover rank. Lark and Road $2.25M TikTok Shop Jan–Jul; reusable 11-sec format. Claremont: 4 months / 200+ videos before it clicked. Amar: one IG reel, $3.5K/mo → $1–1.5K/day.</li>
 <li><strong>Automation:</strong> 7/10 · <strong>Quality:</strong> 6/10 · <strong>Verdict: Worth Trying</strong> (price in the quiet window)</li>
 <li>KDP $ are BookBeam estimates; coaching funnel; survivorship.</li>
 </ul>
-<h3 id="video-10">Video 10: Nick Ponte — "NEW Way to make $ with chatgpt" <em>(local AI services)</em><a class="anchor" href="#video-10" aria-label="Link to this section">#</a></h3>
+<h3 id="video-10">Video 10: Nick Ponte — "NEW Way to make $ with chatgpt" <em>(local AI services)</em><a class="anchor" href="#video-10" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/u8Xrxluoyis">https://youtu.be/u8Xrxluoyis</a></p>
 <ul>
 <li>Dead Facebook profiles (500–1K followers, 6+ months silent) → 2 weeks free AI posts → $500–$3K/mo social-posting retainers. Claims $123K/mo QuickBooks (established agency, not the $150/mo newbie testimonial).</li>
 <li><strong>Automation:</strong> 8/10 · <strong>Quality:</strong> 5/10 · <strong>Verdict: Mixed</strong> — tactic is testable; video is a HighLevel affiliate funnel.</li>
 </ul>
-<h3 id="video-11">Video 11: The Next New Thing — Slowbooks <em>(open-source agent accounting)</em><a class="anchor" href="#video-11" aria-label="Link to this section">#</a></h3>
+<h3 id="video-11">Video 11: The Next New Thing — Slowbooks <em>(open-source agent accounting)</em><a class="anchor" href="#video-11" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/_ikuVZ9L_UE">https://youtu.be/_ikuVZ9L_UE</a></p>
 <ul>
 <li>Free anti-QuickBooks: CLI agent IS the books. Receipt OCR → file → audit-logged reversible AI changes. 344 GitHub stars. Live demo with an OCR stumble.</li>
 <li><strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 6/10 · <strong>Verdict: Worth Trying</strong> as a pilot, not production books yet.</li>
 </ul>
-<h3 id="video-12">Video 12: Koerner — "If We Had to Make $1M Fast" <em>(idea roundup)</em><a class="anchor" href="#video-12" aria-label="Link to this section">#</a></h3>
+<h3 id="video-12">Video 12: Koerner — "If We Had to Make $1M Fast" <em>(idea roundup)</em><a class="anchor" href="#video-12" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/2B5dCquvK4c">https://youtu.be/2B5dCquvK4c</a></p>
 <p>Density of real playbooks: RV rentals ($5K/mo net/unit at 50% occ), vibe-coding agency (Billy Howell ~$60K/mo, secondhand), overseas staffing, corporate AI-audit (Ben: charity-backed guarantee, 6 figures/customer), <strong>dormant newsletter roll-up (~10¢/sub)</strong>, hero-workflow AI agency (live 57-min garage-door close on camera), liquidation, buy-a-business + AI, equity-for-services, glamping lease-option.</p>
 <ul>
 <li><strong>Quality:</strong> 7.5/10 · <strong>Verdict: Worth Trying</strong> — treat $1M/6mo as clickbait, steal individual playbooks.</li>
 <li><strong>New mechanics:</strong> newsletter roll-up; equity-for-services ("Bro Mozi").</li>
 </ul>
-<h3 id="video-13">Video 13: Sunny Lenarduzzi — "$1M in 12 Months from 0 subs" <em>(YouTube lead-gen)</em><a class="anchor" href="#video-13" aria-label="Link to this section">#</a></h3>
+<h3 id="video-13">Video 13: Sunny Lenarduzzi — "$1M in 12 Months from 0 subs" <em>(YouTube lead-gen)</em><a class="anchor" href="#video-13" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/Rl3fOs63qRk">https://youtu.be/Rl3fOs63qRk</a></p>
 <ul>
 <li>Offer FIRST ($10K POP, live Zoom), then 8-video evergreen machine (3 BOFU / 2 MOFU / 2 TOFU / 1 depth). Math: 8–9 clients/mo at 30% close. Self-reported $469K from one video. Course-funnel test: framework is fully given, but every proof lives in the guru economy.</li>
 <li><strong>Automation:</strong> 3/10 · <strong>Quality:</strong> 4/10 · <strong>Verdict: Mixed</strong></li>
 </ul>
-<h3 id="video-14">Video 14: Koerner — Contactless Trailer Rentals <em>(operator interview)</em><a class="anchor" href="#video-14" aria-label="Link to this section">#</a></h3>
+<h3 id="video-14">Video 14: Koerner — Contactless Trailer Rentals <em>(operator interview)</em><a class="anchor" href="#video-14" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/68x7jFWbaE8">https://youtu.be/68x7jFWbaE8</a></p>
 <ul>
 <li><strong>Best receipts of the night.</strong> Nathan, Lancaster PA: 10 used trailers $35K, $5.5–7.5K/mo gross, ~$4K/mo net, 2–4 hrs/week, ~$200–250/hr. Prior owner did $28K/yr on the same fleet. Lockbox + CRM + GPS + photo check-in. Price ~1.5% of purchase/day. Dump trailers rent most.</li>
 <li><strong>Automation:</strong> 9/10 · <strong>Quality:</strong> 9/10 · <strong>Verdict: Worth Trying</strong></li>
 <li><strong>This weekend test:</strong> list a trailer (or stock image) on FB Marketplace + Neighbors; scrape residents-per-trailer across sister cities.</li>
 </ul>
-<h3 id="video-15">Video 15: Glo Atanmo — "8 Ways I Get Paid on YouTube" <em>(creator monetization)</em><a class="anchor" href="#video-15" aria-label="Link to this section">#</a></h3>
+<h3 id="video-15">Video 15: Glo Atanmo — "8 Ways I Get Paid on YouTube" <em>(creator monetization)</em><a class="anchor" href="#video-15" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/j9_xKfAuPto">https://youtu.be/j9_xKfAuPto</a></p>
 <ul>
 <li>Memberships 3-tier ($4.99 / $49 / $499) claimed six figures/year; $45 CPM; 45-day monetization posting daily 25-min videos. New-to-archive: Player for Education licensing; YouTube nudging memberships (~30% cut); affiliate + brand-deal double-dip.</li>
 <li><strong>Automation:</strong> 3/10 · <strong>Quality:</strong> 8/10 · <strong>Verdict: Worth Trying</strong></li>
 <li>Six-figure membership claim unverified in transcript.</li>
 </ul>
-<h3 id="video-16">Video 16: OpenClaw — ClawCast Ep 9 <em>(platform podcast)</em><a class="anchor" href="#video-16" aria-label="Link to this section">#</a></h3>
+<h3 id="video-16">Video 16: OpenClaw — ClawCast Ep 9 <em>(platform podcast)</em><a class="anchor" href="#video-16" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/ge3_uj67KLU">https://youtu.be/ge3_uj67KLU</a></p>
 <ul>
 <li>2.0: multiplayer gateway (n people, one agent, Tailscale/Cloudflare), agent-generated dashboards as deliverables, worker nodes (still rough), default "dreaming" memory, skills workshop that self-prunes.</li>

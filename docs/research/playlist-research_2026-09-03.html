@@ -47,6 +47,17 @@
         }
         h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
         h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
         p { margin-bottom: 14px; color: #ccc; }
         strong { color: #fff; }
         a { color: #667eea; text-decoration: none; }
@@ -154,7 +165,7 @@
 <p><strong>Source playlist:</strong> <a href="https://youtube.com/playlist?list=PLamiZQJOzMbY">"Research" by Michael Buchanan</a> (<code>PLamiZQJOzMbY</code>)</p>
 <p><strong>Special run:</strong> playlist-targeted analysis. Playlist held 12 videos; 10 are new coverage. The other 2 (Superwall's $18M app teardown, Starter Story's $69k SaaS) were covered in the 2026-08-31 report and skipped. The <code>PLamiZQJOzMbYz0</code> link from the request returns YouTube error 400 (invalid playlist ID) - treated as a truncated paste of this same playlist.</p>
 <p><strong>Coverage note (standing rule):</strong> not every video is an automated-business pitch - some are general summary/analysis. Types are labeled per video: 6 business-model pitches, 3 general-analysis/education videos, and each gets the treatment it deserves.</p>
-<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Title</th><th>Channel</th><th>Type</th><th>Views</th><th>Transcript</th>
 </tr></thead><tbody>
@@ -266,7 +277,7 @@
 </tr>
 </tbody></table>
 <hr>
-<h3 id="video-1">Video 1: Chris Koerner - "Watch Me Build an App With AI and Make a Sale in 85 Minutes"<a class="anchor" href="#video-1" aria-label="Link to this section">#</a></h3>
+<h3 id="video-1">Video 1: Chris Koerner - "Watch Me Build an App With AI and Make a Sale in 85 Minutes"<a class="anchor" href="#video-1" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/UItZIyRpWSw">https://youtu.be/UItZIyRpWSw</a></p>
 <p><strong>Story:</strong> The most operationally detailed video in the playlist series: Koerner live-builds and launches <strong>OnlyWaivers.com</strong> - a liability-waiver SaaS for LDS church youth leaders (his own niche) - buying the domain ($12), prompting Claude (top model) to write the build prompt, building the app in ~20 minutes with Replit Agent 4, filming a 30-second iPhone selfie ad, and having the <strong>official Facebook Ads MCP create and run the entire Meta campaign</strong> concurrently. One real customer ($13/year, Idaho) lands within the session - no audience leverage.</p>
 <p><strong>Mechanics:</strong></p>
@@ -284,7 +295,7 @@
 <p><strong>Automation angle:</strong> The whole video is an automation showcase: prompt-chaining (Claude writes prompts for Claude-built tools), MCP orchestration replacing agency workflows, concurrent agent tasks, agents self-healing. Operator insight: <strong>when an AI says it "can't," push back - it's usually credit-aversion, not incapability.</strong></p>
 <p><strong>Red flags:</strong> Net economics deeply negative and admitted: ~$100 + ~6 hours for one $13 customer; Claude's own math says $200/day needs ~15 sales/day to break even ("almost no chance") - the real bet is ward-level word-of-mouth virality, unproven. Title's "85 minutes" omits 3 prior hours. n=1 customer, no retention data. The $20/month framing understates ~$250/month real tooling.</p>
 <hr>
-<h3 id="video-2">Video 2: Sunny Lenarduzzi - "If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months"<a class="anchor" href="#video-2" aria-label="Link to this section">#</a></h3>
+<h3 id="video-2">Video 2: Sunny Lenarduzzi - "If I Had 0 Subscribers, Here's How I'd Make $1M in 12 Months"<a class="anchor" href="#video-2" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/Rl3fOs63qRk">https://youtu.be/Rl3fOs63qRk</a></p>
 <p><strong>Story:</strong> The order-of-operations system: <strong>build a high-ticket offer FIRST, get results, and only then publish YouTube</strong> - an 8-video funnel-architected starter batch aimed at small-but-relevant search traffic, not reach. The "creator game" (views/AdSense at $2-3/1k) vs the "business owner game" (leads, dollar-per-view, relevance over reach).</p>
 <p><strong>Mechanics:</strong></p>
@@ -302,7 +313,7 @@
 <p><strong>Automation angle:</strong> Highly compatible with automated content ops: batch-produce funnel-mapped videos, auto-generate topics from FAQs + competitor outlier mining, keyword-trigger lead capture, dollar-per-view tracked per video programmatically.</p>
 <p><strong>Red flags:</strong> Funnel video for her own coaching; all case numbers self-reported; $1M math assumes a $10k offer at 30% close - plausible for warm experts, optimistic generally.</p>
 <hr>
-<h3 id="video-3">Video 3: Less Bitter - "Grok Bot Is Weirdly Revolutionary" <em>(general analysis)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a></h3>
+<h3 id="video-3">Video 3: Less Bitter - "Grok Bot Is Weirdly Revolutionary" <em>(general analysis)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/K6BYzjwkp24">https://youtu.be/K6BYzjwkp24</a></p>
 <p><strong>Story:</strong> mo (mo.io / Ship Academy) stress-tests xAI's Grok Bot live by connecting real accounts (Plausible analytics, Gmail/Drive/Calendar, GitHub, Substack) and building an agent fleet: analytics alerts, NYT/Verge headline watchers, competitor-pricing espionage, uptime monitoring, paid-subscriber notifications, and a blog manager that edits markdown → commits → pushes → <strong>deploys his static site from a chat command</strong>. Walked in expecting annoyance; concluded "this is how AI is done from now on."</p>
 <p><strong>Core findings:</strong></p>
@@ -316,7 +327,7 @@
 <p><strong>Applicability to automated content ops:</strong> scheduled browser agents monitoring news/lab press pages can feed a content pipeline; screenshot archives build research history; a GitHub-connected markdown publisher is a direct fit for automated blog/newsletter publishing.</p>
 <p><strong>Red flags:</strong> Single-session demo - zero reliability/cost/rate-limit testing; euphoric tone with no stress test; shared agent file system with secrets only glances at security.</p>
 <hr>
-<h3 id="video-4">Video 4: Richard Yu - "I Studied 1,000 Digital Product Businesses, Here's What Works in 2026"<a class="anchor" href="#video-4" aria-label="Link to this section">#</a></h3>
+<h3 id="video-4">Video 4: Richard Yu - "I Studied 1,000 Digital Product Businesses, Here's What Works in 2026"<a class="anchor" href="#video-4" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/YaKMTyFd2ZQ">https://youtu.be/YaKMTyFd2ZQ</a></p>
 <p><strong>Story:</strong> The 5-part Instagram machine distilled from his "1,000+ business" study: 7-15-second videos (algorithm ignores follower count) → comment-keyword auto-DM → $27 impulse product + $1,500-2,000 high-ticket offer closed via non-pushy "value calls" at 1-in-3 to 1-in-4.</p>
 <p><strong>Mechanics:</strong></p>
@@ -331,7 +342,7 @@
 <p><strong>Automation angle:</strong> Explicitly semi-automated: keyword-trigger DM funnels, unattended $27 checkout, evergreen value video. The 7-second no-edit format is mass-producible. The insisted-on human piece: live value calls for the $2k close.</p>
 <p><strong>Red flags:</strong> The "study" is a marketing frame; all numbers self-reported; the model quietly scales with your sales calendar, contradicting the passive vibe; "any niche" unqualified.</p>
 <hr>
-<h3 id="video-5">Video 5: vidIQ - "I Found the Pattern Behind Every Viral Video" <em>(education)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a></h3>
+<h3 id="video-5">Video 5: vidIQ - "I Found the Pattern Behind Every Viral Video" <em>(education)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/EyHJupH4Dr0">https://youtu.be/EyHJupH4Dr0</a></p>
 <p><strong>Story:</strong> A framework breakdown of "hundreds" of outlier videos (5×-100× channel average): what they share isn't equipment, volume, or frequency - it's how the first seconds interact with viewer psychology. Four rules, each with a named effect and a real channel example.</p>
 <p><strong>The four rules:</strong></p>
@@ -343,7 +354,7 @@
 <p><strong>Applicability to automated ops:</strong> The outlier method is itself a data pipeline - programmatically detect over-performing formats and template your topic into the proven mold; open-loop titles, identity framing, and credential-first intros are all generatable patterns; vidIQ's outlier score is exactly the ranking signal an automated pipeline can select on.</p>
 <p><strong>Red flags:</strong> The video is a vidIQ ad for its outlier feature; examples cherry-picked, no base rates; psychology effects applied as just-so stories.</p>
 <hr>
-<h3 id="video-6">Video 6: Think Media - "He Started YouTube After 40 - Now It's His Full-Time Career" <em>(case study)</em><a class="anchor" href="#video-6" aria-label="Link to this section">#</a></h3>
+<h3 id="video-6">Video 6: Think Media - "He Started YouTube After 40 - Now It's His Full-Time Career" <em>(case study)</em><a class="anchor" href="#video-6" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/pTWcmJrwRtU">https://youtu.be/pTWcmJrwRtU</a></p>
 <p><strong>Story:</strong> Bloodline Adventures (Alberta hunting/fishing, two brothers) went ~1,000 → 100,000+ subs in ~2 years on viral Shorts (20-40M-view clips), then hit the classic wall: massive views, near-zero conversion, negative sub days. After a mastermind: reverse-engineer content for a defined viewer, diversify revenue, use proof-of-work to win affiliates. Bryce (ex-fire lieutenant/paramedic, 21 years) is now YouTube strategist for Wild TV.</p>
 <p><strong>Key numbers and lessons:</strong></p>
@@ -359,7 +370,7 @@
 <p><strong>Applicability to automated ops:</strong> define the avatar before generating (targeting beats volume); monitor the back catalog for late-breaking outliers and re-cut rather than only producing new; deliberate shorts→long bridges (related-video links) instead of passive cross-posting.</p>
 <p><strong>Red flags:</strong> Think Media mastermind promo frames the whole story; all numbers self-reported; one channel's viral run as survivorship evidence.</p>
 <hr>
-<h3 id="video-7">Video 7: The Ecom King - "Claude AI + Digital Products = $218,974"<a class="anchor" href="#video-7" aria-label="Link to this section">#</a></h3>
+<h3 id="video-7">Video 7: The Ecom King - "Claude AI + Digital Products = $218,974"<a class="anchor" href="#video-7" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/oN9LcIA_rt8">https://youtu.be/oN9LcIA_rt8</a></p>
 <p><strong>Story:</strong> An AI-run digital-product pipeline: Claude + ChatGPT together ("I stopped trying to choose between them") with MCP connectors - <strong>Everbe</strong> (Etsy revenue scraping), <strong>Winning Hunter</strong> (ad intel), <strong>Higgsfield/Sedance 2.5</strong> (ad video) - to find validated demand, build a better product, and sell it on your own .store site with AI-made Facebook ads. Proof: a Stripe flash claiming $218k gross / $180k net at ~$241 AOV.</p>
 <p><strong>Mechanics:</strong></p>
@@ -374,7 +385,7 @@
 <p><strong>Automation angle:</strong> A near-fully AI-run product business with the human only validating/testing. Transferable patterns: cross-source validation before committing compute, negative-review mining for positioning, competitor ad-script cloning, agent handoffs via MD-file briefs.</p>
 <p><strong>Red flags:</strong> Stripe flash with no timeline, no ad-spend total, no refunds data; $218k vs $180k quietly glosses ~$38k fees; paid tools never costed; "skip all approvals" on an autonomous agent is bad safety advice; pensioner positioning example admitted "complete BS" by himself; $20-Etsy → $241-AOV arbitrage asserted, not demonstrated.</p>
 <hr>
-<h3 id="video-8">Video 8: Dan Martell - "Ask Claude These 3 Questions, It Will Change Your Bank Account" <em>(education)</em><a class="anchor" href="#video-8" aria-label="Link to this section">#</a></h3>
+<h3 id="video-8">Video 8: Dan Martell - "Ask Claude These 3 Questions, It Will Change Your Bank Account" <em>(education)</em><a class="anchor" href="#video-8" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/1BApLicRt1w">https://youtu.be/1BApLicRt1w</a></p>
 <p><strong>Story:</strong> The three questions Martell asks AI before starting any business: what to sell (a painkiller, not a vitamin), what your unfair advantage is, and how to get a real payment to validate - "sell before you build." Framed by his own history (two failed companies, then Spheric sold in 4 years).</p>
 <p><strong>The framework:</strong></p>
@@ -389,7 +400,7 @@
 <p><strong>Applicability to automated ops:</strong> the question sequence is itself an AI pipeline (context ingestion → research → interview → red-team → offer generation); the people-pleaser caveat (every AI answer needs an adversarial pass) is directly applicable wherever unchecked LLM output compounds flattering errors.</p>
 <p><strong>Red flags:</strong> Funnel for his "AI company OS" via Instagram DM; the Wizard-of-Oz test collects real card details under false pretenses - ethically questionable; all numbers self-reported.</p>
 <hr>
-<h3 id="video-9">Video 9: Jordan Welch - "Claude + Shopify = $12,000/Month"<a class="anchor" href="#video-9" aria-label="Link to this section">#</a></h3>
+<h3 id="video-9">Video 9: Jordan Welch - "Claude + Shopify = $12,000/Month"<a class="anchor" href="#video-9" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/9zh3Raq4FVc">https://youtu.be/9zh3Raq4FVc</a></p>
 <p><strong>Story:</strong> A three-step Claude-driven dropshipping demo: find a trending product (Trend Track ad-spy), validate with a Claude research verdict, clone a competitor's Shopify store (Clone Store) - both tools wired into the Claude desktop app as MCP connectors. Claimed: a new store to $424 day-one sales; titled $12,000/month.</p>
 <p><strong>Mechanics:</strong></p>
@@ -404,7 +415,7 @@
 <p><strong>Automation angle:</strong> The pitch IS the stack: MCP orchestration of ad-spy → research verdict → store clone → differentiated copy. Transferable: feed structured research output back into the LLM for positioning.</p>
 <p><strong>Red flags:</strong> $12k/month title vs $424 demonstrated day one with no ad-spend breakdown; every tool is an affiliate link; cloning competitor images/copy raises unaddressed IP issues; demo product never actually launched.</p>
 <hr>
-<h3 id="video-10">Video 10: Wholesale Ted - "The Faceless AI YouTube Niche Making People RICH"<a class="anchor" href="#video-10" aria-label="Link to this section">#</a></h3>
+<h3 id="video-10">Video 10: Wholesale Ted - "The Faceless AI YouTube Niche Making People RICH"<a class="anchor" href="#video-10" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/GxcFXsqYnIQ">https://youtu.be/GxcFXsqYnIQ</a></p>
 <p><strong>Story:</strong> AI music channels - long themed background-music videos from AI-generated songs + looped AI visuals - pitched as the best faceless AI niche for beginners: case channel started May 22, 27,000+ subs in 2 months, climbing to 90,000+ views/day, "well over $300/day" estimated. Then the full 4-step production pipeline.</p>
 <p><strong>Mechanics:</strong></p>

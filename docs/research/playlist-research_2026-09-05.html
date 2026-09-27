@@ -47,6 +47,17 @@
         }
         h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
         h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
         p { margin-bottom: 14px; color: #ccc; }
         strong { color: #fff; }
         a { color: #667eea; text-decoration: none; }
@@ -155,7 +166,7 @@
 <p><strong>Special run:</strong> playlist-targeted analysis. Playlist held 12 videos at check time - 11 are new coverage. One repeat (Think Media's "He Started YouTube After 40", <code>pTWcmJrwRtU</code>) was covered in the 2026-09-03 report and skipped.</p>
 <p><strong>Coverage note (standing rule):</strong> not every video is an automated-business pitch. Types are labeled per video: 4 business-model pitches/demos, 7 education/tool-review/general-analysis videos, and each gets the treatment it deserves.</p>
 <p><strong>Transcript note:</strong> YouTube hard-blocked transcript access from this IP for 10 of 11 videos at first pass; transcripts were recovered via an alternate route (kome.ai). Video 11 (GHL Wizard) initially resisted every route (direct API, yt-dlp with 3 player clients + impersonation, 3 transcript services) but yielded on a delayed kome.ai retry - full transcript analyzed below.</p>
-<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Title</th><th>Channel</th><th>Type</th>
 </tr></thead><tbody>
@@ -242,7 +253,7 @@
 <h2 id="run-theme">Run Theme<a class="anchor" href="#run-theme" aria-label="Link to this section">#</a></h2>
 <p><strong>The agent-infrastructure week.</strong> This run is noticeably more <em>infrastructural</em> than prior runs: less "here's a business pitch," more "here's how people actually run agents at scale" - DHH's 16-thread parallel agent terminal, GrokBot with its own email + credit card, Claude's scheduled co-work automations, repo-roundup tooling for agent memory and self-review, and GPT-6 Astra's self-verifying agent behavior. The playlist owner appears to have shifted from collecting business-model pitches to collecting the operating manual for the agent era. Also notable: a cluster of GPT-6 "Astra" videos (3 of 11) suggests a fresh model launch whose capabilities - self-verification, refusal-to-guess, one-shot 3D/video - are reverberating through the ecosystem.</p>
 <hr>
-<h3 id="video-1">Video 1: Jeremy Boreing - "AI Will 10x the Economy - And You Still Have A Job" <em>(general analysis)</em><a class="anchor" href="#video-1" aria-label="Link to this section">#</a></h3>
+<h3 id="video-1">Video 1: Jeremy Boreing - "AI Will 10x the Economy - And You Still Have A Job" <em>(general analysis)</em><a class="anchor" href="#video-1" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/l8NneXE4e0Q">https://youtu.be/l8NneXE4e0Q</a></p>
 <p><strong>Story:</strong> Boreing (Daily Wire founder, now a new venture) sits down with his AI lead "John" to discuss how AI rebuilt his company's economics in six weeks. Thesis: AI isn't headcount replacement but capability enhancement - the old good/fast/cheap tradeoff is dead, the operator-vs-engineer friction is collapsing, and the winners are people who adopt rather than people the technology replaces.</p>
 <p><strong>Mechanics:</strong></p>
@@ -257,7 +268,7 @@
 <p><strong>Automation angle:</strong> Real-world proof a small team can absorb six-figure vendor functions (research retainer, design/dev agency) with LLM tooling - same pattern the 08-31 Koerner video showed at solo scale, here at company scale. Mechanics deliberately withheld, so it's directional validation, not a method.</p>
 <p><strong>Red flags:</strong> All headline numbers are self-reported on his own show. Zero technical detail ("good luck doing it without a John though" - success attributed to a singular hire). "10x/100x the economy" is rhetoric, not analysis.</p>
 <hr>
-<h3 id="video-2">Video 2: The Next New Thing - "Top 10 Repos explained" <em>(education)</em><a class="anchor" href="#video-2" aria-label="Link to this section">#</a></h3>
+<h3 id="video-2">Video 2: The Next New Thing - "Top 10 Repos explained" <em>(education)</em><a class="anchor" href="#video-2" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/AWzzmrCPe-A">https://youtu.be/AWzzmrCPe-A</a></p>
 <p><strong>Story:</strong> Rapid-fire tour of ten trending GitHub projects, evaluated through one consistent lens: does it make humans directing AI agents more effective? Highlights: Archify (interactive architecture diagrams from descriptions), a public-feed "spy satellite console," AI-built immersive classrooms, post-training-cutoff Go guidelines for coding agents, a legally shaky Claude Code fork, 160+ lab-science agent skills, a from-scratch tiny-LLM training recipe, an open-source Semrush/Ahrefs alternative, DHH's Omarchy Linux, and Google's TimesFM forecaster - plus five viewer-submitted repos.</p>
 <p><strong>Mechanics:</strong></p>
@@ -275,7 +286,7 @@
 <p><strong>Automation angle:</strong> Nearly every repo is agent infrastructure - persistent memory, self-review, diagram-as-spec workflows, guideline injection. The implicit thesis: the differentiated layer is no longer the model, it's <strong>context tooling wrapped around agents</strong>. Most directly useful to our own stack: the guidelines-injection pattern and end-of-session self-review loop.</p>
 <p><strong>Red flags:</strong> 2-4 minutes per repo - first impressions, not testing. Open Claude legally unsettled. Open SEO's unit economics look unsustainable (the host says so himself). Several featured/viewer repos have 2-7 stars. Paid sponsor segment woven into the list.</p>
 <hr>
-<h3 id="video-3">Video 3: Nate Herk - "GPT-6 Astra FINALLY Kills AI Website Slop" <em>(tool review)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a></h3>
+<h3 id="video-3">Video 3: Nate Herk - "GPT-6 Astra FINALLY Kills AI Website Slop" <em>(tool review)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/QhmhUgccaS0">https://youtu.be/QhmhUgccaS0</a></p>
 <p><strong>Story:</strong> Hands-on showcase of "Astra" (GPT-6-era model) generating polished, animated marketing sites in one-shot prompts - parallax hero sections, 3D spinning product cans, a luxury-watch scroller - plus a 1-minute sizzle reel cut from 152 GB of event footage in ~35 minutes. His actual thesis: the model alone isn't the anti-slop recipe - it's model + his "ScrollCraft" skill + curated inspiration (godly.design, 21st.dev, awwwards.com) + audience-fit filtering ("pain, person, promise") + iterative critique.</p>
 <p><strong>Mechanics:</strong></p>
@@ -291,7 +302,7 @@
 <p><strong>Automation angle:</strong> AI-automated design production (sites + motion graphics) replacing designer/editor time. The reusable idea: encode craft knowledge as a reusable skill and feed curated inspiration, rather than prompting the raw model.</p>
 <p><strong>Red flags:</strong> "FINALLY kills slop" framing with no side-by-side benchmark vs. competing models beyond his say-so; "Astra"/"GPT-6" specifics unverifiable from the transcript; conversion impact admitted unproven; free skill is a lead magnet for his paid School community.</p>
 <hr>
-<h3 id="video-4">Video 4: Success With Sam - "NEW Claude Has Changed YouTube Automation FOREVER" <em>(business pitch - affiliate)</em><a class="anchor" href="#video-4" aria-label="Link to this section">#</a></h3>
+<h3 id="video-4">Video 4: Success With Sam - "NEW Claude Has Changed YouTube Automation FOREVER" <em>(business pitch - affiliate)</em><a class="anchor" href="#video-4" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/bFWje8tSz8g">https://youtu.be/bFWje8tSz8g</a></p>
 <p><strong>Story:</strong> Walkthrough of a fully automated faceless-YouTube pipeline: DigitalMaker AI connected to Claude via MCP; Claude's "co-work" mode runs a scheduled daily automation that generates a finished, edited video (script, AI voiceover, cartoon scenes, subtitles) and emails it each morning; optional Make.com scenario auto-uploads to the channel. The "INSANE UPDATE" of the title is essentially Claude's scheduled co-work mode plus an MCP connector.</p>
 <p><strong>Mechanics:</strong></p>
@@ -307,7 +318,7 @@
 <p><strong>Automation angle:</strong> The whole video is the automation angle - and the notable signal isn't the faceless-channel business, it's that <strong>consumer AI tools now expose native scheduled-agent modes</strong> (Claude co-work) that replace custom cron/scripts for content pipelines. Same primitive our own daily research job implements by hand.</p>
 <p><strong>Red flags:</strong> Affiliate promotion (link + coupon in description). No revenue proof shown - the automation demo is real, the implied business outcome is not. Demo deliberately uses a 1-minute video because longer generations hit plan limits; daily 10-30 min videos get costly. Mass-produced identical-format AI channels face YouTube's inauthentic-content monetization risk, never mentioned.</p>
 <hr>
-<h3 id="video-5">Video 5: The AI Advantage - "GPT-6 Astra: 20 Real Examples" <em>(education)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a></h3>
+<h3 id="video-5">Video 5: The AI Advantage - "GPT-6 Astra: 20 Real Examples" <em>(education)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/_AyXuJKm8iw">https://youtu.be/_AyXuJKm8iw</a></p>
 <p><strong>Story:</strong> Igor rounds up 20 community examples of OpenAI's new Astra model, split between "genuinely useful" and "hard to believe": one-shot 3D world-building (a 600-agent simulated world, a playable SimCity-like city), an 18-hour Pokémon completion (vs. ~200 hours for the previous model), OpenAI reportedly running its own launch campaign on the model, 55-agent financial-model audits, a multi-day personal wiki built from emails/calendar/writing, browser-based QA, and NDA review that cites exact policy provisions (69% → 93% on the benchmark). Thesis: two things make this generation categorically different - output that no longer "obviously stinks like AI slop," and <strong>self-verification behavior</strong>.</p>
 <p><strong>Mechanics:</strong></p>
@@ -324,14 +335,14 @@
 <p><strong>Automation angle:</strong> The most load-bearing video of the run for agent design even though it's not a business pitch: (1) self-verification as a default workflow; (2) the no-guessing instruction pattern (pause, don't improvise); (3) generate-then-audit sub-agent swarms for high-stakes QA; (4) scheduled personal-data digests as a replicable pattern; (5) real-world automation benchmarks now exist for model selection.</p>
 <p><strong>Red flags:</strong> Most examples are secondhand X posts, few independently verifiable; the 55-agent audit claim is self-reported ("we don't really have benchmarks on reliability of stuff like this" - his own words). The wiki cost figure is an admitted guess. Launch-hype adjacent: benchmarks come from OpenAI's own blog. Multi-day computer-use autonomy carries real risk, downplayed.</p>
 <hr>
-<h3 id="video-6">Video 6: Shane Hummus - "7 High-Paying Online Jobs You Can Do At Night" <em>(education - career listicle)</em><a class="anchor" href="#video-6" aria-label="Link to this section">#</a></h3>
+<h3 id="video-6">Video 6: Shane Hummus - "7 High-Paying Online Jobs You Can Do At Night" <em>(education - career listicle)</em><a class="anchor" href="#video-6" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/iQYp2YjHNQQ">https://youtu.be/iQYp2YjHNQQ</a></p>
 <p><strong>Story:</strong> Seven online jobs suited to night hours, framed by one thesis: winners chase "the hours nobody else wants" - time-zone gaps and overnight work create supply/demand leverage. The jobs: remote patient monitoring (~$39-53K entry, HS diploma), email marketing (~$80-133K; $1 spent → $40 return), expert network consulting (GLG/AlphaSights/Guidepoint/Third Bridge, ~$96-177K), bug bounty hunting (~$85-132K, with the honest base rate that ~40% of HackerOne submitters never earn a bounty), AI data annotation ($20/hr basic labeling up to $40-60/hr STEM tiers), no-code web design, and YouTube thumbnail design ($500+ per thumbnail at the top end).</p>
 <p><strong>Quotes:</strong> "They don't chase whatever is trending. They chase the hours that nobody else wants." / "You're not learning a skill. You're renting out the one that you got paid to learn on someone else's clock." / "Nobody asks the locksmith where he went to school. They ask if the door opened."</p>
 <p><strong>Automation angle:</strong> N/A per standing rule - career-advice listicle. Tangential: AI data annotation is human labor <em>training</em> models; one throwaway line about a niche-validator bonus "works for ChatGPT as well as Claude Skills."</p>
 <p><strong>Red flags:</strong> Heavy funnel - three interruptions for his live training ("join now or miss out forever"), a bonus tool, and a high-ticket mentorship pitch (5 slots, 18% acceptance - classic scarcity). Case studies come from his own ecosystem ($186K/month member, "$10M on YouTube"). Salary data is Glassdoor top-end skew presented rhetorically as receipts; the annotation figure contradicts the $20/hr reality his own video cites. Survivorship bias throughout - base rates disclosed only once (bug bounty).</p>
 <hr>
-<h3 id="video-7">Video 7: Riley Brown - "I Gave GrokBot Its Own Email and Credit Card" <em>(business demo)</em><a class="anchor" href="#video-7" aria-label="Link to this section">#</a></h3>
+<h3 id="video-7">Video 7: Riley Brown - "I Gave GrokBot Its Own Email and Credit Card" <em>(business demo)</em><a class="anchor" href="#video-7" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/9lsnEn0tih4">https://youtu.be/9lsnEn0tih4</a></p>
 <p><strong>Story:</strong> Riley builds an autonomous "executive assistant" agent (named Jimmy) on GrokBot with two capabilities most agents lack: its own email address (AgentMail plugin) and purchasing power (Stripe Link virtual cards). Payoff demo: email the bot "buy a red notebook on Amazon" → bot browses, computes the price ($27.76), spins up a single-use virtual card for that exact amount, pings Riley's phone for Face ID approval, completes the order end-to-end in minutes.</p>
 <p><strong>Mechanics:</strong></p>
@@ -345,7 +356,7 @@
 <p><strong>Automation angle:</strong> A complete pattern for autonomous purchasing agents: event-driven inbox (webhooks, not just schedules) + exact-amount single-use virtual cards + approval gate. The event-driven trigger is the genuinely new primitive here - it generalizes far beyond shopping (invoice-paying assistants, reorder routines, email-triggered research). <strong>The approval gate is the safety mechanism to keep.</strong></p>
 <p><strong>Red flags:</strong> Reads like a GrokBot advertisement ("fastest growing agent platform... owned by SpaceX" is the creator's framing, unverified). No discussion of webhook security beyond the bearer key, prompt injection via incoming email, or a spoofed "buy this" email. The creator notes approvingly that the approval step "will probably disappear over time" - that erosion is the risk, not the feature.</p>
 <hr>
-<h3 id="video-8">Video 8: Wholesale Ted - "10 Simple AI Digital Products Making People RICH" <em>(business pitch)</em><a class="anchor" href="#video-8" aria-label="Link to this section">#</a></h3>
+<h3 id="video-8">Video 8: Wholesale Ted - "10 Simple AI Digital Products Making People RICH" <em>(business pitch)</em><a class="anchor" href="#video-8" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/eLAQkZx5QkE">https://youtu.be/eLAQkZx5QkE</a></p>
 <p><strong>Story:</strong> Sarah tours 10 digital-product categories selling on Etsy and Teachers Pay Teachers - printable activities, themed PDF planners, ebooks, clip art, wall art, Canva business templates, education resources, PowerPoint games, custom AI videos, simple apps - showing which AI tool produces each (Gemini/Nano Banana, GPT Image, Claude Code, Canva, Base44), backed by live store sales numbers. Thesis: individual sales are small but stack across a catalog, and Claude Code now automates production almost entirely.</p>
 <p><strong>Mechanics:</strong></p>
@@ -360,7 +371,7 @@
 <p><strong>Automation angle:</strong> Claude Code as a production line for digital-product catalogs (batch generation, transparent backgrounds, PDF layouts), plus agent-planned no-code apps - i.e., agent-built product pipelines rather than hand-crafted listings. The Claude-Code-planner demo is the same pattern as our own report pipelines: clarify → plan → execute → deliver.</p>
 <p><strong>Red flags:</strong> Affiliate links (tools) and a sponsor (.store domains) disclosed in passing. "Making People RICH" framing with survivorship stores; the thousands of equivalent failed stores go unmentioned. Etsy saturation and AI-content policy risk unaddressed. "Sales today" snapshots don't prove sustained profit after fees and ads. Several tool names garbled in transcript - verify before acting.</p>
 <hr>
-<h3 id="video-9">Video 9: Nate Black - "Live Streaming Just Became VITAL for YouTube Channels" <em>(education)</em><a class="anchor" href="#video-9" aria-label="Link to this section">#</a></h3>
+<h3 id="video-9">Video 9: Nate Black - "Live Streaming Just Became VITAL for YouTube Channels" <em>(education)</em><a class="anchor" href="#video-9" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/WD-ygzNBPyM">https://youtu.be/WD-ygzNBPyM</a></p>
 <p><strong>Story:</strong> Why he started live streaming and whether other creators should. Three drivers: the YouTube Partner Program watch-hour threshold doubling (4,000 → 8,000 hours, as he states it), the flood of AI content raising the premium on proven-real human connection, and live conversation as the fastest audience-research loop when videos "aren't landing." Framework: start from an audience goal, not the format; treat streams as themed events, not a weekly grind; only start once you can pull 10-20 concurrent viewers.</p>
 <p><strong>Mechanics:</strong></p>
@@ -375,7 +386,7 @@
 <p><strong>Automation angle:</strong> N/A per standing rule - creator-strategy education, no business-model or tooling pitch.</p>
 <p><strong>Red flags:</strong> The 8,000-hour claim is stated as platform fact but framed loosely - verify against current YPP terms before acting. Funnel elements woven in (his free creator group, roast submissions). Watch-hour math still depends on having an existing audience; the video itself says it's not a growth shortcut.</p>
 <hr>
-<h3 id="video-10">Video 10: Lex Clips - "DHH's new setup for programming with AI" <em>(general analysis - interview)</em><a class="anchor" href="#video-10" aria-label="Link to this section">#</a></h3>
+<h3 id="video-10">Video 10: Lex Clips - "DHH's new setup for programming with AI" <em>(general analysis - interview)</em><a class="anchor" href="#video-10" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/4Xg1AE6Uu1k">https://youtu.be/4Xg1AE6Uu1k</a></p>
 <p><strong>Story:</strong> DHH walks through how agentic coding rewired his setup and working style: he abandoned 20 years of single-threaded hand-coding in TextMate/Neovim for <strong>parallel agent orchestration</strong> - ~16 agent threads across 4-5 Linux mini PCs, coordinated through tmux and a notification tool ("Herdr"), networked via Tailscale, all driven from the terminal. Core argument: agents are simultaneously too fast and too slow to wait on one, so flow state migrates from deep immersion in a single problem to <strong>constant decision-making that keeps many threads unblocked</strong>.</p>
 <p><strong>Mechanics:</strong></p>
@@ -392,7 +403,7 @@
 <p><strong>Automation angle:</strong> N/A per standing rule (practitioner workflow interview, not a business pitch) - but it's the clearest articulation this run of the <strong>operator bottleneck pattern</strong>: the human's job becomes decision-routing across parallel agents, and <em>throughput is capped by how many threads one person can shepherd</em>. Same conclusion Isenberg's "marketing engineer" video reached from the marketing side.</p>
 <p><strong>Red flags:</strong> Gear-heavy enthusiast setup; the transcript itself notes the human is the bottleneck, so most viewers gain little past 2-3 agents. LOC comparison is self-admittedly meaningless. Clip format excerpted from a longer podcast; tool names as transcribed ("Herdr," "Hunk," "gli.net comets") may be garbled - verify before researching.</p>
 <hr>
-<h3 id="video-11">Video 11: GHL Wizard - "The FASTEST Way To Sell AI Services (FREE Demo Website)" <em>(business pitch - affiliate)</em><a class="anchor" href="#video-11" aria-label="Link to this section">#</a></h3>
+<h3 id="video-11">Video 11: GHL Wizard - "The FASTEST Way To Sell AI Services (FREE Demo Website)" <em>(business pitch - affiliate)</em><a class="anchor" href="#video-11" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/Y9l0iWH5RiA">https://youtu.be/Y9l0iWH5RiA</a></p>
 <p><strong>Story:</strong> A GoHighLevel affiliate playbook for selling AI voice-agent services to local businesses at $297/month. The core motion is <strong>demo-first selling</strong>: a two-stage AI demo where a voice agent ("Marco") takes the business owner through a real call (lawn-mowing quote scenario), then a second closer agent ("Maria") references that experience and sells/bookings. The pitch to viewers: the demo does the selling so you don't have to - "if you suck at sales... that's what this is for." Funnel: free demo + 30-day GHL trial + free community with daily coaching calls and (earned, not guaranteed) free leads.</p>
 <p><strong>Mechanics:</strong></p>

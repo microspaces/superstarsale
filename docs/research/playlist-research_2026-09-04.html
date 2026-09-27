@@ -47,6 +47,17 @@
         }
         h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
         h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
         p { margin-bottom: 14px; color: #ccc; }
         strong { color: #fff; }
         a { color: #667eea; text-decoration: none; }
@@ -154,7 +165,7 @@
 <p><strong>Source playlist:</strong> <a href="https://youtube.com/playlist?list=PLamiZQJOzMbY">"Research" by Michael Buchanan</a> (<code>PLamiZQJOzMbY</code>)</p>
 <p><strong>Special run:</strong> playlist-targeted analysis. Playlist held 9 videos at check time - all 9 are new coverage, none overlap prior reports (08-29, 08-31 ×13, 09-01 ×3, 09-03 ×10).</p>
 <p><strong>Coverage note (standing rule):</strong> not every video is an automated-business pitch. Types are labeled per video: 6 business-model pitches, 3 education/tool-review/general-analysis videos, and each gets the treatment it deserves.</p>
-<h2 id="videos-analyzed">Videos Analyzed<a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Title</th><th>Channel</th><th>Type</th>
 </tr></thead><tbody>
@@ -225,7 +236,7 @@
 <h2 id="run-theme">Run Theme<a class="anchor" href="#run-theme" aria-label="Link to this section">#</a></h2>
 <p><strong>Grok Bot week.</strong> Three separate videos (Miko, Isenberg ×2) treat Grokbot agent teams as the new operating layer for marketing businesses - plus a fourth (Charley T) doing the same with Claude skills. The interesting split: Isenberg's two videos are <em>opposite philosophies</em> - one sells a $200-300/month agent-team OS run as a business (chief-of-staff pattern), the other argues agents will be commodities and the real $250K-1M job is the human judgment that points them. Both can be true; the repo + agent-job-spec methodology is the durable takeaway either way.</p>
 <hr>
-<h3 id="video-1">Video 1: Brian O'Neill - "This $57 Digital Product Made $313,000 in 6 Days"<a class="anchor" href="#video-1" aria-label="Link to this section">#</a></h3>
+<h3 id="video-1">Video 1: Brian O'Neill - "This $57 Digital Product Made $313,000 in 6 Days"<a class="anchor" href="#video-1" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/1VEMpRr9GnY">https://youtu.be/1VEMpRr9GnY</a></p>
 <p><strong>Story:</strong> Case-study breakdown of Jessica Carter, an Instagram creator who made <strong>$313,000 in 6 days</strong> selling a $57 mini-course about the Edits app. Path: 10 years of scattered posting to reach ~10K followers → pivot to authentic posting → went viral (9M views on one launch video, ~50 → 162K followers) → noticed followers kept asking "how did you edit that?" → built exactly what they asked for as a small, cheap, closed-window course.</p>
 <p><strong>Mechanics:</strong></p>
@@ -239,7 +250,7 @@
 <p><strong>Automation angle:</strong> Transcribe last 90 days of comments and auto-classify question types (how-to, price complaints, workshop requests) to surface buying signals; auto-generate course skeletons from your own viral videos; launch-ops sequences (stories/lives/emails), social-proof re-posting pipeline, post-launch FAQ mining.</p>
 <p><strong>Red flags:</strong> Survivorship bias - one 9M-view case presented as repeatable; the 10-year grind gets a sentence, not emphasis. Reviewer admits he bought from FOMO and barely opened it - $313K is revenue, not buyer outcomes. Content mostly duplicated in her free videos; value is convenience. Income claims unverified.</p>
 <hr>
-<h3 id="video-2">Video 2: Professor Charley T - "Claude Has Officially Changed Facebook Ads Forever!"<a class="anchor" href="#video-2" aria-label="Link to this section">#</a></h3>
+<h3 id="video-2">Video 2: Professor Charley T - "Claude Has Officially Changed Facebook Ads Forever!"<a class="anchor" href="#video-2" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/4-ApfzxGhYI">https://youtu.be/4-ApfzxGhYI</a></p>
 <p><strong>Story:</strong> Two-step free-in-Claude Meta ads workflow demoed on a ~$2M/yr Washington coffee business: (1) find your "hero product" from order data using Wilson-score-style confidence-adjusted repeat rates; (2) build a statistically grounded ad ("322" = 3 creatives × 2 primary texts × 2 headlines = 12 combinations) from customer evidence instead of vanity metrics. Core thesis: <strong>stop selling products, start buying customers; optimize repeat-customer cash flow, not ROAS.</strong></p>
 <p><strong>Mechanics:</strong></p>
@@ -255,7 +266,7 @@
 <p><strong>Automation angle:</strong> The pipeline is already an automation blueprint: scheduled order-export ingestion → repeat-rate scoring → evidence corpus builder → evidence map refresh → auto-generated 322 briefs with hypothesis logs, win/lose written back after each test. His free-skill → paid-academy packaging is itself a launch mechanic worth copying (mirrors video 1's pattern).</p>
 <p><strong>Red flags:</strong> Correlation vs causation admitted then leaned on anyway - Ethiopia's 4.3x may be buyer-type selection, not the product. Demo numbers unverified; Wilson framing is rhetorical authority more than shown math; anti-ROAS absolutism oversimplifies. No mention of privacy when uploading customer reviews/tickets/order data to Claude.</p>
 <hr>
-<h3 id="video-3">Video 3: Produce Like a Boss - "MiniMax 3 Just Killed Suno" <em>(education/tool review - no business ranking)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a></h3>
+<h3 id="video-3">Video 3: Produce Like a Boss - "MiniMax 3 Just Killed Suno" <em>(education/tool review - no business ranking)</em><a class="anchor" href="#video-3" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/pHcufLW46vg">https://youtu.be/pHcufLW46vg</a></p>
 <p><strong>Story:</strong> Review of MiniMax Music 3.0 (launched ~Aug 13), an open-weights generative music model - full songs to 5 minutes with vocals. Contrasted with Suno, which just tightened terms and prices. Real thesis: <strong>open weights solve the platform problem but not the ownership problem</strong> - both platforms' fine print admit AI output may not be copyright-eligible (human-authorship problem). Closes on industry angle: Warner settled with Suno, but "you cannot make a deal with a file that's already on 10,000 hard drives," which breaks sync licensing's "no AI" policies.</p>
 <p><strong>Mechanics:</strong></p>
@@ -271,7 +282,7 @@
 <p><strong>Automation angle:</strong> N/A per standing rule (tool review/education). Tangential: the structured-caption input format is machine-readable, which is what makes batched local generation pipelines feasible.</p>
 <p><strong>Red flags:</strong> Clickbait title contradicted by the video itself (audio a step below Suno; concludes it's not about killing anything). "Musician, not a lawyer" - ownership analysis is explicitly not legal advice. Free masterclass funnel frames the whole video. Web app demo shallow.</p>
 <hr>
-<h3 id="video-4">Video 4: The Diary Of A CEO Clips - "The EASIEST Way To Make Money With AI (From Scratch)"<a class="anchor" href="#video-4" aria-label="Link to this section">#</a></h3>
+<h3 id="video-4">Video 4: The Diary Of A CEO Clips - "The EASIEST Way To Make Money With AI (From Scratch)"<a class="anchor" href="#video-4" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/HKWLH1Zh79A">https://youtu.be/HKWLH1Zh79A</a></p>
 <p><strong>Story:</strong> Thesis video: AI collapsed the cost of building software, so the best new opportunity is <strong>small niche SaaS (500-1,000 customers, community/media/training attached)</strong> rather than venture-scale. Immediate counter: anything AI makes easy gets commoditized, so the durable moat is <strong>"irreplaceably human" assets</strong> - personal playbooks/IP, lived-experience content, parasocial relationships, real-world events - packaged as a product-and-service ecosystem, not one product. Predictions: document-regurgitation lawyers get disrupted; blue-collar trades flip from devalued to blue-ocean.</p>
 <p><strong>Mechanics:</strong></p>
@@ -287,7 +298,7 @@
 <p><strong>Automation angle:</strong> AI-as-software-builder thesis (week-long bespoke builds replacing $500K projects); Claude as $20/month lawyer-replacement; solo multi-product ecosystems - maps to micro-SaaS and productized-service automation plays.</p>
 <p><strong>Red flags:</strong> Both-side contradiction never resolved ("everything is an opportunity" vs "everything easy is commoditized"). Headline stat dumps ($280B wiped, Spotify claim, 20% decline) unsourced. "Easiest way to make money" framing despite admitting a thousand competitors will clone any easy build. Survivorship anecdotes from operators with existing teams/audiences.</p>
 <hr>
-<h3 id="video-5">Video 5: Keith Wheeler Books - "What are Kindle Short Reads on Amazon?" <em>(education - no business ranking)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a></h3>
+<h3 id="video-5">Video 5: Keith Wheeler Books - "What are Kindle Short Reads on Amazon?" <em>(education - no business ranking)</em><a class="anchor" href="#video-5" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/UDZsKj-ASq4">https://youtu.be/UDZsKj-ASq4</a></p>
 <p><strong>Story:</strong> KDP publisher explains Amazon's Kindle Short Reads section: ebooks as short as one page, organized by estimated reading time (15 minutes to 2 hours), spanning nearly every genre - <strong>short reads are a format, not a genre</strong>. Readers buy the experience/promise, not page count; length is determined by the promise. Placement is auto-assigned by KDP based on page count (can't be requested); no children's picture book section. Ends with upsell to his "Short Read Domination" course.</p>
 <p><strong>Mechanics:</strong></p>
@@ -300,7 +311,7 @@
 <p><strong>Automation angle:</strong> N/A per standing rule - manual publishing-education explainer; catalog strategy is adjacent to but not pitched as automation.</p>
 <p><strong>Red flags:</strong> Course funnel - the tutorial doubles as lead-gen. No revenue numbers shown. "One-page books" hook is attention-grabbing, but his own advice says quality/promise still decides success.</p>
 <hr>
-<h3 id="video-6">Video 6: Miko - "Seedance 2.5 + Grok Bot = 50 Viral AI UGC Ads a Day"<a class="anchor" href="#video-6" aria-label="Link to this section">#</a></h3>
+<h3 id="video-6">Video 6: Miko - "Seedance 2.5 + Grok Bot = 50 Viral AI UGC Ads a Day"<a class="anchor" href="#video-6" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/mcY7ReDNrd0">https://youtu.be/mcY7ReDNrd0</a></p>
 <p><strong>Story:</strong> End-to-end automated ad factory demo: <strong>GrokBot downloads a competitor's ad from a link, analyzes it scene-by-scene via an SOP prompt, regenerates it with Seedance 2.5 swapping in the creator's own product, spins up A/B avatar variations - then a second "ads manager" bot launches and manages Meta campaigns via a connector</strong>, the two bots reportedly negotiating daily. Shown outputs: brow-gel listicle, chocolate-brand video with 20%-off CTA, copper-peptide eye serum recreated 1:1 for "Miko's Copper Peptide Serum."</p>
 <p><strong>Mechanics:</strong></p>
@@ -313,7 +324,7 @@
 <p><strong>Automation angle:</strong> The whole video IS the automation angle: agentic pipeline (research bot → creative bot → ads-manager bot) replacing manual UGC production; direct template for our own ad-creative factory and Meta launch automation.</p>
 <p><strong>Red flags:</strong> "50 ads a day" never demonstrated. Heavy affiliate/funnel structure; own product as demo = self-promotion. Recreating competitor ads 1:1 raises IP/copyright and Meta policy risk, never addressed. No spend/CTR/ROAS numbers despite "optimized campaign" claims. Example ads show health claims (peptide "52% actives") that are ad-policy minefields. Tool names garbled/unverified.</p>
 <hr>
-<h3 id="video-7">Video 7: Greg Isenberg - "Making $$$ with Grok Bot"<a class="anchor" href="#video-7" aria-label="Link to this section">#</a></h3>
+<h3 id="video-7">Video 7: Greg Isenberg - "Making $$$ with Grok Bot"<a class="anchor" href="#video-7" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/qQluNEfSVHk">https://youtu.be/qQluNEfSVHk</a></p>
 <p><strong>Story:</strong> Interview with Billy Howell (The Rundown) on replacing his human intern with a <strong>Grokbot agent team</strong> running "The Arlington Bagel" local newsletter (6,000 subscribers, Beehiiv, Thursdays) end to end. Core argument: Grokbot's constraints (limited agent combos, one thread per bot, DM-style chat) force mission focus. Pitch: pick ONE project, build a chief-of-staff-led team, execute for weeks before automating. Grokbot costs $200-300/month - frame is making it pay 5x-50x.</p>
 <p><strong>Mechanics:</strong></p>
@@ -329,7 +340,7 @@
 <p><strong>Automation angle:</strong> The whole episode is an operating manual for agent-team automation: chief-of-staff pattern, routines/cron briefs, promote-manual-work-to-agent loop, adversarial QA panels, skills as codified feedback, and token economics (expensive reasoning for judgment work; scripts/Make.com for commodity steps).</p>
 <p><strong>Red flags:</strong> Promotional framing throughout; no independent benchmarks. Newsletter revenue never stated - "found a sponsor this week," deal not closed on-screen. Limits/pricing described from memory ("I think it's about 76 or 88"). The "fired my intern" story is soft-pedaled (cousin went to a no-internet summer camp).</p>
 <hr>
-<h3 id="video-8">Video 8: TEEJ - "Grok Bot + Gemini Omni = $17,264/Month (Here's Exactly How)"<a class="anchor" href="#video-8" aria-label="Link to this section">#</a></h3>
+<h3 id="video-8">Video 8: TEEJ - "Grok Bot + Gemini Omni = $17,264/Month (Here's Exactly How)"<a class="anchor" href="#video-8" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/yX5Ep953GRE">https://youtu.be/yX5Ep953GRE</a></p>
 <p><strong>Story:</strong> Claims $17,264 in 25 days mass-producing AI UGC-style videos (Grokbot + Claude + Google "Omni"), posting to Instagram, driving traffic to <strong>peptide supplement affiliate offers on the Glitchy network</strong> (CPA - paid on form fill + telehealth appointment booking, not purchase). Full tutorial: 3-bot Grokbot setup, Claude scripting with a viral-hooks skill, Nano Banana avatars from Pinterest references, Omni image-to-video, CapCut assembly. Revenue entirely self-reported, zero proof shown.</p>
 <p><strong>Mechanics:</strong></p>
@@ -345,7 +356,7 @@
 <p><strong>Automation angle:</strong> The batch content chain (agent research → LLM scripting → prompt generation → image gen → image-to-video → templated edit) and the "factory bot" pattern that converts one input into N generation prompts are the reusable ideas. The traffic/affiliate layer itself is spam-volume arbitrage, not durable automation.</p>
 <p><strong>Red flags:</strong> Heavily flagged. (1) $17,264/25-days entirely unverifiable - no screenshots, no dashboard. (2) Gray-market peptides marketed as "research chemicals," scare-tactic hooks, telehealth prescribing funnels - health/regulatory risk. (3) De-AI-ifying real Pinterest people's likenesses (including changing ethnicity) = misrepresentation. (4) Engagement-bait + spam volume that Meta's AI-content rules increasingly punish. (5) Funnel pushes his Telegram + Glitchy referral - he earns when you sign up. (6) Model names garbled in transcript - treat costs/limits as approximate.</p>
 <hr>
-<h3 id="video-9">Video 9: Greg Isenberg - "Marketing Engineer: The $1M Job with AI Agents" <em>(general analysis/career thesis)</em><a class="anchor" href="#video-9" aria-label="Link to this section">#</a></h3>
+<h3 id="video-9">Video 9: Greg Isenberg - "Marketing Engineer: The $1M Job with AI Agents" <em>(general analysis/career thesis)</em><a class="anchor" href="#video-9" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/8ZC1G1ezN5o">https://youtu.be/8ZC1G1ezN5o</a></p>
 <p><strong>Story:</strong> A new role - the <strong>"marketing engineer"</strong> (forward-deployed marketer / AI growth operator) - will be one of tech's most valuable jobs in 18-24 months at $250K-1M/year. Thesis: every marketing era crowned a specialist (Draper storytellers → digital marketers → growth hackers); the agentic era crowns the person who "turns market signal into pipeline using AI agents, data, code, and taste." Defines the role, lays out six systems, monetization ladder, 30-day plan.</p>
 <p><strong>Mechanics:</strong></p>
