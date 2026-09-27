@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27 12:06:53",
+  "generated": "2026-09-27 15:57:44",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2495,6 +2495,66 @@
         },
         {
           "t": "Theo - t3.gg — \"Getting the most out of Opus 5.5\"",
+          "s": 8.0
+        }
+      ]
+    },
+    {
+      "file": "playlist-research_2026-09-27.html",
+      "date": "2026-09-27",
+      "title": "Playlist Research — 2026-09-27",
+      "label": "09-27 Playlist",
+      "kind": "playlist",
+      "videos": 18,
+      "wt": 10,
+      "mixed": 8,
+      "skip": 0,
+      "avg": 6.9,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Alex Hormozi — \"How to become rich with social media (my exact playboo (9/10)",
+      "wt_titles": [
+        {
+          "t": "Fireship — \"Meta is pivoting again... everything you missed from Conne",
+          "s": 8.0
+        },
+        {
+          "t": "Alex Hormozi — \"How to become rich with social media (my exact playboo",
+          "s": 9.0
+        },
+        {
+          "t": "The Koerner Office Podcast — \"The Most Overlooked $1K/Hour Business An",
+          "s": 8.0
+        },
+        {
+          "t": "The Next New Thing — \"9 things you'll actually do with Jev\"",
+          "s": 7.0
+        },
+        {
+          "t": "Paul J Lipsky — \"Meta Muse Is Incredible - 5 Features You Need To Try\"",
+          "s": 8.0
+        },
+        {
+          "t": "The Koerner Office Podcast — \"The Most Profitable AI Business You've N",
+          "s": 7.0
+        },
+        {
+          "t": "Peter Yang — \"Meta's Muse AI Agent Saved Me $800+ a Year on My Bills (",
+          "s": 8.0
+        },
+        {
+          "t": "Tao Prompts — \"Level Up Your AI Videos with Claude Opus 5.5\"",
+          "s": 8.5
+        },
+        {
+          "t": "UpFlip Highlights — \"He Almost Started Dropshipping… Then Found This\"",
+          "s": 7.5
+        },
+        {
+          "t": "Peter Yang — \"We Built Grok Bot. Here Are Our 14 Best Bots\"",
           "s": 8.0
         }
       ]
