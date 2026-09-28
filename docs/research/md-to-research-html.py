@@ -85,11 +85,15 @@ def md_to_html(md_path, output_path):
             if re.match(r'^Videos Analyzed', text):
                 anchor = 'videos'
                 used_ids.add(anchor)
-            # Per-video headings get a back-link to the TOC
+            # Per-video headings get a back-link to their own TOC row
+            # (falls back to the table heading if no row anchor exists)
             toc_back = ''
-            if re.match(r'^Video \d+:', text):
-                toc_back = ('<a class="toc-back" href="#videos" '
-                            'aria-label="Back to video index">&uarr; Index</a>')
+            vm = re.match(r'^Video (\d+):', text)
+            if vm:
+                rid = f'row-video-{vm.group(1)}'
+                target = rid if rid in used_ids else 'videos'
+                toc_back = (f'<a class="toc-back" href="#{target}" '
+                            f'aria-label="Back to video index">&uarr; Index</a>')
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
@@ -125,7 +129,16 @@ def md_to_html(md_path, output_path):
                     i += 2
                     continue
             if in_table:
-                html_lines.append('<tr>')
+                # Tag TOC rows with a row anchor so per-video back-links can
+                # return positioned on that story's link
+                row_open = '<tr>'
+                rm = re.search(r'\]\(#(video-\d+)\)', line)
+                if rm:
+                    rid = f'row-{rm.group(1)}'
+                    if rid not in used_ids:
+                        used_ids.add(rid)
+                        row_open = f'<tr id="{rid}">'
+                html_lines.append(row_open)
                 for c in cells:
                     html_lines.append(f'<td>{inline_format(c)}</td>')
                 html_lines.append('</tr>')
@@ -256,6 +269,9 @@ def md_to_html(md_path, output_path):
         }}
         .data-table tr:hover td {{
             background: rgba(255,255,255,0.03);
+        }}
+        .data-table tr:target td {{
+            background: rgba(102,126,234,0.18);
         }}
         .verdict-good {{ color: #4ade80; }}
         .verdict-warn {{ color: #fbbf24; }}
