@@ -116,6 +116,28 @@
             margin-top: 50px;
             font-size: 0.85em;
         }
+
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
+        nav.toc li:target { background: rgba(102,126,234,0.18); }
     </style>
 </head>
 <body>
@@ -162,11 +184,11 @@
 <!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="daily-youtube-money-making-strategy-research-2026-09-27">Daily YouTube Money-Making Strategy Research - 2026-09-27</h1>
-<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#per-video-analysis">Per-Video Analysis</a></li><li class="toc-h3"><a href="#1-generate-1000s-of-leads-in-any-niche-alex-hormozi">1. Generate 1000s of Leads In Any Niche — Alex Hormozi</a></li><li class="toc-h3"><a href="#2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office">2. The Easiest Way to Sell AI to Businesses — Chris Koerner (Koerner Office)</a></li><li class="toc-h3"><a href="#3-first-6-months-on-etsy-selling-digital-products-erika">3. First 6 Months on Etsy Selling Digital Products — Erika</a></li><li class="toc-h3"><a href="#4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase">4. How To Build A Profitable Lead Gen Business In 2025 — Leadbase</a></li><li class="toc-h3"><a href="#5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart">5. The Marketing Agency Model That Actually Works in 2026 — Adam Erhart</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential-provisional-metadata-only-pass">Final Ranking (by automation potential, provisional — metadata-only pass)</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
+<nav class="toc" id="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2" id="row-videos-analyzed"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2" id="row-per-video-analysis"><a href="#per-video-analysis">Per-Video Analysis</a></li><li class="toc-h3" id="row-1-generate-1000s-of-leads-in-any-niche-alex-hormozi"><a href="#1-generate-1000s-of-leads-in-any-niche-alex-hormozi">1. Generate 1000s of Leads In Any Niche — Alex Hormozi</a></li><li class="toc-h3" id="row-2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office"><a href="#2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office">2. The Easiest Way to Sell AI to Businesses — Chris Koerner (Koerner Office)</a></li><li class="toc-h3" id="row-3-first-6-months-on-etsy-selling-digital-products-erika"><a href="#3-first-6-months-on-etsy-selling-digital-products-erika">3. First 6 Months on Etsy Selling Digital Products — Erika</a></li><li class="toc-h3" id="row-4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase"><a href="#4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase">4. How To Build A Profitable Lead Gen Business In 2025 — Leadbase</a></li><li class="toc-h3" id="row-5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart"><a href="#5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart">5. The Marketing Agency Model That Actually Works in 2026 — Adam Erhart</a></li><li class="toc-h2" id="row-final-ranking-by-automation-potential-provisional-metadata-only-pass"><a href="#final-ranking-by-automation-potential-provisional-metadata-only-pass">Final Ranking (by automation potential, provisional — metadata-only pass)</a></li><li class="toc-h2" id="row-key-takeaways"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
 
 <p>*Automated daily research · 5 videos analyzed · Generated 2026-09-27 (report written by Hermes dev agent mimicking the 9 AM cron; NOTE: 0/5 transcripts captured — YouTube hard-blocked every transcript route at run time, so this is a metadata-only pass per the playbook)*</p>
 
-<h2 id="videos-analyzed"> Videos Analyzed<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<h2 id="videos-analyzed"> Videos Analyzed<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#videos-analyzed" aria-label="Link to this section">#</a></h2>
 
 <table class="data-table"><thead><tr><th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Verdict</th></tr></thead><tbody>
 <tr><td>---</td><td>-------</td><td>---------</td><td>-------</td><td>---------</td></tr>
@@ -178,9 +200,9 @@
 </tbody></table>
 <p>Run type: Themed rotation (day-270 window: micro-SaaS / newsletter / content-site / local-services themes) + discovery wildcard. <strong>Transcripts: 0/5 captured</strong> — youtube_transcript_api returned <code>IpBlocked</code>, page-scrape/innertube/timedtext returned 429 from browser, kome.ai returned 403, yt-dlp android/tv clients failed; one 3-minute retry cycle also blocked. Analysis below is metadata-level only; quality/automation scores are provisional and the numbers a transcript would give are missing. Treat every verdict as unconfirmed until a transcript backfill lands.</p>
 
-<h2 id="per-video-analysis"> Per-Video Analysis<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<h2 id="per-video-analysis"> Per-Video Analysis<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#per-video-analysis" aria-label="Link to this section">#</a></h2>
 
-<h3 id="1-generate-1000s-of-leads-in-any-niche-alex-hormozi">1. Generate 1000s of Leads In Any Niche — Alex Hormozi<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<h3 id="1-generate-1000s-of-leads-in-any-niche-alex-hormozi">1. Generate 1000s of Leads In Any Niche — Alex Hormozi<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#1-generate-1000s-of-leads-in-any-niche-alex-hormozi" aria-label="Link to this section">#</a><a class="toc-back" href="#row-1-generate-1000s-of-leads-in-any-niche-alex-hormozi" aria-label="Back to video index">&uarr; Index</a></h3>
 
 <p>- <strong>Business model (expected from theme):</strong> lead-generation frameworks (offer-based lead magnets, outbound/organic acquisition levers) taught by the highest-reach operator channel in this space.</p>
 <p>- <strong>Revenue model:</strong> not assessable — transcript unavailable. Hormozi&#x27;s channel monetizes via books/funnel to Acquisition.com, not the video itself.</p>
@@ -190,7 +212,7 @@
 <p>- <strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed (unconfirmed)</strong> — likely evergreen but this is a frequently-covered theme (lead gen appeared in the 09-24 rotation); novelty is low unless the video contains new numbers. <strong>Backfill recommended — highest-value transcript of the batch.</strong></p>
 <p>- <strong>Red flags:</strong> none observable at metadata level; channel is established and non-affiliate.</p>
 
-<h3 id="2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office">2. The Easiest Way to Sell AI to Businesses — Chris Koerner (Koerner Office)<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<h3 id="2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office">2. The Easiest Way to Sell AI to Businesses — Chris Koerner (Koerner Office)<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office" aria-label="Link to this section">#</a><a class="toc-back" href="#row-2-the-easiest-way-to-sell-ai-to-businesses-chris-koerner-koerner-office" aria-label="Back to video index">&uarr; Index</a></h3>
 
 <p>- <strong>Business model (expected from theme):</strong> AI services/productized offer for SMBs — likely a specific wedge (audit-first, vertical tool, or arbitrage of hype vs. delivery) discussed in podcast format.</p>
 <p>- <strong>Revenue model:</strong> not assessable — transcript unavailable. Koerner Office content typically cites guest P&amp;Ls; those receipts are exactly what we&#x27;d want and are currently unreachable.</p>
@@ -200,7 +222,7 @@
 <p>- <strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed (unconfirmed)</strong> — AI-services-to-SMBs is an already-covered model family (multiple Sept rotations); ranks lower on novelty unless the episode names a new wedge. <strong>Backfill recommended.</strong></p>
 <p>- <strong>Red flags:</strong> podcast-format hype risk; verify any named businesses/dashboards exist before acting.</p>
 
-<h3 id="3-first-6-months-on-etsy-selling-digital-products-erika">3. First 6 Months on Etsy Selling Digital Products — Erika<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<h3 id="3-first-6-months-on-etsy-selling-digital-products-erika">3. First 6 Months on Etsy Selling Digital Products — Erika<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#3-first-6-months-on-etsy-selling-digital-products-erika" aria-label="Link to this section">#</a><a class="toc-back" href="#row-3-first-6-months-on-etsy-selling-digital-products-erika" aria-label="Back to video index">&uarr; Index</a></h3>
 
 <p>- <strong>Business model (expected from theme):</strong> Etsy digital products shop — printables/templates/planners; the video title promises a sales/revenue/profit breakdown, which is the receipt format we rank highest.</p>
 <p>- <strong>Revenue model:</strong> claimed in title (6-month breakdown) but numbers not assessable — transcript unavailable.</p>
@@ -210,7 +232,7 @@
 <p>- <strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed (unconfirmed)</strong> — Etsy digital products is a covered theme (in the 21-theme rotation); the 6-month receipts angle is what could lift it. <strong>Backfill recommended.</strong></p>
 <p>- <strong>Red flags:</strong> self-reported revenue with no third-party proof visible; survivorship bias is the base rate for &quot;my first 6 months&quot; formats.</p>
 
-<h3 id="4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase">4. How To Build A Profitable Lead Gen Business In 2025 — Leadbase<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<h3 id="4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase">4. How To Build A Profitable Lead Gen Business In 2025 — Leadbase<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase" aria-label="Link to this section">#</a><a class="toc-back" href="#row-4-how-to-build-a-profitable-lead-gen-business-in-2025-leadbase" aria-label="Back to video index">&uarr; Index</a></h3>
 
 <p>- <strong>Business model (expected from theme):</strong> lead-gen agency/marketplace — rank-and-render sites or paid-ads funnels selling leads to local businesses. &quot;Leadbase&quot; as a brand suggests a productized lead marketplace.</p>
 <p>- <strong>Revenue model:</strong> not assessable — transcript unavailable.</p>
@@ -220,7 +242,7 @@
 <p>- <strong>Verdict: ❌ Skip-leaning (unconfirmed)</strong> — lead gen is a covered theme, 2025-dated title, vendor-funnel channel, and no transcript receipts. Lowest priority for backfill.</p>
 <p>- <strong>Red flags:</strong> vendor teaching the model it sells; date suggests recycled advice; no observable receipts.</p>
 
-<h3 id="5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart">5. The Marketing Agency Model That Actually Works in 2026 — Adam Erhart<span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<h3 id="5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart">5. The Marketing Agency Model That Actually Works in 2026 — Adam Erhart<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart" aria-label="Link to this section">#</a><a class="toc-back" href="#row-5-the-marketing-agency-model-that-actually-works-in-2026-adam-erhart" aria-label="Back to video index">&uarr; Index</a></h3>
 
 <p>- <strong>Business model (expected from theme):</strong> niche agency positioning — likely productized/niche-down agency offer and client acquisition system from a well-known marketing-education channel.</p>
 <p>- <strong>Revenue model:</strong> not assessable — transcript unavailable. Erhart&#x27;s channel monetizes courses/consulting around agency-building.</p>
@@ -230,7 +252,7 @@
 <p>- <strong>Verdict: <span class="verdict-warn">⚠️</span> Mixed (unconfirmed)</strong> — agency model is a rotation staple with low novelty; would need genuinely new tactics/numbers to rank. <strong>Backfill: medium priority.</strong></p>
 <p>- <strong>Red flags:</strong> course-incentive funnel; &quot;actually works in 2026&quot; framing is a credibility hook, not evidence.</p>
 
-<h2 id="final-ranking-by-automation-potential-provisional-metadata-only-pass"> Final Ranking (by automation potential, provisional — metadata-only pass)<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<h2 id="final-ranking-by-automation-potential-provisional-metadata-only-pass"> Final Ranking (by automation potential, provisional — metadata-only pass)<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#final-ranking-by-automation-potential-provisional-metadata-only-pass" aria-label="Link to this section">#</a></h2>
 
 <p>1. <strong>Sell AI to Businesses — Koerner</strong> — 6/10 (provisional; guests&#x27; real P&amp;Ls are the draw, currently unreachable)</p>
 <p>2. <strong>Lead Gen Business 2025 — Leadbase</strong> — 6/10 (provisional; ranked down on novelty/quality risk → verdict Skip-leaning)</p>
@@ -240,7 +262,7 @@
 
 <p>All five are already-covered model families — no new mechanics surfaced at metadata level, so no candidate-theme graduation today.</p>
 
-<h2 id="key-takeaways"> Key Takeaways<span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<h2 id="key-takeaways"> Key Takeaways<span class="toTop"><a href="#top">&#8593; top</a></span><a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
 
 <p>- <strong>This run is a gap-filler, not an analysis pass.</strong> YouTube hard-blocked transcripts (IP-level: raw API, browser innertube/timedtext, kome.ai, yt-dlp android/tv all refused). Per the playbook, a metadata-only published report beats an unpublished perfect one — but every verdict above is provisional.</p>
 <p>- <strong>Batch is low-novelty:</strong> lead gen ×2, AI-to-SMB services, Etsy digital products, agency model — all in the known-theme set. No graduation candidates.</p>
