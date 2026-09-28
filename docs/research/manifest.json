@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-27 22:09:09",
+  "generated": "2026-09-28 09:10:35",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2575,6 +2575,30 @@
         {
           "t": "Peter Yang — \"We Built Grok Bot. Here Are Our 14 Best Bots\"",
           "s": 8.0
+        }
+      ]
+    },
+    {
+      "file": "daily-research_2026-09-28.html",
+      "date": "2026-09-28",
+      "title": "Daily YouTube Money-Making Strategy Research - 2026-09-28",
+      "label": "09-28 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 1,
+      "skip": 3,
+      "avg": null,
+      "tags": [
+        "Automation",
+        "Apps & SaaS",
+        "YouTube & Content"
+      ],
+      "top": "Solo Dev $30K/3mo Viral App",
+      "wt_titles": [
+        {
+          "t": "Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 V",
+          "s": null
         }
       ]
     }
