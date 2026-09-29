@@ -118,6 +118,15 @@
             margin-top: 50px;
             font-size: 0.85em;
         }
+        @media (hover: none), (pointer: coarse) {
+            h2 .anchor, h3 .anchor { display: none; }
+            h2 .toc-back, h3 .toc-back {
+                opacity: 0.9;
+                font-size: 0.85em;
+                padding: 12px 8px 12px 14px;
+                margin: -12px -8px -12px -14px;
+            }
+        }
     </style>
 </head>
 <body>

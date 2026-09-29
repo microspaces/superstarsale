@@ -138,6 +138,15 @@
         }
         h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
         nav.toc li:target { background: rgba(102,126,234,0.18); }
+        @media (hover: none), (pointer: coarse) {
+            h2 .anchor, h3 .anchor { display: none; }
+            h2 .toc-back, h3 .toc-back {
+                opacity: 0.9;
+                font-size: 0.85em;
+                padding: 12px 8px 12px 14px;
+                margin: -12px -8px -12px -14px;
+            }
+        }
     </style>
 </head>
 <body>
