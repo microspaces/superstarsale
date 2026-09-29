@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-28 16:40:15",
+  "generated": "2026-09-29 09:09:56",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
       "date": "2026-06-25",
-      "title": "Daily Research — 2026-06-25",
+      "title": "📊 Daily YouTube Strategy Research — June 25, 2026",
       "label": "06-25 Daily",
       "kind": "daily",
       "videos": 5,
@@ -19,7 +19,7 @@
     {
       "file": "daily-research_2026-06-26.html",
       "date": "2026-06-26",
-      "title": "Daily Research — 2026-06-26",
+      "title": "Daily YouTube Strategy Research — June 26, 2026",
       "label": "06-26 Daily",
       "kind": "daily",
       "videos": 5,
@@ -34,7 +34,7 @@
     {
       "file": "daily-research_2026-07-03.html",
       "date": "2026-07-03",
-      "title": "Daily Research — 2026-07-03",
+      "title": "Daily YouTube Strategy Research — July 3, 2026",
       "label": "07-03 Daily",
       "kind": "daily",
       "videos": 5,
@@ -2502,7 +2502,7 @@
     {
       "file": "daily-research_2026-09-27.html",
       "date": "2026-09-27",
-      "title": "Daily YouTube Money-Making Strategy Research - 2026-09-27",
+      "title": "Daily Research — 2026-09-27",
       "label": "09-27 Daily",
       "kind": "daily",
       "videos": 5,
@@ -2581,7 +2581,7 @@
     {
       "file": "daily-research_2026-09-28.html",
       "date": "2026-09-28",
-      "title": "Daily YouTube Money-Making Strategy Research - 2026-09-28",
+      "title": "Daily Research — 2026-09-28",
       "label": "09-28 Daily",
       "kind": "daily",
       "videos": 5,
@@ -2601,6 +2601,25 @@
           "s": null
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-09-29.html",
+      "date": "2026-09-29",
+      "title": "Daily YouTube Money-Making Strategy Research — 2026-09-29",
+      "label": "09-29 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": 4.4,
+      "tags": [
+        "Automation",
+        "YouTube & Content",
+        "E-com & Products"
+      ],
+      "top": "AI Outreach System",
+      "wt_titles": []
     }
   ]
 }

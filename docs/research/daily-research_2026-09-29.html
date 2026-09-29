@@ -147,6 +147,46 @@
 </head>
 <body>
     <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
         <a class="back-link" href="../index.html">← All Reports</a>
         <h1 id="top">Daily YouTube Money-Making Strategy Research — 2026-09-29</h1>
 <nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos-analyzed">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-the-ai-outreach-system-that-replaced-cold-calling-forever">1) The AI Outreach System That Replaced Cold Calling Forever</a></li><li class="toc-h3"><a href="#business-model">Business model</a></li><li class="toc-h3"><a href="#revenue-model">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-710">Automation potential: 7/10</a></li><li class="toc-h3"><a href="#quality-310">Quality: 3/10</a></li><li class="toc-h3"><a href="#verdict-skip">Verdict: **Skip**</a></li><li class="toc-h3"><a href="#key-actions">Key actions</a></li><li class="toc-h3"><a href="#red-flags">Red flags</a></li><li class="toc-h2"><a href="#2-5-creator-monetization-strategies-beyond-brand-deals">2) 5 Creator Monetization Strategies (Beyond Brand Deals)</a></li><li class="toc-h3"><a href="#business-model-2">Business model</a></li><li class="toc-h3"><a href="#revenue-model-2">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-2">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-610">Automation potential: 6/10</a></li><li class="toc-h3"><a href="#quality-410">Quality: 4/10</a></li><li class="toc-h3"><a href="#verdict-mixed">Verdict: **Mixed**</a></li><li class="toc-h3"><a href="#key-actions-2">Key actions</a></li><li class="toc-h3"><a href="#red-flags-2">Red flags</a></li><li class="toc-h3"><a href="#novelty-partial-new-mechanic-graduated-to-candidate-themes">🆕 Novelty: **PARTIAL — NEW mechanic graduated to candidate themes**</a></li><li class="toc-h2"><a href="#3-amazon-fba-private-label-vs-wholesale-in-2026">3) Amazon FBA Private Label vs Wholesale in 2026</a></li><li class="toc-h3"><a href="#business-model-3">Business model</a></li><li class="toc-h3"><a href="#revenue-model-3">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-3">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-410">Automation potential: 4/10</a></li><li class="toc-h3"><a href="#quality-610">Quality: 6/10</a></li><li class="toc-h3"><a href="#verdict-mixed-2">Verdict: **Mixed**</a></li><li class="toc-h3"><a href="#key-actions-3">Key actions</a></li><li class="toc-h3"><a href="#red-flags-3">Red flags</a></li><li class="toc-h2"><a href="#4-5-realistic-side-hustles-even-if-you-work-a-9-5-job">4) 5 REALISTIC Side Hustles (Even if You Work a 9-5 Job)</a></li><li class="toc-h3"><a href="#business-model-4">Business model</a></li><li class="toc-h3"><a href="#revenue-model-4">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-4">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-410-2">Automation potential: 4/10</a></li><li class="toc-h3"><a href="#quality-510">Quality: 5/10</a></li><li class="toc-h3"><a href="#verdict-skip-2">Verdict: **Skip**</a></li><li class="toc-h3"><a href="#key-actions-4">Key actions</a></li><li class="toc-h3"><a href="#red-flags-4">Red flags</a></li><li class="toc-h2"><a href="#5-launch-a-paid-community-in-8-minutes-start-earning-today">5) Launch a Paid Community in 8 Minutes (Start Earning Today)</a></li><li class="toc-h3"><a href="#business-model-5">Business model</a></li><li class="toc-h3"><a href="#revenue-model-5">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-5">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-310">Automation potential: 3/10</a></li><li class="toc-h3"><a href="#quality-410-2">Quality: 4/10</a></li><li class="toc-h3"><a href="#verdict-mixed-3">Verdict: **Mixed**</a></li><li class="toc-h3"><a href="#key-actions-5">Key actions</a></li><li class="toc-h3"><a href="#red-flags-5">Red flags</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
