@@ -59,6 +59,14 @@ def md_to_html(md_path, output_path):
     used_ids = set()
     lines = content.split('\n')
 
+    # Standalone docs (playbooks/kits: not daily-research_*, not playlist-research_*)
+    # keep their own H1 title — the synthesized "Daily YouTube Strategy Research"
+    # heading only fits the daily reports. Daily/playlist behavior unchanged.
+    if not is_playlist and not base.startswith('daily-research_'):
+        m_h1 = re.search(r'^#\s+(.+?)\s*$', content, re.MULTILINE)
+        if m_h1:
+            doc_title = m_h1.group(1).strip()
+
     # TOC pre-pass (daily reports): "Jump to a section" nav under the H1.
     # Mirrors the main pass anchor algorithm so links land on the same ids.
     toc_entries = []
