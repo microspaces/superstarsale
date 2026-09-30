@@ -6,17 +6,17 @@
 
 | # | Title | Channel | Views | Verdict |
 |---|-------|---------|-------|---------|
-| 1 | The Ultimate Beginner's Guide to Consulting! (Hours, Lifestyle, Compensation, Pros & Cons) | rareliquid careers | 1,672,574 | ❌ Skip-leaning (transcript unavailable) |
-| 2 | Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App | Your Average Tech Bro | 67,195 | 🟡 Worth Trying-leaning (transcript unavailable) |
-| 3 | What is a Business Model? | Marketing Business Network | 23,062 | ❌ Skip (transcript unavailable) |
-| 4 | How To Build A Profitable $10M+ DTC Brand #shopify #ecommerce | Ecom Scaling Show | 1,110 | ⚠️ Mixed (transcript unavailable) |
-| 5 | $1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed | Mr No FluFF (My Real Estate DOJO) | 70 | ❌ Skip-leaning (transcript unavailable) |
+| 1 | [The Ultimate Beginner's Guide to Consulting! (Hours, Lifestyle, Compensation, Pros & Cons)](https://www.youtube.com/watch?v=uhR9Lq3fWM8) | rareliquid careers | 1,672,574 | ❌ Skip-leaning (transcript unavailable) |
+| 2 | [Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App](https://www.youtube.com/watch?v=5_IDuqUPP-U) | Your Average Tech Bro | 67,195 | 🟡 Worth Trying-leaning (transcript unavailable) |
+| 3 | [What is a Business Model?](https://www.youtube.com/watch?v=3o1u4lKVAcA) | Marketing Business Network | 23,062 | ❌ Skip (transcript unavailable) |
+| 4 | [How To Build A Profitable $10M+ DTC Brand #shopify #ecommerce](https://www.youtube.com/watch?v=aKiev7JXwLU) | Ecom Scaling Show | 1,110 | ⚠️ Mixed (transcript unavailable) |
+| 5 | [$1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed](https://www.youtube.com/watch?v=BncS7q989L0) | Mr No FluFF (My Real Estate DOJO) | 70 | ❌ Skip-leaning (transcript unavailable) |
 
 Run type: Themed rotation + discovery wildcard, deduped against video history. **Transcripts: 0/5 captured (second consecutive day).** youtube_transcript_api hard-blocked; the scripted 3-minute retry cycle recovered 0/5. Analysis below is metadata-level only: no revenue numbers, no replication steps, no receipts grading beyond what titles/channels expose. Every verdict is unconfirmed until a transcript backfill lands — see the backfill queue in Key Takeaways.
 
 ## Per-Video Analysis
 
-### 1. The Ultimate Beginner's Guide to Consulting! — rareliquid careers
+### 1. [The Ultimate Beginner's Guide to Consulting!](https://www.youtube.com/watch?v=uhR9Lq3fWM8) — rareliquid careers
 
 - **Business model (expected from theme):** not a money-making business model — a consulting *career* guide (hours, lifestyle, compensation at MBB-style firms, pros/cons). Maps loosely to the known productized-consulting theme only via subject matter.
 - **Revenue model:** not assessable — transcript unavailable. Channel itself monetizes via courses/finance-career content, not a replicable business in this video.
@@ -26,7 +26,7 @@ Run type: Themed rotation + discovery wildcard, deduped against video history. *
 - **Verdict: ❌ Skip-leaning (unconfirmed)** — biggest reach in the batch, weakest fit for a money-making-strategy pipeline. Low backfill priority.
 - **Red flags:** none observable; it's career content, not a get-rich pitch.
 
-### 2. Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App — Your Average Tech Bro
+### 2. [Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App](https://www.youtube.com/watch?v=5_IDuqUPP-U) — Your Average Tech Bro
 
 - **Business model (expected from theme):** indie micro-SaaS / viral app — solo developer ships one app, rides a virality spike to revenue. Known theme (apps/micro-SaaS), but the format is exactly the receipts style we rank highest: named developer, short time window, specific dollar figure.
 - **Revenue model:** $30K in 3 months claimed in title — numbers not assessable beyond that until transcript (need: revenue split, ad vs IAP vs subscriptions, churn after the viral spike).
@@ -36,7 +36,7 @@ Run type: Themed rotation + discovery wildcard, deduped against video history. *
 - **Verdict: 🟡 Worth Trying-leaning (unconfirmed)** — top of the batch pending transcript. The open question that decides it: was $30K a durable business or a one-spike anomaly. **Backfill priority #1.**
 - **Red flags:** survivorship bias is severe in "1 viral app" stories; the interview framing ("honest conversation") is a good sign but no third-party proof is visible at metadata level.
 
-### 3. What is a Business Model? — Marketing Business Network
+### 3. [What is a Business Model?](https://www.youtube.com/watch?v=3o1u4lKVAcA) — Marketing Business Network
 
 - **Business model (expected from theme):** none — textbook explainer content defining the concept. No replicable strategy to extract.
 - **Revenue model:** none given (metadata level).
@@ -46,7 +46,7 @@ Run type: Themed rotation + discovery wildcard, deduped against video history. *
 - **Verdict: ❌ Skip (unconfirmed)** — filler pick from the rotation. No backfill.
 - **Red flags:** none; just off-target for this pipeline.
 
-### 4. How To Build A Profitable $10M+ DTC Brand — Ecom Scaling Show
+### 4. [How To Build A Profitable $10M+ DTC Brand](https://www.youtube.com/watch?v=aKiev7JXwLU) — Ecom Scaling Show
 
 - **Business model (expected from theme):** DTC ecommerce (Shopify) — brand building, paid-ads scaling, retention. Known theme (ecommerce/FBA family).
 - **Revenue model:** "$10M+" claimed in title with no window, margin, or entity attached — weakest kind of number at metadata level. Not assessable further without transcript.
@@ -56,7 +56,7 @@ Run type: Themed rotation + discovery wildcard, deduped against video history. *
 - **Verdict: ⚠️ Mixed (unconfirmed)** — covered theme, unverifiable headline number, low-signal channel. Backfill only if nothing better lands.
 - **Red flags:** headline revenue with zero receipts visible; vendor-showcase format; tiny view count suggests the $10M claim will be a guest's self-report.
 
-### 5. $1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed — Mr No FluFF (My Real Estate DOJO)
+### 5. [$1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed](https://www.youtube.com/watch?v=BncS7q989L0) — Mr No FluFF (My Real Estate DOJO)
 
 - **Business model (expected from theme):** seller-financing real estate — acquire property with little/no money down by taking over the seller's financing, then flip or hold for cash flow. Known theme (STR/real-estate family).
 - **Revenue model:** "$1 → $33,500 profit" claimed in title. Fails the receipts test as presented: no property, no time window, no deal paperwork referenced at metadata level.
@@ -70,11 +70,11 @@ Run type: Themed rotation + discovery wildcard, deduped against video history. *
 
 | Rank | Video | Automation (provisional) | Why |
 |------|-------|--------------------------|-----|
-| 1 | Solo Dev $30K/3mo Viral App | 7/10 | Build-launch-iterate loops are scriptable; receipts-style format; best backfill value |
-| 2 | $10M+ DTC Brand | 5/10 | Semi-automatable ops, but unverifiable claim and vendor-funnel channel |
-| 3 | Seller Financing $1→$33.5K | 4/10 | Model is real but claims fail the receipts test and execution is manual/legal-heavy |
-| 4 | Beginner's Guide to Consulting | 4/10 | Career content, not a replicable business; zero systematizable surface |
-| 5 | What is a Business Model? | 2/10 | Pure explainer; nothing to replicate or automate |
+| 1 | [Solo Dev $30K/3mo Viral App](https://www.youtube.com/watch?v=5_IDuqUPP-U) | 7/10 | Build-launch-iterate loops are scriptable; receipts-style format; best backfill value |
+| 2 | [$10M+ DTC Brand](https://www.youtube.com/watch?v=aKiev7JXwLU) | 5/10 | Semi-automatable ops, but unverifiable claim and vendor-funnel channel |
+| 3 | [Seller Financing $1→$33.5K](https://www.youtube.com/watch?v=BncS7q989L0) | 4/10 | Model is real but claims fail the receipts test and execution is manual/legal-heavy |
+| 4 | [Beginner's Guide to Consulting](https://www.youtube.com/watch?v=uhR9Lq3fWM8) | 4/10 | Career content, not a replicable business; zero systematizable surface |
+| 5 | [What is a Business Model?](https://www.youtube.com/watch?v=3o1u4lKVAcA) | 2/10 | Pure explainer; nothing to replicate or automate |
 
 Ranking note (novelty bias): every video maps to an already-covered theme (apps/micro-SaaS, ecommerce/DTC, real-estate, consulting), so nothing earns a novelty lift — automation potential and receipts signal carry the entire ranking today.
 

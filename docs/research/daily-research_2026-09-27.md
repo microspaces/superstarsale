@@ -6,17 +6,17 @@
 
 | # | Title | Channel | Views | Verdict |
 |---|-------|---------|-------|---------|
-| 1 | Watch This To Generate 1000s of Leads (In Any Niche) | Alex Hormozi | 770,886 | ⚠️ Mixed (transcript unavailable) |
-| 2 | This Might Be the Easiest Way to Sell AI to Businesses | Chris Koerner (Koerner Office) | 77,682 | ⚠️ Mixed (transcript unavailable) |
-| 3 | My First 6 Months on Etsy Selling Digital Products — Sales, Revenue, & Profit Breakdown | Erika | 65,377 | ⚠️ Mixed (transcript unavailable) |
-| 4 | How To Build A Profitable Lead Gen Business In 2025 | Leadbase | 41,339 | ❌ Skip-leaning (transcript unavailable) |
-| 5 | The Marketing Agency Model That Actually Works in 2026 | Adam Erhart | 40,959 | ⚠️ Mixed (transcript unavailable) |
+| 1 | [Watch This To Generate 1000s of Leads (In Any Niche)](https://www.youtube.com/watch?v=Mst4hreQYl0) | Alex Hormozi | 770,886 | ⚠️ Mixed (transcript unavailable) |
+| 2 | [This Might Be the Easiest Way to Sell AI to Businesses](https://www.youtube.com/watch?v=g4-3AxelI_Y) | Chris Koerner (Koerner Office) | 77,682 | ⚠️ Mixed (transcript unavailable) |
+| 3 | [My First 6 Months on Etsy Selling Digital Products — Sales, Revenue, & Profit Breakdown](https://www.youtube.com/watch?v=Jy2b5KMIEGY) | Erika | 65,377 | ⚠️ Mixed (transcript unavailable) |
+| 4 | [How To Build A Profitable Lead Gen Business In 2025](https://www.youtube.com/watch?v=sOySsDeb8zw) | Leadbase | 41,339 | ❌ Skip-leaning (transcript unavailable) |
+| 5 | [The Marketing Agency Model That Actually Works in 2026](https://www.youtube.com/watch?v=FzNqQRVdugY) | Adam Erhart | 40,959 | ⚠️ Mixed (transcript unavailable) |
 
 Run type: Themed rotation (day-270 window: micro-SaaS / newsletter / content-site / local-services themes) + discovery wildcard. **Transcripts: 0/5 captured** — youtube_transcript_api returned `IpBlocked`, page-scrape/innertube/timedtext returned 429 from browser, kome.ai returned 403, yt-dlp android/tv clients failed; one 3-minute retry cycle also blocked. Analysis below is metadata-level only; quality/automation scores are provisional and the numbers a transcript would give are missing. Treat every verdict as unconfirmed until a transcript backfill lands.
 
 ## Per-Video Analysis
 
-### 1. Generate 1000s of Leads In Any Niche — Alex Hormozi
+### 1. [Generate 1000s of Leads In Any Niche](https://www.youtube.com/watch?v=Mst4hreQYl0) — Alex Hormozi
 
 - **Business model (expected from theme):** lead-generation frameworks (offer-based lead magnets, outbound/organic acquisition levers) taught by the highest-reach operator channel in this space.
 - **Revenue model:** not assessable — transcript unavailable. Hormozi's channel monetizes via books/funnel to Acquisition.com, not the video itself.
@@ -26,7 +26,7 @@ Run type: Themed rotation (day-270 window: micro-SaaS / newsletter / content-sit
 - **Verdict: ⚠️ Mixed (unconfirmed)** — likely evergreen but this is a frequently-covered theme (lead gen appeared in the 09-24 rotation); novelty is low unless the video contains new numbers. **Backfill recommended — highest-value transcript of the batch.**
 - **Red flags:** none observable at metadata level; channel is established and non-affiliate.
 
-### 2. The Easiest Way to Sell AI to Businesses — Chris Koerner (Koerner Office)
+### 2. [The Easiest Way to Sell AI to Businesses](https://www.youtube.com/watch?v=g4-3AxelI_Y) — Chris Koerner (Koerner Office)
 
 - **Business model (expected from theme):** AI services/productized offer for SMBs — likely a specific wedge (audit-first, vertical tool, or arbitrage of hype vs. delivery) discussed in podcast format.
 - **Revenue model:** not assessable — transcript unavailable. Koerner Office content typically cites guest P&Ls; those receipts are exactly what we'd want and are currently unreachable.
@@ -36,7 +36,7 @@ Run type: Themed rotation (day-270 window: micro-SaaS / newsletter / content-sit
 - **Verdict: ⚠️ Mixed (unconfirmed)** — AI-services-to-SMBs is an already-covered model family (multiple Sept rotations); ranks lower on novelty unless the episode names a new wedge. **Backfill recommended.**
 - **Red flags:** podcast-format hype risk; verify any named businesses/dashboards exist before acting.
 
-### 3. First 6 Months on Etsy Selling Digital Products — Erika
+### 3. [First 6 Months on Etsy Selling Digital Products](https://www.youtube.com/watch?v=Jy2b5KMIEGY) — Erika
 
 - **Business model (expected from theme):** Etsy digital products shop — printables/templates/planners; the video title promises a sales/revenue/profit breakdown, which is the receipt format we rank highest.
 - **Revenue model:** claimed in title (6-month breakdown) but numbers not assessable — transcript unavailable.
@@ -46,7 +46,7 @@ Run type: Themed rotation (day-270 window: micro-SaaS / newsletter / content-sit
 - **Verdict: ⚠️ Mixed (unconfirmed)** — Etsy digital products is a covered theme (in the 21-theme rotation); the 6-month receipts angle is what could lift it. **Backfill recommended.**
 - **Red flags:** self-reported revenue with no third-party proof visible; survivorship bias is the base rate for "my first 6 months" formats.
 
-### 4. How To Build A Profitable Lead Gen Business In 2025 — Leadbase
+### 4. [How To Build A Profitable Lead Gen Business In 2025](https://www.youtube.com/watch?v=sOySsDeb8zw) — Leadbase
 
 - **Business model (expected from theme):** lead-gen agency/marketplace — rank-and-render sites or paid-ads funnels selling leads to local businesses. "Leadbase" as a brand suggests a productized lead marketplace.
 - **Revenue model:** not assessable — transcript unavailable.
@@ -56,7 +56,7 @@ Run type: Themed rotation (day-270 window: micro-SaaS / newsletter / content-sit
 - **Verdict: ❌ Skip-leaning (unconfirmed)** — lead gen is a covered theme, 2025-dated title, vendor-funnel channel, and no transcript receipts. Lowest priority for backfill.
 - **Red flags:** vendor teaching the model it sells; date suggests recycled advice; no observable receipts.
 
-### 5. The Marketing Agency Model That Actually Works in 2026 — Adam Erhart
+### 5. [The Marketing Agency Model That Actually Works in 2026](https://www.youtube.com/watch?v=FzNqQRVdugY) — Adam Erhart
 
 - **Business model (expected from theme):** niche agency positioning — likely productized/niche-down agency offer and client acquisition system from a well-known marketing-education channel.
 - **Revenue model:** not assessable — transcript unavailable. Erhart's channel monetizes courses/consulting around agency-building.

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30 12:28:19",
+  "generated": "2026-09-30 13:03:08",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2502,7 +2502,7 @@
     {
       "file": "daily-research_2026-09-27.html",
       "date": "2026-09-27",
-      "title": "Daily Research — 2026-09-27",
+      "title": "Daily YouTube Strategy Research — 2026-09-27",
       "label": "09-27 Daily",
       "kind": "daily",
       "videos": 5,
@@ -2512,8 +2512,8 @@
       "avg": null,
       "tags": [
         "Agencies & Leads",
-        "Automation",
-        "E-com & Products"
+        "YouTube & Content",
+        "Automation"
       ],
       "top": "Sell AI to Businesses",
       "wt_titles": []
@@ -2581,7 +2581,7 @@
     {
       "file": "daily-research_2026-09-28.html",
       "date": "2026-09-28",
-      "title": "Daily Research — 2026-09-28",
+      "title": "Daily YouTube Strategy Research — 2026-09-28",
       "label": "09-28 Daily",
       "kind": "daily",
       "videos": 5,
@@ -2590,14 +2590,14 @@
       "skip": 3,
       "avg": null,
       "tags": [
+        "YouTube & Content",
         "Automation",
-        "Apps & SaaS",
-        "YouTube & Content"
+        "Apps & SaaS"
       ],
-      "top": "Solo Dev $30K/3mo Viral App",
+      "top": "[Solo Dev $30K/3mo Viral App](https://www.youtube.com/watch?v=5_IDuqUP",
       "wt_titles": [
         {
-          "t": "Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 V",
+          "t": "[Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 ",
           "s": null
         }
       ]
@@ -2605,7 +2605,7 @@
     {
       "file": "daily-research_2026-09-29.html",
       "date": "2026-09-29",
-      "title": "Daily YouTube Money-Making Strategy Research — 2026-09-29",
+      "title": "Daily YouTube Strategy Research — 2026-09-29",
       "label": "09-29 Daily",
       "kind": "daily",
       "videos": 5,
@@ -2624,7 +2624,7 @@
     {
       "file": "daily-research_2026-09-30.html",
       "date": "2026-09-30",
-      "title": "Daily YouTube Money-Making Strategy Research — 2026-09-30",
+      "title": "Daily YouTube Strategy Research — 2026-09-30",
       "label": "09-30 Daily",
       "kind": "daily",
       "videos": 5,

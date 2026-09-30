@@ -10,7 +10,7 @@
 | 2 | [How To Make BUCKETS of Money In SERVICE Businesses](https://www.youtube.com/watch?v=m-7VjocC76M) | Alex Hormozi | Worth Trying | 2/10 | **NEW mechanic** |
 | 3 | [You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide)](https://www.youtube.com/watch?v=Bm84BAtOfQw) | Dan Martell | Worth Trying | 9/10 | **NEW mechanics (×4)** |
 | 4 | [The Only 4 Ways To Scale A Service Business (PICK ONE)](https://www.youtube.com/watch?v=O1As2zxy0es) | Alex Hormozi | Mixed | 4/10 | **NEW theme** |
-| 5 | [11 Passive Income Business Ideas for 2026 & Beyond! [Tier List]](https://www.youtube.com/watch?v=r2u7VKeff_s) | Sean Standberry | Mixed | 5/10 | **PARTIAL — new niches** |
+| 5 | [11 Passive Income Business Ideas for 2026 & Beyond! (Tier List)](https://www.youtube.com/watch?v=r2u7VKeff_s) | Sean Standberry | Mixed | 5/10 | **PARTIAL — new niches** |
 
 ---
 
