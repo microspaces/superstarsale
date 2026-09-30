@@ -58,6 +58,28 @@
             white-space: nowrap;
         }
         h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; -webkit-text-fill-color: #888; }
         p { margin-bottom: 14px; color: #ccc; }
         strong { color: #fff; }
         a { color: #667eea; text-decoration: none; }
@@ -122,51 +144,12 @@
 </head>
 <body>
     <div class="container">
-        <!--NAV-START-->
-<div class="report-nav">
-  <a class="nav-back" href="index.html">&larr; All Reports</a>
-  <div class="nav-buttons">
-    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
-    <span id="nav-current" class="nav-current"></span>
-    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
-  </div>
-</div>
-<style>
-.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
-.nav-buttons{display:flex;align-items:center;gap:10px}
-.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
-.nav-btn:hover{background:rgba(102,126,234,.25)}
-.nav-current{color:#888;font-size:.85em}
-</style>
-<script>
-(function(){
-  var req=new XMLHttpRequest();
-  req.open('GET','manifest.json',true);
-  req.onload=function(){
-    if(req.status!==200)return;
-    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
-    var here=location.pathname.split('/').pop();
-    var list=m.reports||[];
-    for(var i=0;i<list.length;i++){
-      if(list[i].file===here){
-        var cur=document.getElementById('nav-current');
-        if(cur)cur.textContent=(i+1)+' / '+list.length;
-        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
-        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
-        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
-        break;
-      }
-    }
-  };
-  req.send();
-})();
-</script>
-<!--NAV-END-->
         <a class="back-link" href="../index.html">&larr; All Reports</a>
-        <h1>Daily YouTube Strategy Research — 2026-09-28</h1>
+        <h1 id="top">Daily YouTube Strategy Research — 2026-09-28</h1>
 
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos">Videos Analyzed</a></li><li class="toc-h2"><a href="#per-video-analysis">Per-Video Analysis</a></li><li class="toc-h3"><a href="#1-the-ultimate-beginners-guide-to-consultinghttpswwwyoutubecomwatchvuhr9lq3fwm8-rareliquid-careers">1. The Ultimate Beginner&#x27;s Guide to Consulting! — rareliquid careers</a></li><li class="toc-h3"><a href="#2-honest-conversation-with-a-solo-dev-who-made-30k-in-3-months-with-1-viral-apphttpswwwyoutubecomwatchv5_iduqupp-u-your-average-tech-bro">2. Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App — Your Average Tech Bro</a></li><li class="toc-h3"><a href="#3-what-is-a-business-modelhttpswwwyoutubecomwatchv3o1u4lkvaca-marketing-business-network">3. What is a Business Model? — Marketing Business Network</a></li><li class="toc-h3"><a href="#4-how-to-build-a-profitable-10m-dtc-brandhttpswwwyoutubecomwatchvakiev7jxwlu-ecom-scaling-show">4. How To Build A Profitable $10M+ DTC Brand — Ecom Scaling Show</a></li><li class="toc-h3"><a href="#5-1-investment-to-33500-profit-my-seller-financing-strategy-revealedhttpswwwyoutubecomwatchvbncs7q989l0-mr-no-fluff-my-real-estate-dojo">5. $1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed — Mr No FluFF (My Real Estate DOJO)</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
 <p><em>Automated daily research · 5 videos analyzed · Generated 2026-09-28 (report written by Hermes dev agent mimicking the 9 AM cron; NOTE: 0/5 transcripts captured — YouTube hard-blocked every transcript route again, so this is a METADATA-ONLY pass and all verdicts/scores below are provisional)</em></p>
-<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Title</th><th>Channel</th><th>Views</th><th>Verdict</th>
 </tr></thead><tbody>
@@ -207,8 +190,8 @@
 </tr>
 </tbody></table>
 <p>Run type: Themed rotation + discovery wildcard, deduped against video history. <strong>Transcripts: 0/5 captured (second consecutive day).</strong> youtube_transcript_api hard-blocked; the scripted 3-minute retry cycle recovered 0/5. Analysis below is metadata-level only: no revenue numbers, no replication steps, no receipts grading beyond what titles/channels expose. Every verdict is unconfirmed until a transcript backfill lands — see the backfill queue in Key Takeaways.</p>
-<h2 id="per-video-analysis">Per-Video Analysis<a class="anchor" href="#per-video-analysis" aria-label="Link to this section">#</a></h2>
-<h3 id="1-the-ultimate-beginners-guide-to-consultinghttpswwwyoutubecomwatchvuhr9lq3fwm8-rareliquid-careers">1. <a href="https://www.youtube.com/watch?v=uhR9Lq3fWM8">The Ultimate Beginner's Guide to Consulting!</a> — rareliquid careers<a class="anchor" href="#1-the-ultimate-beginners-guide-to-consultinghttpswwwyoutubecomwatchvuhr9lq3fwm8-rareliquid-careers" aria-label="Link to this section">#</a></h3>
+<h2 id="per-video-analysis">Per-Video Analysis<a class="anchor" href="#per-video-analysis" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<h3 id="1-the-ultimate-beginners-guide-to-consultinghttpswwwyoutubecomwatchvuhr9lq3fwm8-rareliquid-careers">1. <a href="https://www.youtube.com/watch?v=uhR9Lq3fWM8">The Ultimate Beginner's Guide to Consulting!</a> — rareliquid careers<a class="anchor" href="#1-the-ultimate-beginners-guide-to-consultinghttpswwwyoutubecomwatchvuhr9lq3fwm8-rareliquid-careers" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li><strong>Business model (expected from theme):</strong> not a money-making business model — a consulting <em>career</em> guide (hours, lifestyle, compensation at MBB-style firms, pros/cons). Maps loosely to the known productized-consulting theme only via subject matter.</li>
 <li><strong>Revenue model:</strong> not assessable — transcript unavailable. Channel itself monetizes via courses/finance-career content, not a replicable business in this video.</li>
@@ -218,7 +201,7 @@
 <li><strong>Verdict: ❌ Skip-leaning (unconfirmed)</strong> — biggest reach in the batch, weakest fit for a money-making-strategy pipeline. Low backfill priority.</li>
 <li><strong>Red flags:</strong> none observable; it's career content, not a get-rich pitch.</li>
 </ul>
-<h3 id="2-honest-conversation-with-a-solo-dev-who-made-30k-in-3-months-with-1-viral-apphttpswwwyoutubecomwatchv5_iduqupp-u-your-average-tech-bro">2. <a href="https://www.youtube.com/watch?v=5_IDuqUPP-U">Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App</a> — Your Average Tech Bro<a class="anchor" href="#2-honest-conversation-with-a-solo-dev-who-made-30k-in-3-months-with-1-viral-apphttpswwwyoutubecomwatchv5_iduqupp-u-your-average-tech-bro" aria-label="Link to this section">#</a></h3>
+<h3 id="2-honest-conversation-with-a-solo-dev-who-made-30k-in-3-months-with-1-viral-apphttpswwwyoutubecomwatchv5_iduqupp-u-your-average-tech-bro">2. <a href="https://www.youtube.com/watch?v=5_IDuqUPP-U">Honest Conversation With A Solo Dev Who Made $30K In 3 Months With 1 Viral App</a> — Your Average Tech Bro<a class="anchor" href="#2-honest-conversation-with-a-solo-dev-who-made-30k-in-3-months-with-1-viral-apphttpswwwyoutubecomwatchv5_iduqupp-u-your-average-tech-bro" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li><strong>Business model (expected from theme):</strong> indie micro-SaaS / viral app — solo developer ships one app, rides a virality spike to revenue. Known theme (apps/micro-SaaS), but the format is exactly the receipts style we rank highest: named developer, short time window, specific dollar figure.</li>
 <li><strong>Revenue model:</strong> $30K in 3 months claimed in title — numbers not assessable beyond that until transcript (need: revenue split, ad vs IAP vs subscriptions, churn after the viral spike).</li>
@@ -228,7 +211,7 @@
 <li><strong>Verdict: 🟡 Worth Trying-leaning (unconfirmed)</strong> — top of the batch pending transcript. The open question that decides it: was $30K a durable business or a one-spike anomaly. <strong>Backfill priority #1.</strong></li>
 <li><strong>Red flags:</strong> survivorship bias is severe in "1 viral app" stories; the interview framing ("honest conversation") is a good sign but no third-party proof is visible at metadata level.</li>
 </ul>
-<h3 id="3-what-is-a-business-modelhttpswwwyoutubecomwatchv3o1u4lkvaca-marketing-business-network">3. <a href="https://www.youtube.com/watch?v=3o1u4lKVAcA">What is a Business Model?</a> — Marketing Business Network<a class="anchor" href="#3-what-is-a-business-modelhttpswwwyoutubecomwatchv3o1u4lkvaca-marketing-business-network" aria-label="Link to this section">#</a></h3>
+<h3 id="3-what-is-a-business-modelhttpswwwyoutubecomwatchv3o1u4lkvaca-marketing-business-network">3. <a href="https://www.youtube.com/watch?v=3o1u4lKVAcA">What is a Business Model?</a> — Marketing Business Network<a class="anchor" href="#3-what-is-a-business-modelhttpswwwyoutubecomwatchv3o1u4lkvaca-marketing-business-network" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li><strong>Business model (expected from theme):</strong> none — textbook explainer content defining the concept. No replicable strategy to extract.</li>
 <li><strong>Revenue model:</strong> none given (metadata level).</li>
@@ -238,7 +221,7 @@
 <li><strong>Verdict: ❌ Skip (unconfirmed)</strong> — filler pick from the rotation. No backfill.</li>
 <li><strong>Red flags:</strong> none; just off-target for this pipeline.</li>
 </ul>
-<h3 id="4-how-to-build-a-profitable-10m-dtc-brandhttpswwwyoutubecomwatchvakiev7jxwlu-ecom-scaling-show">4. <a href="https://www.youtube.com/watch?v=aKiev7JXwLU">How To Build A Profitable $10M+ DTC Brand</a> — Ecom Scaling Show<a class="anchor" href="#4-how-to-build-a-profitable-10m-dtc-brandhttpswwwyoutubecomwatchvakiev7jxwlu-ecom-scaling-show" aria-label="Link to this section">#</a></h3>
+<h3 id="4-how-to-build-a-profitable-10m-dtc-brandhttpswwwyoutubecomwatchvakiev7jxwlu-ecom-scaling-show">4. <a href="https://www.youtube.com/watch?v=aKiev7JXwLU">How To Build A Profitable $10M+ DTC Brand</a> — Ecom Scaling Show<a class="anchor" href="#4-how-to-build-a-profitable-10m-dtc-brandhttpswwwyoutubecomwatchvakiev7jxwlu-ecom-scaling-show" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li><strong>Business model (expected from theme):</strong> DTC ecommerce (Shopify) — brand building, paid-ads scaling, retention. Known theme (ecommerce/FBA family).</li>
 <li><strong>Revenue model:</strong> "$10M+" claimed in title with no window, margin, or entity attached — weakest kind of number at metadata level. Not assessable further without transcript.</li>
@@ -248,7 +231,7 @@
 <li><strong>Verdict: ⚠️ Mixed (unconfirmed)</strong> — covered theme, unverifiable headline number, low-signal channel. Backfill only if nothing better lands.</li>
 <li><strong>Red flags:</strong> headline revenue with zero receipts visible; vendor-showcase format; tiny view count suggests the $10M claim will be a guest's self-report.</li>
 </ul>
-<h3 id="5-1-investment-to-33500-profit-my-seller-financing-strategy-revealedhttpswwwyoutubecomwatchvbncs7q989l0-mr-no-fluff-my-real-estate-dojo">5. <a href="https://www.youtube.com/watch?v=BncS7q989L0">$1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed</a> — Mr No FluFF (My Real Estate DOJO)<a class="anchor" href="#5-1-investment-to-33500-profit-my-seller-financing-strategy-revealedhttpswwwyoutubecomwatchvbncs7q989l0-mr-no-fluff-my-real-estate-dojo" aria-label="Link to this section">#</a></h3>
+<h3 id="5-1-investment-to-33500-profit-my-seller-financing-strategy-revealedhttpswwwyoutubecomwatchvbncs7q989l0-mr-no-fluff-my-real-estate-dojo">5. <a href="https://www.youtube.com/watch?v=BncS7q989L0">$1 Investment to $33,500 Profit: My Seller Financing Strategy Revealed</a> — Mr No FluFF (My Real Estate DOJO)<a class="anchor" href="#5-1-investment-to-33500-profit-my-seller-financing-strategy-revealedhttpswwwyoutubecomwatchvbncs7q989l0-mr-no-fluff-my-real-estate-dojo" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li><strong>Business model (expected from theme):</strong> seller-financing real estate — acquire property with little/no money down by taking over the seller's financing, then flip or hold for cash flow. Known theme (STR/real-estate family).</li>
 <li><strong>Revenue model:</strong> "$1 → $33,500 profit" claimed in title. Fails the receipts test as presented: no property, no time window, no deal paperwork referenced at metadata level.</li>
@@ -258,7 +241,7 @@
 <li><strong>Verdict: ❌ Skip-leaning (unconfirmed)</strong> — covered theme plus the weakest receipts profile in the batch. No backfill unless a transcript surfaces actual deal documents.</li>
 <li><strong>Red flags:</strong> unverifiable dollar claim; tiny channel monetizing a course/mentorship funnel; seller-financing strategies carry real legal/tax complexity that hook-title content routinely glosses over.</li>
 </ul>
-<h2 id="final-ranking-by-automation-potential">Final Ranking by Automation Potential<a class="anchor" href="#final-ranking-by-automation-potential" aria-label="Link to this section">#</a></h2>
+<h2 id="final-ranking-by-automation-potential">Final Ranking by Automation Potential<a class="anchor" href="#final-ranking-by-automation-potential" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <table class="data-table"><thead><tr>
 <th>Rank</th><th>Video</th><th>Automation (provisional)</th><th>Why</th>
 </tr></thead><tbody>
@@ -294,7 +277,7 @@
 </tr>
 </tbody></table>
 <p>Ranking note (novelty bias): every video maps to an already-covered theme (apps/micro-SaaS, ecommerce/DTC, real-estate, consulting), so nothing earns a novelty lift — automation potential and receipts signal carry the entire ranking today.</p>
-<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <p>1. <strong>Transcript block is now a two-day streak (0/5 today, 0/5 on 09-27).</strong> The pipeline held: both reports published metadata-only with provisional verdicts. Backfill queue, highest value first: (1) Solo Dev $30K/3mo viral app interview, (2) $10M+ DTC brand episode, (3) 09-27's Hormozi lead-gen video. When a transcript route recovers, clear this queue before next-day collection.</p>
 <p>2. <strong>No new business models — zero graduations today.</strong> All five videos map to the known-theme list (apps/micro-SaaS, ecommerce/DTC, STR/real-estate, consulting, business-model theory), so nothing was appended to candidate_themes.json.</p>
 <p>3. <strong>Only one video in the batch shows receipts-style framing:</strong> the solo-dev interview names a real time window and dollar figure. It tops the ranking on automation potential (7/10 provisional) despite the theme being covered, because the decisive unknown — durable revenue vs. one-spike anomaly — is exactly what a transcript can answer.</p>

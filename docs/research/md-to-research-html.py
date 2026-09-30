@@ -50,13 +50,43 @@ def md_to_html(md_path, output_path):
     date_str = date_match.group(1) if date_match else "Unknown"
 
     base = os.path.basename(md_path)
-    if base.startswith('playlist'):
+    is_playlist = base.startswith('playlist')
+    if is_playlist:
         doc_title = f"Playlist Research — {date_str}"
     else:
         doc_title = f"Daily YouTube Strategy Research — {date_str}"
 
     used_ids = set()
     lines = content.split('\n')
+
+    # TOC pre-pass (daily reports): "Jump to a section" nav under the H1.
+    # Mirrors the main pass anchor algorithm so links land on the same ids.
+    toc_entries = []
+    if not is_playlist:
+        used_pre = set()
+        for raw in lines:
+            hm = re.match(r'^(#{2,4}) (.*)$', raw.strip())
+            if not hm:
+                continue
+            text = hm.group(2).strip()
+            cm = re.match(r'^(.*?)\s*\{#([\w-]+)\}\s*$', text)
+            if cm:
+                text, anchor = cm.group(1), cm.group(2)
+                used_pre.add(anchor)
+            else:
+                anchor = make_anchor_id(text, used_pre)
+            if re.match(r'^Videos Analyzed', text):
+                anchor = 'videos'
+                used_pre.add(anchor)
+            label = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
+            toc_entries.append((len(hm.group(1)), label, anchor))
+    toc_html = ''
+    if toc_entries:
+        toc_html = ('<nav class="toc"><div class="toc-title">Jump to a section:</div><ul>'
+                    + ''.join(f'<li class="toc-h{lvl}"><a href="#{anc}">{escape(label)}</a></li>'
+                              for lvl, label, anc in toc_entries)
+                    + '</ul></nav>')
+    toc_injected = False
     html_lines = []
     in_table = False
     in_list = False
@@ -68,6 +98,9 @@ def md_to_html(md_path, output_path):
         # Skip the H1 title (we add it in the template)
         if line.startswith('# '):
             i += 1
+            if toc_html and not toc_injected:
+                html_lines.append(toc_html)
+                toc_injected = True
             continue
 
         # Convert headers (with anchor ids)
@@ -85,15 +118,24 @@ def md_to_html(md_path, output_path):
             if re.match(r'^Videos Analyzed', text):
                 anchor = 'videos'
                 used_ids.add(anchor)
-            # Per-video headings get a back-link to their own TOC row
-            # (falls back to the table heading if no row anchor exists)
+            # Heading affordances: daily reports get "↑ Index" on per-video
+            # headings (their own TOC row if tagged, else the table) plus
+            # "↑ top" on every h2/h3 (returns to the H1 + Jump-to TOC).
+            # Playlists keep only the row back-link — build-research-nav
+            # injects its own prev/next nav on playlist pages.
+            to_top = ''
             toc_back = ''
             vm = re.match(r'^Video (\d+):', text)
+            if not vm and not is_playlist and re.match(r'^\d+[.)]\s', text):
+                toc_back = ('<a class="toc-back" href="#videos" '
+                            'aria-label="Back to video index">&uarr; Index</a>')
             if vm:
                 rid = f'row-video-{vm.group(1)}'
                 target = rid if rid in used_ids else 'videos'
                 toc_back = (f'<a class="toc-back" href="#{target}" '
                             f'aria-label="Back to video index">&uarr; Index</a>')
+            if not is_playlist:
+                to_top = '<span class="toTop"><a href="#top">&#8593; top</a></span>'
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
@@ -104,6 +146,7 @@ def md_to_html(md_path, output_path):
                 f'<h{level} id="{anchor}">{inline_format(text)}'
                 f'<a class="anchor" href="#{anchor}" aria-label="Link to this section">#</a>'
                 f'{toc_back}'
+                f'{to_top}'
                 f'</h{level}>')
         elif line.startswith('---'):
             if in_table:
@@ -232,6 +275,28 @@ def md_to_html(md_path, output_path):
             white-space: nowrap;
         }}
         h2 .toc-back:hover, h3 .toc-back:hover {{ opacity: 1; text-decoration: underline; }}
+        .toc {{
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }}
+        .toc-title {{
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }}
+        .toc ul {{ list-style: none; margin: 0; padding: 0; }}
+        .toc li {{ margin: 4px 0; }}
+        .toc-h2 {{ font-weight: 600; }}
+        .toc-h3 {{ padding-left: 18px; font-size: 0.95em; }}
+        .toTop {{
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }}
+        .toTop a {{ color: #888; -webkit-text-fill-color: #888; }}
         p {{ margin-bottom: 14px; color: #ccc; }}
         strong {{ color: #fff; }}
         a {{ color: #667eea; text-decoration: none; }}
@@ -297,7 +362,7 @@ def md_to_html(md_path, output_path):
 <body>
     <div class="container">
         <a class="back-link" href="../index.html">&larr; All Reports</a>
-        <h1>{escape(doc_title)}</h1>
+        <h1 id="top">{escape(doc_title)}</h1>
 
 {body_content}
 

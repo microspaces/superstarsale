@@ -58,6 +58,28 @@
             white-space: nowrap;
         }
         h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; -webkit-text-fill-color: #888; }
         p { margin-bottom: 14px; color: #ccc; }
         strong { color: #fff; }
         a { color: #667eea; text-decoration: none; }
@@ -122,51 +144,12 @@
 </head>
 <body>
     <div class="container">
-        <!--NAV-START-->
-<div class="report-nav">
-  <a class="nav-back" href="index.html">&larr; All Reports</a>
-  <div class="nav-buttons">
-    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
-    <span id="nav-current" class="nav-current"></span>
-    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
-  </div>
-</div>
-<style>
-.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
-.nav-buttons{display:flex;align-items:center;gap:10px}
-.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
-.nav-btn:hover{background:rgba(102,126,234,.25)}
-.nav-current{color:#888;font-size:.85em}
-</style>
-<script>
-(function(){
-  var req=new XMLHttpRequest();
-  req.open('GET','manifest.json',true);
-  req.onload=function(){
-    if(req.status!==200)return;
-    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
-    var here=location.pathname.split('/').pop();
-    var list=m.reports||[];
-    for(var i=0;i<list.length;i++){
-      if(list[i].file===here){
-        var cur=document.getElementById('nav-current');
-        if(cur)cur.textContent=(i+1)+' / '+list.length;
-        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
-        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
-        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
-        break;
-      }
-    }
-  };
-  req.send();
-})();
-</script>
-<!--NAV-END-->
         <a class="back-link" href="../index.html">&larr; All Reports</a>
-        <h1>Daily YouTube Strategy Research — 2026-09-30</h1>
+        <h1 id="top">Daily YouTube Strategy Research — 2026-09-30</h1>
 
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-i-tried-the-laziest-way-to-make-money-with-ai">1) I Tried The LAZIEST Way to Make Money With AI</a></li><li class="toc-h3"><a href="#business-model">Business model</a></li><li class="toc-h3"><a href="#revenue-model">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-910">Automation potential: 9/10</a></li><li class="toc-h3"><a href="#quality-710">Quality: 7/10</a></li><li class="toc-h3"><a href="#verdict-mixed">Verdict: **Mixed**</a></li><li class="toc-h3"><a href="#key-actions">Key actions</a></li><li class="toc-h3"><a href="#red-flags">Red flags</a></li><li class="toc-h2"><a href="#2-how-to-make-buckets-of-money-in-service-businesses">2) How To Make BUCKETS of Money In SERVICE Businesses</a></li><li class="toc-h3"><a href="#business-model-2">Business model</a></li><li class="toc-h3"><a href="#revenue-model-2">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-2">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-210">Automation potential: 2/10</a></li><li class="toc-h3"><a href="#quality-410">Quality: 4/10</a></li><li class="toc-h3"><a href="#verdict-worth-trying">Verdict: **Worth Trying**</a></li><li class="toc-h3"><a href="#key-actions-2">Key actions</a></li><li class="toc-h3"><a href="#red-flags-2">Red flags</a></li><li class="toc-h2"><a href="#3-youre-not-behind-yet-how-to-build-your-first-ai-agent-full-guide">3) You&#x27;re Not Behind (Yet): How to Build Your First AI Agent (Full Guide)</a></li><li class="toc-h3"><a href="#business-model-3">Business model</a></li><li class="toc-h3"><a href="#revenue-model-3">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-3">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-910-2">Automation potential: 9/10</a></li><li class="toc-h3"><a href="#quality-510">Quality: 5/10</a></li><li class="toc-h3"><a href="#verdict-worth-trying-2">Verdict: **Worth Trying**</a></li><li class="toc-h3"><a href="#key-actions-3">Key actions</a></li><li class="toc-h3"><a href="#red-flags-3">Red flags</a></li><li class="toc-h2"><a href="#4-the-only-4-ways-to-scale-a-service-business-pick-one">4) The Only 4 Ways To Scale A Service Business (PICK ONE)</a></li><li class="toc-h3"><a href="#business-model-4">Business model</a></li><li class="toc-h3"><a href="#revenue-model-4">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-4">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-410">Automation potential: 4/10</a></li><li class="toc-h3"><a href="#quality-810">Quality: 8/10</a></li><li class="toc-h3"><a href="#verdict-mixed-2">Verdict: **Mixed**</a></li><li class="toc-h3"><a href="#key-actions-4">Key actions</a></li><li class="toc-h3"><a href="#red-flags-4">Red flags</a></li><li class="toc-h2"><a href="#5-11-passive-income-business-ideas-for-2026-beyond-tier-list">5) 11 Passive Income Business Ideas for 2026 &amp; Beyond! [Tier List]</a></li><li class="toc-h3"><a href="#business-model-5">Business model</a></li><li class="toc-h3"><a href="#revenue-model-5">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-5">Replication steps</a></li><li class="toc-h3"><a href="#automation-potential-510">Automation potential: 5/10</a></li><li class="toc-h3"><a href="#quality-510-2">Quality: 5/10</a></li><li class="toc-h3"><a href="#verdict-mixed-3">Verdict: **Mixed**</a></li><li class="toc-h3"><a href="#key-actions-5">Key actions</a></li><li class="toc-h3"><a href="#red-flags-5">Red flags</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
 <p><strong>Run type:</strong> Full pipeline (transcripts captured) | <strong>Transcripts:</strong> 5/5 captured | <strong>Source:</strong> SUPERSTARSALE daily YouTube research cron</p>
-<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Video</th><th>Channel</th><th>Verdict</th><th>Automation</th><th>Novelty</th>
 </tr></thead><tbody>
@@ -212,13 +195,13 @@
 </tr>
 </tbody></table>
 <hr>
-<h2 id="1-i-tried-the-laziest-way-to-make-money-with-ai">1) I Tried The LAZIEST Way to Make Money With AI<a class="anchor" href="#1-i-tried-the-laziest-way-to-make-money-with-ai" aria-label="Link to this section">#</a></h2>
+<h2 id="1-i-tried-the-laziest-way-to-make-money-with-ai">1) I Tried The LAZIEST Way to Make Money With AI<a class="anchor" href="#1-i-tried-the-laziest-way-to-make-money-with-ai" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <p><strong>Channel:</strong> Mark Tilbury | 4,470,599 views | <a href="https://www.youtube.com/watch?v=LlhTEttKcwQ">https://www.youtube.com/watch?v=LlhTEttKcwQ</a></p>
-<h3 id="business-model">Business model<a class="anchor" href="#business-model" aria-label="Link to this section">#</a></h3>
+<h3 id="business-model">Business model<a class="anchor" href="#business-model" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>AI (virtual) influencer accounts: synthetic consistent characters posted to Instagram, monetized via digital products. The video surveys the full monetization menu found in the wild — brand deals (Lil Miquela ~$11M/yr, Prada/Calvin Klein), product promotion, affiliate (TikTok Shop), ad revenue (unavailable for IG Reels), physical and digital products — then executes digital products only. Pipeline: Claude (character + scripts via Claude skills) → Higsfield (images, voice, video, Cinema Studio) → Instagram → Stan Store (workbook).</p>
-<h3 id="revenue-model">Revenue model<a class="anchor" href="#revenue-model" aria-label="Link to this section">#</a></h3>
+<h3 id="revenue-model">Revenue model<a class="anchor" href="#revenue-model" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Documented 7-day run: 23 sales × $12 = $276 revenue; costs $99 (Higsfield Ultra) + $19.52 PayPal fees = $118.52; <strong>profit $157.48</strong>. Claude free tier, IG Edits free, Stan Store 14-day trial = $0. Quoted but unverifiable third-party claims: "$100K in last 30 days", "$200K profit", "$13K", Lil Miquela "$11M/yr".</p>
-<h3 id="replication-steps">Replication steps<a class="anchor" href="#replication-steps" aria-label="Link to this section">#</a></h3>
+<h3 id="replication-steps">Replication steps<a class="anchor" href="#replication-steps" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>1. Spy on competing AI influencers; catalog niches and every monetization method they use.</p>
 <p>2. Pick a niche from health / wealth / relationships (he found wealth underexploited by AI accounts).</p>
 <p>3. In Claude (free), generate character profiles — name, backstory, distinct look, USP. He built 3 characters, one per niche.</p>
@@ -230,13 +213,13 @@
 <p>9. Post 10 videos per account across all 3 characters; crown the engagement winner and double down.</p>
 <p>10. Monetize the winner: generate a structured, interactive digital product (30-day habit workbook) via the Claude digital-product skill; human-review it; sell on Stan Store ($15.99 list, $12 discount), link in bio.</p>
 <p>11. Scale: cross-post the same assets to TikTok and YouTube Shorts; layer affiliate (TikTok Shop), brand deals, physical products.</p>
-<h3 id="automation-potential-910">Automation potential: 9/10<a class="anchor" href="#automation-potential-910" aria-label="Link to this section">#</a></h3>
+<h3 id="automation-potential-910">Automation potential: 9/10<a class="anchor" href="#automation-potential-910" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Character generation, scripts, voice, video, and the product itself are all AI-generated in one Claude↔Higsfield loop. Remaining human work: account setup, safety review, posting, analytics judgment.</p>
-<h3 id="quality-710">Quality: 7/10<a class="anchor" href="#quality-710" aria-label="Link to this section">#</a></h3>
+<h3 id="quality-710">Quality: 7/10<a class="anchor" href="#quality-710" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p><strong>Receipts test: PARTIAL PASS.</strong> Real receipts on his own run — Stan Store sales count, PayPal fee line, named costs, and an honest failed prediction (he doubled down on Amos; abandoned Vivian then went viral at 250K views). Weakness: every headline income figure ($100K/30d, $200K, $11M/yr) is an unverifiable third-party claim, and he sells the tool (his own Higsfield discount code).</p>
-<h3 id="verdict-mixed">Verdict: <strong>Mixed</strong><a class="anchor" href="#verdict-mixed" aria-label="Link to this section">#</a></h3>
+<h3 id="verdict-mixed">Verdict: <strong>Mixed</strong><a class="anchor" href="#verdict-mixed" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>The pipeline is real, cheap (~$99) and end-to-end documented, but week-one unit economics are weak ($157.48 for ~2 days of work) and the video itself proves the outcome is a view lottery — his data-driven pick was wrong. Worth it only as a cheap multi-account portfolio bet with cross-posting, not as a reliable "lazy" income stream.</p>
-<h3 id="key-actions">Key actions<a class="anchor" href="#key-actions" aria-label="Link to this section">#</a></h3>
+<h3 id="key-actions">Key actions<a class="anchor" href="#key-actions" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>Catalog 5–10 top AI influencers in health/wealth/relationships; record their monetization routes before building anything.</li>
 <li>Spin up 3 characters (Claude profiles → Higsfield sheets + locations) — treat it as a portfolio test, not a single bet.</li>
@@ -244,7 +227,7 @@
 <li>Attach a $12–16 interactive workbook (not a generic PDF) via Stan Store in the bio.</li>
 <li>Disclose AI status in the bio and hold the winner decision for 2+ weeks — his own data shows 7 days mis-ranks accounts.</li>
 </ul>
-<h3 id="red-flags">Red flags<a class="anchor" href="#red-flags" aria-label="Link to this section">#</a></h3>
+<h3 id="red-flags">Red flags<a class="anchor" href="#red-flags" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>"Laziest" framing vs reality: a full build day, captioning, review, posting, plus ongoing content ops.</li>
 <li>Sponsor-shaped advice: the tutorial doubles as an affiliate funnel for Higsfield.</li>
@@ -254,13 +237,13 @@
 </ul>
 <p><strong>Novelty:</strong> AI virtual personas are a sharpened variant of faceless channels (known). Two genuinely new mechanics: <strong>portfolio-launch-then-consolidate</strong> (3 characters → keep the data winner) and <strong>disclosure-as-positioning</strong> ("your AI grandpa" in bio) to neutralize the deception objection while keeping engagement.</p>
 <hr>
-<h2 id="2-how-to-make-buckets-of-money-in-service-businesses">2) How To Make BUCKETS of Money In SERVICE Businesses<a class="anchor" href="#2-how-to-make-buckets-of-money-in-service-businesses" aria-label="Link to this section">#</a></h2>
+<h2 id="2-how-to-make-buckets-of-money-in-service-businesses">2) How To Make BUCKETS of Money In SERVICE Businesses<a class="anchor" href="#2-how-to-make-buckets-of-money-in-service-businesses" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <p><strong>Channel:</strong> Alex Hormozi | 698,345 views | <a href="https://www.youtube.com/watch?v=m-7VjocC76M">https://www.youtube.com/watch?v=m-7VjocC76M</a></p>
-<h3 id="business-model-2">Business model<a class="anchor" href="#business-model-2" aria-label="Link to this section">#</a></h3>
+<h3 id="business-model-2">Business model<a class="anchor" href="#business-model-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Offer-architecture framework, not a niche: six offer types — physical product, digital product, physical service, digital service, physical access (experiences), digital access (events, direct access to a person). Value comes from PAIRING categories to escape commodity pricing. Core play: a high-ticket <strong>access tier</strong> — a more individualized, higher-touch version of your existing solution sold to a small cohort (e.g., 5 people, 1:1 or small group), 12-month outcome guarantee ("or I keep working with you for free"), fully prepaid, no discount — for a fast cash injection.</p>
-<h3 id="revenue-model-2">Revenue model<a class="anchor" href="#revenue-model-2" aria-label="Link to this section">#</a></h3>
+<h3 id="revenue-model-2">Revenue model<a class="anchor" href="#revenue-model-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Portfolio claim: acquisition.com ~$85M/yr (self-reported; categories named, business names withheld). Offer sizing: "extra $5K / $10K / $20K / $50K" depending on client-base size. Digital products/access ≈ "almost 100% margins." No per-unit pricing or cohort revenue example → <strong>no concrete numbers for the viewer</strong>.</p>
-<h3 id="replication-steps-2">Replication steps<a class="anchor" href="#replication-steps-2" aria-label="Link to this section">#</a></h3>
+<h3 id="replication-steps-2">Replication steps<a class="anchor" href="#replication-steps-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>1. Classify your current offer on the 6-type grid (product/service × physical/digital/access).</p>
 <p>2. Pair in an adjacent category to add differentiated value (product + digital product; service + software; anything + access).</p>
 <p>3. Weight the mix toward digital products and digital access — near-100% margin, scales without headcount, raises enterprise value.</p>
@@ -268,13 +251,13 @@
 <p>5. Charge premium with zero discount — the value is access + expertise, not price.</p>
 <p>6. Deliberately undersell: if you could sell 20, sell 5; if 100, sell 20. Keep ~80% of demand pent-up so future launches still sell out.</p>
 <p>7. Grow the audience base so each subsequent cohort's slot count grows (5→10→20…) — "controlled burn" of goodwill instead of liquidating it.</p>
-<h3 id="automation-potential-210">Automation potential: 2/10<a class="anchor" href="#automation-potential-210" aria-label="Link to this section">#</a></h3>
+<h3 id="automation-potential-210">Automation potential: 2/10<a class="anchor" href="#automation-potential-210" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Pure strategy/sales craft; fulfillment is deliberately human high-touch. Only surrounding ops (scheduling, onboarding admin, content) could be automated.</p>
-<h3 id="quality-410">Quality: 4/10<a class="anchor" href="#quality-410" aria-label="Link to this section">#</a></h3>
+<h3 id="quality-410">Quality: 4/10<a class="anchor" href="#quality-410" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p><strong>Receipts test: FAIL.</strong> No dashboards, no named businesses (explicitly withheld), no cohort case numbers; $85M and "100% margin" figures are self-reported. Framework is internally coherent and consistent with his public track record, but this video presents zero verifiable receipts.</p>
-<h3 id="verdict-worth-trying">Verdict: <strong>Worth Trying</strong><a class="anchor" href="#verdict-worth-trying" aria-label="Link to this section">#</a></h3>
+<h3 id="verdict-worth-trying">Verdict: <strong>Worth Trying</strong><a class="anchor" href="#verdict-worth-trying" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Only for someone who already has clients or an audience — it's a monetization layer on existing demand, not a start-from-zero business. The guarantee + prepay mechanic is the fastest legitimate cash generator in the video.</p>
-<h3 id="key-actions-2">Key actions<a class="anchor" href="#key-actions-2" aria-label="Link to this section">#</a></h3>
+<h3 id="key-actions-2">Key actions<a class="anchor" href="#key-actions-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>Map your offer on the 6-type grid; add one adjacent category this month.</li>
 <li>Draft a 5-slot, 12-month, guaranteed-outcome premium tier priced at full prepay with no discount.</li>
@@ -282,7 +265,7 @@
 <li>Convert cohort outcomes into testimonials, then fold the learnings into a digital product.</li>
 <li>Plan the next launch to a larger slot count off the same base (5 → 10) instead of re-building demand.</li>
 </ul>
-<h3 id="red-flags-2">Red flags<a class="anchor" href="#red-flags-2" aria-label="Link to this section">#</a></h3>
+<h3 id="red-flags-2">Red flags<a class="anchor" href="#red-flags-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>"Work free until done" guarantee is an open-ended fulfillment liability — capped slots are the only thing making it survivable.</li>
 <li>Requires existing demand: worthless to a brand-new account with no client base.</li>
@@ -291,13 +274,13 @@
 </ul>
 <p><strong>Novelty:</strong> <strong>NEW mechanic — "pent-up demand budgeting":</strong> deliberately selling only ~20% of known demand per launch to preserve future goodwill and grow cohort slot count. Controlled-liquidation discipline not previously covered. Secondary: prepaid guarantee as a cash-flow instrument (financing via customer prepayment).</p>
 <hr>
-<h2 id="3-youre-not-behind-yet-how-to-build-your-first-ai-agent-full-guide">3) You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide)<a class="anchor" href="#3-youre-not-behind-yet-how-to-build-your-first-ai-agent-full-guide" aria-label="Link to this section">#</a></h2>
+<h2 id="3-youre-not-behind-yet-how-to-build-your-first-ai-agent-full-guide">3) You're Not Behind (Yet): How to Build Your First AI Agent (Full Guide)<a class="anchor" href="#3-youre-not-behind-yet-how-to-build-your-first-ai-agent-full-guide" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <p><strong>Channel:</strong> Dan Martell | 681,442 views | <a href="https://www.youtube.com/watch?v=Bm84BAtOfQw">https://www.youtube.com/watch?v=Bm84BAtOfQw</a></p>
-<h3 id="business-model-3">Business model<a class="anchor" href="#business-model-3" aria-label="Link to this section">#</a></h3>
+<h3 id="business-model-3">Business model<a class="anchor" href="#business-model-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Not a direct money model — an operating capability: replace repetitive employee work with AI agents across a business (his claim: hundreds of agents doing "92% of all the work across my companies"). Value = bought-back time + headcount leverage; monetized for HIM via an IG-DM lead magnet ("AI company OS playbook"). Teaching frames: chatbot vs agent (meeting vs employee); DATA loop (Diagnose, Assemble, Take action, Assess); Rule of R for task selection (Repetitive, Rules-based, Return on time); AGENT build framework (Aim, Give identity, Equip, Narrow, Trust).</p>
-<h3 id="revenue-model-3">Revenue model<a class="anchor" href="#revenue-model-3" aria-label="Link to this section">#</a></h3>
+<h3 id="revenue-model-3">Revenue model<a class="anchor" href="#revenue-model-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p><strong>None given</strong> for the viewer — no pricing, no income pathway, no client model. Numbers present are claims/anecdotes: "170M new jobs by 2030" (unnamed study), 92% of work automated, airline support study 33%→11% success when identity removed, $150 vs $1.50 refactor cost via model tiering (~100:1 savings).</p>
-<h3 id="replication-steps-3">Replication steps<a class="anchor" href="#replication-steps-3" aria-label="Link to this section">#</a></h3>
+<h3 id="replication-steps-3">Replication steps<a class="anchor" href="#replication-steps-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>1. Select a task passing the Rule of R; his worked example: inbox management.</p>
 <p>2. <strong>Aim</strong>: state the outcome + why; write a one-sentence Definition of Done; use reverse prompting — tell the AI to interview you until it has full clarity.</p>
 <p>3. <strong>Give identity</strong>: have the AI write three plain-English files — soul file (behavior/voice/values), identity file (name, role, lane/permissions — "Amelia/Emailia": inbox only, never calendar or money), user file (who it serves, goals).</p>
@@ -306,13 +289,13 @@
 <p>6. Tier models by cost: cheap tier for high-volume simple sorting, mid tier for daily running, frontier for building/reasoning — build on frontier, run on cheap (~100:1 cost delta).</p>
 <p>7. <strong>Trust in stages</strong>: guardrails in identity files → approve everything at first → drafts only → forwarding → sending → a heartbeat (scheduled autonomous runs, e.g., every 15 min).</p>
 <p>8. Roll out to the team; redeploy freed human time to higher-level work.</p>
-<h3 id="automation-potential-910-2">Automation potential: 9/10<a class="anchor" href="#automation-potential-910-2" aria-label="Link to this section">#</a></h3>
+<h3 id="automation-potential-910-2">Automation potential: 9/10<a class="anchor" href="#automation-potential-910-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>The entire subject is workflow automation, and the method is self-automating (he ends by telling you to feed the video to your AI and let it build the agent).</p>
-<h3 id="quality-510">Quality: 5/10<a class="anchor" href="#quality-510" aria-label="Link to this section">#</a></h3>
+<h3 id="quality-510">Quality: 5/10<a class="anchor" href="#quality-510" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p><strong>Receipts test: FAIL (testable technique).</strong> No live dashboards, no named verifiable businesses behind "92% of work"; studies cited without links. Offset: unusually concrete, falsifiable technique (model-tier costs, exact prompts, file structures, "context rot" failure mode) a viewer can verify by building it in an afternoon. The funnel destination (DM for a playbook) is a disclosed list-build.</p>
-<h3 id="verdict-worth-trying-2">Verdict: <strong>Worth Trying</strong><a class="anchor" href="#verdict-worth-trying-2" aria-label="Link to this section">#</a></h3>
+<h3 id="verdict-worth-trying-2">Verdict: <strong>Worth Trying</strong><a class="anchor" href="#verdict-worth-trying-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>As a capability/ops upgrade, not an income stream. Highest time-leverage per hour of the batch; just don't mistake it for a business model — there is none in the video.</p>
-<h3 id="key-actions-3">Key actions<a class="anchor" href="#key-actions-3" aria-label="Link to this section">#</a></h3>
+<h3 id="key-actions-3">Key actions<a class="anchor" href="#key-actions-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>List weekly tasks; keep only Rule-of-R passes; start with inbox.</li>
 <li>Prompt the AI to interview you (reverse prompting), then generate soul/identity/user files — don't write them yourself.</li>
@@ -320,7 +303,7 @@
 <li>One lane per agent; add a manager agent before exceeding ~3 sub-agents; run on cheap tier, build on frontier.</li>
 <li>Stage autonomy: approve-all → drafts-only → forwards → scheduled heartbeat; put spend/send permissions in the identity file.</li>
 </ul>
-<h3 id="red-flags-3">Red flags<a class="anchor" href="#red-flags-3" aria-label="Link to this section">#</a></h3>
+<h3 id="red-flags-3">Red flags<a class="anchor" href="#red-flags-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>"92% of all work" and "hundreds of agents" are unverifiable self-claims; studies uncited.</li>
 <li>The video's actual monetization is Martell's funnel (DM keyword → playbook).</li>
@@ -330,13 +313,13 @@
 </ul>
 <p><strong>Novelty:</strong> Agent infrastructure is a known theme, but four concrete mechanics are genuinely new: (1) <strong>identity-file agent spec</strong> (soul/identity/user files as a portable job description with permissions as guardrails); (2) <strong>source-mined playbooks</strong> — reverse-engineering SOPs from historical artifacts (sent mail) instead of manual documentation; (3) <strong>model-tier arbitrage</strong> as explicit cost discipline (build on frontier, run on cheap, ~100:1); (4) <strong>reverse prompting</strong> (AI interviews you before building).</p>
 <hr>
-<h2 id="4-the-only-4-ways-to-scale-a-service-business-pick-one">4) The Only 4 Ways To Scale A Service Business (PICK ONE)<a class="anchor" href="#4-the-only-4-ways-to-scale-a-service-business-pick-one" aria-label="Link to this section">#</a></h2>
+<h2 id="4-the-only-4-ways-to-scale-a-service-business-pick-one">4) The Only 4 Ways To Scale A Service Business (PICK ONE)<a class="anchor" href="#4-the-only-4-ways-to-scale-a-service-business-pick-one" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <p><strong>Channel:</strong> Alex Hormozi | 611,118 views | <a href="https://www.youtube.com/watch?v=O1As2zxy0es">https://www.youtube.com/watch?v=O1As2zxy0es</a></p>
-<h3 id="business-model-4">Business model<a class="anchor" href="#business-model-4" aria-label="Link to this section">#</a></h3>
+<h3 id="business-model-4">Business model<a class="anchor" href="#business-model-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>A scaling-vehicle decision framework for existing service businesses, not a startup idea. The 4 vehicles: (1) privately held chain (own every location), (2) franchise (sell name + systems + fee to investor-operators), (3) licensing of your playbook/IP (2 of the 3 franchise components — e.g., CrossFit = name+fee, no systems; white-label = systems+fee, no name), (4) software / tech-enabled service. Core thesis: pick ONE based on buildout cost per location, protectability of IP, cash-flow needs, and risk appetite.</p>
-<h3 id="revenue-model-4">Revenue model<a class="anchor" href="#revenue-model-4" aria-label="Link to this section">#</a></h3>
+<h3 id="revenue-model-4">Revenue model<a class="anchor" href="#revenue-model-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Given, extensively. Private chain: viable when buildout < ~$40–50K or < 6 months of first-year location profit (Insomnia Cookies: ~800 sq ft, huge flour/sugar margins). Franchise: ~$750K setup (legal/filings), ~$50K franchisee fee barely covers franchisee acquisition cost, money comes from royalties, needs 100+ locations — and 90–95% of franchises never pass 100. Licensing: near-zero cost, high margin, cash day one; exit multiple ~6x+ only with 80%+ yearly licensee retention. Software: highest exit multiple, same 80%+ retention bar. Case study: his portfolio company moved licensing → owned locations, $500K/yr → $12M/yr in 14 months, 12 locations.</p>
-<h3 id="replication-steps-4">Replication steps<a class="anchor" href="#replication-steps-4" aria-label="Link to this section">#</a></h3>
+<h3 id="replication-steps-4">Replication steps<a class="anchor" href="#replication-steps-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>1. Confirm a profitable single-location service model with productizable (low-variability, low-skill) delivery.</p>
 <p>2. Score the opportunity: buildout cost per location vs first-year profit; how copyable the offer; how certain the win.</p>
 <p>3. Low buildout + near-certain win → open location #2 yourself and compound a private chain.</p>
@@ -344,13 +327,13 @@
 <p>5. No capital + copyable offer → license the playbook (fee + name OR fee + systems, never all three or you're an illegal franchise); sign sticky contracts (80%+ yearly retention) to preserve exit value.</p>
 <p>6. Only choose software with a technical co-founder — never outsource the build (his self-described "$3M mistake").</p>
 <p>7. Re-evaluate annually: convert licensing to owned locations once licensees' economics prove out.</p>
-<h3 id="automation-potential-410">Automation potential: 4/10<a class="anchor" href="#automation-potential-410" aria-label="Link to this section">#</a></h3>
+<h3 id="automation-potential-410">Automation potential: 4/10<a class="anchor" href="#automation-potential-410" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Org-design and capital vehicles, not automation plays. Chains/franchises add labor and ops drag per unit. Licensing is the most productizable (playbook + community ≈ semi-automatable); software demands an engineering org.</p>
-<h3 id="quality-810">Quality: 8/10<a class="anchor" href="#quality-810" aria-label="Link to this section">#</a></h3>
+<h3 id="quality-810">Quality: 8/10<a class="anchor" href="#quality-810" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p><strong>Receipts test: PASS (best in batch).</strong> Names verifiable real businesses (Insomnia Cookies, CrossFit, McDonald's, Gym Launch); his own portfolio is publicly consistent. The $500K→$12M flagship case is self-reported and anonymized, which keeps it off 9–10. No hype framing; he actively argues against the popular path.</p>
-<h3 id="verdict-mixed-2">Verdict: <strong>Mixed</strong><a class="anchor" href="#verdict-mixed-2" aria-label="Link to this section">#</a></h3>
+<h3 id="verdict-mixed-2">Verdict: <strong>Mixed</strong><a class="anchor" href="#verdict-mixed-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Not a business you can start this week — a decision lens that pays off only once you have a working service business. Highest-quality framework of the batch; the licensing→chain conversion pattern is the actionable nugget.</p>
-<h3 id="key-actions-4">Key actions<a class="anchor" href="#key-actions-4" aria-label="Link to this section">#</a></h3>
+<h3 id="key-actions-4">Key actions<a class="anchor" href="#key-actions-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>Run the buildout test: would location #2 cost <6 months of its projected first-year profit? If yes, own, don't license/franchise.</li>
 <li>Check any "license my system" ambition against the 2-of-3 rule (name/systems/fee) to avoid illegal-franchise exposure.</li>
@@ -358,7 +341,7 @@
 <li>Before paying an agency to build software, find a technical co-founder.</li>
 <li>Watch licensees' unit economics: if they print money with low buildout, convert licenses to owned locations.</li>
 </ul>
-<h3 id="red-flags-4">Red flags<a class="anchor" href="#red-flags-4" aria-label="Link to this section">#</a></h3>
+<h3 id="red-flags-4">Red flags<a class="anchor" href="#red-flags-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>All dollar figures self-reported; flagship case-study company unnamed.</li>
 <li>Franchise "lower failure rate" is common sales talk he himself debunks — but the content is still a funnel into Acquisition.com.</li>
@@ -366,13 +349,13 @@
 </ul>
 <p><strong>Novelty:</strong> <strong>NEW theme — franchising as a scaling vehicle + IP/playbook licensing to operators</strong> (distinct from courses/creator monetization: you license a business system to business operators for fees + retention-based exit value). Neither is on the known list; graduated to <code>candidate_themes.json</code> for a dedicated future run. The 6-months-profit buildout heuristic is a useful rider.</p>
 <hr>
-<h2 id="5-11-passive-income-business-ideas-for-2026-beyond-tier-list">5) 11 Passive Income Business Ideas for 2026 & Beyond! [Tier List]<a class="anchor" href="#5-11-passive-income-business-ideas-for-2026-beyond-tier-list" aria-label="Link to this section">#</a></h2>
+<h2 id="5-11-passive-income-business-ideas-for-2026-beyond-tier-list">5) 11 Passive Income Business Ideas for 2026 & Beyond! [Tier List]<a class="anchor" href="#5-11-passive-income-business-ideas-for-2026-beyond-tier-list" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <p><strong>Channel:</strong> Sean Standberry | 601,225 views | <a href="https://www.youtube.com/watch?v=r2u7VKeff_s">https://www.youtube.com/watch?v=r2u7VKeff_s</a></p>
-<h3 id="business-model-5">Business model<a class="anchor" href="#business-model-5" aria-label="Link to this section">#</a></h3>
+<h3 id="business-model-5">Business model<a class="anchor" href="#business-model-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Survey listicle of 11 buy-or-start passive models, tiered by capital/time: L1 vending (ice/food/supplies), ATMs, laundromats; L2 long-term rentals, short-term rentals (Airbnb/Turo/Swimply) + flipping, self-storage, event & tool rentals (tents/chairs/porta-potties/photo booths); L3 digital products (courses/apps/memberships), dropshipping, semi-absentee franchises; plus a meta-method: the "two steps ahead" hiring system to passivize any business. Anchor: IRS Pub 925 passive definition (<500 hrs/yr, <10 hrs/wk).</p>
-<h3 id="revenue-model-5">Revenue model<a class="anchor" href="#revenue-model-5" aria-label="Link to this section">#</a></h3>
+<h3 id="revenue-model-5">Revenue model<a class="anchor" href="#revenue-model-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Per idea: vending ~$300/mo/machine ×5 = $1,500/mo. ATMs ~$2.50/fee ×8/day = $600/mo each, few machines ≈ $2,000/mo (+ screen ad revenue). Laundromats: ~$660K/yr revenue, ~$5K/mo passive, "95% success rate." LTR: ~10% cash-on-cash, $200–300/mo/door, 10 doors ≈ $33K/yr. Flipping: 4 flips/yr ≈ $5K/mo (numbers garbled). Self-storage (Nick Huber case): $482K purchase, ~$50K down, $90K revenue − $22K expenses = $68K NOI ≈ $5,500/mo. Event rentals: unnamed friend claims $66K/mo. Digital/dropshipping: no concrete numbers.</p>
-<h3 id="replication-steps-5">Replication steps<a class="anchor" href="#replication-steps-5" aria-label="Link to this section">#</a></h3>
+<h3 id="replication-steps-5">Replication steps<a class="anchor" href="#replication-steps-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>1. Define the passive target first: ≤10 hrs/wk (IRS material-participation line).</p>
 <p>2. Pick tier by capital: little → L1 machines; some → L2 real estate/rentals; audience/marketing skill → L3 digital.</p>
 <p>3. L1: buy/place machine in high-traffic spot; weekly clean/restock; scale to 3–5 before hiring.</p>
@@ -380,13 +363,13 @@
 <p>5. Event rentals: buy supplies once, set pickup point, enforce returns/condition; add delivery staff, then exotic inventory.</p>
 <p>6. Franchise route: only pick brands allowing hired operators; hire the operator, manage the operator.</p>
 <p>7. Any business → passive via "two steps ahead": hire #1 to do everything you currently do; hire #2 to do what you would do next; repeat.</p>
-<h3 id="automation-potential-510">Automation potential: 5/10<a class="anchor" href="#automation-potential-510" aria-label="Link to this section">#</a></h3>
+<h3 id="automation-potential-510">Automation potential: 5/10<a class="anchor" href="#automation-potential-510" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Split: digital products ≈ 8 (build once, sell forever, fully automatable delivery); machine businesses ≈ 3–4 (restocking/cash collection/repairs scale linearly, force hiring at ~100 units); the hiring method is human-leverage, not automation. Nothing teaches tooling/AI automation at all.</p>
-<h3 id="quality-510-2">Quality: 5/10<a class="anchor" href="#quality-510-2" aria-label="Link to this section">#</a></h3>
+<h3 id="quality-510-2">Quality: 5/10<a class="anchor" href="#quality-510-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p><strong>Receipts test: FAIL.</strong> One verifiable named operator (Nick Huber) with a coherent single-deal breakdown — the strongest receipt. Everything else: second-hand stats ("95% success rate" from unnamed sources), anonymous friend claims ($66K/mo), host self-claims, and at least two internally inconsistent numbers (flip math 4×$115K ≠ $60K/yr; storage expenses vs stated NOI). No dashboards.</p>
-<h3 id="verdict-mixed-3">Verdict: <strong>Mixed</strong><a class="anchor" href="#verdict-mixed-3" aria-label="Link to this section">#</a></h3>
+<h3 id="verdict-mixed-3">Verdict: <strong>Mixed</strong><a class="anchor" href="#verdict-mixed-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <p>Most of the list re-treads already-covered themes (vending, laundromat, STR, flipping, courses, ecommerce) at shallower depth than prior coverage. Worth mining for the new niches and the #11 hiring method only.</p>
-<h3 id="key-actions-5">Key actions<a class="anchor" href="#key-actions-5" aria-label="Link to this section">#</a></h3>
+<h3 id="key-actions-5">Key actions<a class="anchor" href="#key-actions-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>Steal the "two steps ahead" hiring pattern for any active business: next two hires = (1) your current job, (2) your next move.</li>
 <li>Use the 10 hrs/wk IRS line as a hard passivity gate when evaluating any new venture.</li>
@@ -394,7 +377,7 @@
 <li>For machine routes, cap self-operated units at 3–5 and pre-plan the operator hire before unit #6.</li>
 <li>Ignore the dropshipping and franchise sections unless you already have marketing chops or operator capital.</li>
 </ul>
-<h3 id="red-flags-5">Red flags<a class="anchor" href="#red-flags-5" aria-label="Link to this section">#</a></h3>
+<h3 id="red-flags-5">Red flags<a class="anchor" href="#red-flags-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
 <ul>
 <li>Classic listicle inflation: "95% success rate" attributed to nobody; anonymous $66K/mo friend teased as future content (engagement bait).</li>
 <li>Two arithmetic inconsistencies in-transcript suggest loose sourcing.</li>
@@ -403,7 +386,7 @@
 </ul>
 <p><strong>Novelty:</strong> Genuinely new niches/mechanics vs the known list: <strong>ATM routes</strong> (per-transaction fee machines, distinct from vending's product sales), <strong>self-storage facilities</strong> (commercial RE niche, not STR), <strong>event/tool/party rental</strong> (rental-of-goods), and the <strong>"two steps ahead" double-hire passivization method</strong>. Vending/laundromat/STR/flipping/dropshipping/digital products are all re-coverage.</p>
 <hr>
-<h2 id="final-ranking-by-automation-potential">Final Ranking by Automation Potential<a class="anchor" href="#final-ranking-by-automation-potential" aria-label="Link to this section">#</a></h2>
+<h2 id="final-ranking-by-automation-potential">Final Ranking by Automation Potential<a class="anchor" href="#final-ranking-by-automation-potential" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <table class="data-table"><thead><tr>
 <th>Rank</th><th>Video</th><th>Automation</th><th>Verdict</th><th>Why</th>
 </tr></thead><tbody>
@@ -443,7 +426,7 @@
 <td>Deliberately high-touch. Pent-up-demand budgeting is a genuinely new discipline worth adopting, but it needs an existing client base.</td>
 </tr>
 </tbody></table>
-<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a></h2>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
 <ul>
 <li><strong>🆕 Theme graduated:</strong> franchising + IP/playbook licensing to operators (video 4) is genuinely new to our coverage and was added to <code>candidate_themes.json</code> for a dedicated future run. It sits at the intersection of local services (known) and exit-value engineering (new).</li>
 <li><strong>New mechanics cataloged this run:</strong> pent-up-demand budgeting (sell ~20% of known demand per launch), portfolio-launch-then-consolidate (3 AI characters → keep the data winner), disclosure-as-positioning (AI stated in bio as a trust mechanism), identity-file agent specs, source-mined playbooks (SOPs reverse-engineered from sent mail), model-tier arbitrage (build on frontier, run on cheap), reverse prompting, and the two-steps-ahead double-hire.</li>
