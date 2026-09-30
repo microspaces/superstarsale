@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29 16:17:31",
+  "generated": "2026-09-30 12:28:19",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2620,6 +2620,34 @@
       ],
       "top": "AI Outreach System",
       "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-09-30.html",
+      "date": "2026-09-30",
+      "title": "Daily YouTube Money-Making Strategy Research — 2026-09-30",
+      "label": "09-30 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": 5.8,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "YouTube & Content"
+      ],
+      "top": "First AI Agent (Martell)",
+      "wt_titles": [
+        {
+          "t": "Verdict: Worth Trying",
+          "s": null
+        },
+        {
+          "t": "Verdict: Worth Trying",
+          "s": null
+        }
+      ]
     }
   ]
 }
