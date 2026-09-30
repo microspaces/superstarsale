@@ -86,10 +86,21 @@ def md_to_html(md_path, output_path):
                     + ''.join(f'<li class="toc-h{lvl}"><a href="#{anc}">{escape(label)}</a></li>'
                               for lvl, label, anc in toc_entries)
                     + '</ul></nav>')
-    toc_injected = False
+    toc_placed = [False]
     html_lines = []
     in_table = False
     in_list = False
+
+    def close_table():
+        # Close an open table; the daily-report TOC is injected directly
+        # after the FIRST table (Videos Analyzed) closes, per Mike's layout:
+        # H1 -> subtitle -> table -> Jump-to TOC -> sections.
+        nonlocal in_table
+        html_lines.append('</tbody></table>')
+        in_table = False
+        if toc_html and not toc_placed[0]:
+            html_lines.append(toc_html)
+            toc_placed[0] = True
 
     i = 0
     while i < len(lines):
@@ -98,9 +109,6 @@ def md_to_html(md_path, output_path):
         # Skip the H1 title (we add it in the template)
         if line.startswith('# '):
             i += 1
-            if toc_html and not toc_injected:
-                html_lines.append(toc_html)
-                toc_injected = True
             continue
 
         # Convert headers (with anchor ids)
@@ -140,8 +148,7 @@ def md_to_html(md_path, output_path):
                 html_lines.append('</ul>')
                 in_list = False
             if in_table:
-                html_lines.append('</tbody></table>')
-                in_table = False
+                close_table()
             html_lines.append(
                 f'<h{level} id="{anchor}">{inline_format(text)}'
                 f'<a class="anchor" href="#{anchor}" aria-label="Link to this section">#</a>'
@@ -150,8 +157,7 @@ def md_to_html(md_path, output_path):
                 f'</h{level}>')
         elif line.startswith('---'):
             if in_table:
-                html_lines.append('</tbody></table>')
-                in_table = False
+                close_table()
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
@@ -195,15 +201,13 @@ def md_to_html(md_path, output_path):
                 html_lines.append('</ul>')
                 in_list = False
             if in_table:
-                html_lines.append('</tbody></table>')
-                in_table = False
+                close_table()
         else:
             if in_list:
                 html_lines.append('</ul>')
                 in_list = False
             if in_table:
-                html_lines.append('</tbody></table>')
-                in_table = False
+                close_table()
             html_lines.append(f'<p>{inline_format(line)}</p>')
 
         i += 1
@@ -211,7 +215,10 @@ def md_to_html(md_path, output_path):
     if in_list:
         html_lines.append('</ul>')
     if in_table:
-        html_lines.append('</tbody></table>')
+        close_table()
+    # Fallback: no table in the doc -> TOC goes at the end of the header area
+    if toc_html and not toc_placed[0]:
+        html_lines.append(toc_html)
 
     body_content = '\n'.join(html_lines)
 
