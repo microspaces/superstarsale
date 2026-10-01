@@ -144,50 +144,10 @@
 </head>
 <body>
     <div class="container">
-        <!--NAV-START-->
-<div class="report-nav">
-  <a class="nav-back" href="index.html">&larr; All Reports</a>
-  <div class="nav-buttons">
-    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
-    <span id="nav-current" class="nav-current"></span>
-    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
-  </div>
-</div>
-<style>
-.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
-.nav-buttons{display:flex;align-items:center;gap:10px}
-.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
-.nav-btn:hover{background:rgba(102,126,234,.25)}
-.nav-current{color:#888;font-size:.85em}
-</style>
-<script>
-(function(){
-  var req=new XMLHttpRequest();
-  req.open('GET','manifest.json',true);
-  req.onload=function(){
-    if(req.status!==200)return;
-    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
-    var here=location.pathname.split('/').pop();
-    var list=m.reports||[];
-    for(var i=0;i<list.length;i++){
-      if(list[i].file===here){
-        var cur=document.getElementById('nav-current');
-        if(cur)cur.textContent=(i+1)+' / '+list.length;
-        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
-        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
-        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
-        break;
-      }
-    }
-  };
-  req.send();
-})();
-</script>
-<!--NAV-END-->
         <a class="back-link" href="../index.html">&larr; All Reports</a>
         <h1 id="top">Playlist Research — 2026-09-30</h1>
 
-<p><strong>Playlist:</strong> Michael Buchanan (PLamiZQJOzMbY) · <strong>In playlist:</strong> 23 · <strong>New this run:</strong> 21 (2 already covered: Grok Bot workflow 09-27, Nazareth 09-11) · <strong>Transcripts:</strong> 20/21 (1 backfill pending) · <strong>Digest batches:</strong> 7</p>
+<p><strong>Playlist:</strong> Michael Buchanan (PLamiZQJOzMbY) · <strong>In playlist:</strong> 23 · <strong>New this run:</strong> 21 (2 already covered: Grok Bot workflow 09-27, Nazareth 09-11) · <strong>Transcripts:</strong> 21/21 (video 18 backfilled same day) · <strong>Digest batches:</strong> 7</p>
 <h2 id="videos">Videos Analyzed (21)<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
 <table class="data-table"><thead><tr>
 <th>#</th><th>Video</th><th>Verdict</th><th>Q</th>
@@ -793,25 +753,30 @@
 </ul>
 <h3 id="video-18">Video 18: The AI Advantage — "ChatGPT Dots: How I Spent My First 24 Hours"<a class="anchor" href="#video-18" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-18" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/db1KRJQEt8w">https://youtu.be/db1KRJQEt8w</a></p>
-<p><strong>Note:</strong> transcript unavailable at publish time; analysis from title, channel, and channel context. Transcript backfill pending.</p>
-<p><strong>What the video actually is:</strong> Almost certainly a hands-on first-impressions review/tutorial of ChatGPT's new "Dots" feature (OpenAI's always-on personal agents, launched at DevDay the day before this playlist's date — Sep 29, 2026). "How I Spent My First 24 Hours" is the classic early-access walkthrough format: setup, what it can/can't do, practical uses. Funnel presence unknown without the transcript; this channel typically monetizes via its own AI-education resources and links rather than sponsor reads.</p>
-<p><strong>Creator:</strong> The AI Advantage is a long-running, well-regarded ChatGPT-focused tutorial channel built on practical, no-hype walkthroughs of new OpenAI features — high credibility for exactly this kind of day-one feature review; they have a track record of testing rather than reacting to press releases.</p>
-<p><strong>Core claims (from metadata and channel context only):</strong></p>
+<p><strong>What the video actually is:</strong> Tool demo / education — a day-one hands-on walkthrough of OpenAI's Dots (always-on ChatGPT agents with their own cloud computer and browser, launched at DevDay the day before this run's date). He tests the feature by actually using it: builds a Dot, runs a real errand through it, wires standing scheduled tasks, tours the new Spaces editor, lets it work overnight, and documents every failure on screen (broken voice calls, blocked sites, long waits). It's part one of a series — the closer teases a follow-up video of use cases. No funnel; the value is early, candid product intel plus a usage framework.</p>
+<p><strong>Creator:</strong> The AI Advantage — long-running, well-regarded ChatGPT tutorial channel with a testing-first (rather than react-to-the-press-release) style. The transcript confirms the profile: a paying $200/month Pro subscriber who also runs Grok Bot, Meta's Muse, and his own OpenClaw stack, so the comparisons come from real multi-agent operating experience, not spec sheets.</p>
+<p><strong>Core claims:</strong></p>
 <ul>
-<li>Title signals a real day-one usage log of Dots — implying Pro-tier (or Business Premium) access immediately after launch.</li>
-<li>Knowable product context the video will cover: Dots are always-on agents powered by GPT-6 Astra with their own cloud computer, ~4,000 app integrations, reachable via ChatGPT, Slack, and Teams; currently one Dot per user, created via the ChatGPT desktop app, gated to Pro ($100/mo)/Business Premium/Enterprise.</li>
-<li>Positioning context: Dots are OpenAI's direct answer to Meta's Muse agent, which had topped app charts weeks earlier — so this video lands in a hot competitive-news window.</li>
-<li>Documented launch behaviors a day-one reviewer would test: proactive suggestions from read-only app connections, permission rules ("auto-review," custom rules for when it acts independently), and background multi-step tasks with progress messaging.</li>
+<li>Dots are 24/7 agents with their own cloud VM and browser, addressable by voice; he has access via the $200/month Pro plan, and says it's also quietly live in Business Premium at $100/user (unannounced); it's not available in New York, so he VPN'd to a US IP.</li>
+<li>Day-one setup is genuinely usable: he creates "Mini Alfredo," gives it a persona, and assigns a real task (find a €20–50K camper van on Lisbon used-car sites) — it asks follow-up questions, browses the live web, and returns a top-3 with links.</li>
+<li>Standing scheduled tasks work: check for new listings every 30–60 minutes; each task runs hourly in its own thread, writes its own prompt, and can append results into a Spaces page (his camper-van tracker doc took ~5 minutes to create).</li>
+<li>Spaces is a Notion/Google-Docs-style editor inside ChatGPT (markdown, nested pages, slash commands, AI image/article generation, comments, sharing) — and scheduled tasks can write into those pages.</li>
+<li>Honest friction log: the voice-call feature — which broke twice in OpenAI's own demo — also threw a technical error for him; the Dot can't state its context window and doesn't visibly draw on all memories; Skills don't work in Dots (ChatGPT for Work only) though connectors/plugins do; still one Dot per user; and everything is slow — he contrasts running 2–3 Grok Bots in parallel (like his OpenClaw setup) with sitting and waiting here.</li>
+<li>Sites fight back: Claude refused the Dot's login and Amazon blocks agent browsers — he predicts agent-blocking vs. agent-friendly competitors will define the experience.</li>
+<li>The overnight story is the payoff: the Dot generated a draft persona portrait and proactively flagged that his O-1 visa application had seen no status update in 8 days, suggesting a follow-up. After wiring Slack and calendar connectors, he had 7 scheduled tasks running within his first 24 hours.</li>
+<li>His closing framework: give the agent enough context about yourself → build a small "operating system" of standing scheduled tasks whose output lands in documents and sources → start with ONE real pain point (his example: a daily calendar health-check — insert breaks, catch double-bookings — plus a Gmail follow-up).</li>
 </ul>
-<p><strong>Receipts shown vs self-reported:</strong> Unverifiable without the transcript — a day-one hands-on video would ordinarily show the actual Dots setup and task runs on screen, which is this channel's normal standard, but that cannot be confirmed here.</p>
-<p><strong>Funnel/monetization angle:</strong> Unknown from metadata; typical for the channel is description links to its own prompt/automation resources — no sponsor or funnel can be confirmed at publish time.</p>
-<p><strong>Verdict: Worth Trying — 7/10.</strong> Conditional on the channel's track record: Dots are a genuinely new automation surface for solo operators (always-on agents doing background work across your apps), and this channel is a reliable guide to it; score is capped until the transcript confirms the depth actually demonstrated.</p>
-<p><strong>Transferable mechanics:</strong> (pending transcript — from knowable product mechanics only)</p>
+<p><strong>Receipts shown vs self-reported:</strong> Nearly everything is on-screen and verifiable: the real product UI, live task runs, the Spaces pages, the scheduler tab — and, unusually for this space, the failures (the call feature erroring, Amazon's agent block, Claude's login wall, 5-minute waits). There are zero income claims, so nothing needs discounting; the one take-his-word item is the overnight proactive-visa episode, shown via the resulting notifications and screens when he checks back in the morning.</p>
+<p><strong>Funnel/monetization angle:</strong> None in the video — no sponsor read, no gated tool, no coaching pitch in the transcript. Monetization is the content play itself: first-mover authority on a hot launch (published within ~24 hours of DevDay) plus a teased series ("use cases you can try" is the next video), which feeds channel growth and his own AI-education resources.</p>
+<p><strong>Verdict: Worth Trying — 7/10.</strong> As pure education it's among the most honest demos in the run — real tasks, real failures, zero income hype — and it confirms Dots as a genuinely new automation surface. The score stays capped for a solo operator: at $100–200/month the product is early (one Dot, slow, no Skills, sites blocking agents), and nothing here is a money-making method; the framework itself transfers to agent stacks you may already run.</p>
+<p><strong>Transferable mechanics:</strong></p>
 <ul>
-<li>Always-on agents shift AI work from "prompt → answer" to "assign → monitor": design one standing task per business function (inbox triage, invoice chasing, content clipping) as your first Dot.</li>
-<li>Use proactive read-only connections first — let the agent observe calendars/email and surface suggestions before granting write access.</li>
-<li>Set explicit custom rules for autonomous vs. approval-required actions before day one, not after a mistake.</li>
-<li>Watch the tier gating: features like Dots land on Pro/Business first — the early-adopter window is where tutorial content and consulting demand spike; making day-one walkthroughs of gated features is itself a repeatable content play.</li>
+<li>The core loop he lands on — context → standing scheduled tasks → output appended to a living document — is tool-agnostic: replicate it on an OpenClaw / Grok Bot / cron+Claude stack tonight without paying for Dots.</li>
+<li>Start with one real pain point and convert it into a single standing task (calendar health-check → insert breaks, flag double-bookings → email the affected person), then stack more tasks only after the first one survives a week.</li>
+<li>Wire read-only connectors before scheduled tasks: the standout moment was proactive (an 8-day-stale visa flagged unprompted), not scheduled — an agent surfaces what you didn't think to ask for only if it can see your calendar and inbox.</li>
+<li>Treat site-side agent blocking (Amazon, Claude logins) as a planning constraint: design workflows around agent-friendly targets and logged-out sources, and expect blocks to reshape which automations survive.</li>
+<li>Day-one walkthroughs of gated launches are themselves a repeatable content play — this video published inside 24 hours of DevDay and will own that search window; same early-adopter spike noted in Videos 15 and 17.</li>
+<li>Spaces-style living documents (agent-appended, shareable, commentable) are a client-facing deliverable format: a progress page that updates itself is a sellable artifact for any service business.</li>
 </ul>
 <h3 id="video-19">Video 19: Chris Koerner on The Koerner Office Podcast — "The Simplest $27K/Month Business Anyone Can Start"<a class="anchor" href="#video-19" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-19" aria-label="Back to video index">&uarr; Index</a></h3>
 <p>> ▶ Watch: <a href="https://youtu.be/69eN9vRtWB8">https://youtu.be/69eN9vRtWB8</a></p>
@@ -893,7 +858,7 @@
 <li>Asset-vs-service filter: run service businesses for fast cash, then deliberately reinvest hours/profit into compounding assets (book portfolios, ranking video) — his stated rule is to never stay in pure time-for-money mode longer than the runway-building phase.</li>
 </ul>
 <h2 id="run-synthesis">Run Synthesis<a class="anchor" href="#run-synthesis" aria-label="Link to this section">#</a></h2>
-<p>Cross-cutting takeaways from all 7 digest batches (21 videos, 20/21 transcripts, 1 metadata-only with backfill pending).</p>
+<p>Cross-cutting takeaways from all 7 digest batches (21 videos, 21/21 transcripts).</p>
 <p><strong>Top of the run:</strong></p>
 <ul>
 <li>Koerner credit-card-guy interview follow-up (Video 19) — 8.5/10: B2B referral pipelines for boring trades; the clearest stealable revenue-sharing intro system of the run.</li>
@@ -911,7 +876,6 @@
 <p><strong>Watch items:</strong></p>
 <ul>
 <li>Video 4's editor tool: transcript spells it "Berumi"/"Vrew" inconsistently — verify the exact product name before any purchase or follow-up.</li>
-<li>Video 18 (ChatGPT Dots): transcript blocked at publish (kome.ai 429 wave) — covered from metadata with a backfill queue entry; swap in the full analysis when the block lifts.</li>
 <li>Videos 5/12/21 all self-report income; none showed statements.</li>
 </ul>
 <p><strong>Transferable stack worth stealing (if you only take five things):</strong></p>
