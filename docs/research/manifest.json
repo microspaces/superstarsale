@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30 19:01:19",
+  "generated": "2026-10-01 09:12:11",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2740,6 +2740,25 @@
           "s": 7.5
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-10-01.html",
+      "date": "2026-10-01",
+      "title": "Daily YouTube Strategy Research — 2026-10-01",
+      "label": "10-01 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Agencies & Leads"
+      ],
+      "top": "All verdicts provisional (metadata-only run).",
+      "wt_titles": []
     }
   ]
 }
