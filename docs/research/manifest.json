@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30 13:03:08",
+  "generated": "2026-09-30 19:01:19",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2646,6 +2646,98 @@
         {
           "t": "Verdict: Worth Trying",
           "s": null
+        }
+      ]
+    },
+    {
+      "file": "playlist-research_2026-09-30.html",
+      "date": "2026-09-30",
+      "title": "Playlist Research — 2026-09-30",
+      "label": "09-30 Playlist",
+      "kind": "playlist",
+      "videos": 21,
+      "wt": 18,
+      "mixed": 3,
+      "skip": 0,
+      "avg": 7.5,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Automation"
+      ],
+      "top": "Greg Isenberg — \"$5T opportunity: AI Roll Ups\" (8.5/10)",
+      "wt_titles": [
+        {
+          "t": "Duncan Rogoff | Learn Claude Code — \"Opus 5.5 Just Changed Video Editi",
+          "s": 8.0
+        },
+        {
+          "t": "MoreMozi — \"I Use AI Every Day. Why Am I Still Behind?\"",
+          "s": 7.0
+        },
+        {
+          "t": "Paul J Lipsky — \"Opus 5.5 Is The Best Video Editor I've Ever Used\"",
+          "s": 8.0
+        },
+        {
+          "t": "Greg Isenberg — \"$5T opportunity: AI Roll Ups\"",
+          "s": 8.5
+        },
+        {
+          "t": "Tina Huang — \"Every Size Local AI In 24 Minutes\"",
+          "s": 7.0
+        },
+        {
+          "t": "Bijan Bowen — \"Claude Sonnet 5.5 Is INSANE – Seriously, This Model Is ",
+          "s": 8.0
+        },
+        {
+          "t": "vidIQ — \"YouTube Just Launched 20+ NEW FEATURES... I'm Impressed!\"",
+          "s": 8.0
+        },
+        {
+          "t": "LMGClips — \"Old YouTube Is Gone\"",
+          "s": 7.0
+        },
+        {
+          "t": "MyWifeQuitHerJob Ecommerce Channel — \"These Awful Websites Make Millio",
+          "s": 8.0
+        },
+        {
+          "t": "Corey Ganim — \"How to make fck you money as an AI concierge\"",
+          "s": 7.5
+        },
+        {
+          "t": "Lukas Margerie — \"How to Make Insane Motion Graphics With Opus 5.5\"",
+          "s": 8.5
+        },
+        {
+          "t": "Jay E | RoboNuggets — \"Opus 5.5 just rewrote the rules for Video Anima",
+          "s": 8.0
+        },
+        {
+          "t": "Greg Isenberg — \"OpenAI DevDay: Dots, Agents & $100B Opportunities\"",
+          "s": 7.5
+        },
+        {
+          "t": "Shane Hummus — \"Claude Code Just Changed How YouTube Videos Are Made F",
+          "s": 7.5
+        },
+        {
+          "t": "The AI Advantage — \"ChatGPT Dots: How I Spent My First 24 Hours\"",
+          "s": 7.0
+        },
+        {
+          "t": "Chris Koerner on The Koerner Office Podcast — \"The Simplest $27K/Month",
+          "s": 8.5
+        },
+        {
+          "t": "Bob Doyle Media — \"These AI Voices Make the Whole Video Feel Real\"",
+          "s": 7.0
+        },
+        {
+          "t": "Sean Dollwet — \"5 'Boring' Claude AI Businesses That Can Make You Rich",
+          "s": 7.5
         }
       ]
     }
