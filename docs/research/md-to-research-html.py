@@ -143,8 +143,15 @@ def md_to_html(md_path, output_path):
             toc_back = ''
             vm = re.match(r'^Video (\d+):', text)
             if not vm and not is_playlist and re.match(r'^\d+[.)]\s', text):
-                toc_back = ('<a class="toc-back" href="#videos" '
-                            'aria-label="Back to video index">&uarr; Index</a>')
+                # Dailies: numbered headings are videos, back-link to the
+                # table. Standalone docs (no Videos Analyzed section):
+                # back-link to #top — '#videos' would be a dead anchor.
+                if 'videos' in used_ids:
+                    toc_back = ('<a class="toc-back" href="#videos" '
+                                'aria-label="Back to video index">&uarr; Index</a>')
+                else:
+                    toc_back = ('<a class="toc-back" href="#top" '
+                                'aria-label="Back to index">&uarr; Index</a>')
             if vm:
                 rid = f'row-video-{vm.group(1)}'
                 target = rid if rid in used_ids else 'videos'
