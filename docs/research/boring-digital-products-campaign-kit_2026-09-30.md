@@ -65,7 +65,7 @@ Products + files: `~/Repos/superstarsale-products/` (PRIVATE — never push; con
 ## 8. Mike-steps (only he can do these)
 1. **Payhip store** — sign up (free plan is enough day one): payhip.com — connect PayPal + Stripe (payee/tax info is his), then create 6 products. Upload files from `~/Repos/superstarsale-products/` (budget-spreadsheet.xlsx $9 · client-intake-form.docx $12 · content-calendar.xlsx $9 · meal-prep-tracker.xlsx $7 · onboarding-packet.docx $12 · checklist-pack.pdf FREE). Prices are suggestions — coffee-zone, not course-zone.
 2. **Send the 6 Payhip product URLs** → agent fills the STORE_SLOTs on the bridge page (10-min fix, live on Pages).
-3. **IG account** — @boringbusinessclub (or variant), bio from §1, link = bridge page.
+3. **IG account** — @boringbusinessclub (or variant), bio from §1, link = bridge page. Bio now carries the AI-disclosure line — use the final copy in `ai-character-pack_2026-09-30.md` §2 (Sal persona), not §1 verbatim.
 4. **ManyChat** — connect IG, keyword CHECKLIST → DM bridge link. (Skip at start; use saved replies + pinned comment.)
 
 ## 9. Metrics
