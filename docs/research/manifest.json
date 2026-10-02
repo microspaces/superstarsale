@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-01 09:12:11",
+  "generated": "2026-10-02 09:09:16",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2759,6 +2759,30 @@
       ],
       "top": "All verdicts provisional (metadata-only run).",
       "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-10-02.html",
+      "date": "2026-10-02",
+      "title": "Daily YouTube Strategy Research — 2026-10-02",
+      "label": "10-02 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 2,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Agencies & Leads"
+      ],
+      "top": "3-Step Lead Magnet funnel (Alex Cattoni)",
+      "wt_titles": [
+        {
+          "t": "Verdict: Worth Trying",
+          "s": null
+        }
+      ]
     }
   ]
 }
