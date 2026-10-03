@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02 09:09:16",
+  "generated": "2026-10-03 09:07:39",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2783,6 +2783,25 @@
           "s": null
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-10-03.html",
+      "date": "2026-10-03",
+      "title": "Daily YouTube Strategy Research — 2026-10-03",
+      "label": "10-03 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 4,
+      "skip": 1,
+      "avg": null,
+      "tags": [
+        "Courses & Communities",
+        "Apps & SaaS",
+        "YouTube & Content"
+      ],
+      "top": "AI compliance/filing services (Blazing Zebra)",
+      "wt_titles": []
     }
   ]
 }
