@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04 09:12:05",
+  "generated": "2026-10-04 09:54:56",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2821,6 +2821,74 @@
       ],
       "top": "MCP-operated email marketing stack (Chris Koerner)",
       "wt_titles": []
+    },
+    {
+      "file": "playlist-research_2026-10-04.html",
+      "date": "2026-10-04",
+      "title": "Playlist Research — 2026-10-04",
+      "label": "10-04 Playlist",
+      "kind": "playlist",
+      "videos": 15,
+      "wt": 12,
+      "mixed": 2,
+      "skip": 1,
+      "avg": 7.2,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Courses & Communities"
+      ],
+      "top": "Pat Simmons — \"Opus 5.5 Just Cloned a $6M/Month App (steal my prompts! (9/10)",
+      "wt_titles": [
+        {
+          "t": "Cole Gordon — \"How We Built a $5M/yr SaaS (With Zero Software Experien",
+          "s": 8.5
+        },
+        {
+          "t": "Jack Roberts — \"How I vibecode Beautiful $10,000 Apps (Opus 5.5)\"",
+          "s": 7.0
+        },
+        {
+          "t": "Fireship — \"The one OpenAI announcement that can actually make you mon",
+          "s": 7.0
+        },
+        {
+          "t": "Riley Brown — \"The iPhone Duo Needs Apps (AI Can Build Them)\"",
+          "s": 8.0
+        },
+        {
+          "t": "Tyler Mommsen — \"I Had Opus 5.5 Create And Edit ENTIRE Videos (RAW res",
+          "s": 7.5
+        },
+        {
+          "t": "Gusten Sun — \"This $100 Business is PERFECT for Beginners in 2027\"",
+          "s": 7.5
+        },
+        {
+          "t": "Pat Simmons — \"Opus 5.5 Just Cloned a $6M/Month App (steal my prompts!",
+          "s": 9.0
+        },
+        {
+          "t": "The AI Advantage — \"How ChatGPT Dots Can Change Your Life in 4 Minutes",
+          "s": 7.5
+        },
+        {
+          "t": "Chase AI — \"Claude Mods Is The Biggest Claude Code Upgrade Since Skill",
+          "s": 8.0
+        },
+        {
+          "t": "Starter Story — \"This Simple App Makes $18K/Month\"",
+          "s": 8.5
+        },
+        {
+          "t": "Neil Patel — \"Is GPT-6 Astra Going To Change Marketing Forever?\"",
+          "s": 7.5
+        },
+        {
+          "t": "Wes McDowell — \"The NEW Way to Make YouTube Videos FAST (Start to Fini",
+          "s": 8.0
+        }
+      ]
     }
   ]
 }
