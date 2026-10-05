@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04 09:54:56",
+  "generated": "2026-10-05 14:21:04",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2887,6 +2887,58 @@
         {
           "t": "Wes McDowell — \"The NEW Way to Make YouTube Videos FAST (Start to Fini",
           "s": 8.0
+        }
+      ]
+    },
+    {
+      "file": "playlist-research_2026-10-05.html",
+      "date": "2026-10-05",
+      "title": "Playlist Research — 2026-10-05",
+      "label": "10-05 Playlist",
+      "kind": "playlist",
+      "videos": 9,
+      "wt": 8,
+      "mixed": 1,
+      "skip": 0,
+      "avg": 7.8,
+      "tags": [
+        "AI Agents",
+        "YouTube & Content",
+        "Agencies & Leads"
+      ],
+      "top": "\"I Sell PDFs With Claude AI and It Changed My Life (Revealing Everythi (8.5/10)",
+      "wt_titles": [
+        {
+          "t": "Starter Story — \"This unbelievable app idea makes $50K/month\"",
+          "s": 8.0
+        },
+        {
+          "t": "Julia McCoy — \"AI Turned $43 Into $41,495. Fool's Gold or Real Gold?\"",
+          "s": 8.0
+        },
+        {
+          "t": "\"I Sell PDFs With Claude AI and It Changed My Life (Revealing Everythi",
+          "s": 8.5
+        },
+        {
+          "t": "The Next New Thing — \"Free on GitHub: manage agents, 11Labs alternativ",
+          "s": 8.0
+        },
+        {
+          "t": "The Next New Thing — \"Grok Bot: Make money, Grow businesses, Save Cash",
+          "s": 8.0
+        },
+        {
+          "t": "Dark Horse Entrepreneur — \"Which AI Side Hustle Pays Fastest? 7 Ranked",
+          "s": 8.5
+        },
+        {
+          "t": "Whitney Bonds — \"How He Makes $60k/MONTH Selling Google Reviews Using ",
+          "s": 7.5
+        },
+        {
+          "t": "My First Million — \"3 businesses we think are about to blow up\"",
+          "s": 7.0
         }
       ]
     }
