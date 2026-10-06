@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hype Check — Daily Quiz | Superstar Sale Research</title>
+<meta name="description" content="A daily quiz built from 250+ AI-money videos: read the pitch, guess the verdict our research gave it. Worth Trying, Mixed, or Skip?">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%); min-height: 100vh; color: #e0e0e0; padding: 32px 16px; }
+.container { max-width: 620px; margin: 0 auto; }
+h1 { text-align: center; font-size: 2em; margin-bottom: 6px; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.tagline { text-align: center; color: #888; margin-bottom: 20px; font-size: .95em; }
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 22px; margin-bottom: 14px; }
+.meta-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 14px; font-size: .82em; color: #9aa0c0; }
+.badge { background: rgba(102,126,234,.15); border: 1px solid rgba(102,126,234,.4); color: #a5b4fc; padding: 3px 10px; border-radius: 999px; font-weight: 600; }
+.kicker { font-size: .75em; letter-spacing: .12em; text-transform: uppercase; color: #8b90b8; margin-bottom: 10px; font-weight: 700; }
+.claim { font-size: 1.06em; line-height: 1.55; margin-bottom: 18px; }
+.claim .q { color: #667eea; font-size: 1.6em; font-weight: 800; line-height: 1; margin-right: 6px; }
+.prompt { color: #b9bede; font-size: .92em; margin-bottom: 14px; }
+.answers { display: flex; flex-direction: column; gap: 10px; }
+.ans-btn { width: 100%; padding: 13px 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.06); color: #e0e0e0; font-size: 1em; font-weight: 600; cursor: pointer; transition: all .15s; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.ans-btn:hover:not(:disabled) { background: rgba(102,126,234,.22); border-color: rgba(102,126,234,.55); transform: translateY(-1px); }
+.ans-btn:disabled { cursor: default; opacity: .55; }
+.ans-btn.pick { opacity: 1; }
+.ans-btn.correct-pick { background: rgba(46,204,113,.22); border-color: #2ecc71; }
+.ans-btn.wrong-pick { background: rgba(231,76,60,.22); border-color: #e74c3c; }
+.ans-btn.was-true { border-color: #f39c12; }
+.reveal { margin-top: 16px; border-top: 1px solid rgba(255,255,255,.12); padding-top: 14px; animation: fadein .25s; }
+@keyframes fadein { from { opacity: 0; transform: translateY(4px);} to { opacity: 1; transform: none;} }
+.verdict-line { font-size: 1.05em; font-weight: 800; margin-bottom: 8px; }
+.v-wt { color: #2ecc71; } .v-mixed { color: #f39c12; } .v-skip { color: #e74c3c; }
+.rationale { color: #c7cbe6; font-size: .92em; line-height: 1.55; margin-bottom: 10px; }
+.receipts { color: #9aa0c0; font-size: .85em; line-height: 1.5; margin-bottom: 10px; }
+.receipts b { color: #b9bede; }
+.src-link { font-size: .85em; color: #a5b4fc; text-decoration: none; }
+.src-link:hover { text-decoration: underline; }
+.next-btn { width: 100%; margin-top: 14px; padding: 13px; border: none; border-radius: 10px; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; font-size: 1.02em; font-weight: 700; cursor: pointer; }
+.next-btn:hover { filter: brightness(1.12); }
+.progress-dots { display: flex; gap: 6px; justify-content: center; margin: 4px 0 12px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,.14); }
+.dot.hit { background: #2ecc71; } .dot.miss { background: #e74c3c; } .dot.cur { background: #a5b4fc; }
+.score-hero { text-align: center; }
+.score-big { font-size: 2.6em; font-weight: 900; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.rank { color: #b9bede; margin: 4px 0 14px; }
+.grid-emo { font-size: 1.5em; letter-spacing: .18em; margin: 10px 0 16px; }
+.stats-row { display: flex; justify-content: center; gap: 26px; margin-bottom: 16px; flex-wrap: wrap; }
+.stat { text-align: center; }
+.stat .n { font-size: 1.35em; font-weight: 800; color: #a5b4fc; }
+.stat .l { font-size: .75em; color: #888; text-transform: uppercase; letter-spacing: .08em; }
+.share-btn { width: 100%; padding: 13px; border: none; border-radius: 10px; background: linear-gradient(135deg, #2ecc71, #16a085); color: #fff; font-size: 1.02em; font-weight: 700; cursor: pointer; margin-bottom: 10px; }
+.share-btn:hover { filter: brightness(1.1); }
+.ghost-btn { width: 100%; padding: 11px; border-radius: 10px; border: 1px solid rgba(255,255,255,.2); background: transparent; color: #b9bede; font-size: .92em; font-weight: 600; cursor: pointer; }
+.ghost-btn:hover { border-color: rgba(102,126,234,.6); color: #e0e0e0; }
+.countdown { text-align: center; color: #888; font-size: .85em; margin-top: 14px; }
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #2ecc71; color: #04150a; padding: 10px 22px; border-radius: 999px; font-weight: 700; opacity: 0; pointer-events: none; transition: opacity .25s; z-index: 9; }
+.toast.show { opacity: 1; }
+.mode-row { display: flex; gap: 8px; justify-content: center; margin-bottom: 18px; }
+.mode-btn { padding: 7px 16px; border-radius: 999px; border: 1px solid rgba(102,126,234,.4); background: rgba(102,126,234,.1); color: #a5b4fc; font-size: .85em; font-weight: 600; cursor: pointer; }
+.mode-btn.active { background: rgba(102,126,234,.45); color: #fff; }
+.footer { text-align: center; color: #666; font-size: .78em; margin-top: 22px; line-height: 1.6; }
+.footer a { color: #888; }
+.answered-list { margin-top: 6px; }
+.ans-row { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.07); font-size: .84em; color: #b9bede; }
+.ans-row .t { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🔥 Hype Check</h1>
+  <p class="tagline">Real pitches from AI-money videos. Our research read the receipts — can you call the verdict?</p>
+  <div class="mode-row">
+    <button class="mode-btn active" id="modeDaily" onclick="startDaily()">📆 Daily — <span id="quizNum"></span></button>
+    <button class="mode-btn" id="modePractice" onclick="startPractice()">🎯 Practice</button>
+  </div>
+  <div id="game"></div>
+  <div class="footer">
+    Built from the <a href="../research/">Superstar Sale research archive</a> — every verdict below is quoted from our own video analysis pipeline.<br>
+    <span id="buildInfo"></span>
+  </div>
+</div>
+<div class="toast" id="toast">Copied!</div>
+<script>
+const QUESTIONS = /*__QUESTIONS__*/[]/*__END__*/;
+const BUILD = "__BUILD__";
+const N_PER_DAY = 5, N_PRACTICE = 10;
+const VERDICTS = {
+  "Worth Trying": { cls: "v-wt", label: "✅ Worth Trying" },
+  "Mixed":        { cls: "v-mixed", label: "🤔 Mixed" },
+  "Skip":         { cls: "v-skip", label: "🚫 Skip" }
+};
+const ORDER = ["Worth Trying", "Mixed", "Skip"];
+
+// ---------- deterministic RNG ----------
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;var t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function dayPick(dayNum, n){
+  const idx = [...QUESTIONS.keys()];
+  const rnd = mulberry32(dayNum * 2654435761 % 4294967296);
+  for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+  return idx.slice(0, n);
+}
+function utcDay(){ return Math.floor(Date.now() / 86400000); }
+function dayLabel(){ return new Date().toISOString().slice(0, 10); }
+
+// ---------- state ----------
+let state = null;
+function loadStats(){ try { return JSON.parse(localStorage.getItem("hc_stats")) || {games:0, best:0, streak:0, lastDay:null}; } catch(e){ return {games:0, best:0, streak:0, lastDay:null}; } }
+function saveStats(s){ localStorage.setItem("hc_stats", JSON.stringify(s)); }
+
+function startDaily(){
+  const d = utcDay();
+  const saved = JSON.parse(localStorage.getItem("hc_day_" + d) || "null");
+  document.getElementById("modeDaily").classList.add("active");
+  document.getElementById("modePractice").classList.remove("active");
+  document.getElementById("quizNum").textContent = "#" + d;
+  if (saved) { renderResults({qs: saved.qids.map(i=>QUESTIONS[i]), picks: saved.picks, mode: "daily", replay: true}); return; }
+  newGame(dayPick(d, N_PER_DAY).map(i=>QUESTIONS[i]), "daily");
+}
+function startPractice(){
+  document.getElementById("modePractice").classList.add("active");
+  document.getElementById("modeDaily").classList.remove("active");
+  const idx = [...QUESTIONS.keys()];
+  for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+  newGame(idx.slice(0, N_PRACTICE).map(i=>QUESTIONS[i]), "practice");
+}
+function newGame(qs, mode){
+  state = { qs, i: 0, picks: [], mode };
+  renderQuestion();
+}
+function pick(ans){
+  const q = state.qs[state.i];
+  state.picks.push({ pick: ans, correct: ans === q.answer });
+  renderReveal(q, ans);
+}
+function next(){
+  state.i++;
+  if (state.i >= state.qs.length) finishGame(); else renderQuestion();
+}
+
+// ---------- rendering ----------
+function renderQuestion(){
+  const q = state.qs[state.i];
+  const dots = state.qs.map((_, j) => {
+    if (j < state.picks.length) return `<span class="dot ${state.picks[j].correct ? "hit" : "miss"}"></span>`;
+    if (j === state.i) return `<span class="dot cur"></span>`;
+    return `<span class="dot"></span>`;
+  }).join("");
+  document.getElementById("game").innerHTML = `
+  <div class="card">
+    <div class="meta-row">
+      <span class="badge">${state.mode === "daily" ? "📆 Daily " + dayLabel() : "🎯 Practice"}</span>
+      <span>Q${state.i + 1} / ${state.qs.length}</span>
+    </div>
+    <div class="progress-dots">${dots}</div>
+    <div class="kicker">The pitch — from “${esc(q.video)}”</div>
+    <div class="claim"><span class="q">“</span>${esc(q.show)}<span class="q">”</span></div>
+    <p class="prompt">After checking receipts, our research called it…</p>
+    <div class="answers">
+      ${ORDER.map(a => `<button class="ans-btn" id="ans-${a.replace(/\s/g,"")}" onclick="pick('${a}')"><span>${VERDICTS[a].label}</span><span>›</span></button>`).join("")}
+    </div>
+    <div id="reveal"></div>
+  </div>`;
+  window.scrollTo({top: 0, behavior: "smooth"});
+}
+function renderReveal(q, ans){
+  ORDER.forEach(a => {
+    const btn = document.getElementById("ans-" + a.replace(/\s/g,""));
+    btn.disabled = true;
+    if (a === q.answer) btn.classList.add(ans === a ? "correct-pick" : "was-true");
+    else if (a === ans) btn.classList.add("wrong-pick");
+  });
+  const v = VERDICTS[q.answer];
+  const score = q.score ? ` <span style="opacity:.7;font-weight:600">· ${q.score}/10</span>` : "";
+  document.getElementById("reveal").innerHTML = `
+  <div class="reveal">
+    <div class="verdict-line ${v.cls}">Verdict: ${v.label}${score}</div>
+    <div class="rationale">${esc(q.rationale)}</div>
+    ${q.receipts ? `<div class="receipts"><b>Receipts:</b> ${esc(q.receipts)}</div>` : ""}
+    ${q.link ? `<a class="src-link" href="${q.link}" target="_blank" rel="noopener">Read the full research ↗</a>` : ""}
+    <button class="next-btn" onclick="next()">${state.i + 1 >= state.qs.length ? "See results →" : "Next claim →"}</button>
+  </div>`;
+}
+function rankOf(score, n){
+  if (score === n) return "🏆 Receipts Detector — nothing gets past you";
+  if (score >= n - 1) return "🎯 Hype Radar — finely tuned";
+  if (score >= Math.ceil(n / 2)) return "👀 Getting Warm";
+  return "💸 Marketed — the funnel got you";
+}
+function finishGame(){ renderResults({qs: state.qs, picks: state.picks, mode: state.mode}); }
+function renderResults(r){
+  const score = r.picks.filter(p => p.correct).length;
+  const grid = r.picks.map(p => p.correct ? "🟩" : "🟥").join("");
+  let streakNote = "";
+  if (r.mode === "daily" && !r.replay) {
+    const d = utcDay();
+    localStorage.setItem("hc_day_" + d, JSON.stringify({ qids: r.qs.map(q => QUESTIONS.indexOf(q)), picks: r.picks }));
+    const s = loadStats();
+    if (s.lastDay !== d) { s.streak = (s.lastDay === d - 1) ? s.streak + 1 : 1; s.lastDay = d; s.games++; }
+    s.best = Math.max(s.best, s.streak); saveStats(s);
+    streakNote = `<div class="countdown">🔥 ${s.streak}-day streak · next quiz in <span id="cd"></span></div>`;
+    startCountdown();
+  }
+  const st = loadStats();
+  const shareText = `🔥 Hype Check ${r.mode === "daily" ? "#" + utcDay() : "(practice)"} — ${score}/${r.qs.length}\n${grid}\nCan you spot the AI-money hype? ${location.href.split("?")[0]}`;
+  const list = r.qs.map((q, i) => {
+    const p = r.picks[i];
+    return `<div class="ans-row"><span>${p.correct ? "🟩" : "🟥"}</span><span class="t">${esc(q.video)}</span><span>${VERDICTS[q.answer].label.split(" ")[0]}</span></div>`;
+  }).join("");
+  document.getElementById("game").innerHTML = `
+  <div class="card score-hero">
+    <div class="meta-row"><span class="badge">${r.mode === "daily" ? "📆 Daily " + dayLabel() : "🎯 Practice"}${r.replay ? " · already played" : ""}</span></div>
+    <div class="score-big">${score}/${r.qs.length}</div>
+    <div class="rank">${rankOf(score, r.qs.length)}</div>
+    <div class="grid-emo">${grid}</div>
+    <button class="share-btn" onclick='shareResult(${JSON.stringify(shareText).replace(/'/g,"&#39;")})'>📋 Share result</button>
+    <div class="stats-row">
+      <div class="stat"><div class="n">${st.games}</div><div class="l">Games</div></div>
+      <div class="stat"><div class="n">${st.streak}🔥</div><div class="l">Streak</div></div>
+      <div class="stat"><div class="n">${st.best}</div><div class="l">Best streak</div></div>
+      <div class="stat"><div class="n">${QUESTIONS.length}</div><div class="l">Claim bank</div></div>
+    </div>
+    <div class="answered-list">${list}</div>
+    <button class="ghost-btn" style="margin-top:12px" onclick="startPractice()">🎯 Play a practice round</button>
+    ${streakNote}
+  </div>`;
+}
+function shareResult(text){
+  const done = () => { const t = document.getElementById("toast"); t.classList.add("show"); setTimeout(() => t.classList.remove("show"), 1600); };
+  if (navigator.share) { navigator.share({ text }).catch(() => {}); return; }
+  if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done)); }
+  else fallbackCopy(text, done);
+}
+function fallbackCopy(text, done){
+  const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); done(); } catch(e){} document.body.removeChild(ta);
+}
+function startCountdown(){
+  const tick = () => {
+    const el = document.getElementById("cd"); if (!el) return;
+    const now = new Date(); const next = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+    const s = Math.max(0, Math.floor((next - now) / 1000));
+    const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60);
+    el.textContent = `${h}h ${m}m`;
+  };
+  tick(); setInterval(tick, 30000);
+}
+function esc(s){ return String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+document.getElementById("buildInfo").textContent = BUILD;
+startDaily();
+</script>
+</body>
+</html>
