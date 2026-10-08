@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08 14:43:55",
+  "generated": "2026-10-08 14:44:22",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -3004,11 +3004,11 @@
       "title": "Playlist Research — 2026-10-08",
       "label": "10-08 Playlist",
       "kind": "playlist",
-      "videos": 10,
+      "videos": 12,
       "wt": 10,
-      "mixed": 0,
-      "skip": 0,
-      "avg": 7.7,
+      "mixed": 1,
+      "skip": 1,
+      "avg": 7.2,
       "tags": [
         "AI Agents",
         "Automation",
