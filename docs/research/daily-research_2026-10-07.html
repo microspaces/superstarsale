@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily YouTube Strategy Research — 2026-10-07</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; -webkit-text-fill-color: #888; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .data-table tr:target td {
+            background: rgba(102,126,234,0.18);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1 id="top">Daily YouTube Strategy Research — 2026-10-07</h1>
+
+<p><strong>Run type:</strong> Full transcript run (5/5 videos) | <strong>Transcripts:</strong> 5/5 captured — full transcript analysis, no provisional verdicts | <strong>Source:</strong> SUPERSTARSALE daily YouTube research cron</p>
+<h2 id="videos">Videos Analyzed<a class="anchor" href="#videos" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Video</th><th>Channel</th><th>Verdict</th><th>Automation</th><th>Novelty</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><a href="https://www.youtube.com/watch?v=rQJomHdQIbo">How to stand out in your case study interview</a></td>
+<td>Deloitte US</td>
+<td>Skip</td>
+<td>8/10 (content format only)</td>
+<td>Not a business model — corporate recruitment clip; zero revenue data to grade</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://www.youtube.com/watch?v=a8AtbZn0VDM">Reselling 101: Thrift Store Flipping for Beginners</a></td>
+<td>FlippyMcFlipperson</td>
+<td>Mixed</td>
+<td>4/10</td>
+<td>Known theme (flipping) — sell-through-rate as the go/no-go buy signal; one worked $5→$58 flip; video itself is an affiliate pitch</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://www.youtube.com/watch?v=sK6BEatsxJA">Are Covered Call ETFs Worth It? – The Income Trade-Off</a></td>
+<td>Jeff Teeples – Money & Freedom</td>
+<td>Mixed</td>
+<td>9/10</td>
+<td>Known theme (covered-call/income-ETF) — holdings-overlap proof (JEPQ ≈ QQQM + 20% ELNs); the data-driven comparison format is the automatable play</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://www.youtube.com/watch?v=wvByzXHky7w">I Purchased A Website From Flippa - How Flippa Works and Why I Bought It</a></td>
+<td>Surfside PPC</td>
+<td>Mixed</td>
+<td>6/10</td>
+<td>Known theme (acquisitions/affiliate sites) — 4-tool vetting pass + escrow-only discipline; real acquisition-scouting-agent thread</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://www.youtube.com/watch?v=ksTy_VRPV1o">How I Built a High Yield ETF Portfolio (With Risk Management!)</a></td>
+<td>Yujin Vasquez</td>
+<td>Skip</td>
+<td>3/10</td>
+<td>Known theme (covered-call/income-ETF) — 100% margin on income ETFs; "near-guarantee" language on an unguaranteed yield</td>
+</tr>
+</tbody></table>
+<nav class="toc"><div class="toc-title">Jump to a section:</div><ul><li class="toc-h2"><a href="#videos">Videos Analyzed</a></li><li class="toc-h2"><a href="#1-how-to-stand-out-in-your-case-study-interview">1) How to stand out in your case study interview</a></li><li class="toc-h3"><a href="#business-model">Business model</a></li><li class="toc-h3"><a href="#revenue-model">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps">Replication steps</a></li><li class="toc-h3"><a href="#automation-score-810">Automation score: 8/10</a></li><li class="toc-h3"><a href="#quality-score-receipts-test-210">Quality score (receipts test): 2/10</a></li><li class="toc-h3"><a href="#verdict-skip">Verdict: Skip</a></li><li class="toc-h3"><a href="#key-actions">Key actions</a></li><li class="toc-h3"><a href="#red-flags">Red flags</a></li><li class="toc-h2"><a href="#2-reselling-101-thrift-store-flipping-for-beginners">2) Reselling 101: Thrift Store Flipping for Beginners</a></li><li class="toc-h3"><a href="#business-model-2">Business model</a></li><li class="toc-h3"><a href="#revenue-model-2">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-2">Replication steps</a></li><li class="toc-h3"><a href="#automation-score-410">Automation score: 4/10</a></li><li class="toc-h3"><a href="#quality-score-receipts-test-510">Quality score (receipts test): 5/10</a></li><li class="toc-h3"><a href="#verdict-mixed">Verdict: Mixed</a></li><li class="toc-h3"><a href="#key-actions-2">Key actions</a></li><li class="toc-h3"><a href="#red-flags-2">Red flags</a></li><li class="toc-h2"><a href="#3-are-covered-call-etfs-worth-it-the-income-trade-off">3) Are Covered Call ETFs Worth It? – The Income Trade-Off</a></li><li class="toc-h3"><a href="#business-model-3">Business model</a></li><li class="toc-h3"><a href="#revenue-model-3">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-3">Replication steps</a></li><li class="toc-h3"><a href="#automation-score-910">Automation score: 9/10</a></li><li class="toc-h3"><a href="#quality-score-receipts-test-710">Quality score (receipts test): 7/10</a></li><li class="toc-h3"><a href="#verdict-mixed-2">Verdict: Mixed</a></li><li class="toc-h3"><a href="#key-actions-3">Key actions</a></li><li class="toc-h3"><a href="#red-flags-3">Red flags</a></li><li class="toc-h2"><a href="#4-i-purchased-a-website-from-flippa-how-flippa-works-and-why-i-bought-it">4) I Purchased A Website From Flippa - How Flippa Works and Why I Bought It</a></li><li class="toc-h3"><a href="#business-model-4">Business model</a></li><li class="toc-h3"><a href="#revenue-model-4">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-4">Replication steps</a></li><li class="toc-h3"><a href="#automation-score-610">Automation score: 6/10</a></li><li class="toc-h3"><a href="#quality-score-receipts-test-610">Quality score (receipts test): 6/10</a></li><li class="toc-h3"><a href="#verdict-mixed-3">Verdict: Mixed</a></li><li class="toc-h3"><a href="#key-actions-4">Key actions</a></li><li class="toc-h3"><a href="#red-flags-4">Red flags</a></li><li class="toc-h2"><a href="#5-how-i-built-a-high-yield-etf-portfolio-with-risk-management">5) How I Built a High Yield ETF Portfolio (With Risk Management!)</a></li><li class="toc-h3"><a href="#business-model-5">Business model</a></li><li class="toc-h3"><a href="#revenue-model-5">Revenue model</a></li><li class="toc-h3"><a href="#replication-steps-5">Replication steps</a></li><li class="toc-h3"><a href="#automation-score-310">Automation score: 3/10</a></li><li class="toc-h3"><a href="#quality-score-receipts-test-410">Quality score (receipts test): 4/10</a></li><li class="toc-h3"><a href="#verdict-skip-2">Verdict: Skip</a></li><li class="toc-h3"><a href="#key-actions-5">Key actions</a></li><li class="toc-h3"><a href="#red-flags-5">Red flags</a></li><li class="toc-h2"><a href="#final-ranking-by-automation-potential">Final Ranking by Automation Potential</a></li><li class="toc-h2"><a href="#key-takeaways">Key Takeaways</a></li></ul></nav>
+<hr>
+<h2 id="1-how-to-stand-out-in-your-case-study-interview">1) How to stand out in your case study interview<a class="anchor" href="#1-how-to-stand-out-in-your-case-study-interview" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<p><strong>Channel:</strong> Deloitte US | 304,205 views | <a href="https://www.youtube.com/watch?v=rQJomHdQIbo">https://www.youtube.com/watch?v=rQJomHdQIbo</a></p>
+<h3 id="business-model">Business model<a class="anchor" href="#business-model" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Not a business model — a ~90-second corporate recruitment/employer-branding spot from Deloitte US: five generic case-interview tips (ask specific clarifying questions, take notes, think before answering, frame a hypothesis as a clear story, narrate your reasoning). The "product" is Deloitte's careers funnel; the video exists to attract applicants to its case-study resources. It enters this report only as evidence that short, structured explainer formats pull 300K+ views.</p>
+<h3 id="revenue-model">Revenue model<a class="anchor" href="#revenue-model" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>None given.</p>
+<h3 id="replication-steps">Replication steps<a class="anchor" href="#replication-steps" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>1. No business to replicate. Closest analog: producing short, high-production employer-brand or educational micro-content for an institution.</p>
+<p>2. Pick a narrow high-search pain point ("ace your case interview").</p>
+<p>3. Script 5 crisp tips; produce clean brand-consistent video under 2 minutes.</p>
+<p>4. Publish on the company channel; link supporting resources on an owned site.</p>
+<p>5. Measure in applicants/leads, not revenue.</p>
+<h3 id="automation-score-810">Automation score: 8/10<a class="anchor" href="#automation-score-810" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>As a content format, near-fully automatable: LLM script from a topic + TTS + template editing. The only hard-to-fake part is the institutional brand trust behind the logo.</p>
+<h3 id="quality-score-receipts-test-210">Quality score (receipts test): 2/10<a class="anchor" href="#quality-score-receipts-test-210" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>No receipts of any kind — no dashboards, no named businesses, no dollar figures. Credible as official corporate content, but there is nothing verifiable to grade; it scores low because there is zero money-making claim present.</p>
+<h3 id="verdict-skip">Verdict: Skip<a class="anchor" href="#verdict-skip" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Recruitment content, not a strategy. Advice is generic and freely available everywhere.</p>
+<h3 id="key-actions">Key actions<a class="anchor" href="#key-actions" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>Ignore as a business idea.</li>
+<li>Keep the meta-lesson: templated "5 tips" explainers under 2 minutes reliably pull six-figure view counts — a format worth copying for our own channel content.</li>
+</ul>
+<h3 id="red-flags">Red flags<a class="anchor" href="#red-flags" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>Not a business opportunity.</li>
+<li>Zero revenue data, zero specifics.</li>
+</ul>
+<h2 id="2-reselling-101-thrift-store-flipping-for-beginners">2) Reselling 101: Thrift Store Flipping for Beginners<a class="anchor" href="#2-reselling-101-thrift-store-flipping-for-beginners" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<p><strong>Channel:</strong> FlippyMcFlipperson | 243,006 views | <a href="https://www.youtube.com/watch?v=a8AtbZn0VDM">https://www.youtube.com/watch?v=a8AtbZn0VDM</a></p>
+<h3 id="business-model-2">Business model<a class="anchor" href="#business-model-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Buy undervalued items at thrift stores (Goodwill, Salvation Army, independents) and resell on eBay. Full loop shown: pre-research what's valuable in a niche you know, map and route-plan store visits, scan barcodes or keyword-search the eBay app in-store, filter to used + sold listings to compute sell-through, buy only items clearing a margin threshold, then list with clean photos, comp-based pricing, and full item specifics. Back office: custom SKUs mapped to storage bins, spreadsheet or "Reseller Genie" bookkeeping, over-engineered packaging, eBay-printed labels. The video itself monetizes via a Reseller Genie affiliate discount code — the meta-business (reselling education + affiliate) is the higher-leverage layer.</p>
+<h3 id="revenue-model-2">Revenue model<a class="anchor" href="#revenue-model-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>One worked transaction: Honeywell thermostat bought for $5 at Goodwill, sold within days for $58 (~$50 gross after fees). Sold comps showed $45–50 in good used condition; 27 sold in the past 90 days vs 18 active listings (healthy sell-through). Counter-example given: a $6→$10 gnome nets only ~$2 after fees — hence a personal minimum-margin rule. No lifetime income figure ("pretty good money"); affiliate commission undisclosed.</p>
+<h3 id="replication-steps-2">Replication steps<a class="anchor" href="#replication-steps-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>1. Pick a niche you know; build a brand watch-list from reseller content.</p>
+<p>2. Find stores via Google Maps; write down addresses.</p>
+<p>3. Route-plan the run (shortest-time optimization).</p>
+<p>4. In-store: scan barcodes or type specifics into the eBay app.</p>
+<p>5. Filter to used + sold; check sell-through (sold-90-days vs active) and average the 5–6 most recent sold comps.</p>
+<p>6. Buy only above your margin floor (e.g., $5 in → $50+ out).</p>
+<p>7. List: blank-background photos, comp-based price, full specifics, SKU noting the bin.</p>
+<p>8. Track inventory and finances for taxes.</p>
+<p>9. Pack to survive a drop, print label via eBay, ship.</p>
+<h3 id="automation-score-410">Automation score: 4/10<a class="anchor" href="#automation-score-410" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Acquisition stays stubbornly physical (driving, rummaging, photographing, packing, shipping). The back half is scriptable: sold-comp pulls, sell-through calculation, auto-pricing, photo→listing generation, crosslisting, bookkeeping. Sourcing intel decays fast and shelf judgment is human, capping full automation.</p>
+<h3 id="quality-score-receipts-test-510">Quality score (receipts test): 5/10<a class="anchor" href="#quality-score-receipts-test-510" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Partial receipts: one specific, plausible worked transaction with real sell-through numbers, but no dashboards, no lifetime income, anonymous pseudonymous presenter, and an affiliate incentive baked into the tool recommendation.</p>
+<h3 id="verdict-mixed">Verdict: Mixed<a class="anchor" href="#verdict-mixed" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Solid beginner playbook with real unit economics, but labor-heavy, income-capped, saturated, and the video doubles as an affiliate pitch.</p>
+<h3 id="key-actions-2">Key actions<a class="anchor" href="#key-actions-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>If testing: build the sell-through checker first — barcode/keyword → sold comps + sell-through rate compresses in-store decisions to seconds.</li>
+<li>Set a hard per-item net margin floor (≥$25–30); the gnome math shows how fees eat small flips.</li>
+<li>Treat the channel as the real case study: education + affiliate codes is the automatable layer on top of flipping.</li>
+</ul>
+<h3 id="red-flags-2">Red flags<a class="anchor" href="#red-flags-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>Vague lifetime income claims, anonymous presenter, "I'm probably not an expert" disclaimer.</li>
+<li>Affiliate incentive (50%-off Reseller Genie code) behind the "recommendation."</li>
+<li>Manual labor doesn't scale; thrift inventory unpredictable; flipper competition high.</li>
+<li>Sales tax/bookkeeping (1099-K territory) glossed over.</li>
+</ul>
+<h2 id="3-are-covered-call-etfs-worth-it-the-income-trade-off">3) Are Covered Call ETFs Worth It? – The Income Trade-Off<a class="anchor" href="#3-are-covered-call-etfs-worth-it-the-income-trade-off" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<p><strong>Channel:</strong> Jeff Teeples – Money & Freedom | 73,196 views | <a href="https://www.youtube.com/watch?v=sK6BEatsxJA">https://www.youtube.com/watch?v=sK6BEatsxJA</a></p>
+<h3 id="business-model-3">Business model<a class="anchor" href="#business-model-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Educational investing content comparing covered-call income ETFs (JEPI/JEPQ/QYLD/QQQI) against plain index ETFs (VOO/QQQM). Core demonstration: a holdings spreadsheet showing JEPQ is ~80% the same holdings as QQQM (identical top-10, P/E 30.35 vs 30.4, same sector weights) plus ~20% ELNs running the covered-call overlay — same growth portfolio, "lower ceiling, higher floor," ~$2/share/month premium illustration. Positioning: income ETFs suit retirees needing cash flow; index funds suit accumulators ("99.8% chance QQQM outperforms JEPQ over decades"). The creator's actual business is the channel: AdSense + tool affiliates (Seeking Alpha Premium $60-off, Snowball Analytics) plus a recurring side-by-side ETF comparison series.</p>
+<h3 id="revenue-model-3">Revenue model<a class="anchor" href="#revenue-model-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Strategy numbers: ~$2/share monthly premium illustration; JEPQ vs QQQM total return since 5/4/2022 inception = +46% vs +65% (~19pp gap in a bull market); QQQI has beaten JEPQ by 6%+ since late April. No personal portfolio or channel revenue disclosed.</p>
+<h3 id="replication-steps-3">Replication steps<a class="anchor" href="#replication-steps-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>1. Not a venture — it's an allocation decision: decades horizon → QQQM/VOO; near-retirement cash flow → a covered-call slice.</p>
+<p>2. Verify holdings overlap yourself (P/E, top-10, sector weights) on Seeking Alpha or a free ETF comparison tool.</p>
+<p>3. Compare total-return charts from inception, not just yield.</p>
+<p>4. Size any income ETF as a slice (~20% overlay), never the whole portfolio.</p>
+<p>5. Creator-side replication (the replicable part): build an investing-education channel with honest tool affiliates and a recurring comparison-series format.</p>
+<h3 id="automation-score-910">Automation score: 9/10<a class="anchor" href="#automation-score-910" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>As a content/research business this is nearly fully automatable: holdings/P/E/sector pulls, premium and yield tracking, inception-date total-return comparisons, chart generation — all API/scriptable; the script assembles from the data. Nothing physical anywhere.</p>
+<h3 id="quality-score-receipts-test-710">Quality score (receipts test): 7/10<a class="anchor" href="#quality-score-receipts-test-710" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Above-average receipts for YouTube finance: real holdings spreadsheet (dated 6/9), real Seeking Alpha inception-date chart walkthrough (46% vs 65%), specific worked premium example, honest trade-off framing rather than hype. Still directional, not audited, and no personal portfolio verification.</p>
+<h3 id="verdict-mixed-2">Verdict: Mixed<a class="anchor" href="#verdict-mixed-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Accurate, well-sourced education — but investing guidance, not a business to build, and covered-call/income-ETF is an already-covered theme.</p>
+<h3 id="key-actions-3">Key actions<a class="anchor" href="#key-actions-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>The repeatable asset is the format: "same holdings, different wrapper" comparison spreadsheets turned into videos — a strong data-driven, faceless-series candidate.</li>
+<li>Portfolio takeaway: long horizon → plain index; income need → capped slice only.</li>
+<li>Note the affiliate stack (Seeking Alpha $60-off, Snowball Analytics) as the monetization pattern for finance education.</li>
+</ul>
+<h3 id="red-flags-3">Red flags<a class="anchor" href="#red-flags-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>Only ~3.2 years of data since JEPQ inception — one bull-market regime understates the ceiling cost.</li>
+<li>Taxes on distributions explicitly ignored, which materially hurts the income case.</li>
+<li>Affiliate links create monetization incentive despite the "no sponsor" framing.</li>
+<li>Yield-anchor bias: viewers may chase monthly income and miss the ~19pp opportunity cost shown in his own chart.</li>
+</ul>
+<h2 id="4-i-purchased-a-website-from-flippa-how-flippa-works-and-why-i-bought-it">4) I Purchased A Website From Flippa - How Flippa Works and Why I Bought It<a class="anchor" href="#4-i-purchased-a-website-from-flippa-how-flippa-works-and-why-i-bought-it" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<p><strong>Channel:</strong> Surfside PPC | 66,615 views | <a href="https://www.youtube.com/watch?v=wvByzXHky7w">https://www.youtube.com/watch?v=wvByzXHky7w</a></p>
+<h3 id="business-model-4">Business model<a class="anchor" href="#business-model-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Buy an underpriced, monetizable content site on Flippa, then grow it into an Amazon-affiliate + display-ad niche site using the same playbook as his existing sites (beachfrontdecor.com, farmhousegoals.com — home/shop/blog + buying guides + reviews). Target: floorjackscenter.com (est. 2017, WordPress, ~60 pages indexed), bought for its existing organic-search footprint and keyword opportunities, not current income. Growth is content/SEO only, no paid ads; exit optionality via reselling on Flippa.</p>
+<h3 id="revenue-model-4">Revenue model<a class="anchor" href="#revenue-model-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Target earned ~$600 over the trailing 12 months (revenue evidence shown on the listing). Purchase: $1,800 Buy-It-Now accepted (bid was $1,450) + ~$50 credit-card escrow fee. Stated goal: recover $1,800 within 12 months, then double/triple in years 1–2. No revenue numbers given for his comparison sites — "passive income" claimed but unspecified.</p>
+<h3 id="replication-steps-4">Replication steps<a class="anchor" href="#replication-steps-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>1. Filter Flippa to content/affiliate sites in a niche you have a playbook for, at a low multiple; require revenue evidence on the listing.</p>
+<p>2. Vet traffic independently: <code>site:</code> search for indexed pages; Semrush/Alexa for keyword gaps and buyer keywords; SimilarWeb for organic-heavy source mix; Keyword Planner for total search volume.</p>
+<p>3. If no traffic data is provided, request read access to the seller's Google Analytics before bidding.</p>
+<p>4. Buy via Buy-It-Now; fund escrow (~$50 fee, 24h); release funds only after domain + files + database transfer.</p>
+<p>5. Rebuild on a proven template; map existing pages to keywords; audit content gaps.</p>
+<p>6. Add Amazon Associates links + AdSense; publish SEO content consistently; no paid traffic.</p>
+<p>7. Hold until cumulative revenue ≥ purchase price, then keep as cash flow or flip back on Flippa.</p>
+<h3 id="automation-score-610">Automation score: 6/10<a class="anchor" href="#automation-score-610" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Keyword research, listing/traffic vetting, site audits, content briefs, first-draft SEO articles, rank/revenue monitoring, and Flippa deal alerts are all agent-scriptable. Manual remains: escrow/transfer legal steps, Associates approval, editorial QC, and the 6–18 month SEO patience window.</p>
+<h3 id="quality-score-receipts-test-610">Quality score (receipts test): 6/10<a class="anchor" href="#quality-score-receipts-test-610" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Real receipts for the purchase: on-screen listing with revenue evidence, escrow payment, completed transfer (created Nov 13, finalized ~Nov 20), two named pre-existing sites. But the core claim — $600/yr → $1,800+/yr — is an unproven forward thesis, and he admits past Flippa purchases "completely failed."</p>
+<h3 id="verdict-mixed-3">Verdict: Mixed<a class="anchor" href="#verdict-mixed-3" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Honest, process-driven, low-stakes demonstration; tiny stakes, unproven payoff, and the SEO-growth assumption is the whole bet — harder in the current AI-answers search environment.</p>
+<h3 id="key-actions-4">Key actions<a class="anchor" href="#key-actions-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>Set Flippa alerts for sub-$2k content sites with verifiable revenue evidence and organic-heavy traffic, in a niche you already have a content playbook for.</li>
+<li>Run the 4-tool vetting pass before any offer; walk away if indexed pages or organic share don't check out.</li>
+<li>Escrow only; release funds only after full transfer. Template the site for affiliate monetization from day one.</li>
+</ul>
+<h3 id="red-flags-4">Red flags<a class="anchor" href="#red-flags-4" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>Listing had NO traffic data — he bought on keyword-potential vibes; most Flippa scams hide exactly there.</li>
+<li>$600/yr on a $1,800 price = 3x annual profit for a possibly declining asset; his own history includes undisclosed failed purchases.</li>
+<li>"Double or triple in 12 months" via SEO is unverified and harder amid AI answers and algorithm volatility.</li>
+<li>Not unique content/design per the listing — inherited duplicate-content and ranking risk.</li>
+</ul>
+<h2 id="5-how-i-built-a-high-yield-etf-portfolio-with-risk-management">5) How I Built a High Yield ETF Portfolio (With Risk Management!)<a class="anchor" href="#5-how-i-built-a-high-yield-etf-portfolio-with-risk-management" aria-label="Link to this section">#</a><a class="toc-back" href="#videos" aria-label="Back to video index">&uarr; Index</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<p><strong>Channel:</strong> Yujin Vasquez | 6,090 views | <a href="https://www.youtube.com/watch?v=ksTy_VRPV1o">https://www.youtube.com/watch?v=ksTy_VRPV1o</a></p>
+<h3 id="business-model-5">Business model<a class="anchor" href="#business-model-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Not a business — personal leveraged income investing, presented by a small finance YouTuber monetizing views. Core-satellite portfolio: ~60% "anchor" in S&P 500 covered-call ETFs (XPAY, XDTE) targeting 25–30% yield, ~40% satellites in single-stock/sector income ETFs (PLTW/PLTR, NVDW, TSLW, CHPI/semis), funded with 100% of available margin on top of his equity. Dividends tactically reallocated rather than auto-DRIP; dips bought as rebalancing events.</p>
+<h3 id="revenue-model-5">Revenue model<a class="anchor" href="#revenue-model-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Broker screenshots: +$4,800 last day, ~$7,000 last week, $22,000 last month, $56,000 last 3 months (capital gains + dividends, leveraged). Thesis: 25–30% annualized anchor yield, i.e., $25–30k/yr per $100k; cites a hypothetical $100k paying ~$20k/yr from XPAY alone at a "near-guaranteed" 20%. No business revenue given.</p>
+<h3 id="replication-steps-5">Replication steps<a class="anchor" href="#replication-steps-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>1. Open a margin account and pick a leverage ceiling (he runs 100% of available margin — extreme).</p>
+<p>2. ~60% to index covered-call ETFs as the income anchor (XPAY/XDTE; alternatives QQQI, SPYI).</p>
+<p>3. ≤40% to single-stock income ETFs sized so one failed thesis can't impair the anchor.</p>
+<p>4. Track margin-maintenance requirements per position.</p>
+<p>5. Reallocate dividends tactically into dips/underweights instead of auto-DRIP; rebalance toward 60/40.</p>
+<p>6. Review the macro thesis periodically; accept tax consequences of trimming.</p>
+<h3 id="automation-score-310">Automation score: 3/10<a class="anchor" href="#automation-score-310" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Rebalancing rules, dividend sweeps, margin monitoring, and yield tracking could be scripted with a broker API — but this is capital allocation, not a business; software can't create the edge, and automating leveraged ETF trades mostly automates the drawdown.</p>
+<h3 id="quality-score-receipts-test-410">Quality score (receipts test): 4/10<a class="anchor" href="#quality-score-receipts-test-410" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>Real broker screenshots of P&L and positions, but an unverifiable personal account, a small channel, returns explicitly juiced by 100% margin (a good month proves leverage, not skill), and "near-guarantee" language about a 20% return the issuer itself doesn't guarantee. Downside scenarios waved at, never stress-tested.</p>
+<h3 id="verdict-skip-2">Verdict: Skip<a class="anchor" href="#verdict-skip-2" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<p>No business, no edge, maximum leverage, saturated content niche. As risk education, maybe; as a money-making strategy, no.</p>
+<h3 id="key-actions-5">Key actions<a class="anchor" href="#key-actions-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>If touching income ETFs at all: unleveraged, and cap single-stock income ETFs at money you can lose entirely (his one sound principle).</li>
+<li>Model what −50% NAV + margin call does to the income stream before copying any leveraged yield claim.</li>
+<li>Skip as a business play; the creator angle is just known finance-YouTube ad/affiliate monetization.</li>
+</ul>
+<h3 id="red-flags-5">Red flags<a class="anchor" href="#red-flags-5" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h3>
+<ul>
+<li>100% margin on high-yield ETFs: a black-swan gap (he names "Liberation Day" himself) can force liquidation before any recovery.</li>
+<li>"I hate using the word guarantee... but basically a near guarantee" on XPAY's 20% — the fund explicitly does not guarantee it; distributions can be return of capital.</li>
+<li>Day/week gains conflated with sustainable income; $56k/3mo includes leveraged capital gains — survivorship framing.</li>
+<li>Taxes ignored despite constant distributions and active rebalancing.</li>
+<li>Small channel monetizing exactly this strategy — incentive to show spectacular screenshots.</li>
+</ul>
+<hr>
+<h2 id="final-ranking-by-automation-potential">Final Ranking by Automation Potential<a class="anchor" href="#final-ranking-by-automation-potential" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<table class="data-table"><thead><tr>
+<th>Rank</th><th>Video</th><th>Automation</th><th>Why it ranks here</th>
+</tr></thead><tbody>
+<tr>
+<td>1</td>
+<td><a href="https://www.youtube.com/watch?v=sK6BEatsxJA">Are Covered Call ETFs Worth It?</a></td>
+<td>9/10</td>
+<td>Fully data-driven content engine: holdings/premium/total-return pulls → chart generation → script. Best-sourced video today (7/10 quality). Known theme, but the "same holdings, different wrapper" comparison format is the most buildable thing in this batch</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="https://www.youtube.com/watch?v=wvByzXHky7w">I Purchased A Website From Flippa</a></td>
+<td>6/10</td>
+<td>The actionable thread: an acquisition-scouting agent — auto-screen every sub-$2k Flippa listing against objective traffic/revenue criteria (site: search, SimilarWeb, Keyword Planner), escrow-only. Real escrow receipts; payoff unproven</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="https://www.youtube.com/watch?v=a8AtbZn0VDM">Reselling 101: Thrift Store Flipping</a></td>
+<td>4/10</td>
+<td>Automate the back half: sold-comp/sell-through checker + AI listing generation, hard ≥$25–30 net margin floor. The education+affiliate meta-layer is the higher-leverage business</td>
+</tr>
+<tr>
+<td>4</td>
+<td><a href="https://www.youtube.com/watch?v=rQJomHdQIbo">How to stand out in your case study interview</a></td>
+<td>8/10 (format only)</td>
+<td>No business to automate — ranked on format evidence: sub-2-minute templated explainers pull 300K+ views; useful production pattern, not a strategy</td>
+</tr>
+<tr>
+<td>5</td>
+<td><a href="https://www.youtube.com/watch?v=ksTy_VRPV1o">How I Built a High Yield ETF Portfolio</a></td>
+<td>3/10</td>
+<td>A rebalancing bot just executes leverage faster with no edge. Skip</td>
+</tr>
+</tbody></table>
+<h2 id="key-takeaways">Key Takeaways<a class="anchor" href="#key-takeaways" aria-label="Link to this section">#</a><span class="toTop"><a href="#top">&#8593; top</a></span></h2>
+<ul>
+<li><strong>Zero new mechanics today.</strong> All five videos map to already-known themes (flipping, covered-call/income-ETF, acquisitions, recruitment content) — no discovery graduated to candidate_themes.json. Verdicts: 0 Worth Trying / 3 Mixed / 2 Skip — the weakest batch in recent runs.</li>
+<li><strong>The one transferable thread (both digest batches converged on it):</strong> the automatable layer is data-driven research and due-diligence, not the assets. Two buildable plays: (1) an ETF "X vs Y wrapper" comparison content engine — API stat pulls → charts → script, monetized with tool affiliates; (2) a Flippa acquisition-scouting agent that screens cheap listings against objective traffic/revenue criteria before a human ever bids.</li>
+<li><strong>Receipts watch:</strong> Teeples' dated holdings spreadsheet + inception-date total returns (+46% vs +65%) was the best-sourced material today; Vasquez's "near-guarantee" 20% yield on 100% margin was the worst claim — leverage proving volatility, not skill.</li>
+<li><strong>Cross-video fee/tax gap:</strong> both the flipping and income-ETF videos skip taxes and fees at decision time — the $6→$10 gnome ($2 net) and untaxed monthly distributions are the same mistake at different scales. Any automated screener we build should price in fees/taxes before the margin floor check.</li>
+<li><strong>No gaps:</strong> 5/5 transcripts captured on the first pass; no backfill queue, no provisional verdicts.</li>
+</ul>
+
+        <p class="footer">Generated by OpenClaw · 2026-10-07</p>
+    </div>
+</body>
+</html>

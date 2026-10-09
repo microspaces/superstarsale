@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05 14:21:04",
+  "generated": "2026-10-08 14:44:22",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2939,6 +2939,122 @@
         {
           "t": "My First Million — \"3 businesses we think are about to blow up\"",
           "s": 7.0
+        }
+      ]
+    },
+    {
+      "file": "daily-research_2026-10-06.html",
+      "date": "2026-10-06",
+      "title": "Daily YouTube Strategy Research — 2026-10-06",
+      "label": "10-06 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 5,
+      "skip": 0,
+      "avg": 4.8,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Courses & Communities"
+      ],
+      "top": "He Re-invented a Boring Business Model (And Makes $3M/Month)",
+      "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-10-07.html",
+      "date": "2026-10-07",
+      "title": "Daily YouTube Strategy Research — 2026-10-07",
+      "label": "10-07 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 3,
+      "skip": 2,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation"
+      ],
+      "top": "[Are Covered Call ETFs Worth It?](https://www.youtube.com/watch?v=sK6B",
+      "wt_titles": []
+    },
+    {
+      "file": "daily-research_2026-10-08.html",
+      "date": "2026-10-08",
+      "title": "Daily YouTube Strategy Research — 2026-10-08",
+      "label": "10-08 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 2,
+      "mixed": 3,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "Agencies & Leads"
+      ],
+      "top": "Rank-and-rent site rentals (NEW theme) — 8/10",
+      "wt_titles": []
+    },
+    {
+      "file": "playlist-research_2026-10-08.html",
+      "date": "2026-10-08",
+      "title": "Playlist Research — 2026-10-08",
+      "label": "10-08 Playlist",
+      "kind": "playlist",
+      "videos": 12,
+      "wt": 10,
+      "mixed": 1,
+      "skip": 1,
+      "avg": 7.2,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "Business Models"
+      ],
+      "top": "Presales ladder for a Mirror copy-trading app (Frank New)",
+      "wt_titles": [
+        {
+          "t": "Grok Bot Just Got 4 HUGE Upgrades (It's WAY Better Now) (Riley Brown)",
+          "s": "8"
+        },
+        {
+          "t": "How the OpenAI team uses ChatGPT Sites daily (How I AI)",
+          "s": "7.5"
+        },
+        {
+          "t": "13 Businesses for the Age of AI (Greg Isenberg)",
+          "s": "7"
+        },
+        {
+          "t": "Top repo explained: builds product + lands customers (The Next New Thing)",
+          "s": "8"
+        },
+        {
+          "t": "This Simple AI Setup Makes Me $8K Every Month (Chris Koerner on The Koerner Office Podcast)",
+          "s": "7.5"
+        },
+        {
+          "t": "Make Any Game With AI & 2 New Open Source Video Models! (Theoretically Media)",
+          "s": "7"
+        },
+        {
+          "t": "How To Turn 1 Hour a Day Into a Claude AI Income (Realistic Plan) (Shane Hummus)",
+          "s": "7"
+        },
+        {
+          "t": "How This Retired Big Tech SWE Built an App That Made $30k in 2 Weeks (How Does This Get Big?)",
+          "s": "8.5"
+        },
+        {
+          "t": "Somebody Vibe Coded EVERY SINGLE ADOBE App (FUTC)",
+          "s": "8"
+        },
+        {
+          "t": "AI video maker, AI influencer, free claude code and more ai releases (The Next New Thing)",
+          "s": "8"
         }
       ]
     }
