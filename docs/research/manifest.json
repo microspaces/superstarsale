@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10 01:20:06",
+  "generated": "2026-10-10 09:11:46",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -3090,6 +3090,25 @@
           "s": null
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-10-10.html",
+      "date": "2026-10-10",
+      "title": "Daily YouTube Strategy Research — 2026-10-10",
+      "label": "10-10 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 0,
+      "mixed": 1,
+      "skip": 0,
+      "avg": 5.0,
+      "tags": [
+        "YouTube & Content",
+        "Automation",
+        "E-com & Products"
+      ],
+      "top": "Quality (5/10)",
+      "wt_titles": []
     },
     {
       "file": "playlist-research_2026-10-10.html",
