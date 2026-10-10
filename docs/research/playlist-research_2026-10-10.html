@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Research — 2026-10-10</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #2d1b69 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #a78bfa;
+            border-bottom: 1px solid rgba(167,139,250,0.2);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.15em;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: #c4b5fd;
+        }
+        h2, h3 { position: relative; }
+        h2 .anchor, h3 .anchor {
+            opacity: 0;
+            margin-left: 8px;
+            font-size: 0.7em;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+        }
+        h2:hover .anchor, h3:hover .anchor { opacity: 0.75; }
+        h2 .anchor:hover, h3 .anchor:hover { opacity: 1; text-decoration: underline; }
+        h2 .toc-back, h3 .toc-back {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+            opacity: 0.55;
+            text-decoration: none;
+            -webkit-text-fill-color: #667eea;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+        h2 .toc-back:hover, h3 .toc-back:hover { opacity: 1; text-decoration: underline; }
+        .toc {
+            background: rgba(102,126,234,0.08);
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 10px;
+            padding: 16px 20px;
+            margin: 20px 0 8px;
+        }
+        .toc-title {
+            color: #a78bfa;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .toc ul { list-style: none; margin: 0; padding: 0; }
+        .toc li { margin: 4px 0; }
+        .toc-h2 { font-weight: 600; }
+        .toc-h3 { padding-left: 18px; font-size: 0.95em; }
+        .toTop {
+            float: right;
+            font-size: 0.62em;
+            font-weight: 400;
+        }
+        .toTop a { color: #888; -webkit-text-fill-color: #888; }
+        p { margin-bottom: 14px; color: #ccc; }
+        strong { color: #fff; }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #a78bfa;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin: 40px 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 24px;
+            font-size: 0.95em;
+        }
+        .data-table th {
+            background: rgba(102,126,234,0.2);
+            color: #a78bfa;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid rgba(102,126,234,0.3);
+        }
+        .data-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            color: #ccc;
+        }
+        .data-table tr:hover td {
+            background: rgba(255,255,255,0.03);
+        }
+        .data-table tr:target td {
+            background: rgba(102,126,234,0.18);
+        }
+        .verdict-good { color: #4ade80; }
+        .verdict-warn { color: #fbbf24; }
+        .medal { font-size: 1.2em; }
+        ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 6px; color: #ccc; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 50px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--NAV-START-->
+<div class="report-nav">
+  <a class="nav-back" href="index.html">&larr; All Reports</a>
+  <div class="nav-buttons">
+    <a id="nav-prev" class="nav-btn" href="#">&lsaquo; Prev</a>
+    <span id="nav-current" class="nav-current"></span>
+    <a id="nav-next" class="nav-btn" href="#">Next &rsaquo;</a>
+  </div>
+</div>
+<style>
+.report-nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;gap:12px;flex-wrap:wrap}
+.nav-buttons{display:flex;align-items:center;gap:10px}
+.nav-btn{display:inline-block;padding:6px 14px;border-radius:8px;border:1px solid rgba(102,126,234,.4);background:rgba(102,126,234,.12);color:#a5b4fc!important;text-decoration:none;font-size:.9em}
+.nav-btn:hover{background:rgba(102,126,234,.25)}
+.nav-current{color:#888;font-size:.85em}
+</style>
+<script>
+(function(){
+  var req=new XMLHttpRequest();
+  req.open('GET','manifest.json',true);
+  req.onload=function(){
+    if(req.status!==200)return;
+    var m;try{m=JSON.parse(req.responseText)}catch(e){return}
+    var here=location.pathname.split('/').pop();
+    var list=m.reports||[];
+    for(var i=0;i<list.length;i++){
+      if(list[i].file===here){
+        var cur=document.getElementById('nav-current');
+        if(cur)cur.textContent=(i+1)+' / '+list.length;
+        var p=document.getElementById('nav-prev'),n=document.getElementById('nav-next');
+        if(p){if(i>0){p.href=list[i-1].file;p.textContent='‹ '+list[i-1].label}else{p.style.display='none'}}
+        if(n){if(i<list.length-1){n.href=list[i+1].file;n.textContent=list[i+1].label+' ›'}else{n.style.display='none'}}
+        break;
+      }
+    }
+  };
+  req.send();
+})();
+</script>
+<!--NAV-END-->
+        <a class="back-link" href="../index.html">&larr; All Reports</a>
+        <h1 id="top">Playlist Research — 2026-10-10</h1>
+
+<p><strong>Playlist:</strong> Michael Buchanan (PLamiZQJOzMbY) · <strong>In playlist:</strong> 23 · <strong>New this run:</strong> 18 (5 already covered; 1 since removed by its uploader — excluded) · <strong>Transcripts:</strong> 16/18 (one sweep; 1 unavailable after standard retry → metadata stub) · <strong>Digest batches:</strong> 6</p>
+<h2 id="videos">Videos Analyzed (17)<a class="anchor" href="#videos" aria-label="Link to this section">#</a></h2>
+<table class="data-table"><thead><tr>
+<th>#</th><th>Video</th><th>Verdict</th><th>Q</th>
+</tr></thead><tbody>
+<tr id="row-video-1">
+<td>1</td>
+<td><a href="#video-1">The Most Profitable Business You Can Run From a Phone</a> (Chris Koerner on The Koerner Office Podcast)</td>
+<td><strong>Worth Trying</strong></td>
+<td>8</td>
+</tr>
+<tr id="row-video-2">
+<td>2</td>
+<td><a href="#video-2">8 GitHub Repos To Go Viral and Make Money</a> (Greg Isenberg)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7.5</td>
+</tr>
+<tr id="row-video-3">
+<td>3</td>
+<td><a href="#video-3">I Asked Claude Cowork to Make Me $5k</a> (Automate AI Consulting)</td>
+<td>Mixed</td>
+<td>6</td>
+</tr>
+<tr id="row-video-4">
+<td>4</td>
+<td><a href="#video-4">I Make $13K/Month From This Simple App</a> (Starter Story)</td>
+<td><strong>Worth Trying</strong></td>
+<td>8</td>
+</tr>
+<tr id="row-video-5">
+<td>5</td>
+<td><a href="#video-5">Your Website Won't Matter in 2 Years (Here's What to Build Instead)</a> (Tim The SEO Guru)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7.5</td>
+</tr>
+<tr id="row-video-6">
+<td>6</td>
+<td><a href="#video-6">Hark is a MIND BLOWING AI Agent you need to try</a> (Alex Finn)</td>
+<td>Mixed</td>
+<td>6.5</td>
+</tr>
+<tr id="row-video-7">
+<td>7</td>
+<td><a href="#video-7">How to Turn Instagram Into a Sales Machine With Muse AI</a> (Marketing Against the Grain)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7</td>
+</tr>
+<tr id="row-video-8">
+<td>8</td>
+<td><a href="#video-8">Did My Second CS2 Event Make ANY Money??</a> (fl0m)</td>
+<td>Mixed</td>
+<td>6</td>
+</tr>
+<tr id="row-video-9">
+<td>9</td>
+<td><a href="#video-9">The $50k/month managed AI agent business (full course)</a> (Corey Ganim)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr id="row-video-10">
+<td>10</td>
+<td><a href="#video-10">Claude Now Makes FULL Videos - Everything You Need to Know</a> (Christian Peverelli)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7.5</td>
+</tr>
+<tr id="row-video-11">
+<td>11</td>
+<td><a href="#video-11">BREAKING: Claude Now Turns Your Data Into Live Dashboards and Videos</a> (Hyperautomation Labs)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7</td>
+</tr>
+<tr id="row-video-12">
+<td>12</td>
+<td><a href="#video-12">Turn Claude Into a Video Editing GENIUS (in 3 simple steps)</a> (Jay E — RoboNuggets)</td>
+<td><strong>Worth Trying</strong></td>
+<td>8</td>
+</tr>
+<tr id="row-video-13">
+<td>13</td>
+<td><a href="#video-13">I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)</a> (Christian Peverelli)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7.5</td>
+</tr>
+<tr id="row-video-14">
+<td>14</td>
+<td><a href="#video-14">Google Certificate Tier List (2026 AI UPDATE)</a> (Shane Hummus)</td>
+<td>Mixed</td>
+<td>5</td>
+</tr>
+<tr id="row-video-15">
+<td>15</td>
+<td><a href="#video-15">Google Vids Tutorial — How to Use Google Vids to Create HD Videos for Free</a> (Tasia Custode)</td>
+<td>Mixed</td>
+<td>6</td>
+</tr>
+<tr id="row-video-16">
+<td>16</td>
+<td><a href="#video-16">ChatGPT Dots Is WAY More Powerful Than You Think</a> (Riley Brown)</td>
+<td>Mixed</td>
+<td>6</td>
+</tr>
+<tr id="row-video-17">
+<td>17</td>
+<td><a href="#video-17">This week's repos: PS5 game on a PC! Turn agents into employees. AI video maker.</a> (The Next New Thing)</td>
+<td><strong>Worth Trying</strong></td>
+<td>7</td>
+</tr>
+</tbody></table>
+<h2 id="video-details">Video Details<a class="anchor" href="#video-details" aria-label="Link to this section">#</a></h2>
+<p><em>Full analysis for every video, with a direct YouTube link on each section. Hover a heading (or use the # on the right) to copy a deep link.</em></p>
+<h3 id="video-1">Video 1: The Most Profitable Business You Can Run From a Phone — Chris Koerner on The Koerner Office Podcast<a class="anchor" href="#video-1" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-1" aria-label="Back to video index">&uarr; Index</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/PuogTln9CZw">https://youtu.be/PuogTln9CZw</a></p>
+<p><strong>What the video actually is:</strong> Operator interview / case-study podcast episode: host Chris Koerner interviews "Eli," who built a semi-trailer rental arbitrage business from his phone. Mid-roll sponsor read (GoHighLevel affiliate, gohighlevel.com/tko pod, 30-day trial) plus the show's standing guest-story solicitation (tkoyes.com, $1,000 referral bounty). The guest sells nothing — no course, just a contact email.</p>
+<p><strong>Creator:</strong> The Koerner Office (Chris Koerner) — established hustle-case-study channel; Koerner is a repeat playlist subject (water-filtration trades arbitrage scored 8/10 on 09-12). Guest: Eli, ex-real-estate agent turned freight dispatcher (Nov 2019) then trailer lessor; ran the whole business remotely from Colombia. No revenue dashboards shown, but he gives specific unit economics throughout and says he's not selling anything.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Origin: while dispatching (~$80/load matching, thin ~10% margins on ~$800 loads), his uncle (a trucker with bad credit) asked to rent a trailer. Eli found a leasing company charging $350/month per 53-ft trailer on net-30, no deposit, no per-mile or mechanical fees (triple-net), and subleased it to his uncle at $180/week (~$750/month) — a 2x+ markup rule of thumb ("at least double, ideally triple" to cover taxes/insurance/expenses/profit).</li>
+<li>Total startup cost was just insurance: ~$4,000/year for a "ghost" trailer-liability policy — claims attach to the truck at fault, and he owned no trucks — as an umbrella across all trailers until the count forced an increase. His credit was ~650; the (large) vendor only asked for a screenshot, no hard pull. Sublessees with bad credit can't lease direct from the big companies — that's the arbitrage gap.</li>
+<li>Cash-flow structuring was the real unlock: vendor bills net-30, he takes a deposit and bills weekly upfront → cash-flow positive from day one. Weekly (not monthly) billing was deliberately unnoticeable; 3-month minimum commitment with deposit forfeiture (sometimes a penalty) for early exits; trailers are a sticky asset so he kept prices flat to grow first.</li>
+<li>Distribution: super-basic Facebook Marketplace posts (exterior/interior/tire photos, "53 ft dry van for rent," year/make/location, "flexible with new companies" — a real differentiator since incumbents refuse new carriers), boosted, reposted across areas/states (FL, NJ, NY, MA, PA). ~10 trailers out within 2 months ≈ $7,500/month recurring. Later: business FB page + still-image paid ads, nationwide — truckers travel for good deals (FL→NJ, Chicago→NJ/PA). End state: $5,000/month ad spend → ~25 new clients/month ($750 deposits = $18,750), ~$2,100 average per client over the 3-month minimum → claimed ~10x ROAS.</li>
+<li>Scale trajectory: end of 2020 ~100 trailers → $75K/month revenue, ~$10-15K net (~15% margin). Peak: 300 trailers → $250K/month revenue, $40-50K/month net, run by two overseas bilingual VAs (Venezuela + Brazil, found on Upwork, moved off-platform): one ran FB ads AND closed clients end-to-end (follow-up, docs, billing, pickup coordination). Payments via PaySimple — he deliberately dropped Stripe after repeated no-reason fund freezes.</li>
+<li>Pain lessons: no GPS the first year → 10-15 of 300 trailers (~3-5%) never came back at $15-25K replacement each (partially recovered via insurance claims) — and the vendor had offered GPS installs all along ("just ask"); also learned contract structuring (additional-insured) the hard way. Named vendor sources: Penske, Ryder, Premier Leasing; load boards like DAT for the dispatching origin.</li>
+<li>AI angle: he's now test-driving GrokBot to stand up a cloned version — contracts, inventory sourcing, ad management — and claims it would have saved him ~2 years in year one. Extension paths he names: 15-20 ft utility/moving trailers and mobile storage units.</li>
+</ul>
+<p><strong>Receipts shown vs self-reported:</strong> Zero on-screen dashboards or documents; every number is verbal but unusually specific and internally consistent ($350→$750/unit, 15% net at scale, $5K ad spend→25 clients→~10x). Growth milestones (10 trailers/2 months, 100 by end-2020, 300 at exit scale) are self-reported. The GoHighLevel read is an ad. Strong for specificity, weak for proof — no verifiable artifacts at all.</p>
+<p><strong>Funnel/monetization angle:</strong> Show-level only: GHL affiliate mid-roll + guest-story pipeline. The interview itself is content-marketing for the podcast; Eli's email is offered for questions, explicitly course-free.</p>
+<p><strong>Verdict: Worth Trying — 8/10.</strong> The most complete real-economy unit economics in the batch: a defined arbitrage (net-30 triple-net lease in → deposit-plus-weekly billing out), a named incumbent gap (big lessors won't serve new carriers), and a working distribution playbook (Marketplace → boosted still-image ads with a 10x claimed ROAS). Solo-operator friendly and phone-runnable, exactly as titled. Docked because nothing is documented on screen, the 2019-era $350 lease terms and freight rates may not survive 2026 market conditions, and shrinkage/GPS/insurance traps are real money-losers for a first-timer.</p>
+<p><strong>Transferable mechanics:</strong></p>
+<ul>
+<li>Bill opposite to your cost side: take deposits and bill weekly upfront while your supplier bills you net-30 → cash-flow positive from unit one.</li>
+<li>Arbitrage the credit gap: find buyers the big vendors refuse (new companies, thin credit) and intermediate with nothing but a contract and a screenshot-level vendor relationship.</li>
+<li>Ghost-policy insurance thinking: insure only what can actually generate a claim against YOU (he owned no trucks, so claims landed on truck owners) — structure coverage to the real exposure, not the asset count.</li>
+<li>Marketplace listing anatomy: real photos (outside/inside/tires), spec line (size/year/make/location), and an explicit "we work with new companies" — then boost and repost across regions; demand was national because buyers travel for good deals.</li>
+<li>Paid-ads math gate: only scale spend when deposit × new clients ≥ 3-4x spend ($5K → $18,750 in new deposits before renewals) — and re-run the same still image nationally instead of geo-hiding.</li>
+<li>"Just ask the vendor" audit: list the capabilities your supplier already has (GPS installs, flexible terms) and ask before building/buying them yourself.</li>
+<li>One VA owning ads-through-close (run ads, call leads, send docs, coordinate billing and pickup) is the entire operating layer of a $250K/month rental book.</li>
+</ul>
+<h3 id="video-2">Video 2: 8 GitHub Repos To Go Viral and Make Money — Greg Isenberg<a class="anchor" href="#video-2" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-2" aria-label="Back to video index">&uarr; Index</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/rkK8ZyzYyEA">https://youtu.be/rkK8ZyzYyEA</a></p>
+<p><strong>What the video actually is:</strong> Tool roundup / education: a rapid tour of 5 GitHub repos + 3 AI skills ("repos" loosely defined — several are agent skills) with a monetization angle attached to each. Not a business case study; no revenue claims for himself. Disclosure: no affiliation with any of the featured repos; his own funnel (free idea-of-the-day site, transcribed as "ideasER.com," most likely his IdeaBrowser property) is plugged at the end.</p>
+<p><strong>Creator:</strong> Greg Isenberg — large startup/idea-media channel, repeat playlist subject; known for repo/skill tours. Credible curator with operator history, but this format is curation, not execution.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Brag (skill; "Brag Slim" targets Opus 5.5): generates a short launch video — music, motion, copy, thumbnail — from a project or website URL; vertical/square/landscape, per-scene redo. Money angle: scan Product Hunt for launches with no video, make one permissionlessly and send it ("I made you a launch video") — do-something-first outreach replacing cold email. His #1 pick to try tonight. Free skill; model costs apply.</li>
+<li>Agent Reach: wires your agent into the social internet (YouTube, Reddit, X) for research. Money angle: search phrases like "I export … every Friday," "does anyone know a workaround" to find where paying software users still do a step by hand (his example: cleaning-company owners exporting schedules weekly to compute pay) → build a small tool around the incumbent software rather than replacing it; same mined sentences become your ad copy.</li>
+<li>Voice Studio: open-source, local-model ElevenLabs alternative (desktop app, runs on your hardware; clone from your own recording; dub video into other languages). Money angle: localize product/onboarding/tutorial videos — start with the 3 support questions that keep recurring — or sell multilingual video maintenance as a monthly service. Caveats he flags: needs a fast machine, check the commercial license, and only clone voices you have permission to use (it ships famous voices via archive.org — a real legal trap).</li>
+<li>PPT Master: documents/notes → editable PowerPoint in your own template. Money angle: turn sales-call notes/scope/price into a proposal while the call is fresh; write the deck for the person who wasn't on the call; productize as ongoing sales-team support ("what slide do you always redo?").</li>
+<li>Open Rig: organizes coding agents into a team — one builds, one reviews, work passes between them; works with both Codex and Claude Code; two-agent starter flow. Needs Mac/Linux, Node, tmux (as transcribed "T-Max"), and changes agent settings. Money angle: absorb small post-launch client website additions without window-juggling.</li>
+<li>Free Tools (by "Corey Haynes" as transcribed — likely Corey Haines): a skill that helps you pick a free calculator/tool to give away as a lead magnet (his example: a packaging-quantity cost calculator for a packaging supplier). Design rule: show the result BEFORE gating the email, then offer to convert the estimate into a quote.</li>
+<li>Grill Me (by "Matt PCO" as transcribed): an agent that interviews YOU in rounds about an idea/decision, surfacing hidden assumptions ("they probably have budget… probably gave us access") before you build; log every "probably," take the top questions to a real customer. Works for small calls too (annual plan? build for one client?).</li>
+<li>Impeccable (by "Paul Beass" as transcribed): design-guidance skill for coding agents — commands like critique, polish, bolder, quieter; demo walks a mockup + brand reference to a browser-checked working site fixing crops/overlaps. Money angle: find small products with confusing sites, send 2-3 specific fixes as the opener, then sell design/research retainers — "$1,000/month × 10 clients = $10K, every big business starts as a small one; services → technology is the moat path."</li>
+</ul>
+<p><strong>Receipts shown vs self-reported:</strong> Demonstrations only: Brag's example outputs (including a fake 2016-style Series A launch with tone selection) and Impeccable's conference-site before/after are shown; nothing is executed live end-to-end and there are zero revenue or outcome numbers anywhere. All monetization angles are framed as "I would…" hypotheses. Tool names/authors cited as transcribed; several spellings are uncertain.</p>
+<p><strong>Funnel/monetization angle:</strong> Own-property funnel only: the closing plug for his free idea site (signup → idea-of-the-day email list). No third-party sponsors in the transcript; no affiliate pushes for the featured tools.</p>
+<p><strong>Verdict: Worth Trying — 7.5/10.</strong> A genuinely useful idea menu: every item ships with a concrete "sell the output as a service" motion, and two of them (Brag-for-Product-Hunt do-first outreach, Agent Reach pain-phrase mining) are immediately runnable playbook pieces that pair with each other. Docked because it's curation with zero receipts — no live builds, no revenue, tool maturity unproven, and the voice-cloning angle carries a license/permission risk he only half-flags.</p>
+<p><strong>Transferable mechanics:</strong></p>
+<ul>
+<li>Do-first outreach: pick a target list (e.g., this week's Product Hunt launches), produce the deliverable they're missing with a skill (launch video, deck, design fixes), send it with no ask — the artifact is the conversation opener.</li>
+<li>Pain-phrase mining: query Reddit/X/YouTube for "I copy this into…," "I export… every Friday," "does anyone know a workaround" → the manual step everyone does around software they already pay for is your micro-tool wedge; the same verbatim phrases are the ad copy.</li>
+<li>Wrap-don't-replace: sell the annoying step around an incumbent tool (export → calculate) instead of competing with the system of record — smaller build, instant trust.</li>
+<li>Localization ladder: dub your top 3 recurring support/onboarding videos into your customers' languages first; then productize as a monthly multilingual-video maintenance retainer for other companies.</li>
+<li>Free-tool funnel design: result visible before the email gate; result doubles as a pre-qualified quote request (they've told you what they're buying).</li>
+<li>Assumption log before build: run a grilling pass, record every "probably," and convert the top assumptions into questions for real prospects — cheapest de-risking step available.</li>
+<li>Fix-first design selling: critique a prospect's live site with a design skill, send 2-3 specific fixes with reasons (mobile pricing confusion, over-asking signup form), then quote a retainer.</li>
+</ul>
+<h3 id="video-3">Video 3: I Asked Claude Cowork to Make Me $5k — Automate AI Consulting<a class="anchor" href="#video-3" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-3" aria-label="Back to video index">&uarr; Index</a></h3>
+<p>> ▶ Watch: <a href="https://youtu.be/ZDwuRHSg6KM">https://youtu.be/ZDwuRHSg6KM</a></p>
+<p><strong>What the video actually is:</strong> Challenge-format tutorial / guru funnel: presenter "Lindsay" (channel Automate AI Consulting) claims she gave Claude Cowork (Claude's non-terminal agent, ~$20/month plan) a job — make $5,000 in 7 days — walks through the offer it supposedly picked (a one-page "money dashboard" for local businesses) and a full sales system, then ends on the funnel. The $5K outcome itself is never shown or resolved.</p>
+<p><strong>Creator:</strong> Automate AI Consulting ("Lindsay" per transcript) — self-reported arc: $50K/year marketing job → six figures within 9 months selling AI services to local businesses. Monetizes via a School community (3,000+ members) and done-for-you calls. No verifiable identity or revenue proof on screen.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>The offer Cowork "pointed her at": one live dashboard page with every number in a business — money in/out/left, revenue by service and channel, payroll per person vs revenue per employee, return per dollar per marketing channel, cost per new customer, a 24%-rate tax set-aside estimate (with a printed "estimate, doesn't replace your accountant" disclaimer line she insists you say out loud on the call too), plus the single biggest leak and one fix. Pricing: $2,500 build + $250/month; tool cost $20/month; two closes = $5,000 in builds + first month each = $5,500 inside the week.</li>
+<li>The pitch logic: owners have numbers in ~20 places (payroll, bank, bookings, ads, lease, vendor invoices) and can't answer cross-source questions (highest-paid vs highest-earning employee; ROAS by channel); QuickBooks only gives accounting categories, so the dashboard is "the answer page" — and the day a client cancels is the day they lose that view (retention argument for the $250/month).</li>
+<li>Build workflow: one folder with all client exports + a 2-minute voice note of what the owner cares about → Cowork reads every file, plans, builds, then re-checks its own numbers against the raw files and flags anything it's not confident about. Monthly retainers ride on a shared drive: client drops new exports, Cowork rebuilds, same link, month-over-month view. Demo shown is a med spa with six employees and $5K/month ad spend — built on SYNTHETIC data Cowork generates.</li>
+<li>Prospecting: build a "dream 100" (100 precisely-qualified businesses) via a connected prospecting tool ("Vibed Prospecting" as transcribed) — criteria: ≥5 employees, reviews within the last 30 days, visible marketing spend, NO ops/finance person on staff; each row gets one specific observed detail. Touch only the 25 that feel perfect; the money filter is "real money flowing monthly, owner running it on vibes."</li>
+<li>Outreach: subject = business name + "numbers"; body references the specific observed detail + "I built a demo dashboard for your med spa… want me to send it over?" — one-word-answerable question. Subject line gets the open, body gets the reply; never sell the service in email one. Cowork drafts all 25 from the list file (short lowercase subjects, no two identical, never mention price); human reviews each (~20 minutes total). Price question over email gets deflected to a 15-minute call ("depends how many places your numbers live").</li>
+<li>Call script: 2-minute Cowork prep sheet from the list row; frame the call first; ask "what do you wish you could see that you can't" and stay quiet; never tour the dashboard — show only the section answering her stated pain; make HER name a price first; when you quote, say the number and say nothing (silence reads as authority); on yes, Cowork writes scope/terms from your call notes and you collect the first payment immediately.</li>
+<li>Day-by-day plan: D1 practice dashboard on fake data (≈1 hour; doubles as your demo link) → D2 dream 100 → D3 send the 25 ("this is the day people back out") → D4 follow-ups (one-liners; follow-ups reply about as often as first emails) → D5-D6 calls, scope, collect, nudge the quiet ones → D7 onboard, real files into the shared folder, $250/month starts.</li>
+<li>Her honesty beats: her first 250 cold emails got zero replies because they were untargeted; "the build is easy and getting easier — the money is in distribution, not building"; the practice run uses made-up numbers and she never claims otherwise.</li>
+</ul>
+<p><strong>Receipts shown vs self-reported:</strong> The build IS shown live (folder in, dashboard out, self-check pass) — but on fabricated practice data. There is zero outcome proof for the headline: no bank/payment screenshots, no real client, no completed 7-day result; the video ends with the plan, not the result. "Members making a lot more than $5K" is unverifiable. The one semi-verifiable artifact is the Claude Cowork workflow itself, which is generic agent behavior. The $5K-in-7-days premise is asserted, not demonstrated.</p>
+<p><strong>Funnel/monetization angle:</strong> The video IS the funnel: School community pitch (3,000+ members, "link down below") at open and close, done-for-you booking link for business owners, and comment-bait ("tell me your niche and I'll tell you if it's the right one") feeding engagement. The prospecting tool she names is an undisclosed-relationship candidate.</p>
+<p><strong>Verdict: Mixed — 6/10.</strong> The sales mechanics are real and worth stealing (dream-100 precision targeting, demo-already-built outreach, the one-question reply-first email, price-silence on the call, day-by-day send discipline), and the tax-disclaimer/not-your-CPA caution is more responsible than most in this genre. But the headline claim is never paid off — no result is shown, the demo runs on fake data, "almost nobody is selling dashboards to local businesses" is false (this exact offer saturated YouTube in 2024-25), and every path from the video leads to her paid community.</p>
+<p><strong>Transferable mechanics:</strong></p>
+<ul>
+<li>Dream-100 over spray-and-pray: 100 hand-qualified rows (size, activity, spend signals, absence of a numbers person) each with one specific observed detail beats 500 scraped leads — then only work the top 25.</li>
+<li>Demo-first outreach: build the artifact once on synthetic data and offer IT ("want me to send it over?") instead of asking for time; the same demo doubles as your practice build and your proof-of-concept.</li>
+<li>One-job email anatomy: subject earns the open, body earns a one-word reply; anything more (pricing, closing) moves to the call.</li>
+<li>Price-deflection line: "it depends how many places your numbers live — I just need 15 minutes to look" converts the pricing question into the meeting.</li>
+<li>Agent QA gate: make the agent re-verify its dashboard against the raw source files and flag low-confidence numbers before anything ships to a paying client.</li>
+<li>Quote-then-silence: name the number and stop talking; explaining the price opens a negotiation you didn't need.</li>
+<li>Retainer-by-folder: the renewal isn't a service you perform, it's a shared folder the client feeds — agent rebuilds on new exports, same link, month-over-month comparison is the lock-in.</li>
+</ul>
+<h3 id="video-4">Video 4: I Make $13K/Month From This Simple App — Starter Story<a class="anchor" href="#video-4" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-4" aria-label="Back to video index">&uarr; Index</a></h3>
+<ul>
+<li><strong>URL:</strong> <a href="https://youtu.be/aLidq3_FwW0">https://youtu.be/aLidq3_FwW0</a></li>
+<li><strong>Channel:</strong> Starter Story</li>
+<li><strong>Guest:</strong> "Max," founder/CEO of Maxed AI (AI-powered lifting/fitness app)</li>
+</ul>
+<h4 id="core-thesis">Core thesis<a class="anchor" href="#core-thesis" aria-label="Link to this section">#</a></h4>
+<p>A solo non-technical founder can reach ~$14–15K/month in revenue in ~6 months by (a) using AI coding tools to build an app cheaply, (b) hard-paywalling it from day one, and (c) substituting founder-led content for a marketing budget.</p>
+<h4 id="strategy-breakdown-the-playbook">Strategy breakdown (the playbook)<a class="anchor" href="#strategy-breakdown-the-playbook" aria-label="Link to this section">#</a></h4>
+<p>1. <strong>Acquisition of skill:</strong> Started with a $15/mo Claude Code membership, no prior mobile dev experience ("six months ago I'd never built a mobile app"). Daily terminal work with Claude.</p>
+<p>2. <strong>Idea selection:</strong> Deliberately entered a crowded space (fitness apps, ~100 competitors) because he saw a structural gap — running has unified category kings (Strava, Nike Run Club) but lifting had fragmented tools with no unified platform. Chose a domain he's genuinely passionate about (lifting). Explicitly says naivety toward competition helped.</p>
+<p>3. <strong>Differentiation in a commodity market:</strong> An AI "Max Coach" wired into every screen (adjust programs, sleep, nutrition, supplement/peptide tracking from one page), plus social/leaderboard features (accountability + competition).</p>
+<p>4. <strong>Monetization:</strong> Hard paywall — flat $24.99/year upfront (~$2/mo), not a monthly subscription. Deliberately avoids revenue built on users forgetting to cancel. Result: cleaner product-market-fit signal, ~1,000 active subscribers.</p>
+<p>5. <strong>Marketing flywheel:</strong></p>
+<p>   - Filmed 5–10 videos/day of himself; pushed through the "friends laughing at you" phase.</p>
+<p>   - Analyzed hold rate / skip rate on every video; promoted only the best performers as paid ads (organic content as a free ad-creative testing lab).</p>
+<p>   - Scaled ad spend gradually to ~$250/day once product-market fit was visible.</p>
+<p>   - Starting a "side shift campaign" recruiting ~5 other creators to produce daily videos.</p>
+<p>6. <strong>Build-in-public on X:</strong> Started tweeting 3 months in; ~one-third of revenue attributed to X followers of the journey. His argument: building in stealth to avoid idea-theft is backwards — publicity compounds.</p>
+<p>7. <strong>Stack & costs:</strong> Claude ($20/mo tier), Supabase ($20/mo), Vercel, Expo, RevenueCat. Total fixed cost roughly ~$50–70/mo — margins almost entirely variable (ad spend + Apple's cut).</p>
+<h4 id="key-numbersclaims">Key numbers/claims<a class="anchor" href="#key-numbersclaims" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>~$14,000 last 28 days; ~$14–15K/mo revenue (RevenueCat dashboard shown on camera)</li>
+<li>$24.99/yr flat pricing; 1,000+ active subscribers; 20K iOS downloads; 40K+ all-time new customers; 164 App Store ratings</li>
+<li>~$250/day current ad spend</li>
+<li>~1/3 of revenue from X audience</li>
+<li>Zero paid UGC creators so far (deliberate)</li>
+</ul>
+<h4 id="takeaways-for-the-report">Takeaways for the report<a class="anchor" href="#takeaways-for-the-report" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>The moat moved from build to distribution.</strong> With AI tools, anyone can build the app; the non-replicable asset is the founder's personal brand and audience. Hosts reinforce this ("the one thing you can't replicate is personal brand").</li>
+<li><strong>Hard paywalls early = honest PMF signal</strong> vs. vanity downloads from free trials.</li>
+<li><strong>Meta > TikTok</strong> for this buyer profile: higher-intent, higher willingness to pay (his claim, not independently verified).</li>
+<li><strong>Don't rent UGC creators before you know your winning angles</strong> — learn angles from your own organic content first.</li>
+<li><strong>"Clipping" (repurposing clips) is described as early-wave</strong> and a cheap source of organic/international downloads.</li>
+<li>Concrete low-cost stack for anyone replicating: Claude Code + Supabase + Expo/Vercel + RevenueCat.</li>
+</ul>
+<h4 id="credibility-notes">Credibility notes<a class="anchor" href="#credibility-notes" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Revenue dashboard shown on video (RevenueCat), so figures are at least plausibly real; still self-reported.</li>
+<li>Channel incentive: Starter Story sells courses/lead magnets ("free app ideas list") — survivorship bias is structural to the format; this is a successful outlier, not a base rate.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Worth Trying — 8/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-5">Video 5: Your Website Won't Matter in 2 Years (Here's What to Build Instead) — Tim The SEO Guru<a class="anchor" href="#video-5" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-5" aria-label="Back to video index">&uarr; Index</a></h3>
+<ul>
+<li><strong>URL:</strong> <a href="https://youtu.be/KqX-7CfxoaM">https://youtu.be/KqX-7CfxoaM</a></li>
+<li><strong>Channel:</strong> Tim The SEO Guru</li>
+</ul>
+<h4 id="core-thesis-2">Core thesis<a class="anchor" href="#core-thesis-2" aria-label="Link to this section">#</a></h4>
+<p>AI agents and AI search are collapsing the classic "rank → traffic → lead" funnel (58% of Google searches now end in zero clicks; Google's CEO called 2027 "the year of the AI agent"). Businesses should stop optimizing only for human visitors and instead structure their information so <strong>AI agents and AI answer engines find, trust, cite, and transact with them</strong>. The money shifts from "best-looking site" to "most complete, structured, machine-readable data."</p>
+<h4 id="strategy-breakdown">Strategy breakdown<a class="anchor" href="#strategy-breakdown" aria-label="Link to this section">#</a></h4>
+<p>1. <strong>Publish transparent pricing (ranges are enough).</strong> AI can't recommend what it can't reference; if your pricing isn't published, the agent sends the customer elsewhere. You don't need exact prices — publish the range.</p>
+<p>2. <strong>Agent-ready scheduling.</strong> Agents will book consultations/appointments directly. Audit whether your CRM/scheduling tool can transact with AI agents or has it on the roadmap; being agent-bookable becomes a competitive advantage.</p>
+<p>3. <strong>Kill commodity content; mine real questions.</strong> Per Google's white paper, generic "7 tips" content now hurts. The winning source material is already in the business: pre-sale questions, sales-call conversations, support emails → turn each real question into a Q&A article targeting a keyword. (He demonstrates doing this with the Arvo SEO tool — including "variable-type" templated content seeded with brand assets, case studies, and knowledge-base material so output isn't AI slop.)</p>
+<p>4. <strong>Build a "knowledge catalog."</strong> A structured, verified dataset of everything the business knows — outside/beyond the website: customer Q&As, services + service areas, expertise/credentials, FAQs, pricing, policies/processes, reviews/testimonials, real call transcripts. Google has already shipped enabling pieces (verified knowledge catalog, Search Console, domain verification, discoverability API). Framing: "your website is a knowledge catalog too — just stuck waiting to be crawled."</p>
+<p>5. <strong>Optimize for citations, not rankings.</strong> Track share-of-voice / mention rate across AI engines (he uses Arvo's "LM brand monitor": enter prompts, see where you're cited and the sentiment, then create content specifically for prompts where visibility is low — a closed feedback loop).</p>
+<h4 id="key-numbersclaims-2">Key numbers/claims<a class="anchor" href="#key-numbersclaims-2" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>58% of Google searches end with zero clicks; "half of searches never reach a website."</li>
+<li>Google CEO: 2027 = "year of the AI agent."</li>
+<li>Gemini "Spark" personal agent + Google's A2A protocol: your agent talks to Target's agent, which talks to UPS's — "no search, no websites, no form."</li>
+</ul>
+<h4 id="takeaways-for-the-report-2">Takeaways for the report<a class="anchor" href="#takeaways-for-the-report-2" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Emerging money-making strategy: "AEO/GEO" (agent/citation optimization) as a service or as an in-house moat.</strong> Local/service businesses that structure pricing + FAQs + structured data now get recommended by AI agents; those that don't become invisible even with great SEO.</li>
+<li>The <strong>knowledge catalog</strong> is the concrete, novel deliverable — a checklist a business (or an agency) can execute this quarter: pricing ranges, Q&A content from call/email logs, credentials, reviews, structured data.</li>
+<li><strong>First-mover asymmetry:</strong> "your competition is probably not even aware of this" — early movers in citation-share can own category answers before rivals notice.</li>
+<li>Content ops shift: your CRM/inbox/call logs are a content mine; AI tooling (Arvo et al.) turns them into non-commodity articles at scale.</li>
+<li>Positioning: SEO fundamentals (keywords, backlinks) still matter but become the baseline; trust signals + structured data + agent-transactability are the new edge.</li>
+</ul>
+<h4 id="credibility-notes-2">Credibility notes<a class="anchor" href="#credibility-notes-2" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Sponsored/demo segment for Arvo</strong> throughout — the tactical demo doubles as a product pitch; the strategic thesis (agent-mediated search) is nonetheless consistent with observable trends and other industry sources.</li>
+<li>Figures like "58% zero-click" are commonly cited industry stats but should be re-verified against the original study before quoting in the final report.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Worth Trying — 7.5/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-6">Video 6: Hark is a MIND BLOWING AI Agent you need to try — Alex Finn<a class="anchor" href="#video-6" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-6" aria-label="Back to video index">&uarr; Index</a></h3>
+<ul>
+<li><strong>URL:</strong> <a href="https://youtu.be/aL_WMpJB2iY">https://youtu.be/aL_WMpJB2iY</a></li>
+<li><strong>Channel:</strong> Alex Finn</li>
+<li><strong>Subject:</strong> "Hark" personal AI agent (hark.com) — hands-on exclusive walkthrough</li>
+</ul>
+<h4 id="core-thesis-3">Core thesis<a class="anchor" href="#core-thesis-3" aria-label="Link to this section">#</a></h4>
+<p>(Not a money-making playbook directly — a capability signal.) AI agents are crossing from "chatbots you prompt" to <strong>proactive, persistent personal operators</strong> that watch your life, recommend actions unprompted, and execute real purchases/scheduling on the live web. Two direct implications for the report: (1) agents are becoming a <em>purchasing intermediary</em> — validating Video 5's thesis that businesses must be agent-legible; (2) solo operators can now delegate real operational work (email triage, monitoring, scheduling) to a single agent.</p>
+<h4 id="what-hark-does-as-demonstrated">What Hark does (as demonstrated)<a class="anchor" href="#what-hark-does-as-demonstrated" aria-label="Link to this section">#</a></h4>
+<p>1. <strong>Custom morphing interface ("agent OS"):</strong> Home screen of prompt-generated widgets/panels — social stats, stock tickers ("make me a widget that tracks Micron"), NFL injury reports, AI-lab news, calendar, emails. Replaces doomscrolling: all personal information feeds in one place.</p>
+<p>2. <strong>"Hark Handoff" custom LLM for browser use:</strong> In-agent browser performs real tasks fast — navigated Target.com, searched, filtered for Switch 2 compatibility, and added a Nintendo Switch 2 + Madden 27 to cart; plans before acting.</p>
+<p>3. <strong>Proactivity (his #1 highlighted strength):</strong> Detected sister+mom's birthdays from email context → lined up two Anthropologie gift cards + a note → one-click purchase done in ~2 minutes. Recommended a $14 fantasy waiver claim (Will Shipley) after Saquon Barkley's injury. Offered to monitor failing GitHub Actions. Offered weekly fantasy reports before waiver deadlines. Proactively offered to clean Gmail: unsubscribed from 179 senders, clearing ~100K promo emails in minutes.</p>
+<p>4. <strong>Scheduled/recurring real-world actions:</strong> "Buy this gift card next Friday"; "buy these groceries every week."</p>
+<p>5. <strong>Projects:</strong> Split-out workspaces (video-game dev, YouTube topic scouting) inside a single-thread "god thread" agent; codes well but not frontier-level.</p>
+<h4 id="stated-weaknesses-his-good-bad-ugly">Stated weaknesses (his "good, bad, ugly")<a class="anchor" href="#stated-weaknesses-his-good-bad-ugly" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Browser-use only — no local/computer control yet (on roadmap), so no "go fix my Mac Mini" tasks.</li>
+<li>Can't take over the agent's browser mid-task; must type corrections.</li>
+<li>Coding is below frontier models — it's a personal assistant, not a daily-driver coding agent.</li>
+<li>Projects are light on context control (can't drag in documents).</li>
+<li>No native desktop app yet; mobile (iOS) + cloud.</li>
+</ul>
+<h4 id="takeaways-for-the-report-3">Takeaways for the report<a class="anchor" href="#takeaways-for-the-report-3" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Agent-mediated commerce is live, not theoretical:</strong> an agent reading your email, deciding gifts, and executing purchases end-to-end. For sellers: the "storefront" these agents see is your product data, pricing, and checkout flow — ties directly into Video 5's knowledge-catalog advice.</li>
+<li><strong>Proactivity is the differentiator</strong> in the consumer-agent market — the "you don't know what to ask it" problem gets solved by the agent proposing tasks. Startup/product-idea signal: proactive vertical agents (finance waivers, inbox triage, gift buying) map to real money behaviors shown here.</li>
+<li><strong>Solo-operator leverage:</strong> one person offloaded inbox maintenance (179 unsubscribes), monitoring, and errands — quantifiable hours saved for indie founders.</li>
+<li><strong>Creator-economy monetization angle (meta):</strong> the video itself is a case study in exclusive-access sponsorships — a creator monetizing "first look" access while keeping claimed editorial control; the format (exclusive + disclosure + review) is a repeatable sponsorship model for tech channels.</li>
+</ul>
+<h4 id="credibility-notes-3">Credibility notes<a class="anchor" href="#credibility-notes-3" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Sponsored:</strong> Hark partnered for the video and gave exclusive early access; presenter claims full editorial control. Treat capability demos as vendor-influenced marketing; "99% of the world has not seen this" is launch hype. Named weaknesses add some balance.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Mixed — 6.5/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-7">Video 7: How to Turn Instagram Into a Sales Machine With Muse AI — Marketing Against the Grain<a class="anchor" href="#video-7" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-7" aria-label="Back to video index">&uarr; Index</a></h3>
+<p><strong>What the video actually is:</strong> A live screencast demo of Meta's free Muse AI assistant as an Instagram marketing engine, built around one headline play: have Muse identify every person who likes/comments on a post, enrich them with public contact info, export a CSV, and feed that list into outbound sales. Framed as "the most slept on use case for marketing of any AI tool out there right now." Funnel presence is moderate: a free "Instagram marketing on Muse" guide via QR/link in the description plus the closing HubSpot CRM ad — the show is HubSpot's, so the workflow is implicitly aimed at people already in the CRM ecosystem.</p>
+<p><strong>Creator:</strong> Marketing Against the Grain — HubSpot's marketing podcast, run by senior HubSpot marketing leadership. Credibility is high as practitioners (they demo on their own real account, self-critically: "you don't have a reach problem, you have a repeatability problem"), but the episode doubles as promotion for Meta's platform and HubSpot's stack, and no revenue ever changes hands on camera.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Muse is free, works on phone/desktop, and runs asynchronous scheduled tasks (e.g., "check daily for new posts and do X after each one") — AI as ops staff, not chat partner.</li>
+<li>Audience intelligence: give it an ideal-customer-profile document and it grades what % of your engagers match the ICP, returns named handles, and even produces an on-brand strategy PDF (it picked up MAG's fonts/colors unprompted).</li>
+<li>Their own account audit: 217,000 views in 30 days, 96.7% from non-followers, but 817 profile visits → only 29 bio link taps. Diagnosis: reach is fine, conversion to owned audience is broken.</li>
+<li>Prescriptive content strategy output: stop solo podcast clip cuts as the primary feed, stop branded explainers without a cultural hook, stop broadcast-only posting with no replies; lean into pop-culture hooks, collabs, events. Key gap identified: "our engagers are creators, not CMOs" — the audience doesn't match who the podcast monetizes.</li>
+<li>THE money play: asked Muse for "a CSV with all the people who watched this post, include any public contact info like email or phone." Reality check given on camera: it can only capture <strong>likers and commenters, never viewers</strong>. Demo post: ~29 likes / a couple thousand views → 27 likers identified and enriched (username, full name, IG URL, follower count, verified status, website, public email/phone) in ~15-20 minutes, throttled by Instagram pacing.</li>
+<li>The follow-on motion: upload the CSV to Apollo or HubSpot's data agent for deeper enrichment, then cold-call/email with a hyper-relevant opener ("you engaged with our post on agentic marketing systems — want a free consultation?"), or match against existing customers/in-motion prospects.</li>
+<li>Scale design: schedule Muse to check daily for new posts and run enrichment 1-3 days post-publish when engagement peaks (it can determine peak timing itself); pace the runs so Instagram's limits don't force fatal batching.</li>
+<li>His framing: this "conquers one of the biggest social objections we've ever had — my social is completely disconnected from my revenue." And he's self-aware about the window: "this is a magical workflow nobody's doing right now, and when everybody's doing it, it's probably not going to work that great."</li>
+</ul>
+<p><strong>Receipts shown vs self-reported:</strong> The mechanics are demonstrated live — the CSV, the strategy PDF, and the account stats are on screen and internally consistent (27 likers on a low-engagement account). What is NOT shown: any money. No response rates, no closed deals, no client case study — the entire financial thesis ("I could call these people and sell services") is asserted, not evidenced. Yield math is also unaddressed: 27 capturable identities from ~2,000 views, of which only a fraction list public contact info (one throwaway line late in the video — "this data is wrong every freaking time" — hints at data-quality issues the episode never resolves). The play also quietly depends on scraping public contact info, which sits in gray territory vs Instagram's ToS, with zero compliance discussion.</p>
+<p><strong>Funnel/monetization angle:</strong> No direct sale. Free guide = lead magnet; the HubSpot CRM ad closes the loop; the episode builds HubSpot's practitioner audience and positions HubSpot as the enrichment/CRM destination for the CSV. Muse itself being free is the hook — Meta benefits from more branded activity on Instagram.</p>
+<p><strong>Verdict: Worth Trying — 7/10.</strong> Genuinely novel, free to test, and demonstrated end-to-end rather than theorized. The core insight — post engagers are the highest-intent, self-qualified lead list most businesses ignore — is sound and portable to any social platform with public engagement. But the demo proves mechanics, not money: yield per post is a trickle, public emails are sparse, scheduled scraping is platform risk Meta can kill anytime (the host admits it stops working at adoption), and zero conversion evidence is offered.</p>
+<p><strong>Transferable mechanics:</strong></p>
+<ul>
+<li>Engagers-as-leads: likers/commenters on a topic-specific post self-qualify by the post's topic. Don't run this on meme/pop-culture posts — run it on posts about the thing you sell, then open the outreach by referencing exactly what they engaged with.</li>
+<li>Optimize for likes/comments (not views) if you run this play — comments and likes are the only capturable, enrichable signals; views vanish.</li>
+<li>Async AI agents as pipeline staff: schedule recurring jobs ("check for new posts daily, enrich each 48h after publish") — the lead list builds itself on cadence instead of by manual export.</li>
+<li>Let AI grade audience-vs-ICP fit <em>before</em> making more content: the "our engagers are creators, not CMOs" gap check is worth running on any account whose monetization depends on a specific buyer.</li>
+<li>Ask AI for the one blunt headline, not just the analysis: "you don't have a reach problem, you have a repeatability problem" converts raw metrics into an actionable diagnosis — a reusable prompt pattern.</li>
+<li>Use AI for briefs, not final creative: Muse's image output "isn't quite there yet" — generate the brief with one model, execute with the best one (OpenAI/Nano Banana) plus original photography.</li>
+</ul>
+<h3 id="video-8">Video 8: Did My Second CS2 Event Make ANY Money?? — fl0m<a class="anchor" href="#video-8" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-8" aria-label="Back to video index">&uarr; Index</a></h3>
+<p><strong>What the video actually is:</strong> A podcast post-mortem of Flomland 2 (FML2), fl0m's second grassroots Counter-Strike LAN in California, recorded with his event's broadcast talent (Moses and Dinko named) plus recurring guest "Jason" (a former Team Liquid coach, now analyst). The title question is asked head-on and answered honestly: "leading towards even" — the final accounting wasn't even done at recording. No course, no community pitch, no funnel of any kind; this is a rare genuinely-candid operator debrief. One sponsor read mid-episode (CS Money skin marketplace, delivered with an unusually sincere "beware impersonator links" warning).</p>
+<p><strong>Creator:</strong> fl0m — long-time Counter-Strike streamer/content creator who self-funds and runs the Flomland events. His employer-era credibility is operator-real, not guru-real: he discusses shipping invoices, catering, talent break schedules, and broadcast ad mistakes from lived experience. All numbers, however, are conversational self-reports.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Event profitability: not a clear win — "leading towards even," still calculating. Revenue lines named: ticket sales, merchandise, Twitch subs, and sponsors — with sponsors flagged as "some would say the biggest one." Breaking even on event two is framed as success: "if we can get to even on the second one, we're in there."</li>
+<li>Tickets sell out "in like a minute" — cited by guests as the first objective signal that the event can scale up.</li>
+<li>Merch was the biggest positive surprise: more units AND significantly better margin than event one — entirely a logistics lesson. Air freight costs ~8x sea freight; small items (playing cards) sourced from China went "from really expensive to dirt cheap to make" purely by switching from plane to boat. More planning lead time this cycle eliminated panic-air-freighting. "The profit margin on the merch was significantly better than the first one because I wasn't sending this everywhere with an airplane."</li>
+<li>The scaling dilemma (strategic core): more attendees = bigger opportunity, but scaling risks losing the grassroots community magic that made the event work — and the specific venue itself creates a feeling that may not replicate elsewhere. Guest consensus: cap growth at ~2,000-seat theater-scale environments rather than arenas; you lose some percentage of the magic at every size step; consider a two-tier structure (one small community-focused event + one larger competitive-focused event) rather than growing one brand past its magic point.</li>
+<li>VRS (Valve's ranking system) as the economic unlock: top NA teams now have a points incentive to attend regional events, which is why Liquid/NRG/M80/WildCard all came — regional tournaments became rational again after years of top teams skipping NA entirely.</li>
+<li>Merch-at-events as brand warfare: M80 was the only org that sent merch to the event → loudest fan chants in the building, and every photo from the stream shows M80 flags and jerseys — free advertising. Team Liquid's CEO attended and brought nothing; fl0m offered to sell Liquid merch on-site for a small consignment fee ("just bring a box of jerseys… you just created a bunch of fans").</li>
+<li>Ops honesty: 14-hour talent days (fixed with real breaks this time), a broadcast ad mistake discovered post-event ("we found some mistakes in the broadcast with the ads"), and the meta-lesson: "you learn one of those lessons every single event."</li>
+</ul>
+<p><strong>Receipts shown vs self-reported:</strong> Everything is self-reported conversation — no revenue figures, ticket prices, sponsor amounts, or costs are disclosed at any point, and the host explicitly refuses hard numbers ("I can't"). The honesty is the distinguishing feature: the P&L answer is "we don't fully know yet, probably roughly break-even," which is the opposite of guru income claims. Externally checkable: the event ran and sold out fast, Team Liquid won it (their first trophy of any kind since 2019 Chicago, per the panel), and the VRS system's existence and effect on regional events is public. Zero revenue evidence overall — this is a lessons video, not a receipts video.</p>
+<p><strong>Funnel/monetization angle:</strong> None sold. The revealed monetization strategy is indirect and stacked: event → content (podcast, vlogs, clips) → Twitch subs + sponsors → audience grows → event #3 sells out faster. The CS Money sponsor segment is the only third-party revenue visible in the video itself.</p>
+<p><strong>Verdict: Mixed — 6/10.</strong> As a copyable money-making strategy it's narrow — you need an existing audience large enough to sell out a venue in a minute before any of this applies. But as an event-economics post-mortem it's unusually candid and the unit-economics lessons are real and portable: sea-vs-air freight as the swing variable in merch margin, sponsors (not tickets) as the biggest revenue line, sell-out speed as the scaling signal, and the merch-in-the-crowd branding play. Scored for honesty and transferable logistics, not breadth of application.</p>
+<p><strong>Transferable mechanics:</strong></p>
+<ul>
+<li>Freight discipline is margin discipline: in any physical-goods business, heavy/small goods move by sea with 6-8 weeks of lead time — air freight at ~8x cost can silently turn a winning SKU into a loser (the playing-cards example is the cleanest illustration of "the product cost didn't change, the shipping did").</li>
+<li>Sell-out speed is your expansion signal — but scale in venue-type steps (bar → theater ~2k → arena), expect to lose community magic at every step, and prefer a two-tier structure (intimate flagship + scaled pro edition) over pushing one brand past its magic point.</li>
+<li>Design events to be sponsor-first, not ticket-first: sponsors are the biggest line, so build sponsorable assets deliberately (regional relevance, viral content moments, on-site brand integration like the M80 merch story).</li>
+<li>Merch-in-the-crowd as guerrilla marketing: brands should gift/consign merch boxes to event organizers for chant-worthiness and photo dominance; organizers should offer exactly that deal (small consignment cut) to every relevant brand attending.</li>
+<li>Find the VRS of your industry: Valve's points system made regional events rational for teams that had abandoned the region — position your event, product, or offer wherever the existing scoring/incentive system pays out, instead of fighting for attention cold.</li>
+<li>Post-mortem in public: publishing "probably break-even, still counting, here's what we screwed up" builds more durable trust (and audience for the next event) than fabricated wins — candor is itself a content moat.</li>
+</ul>
+<h3 id="video-9">Video 9: The $50k/month managed AI agent business (full course) — Corey Ganim<a class="anchor" href="#video-9" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-9" aria-label="Back to video index">&uarr; Index</a></h3>
+<h4 id="video-9">Video 9: The $50k/month managed AI agent business (full course) — Corey Ganim<a class="anchor" href="#video-9" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-9" aria-label="Back to video index">&uarr; Index</a></h4>
+<p>> ▶ Watch: <a href="https://youtu.be/qjwi_fdM9DU">https://youtu.be/qjwi_fdM9DU</a></p>
+<p><strong>Status: transcript unavailable.</strong> Hour-long full-course upload; every transcript route (4-strategy chain plus one retry after 3 minutes) came back empty, so this is a metadata-only entry with no verdict or quality score — flagging it rather than guessing. From the title and channel: the managed AI-agency model (productized "we run agents for you" service tier) taught end-to-end. Watch-list candidate: if the managed-agent angle holds up, it graduates as a theme in a future daily run.</p>
+<h3 id="video-10">Video 10: Claude Now Makes FULL Videos - Everything You Need to Know — Christian Peverelli<a class="anchor" href="#video-10" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-10" aria-label="Back to video index">&uarr; Index</a></h3>
+<p>> > Watch: <a href="https://youtu.be/rkfyo1waWYY">https://youtu.be/rkfyo1waWYY</a></p>
+<p><strong>What it is:</strong> Same-day launch explainer for Anthropic's Claude Motion (and the companion Claude Dashboards release) with three live, on-camera business use-case builds. Peverelli (We Are No Code) frames the whole video around "how to use it like the top 1% and get paid."</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Claude Motion turns words, charts, shapes, or images into a short animated video — and critically, there is <strong>no video model behind it</strong>: Claude writes code that renders the scene. No fake footage, no AI people, so everything is editable in place or via chat, exportable as MP4, and pushable to Adobe, Descript, Runway, HeyGen. A canvas mode was announced.</li>
+<li>Claude Dashboards: connect a data source, ask in plain English, get a live dashboard that updates as numbers change, with click-through on every number to the query behind it. Caveat given: big databases only, not small spreadsheets.</li>
+<li>Docs, Slides, and Design are out of beta and free on every plan including free tier; <strong>Motion requires a Team plan</strong> (personal accounts must upgrade) — the real cost gate for anyone acting on this.</li>
+<li>Live demos, each claimed one-shot: (1) real-estate agent 30-second market-update video (built in ~3 min, revision to nighttime + new price in 45 seconds); (2) bookkeeper end-of-month client report as a shareable video instead of a boring PDF; (3) insurance broker renewal "bad news" video presenting three pricing options. All on camera.</li>
+</ul>
+<p><strong>Receipts vs self-reported:</strong> Demos are performed live on screen, which is stronger than claim-only coverage, but every performance claim (one-shot, timing, ease) is self-reported. The bike-share opening is Anthropic's own marketing demo. Zero revenue receipts — "get paid" is asserted, not shown.</p>
+<p><strong>Funnel angle:</strong> Free "pack of top design prompts" gated behind joining his community (link in description) — classic lead capture — plus a callout to his prior video/skill for the full automated-editing setup. The video itself is the top of a community funnel.</p>
+<p><strong>Verdict: Worth Trying — 7.5/10.</strong></p>
+<p><strong>Transferable mechanics:</strong> The productized service writes itself: client deliverables that used to cost thousands from a motion-graphics shop (agent market updates, bookkeeper monthly reports, broker renewals) become a same-day, white-label video deliverable on a recurring cadence — monthly reporting videos are the stickiest of the three because they recur. Winning moves: build a design-system prompt library per client brand, price per-video vs the old agency quote, and note the Team-plan requirement in your cost model. Risk: same-week commodity pressure — everyone watches the same launch; differentiation lives in the design system and the client relationships, not the tool.</p>
+<h3 id="video-11">Video 11: BREAKING: Claude Now Turns Your Data Into Live Dashboards and Videos — Hyperautomation Labs<a class="anchor" href="#video-11" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-11" aria-label="Back to video index">&uarr; Index</a></h3>
+<p>> > Watch: <a href="https://youtu.be/Vk3A8o0gYdU">https://youtu.be/Vk3A8o0gYdU</a></p>
+<p><strong>What it is:</strong> The most precise of the three launch-breakdown videos on Claude Dashboards + Motion: what each does, exact prompts, a who-gets-what availability matrix, export targets, and the one hard deadline — all narrated over Anthropic's official demo rather than independent builds.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Dashboards connect Redshift, BigQuery, ClickHouse, Databricks, Snowflake, or Salesforce; a plain-English question returns a live (not screenshot) dashboard. Trust signals built in: click any number to see the exact query behind it, and every chart shows its last-refresh time. Positioned for quick exploratory questions only — deeper work is explicitly handed off to Amplitude, Grafana, Hex, Mixpanel, Omni, Perplexity, PostHog, or Sigma (Looker, monday.com, Tableau coming). "It doesn't replace your data team. It lets the small questions skip the line."</li>
+<li>Motion is invoked with /motion; it is <strong>not a video generator</strong> — code animates your real text, charts, shapes, and images, so on-screen numbers stay your real numbers. Exports to Adobe, Descript, Pictory, InVideo, Luma AI, Runway (Canva, Captions coming). Team comment threads work directly on the video.</li>
+<li>Availability: Dashboards = beta on paid plans; Motion = beta on Team/Enterprise (off by default for enterprise, admin-enabled); Docs/Slides/Design = every plan including free (45M+ artifacts made). Docs/Slides/Design on-by-default Oct 15.</li>
+<li>Deadline intel: standalone claude.ai/design closes <strong>December 14</strong> — design systems migrate with one button, but chats, comments, and public links die. Save your work first.</li>
+</ul>
+<p><strong>Receipts vs self-reported:</strong> Everything shown is Anthropic's official bike-share demo (445,000 trips, Fernhill dock draining 21→14). The creator adds no independent builds, but is unusually honest about limits (dashboards not for spreadsheets, motion never generates footage, enterprise admin gates) — that precision is itself a credibility marker versus hype coverage.</p>
+<p><strong>Funnel angle:</strong> Comment-gated lead capture: "comment animate and I'll send it" for a free 15-prompt pack + the who-gets-what table + a December 14 migration checklist, plus a subscribe push framed as day-one testing of every Claude release.</p>
+<p><strong>Verdict: Worth Trying — 7/10.</strong></p>
+<p><strong>Transferable mechanics:</strong> Two angles. (1) The plain-English-to-live-dashboard offer for SMBs sitting on Snowflake/BigQuery/Salesforce data but priced out of a BI team — sell "the dashboard you'd normally wait 3 days for," with the click-to-query audit trail as the trust pitch. (2) The dashboard→animation loop (chart comment → all-hands explainer video) as an internal-comms deliverable. Keep Anthropic's own positioning in the sales deck: this skips the line for small questions; it's not a data-team replacement — that framing survives skeptical buyers. Competition will be heavy within weeks; the durable edge is data-source access and client trust, not prompt access.</p>
+<h3 id="video-12">Video 12: Turn Claude Into a Video Editing GENIUS (in 3 simple steps) — Jay E | RoboNuggets<a class="anchor" href="#video-12" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-12" aria-label="Back to video index">&uarr; Index</a></h3>
+<p>> > Watch: <a href="https://youtu.be/uaVYHiF8f7k">https://youtu.be/uaVYHiF8f7k</a></p>
+<p><strong>What it is:</strong> A hands-on tutorial (not launch news): build a reusable /animate skill on Sonnet 5.5 that does full video editing plus motion graphics — transcript-aware cutting, design-system-driven animation, and a feedback loop — at half the token cost of Opus 5.5. The strongest how-to of the batch.</p>
+<p><strong>Core claims:</strong></p>
+<ul>
+<li>Sonnet 5.5 produces animations on par with Opus 5.5 for code-based motion graphics at half the token cost; everything is JS/HTML under the hood — layered, isolatable, hand-editable code, not generated pixels.</li>
+<li>Step 1 — cut: give Claude the raw-footage path + an AssemblyAI transcription prompt; Claude reads the transcript, drops pauses and false takes, picks the best/latest take, returns an MP4. AssemblyAI: ~42 seconds per hour of audio (free signup credits); Whisper is free but 15–50 min per audio-hour on CPU; ElevenLabs transcription is a middle option.</li>
+<li>Step 2 — style: generic prompts yield "the new AI vibe-coded slop" (Claude's defaults everyone will flood feeds with); differentiation = codifying a design system into a skill. Sources: ask for SVGs (scalable, hand-editable, animatable); styles.refrl.design for web design-system markdown files; skillery.dev and watchshups.com galleries of Claude-made motion styles with starter prompts; and the standout trick — feed Claude an X post link, have it screenshot frames with FFmpeg, and reverse-engineer any style into your own design system (he cloned Vincent Wei's Opus-made themes this way before the prompts hit GitHub).</li>
+<li>Step 3 — direct: one-shot gets you ~80%; production quality requires watching the animation and giving timestamped feedback (his community-built "Rubric Editor" attaches timestamps + click position to comments, sent to Claude in one batch, and also calibrates the cutting skill to your speech patterns). End of session: "make my /animate" — all learnings codify into the skill for next time.</li>
+</ul>
+<p><strong>Receipts vs self-reported:</strong> Before/after demos are on camera and consistent (raw talking-head vs edited+animated versions, v1 vs v2 of the same clip after feedback), and he shows his own channel's videos as the output — self-reported but demonstrated. Community "member wins" screenshots are unverifiable. No income claims are made, which is notable restraint for the genre. Model names (Sonnet 5.5/Opus 5.5) match the run-wide naming pattern and can't be independently verified from the transcript, but the workflow grade doesn't depend on the branding.</p>
+<p><strong>Funnel angle:</strong> Two-stage: free 8-page PDF guide (prompts + resources, designed to be pasted into Claude) → RoboNuggets paid community (Claude Living Masterclass + "Agents as a Service" course), pitched mid-video with wins screenshots. The PDF-into-Claude delivery is itself a neat tactic worth stealing.</p>
+<p><strong>Verdict: Worth Trying — 8/10.</strong></p>
+<p><strong>Transferable mechanics:</strong> This is a buildable solo-operator video-editing service stack: (1) transcript-driven rough cuts kill the worst part of editing; (2) design systems as moat — codify your style once, then every client video inherits it and your output never looks like default-model slop; (3) the FFmpeg frame-steal lets you legally-ish clone any public style into a starting design system within minutes (attribution hygiene matters — he credits Vincent Wei); (4) the feedback→skill-codification loop compounds: each project makes the skill better, so the service gets faster and margin widens with volume. Sell to talking-head creators and businesses doing weekly video; the "80% one-shot, human-directed to 100%" reality is also the honest scoping pitch to clients.</p>
+<h3 id="video-13">Video 13: I Fully Automated My Video Editing Using Claude Code (Full Walkthrough) — Christian Peverelli<a class="anchor" href="#video-13" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-13" aria-label="Back to video index">&uarr; Index</a></h3>
+<p><strong>Title:</strong> I Fully Automated My Video Editing Using Claude Code (Full Walkthrough)</p>
+<p><strong>Channel:</strong> Christian Peverelli</p>
+<p><strong>Type:</strong> Tool walkthrough / personal automation case study</p>
+<h4 id="core-claim">Core claim<a class="anchor" href="#core-claim" aria-label="Link to this section">#</a></h4>
+<p>A non-coder replaced a ~$250–$1,000+/video human YouTube editor with a Claude Code–orchestrated pipeline. His last video cost ~$24 in tokens to produce (all-in stack ~$27/video) and cut turnaround from 3–7 days to same-day.</p>
+<h4 id="the-system-7-roles-1-coordinator">The system — 7 "roles," 1 coordinator<a class="anchor" href="#the-system-7-roles-1-coordinator" aria-label="Link to this section">#</a></h4>
+<table class="data-table"><thead><tr>
+<th>Role</th><th>Tool</th><th>Cost</th>
+</tr></thead><tbody>
+<tr>
+<td>Editor / project manager</td>
+<td>Claude Code (desktop, local mode)</td>
+<td>Claude Max plan $200/mo (shared across all work; ~$24/video token-attributed)</td>
+</tr>
+<tr>
+<td>Transcriber</td>
+<td>Nvidia Parakeet</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>Animator / motion graphics</td>
+<td>Hyperframes (by HeyGen) — Claude writes animations as code, rendered to 4K video</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>Researcher / B-roll</td>
+<td>Google Chrome driven by Claude (screenshots, scroll captures, highlights)</td>
+<td>Free</td>
+</tr>
+<tr>
+<td>Screen editor</td>
+<td>Tella (records face+screen; MCP connector so Claude does cuts/zooms)</td>
+<td>$13/mo annual (~$2/video)</td>
+</tr>
+<tr>
+<td>Sound designer</td>
+<td>Epidemic Sound (MCP connector; trained on his taste)</td>
+<td>$9.99/mo annual (~$10)</td>
+</tr>
+<tr>
+<td>Finisher / QC</td>
+<td>FFmpeg (removes black frames, checks audio sync)</td>
+<td>Free</td>
+</tr>
+</tbody></table>
+<h4 id="the-differentiator-the-skill-file">The differentiator: the "skill" file<a class="anchor" href="#the-differentiator-the-skill-file" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>An instructions file (his: "YouTube-Edit," ~1,400 lines, 36 rules) read by Claude before each job — encodes colors, fonts, animations, sound rules.</li>
+<li>Claude Code itself built the skill from his feedback; it's iteratively updated ("learn from what we just did and add it to the skill").</li>
+<li>Training loop: start with short clips (hooks), give timestamped feedback, ~10 days to converge on sound; mistakes never repeated once written into the skill.</li>
+</ul>
+<h4 id="setup-no-code-path">Setup (no-code path)<a class="anchor" href="#setup-no-code-path" aria-label="Link to this section">#</a></h4>
+<p>1. Install Claude desktop, $20/mo plan suffices to start. Use Claude Code, local mode, pick a working folder, permissions → auto, top model for setup.</p>
+<p>2. Enable web browsing in Claude Code settings.</p>
+<p>3. Prompt Claude to build the system; connect Tella / Epidemic Sound / Hyperframes via Connectors (MCP); save as a skill; test in a fresh thread.</p>
+<p>4. Routine: dump raw footage, run skill, review, timestamped notes, commit learnings to the skill.</p>
+<h4 id="results-shown">Results shown<a class="anchor" href="#results-shown" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>2:46 raw hook footage → 31-second finished hook, unattended (run time ~10–20 min).</li>
+<li>Workflow now: shoot, feed footage overnight, review next morning, minor notes, done.</li>
+</ul>
+<h4 id="money-making-angles">Money-making angles<a class="anchor" href="#money-making-angles" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Direct cost arbitrage: editing is a $250–$1,000/vid line item reducible to ~$27 — applicable to agencies and faceless-channel operators.</li>
+<li>Speed as edge: same-day plan→shoot→edit→publish cadence; more shots on goal per week.</li>
+<li>Skill-file pattern (encode taste → let the model absorb feedback) generalizes to any service automation (design, podcasts, ads).</li>
+<li>He gives the skill away free in his "We Are No Code" community — lead-magnet/community-growth play worth noting.</li>
+</ul>
+<h4 id="credibility-notes-4">Credibility notes<a class="anchor" href="#credibility-notes-4" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Actual edited output is shown; costs are self-reported token math. $200/mo Max plan is real overhead — the ~$27/video figure assumes the plan is amortized across all his work. Free tools (Parakeet, Hyperframes, FFmpeg) are verifiable.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Worth Trying — 7.5/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-14">Video 14: Google Certificate Tier List (2026 AI UPDATE) — Shane Hummus<a class="anchor" href="#video-14" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-14" aria-label="Back to video index">&uarr; Index</a></h3>
+<p><strong>Title:</strong> Google Certificate Tier List (2026 AI UPDATE)</p>
+<p><strong>Channel:</strong> Shane Hummus</p>
+<p><strong>Type:</strong> Career/education ranking</p>
+<h4 id="core-claim-2">Core claim<a class="anchor" href="#core-claim-2" aria-label="Link to this section">#</a></h4>
+<p>Google's Coursera certificates re-tiered post-AI-disruption. AI has hit some target job markets hard (data analytics) and barely touched others (cybersecurity, project management).</p>
+<h4 id="tier-list">Tier list<a class="anchor" href="#tier-list" aria-label="Link to this section">#</a></h4>
+<table class="data-table"><thead><tr>
+<th>Cert</th><th>Tier</th><th>Key numbers / reasoning</th>
+</tr></thead><tbody>
+<tr>
+<td>Data Analytics</td>
+<td><strong>S</strong></td>
+<td>3.4M enrolled, 4.8★, 270k openings, $97k median entry; AI disrupted the field BUT Google integrated AI deeply into the curriculum; best when paired with a subject-matter vertical</td>
+</tr>
+<tr>
+<td>Cybersecurity</td>
+<td><strong>S</strong></td>
+<td>1.3M enrolled; big AI-era winner; preps/discounts CompTIA Security+; "always employed" claim</td>
+</tr>
+<tr>
+<td>Project Management</td>
+<td><strong>A</strong></td>
+<td>2.5M enrolled, 57k openings, $93k median entry; PMI-endorsed, counts toward CAPM/PMP; AI-resistant skill, updated with AI content</td>
+</tr>
+<tr>
+<td>Advanced Data Analytics</td>
+<td><strong>A</strong></td>
+<td>277k enrolled, $130k median, highest ceiling; data-science roles projected +34%/10yr (BLS)</td>
+</tr>
+<tr>
+<td>IT Automation with Python</td>
+<td><strong>B</strong></td>
+<td>860k enrolled; 1.2M Python job listings; 16 ACE credits (most on list); docked for no AI update</td>
+</tr>
+<tr>
+<td>UX Design</td>
+<td><strong>B</strong></td>
+<td>1.38M enrolled, 63k openings; cert alone won't get you hired — needs portfolio/experience</td>
+</tr>
+<tr>
+<td>Google AI</td>
+<td><strong>B</strong></td>
+<td>687k enrolled; covers gen-AI + "vibe coding"; AI-skill demand ~doubled in job postings; a tack-on credential, not a job-getter alone</td>
+</tr>
+<tr>
+<td>IT Support</td>
+<td><strong>B</strong></td>
+<td>2M+ enrolled; the OG; pair with CompTIA A+ (cert preps you for it)</td>
+</tr>
+<tr>
+<td>Business Intelligence</td>
+<td><strong>C</strong></td>
+<td>165k enrolled, 87k openings, $98k median; finishable in ~a weekend → limited depth</td>
+</tr>
+<tr>
+<td>Digital Marketing & E-commerce</td>
+<td><strong>C</strong></td>
+<td>Solid start + portfolio direction, but won't land a job on its own</td>
+</tr>
+</tbody></table>
+<h4 id="money-making-angles-2">Money-making angles<a class="anchor" href="#money-making-angles-2" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Signals where skills-based income is defensible in 2026: cybersecurity, project management, advanced data work — and pairing certs with gold-standard credentials (CompTIA A+, Security+, PMP) is the stated path.</li>
+<li>Data analytics remains high-opportunity only with vertical/domain specialization — the "generalist analyst is disrupted, specialist analyst is not" thesis is directly relevant to choosing a niche for a service business.</li>
+<li>Digital marketing cert rated C for job-getting — worth noting since audience-side monetization (ads/affiliate) is what this cert actually supports; the video treats employment, not self-employment, as the goal.</li>
+<li>Recurring-content model: updating a past hit ("tier list 2026 update") is itself a proven channel-revenue play — sponsor mid-roll (Coursera 40% off promo featured here).</li>
+</ul>
+<h4 id="credibility-notes-5">Credibility notes<a class="anchor" href="#credibility-notes-5" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Enrollment/salary/job figures are as-stated by Google/Coursera/LinkedIn — marketing-sourced, not independently verified. Tiers are opinion but consistent with his prior videos; BLS +34% projection is a real citation.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Mixed — 5/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-15">Video 15: Google Vids Tutorial | How to Use Google Vids to Create HD Videos for Free — Tasia Custode<a class="anchor" href="#video-15" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-15" aria-label="Back to video index">&uarr; Index</a></h3>
+<p><strong>Title:</strong> Google Vids Tutorial — How to Use Google Vids to Create HD Videos for Free</p>
+<p><strong>Channel:</strong> Tasia Custode</p>
+<p><strong>Type:</strong> Software tutorial</p>
+<h4 id="core-claim-3">Core claim<a class="anchor" href="#core-claim-3" aria-label="Link to this section">#</a></h4>
+<p>Google Vids (vids.new) is a free browser-based AI video tool (Omni model) inside Google Workspace: text-to-video, image animation, AI avatars, voiceovers, slides-to-video, captions, templates — 720p/1080p output on a free account.</p>
+<h4 id="feature-rundown-verified-in-her-demos">Feature rundown (verified in her demos)<a class="anchor" href="#feature-rundown-verified-in-her-demos" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>AI video generation:</strong> prompt → up to 10s clips, ~under a minute; 1080p setting; her free account showed a 720p option but downloaded at 1080p anyway.</li>
+<li><strong>Extend/recreate:</strong> extend doubles clip length (10s → 20s); insert is required or the clip isn't saved to the timeline.</li>
+<li><strong>Continuity workaround:</strong> screenshot a frame → use as a reference "ingredient" image (up to 3) for new scene prompts.</li>
+<li><strong>Animate:</strong> upload an image, prompt motion (her demo: salt-and-pepper shakers dancing stop-motion style).</li>
+<li><strong>AI avatars:</strong> free; preset or custom (personal avatar is paid-tier); avatar + ingredient image = instant spokesperson/testimonial ads.</li>
+<li><strong>Voiceover:</strong> paste script, preview/select voice, insert.</li>
+<li><strong>Slides-to-video:</strong> imports a Slides deck, auto-generates narration + animation + music; script editable pre-generation; strong for course/explainer content.</li>
+<li><strong>Templates:</strong> fully customizable scenes (colors, fonts, text, media swap, image→video conversion).</li>
+<li><strong>Auto-captions</strong> on any creation — flagged as useful for social posting.</li>
+<li>Output: MP4 or GIF; auto-saves to Google Drive.</li>
+</ul>
+<h4 id="limits-and-gotchas">Limits and gotchas<a class="anchor" href="#limits-and-gotchas" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>The prompt-driven "edit" of an existing clip requires a paid/upgrade account — the one paid feature in the walkthrough.</li>
+<li>Free generation quotas fluctuate wildly with demand: she's seen 10/day and also 3 per <em>month</em> on the same free account.</li>
+</ul>
+<h4 id="money-making-angles-3">Money-making angles<a class="anchor" href="#money-making-angles-3" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Zero-cost faceless-content stack: avatar spokesperson ads, product testimonials (her wine demo is literally an ad format), slides→video for course or lead-magnet content, captioned clips for Shorts/Reels.</li>
+<li>10-second clip cap + fluctuating quotas make it a starter/prototyping tool, not a full production pipeline — pairs naturally with Video 14's stack for serious output.</li>
+<li>Free tier volatility (3/month at times) is a real constraint for volume monetization; treat as free sampling, not a dependency.</li>
+</ul>
+<h4 id="credibility-notes-6">Credibility notes<a class="anchor" href="#credibility-notes-6" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Everything shown is demonstrated on-screen including on a genuinely free account; quota numbers are anecdotal but honestly flagged as variable.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Mixed — 6/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-16">Video 16: ChatGPT Dots Is WAY More Powerful Than You Think — Riley Brown<a class="anchor" href="#video-16" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-16" aria-label="Back to video index">&uarr; Index</a></h3>
+<ul>
+<li><strong>Channel:</strong> Riley Brown</li>
+<li><strong>Link:</strong> <a href="https://youtu.be/WXhOxfPECnM">https://youtu.be/WXhOxfPECnM</a></li>
+<li><strong>Topic:</strong> Hands-on week-long review of ChatGPT "Dots" — personal AI agents with a persistent virtual computer, powered by a frontier model, integrated with the user's plugins/skills/memory. Nine workflow tips demonstrated.</li>
+</ul>
+<h4 id="core-content-the-9-tips">Core content (the 9 tips)<a class="anchor" href="#core-content-the-9-tips" aria-label="Link to this section">#</a></h4>
+<p>1. <strong>Voice chat as primary interface</strong> — daily 40–45 min walks where the agent reads Slack/email/calendar and triages priorities in real time.</p>
+<p>2. <strong>Spin up Codex sessions by voice</strong> — agent delegated a real code change (gradient fills in his internal tool), which ran, tested, and deployed autonomously on a separate branch.</p>
+<p>3. <strong>Get things done, not plans</strong> — 25 emails drafted <em>and sent</em> during one walk; shift from "AI gives me a plan" to "AI completes tasks while I talk."</p>
+<p>4. <strong>Drop artifacts into chat mid-call</strong> — product links, emails (with view-link) appear in the thread as notepad/receipts.</p>
+<p>5. <strong>Pages & Spaces</strong> — OpenAI's new Notion/Drive-like workspace; agent creates shareable documents with copyable prompt blocks, inline charts, and web images on request.</p>
+<p>6. <strong>GPT Sites</strong> — vibe-coded hosted sites (backend, database, auth) spun up conversationally; used for landing pages and a game waitlist.</p>
+<p>7. <strong>Daily brief automation</strong> — scheduled 9 a.m. prompt analyzes all integrations into a single prioritized document.</p>
+<p>8. <strong>Heartbeat automations</strong> — hourly check-ins (popularized by OpenClaw) that stay silent unless something important surfaces.</p>
+<p>9. <strong>DND bypass on iPhone</strong> — ChatGPT as the only app allowed through Do Not Disturb, so the agent becomes the single notification filter for the user's attention.</p>
+<h4 id="money-making-angles-4">Money-making angles<a class="anchor" href="#money-making-angles-4" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Attention-as-leverage productivity stack:</strong> one person running email, Slack, content planning, and shipping code features from a phone during a walk — a concrete "solopreneur with an agent staff" workflow worth teaching.</li>
+<li><strong>GPT Sites for fast landing pages / waitlists:</strong> zero-code path to validating product ideas (he runs a waitlist for a Call of Duty game this way). Directly usable for offer launches.</li>
+<li><strong>Automations + heartbeats = hands-off ops:</strong> daily briefs and hourly monitors replace checking dashboards; applicable to e-comm, affiliate, and content businesses.</li>
+<li><strong>Audience-building content:</strong> "agent workflow tips" content is currently high-engagement; Riley explicitly plans a follow-up video, signaling sustained demand.</li>
+<li><strong>Watch-item:</strong> OpenAI is collapsing chat, agent, docs, hosting, and scheduling into one subscription — competitive pressure on standalone Notion/site-builder/SaaS-tool niches.</li>
+</ul>
+<h4 id="credibility-notes-7">Credibility notes<a class="anchor" href="#credibility-notes-7" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>First-person demo, screen-share driven; plugin/integration claims are consistent with ChatGPT's direction. Specific daily-brief contents withheld (personal data). Marketing-toned ("first personal agent platform powered by a frontier model" is the creator's framing, not verified).</li>
+</ul>
+<hr>
+<p><strong>Verdict: Mixed — 6/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h3 id="video-17">Video 17: This week's repos: PS5 game on a PC! Turn agents into employees. AI video maker. — The Next New Thing<a class="anchor" href="#video-17" aria-label="Link to this section">#</a><a class="toc-back" href="#row-video-17" aria-label="Back to video index">&uarr; Index</a></h3>
+<ul>
+<li><strong>Channel:</strong> The Next New Thing</li>
+<li><strong>Link:</strong> <a href="https://youtu.be/Wsru44p-J14">https://youtu.be/Wsru44p-J14</a></li>
+<li><strong>Topic:</strong> Weekly top-10 open-source repo roundup (hosts Adam & Andrew) + viewer-submitted "first stars" + a closing tool tip. Sponsored by Zapier.</li>
+</ul>
+<h4 id="repos-covered">Repos covered<a class="anchor" href="#repos-covered" aria-label="Link to this section">#</a></h4>
+<p>1. <strong>anyPS5</strong> — AI rewrites PS5 game source off-disc into a native PC build (not an emulator). One game so far; needs a console exploit to decrypt discs; expect takedowns (Hacker News: "grab it before it's gone").</p>
+<p>2. <strong>OpenRig</strong> — orchestrates multiple coding agents (Codex, Claude, Cursor, Grok) as named specialist agents in team-style workflows; "techy Paperclip" oriented toward building.</p>
+<p>3. <strong>Hyperframes (by Hen)</strong> — code-based video generation: agents write HTML, rendered to MP4; edits update code, not regenerated frames. Strong fit for explainer/animation content.</p>
+<p>4. <em>(Sponsor segment — Zapier.)</em></p>
+<p>5. <strong>Epic Games RAD Debugger</strong> (open source, alpha) — top-tier visual debugging/perf profiling for game dev; pairs with coding agents to make solo game building viable ("would've cost $150K three years ago").</p>
+<p>6. <strong>Cursor plugins</strong> — connectors and workflows from the actual Cursor/SpaceX-team developers, public on X amid Elon Musk attention (Lauren Tan et al.); learn pro agent workflows + memory-retention tricks.</p>
+<p>7. <strong>Claude Me</strong> — daily markdown memory logs for agents (Grokbot focus; works with OpenClaw); local-file memory control.</p>
+<p>8. <strong>Matt Poco's skill pack</strong> (~281 stars & climbing) — community-vetted agent skills; the "grill me" skill (agent interrogates you before a project) is the standout. Iterates on public feedback (e.g., the "200 questions" Hacker News complaint).</p>
+<p>9. <strong>Agent Reach</strong> (94K stars) — structured data pulls from Reddit/X/YouTube with automatic workaround-swapping when a source blocks a tool; avoids scraping full sites.</p>
+<p>10. <strong>Text-to-CAD</strong> — describe a part, get a printable 3D model. Host printed a 3-part conference-room recorder enclosure for ~$2 of plastic; "heyday of 3D printing."</p>
+<p>11. <strong>Open Gym</strong> — self-hosted workout/health data app (Android + web; iOS blocked); own-your-data theme; built as a ~$1K-AI-credits passion project, free to use.</p>
+<h4 id="first-stars-viewer-submissions">First stars (viewer submissions)<a class="anchor" href="#first-stars-viewer-submissions" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Silo</strong> — world-simulator for testing AI agents before deployment.</li>
+<li><strong>Herder Voice</strong> — real-time voice plugin for Herder, a terminal-centric orchestrator for multiple coding agents.</li>
+<li><strong>Costas Core</strong> — policy/governance layer: checks every agent action (PII leaks, prompt injection, risky network calls), blocks violations, keeps a tamper-evident audit trail.</li>
+<li><strong>Sun Quinn's agent tool</strong> — talk with agents that do background work; now supports ChatGPT-login; fastest-rising repo featured (trademark risk: uses Grokbot logos).</li>
+<li><strong>Free Rome a Walk</strong> — WASD-style walking through Google Street View.</li>
+</ul>
+<h4 id="closing-segment-cli-proxy-api-adams-pick">Closing segment: CLI Proxy API (Adam's pick)<a class="anchor" href="#closing-segment-cli-proxy-api-adams-pick" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Sits between local coding agents and Claude/Codex APIs: auto-relogin before token expiry (~10-min checks), multi-account load balancing, and request forwarding through a home machine so traffic looks residential (ban-risk reduction). He runs 3 computers sharing accounts; hasn't manually logged in for ~1.5 weeks.</li>
+<li>Andrew's workflow tip: instruct agents to always run work <strong>in the background</strong> and immediately hand back the next task — never wait serially. He also does daily inbox triage with Grokbot during his commute.</li>
+</ul>
+<h4 id="money-making-angles-5">Money-making angles<a class="anchor" href="#money-making-angles-5" aria-label="Link to this section">#</a></h4>
+<ul>
+<li><strong>Agent orchestration = one-person dev shop:</strong> OpenRig/Herder + Epic's RAD Debugger make solo/small-team software and game production realistic; "apps that cost $150K three years ago" is the report's core arbitrage thesis.</li>
+<li><strong>Faceless video content at scale:</strong> Hyperframes' code-based video generation lowers cost of YouTube/ads/UGC-style explainers; direct fit for affiliate and info-product funnels.</li>
+<li><strong>Text-to-CAD + 3D printing = micro-manufacturing:</strong> custom parts/enclosures for ~$2 in materials; niche product stores (custom brackets, organizers) with near-zero tooling cost.</li>
+<li><strong>Subscription arbitrage (gray-zone):</strong> CLI Proxy API for stacking multiple AI subscriptions across machines — cost optimization, but ToS-adjacent (multi-account balancing, IP-masking); flag as risky, not recommended as a strategy.</li>
+<li><strong>Data-ownership products:</strong> Open Gym shows demand for self-hosted alternatives to subscription apps; "replace your paid subscriptions" is a repeatable repo/business niche (the channel's own next video topic).</li>
+<li><strong>Governance/compliance tooling:</strong> Costas Core signals a growing enterprise need — agent policy enforcement and audit trails — a real B2B wedge.</li>
+<li><strong>Audience arbitrage:</strong> the channel itself monetizes curation (sponsor + attention); "vetted public workflows" (Cursor devs' plugins) are becoming linkable content products.</li>
+</ul>
+<h4 id="credibility-notes-8">Credibility notes<a class="anchor" href="#credibility-notes-8" aria-label="Link to this section">#</a></h4>
+<ul>
+<li>Rapid-fire curation; star counts and project names quoted live and self-admittedly imprecise ("no way to keep the thumbnail accurate"). Several items are alpha/early (RAD Debugger). Legal-risk items called out by hosts themselves (anyPS5 takedown risk, Sun Quinn's logo infringement). CLI Proxy API's account-sharing framing should be treated as ToS-violating until verified otherwise.</li>
+</ul>
+<hr>
+<p><strong>Verdict: Worth Trying — 7/10.</strong> <em>(Digest batch did not emit a standardized verdict line; scored by the main agent from the digest's own analysis.)</em></p>
+<h2 id="run-synthesis">Run Synthesis<a class="anchor" href="#run-synthesis" aria-label="Link to this section">#</a></h2>
+<h2 id="run-synthesis-2">Run Synthesis<a class="anchor" href="#run-synthesis-2" aria-label="Link to this section">#</a></h2>
+<p>Cross-cutting takeaways from all 6 digest batches (18 new videos; 16/18 transcripts in one sweep, zero fallbacks; 1 hour-long course video unavailable → metadata stub; 1 video removed by its uploader since the last run). Shape: <strong>10 Worth Trying / 6 Mixed / 0 Skip</strong> (7 of the verdicts scored by the main agent where batches skipped the standardized line).</p>
+<p><strong>Top of the run:</strong></p>
+<ul>
+<li>Koerner's phone-only business survey (V1) — 8/10: the distribution-over-build thesis backed by named, checkable businesses rather than a funnel pitch.</li>
+<li>Hyperautomation Labs' Claude data-to-live-dashboard demo (V12) — 8/10: the "dashboard-as-retainer" offer with the build shown end-to-end; pairs with V3's med-spa money-dashboard pitch (6/10 — same offer, but demo on synthetic data and the $5K headline never paid off).</li>
+<li>Starter Story's $13K/month solo app (V4) — 8/10: RevenueCat dashboard on screen; a $50–70/mo stack (Claude Code + Supabase + Expo/Vercel + RevenueCat) replacing five-figure dev cost; 1/3 of revenue from building in public on X.</li>
+<li>Christian Peverelli's Claude Code video-editing automation (V13) — 7.5/10: $250–$1,000/video editing compressed to ~$27 in tokens via encoded "skill files"; actual edited output shown, costs self-reported.</li>
+</ul>
+<p><strong>Patterns that repeated:</strong></p>
+<ul>
+<li><strong>Distribution is the moat, build is free.</strong> Stated by Koerner (V1), Starter Story (V4), and implicitly by every repo-roundup (V2, V18): competition explodes when anyone can build, so audience, public-building, and owned channels carry the pricing power.</li>
+<li><strong>Agent-ops keeps professionalizing:</strong> agent self-QA against raw source files (V3), approval-gated and audit-trailed agent actions (V18's Costas Core), multi-agent orchestration as named specialists (V2's OpenRig, V18), background-first delegation as etiquette (V18).</li>
+<li><strong>Video production economics are collapsing:</strong> $27 AI-edited videos (V13), free 1080p generation with avatars (V16 Google Vids), code-based video generation for explainers (V18 Hyperframes). The "editor" commodity dies; the "director with a trained system" doesn't.</li>
+<li><strong>Agent-legibility becomes a sales channel:</strong> publish pricing ranges, agent-bookable scheduling, and structured knowledge catalogs or AI agents route customers elsewhere (V5, V6, V12). The knowledge catalog is the concrete new deliverable — for businesses, and as an agency offer.</li>
+<li><strong>Curation is a business:</strong> repo roundups (V2, V18), cert tier lists (V15), tutorial ecosystems (V16) — vetted-links-plus-sponsorship monetizes attention with near-zero production cost.</li>
+</ul>
+<p><strong>Risk cluster flagged by the batches themselves:</strong> anyPS5 (IP takedown), CLI Proxy API multi-account sharing (ToS-adjacent), scraper-adjacent data pulls (platform policy), and the usual sponsored-demo haze (Hark exclusive access, Arvo SEO demo, ChatGPT "first personal agent platform" framing).</p>
+<p><strong>Watch items:</strong></p>
+<ul>
+<li>Corey Ganim's $50k/month managed-AI-agent course (V9) — transcript unavailable after standard retry; metadata stub only. If the managed-agent tier is real, it graduates as a theme in a future daily run.</li>
+<li>Google's "2027 = year of the AI agent" framing (V5) — directionally consistent with everything else in this run; treat the specific date as marketing.</li>
+<li>The dashboard offer (V3/V12) is one generation away from saturation in the local-business niche — the durable version is the retainer-by-shared-folder mechanism, not the pitch.</li>
+</ul>
+<p><strong>Transferable stack worth stealing (if you only take five things):</strong></p>
+<p>1. Demo-first outreach (V3) — build the artifact once on synthetic data, offer the artifact instead of asking for time.</p>
+<p>2. Dashboard-as-retainer (V12, V3) — the client feeds a shared folder; the agent rebuilds; the same link month-over-month is the lock-in.</p>
+<p>3. Skill-file arbitrage (V13) — encode taste into reusable skill files; let the model absorb feedback; sell the system, not the hours.</p>
+<p>4. Agent-legibility checklist (V5) — pricing ranges + real-question Q&A from call logs + structured data; do it before competitors know agents are the new front door.</p>
+<p>5. Background-first delegation (V18) — never wait serially on an agent; queue the next task and review artifacts in batch.</p>
+
+        <p class="footer">Generated by OpenClaw · 2026-10-10</p>
+    </div>
+</body>
+</html>

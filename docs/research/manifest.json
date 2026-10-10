@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-09 22:44:02",
+  "generated": "2026-10-10 01:18:05",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -2991,12 +2991,21 @@
       "skip": 0,
       "avg": null,
       "tags": [
+        "AI Agents",
         "YouTube & Content",
-        "Automation",
-        "Agencies & Leads"
+        "Automation"
       ],
-      "top": "Rank-and-rent site rentals (NEW theme) — 8/10",
-      "wt_titles": []
+      "top": "[He Left Real Estate to Rent Websites](https://www.youtube.com/watch?v",
+      "wt_titles": [
+        {
+          "t": "Verdict: Worth Trying",
+          "s": null
+        },
+        {
+          "t": "Verdict: Worth Trying",
+          "s": null
+        }
+      ]
     },
     {
       "file": "playlist-research_2026-10-08.html",
@@ -3011,57 +3020,57 @@
       "avg": 7.2,
       "tags": [
         "AI Agents",
-        "Automation",
-        "Business Models"
+        "YouTube & Content",
+        "Courses & Communities"
       ],
-      "top": "Presales ladder for a Mirror copy-trading app (Frank New)",
+      "top": "How Does This Get Big? — \"How This Retired Big Tech SWE Built an App T (8.5/10)",
       "wt_titles": [
         {
-          "t": "Grok Bot Just Got 4 HUGE Upgrades (It's WAY Better Now) (Riley Brown)",
-          "s": "8"
+          "t": "Riley Brown — \"Grok Bot Just Got 4 HUGE Upgrades (It's WAY Better Now)",
+          "s": 8.0
         },
         {
-          "t": "How the OpenAI team uses ChatGPT Sites daily (How I AI)",
-          "s": "7.5"
+          "t": "How I AI — \"How the OpenAI team uses ChatGPT Sites daily\"",
+          "s": 7.5
         },
         {
-          "t": "13 Businesses for the Age of AI (Greg Isenberg)",
-          "s": "7"
+          "t": "Greg Isenberg — \"13 Businesses for the Age of AI\"",
+          "s": 7.0
         },
         {
-          "t": "Top repo explained: builds product + lands customers (The Next New Thing)",
-          "s": "8"
+          "t": "The Next New Thing — \"Top repo explained: builds product + lands custo",
+          "s": 8.0
         },
         {
-          "t": "This Simple AI Setup Makes Me $8K Every Month (Chris Koerner on The Koerner Office Podcast)",
-          "s": "7.5"
+          "t": "Chris Koerner on The Koerner Office Podcast — \"This Simple AI Setup Ma",
+          "s": 7.5
         },
         {
-          "t": "Make Any Game With AI & 2 New Open Source Video Models! (Theoretically Media)",
-          "s": "7"
+          "t": "Theoretically Media — \"Make Any Game With AI & 2 New Open Source Video",
+          "s": 7.0
         },
         {
-          "t": "How To Turn 1 Hour a Day Into a Claude AI Income (Realistic Plan) (Shane Hummus)",
-          "s": "7"
+          "t": "Shane Hummus — \"How To Turn 1 Hour a Day Into a Claude AI Income (Real",
+          "s": 7.0
         },
         {
-          "t": "How This Retired Big Tech SWE Built an App That Made $30k in 2 Weeks (How Does This Get Big?)",
-          "s": "8.5"
+          "t": "How Does This Get Big? — \"How This Retired Big Tech SWE Built an App T",
+          "s": 8.5
         },
         {
-          "t": "Somebody Vibe Coded EVERY SINGLE ADOBE App (FUTC)",
-          "s": "8"
+          "t": "FUTC — \"Somebody Vibe Coded EVERY SINGLE ADOBE App\"",
+          "s": 8.0
         },
         {
-          "t": "AI video maker, AI influencer, free claude code and more ai releases (The Next New Thing)",
-          "s": "8"
+          "t": "The Next New Thing — \"AI video maker, AI influencer, free claude code ",
+          "s": 8.0
         }
       ]
     },
     {
       "file": "daily-research_2026-10-09.html",
       "date": "2026-10-09",
-      "title": "Daily YouTube Money-Making Strategy Research — 2026-10-09",
+      "title": "Daily YouTube Strategy Research — 2026-10-09",
       "label": "10-09 Daily",
       "kind": "daily",
       "videos": 5,
@@ -3070,12 +3079,77 @@
       "skip": 0,
       "avg": null,
       "tags": [
-        "Agent-Operated",
-        "Boring Businesses",
-        "Personal Brand Licensing"
+        "YouTube & Content",
+        "Automation",
+        "AI Agents"
       ],
-      "top": "Automated POD production line via Claude Code (Wholesale Ted): ~2h unattended design→listing runs on a <0/mo stack; token budget as new COGS",
-      "wt_titles": []
+      "top": "[I Automated My $1k/Day AI Side Hustle With Claude](https://www.youtub",
+      "wt_titles": [
+        {
+          "t": "Verdict: Worth Trying",
+          "s": null
+        }
+      ]
+    },
+    {
+      "file": "playlist-research_2026-10-10.html",
+      "date": "2026-10-10",
+      "title": "Playlist Research — 2026-10-10",
+      "label": "10-10 Playlist",
+      "kind": "playlist",
+      "videos": 17,
+      "wt": 10,
+      "mixed": 6,
+      "skip": 0,
+      "avg": 6.9,
+      "tags": [
+        "AI Agents",
+        "Automation",
+        "YouTube & Content"
+      ],
+      "top": "The Most Profitable Business You Can Run From a Phone — Chris Koerner  (8/10)",
+      "wt_titles": [
+        {
+          "t": "The Most Profitable Business You Can Run From a Phone — Chris Koerner ",
+          "s": 8.0
+        },
+        {
+          "t": "8 GitHub Repos To Go Viral and Make Money — Greg Isenberg",
+          "s": 7.5
+        },
+        {
+          "t": "I Make $13K/Month From This Simple App — Starter Story",
+          "s": 8.0
+        },
+        {
+          "t": "Your Website Won't Matter in 2 Years (Here's What to Build Instead) — ",
+          "s": 7.5
+        },
+        {
+          "t": "How to Turn Instagram Into a Sales Machine With Muse AI — Marketing Ag",
+          "s": 7.0
+        },
+        {
+          "t": "Claude Now Makes FULL Videos - Everything You Need to Know — Christian",
+          "s": 7.5
+        },
+        {
+          "t": "BREAKING: Claude Now Turns Your Data Into Live Dashboards and Videos —",
+          "s": 7.0
+        },
+        {
+          "t": "Turn Claude Into a Video Editing GENIUS (in 3 simple steps) — Jay E | ",
+          "s": 8.0
+        },
+        {
+          "t": "I Fully Automated My Video Editing Using Claude Code (Full Walkthrough",
+          "s": 7.5
+        },
+        {
+          "t": "This week's repos: PS5 game on a PC! Turn agents into employees. AI vi",
+          "s": 7.0
+        }
+      ]
     }
   ]
 }
