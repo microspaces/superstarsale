@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08 14:44:22",
+  "generated": "2026-10-09 22:44:02",
   "reports": [
     {
       "file": "daily-research_2026-06-25.html",
@@ -3057,6 +3057,25 @@
           "s": "8"
         }
       ]
+    },
+    {
+      "file": "daily-research_2026-10-09.html",
+      "date": "2026-10-09",
+      "title": "Daily YouTube Money-Making Strategy Research — 2026-10-09",
+      "label": "10-09 Daily",
+      "kind": "daily",
+      "videos": 5,
+      "wt": 1,
+      "mixed": 4,
+      "skip": 0,
+      "avg": null,
+      "tags": [
+        "Agent-Operated",
+        "Boring Businesses",
+        "Personal Brand Licensing"
+      ],
+      "top": "Automated POD production line via Claude Code (Wholesale Ted): ~2h unattended design→listing runs on a <0/mo stack; token budget as new COGS",
+      "wt_titles": []
     }
   ]
 }
