@@ -555,8 +555,6 @@ Google Vids (vids.new) is a free browser-based AI video tool (Omni model) inside
 
 ## Run Synthesis
 
-## Run Synthesis
-
 Cross-cutting takeaways from all 6 digest batches (18 new videos; 16/18 transcripts in one sweep, zero fallbacks; 1 hour-long course video unavailable → metadata stub; 1 video removed by its uploader since the last run). Shape: **10 Worth Trying / 6 Mixed / 0 Skip** (7 of the verdicts scored by the main agent where batches skipped the standardized line).
 
 **Top of the run:**
